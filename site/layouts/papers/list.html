@@ -193,8 +193,8 @@
         });
     });
 
-    // Load statistics data from Hugo (re-define variable for this scope)
-    const stats = {{ $stats | jsonify | safeJS }};
+    // ✅ FIX: load stats directly from Site.Data (no undefined $stats in scope)
+    const stats = {{ site.Data.livingreview.stats | default dict | jsonify | safeJS }};
     
     // Chart 1: Publications per year
     Plotly.newPlot("chart1", [{

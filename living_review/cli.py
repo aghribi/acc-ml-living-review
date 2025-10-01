@@ -57,8 +57,9 @@ def main():
                     help=f"Threshold for accelerator relevance (default: {DEFAULT_THRESHOLDS['accel']})")
     ap.add_argument("--ml-threshold", type=float, default=None,
                     help=f"Threshold for ML/AI relevance (default: {DEFAULT_THRESHOLDS['ml']})")
-    ap.add_argument("--output", type=str, default="output",
-                    help="Directory for JSON/HTML/PDF/BibTeX outputs (default: output)")
+    ap.add_argument("--output", type=str, default=".",
+                help="Base directory of the repo (default: current dir, outputs into ./site/)")
+
     ap.add_argument("--chunk-size", type=int, default=None,
                     help="Number of papers per chunk (optional)")
     ap.add_argument("--incremental", action="store_true",
