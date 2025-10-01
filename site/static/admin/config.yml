@@ -1,7 +1,9 @@
 backend:
   name: github
-  repo: aghribi/acc-living-review   # replace with your GitHub user/org + repo name
-  branch: main  
+  repo: aghribi/acc-living-review
+  branch: main
+  base_url: https://acc-living-review.netlify.app
+  auth_endpoint: auth
 
 # Local backend for development
 # Uncomment for local testing: npx decap-server
