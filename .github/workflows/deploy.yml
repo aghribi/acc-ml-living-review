@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main ]
 
-permissions:          # 👈 give write access for gh-pages
-  contents: write
+permissions:
+  contents: write   # allow pushing to gh-pages
 
 jobs:
   build-deploy:
@@ -25,8 +25,11 @@ jobs:
           extended: true
 
       - name: Build Hugo
-        run: hugo -s site --minify
-        # output: site/public
+        run: |
+          hugo -s site --config site/config.toml --minify
+          echo "===== Contents of site/public ====="
+          ls -R site/public || true
+        # Hugo output should be in site/public
 
       # -------------------
       # Build Sphinx docs
@@ -44,18 +47,24 @@ jobs:
       - name: Build Sphinx
         run: |
           sphinx-build -b html docs/source docs/build/html
-          ls -R docs/build || true
-        # output: docs/build/html
+          echo "===== Contents of docs/build/html ====="
+          ls -R docs/build/html || true
+        # Sphinx output in docs/build/html
 
       # -------------------
-      # Collect outputs
+      # Collect outputs for gh-pages
       # -------------------
       - name: Prepare deployment folder
         run: |
           mkdir deploy
-          cp -r site/public/* deploy/
+          cp -r site/public/* deploy/ || echo "⚠️ No Hugo output found"
           mkdir -p deploy/docs
-          cp -r docs/build/html/* deploy/docs/
+          cp -r docs/build/html/* deploy/docs/ || echo "⚠️ No Sphinx output found"
+
+      - name: Debug deploy folder
+        run: |
+          echo "===== Contents of deploy/ (final) ====="
+          ls -R deploy || true
 
       # -------------------
       # Deploy to gh-pages
