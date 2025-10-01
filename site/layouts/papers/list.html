@@ -142,7 +142,6 @@
 </div>
 
 {{ end }}
-
 {{ define "scripts" }}
 <script>
     // Collapse/expand sections
@@ -193,12 +192,17 @@
         });
     });
 
-    // ✅ Theme-aware colors
+    // ✅ Theme-aware colors using CSS variables
     function getThemeColors() {
+        const root = document.documentElement;
         const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        const textDark  = getComputedStyle(root).getPropertyValue('--text-dark').trim() || '#000';
+        const textLight = getComputedStyle(root).getPropertyValue('--text-light').trim() || '#fff';
+
         return {
-            fontColor: darkMode ? '#fff' : '#000',
-            axisColor: darkMode ? '#fff' : '#000'
+            fontColor: darkMode ? textLight : textDark,
+            axisColor: darkMode ? textLight : textDark
         };
     }
     let colors = getThemeColors();
