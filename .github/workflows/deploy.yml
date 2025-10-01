@@ -2,8 +2,10 @@ name: Build and Deploy Hugo + Sphinx
 
 on:
   push:
-    branches:
-      - main    # adjust if your default branch is different
+    branches: [ main ]
+
+permissions:          # 👈 give write access for gh-pages
+  contents: write
 
 jobs:
   build-deploy:
@@ -24,7 +26,7 @@ jobs:
 
       - name: Build Hugo
         run: hugo -s site --minify
-        # Hugo output will be in site/public
+        # output: site/public
 
       # -------------------
       # Build Sphinx docs
@@ -37,16 +39,16 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt   # root requirements.txt
+          pip install -r requirements.txt
 
       - name: Build Sphinx
         run: |
           sphinx-build -b html docs/source docs/build/html
           ls -R docs/build || true
-        # Sphinx output will be in docs/build/html
+        # output: docs/build/html
 
       # -------------------
-      # Collect outputs for gh-pages
+      # Collect outputs
       # -------------------
       - name: Prepare deployment folder
         run: |
@@ -56,7 +58,7 @@ jobs:
           cp -r docs/build/html/* deploy/docs/
 
       # -------------------
-      # Deploy to gh-pages branch
+      # Deploy to gh-pages
       # -------------------
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
