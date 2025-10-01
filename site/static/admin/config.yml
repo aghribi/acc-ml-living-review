@@ -1,9 +1,14 @@
+# backend:
+#   name: github
+#   repo: aghribi/acc-living-review
+#   branch: main
+#   base_url: https://acc-living-review.netlify.app
+#   auth_endpoint: auth
+
 backend:
-  name: github
-  repo: aghribi/acc-living-review
-  branch: main
-  base_url: https://acc-living-review.netlify.app
-  auth_endpoint: auth
+  name: git-gateway
+  branch: main   # or whatever your default branch is
+
 
 # Local backend for development
 # Uncomment for local testing: npx decap-server
