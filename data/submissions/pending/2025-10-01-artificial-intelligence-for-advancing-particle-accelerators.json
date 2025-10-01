@@ -1,0 +1,30 @@
+{
+  "submitter_name": "Adnan GHRBI",
+  "abstract": "Particle accelerators are critical tools in multiple domains of fundamental and applied science—from high-energy physics to materials research and medical imaging. Yet achieving optimal beam performance and operational stability remains a complex challenge, driven by myriad interdependent parameters and nonlinear dynamics. In this work, we explore how artificial intelligence (AI) and machine learning (ML) methods can be leveraged to push the frontiers of accelerator performance and control. We present (i) a survey of state-of-the-art AI/ML techniques tailored for accelerator diagnostics, beam tuning, and anomaly detection; (ii) a case study applying supervised and reinforcement learning strategies to beam optimization in a hypothetical accelerator environment; and (iii) an analysis of the limitations, risks, and integration challenges in real accelerator systems. Our results highlight that AI approaches can significantly reduce tuning time, improve stability under varying operational conditions, and enhance predictive maintenance capabilities. We further discuss how future developments—such as online learning, hybrid physics-ML models, and shared benchmark datasets—could accelerate adoption of AI in accelerator science. This paper aims to stimulate deeper collaborations between the accelerator and AI communities, and to encourage deployment of intelligent control systems in next-generation accelerator facilities.",
+  "submitter_email": "adnan.ghribi@ganil.fr",
+  "authors": [
+    "Adnan Ghribi(GANIL",
+    "CNRS",
+    "CERN)",
+    "Kevin Cassou(CNRS)",
+    "Barbara Dalena(CEA)",
+    "Annika Eichler(DESY)",
+    "Hayg Guler(CNRS)",
+    "Andrew K. Mistry(GSI)",
+    "Adrian Oeftiger(U. Oxford (main))",
+    "Thomas Shea(ESS)",
+    "Gianluca Valentino(U. Malta)",
+    "Carsten P. Welsch(Liverpool U.)"
+  ],
+  "url": "https://www.europhysicsnews.org/articles/epn/full_html/2025/01/epn2025561p15/epn2025561p15.html",
+  "venue": "EuroPhysics News",
+  "status": "pending",
+  "submitted_at": "2025-10-02T00:02:00.000+02:00",
+  "title": "Artificial intelligence for advancing particle accelerators",
+  "source": "manual",
+  "categories": [
+    "Review"
+  ],
+  "year": 2025,
+  "doi": "10.1051/epn/2025106"
+}
