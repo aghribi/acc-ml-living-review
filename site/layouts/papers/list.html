@@ -142,6 +142,7 @@
 </div>
 
 {{ end }}
+
 {{ define "scripts" }}
 <script>
     // Collapse/expand sections
@@ -192,43 +193,40 @@
         });
     });
 
-    // ✅ Theme-aware colors using CSS variables
+    // ✅ Use CSS variable --text-primary for adaptive font colors
     function getThemeColors() {
-        const root = document.documentElement;
-        const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        const textDark  = getComputedStyle(root).getPropertyValue('--text-dark').trim() || '#000';
-        const textLight = getComputedStyle(root).getPropertyValue('--text-light').trim() || '#fff';
+        const rootStyles = getComputedStyle(document.documentElement);
+        const fontColor = rootStyles.getPropertyValue('--text-primary').trim() || '#000';
+        const border    = rootStyles.getPropertyValue('--border-primary').trim() || '#ccc';
 
         return {
-            fontColor: darkMode ? textLight : textDark,
-            axisColor: darkMode ? textLight : textDark
+            fontColor: fontColor,
+            axisColor: fontColor,
+            gridColor: border
         };
     }
     let colors = getThemeColors();
 
     // ✅ Load stats from Hugo data
     const stats = {{ site.Data.livingreview.stats | default dict | jsonify | safeJS }};
-    
-    // Chart 1: Publications per year
+
+    // === PLOTS ===
     Plotly.newPlot("chart1", [{
         x: Object.keys(stats.per_year || {}),
         y: Object.values(stats.per_year || {}),
         type: "bar",
         marker: {color: "#6096ba"}
     }], {
-        title: "Publications per Year",
+        title: { text: "Publications per Year", font: { color: colors.fontColor } },
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
         font: {color: colors.fontColor},
-        xaxis: {color: colors.axisColor},
-        yaxis: {color: colors.axisColor}
+        xaxis: {color: colors.axisColor, gridcolor: colors.gridColor},
+        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor}
     });
 
-    // Chart 2: Publications by category
     const sortedCategories = Object.entries(stats.per_category || {})
         .sort((a, b) => b[1] - a[1]);
-    
     Plotly.newPlot("chart2", [{
         x: sortedCategories.map(c => c[1]),
         y: sortedCategories.map(c => c[0]),
@@ -236,32 +234,30 @@
         orientation: "h",
         marker: {color: "#6096ba"}
     }], {
-        title: "Publications by Category",
+        title: { text: "Publications by Category", font: { color: colors.fontColor } },
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
         margin: {l: 220},
         font: {color: colors.fontColor},
-        xaxis: {color: colors.axisColor},
-        yaxis: {color: colors.axisColor, automargin: true}
+        xaxis: {color: colors.axisColor, gridcolor: colors.gridColor},
+        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor, automargin: true}
     });
 
-    // Chart 3: Top venues
     Plotly.newPlot("chart3", [{
         labels: Object.keys(stats["per_venue/journal"] || {}),
         values: Object.values(stats["per_venue/journal"] || {}),
         type: "pie"
     }], {
-        title: "Top Publication Venues",
+        title: { text: "Top Publication Venues", font: { color: colors.fontColor } },
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
-        font: {color: colors.fontColor}
+        font: {color: colors.fontColor},
+        legend: {font: {color: colors.fontColor}}
     });
 
-    // Chart 4: Top keywords (fix truncated labels)
     const topKeywords = Object.entries(stats.per_keyword || {})
         .sort((a, b) => b[1] - a[1])
         .slice(0, 15);
-    
     Plotly.newPlot("chart4", [{
         x: topKeywords.map(k => k[1]),
         y: topKeywords.map(k => k[0]),
@@ -269,16 +265,15 @@
         orientation: "h",
         marker: {color: "#6096ba"}
     }], {
-        title: "Top Keywords",
+        title: { text: "Top Keywords", font: { color: colors.fontColor } },
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
         margin: {l: 250},
         font: {color: colors.fontColor},
-        xaxis: {color: colors.axisColor},
-        yaxis: {automargin: true, color: colors.axisColor}
+        xaxis: {color: colors.axisColor, gridcolor: colors.gridColor},
+        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor, automargin: true}
     });
 
-    // Chart 5: Monthly trends
     Plotly.newPlot("chart5", [{
         x: Object.keys(stats.monthly_trends || {}),
         y: Object.values(stats.monthly_trends || {}),
@@ -286,28 +281,41 @@
         mode: "lines+markers",
         line: {color: "#6096ba", width: 3}
     }], {
-        title: "Monthly Publication Trends",
+        title: { text: "Monthly Publication Trends", font: { color: colors.fontColor } },
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
         font: {color: colors.fontColor},
-        xaxis: {rangeslider: {visible: false}, color: colors.axisColor},
-        yaxis: {color: colors.axisColor}
+        xaxis: {rangeslider: {visible: false}, color: colors.axisColor, gridcolor: colors.gridColor},
+        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor}
     });
 
-    // ✅ Re-render plots when theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    // ✅ Stronger theme reapplication
+    function applyThemeToCharts() {
         colors = getThemeColors();
         const update = {
-            font: {color: colors.fontColor},
+            'font.color': colors.fontColor,
+            'title.font.color': colors.fontColor,
+            'legend.font.color': colors.fontColor,
             'xaxis.color': colors.axisColor,
-            'yaxis.color': colors.axisColor
+            'yaxis.color': colors.axisColor,
+            'xaxis.gridcolor': colors.gridColor,
+            'yaxis.gridcolor': colors.gridColor
         };
-        Plotly.relayout('chart1', update);
-        Plotly.relayout('chart2', update);
-        Plotly.relayout('chart3', update);
-        Plotly.relayout('chart4', update);
-        Plotly.relayout('chart5', update);
-    });
+        ['chart1','chart2','chart3','chart4','chart5'].forEach(id => {
+            if (document.getElementById(id)) {
+                Plotly.relayout(id, update);
+            }
+        });
+    }
+
+    // Run once on load
+    applyThemeToCharts();
+
+    // Also rerun whenever the theme attribute changes
+    const observer = new MutationObserver(applyThemeToCharts);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 </script>
 {{ end }}
+
+
 

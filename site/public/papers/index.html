@@ -39369,22 +39369,21 @@
 
     
     function getThemeColors() {
-        const root = document.documentElement;
-        const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        const textDark  = getComputedStyle(root).getPropertyValue('--text-dark').trim() || '#000';
-        const textLight = getComputedStyle(root).getPropertyValue('--text-light').trim() || '#fff';
+        const rootStyles = getComputedStyle(document.documentElement);
+        const fontColor = rootStyles.getPropertyValue('--text-primary').trim() || '#000';
+        const border    = rootStyles.getPropertyValue('--border-primary').trim() || '#ccc';
 
         return {
-            fontColor: darkMode ? textLight : textDark,
-            axisColor: darkMode ? textLight : textDark
+            fontColor: fontColor,
+            axisColor: fontColor,
+            gridColor: border
         };
     }
     let colors = getThemeColors();
 
     
     const stats = {"monthly_trends":{"2016-03":1,"2016-10":3,"2016-11":1,"2016-12":1,"2017-01":1,"2017-02":1,"2017-06":1,"2017-11":2,"2018-07":2,"2019-03":1,"2019-09":2,"2019-10":2,"2019-11":3,"2020-01":2,"2020-03":1,"2020-06":2,"2020-07":1,"2020-09":1,"2020-12":1,"2021-02":2,"2021-03":3,"2021-04":2,"2021-05":2,"2021-06":4,"2021-07":2,"2021-08":1,"2021-09":1,"2021-10":2,"2021-11":2,"2021-12":3,"2022-01":5,"2022-02":1,"2022-03":4,"2022-04":2,"2022-05":1,"2022-07":1,"2022-08":2,"2022-09":6,"2022-10":1,"2022-11":3,"2022-12":3,"2023-01":1,"2023-02":2,"2023-03":2,"2023-04":2,"2023-05":1,"2023-06":3,"2023-07":3,"2023-08":1,"2023-09":5,"2023-10":1,"2023-11":2,"2023-12":3,"2024-01":4,"2024-02":3,"2024-03":2,"2024-04":3,"2024-05":6,"2024-06":4,"2024-07":2,"2024-08":3,"2024-09":5,"2024-10":1,"2024-11":7,"2024-12":5,"2025-01":2,"2025-02":4,"2025-03":6,"2025-04":1,"2025-05":3,"2025-06":2,"2025-07":3,"2025-09":12},"per_category":{"Anomaly Detection \u0026 Fault Prediction":16,"Beam Diagnostics":9,"Beam Dynamics":5,"Beamline Design \u0026 Simulation":20,"By Facility Type":5,"Data Management":27,"Novel Applications":135,"Operations \u0026 Control":2,"Optimization \u0026 Control":5,"Others":10,"RF Systems":4,"Reinforcement Learning \u0026 Autonomous Systems":25,"Reviews":10,"Statistics \u0026 Trends":37,"Surrogate Models":27,"Tools \u0026 Libraries":83},"per_keyword":{"GAN":1,"GPU":4,"anomaly detection":12,"beam":85,"control":42,"deep learning":34,"diagnostics":17,"optimization":34,"proton therapy":1,"reinforcement learning":20,"surrogate model":15,"time series":6,"transformer":6,"uncertainty quantification":4},"per_venue/journal":{"InspireHEP":2,"OpenAlex":7,"arXiv":177},"per_year":{"2016":6,"2017":5,"2018":2,"2019":8,"2020":8,"2021":24,"2022":29,"2023":26,"2024":45,"2025":33}};
-    
+
     
     Plotly.newPlot("chart1", [{
         x: Object.keys(stats.per_year || {}),
@@ -39392,18 +39391,16 @@
         type: "bar",
         marker: {color: "#6096ba"}
     }], {
-        title: "Publications per Year",
+        title: { text: "Publications per Year", font: { color: colors.fontColor } },
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
         font: {color: colors.fontColor},
-        xaxis: {color: colors.axisColor},
-        yaxis: {color: colors.axisColor}
+        xaxis: {color: colors.axisColor, gridcolor: colors.gridColor},
+        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor}
     });
 
-    
     const sortedCategories = Object.entries(stats.per_category || {})
         .sort((a, b) => b[1] - a[1]);
-    
     Plotly.newPlot("chart2", [{
         x: sortedCategories.map(c => c[1]),
         y: sortedCategories.map(c => c[0]),
@@ -39411,32 +39408,30 @@
         orientation: "h",
         marker: {color: "#6096ba"}
     }], {
-        title: "Publications by Category",
+        title: { text: "Publications by Category", font: { color: colors.fontColor } },
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
         margin: {l: 220},
         font: {color: colors.fontColor},
-        xaxis: {color: colors.axisColor},
-        yaxis: {color: colors.axisColor, automargin: true}
+        xaxis: {color: colors.axisColor, gridcolor: colors.gridColor},
+        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor, automargin: true}
     });
 
-    
     Plotly.newPlot("chart3", [{
         labels: Object.keys(stats["per_venue/journal"] || {}),
         values: Object.values(stats["per_venue/journal"] || {}),
         type: "pie"
     }], {
-        title: "Top Publication Venues",
+        title: { text: "Top Publication Venues", font: { color: colors.fontColor } },
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
-        font: {color: colors.fontColor}
+        font: {color: colors.fontColor},
+        legend: {font: {color: colors.fontColor}}
     });
 
-    
     const topKeywords = Object.entries(stats.per_keyword || {})
         .sort((a, b) => b[1] - a[1])
         .slice(0, 15);
-    
     Plotly.newPlot("chart4", [{
         x: topKeywords.map(k => k[1]),
         y: topKeywords.map(k => k[0]),
@@ -39444,16 +39439,15 @@
         orientation: "h",
         marker: {color: "#6096ba"}
     }], {
-        title: "Top Keywords",
+        title: { text: "Top Keywords", font: { color: colors.fontColor } },
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
         margin: {l: 250},
         font: {color: colors.fontColor},
-        xaxis: {color: colors.axisColor},
-        yaxis: {automargin: true, color: colors.axisColor}
+        xaxis: {color: colors.axisColor, gridcolor: colors.gridColor},
+        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor, automargin: true}
     });
 
-    
     Plotly.newPlot("chart5", [{
         x: Object.keys(stats.monthly_trends || {}),
         y: Object.values(stats.monthly_trends || {}),
@@ -39461,28 +39455,39 @@
         mode: "lines+markers",
         line: {color: "#6096ba", width: 3}
     }], {
-        title: "Monthly Publication Trends",
+        title: { text: "Monthly Publication Trends", font: { color: colors.fontColor } },
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
         font: {color: colors.fontColor},
-        xaxis: {rangeslider: {visible: false}, color: colors.axisColor},
-        yaxis: {color: colors.axisColor}
+        xaxis: {rangeslider: {visible: false}, color: colors.axisColor, gridcolor: colors.gridColor},
+        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor}
     });
 
     
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    function applyThemeToCharts() {
         colors = getThemeColors();
         const update = {
-            font: {color: colors.fontColor},
+            'font.color': colors.fontColor,
+            'title.font.color': colors.fontColor,
+            'legend.font.color': colors.fontColor,
             'xaxis.color': colors.axisColor,
-            'yaxis.color': colors.axisColor
+            'yaxis.color': colors.axisColor,
+            'xaxis.gridcolor': colors.gridColor,
+            'yaxis.gridcolor': colors.gridColor
         };
-        Plotly.relayout('chart1', update);
-        Plotly.relayout('chart2', update);
-        Plotly.relayout('chart3', update);
-        Plotly.relayout('chart4', update);
-        Plotly.relayout('chart5', update);
-    });
+        ['chart1','chart2','chart3','chart4','chart5'].forEach(id => {
+            if (document.getElementById(id)) {
+                Plotly.relayout(id, update);
+            }
+        });
+    }
+
+    
+    applyThemeToCharts();
+
+    
+    const observer = new MutationObserver(applyThemeToCharts);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 </script>
 
 </body>
