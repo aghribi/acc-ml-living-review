@@ -2,12 +2,10 @@ baseURL = "/"
 languageCode = "en-us"
 title = "The AI/ML for particle accelerators living review"
 
-[params]
-  description = "A Comprehensive Living Review of Machine Learning Applications in Accelerator Science"
-  author = "AI/ML for Particle Accelerators Collaboration"
-  github = "https://github.com/yourusername/ml-accel-review"
-  githubStars = "398"
-  githubForks = "122"
+[[params.social]]
+  name = "GitHub"
+  icon = "github"
+  url  = "https://github.com/aghribi/acc-ml-living-review"
 
 [taxonomies]
   category = "categories"
