@@ -2,12 +2,12 @@
 
 {{ define "main" }}
 {{ $data := .Site.Data.livingreview }}
-{{ $stats := $data.stats }}
-{{ $papers := $data.papers }}
+{{ $stats := default dict $data.stats }}
+{{ $papers := default (dict) $data.papers }}
 
 <div class="page-header">
     <h1>Browse the Living Review</h1>
-    <p class="page-subtitle">{{ len $papers }}+ papers on AI/ML applications in particle accelerator science</p>
+    <p class="page-subtitle">{{ len (default (dict) $papers) }}+ papers on AI/ML applications in particle accelerator science</p>
     <div class="search-section">
         <div class="search-container">
             <span class="search-icon">🔍</span>
@@ -40,7 +40,7 @@
             <h2>About This Living Review</h2>
             <p>This living document compiles research applying ML/AI to particle accelerators. Data and charts are updated automatically based on the latest publications from arXiv, INSPIRE-HEP, and other sources.</p>
             <p style="margin-top: 10px;">
-                <strong>Total papers:</strong> {{ len $papers }}<br>
+                <strong>Total papers:</strong> {{ len (default (dict) $papers) }}<br>
                 <strong>Last updated:</strong> {{ now.Format "January 2, 2006" }}
             </p>
         </div>
@@ -194,12 +194,12 @@
     });
 
     // Load statistics data from Hugo (re-define variable for this scope)
-    const stats = {{ .Site.Data.livingreview.stats | jsonify | safeJS }};
+    const stats = {{ $stats | jsonify | safeJS }};
     
     // Chart 1: Publications per year
     Plotly.newPlot("chart1", [{
-        x: Object.keys(stats.per_year),
-        y: Object.values(stats.per_year),
+        x: Object.keys(stats.per_year || {}),
+        y: Object.values(stats.per_year || {}),
         type: "bar",
         marker: {color: "#6096ba"}
     }], {
@@ -210,7 +210,7 @@
     });
 
     // Chart 2: Publications by category
-    const sortedCategories = Object.entries(stats.per_category)
+    const sortedCategories = Object.entries(stats.per_category || {})
         .sort((a, b) => b[1] - a[1]);
     
     Plotly.newPlot("chart2", [{
@@ -229,8 +229,8 @@
 
     // Chart 3: Top venues
     Plotly.newPlot("chart3", [{
-        labels: Object.keys(stats["per_venue/journal"]),
-        values: Object.values(stats["per_venue/journal"]),
+        labels: Object.keys(stats["per_venue/journal"] || {}),
+        values: Object.values(stats["per_venue/journal"] || {}),
         type: "pie"
     }], {
         title: "Top Publication Venues",
@@ -240,7 +240,7 @@
     });
 
     // Chart 4: Top keywords
-    const topKeywords = Object.entries(stats.per_keyword)
+    const topKeywords = Object.entries(stats.per_keyword || {})
         .sort((a, b) => b[1] - a[1])
         .slice(0, 15);
     
@@ -260,8 +260,8 @@
 
     // Chart 5: Monthly trends
     Plotly.newPlot("chart5", [{
-        x: Object.keys(stats.monthly_trends),
-        y: Object.values(stats.monthly_trends),
+        x: Object.keys(stats.monthly_trends || {}),
+        y: Object.values(stats.monthly_trends || {}),
         type: "scatter",
         mode: "lines+markers",
         line: {color: "#6096ba", width: 3}
