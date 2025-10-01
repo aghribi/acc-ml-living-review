@@ -2,19 +2,20 @@
 
 {{ define "main" }}
 {{ $data := .Site.Data.livingreview }}
+{{ $stats := $data.stats | default dict }}
 {{ $papers := $data.papers | default slice }}
-{{ $stats := $data.stats }}
+{{ $summary := .Site.Data.statistics | default dict }}
 
 <!-- Calculate latest papers (from last month) -->
 {{ $latestPapers := slice }}
 {{ if $papers }}
-{{ $currentMonth := now.Format "2006-01" }}
-{{ range $papers }}
+  {{ $currentMonth := now.Format "2006-01" }}
+  {{ range $papers }}
     {{ $paperMonth := substr .date 0 7 }}
     {{ if eq $paperMonth $currentMonth }}
-        {{ $latestPapers = $latestPapers | append . }}
+      {{ $latestPapers = $latestPapers | append . }}
     {{ end }}
-{{ end }}
+  {{ end }}
 {{ end }}
 
 <div class="page-header">
@@ -25,6 +26,22 @@
         <span class="living-badge">
             <span class="status-dot"></span>
             LIVING REVIEW • CONTINUOUSLY UPDATED
+        </span>
+        <span class="living-badge">
+            🕒 Last update: 
+            {{ with $summary.last_updated }}
+              {{ (time .).Format "January 2, 2006, 15:04 MST" }}
+            {{ else }}
+              N/A
+            {{ end }}
+        </span>
+        <span class="living-badge">
+            🔮 Next update: 
+            {{ with $summary.next_update }}
+              {{ (time .).Format "January 2, 2006, 15:04 MST" }}
+            {{ else }}
+              N/A
+            {{ end }}
         </span>
     </div>
 </div>
@@ -41,7 +58,13 @@
             <div class="stat-label">Categories</div>
         </div>
         <div class="stat-card">
-            <div class="stat-number">{{ now.Format "Jan 2006" }}</div>
+            <div class="stat-number">
+                {{ with $summary.last_updated }}
+                  {{ (time .).Format "Jan 2006" }}
+                {{ else }}
+                  N/A
+                {{ end }}
+            </div>
             <div class="stat-label">Last Updated</div>
         </div>
         <div class="stat-card">
@@ -54,7 +77,9 @@
     <div class="section">
         <h2>Overview</h2>
         <p class="intro-text">
-            This living review provides a comprehensive survey of artificial intelligence and machine learning applications in particle accelerator science. As the field rapidly evolves, we continuously update this review to reflect the latest research, methodologies, and experimental results from facilities worldwide. Our goal is to serve as a central reference for researchers, operators, and engineers working at the intersection of AI/ML and accelerator physics.
+            This living review provides a comprehensive survey of artificial intelligence and machine learning applications in particle accelerator science. 
+            As the field rapidly evolves, we continuously update this review to reflect the latest research, methodologies, and experimental results from facilities worldwide. 
+            Our goal is to serve as a central reference for researchers, operators, and engineers working at the intersection of AI/ML and accelerator physics.
         </p>
     </div>
 
@@ -62,7 +87,9 @@
     {{ if gt (len $latestPapers) 0 }}
     <div class="section">
         <h2>Latest Additions</h2>
-        <p class="intro-text" style="margin-bottom: 20px;">Recently added papers from {{ now.Format "January 2006" }}</p>
+        <p class="intro-text" style="margin-bottom: 20px;">
+            Recently added papers from {{ now.Format "January 2006" }}
+        </p>
         
         {{ range first 5 $latestPapers }}
         <div class="paper-item">
@@ -95,23 +122,6 @@
         
         <div style="text-align: center; margin-top: 30px;">
             <a href="/papers/" class="btn btn-primary">View All Papers →</a>
-        </div>
-    </div>
-    {{ end }}
-
-    <!-- Categories Overview -->
-    {{ if $stats.per_category }}
-    <div class="section">
-        <h2>Research Areas</h2>
-        <p class="intro-text" style="margin-bottom: 20px;">Explore papers across different application domains</p>
-        
-        <div class="topic-grid">
-            {{ range $category, $count := $stats.per_category }}
-            <a href="/papers/#{{ $category | urlize }}" class="topic-card">
-                <div class="topic-title">{{ $category }}</div>
-                <div class="topic-desc">{{ $count }} papers</div>
-            </a>
-            {{ end }}
         </div>
     </div>
     {{ end }}

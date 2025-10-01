@@ -5,13 +5,29 @@ exporters.py
 Output/export utilities for the **Living Review** project.
 
 This module provides functions to export processed papers and statistics
-into formats directly consumable by the Hugo site and citation managers:
+into formats directly consumable by the Hugo site and citation managers.
 
-- JSON → site/data/livingreview.json + site/data/statistics.json
-- BibTeX → site/static/downloads/livingreview.bib
-- PDF → site/static/downloads/livingreview.pdf
+Export Targets
+--------------
+- **JSON**   → `site/data/livingreview.json` + `site/data/statistics.json`
+    The canonical JSON database, containing papers + statistics.
+    Used by Hugo templates, Decap CMS, and downstream visualisations.
+
+- **BibTeX** → `site/static/downloads/livingreview.bib`
+    A citation file containing all papers in BibTeX format.
+
+- **PDF**    → `site/static/downloads/livingreview.pdf`
+    A printable PDF summary of the review.
+
+Typical Usage
+-------------
+>>> from living_review.exporters import export_json, export_bibtex, export_pdf
+>>> export_json(papers, stats, outdir=".")
+>>> export_bibtex(papers, outdir=".")
+>>> export_pdf(papers, stats, outdir=".")
 """
 
+import os
 import json
 from pathlib import Path
 
@@ -21,7 +37,7 @@ from pathlib import Path
 # ---------------------------
 def _resolve_outpath(outdir: Path, kind: str) -> Path:
     """
-    Always resolve paths relative to the Hugo 'site/' directory at repo root.
+    Always resolve paths relative to the Hugo `site/` directory at repo root.
 
     Parameters
     ----------
@@ -34,11 +50,6 @@ def _resolve_outpath(outdir: Path, kind: str) -> Path:
     -------
     Path
         The resolved subdirectory where the file should be written.
-    """
-def _resolve_outpath(outdir: Path, kind: str) -> Path:
-    """
-    Always resolve paths relative to the Hugo 'site/' directory.
-    If outdir is inside another folder (e.g. 'output'), climb up until 'site/' is found.
     """
     outdir = Path(outdir).resolve()
 
@@ -58,7 +69,6 @@ def _resolve_outpath(outdir: Path, kind: str) -> Path:
     return site_dir
 
 
-
 # ---------------------------
 # JSON Export (canonical DB)
 # ---------------------------
@@ -66,16 +76,34 @@ def export_json(papers, stats, outdir, chunking=None):
     """
     Export the canonical JSON database for Hugo and Decap CMS.
 
-    Output files:
-    - site/data/livingreview.json   (stats first, then papers)
-    - site/data/statistics.json     (simplified global stats)
+    Output files
+    ------------
+    - `site/data/livingreview.json` : Full DB (stats + papers)
+    - `site/data/statistics.json`   : Simplified global stats
+
+    Metadata
+    --------
+    - Adds `last_updated` as UTC ISO timestamp.
+    - Adds `next_update` based on environment variable `UPDATE_INTERVAL_HOURS`
+      (default: 24h).
     """
     from collections import OrderedDict
+    from datetime import datetime, timedelta, timezone
+
     outpath = _resolve_outpath(Path(outdir), kind="json")
     outpath.mkdir(parents=True, exist_ok=True)
 
-    papers_dict = {str(p.key_for_dedup()): p.to_dict() for p in papers}
+    # Ensure metadata in stats
+    now = datetime.now(timezone.utc)
+    stats = dict(stats)  # shallow copy
+    stats["last_updated"] = now.isoformat()
 
+    # configurable interval (hours)
+    interval_hours = int(os.getenv("UPDATE_INTERVAL_HOURS", "24"))
+    stats["next_update"] = (now + timedelta(hours=interval_hours)).isoformat()
+
+    # Full papers DB
+    papers_dict = {str(p.key_for_dedup()): p.to_dict() for p in papers}
     result = OrderedDict()
     result["stats"] = stats
     result["papers"] = papers_dict
@@ -85,13 +113,16 @@ def export_json(papers, stats, outdir, chunking=None):
         json.dump(result, f, indent=2, ensure_ascii=False)
     print(f"[ok] JSON DB (stats + papers) written → {fname}")
 
+    # Global stats summary
+    monthly_trends = stats.get("monthly_trends", {})
+    latest_month = max(monthly_trends, default="")
     global_stats = {
         "total_papers": len(papers),
         "total_categories": len(stats.get("per_category", {})),
-        "last_updated": stats.get("last_updated", ""),
-        "next_update": stats.get("next_update", ""),
-        "latest_papers": stats.get("monthly_trends", {}).get(max(stats.get("monthly_trends", {}), default=""), 0),
-        "latest_month": max(stats.get("monthly_trends", {}), default="")
+        "last_updated": stats["last_updated"],
+        "next_update": stats["next_update"],
+        "latest_papers": monthly_trends.get(latest_month, 0),
+        "latest_month": latest_month,
     }
     sname = outpath / "statistics.json"
     with open(sname, "w", encoding="utf-8") as f:
@@ -106,7 +137,9 @@ def export_bibtex(papers, outdir):
     """
     Export papers into a BibTeX file for citation management.
 
-    Output file: site/static/downloads/livingreview.bib
+    Output file
+    -----------
+    - `site/static/downloads/livingreview.bib`
     """
     outpath = _resolve_outpath(Path(outdir), kind="bibtex")
     outpath.mkdir(parents=True, exist_ok=True)
@@ -141,7 +174,9 @@ def export_pdf(papers, stats, outdir):
     """
     Export a printable PDF summary of the review.
 
-    Output file: site/static/downloads/livingreview.pdf
+    Output file
+    -----------
+    - `site/static/downloads/livingreview.pdf`
     """
     from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
     from reportlab.lib.styles import getSampleStyleSheet

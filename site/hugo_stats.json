@@ -82,10 +82,6 @@
       "plotly-chart",
       "primary",
       "required",
-      "search-bar",
-      "search-container",
-      "search-icon",
-      "search-section",
       "section",
       "section-body",
       "section-header",
@@ -100,11 +96,7 @@
       "toc",
       "toc-item",
       "toc-link",
-      "toc-list",
-      "topic-card",
-      "topic-desc",
-      "topic-grid",
-      "topic-title"
+      "toc-list"
     ],
     "ids": [
       "abstract",

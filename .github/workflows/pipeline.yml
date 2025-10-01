@@ -11,6 +11,8 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      UPDATE_INTERVAL_HOURS: 24   # hours between updates
     steps:
       - uses: actions/checkout@v3
 
