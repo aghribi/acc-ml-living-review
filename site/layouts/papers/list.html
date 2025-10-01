@@ -195,13 +195,13 @@
 
     // ✅ Theme-aware colors
     function getThemeColors() {
-        const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
         return {
-            fontColor: dark ? '#fff' : '#000',
-            axisColor: dark ? '#fff' : '#000'
+            fontColor: darkMode ? '#fff' : '#000',
+            axisColor: darkMode ? '#fff' : '#000'
         };
     }
-    const colors = getThemeColors();
+    let colors = getThemeColors();
 
     // ✅ Load stats from Hugo data
     const stats = {{ site.Data.livingreview.stats | default dict | jsonify | safeJS }};
@@ -268,7 +268,7 @@
         title: "Top Keywords",
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
-        margin: {l: 250},  // ✅ more left margin
+        margin: {l: 250},
         font: {color: colors.fontColor},
         xaxis: {color: colors.axisColor},
         yaxis: {automargin: true, color: colors.axisColor}
@@ -288,6 +288,21 @@
         font: {color: colors.fontColor},
         xaxis: {rangeslider: {visible: false}, color: colors.axisColor},
         yaxis: {color: colors.axisColor}
+    });
+
+    // ✅ Re-render plots when theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        colors = getThemeColors();
+        const update = {
+            font: {color: colors.fontColor},
+            'xaxis.color': colors.axisColor,
+            'yaxis.color': colors.axisColor
+        };
+        Plotly.relayout('chart1', update);
+        Plotly.relayout('chart2', update);
+        Plotly.relayout('chart3', update);
+        Plotly.relayout('chart4', update);
+        Plotly.relayout('chart5', update);
     });
 </script>
 {{ end }}
