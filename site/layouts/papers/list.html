@@ -193,7 +193,17 @@
         });
     });
 
-    // ✅ FIX: load stats directly from Site.Data (no undefined $stats in scope)
+    // ✅ Theme-aware colors
+    function getThemeColors() {
+        const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return {
+            fontColor: dark ? '#fff' : '#000',
+            axisColor: dark ? '#fff' : '#000'
+        };
+    }
+    const colors = getThemeColors();
+
+    // ✅ Load stats from Hugo data
     const stats = {{ site.Data.livingreview.stats | default dict | jsonify | safeJS }};
     
     // Chart 1: Publications per year
@@ -206,7 +216,9 @@
         title: "Publications per Year",
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
-        font: {color: 'var(--text-primary)'}
+        font: {color: colors.fontColor},
+        xaxis: {color: colors.axisColor},
+        yaxis: {color: colors.axisColor}
     });
 
     // Chart 2: Publications by category
@@ -224,7 +236,9 @@
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
         margin: {l: 220},
-        font: {color: 'var(--text-primary)'}
+        font: {color: colors.fontColor},
+        xaxis: {color: colors.axisColor},
+        yaxis: {color: colors.axisColor, automargin: true}
     });
 
     // Chart 3: Top venues
@@ -236,10 +250,10 @@
         title: "Top Publication Venues",
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
-        font: {color: 'var(--text-primary)'}
+        font: {color: colors.fontColor}
     });
 
-    // Chart 4: Top keywords
+    // Chart 4: Top keywords (fix truncated labels)
     const topKeywords = Object.entries(stats.per_keyword || {})
         .sort((a, b) => b[1] - a[1])
         .slice(0, 15);
@@ -254,8 +268,10 @@
         title: "Top Keywords",
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
-        margin: {l: 150},
-        font: {color: 'var(--text-primary)'}
+        margin: {l: 250},  // ✅ more left margin
+        font: {color: colors.fontColor},
+        xaxis: {color: colors.axisColor},
+        yaxis: {automargin: true, color: colors.axisColor}
     });
 
     // Chart 5: Monthly trends
@@ -269,8 +285,10 @@
         title: "Monthly Publication Trends",
         paper_bgcolor: 'rgba(0,0,0,0)',
         plot_bgcolor: 'rgba(0,0,0,0)',
-        xaxis: {rangeslider: {visible: false}},
-        font: {color: 'var(--text-primary)'}
+        font: {color: colors.fontColor},
+        xaxis: {rangeslider: {visible: false}, color: colors.axisColor},
+        yaxis: {color: colors.axisColor}
     });
 </script>
 {{ end }}
+
