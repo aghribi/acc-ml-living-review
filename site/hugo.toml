@@ -2,6 +2,9 @@ baseURL = "/"
 languageCode = "en-us"
 title = "The AI/ML for particle accelerators living review"
 
+[params]
+  github = "https://github.com/aghribi/acc-ml-living-review"
+
 [[params.social]]
   name = "GitHub"
   icon = "github"
