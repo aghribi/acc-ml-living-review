@@ -1,9 +1,24 @@
-<footer>
-    <h3>Join the Community</h3>
-    <p>This living review is maintained by the accelerator physics community.</p>
-    <p>Last updated: {{ now.Format "January 2006" }}</p>
-    <p style="margin-top: 10px; font-size: 0.9em;">
-        <a href="{{ .Site.Params.github }}" target="_blank" style="color: inherit;">GitHub</a> • 
-        <a href="/admin/" style="color: inherit;">Admin</a>
-    </p>
+<footer style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+
+  <!-- Left side: your existing footer text -->
+  <div class="footer-left">
+      <h3>Join the Community</h3>
+      <p>This living review is maintained by the accelerator physics community.</p>
+      <p>Last updated: {{ now.Format "January 2006" }}</p>
+      <p style="margin-top: 10px; font-size: 0.9em;">
+          <a href="{{ .Site.Params.github }}" target="_blank" style="color: inherit;">GitHub</a> • 
+          <a href="https://acc-living-review.netlify.app/admin/#/collections/submissions" style="color: inherit;">Admin</a>
+      </p>
+  </div>
+
+  <!-- Right side: contributors -->
+  <div class="footer-contributors" style="text-align:center; min-width: 240px;">
+      <small>Contributors</small><br>
+      <a href="https://github.com/aghribi/acc-ml-living-review/graphs/contributors" target="_blank">
+          <img src="https://contrib.rocks/image?repo=aghribi/acc-ml-living-review"
+               alt="GitHub contributors"
+               style="max-width: 220px; border-radius: 6px; margin-top:0.5rem;" />
+      </a>
+  </div>
+
 </footer>

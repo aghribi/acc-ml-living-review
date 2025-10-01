@@ -9,6 +9,7 @@ backend:
   name: git-gateway
   branch: main   # or whatever your default branch is
 
+site_url: https://acc-living-review.netlify.app
 
 # Local backend for development
 # Uncomment for local testing: npx decap-server

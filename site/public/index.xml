@@ -31,6 +31,13 @@
     </item>
     <item>
       <title></title>
+      <link>//localhost:1313/cite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/cite/</guid>
+      <description>&lt;div class=&#34;container&#34;&gt;&#xA;  &lt;div class=&#34;page-header&#34;&gt;&#xA;    &lt;h1&gt;How to Cite This Review&lt;/h1&gt;&#xA;    &lt;p class=&#34;page-subtitle&#34;&gt;Help us track the impact of this living review by citing it in your work&lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- 📥 Download section moved on top --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;Download Citation Files&lt;/h2&gt;&#xA;    &lt;p&gt;Download citation files in various formats for easy import into your reference manager:&lt;/p&gt;&#xA;    &lt;div class=&#34;download-buttons&#34;&gt;&#xA;      &lt;a href=&#34;//localhost:1313/downloads/ml-accel-review.bib&#34; class=&#34;btn&#34; download&gt;📋 BibTeX (.bib)&lt;/a&gt;&#xA;      &lt;a href=&#34;//localhost:1313/downloads/ml-accel-review.ris&#34; class=&#34;btn&#34; download&gt;📄 RIS Format (.ris)&lt;/a&gt;&#xA;      &lt;a href=&#34;//localhost:1313/downloads/ml-accel-review.enw&#34; class=&#34;btn&#34; download&gt;📑 EndNote (.enw)&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- BibTeX entry --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;BibTeX Entry&lt;/h2&gt;&#xA;    &lt;p&gt;Use this BibTeX entry for LaTeX documents:&lt;/p&gt;&#xA;    &lt;div class=&#34;citation-box&#34;&gt;&#xA;      &lt;button class=&#34;copy-button&#34; onclick=&#34;copyToClipboard(&#39;bibtex&#39;, this)&#34;&gt;Copy&lt;/button&gt;&#xA;      &lt;pre class=&#34;citation-text&#34; id=&#34;bibtex&#34;&gt;&#xA;@misc{ml_accel_review_2025,&#xA;  title        = {The AI/ML for particle accelerators living review},&#xA;  author       = {{AI/ML for Particle Accelerators Collaboration}},&#xA;  year         = {2025},&#xA;  howpublished = {\url{https://ml-accel-review.org}},&#xA;  note         = {Accessed: 2025-09-30}&#xA;}&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- Why Cite --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;Why Cite This Review?&lt;/h2&gt;&#xA;    &lt;p&gt;By citing this living review, you:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>//localhost:1313/review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/review/</guid>
@@ -42,13 +49,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/about/</guid>
       <description>&lt;p&gt;This site hosts the &lt;strong&gt;Accelerator ML Living Review&lt;/strong&gt;, a continuously updated overview of AI and machine learning applications in particle accelerator physics.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cite Us</title>
-      <link>//localhost:1313/cite/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/cite/</guid>
-      <description>&lt;div class=&#34;container&#34;&gt;&#xA;  &lt;div class=&#34;page-header&#34;&gt;&#xA;    &lt;h1&gt;How to Cite This Review&lt;/h1&gt;&#xA;    &lt;p class=&#34;page-subtitle&#34;&gt;Help us track the impact of this living review by citing it in your work&lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- 📥 Download section moved on top --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;Download Citation Files&lt;/h2&gt;&#xA;    &lt;p&gt;Download citation files in various formats for easy import into your reference manager:&lt;/p&gt;&#xA;    &lt;div class=&#34;download-buttons&#34;&gt;&#xA;      &lt;a href=&#34;//localhost:1313/downloads/ml-accel-review.bib&#34; class=&#34;btn&#34; download&gt;📋 BibTeX (.bib)&lt;/a&gt;&#xA;      &lt;a href=&#34;//localhost:1313/downloads/ml-accel-review.ris&#34; class=&#34;btn&#34; download&gt;📄 RIS Format (.ris)&lt;/a&gt;&#xA;      &lt;a href=&#34;//localhost:1313/downloads/ml-accel-review.enw&#34; class=&#34;btn&#34; download&gt;📑 EndNote (.enw)&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- BibTeX entry --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;BibTeX Entry&lt;/h2&gt;&#xA;    &lt;p&gt;Use this BibTeX entry for LaTeX documents:&lt;/p&gt;&#xA;    &lt;div class=&#34;citation-box&#34;&gt;&#xA;      &lt;button class=&#34;copy-button&#34; onclick=&#34;copyToClipboard(&#39;bibtex&#39;, this)&#34;&gt;Copy&lt;/button&gt;&#xA;      &lt;pre class=&#34;citation-text&#34; id=&#34;bibtex&#34;&gt;&#xA;@misc{ml_accel_review_2025,&#xA;  title        = {The AI/ML for particle accelerators living review},&#xA;  author       = {{AI/ML for Particle Accelerators Collaboration}},&#xA;  year         = {2025},&#xA;  howpublished = {\url{https://ml-accel-review.org}},&#xA;  note         = {Accessed: 2025-09-30}&#xA;}&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- Why Cite --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;Why Cite This Review?&lt;/h2&gt;&#xA;    &lt;p&gt;By citing this living review, you:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Submit a Paper</title>
