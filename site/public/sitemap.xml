@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>/cite-us/</loc><lastmod>2025-01-01T00:00:00+00:00</lastmod></url><url><loc>/docs/</loc><lastmod>2025-01-01T00:00:00+00:00</lastmod></url><url><loc>/documentation/</loc><lastmod>2025-01-01T00:00:00+00:00</lastmod></url><url><loc>/contribute/</loc><lastmod>2025-01-01T00:00:00+00:00</lastmod></url><url><loc>/</loc><lastmod>2025-01-01T00:00:00+00:00</lastmod></url><url><loc>/review/</loc></url><url><loc>/about/</loc></url><url><loc>/papers/</loc></url><url><loc>/categories/</loc></url><url><loc>/cite/</loc></url><url><loc>/submit/</loc></url><url><loc>/tags/</loc></url><url><loc>/venues/</loc></url><url><loc>/years/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>//localhost:1313/cite-us/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/docs/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/documentation/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/contribute/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/review/</loc>
+  </url><url>
+    <loc>//localhost:1313/about/</loc>
+  </url><url>
+    <loc>//localhost:1313/papers/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/cite/</loc>
+  </url><url>
+    <loc>//localhost:1313/submit/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+  </url><url>
+    <loc>//localhost:1313/venues/</loc>
+  </url><url>
+    <loc>//localhost:1313/years/</loc>
+  </url>
+</urlset>

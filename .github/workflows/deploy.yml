@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main ]
 
-permissions:          # needed for pushing to gh-pages
-  contents: write
+permissions:
+  contents: write   # needed to push to gh-pages
 
 jobs:
   build-deploy:
@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Hugo
         run: |
-          hugo -s site --minify
+          hugo -s site --minify --baseURL "https://aghribi.github.io/acc-ml-living-review/"
           echo "===== Contents of site/public ====="
           ls -R site/public || true
         # Hugo output in site/public
@@ -42,7 +42,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt   # root requirements.txt
+          pip install -r requirements.txt
 
       - name: Build Sphinx
         run: |
