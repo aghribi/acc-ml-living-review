@@ -8,12 +8,6 @@
 <div class="page-header">
     <h1>Browse the Living Review</h1>
     <p class="page-subtitle">{{ len (default (dict) $papers) }}+ papers on AI/ML applications in particle accelerator science</p>
-    <div class="search-section">
-        <div class="search-container">
-            <span class="search-icon">🔍</span>
-            <input type="text" class="search-bar" id="searchInput" placeholder="Search papers, methods, facilities, or topics...">
-        </div>
-    </div>
     <div class="controls">
         <button class="btn" onclick="expandAll()">Expand All</button>
         <button class="btn" onclick="collapseAll()">Collapse All</button>
@@ -24,6 +18,13 @@
     <!-- Table of Contents -->
     <aside class="toc">
         <h3>Table of Contents</h3>
+
+        <!-- ✅ Filter bar inside TOC -->
+        <div class="filter-container">
+            <input type="text" class="filter-bar" id="searchInput" 
+                   placeholder="Filter papers by title, author, keyword...">
+        </div>
+
         <ul class="toc-list">
             <li class="toc-item"><a href="#statistics" class="toc-link">📊 Statistics & Trends</a></li>
             {{ range $category, $count := $stats.per_category }}
@@ -145,151 +146,98 @@
 
 {{ define "scripts" }}
 <script>
-    // Collapse/expand sections
-    document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('.section .section-header').forEach(header => {
-            header.addEventListener('click', () => {
-                header.parentElement.classList.toggle('collapsed');
-            });
+document.addEventListener('DOMContentLoaded', () => {
+    // Collapse/expand
+    document.querySelectorAll('.section .section-header').forEach(header => {
+        header.addEventListener('click', () => {
+            header.parentElement.classList.toggle('collapsed');
         });
     });
-
-    function expandAll() {
-        document.querySelectorAll('.section').forEach(s => s.classList.remove('collapsed'));
-    }
-
-    function collapseAll() {
+    window.expandAll = () => document.querySelectorAll('.section').forEach(s => s.classList.remove('collapsed'));
+    window.collapseAll = () => {
         document.querySelectorAll('.section').forEach(s => s.classList.add('collapsed'));
         document.getElementById('statistics')?.classList.remove('collapsed');
+    };
+
+    // Filter
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', e => {
+            const searchTerm = e.target.value.toLowerCase();
+            const papers = document.querySelectorAll('.paper-item');
+
+            papers.forEach(paper => {
+                const title = paper.querySelector('.paper-title').textContent.toLowerCase();
+                const authors = paper.querySelector('.paper-authors').textContent.toLowerCase();
+                const tags = Array.from(paper.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+                paper.style.display = (title.includes(searchTerm) || authors.includes(searchTerm) || tags.includes(searchTerm)) ? 'block' : 'none';
+            });
+
+            document.querySelectorAll('.section:not(#statistics)').forEach(section => {
+                const visiblePapers = section.querySelectorAll('.paper-item[style*="display: block"]');
+                section.style.display = (searchTerm && visiblePapers.length === 0) ? 'none' : 'block';
+            });
+        });
     }
 
-    // Search functionality
-    document.getElementById('searchInput')?.addEventListener('input', function(e) {
-        const searchTerm = e.target.value.toLowerCase();
-        const papers = document.querySelectorAll('.paper-item');
-        let visibleCount = 0;
-        
-        papers.forEach(paper => {
-            const title = paper.querySelector('.paper-title').textContent.toLowerCase();
-            const authors = paper.querySelector('.paper-authors').textContent.toLowerCase();
-            const tags = Array.from(paper.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
-            
-            if (title.includes(searchTerm) || authors.includes(searchTerm) || tags.includes(searchTerm)) {
-                paper.style.display = 'block';
-                visibleCount++;
-            } else {
-                paper.style.display = 'none';
-            }
-        });
-        
-        // Show/hide sections based on visible papers
-        document.querySelectorAll('.section:not(#statistics)').forEach(section => {
-            const visiblePapers = section.querySelectorAll('.paper-item[style*="display: block"], .paper-item:not([style*="display: none"])');
-            if (searchTerm && visiblePapers.length === 0) {
-                section.style.display = 'none';
-            } else {
-                section.style.display = 'block';
-            }
-        });
-    });
-
-    // ✅ Use CSS variable --text-primary for adaptive font colors
+    // Theme colors
     function getThemeColors() {
-        const rootStyles = getComputedStyle(document.documentElement);
-        const fontColor = rootStyles.getPropertyValue('--text-primary').trim() || '#000';
-        const border    = rootStyles.getPropertyValue('--border-primary').trim() || '#ccc';
-
+        const root = getComputedStyle(document.documentElement);
         return {
-            fontColor: fontColor,
-            axisColor: fontColor,
-            gridColor: border
+            fontColor: root.getPropertyValue('--text-primary').trim() || '#000',
+            axisColor: root.getPropertyValue('--text-primary').trim() || '#000',
+            gridColor: root.getPropertyValue('--border-primary').trim() || '#ccc'
         };
     }
     let colors = getThemeColors();
-
-    // ✅ Load stats from Hugo data
     const stats = {{ site.Data.livingreview.stats | default dict | jsonify | safeJS }};
 
-    // === PLOTS ===
+    // === Plots ===
     Plotly.newPlot("chart1", [{
         x: Object.keys(stats.per_year || {}),
         y: Object.values(stats.per_year || {}),
         type: "bar",
         marker: {color: "#6096ba"}
-    }], {
-        title: { text: "Publications per Year", font: { color: colors.fontColor } },
-        paper_bgcolor: 'rgba(0,0,0,0)',
-        plot_bgcolor: 'rgba(0,0,0,0)',
-        font: {color: colors.fontColor},
-        xaxis: {color: colors.axisColor, gridcolor: colors.gridColor},
-        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor}
-    });
+    }], { title:{text:"Publications per Year",font:{color:colors.fontColor}},
+        paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)',
+        font:{color:colors.fontColor}, xaxis:{color:colors.axisColor,gridcolor:colors.gridColor},
+        yaxis:{color:colors.axisColor,gridcolor:colors.gridColor} });
 
-    const sortedCategories = Object.entries(stats.per_category || {})
-        .sort((a, b) => b[1] - a[1]);
+    const sortedCategories = Object.entries(stats.per_category || {}).sort((a,b)=>b[1]-a[1]);
     Plotly.newPlot("chart2", [{
-        x: sortedCategories.map(c => c[1]),
-        y: sortedCategories.map(c => c[0]),
-        type: "bar",
-        orientation: "h",
-        marker: {color: "#6096ba"}
-    }], {
-        title: { text: "Publications by Category", font: { color: colors.fontColor } },
-        paper_bgcolor: 'rgba(0,0,0,0)',
-        plot_bgcolor: 'rgba(0,0,0,0)',
-        margin: {l: 220},
-        font: {color: colors.fontColor},
-        xaxis: {color: colors.axisColor, gridcolor: colors.gridColor},
-        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor, automargin: true}
-    });
+        x: sortedCategories.map(c=>c[1]), y: sortedCategories.map(c=>c[0]),
+        type:"bar", orientation:"h", marker:{color:"#6096ba"}
+    }], { title:{text:"Publications by Category",font:{color:colors.fontColor}},
+        paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)', margin:{l:220},
+        font:{color:colors.fontColor}, xaxis:{color:colors.axisColor,gridcolor:colors.gridColor},
+        yaxis:{color:colors.axisColor,gridcolor:colors.gridColor,automargin:true} });
 
     Plotly.newPlot("chart3", [{
-        labels: Object.keys(stats["per_venue/journal"] || {}),
-        values: Object.values(stats["per_venue/journal"] || {}),
-        type: "pie"
-    }], {
-        title: { text: "Top Publication Venues", font: { color: colors.fontColor } },
-        paper_bgcolor: 'rgba(0,0,0,0)',
-        plot_bgcolor: 'rgba(0,0,0,0)',
-        font: {color: colors.fontColor},
-        legend: {font: {color: colors.fontColor}}
-    });
+        labels:Object.keys(stats["per_venue/journal"]||{}),
+        values:Object.values(stats["per_venue/journal"]||{}),
+        type:"pie"
+    }], { title:{text:"Top Publication Venues",font:{color:colors.fontColor}},
+        paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)',
+        font:{color:colors.fontColor}, legend:{font:{color:colors.fontColor}} });
 
-    const topKeywords = Object.entries(stats.per_keyword || {})
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 15);
+    const topKeywords = Object.entries(stats.per_keyword || {}).sort((a,b)=>b[1]-a[1]).slice(0,15);
     Plotly.newPlot("chart4", [{
-        x: topKeywords.map(k => k[1]),
-        y: topKeywords.map(k => k[0]),
-        type: "bar",
-        orientation: "h",
-        marker: {color: "#6096ba"}
-    }], {
-        title: { text: "Top Keywords", font: { color: colors.fontColor } },
-        paper_bgcolor: 'rgba(0,0,0,0)',
-        plot_bgcolor: 'rgba(0,0,0,0)',
-        margin: {l: 250},
-        font: {color: colors.fontColor},
-        xaxis: {color: colors.axisColor, gridcolor: colors.gridColor},
-        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor, automargin: true}
-    });
+        x: topKeywords.map(k=>k[1]), y: topKeywords.map(k=>k[0]),
+        type:"bar", orientation:"h", marker:{color:"#6096ba"}
+    }], { title:{text:"Top Keywords",font:{color:colors.fontColor}},
+        paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)', margin:{l:250},
+        font:{color:colors.fontColor}, xaxis:{color:colors.axisColor,gridcolor:colors.gridColor},
+        yaxis:{color:colors.axisColor,gridcolor:colors.gridColor,automargin:true} });
 
     Plotly.newPlot("chart5", [{
-        x: Object.keys(stats.monthly_trends || {}),
-        y: Object.values(stats.monthly_trends || {}),
-        type: "scatter",
-        mode: "lines+markers",
-        line: {color: "#6096ba", width: 3}
-    }], {
-        title: { text: "Monthly Publication Trends", font: { color: colors.fontColor } },
-        paper_bgcolor: 'rgba(0,0,0,0)',
-        plot_bgcolor: 'rgba(0,0,0,0)',
-        font: {color: colors.fontColor},
-        xaxis: {rangeslider: {visible: false}, color: colors.axisColor, gridcolor: colors.gridColor},
-        yaxis: {color: colors.axisColor, gridcolor: colors.gridColor}
-    });
+        x:Object.keys(stats.monthly_trends || {}), y:Object.values(stats.monthly_trends || {}),
+        type:"scatter", mode:"lines+markers", line:{color:"#6096ba",width:3}
+    }], { title:{text:"Monthly Publication Trends",font:{color:colors.fontColor}},
+        paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)',
+        font:{color:colors.fontColor}, xaxis:{rangeslider:{visible:false},color:colors.axisColor,gridcolor:colors.gridColor},
+        yaxis:{color:colors.axisColor,gridcolor:colors.gridColor} });
 
-    // ✅ Stronger theme reapplication
+    // Theme reapplication
     function applyThemeToCharts() {
         colors = getThemeColors();
         const update = {
@@ -302,20 +250,11 @@
             'yaxis.gridcolor': colors.gridColor
         };
         ['chart1','chart2','chart3','chart4','chart5'].forEach(id => {
-            if (document.getElementById(id)) {
-                Plotly.relayout(id, update);
-            }
+            if(document.getElementById(id)) Plotly.relayout(id, update);
         });
     }
-
-    // Run once on load
     applyThemeToCharts();
-
-    // Also rerun whenever the theme attribute changes
-    const observer = new MutationObserver(applyThemeToCharts);
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    new MutationObserver(applyThemeToCharts).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
+});
 </script>
 {{ end }}
-
-
-
