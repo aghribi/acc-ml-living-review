@@ -15,3 +15,9 @@ pandas>=2.2.0
 
 # Optional (dev / utils)
 python-dateutil>=2.8.2
+
+sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+myst-parser
+sphinxcontrib-bibtex
