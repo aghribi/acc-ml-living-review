@@ -103,7 +103,7 @@ If you use this living review in your research, please cite:
 ## 📧 Contact
 
 Maintained by the **Accelerator Physics & AI community**.  
-Lead coordination: [Adnan Ghribi](https://github.com/aghribi) (CNRS–GANIL).  
+Contact: [Adnan Ghribi](https://github.com/aghribi) (CNRS–GANIL).  
 
 ---
 
