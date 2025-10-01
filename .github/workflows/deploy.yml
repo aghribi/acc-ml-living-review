@@ -3,7 +3,7 @@ name: Build and Deploy Hugo + Sphinx
 on:
   push:
     branches:
-      - main    # or your default branch
+      - main    # adjust if your default branch is different
 
 jobs:
   build-deploy:
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.150.1'   # match your local Hugo
+          hugo-version: '0.150.1'
           extended: true
 
       - name: Build Hugo
@@ -34,18 +34,18 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install Sphinx
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          # add more extensions if your docs need them
+          pip install -r requirements.txt   # uses root requirements.txt
 
       - name: Build Sphinx
         run: |
-          cd docs          # path to your Sphinx source folder
-          make html
+          cd docs
+          sphinx-build -b html . build/html
+          ls -R build || true
           cd ..
-        # Sphinx output in docs-src/_build/html
+        # Sphinx output in docs/build/html
 
       # -------------------
       # Collect outputs for gh-pages
@@ -55,7 +55,7 @@ jobs:
           mkdir deploy
           cp -r site/public/* deploy/
           mkdir -p deploy/docs
-          cp -r docs/_build/html/* deploy/docs/
+          cp -r docs/build/html/* deploy/docs/
 
       # -------------------
       # Deploy to gh-pages branch
