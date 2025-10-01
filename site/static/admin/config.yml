@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: main # Branch to update (main or master)
+  name: github
+  repo: aghribi/acc-living-review   # replace with your GitHub user/org + repo name
+  branch: main  
 
 # Local backend for development
 # Uncomment for local testing: npx decap-server
