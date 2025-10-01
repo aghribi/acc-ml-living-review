@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtualenv
+.venv/
+env/
+
+# Hugo
+site/public/
+site/resources/
+
+# Sphinx
+docs/build/
+
+# Pipeline outputs
+output/
+
+# OS stuff
+.DS_Store
+Thumbs.db
+
