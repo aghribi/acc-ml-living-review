@@ -42,7 +42,7 @@ jobs:
 
       - name: Build Sphinx
         run: |
-          cd docs-src          # path to your Sphinx source folder
+          cd docs          # path to your Sphinx source folder
           make html
           cd ..
         # Sphinx output in docs-src/_build/html
@@ -55,7 +55,7 @@ jobs:
           mkdir deploy
           cp -r site/public/* deploy/
           mkdir -p deploy/docs
-          cp -r docs-src/_build/html/* deploy/docs/
+          cp -r docs/_build/html/* deploy/docs/
 
       # -------------------
       # Deploy to gh-pages branch
