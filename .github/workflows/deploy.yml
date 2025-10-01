@@ -37,15 +37,13 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt   # uses root requirements.txt
+          pip install -r requirements.txt   # root requirements.txt
 
       - name: Build Sphinx
         run: |
-          cd docs
-          sphinx-build -b html . build/html
-          ls -R build || true
-          cd ..
-        # Sphinx output in docs/build/html
+          sphinx-build -b html docs/source docs/build/html
+          ls -R docs/build || true
+        # Sphinx output will be in docs/build/html
 
       # -------------------
       # Collect outputs for gh-pages
