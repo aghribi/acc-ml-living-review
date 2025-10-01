@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main ]
 
-permissions:
-  contents: write   # allow pushing to gh-pages
+permissions:          # needed for pushing to gh-pages
+  contents: write
 
 jobs:
   build-deploy:
@@ -26,10 +26,10 @@ jobs:
 
       - name: Build Hugo
         run: |
-          hugo -s site --config site/config.toml --minify
+          hugo -s site --minify
           echo "===== Contents of site/public ====="
           ls -R site/public || true
-        # Hugo output should be in site/public
+        # Hugo output in site/public
 
       # -------------------
       # Build Sphinx docs
@@ -42,7 +42,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements.txt   # root requirements.txt
 
       - name: Build Sphinx
         run: |
@@ -52,18 +52,15 @@ jobs:
         # Sphinx output in docs/build/html
 
       # -------------------
-      # Collect outputs for gh-pages
+      # Collect outputs
       # -------------------
       - name: Prepare deployment folder
         run: |
           mkdir deploy
-          cp -r site/public/* deploy/ || echo "⚠️ No Hugo output found"
+          cp -r site/public/* deploy/
           mkdir -p deploy/docs
-          cp -r docs/build/html/* deploy/docs/ || echo "⚠️ No Sphinx output found"
-
-      - name: Debug deploy folder
-        run: |
-          echo "===== Contents of deploy/ (final) ====="
+          cp -r docs/build/html/* deploy/docs/
+          echo "===== Contents of deploy ====="
           ls -R deploy || true
 
       # -------------------
