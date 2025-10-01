@@ -1,0 +1,228 @@
+{{ define "title" }}Submit a Paper | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="container">
+    <div class="page-header">
+        <h1>Submit a Paper</h1>
+        <p class="page-subtitle">Help us keep the review comprehensive and up-to-date</p>
+    </div>
+
+    <div class="success-message" id="successMessage">
+        <strong>✓ Submission Successful!</strong>
+        <p>Thank you for your submission. Our team will review the paper and add it to the database if it meets the inclusion criteria. You should receive a confirmation via GitHub.</p>
+    </div>
+
+    <div class="section">
+        <div class="info-note">
+            <p><strong>Before submitting:</strong> Please ensure your paper applies machine learning or artificial intelligence methods to particle accelerator physics, technology, or operations. Papers should be published or available as preprints on recognized servers (arXiv, INSPIRE-HEP, etc.).</p>
+        </div>
+
+        <form id="paperSubmissionForm">
+            <h2>Paper Information</h2>
+            
+            <div class="form-group">
+                <label for="title">Paper Title <span class="required">*</span></label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="authors">Authors <span class="required">*</span></label>
+                <textarea id="authors" name="authors" placeholder="One author per line" rows="3" required></textarea>
+                <div class="form-help">Enter each author on a new line</div>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Publication Year <span class="required">*</span></label>
+                <input type="number" id="year" name="year" min="2000" max="2030" required>
+            </div>
+
+            <div class="form-group">
+                <label for="venue">Publication Venue/Journal <span class="required">*</span></label>
+                <input type="text" id="venue" name="venue" placeholder="e.g., Physical Review Accelerators and Beams, arXiv, IPAC" required>
+            </div>
+
+            <div class="form-group">
+                <label for="url">Paper URL <span class="required">*</span></label>
+                <input type="url" id="url" name="url" placeholder="https://arxiv.org/abs/..." required>
+                <div class="form-help">Direct link to arXiv, DOI, INSPIRE-HEP, or journal page</div>
+            </div>
+
+            <div class="form-group">
+                <label for="doi">DOI (if available)</label>
+                <input type="text" id="doi" name="doi" placeholder="10.1103/PhysRevAccelBeams...">
+            </div>
+
+            <div class="form-group">
+                <label for="abstract">Abstract <span class="required">*</span></label>
+                <textarea id="abstract" name="abstract" rows="6" required></textarea>
+            </div>
+
+            <h2 style="margin-top: 40px;">Categorization</h2>
+
+            <div class="form-group">
+                <label>Suggested Categories</label>
+                <div class="form-help" style="margin-bottom: 10px;">Select all that apply</div>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cat1" name="categories" value="Beam Dynamics & Optimization">
+                        <label for="cat1">Beam Dynamics & Optimization</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cat2" name="categories" value="Control Systems">
+                        <label for="cat2">Control Systems</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cat3" name="categories" value="Anomaly Detection">
+                        <label for="cat3">Anomaly Detection</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cat4" name="categories" value="Surrogate Models">
+                        <label for="cat4">Surrogate Models</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cat5" name="categories" value="Diagnostics">
+                        <label for="cat5">Diagnostics</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cat6" name="categories" value="Predictive Maintenance">
+                        <label for="cat6">Predictive Maintenance</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cat7" name="categories" value="Reinforcement Learning & Autonomous Systems">
+                        <label for="cat7">Reinforcement Learning</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cat8" name="categories" value="Tools & Libraries">
+                        <label for="cat8">Tools & Libraries</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cat9" name="categories" value="Novel Applications">
+                        <label for="cat9">Novel Applications</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="keywords">Keywords/Tags</label>
+                <textarea id="keywords" name="keywords" placeholder="One keyword per line" rows="3"></textarea>
+                <div class="form-help">Enter each keyword on a new line</div>
+            </div>
+
+            <h2 style="margin-top: 40px;">Submitter Information</h2>
+
+            <div class="form-group">
+                <label for="submitter-name">Your Name <span class="required">*</span></label>
+                <input type="text" id="submitter-name" name="submitter-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="submitter-email">Your Email <span class="required">*</span></label>
+                <input type="email" id="submitter-email" name="submitter-email" required>
+                <div class="form-help">We'll contact you if we need clarification about the submission</div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" rows="3" placeholder="Any additional information about this paper"></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-primary">Submit Paper</button>
+                <button type="reset" class="btn btn-secondary">Clear Form</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="section">
+        <h2>What Happens Next?</h2>
+        <p style="color: var(--text-secondary); line-height: 1.8;">
+            After you submit a paper, our review team will:
+        </p>
+        <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 20px; margin-top: 10px;">
+            <li>Receive your submission as a GitHub issue</li>
+            <li>Verify that the paper is accessible and meets our inclusion criteria</li>
+            <li>Review the categorization and keywords</li>
+            <li>Add the paper to our database (typically within 1-2 weeks)</li>
+            <li>Close the issue once processed</li>
+        </ul>
+    </div>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+    document.getElementById('paperSubmissionForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Collect form data
+        const formData = {
+            title: document.getElementById('title').value,
+            authors: document.getElementById('authors').value.split('\n').filter(a => a.trim()),
+            year: parseInt(document.getElementById('year').value),
+            venue: document.getElementById('venue').value,
+            url: document.getElementById('url').value,
+            doi: document.getElementById('doi').value || null,
+            abstract: document.getElementById('abstract').value,
+            categories: Array.from(document.querySelectorAll('input[name="categories"]:checked')).map(cb => cb.value),
+            keywords: document.getElementById('keywords').value.split('\n').filter(k => k.trim()),
+            submitter_name: document.getElementById('submitter-name').value,
+            submitter_email: document.getElementById('submitter-email').value,
+            comments: document.getElementById('comments').value,
+            status: "pending",
+            source: "manual",
+            submitted_at: new Date().toISOString()
+        };
+
+        // Validate at least one category
+        if (formData.categories.length === 0) {
+            alert('Please select at least one category for the paper.');
+            return;
+        }
+
+        // Create GitHub issue body
+        const issueBody = `
+# New Paper Submission
+
+**Title:** ${formData.title}
+**Authors:** ${formData.authors.join(', ')}
+**Year:** ${formData.year}
+**Venue:** ${formData.venue}
+**URL:** ${formData.url}
+${formData.doi ? `**DOI:** ${formData.doi}` : ''}
+
+**Abstract:**
+${formData.abstract}
+
+**Suggested Categories:** ${formData.categories.join(', ')}
+${formData.keywords.length > 0 ? `**Keywords:** ${formData.keywords.join(', ')}` : ''}
+
+---
+
+**Submitted by:** ${formData.submitter_name} (${formData.submitter_email})
+${formData.comments ? `**Comments:** ${formData.comments}` : ''}
+
+---
+
+\`\`\`json
+${JSON.stringify(formData, null, 2)}
+\`\`\`
+`;
+
+        // Create GitHub issue
+        const repo = '{{ .Site.Params.github | strings.TrimPrefix "https://github.com/" }}';
+        const issueUrl = `https://github.com/${repo}/issues/new?title=${encodeURIComponent('Paper Submission: ' + formData.title)}&body=${encodeURIComponent(issueBody)}&labels=submission`;
+        
+        // Redirect to GitHub issue creation
+        window.open(issueUrl, '_blank');
+        
+        // Show success message
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.getElementById('successMessage').classList.add('show');
+        this.reset();
+        
+        setTimeout(() => {
+            document.getElementById('successMessage').classList.remove('show');
+        }, 10000);
+    });
+</script>
+{{ end }}

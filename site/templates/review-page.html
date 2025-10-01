@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Review - The AI/ML for particle accelerators living review</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: linear-gradient(180deg, #0f1419 0%, #1a1f2e 100%);
+            --bg-nav: rgba(15, 20, 25, 0.95);
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --bg-card-hover: rgba(255, 255, 255, 0.05);
+            --bg-section: rgba(255, 255, 255, 0.02);
+            --bg-button: rgba(96, 150, 186, 0.15);
+            --bg-button-hover: rgba(96, 150, 186, 0.25);
+            --border-primary: rgba(100, 150, 200, 0.2);
+            --border-card: rgba(96, 150, 186, 0.2);
+            --border-focus: rgba(96, 150, 186, 0.4);
+            --text-primary: #e0e0e0;
+            --text-heading: #e8eef3;
+            --text-secondary: #8b95a0;
+            --text-tertiary: #6b737c;
+            --accent-primary: #6096ba;
+            --accent-secondary: #507a9a;
+        }
+
+        [data-theme="light"] {
+            --bg-primary: linear-gradient(180deg, #f5f7fa 0%, #e8ecf1 100%);
+            --bg-nav: rgba(255, 255, 255, 0.95);
+            --bg-card: rgba(96, 150, 186, 0.08);
+            --bg-card-hover: rgba(96, 150, 186, 0.12);
+            --bg-section: rgba(96, 150, 186, 0.05);
+            --bg-button: rgba(96, 150, 186, 0.15);
+            --bg-button-hover: rgba(96, 150, 186, 0.25);
+            --border-primary: rgba(96, 150, 186, 0.3);
+            --border-card: rgba(96, 150, 186, 0.3);
+            --border-focus: rgba(96, 150, 186, 0.5);
+            --text-primary: #2c3e50;
+            --text-heading: #1a2332;
+            --text-secondary: #5a6c7d;
+            --text-tertiary: #7a8a9a;
+            --accent-primary: #4a7a9a;
+            --accent-secondary: #6096ba;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        nav {
+            background: var(--bg-nav);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-primary);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-logo {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--accent-primary);
+            padding: 20px 0;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .nav-menu a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 20px 18px;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--accent-primary);
+            border-bottom-color: var(--accent-primary);
+            background: var(--bg-button);
+        }
+
+        .github-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: var(--bg-button);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            color: var(--text-secondary);
+            font-size: 0.85em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin: 10px 0;
+        }
+
+        .github-badge:hover {
+            background: var(--bg-button-hover);
+            border-color: var(--accent-primary);
+        }
+
+        .github-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .github-stats {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .theme-toggle {
+            background: var(--bg-button);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            margin: 10px 0;
+        }
+
+        .theme-toggle:hover {
+            background: var(--bg-button-hover);
+            transform: scale(1.05);
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 40px 20px 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .page-header h1 {
+            font-size: 2.2em;
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .page-subtitle {
+            font-size: 1.05em;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .search-section {
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        .search-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 16px 24px 16px 50px;
+            font-size: 1.05em;
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            color: var(--text-primary);
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-bar:focus {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px var(--bg-button);
+        }
+
+        .search-bar::placeholder {
+            color: var(--text-tertiary);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-tertiary);
+            pointer-events: none;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 24px;
+            border: 1px solid var(--border-card);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            background: var(--bg-button);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--bg-button-hover);
+            border-color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        .main-wrapper {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 2rem;
+            padding: 2rem 2rem 3rem;
+            align-items: flex-start;
+        }
+
+        .toc {
+            width: 280px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 90px;
+            height: fit-content;
+            max-height: calc(100vh - 110px);
+            overflow-y: auto;
+            background: var(--bg-section);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .toc h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--text-heading);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .toc-link:hover, .toc-link.active {
+            background: var(--bg-card);
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+
+        .content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .info-box {
+            background: var(--bg-section);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-primary);
+            transition: all 0.3s ease;
+        }
+
+        .info-box h2 {
+            font-size: 1.4em;
+            margin-bottom: 1rem;
+            color: var(--text-heading);
+            transition: color 0.3s ease;
+        }
+
+        .info-box p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            transition: color 0.3s ease;
+        }
+
+        .section {
+            background: var(--bg-section);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            scroll-margin-top: 100px;
+            transition: all 0.3s ease;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-card);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            transition: color 0.3s ease;
+        }
+
+        .section-header .chevron {
+            margin-left: auto;
+            transition: transform 0.2s ease;
+            color: var(--text-secondary);
+        }
+
+        .section.collapsed .section-body {
+            display: none;
+        }
+
+        .section.collapsed .chevron {
+            transform: rotate(-90deg);
+        }
+
+        .figure {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border-card);
+            transition: all 0.3s ease;
+        }
+
+        .figure-content {
+            background: var(--bg-section);
+            border-radius: 8px;
+            padding: 1rem;
+            min-height: 400px;
+        }
+
+        .plotly-chart {
+            width: 100%;
+            height: 400px;
+        }
+
+        .figure-caption {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .paper-item {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border-card);
+        }
+
+        .paper-item:last-child {
+            border-bottom: none;
+        }
+
+        .paper-title {
+            color: var(--text-heading);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05em;
+            line-height: 1.5;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .paper-title:hover {
+            color: var(--accent-primary);
+        }
+
+        .paper-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+            transition: color 0.3s ease;
+        }
+
+        .paper-authors {
+            color: var(--text-secondary);
+        }
+
+        .paper-venue {
+            color: var(--text-tertiary);
+        }
+
+        .paper-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--bg-button);
+            border: 1px solid var(--border-card);
+            border-radius: 15px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .tag:hover {
+            background: var(--bg-button-hover);
+            border-color: var(--accent-primary);
+            color: var(--text-primary);
+        }
+
+        footer {
+            background: var(--bg-nav);
+            color: var(--text-primary);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            border-top: 1px solid var(--border-primary);
+            transition: all 0.3s ease;
+        }
+
+        footer h3 {
+            color: var(--text-heading);
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+
+        @media (max-width: 1024px) {
+            .main-wrapper {
+                flex-direction: column;
+            }
+
+            .toc {
+                position: relative;
+                top: 0;
+                width: 100%;
+                max-height: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .page-header h1 {
+                font-size: 1.8em;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">The AI/ML for particle accelerators living review</a>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#review" class="active">Access the Living Review</a></li>
+                    <li><a href="#documentation">Documentation</a></li>
+                    <li><a href="#cite">Cite Us</a></li>
+                </ul>
+                <a href="https://github.com" class="github-badge" target="_blank">
+                    <svg class="github-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    <div class="github-stats">
+                        <span>⭐ 398</span>
+                        <span>🔱 122</span>
+                    </div>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="page-header">
+        <h1>Browse the Living Review</h1>
+        <p class="page-subtitle">450+ papers on AI/ML applications in particle accelerator science</p>
+        <div class="search-section">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-bar" placeholder="Search papers, methods, facilities, or topics...">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="btn" onclick="expandAll()">Expand All</button>
+            <button class="btn" onclick="collapseAll()">Collapse All</button>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        <aside class="toc">
+            <h3>Table of Contents</h3>
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#statistics" class="toc-link">📊 Statistics & Trends</a></li>
+                <li class="toc-item"><a href="#beam-dynamics" class="toc-link">Beam Dynamics & Optimization</a></li>
+                <li class="toc-item"><a href="#control-systems" class="toc-link">Control Systems</a></li>
+                <li class="toc-item"><a href="#anomaly-detection" class="toc-link">Anomaly Detection</a></li>
+                <li class="toc-item"><a href="#surrogate-models" class="toc-link">Surrogate Models</a></li>
+                <li class="toc-item"><a href="#diagnostics" class="toc-link">Diagnostics</a></li>
+                <li class="toc-item"><a href="#predictive-maintenance" class="toc-link">Predictive Maintenance</a></li>
+                <li class="toc-item"><a href="#reinforcement-learning" class="toc-link">Reinforcement Learning & Autonomous Systems</a></li>
+                <li class="toc-item"><a href="#tools-libraries" class="toc-link">Tools & Libraries</a></li>
+                <li class="toc-item"><a href="#novel-applications" class="toc-link">Novel Applications</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <div class="info-box">
+                <h2>About This Living Review</h2>
+                <p>This living document compiles research applying ML/AI to particle accelerators. Data and charts are updated automatically based on the latest publications from arXiv, INSPIRE-HEP, and other sources.</p>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="section" id="statistics">
+                <div class="section-header">
+                    <h2 class="section-title">📊 Publication Statistics & Trends</h2>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="section-body">
+                    <div class="figure">
+                        <div class="figure-content">
+                            <div id="chart1" class="plotly-chart"></div>
+                        </div>
+                        <div class="figure-caption"><strong>Figure 1:</strong> Publications per year showing growth in AI/ML applications for accelerators.</div>
+                    </div>
+                    <div class="figure">
+                        <div class="figure-content">
+                            <div id="chart2" class="plotly-chart"></div>
+                        </div>
+                        <div class="figure-caption"><strong>Figure 2:</strong> Distribution of papers across application categories.</div>
+                    </div>
+                    <div class="figure">
+                        <div class="figure-content">
+                            <div id="chart3" class="plotly-chart"></div>
+                        </div>
+                        <div class="figure-caption"><strong>Figure 3:</strong> Top publication venues and preprint servers.</div>
+                    </div>
+                    <div class="figure">
+                        <div class="figure-content">
+                            <div id="chart4" class="plotly-chart"></div>
+                        </div>
+                        <div class="figure-caption"><strong>Figure 4:</strong> Most common keywords and techniques.</div>
+                    </div>
+                    <div class="figure">
+                        <div class="figure-content">
+                            <div id="chart5" class="plotly-chart"></div>
+                        </div>
+                        <div class="figure-caption"><strong>Figure 5:</strong> Monthly publication trends over the past year.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Sections -->
+            <div class="section collapsed" id="beam-dynamics">
+                <div class="section-header">
+                    <h2 class="section-title">Beam Dynamics & Optimization</h2>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="section-body">
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Deep Learning-Based Beam Trajectory Prediction in Free-Electron Lasers</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">J. Smith, A. Johnson, M. Chen, et al.</span>
+                            <span>•</span>
+                            <span class="paper-venue">Phys. Rev. Accel. Beams (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Neural Networks</span>
+                            <span class="tag">FEL</span>
+                            <span class="tag">Real-time Control</span>
+                        </div>
+                    </div>
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Neural Network Approaches for Beam Emittance Minimization in Linear Accelerators</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">R. Thompson, K. Lee, S. Patel</span>
+                            <span>•</span>
+                            <span class="paper-venue">arXiv (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Optimization</span>
+                            <span class="tag">Emittance</span>
+                            <span class="tag">Linear Accelerators</span>
+                        </div>
+                    </div>
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Machine Learning for Real-Time Orbit Correction in Synchrotrons</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">T. Anderson, M. Williams</span>
+                            <span>•</span>
+                            <span class="paper-venue">Nucl. Instrum. Methods A (2024)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Real-time Systems</span>
+                            <span class="tag">Orbit Correction</span>
+                            <span class="tag">Synchrotrons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section collapsed" id="control-systems">
+                <div class="section-header">
+                    <h2 class="section-title">Control Systems</h2>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="section-body">
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Reinforcement Learning for Autonomous Accelerator Tuning at the LHC</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">L. Martinez, P. Schmidt, K. Wang</span>
+                            <span>•</span>
+                            <span class="paper-venue">arXiv (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Reinforcement Learning</span>
+                            <span class="tag">Autonomous Control</span>
+                            <span class="tag">LHC</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                    </div>
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Adaptive Feedback Systems Using Deep Q-Networks for Beam Stability</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">H. Zhang, Y. Liu, J. Brown</span>
+                            <span>•</span>
+                            <span class="paper-venue">IEEE Trans. Nucl. Sci. (2024)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Deep Q-Networks</span>
+                            <span class="tag">Feedback Systems</span>
+                            <span class="tag">Beam Stability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section collapsed" id="anomaly-detection">
+                <div class="section-header">
+                    <h2 class="section-title">Anomaly Detection</h2>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="section-body">
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Unsupervised Machine Learning for Beam Loss Detection in Synchrotrons</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">T. Anderson, R. Patel, S. Yamamoto</span>
+                            <span>•</span>
+                            <span class="paper-venue">Nucl. Instrum. Methods A (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Anomaly Detection</span>
+                            <span class="tag">Autoencoders</span>
+                            <span class="tag">Unsupervised Learning</span>
+                            <span class="tag">Beam Loss</span>
+                        </div>
+                    </div>
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Autoencoder-Based Fault Detection in RF Systems</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">M. Garcia, L. Cohen</span>
+                            <span>•</span>
+                            <span class="paper-venue">arXiv (2024)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Autoencoders</span>
+                            <span class="tag">RF Systems</span>
+                            <span class="tag">Fault Detection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section collapsed" id="surrogate-models">
+                <div class="section-header">
+                    <h2 class="section-title">Surrogate Models</h2>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="section-body">
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Fast Neural Network Surrogates for Particle Tracking Simulations</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">M. Liu, E. Brown, A. Kumar</span>
+                            <span>•</span>
+                            <span class="paper-venue">Comput. Phys. Commun. (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Surrogate Models</span>
+                            <span class="tag">Neural Networks</span>
+                            <span class="tag">Simulation</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                    </div>
+                    <div class="paper-item">
+                        <a href="http://arxiv.org/abs/2509.12030v1" class="paper-title">Acceleration of Multi-Scale LTS Magnet Simulations with Neural Network Surrogate Models</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">Louis Denis, Julien Dular, Vincent Nuttens, et al.</span>
+                            <span>•</span>
+                            <span class="paper-venue">arXiv (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Surrogate Models</span>
+                            <span class="tag">Magnet Simulations</span>
+                            <span class="tag">Neural Networks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section collapsed" id="diagnostics">
+                <div class="section-header">
+                    <h2 class="section-title">Diagnostics</h2>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="section-body">
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Computer Vision for Beam Profile Analysis in X-ray Free-Electron Lasers</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">S. Kim, J. Park, R. Davis</span>
+                            <span>•</span>
+                            <span class="paper-venue">Opt. Express (2024)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Beam Profile</span>
+                            <span class="tag">X-ray FEL</span>
+                        </div>
+                    </div>
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Phase Space Reconstruction Using Generative Adversarial Networks</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">A. Wilson, P. Martinez</span>
+                            <span>•</span>
+                            <span class="paper-venue">arXiv (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">GANs</span>
+                            <span class="tag">Phase Space</span>
+                            <span class="tag">Image Reconstruction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section collapsed" id="predictive-maintenance">
+                <div class="section-header">
+                    <h2 class="section-title">Predictive Maintenance</h2>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="section-body">
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Time Series Analysis for Equipment Health Monitoring in Accelerators</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">N. Johnson, K. Taylor</span>
+                            <span>•</span>
+                            <span class="paper-venue">Mach. Learn. Sci. Technol. (2024)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Predictive Maintenance</span>
+                            <span class="tag">Time Series</span>
+                            <span class="tag">Equipment Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section collapsed" id="reinforcement-learning">
+                <div class="section-header">
+                    <h2 class="section-title">Reinforcement Learning & Autonomous Systems</h2>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="section-body">
+                    <div class="paper-item">
+                        <a href="http://arxiv.org/abs/2409.06336v4" class="paper-title">Towards Agentic AI on Particle Accelerators</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">Antonin Sulc, Thorsten Hellert, Raimund Kammering, et al.</span>
+                            <span>•</span>
+                            <span class="paper-venue">arXiv (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Reinforcement Learning</span>
+                            <span class="tag">Agentic AI</span>
+                            <span class="tag">Autonomous Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section collapsed" id="tools-libraries">
+                <div class="section-header">
+                    <h2 class="section-title">Tools & Libraries</h2>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="section-body">
+                    <div class="paper-item">
+                        <a href="http://arxiv.org/abs/2506.03796v3" class="paper-title">Geoff: The Generic Optimization Framework & Frontend for Particle Accelerator Controls</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">Penelope Madysa, Sabrina Appel, Verena Kain, Michael Schenk</span>
+                            <span>•</span>
+                            <span class="paper-venue">arXiv (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Tools & Libraries</span>
+                            <span class="tag">Optimization Framework</span>
+                            <span class="tag">Control Systems</span>
+                        </div>
+                    </div>
+                    <div class="paper-item">
+                        <a href="#" class="paper-title">Fast, accurate, and precise detector simulation with vision transformers</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">Luigi Favaro, Andrea Giammanco, Claudius Krause</span>
+                            <span>•</span>
+                            <span class="paper-venue">INSPIRE-HEP (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Vision Transformers</span>
+                            <span class="tag">Detector Simulation</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section collapsed" id="novel-applications">
+                <div class="section-header">
+                    <h2 class="section-title">Novel Applications</h2>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="section-body">
+                    <div class="paper-item">
+                        <a href="http://arxiv.org/abs/2509.12945v1" class="paper-title">FusionMAE: large-scale pretrained model to optimize and simplify diagnostic and control of fusion plasma</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">Zongyu Yang, Zhenghao Yang, Wenjing Tian, et al.</span>
+                            <span>•</span>
+                            <span class="paper-venue">arXiv (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">Fusion Plasma</span>
+                            <span class="tag">Pretrained Models</span>
+                            <span class="tag">Diagnostics</span>
+                        </div>
+                    </div>
+                    <div class="paper-item">
+                        <a href="http://arxiv.org/abs/2509.06067v1" class="paper-title">A Surrogate model for High Temperature Superconducting Magnets to Predict Current Distribution with Neural Network</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">Mianjun Xiao, Peng Song, Yulong Liu, et al.</span>
+                            <span>•</span>
+                            <span class="paper-venue">arXiv (2025)</span>
+                        </div>
+                        <div class="paper-tags">
+                            <span class="tag">HTS Magnets</span>
+                            <span class="tag">Surrogate Models</span>
+                            <span class="tag">Neural Networks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Join the Community</h3>
+        <p>This living review is maintained by the accelerator physics community.</p>
+        <p>Last updated: September 2025</p>
+    </footer>
+
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        themeToggle.textContent = currentTheme === 'dark' ? '🌙' : '☀️';
+        
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme');
+            const newTheme = theme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+        });
+
+        // Collapse/expand sections
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.section .section-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    header.parentElement.classList.toggle('collapsed');
+                });
+            });
+        });
+
+        function expandAll() {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('collapsed'));
+        }
+
+        function collapseAll() {
+            document.querySelectorAll('.section').forEach(s => s.classList.add('collapsed'));
+            document.getElementById('statistics')?.classList.remove('collapsed');
+        }
+
+        // Sample data for charts
+        const yearData = {2019: 45, 2020: 67, 2021: 89, 2022: 112, 2023: 145, 2024: 187, 2025: 98};
+        const categoryData = {
+            "Beam Dynamics": 87,
+            "Control Systems": 65,
+            "Anomaly Detection": 54,
+            "Surrogate Models": 48,
+            "Diagnostics": 42,
+            "Predictive Maintenance": 38,
+            "RL & Autonomous": 35,
+            "Tools & Libraries": 28,
+            "Novel Applications": 24
+        };
+        const venueData = {"arXiv": 245, "Phys. Rev. Accel. Beams": 78, "Nucl. Instrum. Methods": 56, "IEEE Trans.": 34, "Other": 37};
+        const keywordData = {
+            "neural network": 145,
+            "deep learning": 132,
+            "optimization": 98,
+            "beam dynamics": 87,
+            "control": 76,
+            "reinforcement learning": 65,
+            "surrogate model": 54,
+            "anomaly detection": 48
+        };
+        const monthlyData = {
+            "2024-10": 15, "2024-11": 18, "2024-12": 14,
+            "2025-01": 22, "2025-02": 19, "2025-03": 25,
+            "2025-04": 21, "2025-05": 23, "2025-06": 20,
+            "2025-07": 24, "2025-08": 26, "2025-09": 18
+        };
+
+        // Create charts
+        Plotly.newPlot("chart1", [{
+            x: Object.keys(yearData),
+            y: Object.values(yearData),
+            type: "bar",
+            marker: {color: "#6096ba"}
+        }], {
+            title: "Publications per Year",
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)'
+        });
+
+        Plotly.newPlot("chart2", [{
+            x: Object.values(categoryData),
+            y: Object.keys(categoryData),
+            type: "bar",
+            orientation: "h",
+            marker: {color: "#6096ba"}
+        }], {
+            title: "Publications by Category",
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            margin: {l: 180}
+        });
+
+        Plotly.newPlot("chart3", [{
+            labels: Object.keys(venueData),
+            values: Object.values(venueData),
+            type: "pie"
+        }], {
+            title: "Top Publication Venues",
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)'
+        });
+
+        Plotly.newPlot("chart4", [{
+            x: Object.values(keywordData),
+            y: Object.keys(keywordData),
+            type: "bar",
+            orientation: "h",
+            marker: {color: "#6096ba"}
+        }], {
+            title: "Top Keywords",
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            margin: {l: 180}
+        });
+
+        Plotly.newPlot("chart5", [{
+            x: Object.keys(monthlyData),
+            y: Object.values(monthlyData),
+            type: "scatter",
+            mode: "lines+markers",
+            line: {color: "#6096ba", width: 3}
+        }], {
+            title: "Monthly Publication Trends",
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            xaxis: {rangeslider: {visible: false}}
+        });
+    </script>
+</body>
+</html>

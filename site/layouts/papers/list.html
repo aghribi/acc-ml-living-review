@@ -1,0 +1,276 @@
+{{ define "title" }}Browse the Living Review | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+{{ $data := .Site.Data.livingreview }}
+{{ $stats := $data.stats }}
+{{ $papers := $data.papers }}
+
+<div class="page-header">
+    <h1>Browse the Living Review</h1>
+    <p class="page-subtitle">{{ len $papers }}+ papers on AI/ML applications in particle accelerator science</p>
+    <div class="search-section">
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-bar" id="searchInput" placeholder="Search papers, methods, facilities, or topics...">
+        </div>
+    </div>
+    <div class="controls">
+        <button class="btn" onclick="expandAll()">Expand All</button>
+        <button class="btn" onclick="collapseAll()">Collapse All</button>
+    </div>
+</div>
+
+<div class="main-wrapper">
+    <!-- Table of Contents -->
+    <aside class="toc">
+        <h3>Table of Contents</h3>
+        <ul class="toc-list">
+            <li class="toc-item"><a href="#statistics" class="toc-link">📊 Statistics & Trends</a></li>
+            {{ range $category, $count := $stats.per_category }}
+            <li class="toc-item">
+                <a href="#{{ $category | urlize }}" class="toc-link">{{ $category }} ({{ $count }})</a>
+            </li>
+            {{ end }}
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="info-box">
+            <h2>About This Living Review</h2>
+            <p>This living document compiles research applying ML/AI to particle accelerators. Data and charts are updated automatically based on the latest publications from arXiv, INSPIRE-HEP, and other sources.</p>
+            <p style="margin-top: 10px;">
+                <strong>Total papers:</strong> {{ len $papers }}<br>
+                <strong>Last updated:</strong> {{ now.Format "January 2, 2006" }}
+            </p>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="section" id="statistics">
+            <div class="section-header">
+                <h2 class="section-title">📊 Publication Statistics & Trends</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-body">
+                <div class="figure">
+                    <div class="figure-content">
+                        <div id="chart1" class="plotly-chart"></div>
+                    </div>
+                    <div class="figure-caption"><strong>Figure 1:</strong> Publications per year showing growth in AI/ML applications for accelerators.</div>
+                </div>
+                <div class="figure">
+                    <div class="figure-content">
+                        <div id="chart2" class="plotly-chart"></div>
+                    </div>
+                    <div class="figure-caption"><strong>Figure 2:</strong> Distribution of papers across application categories.</div>
+                </div>
+                <div class="figure">
+                    <div class="figure-content">
+                        <div id="chart3" class="plotly-chart"></div>
+                    </div>
+                    <div class="figure-caption"><strong>Figure 3:</strong> Top publication venues and preprint servers.</div>
+                </div>
+                <div class="figure">
+                    <div class="figure-content">
+                        <div id="chart4" class="plotly-chart"></div>
+                    </div>
+                    <div class="figure-caption"><strong>Figure 4:</strong> Most common keywords and techniques.</div>
+                </div>
+                <div class="figure">
+                    <div class="figure-content">
+                        <div id="chart5" class="plotly-chart"></div>
+                    </div>
+                    <div class="figure-caption"><strong>Figure 5:</strong> Monthly publication trends over the past year.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Papers by Category -->
+        {{ range $category, $count := $stats.per_category }}
+        <div class="section collapsed" id="{{ $category | urlize }}">
+            <div class="section-header">
+                <h2 class="section-title">{{ $category }}</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-body">
+                {{ range $papers }}
+                    {{ $paper := . }}
+                    {{ $hasCategory := false }}
+                    {{ range .categories }}
+                        {{ if eq .label $category }}
+                            {{ $hasCategory = true }}
+                        {{ end }}
+                    {{ end }}
+                    
+                    {{ if $hasCategory }}
+                    <div class="paper-item" data-paper-id="{{ $paper.id }}">
+                        {{ $paperUrl := "" }}
+                        {{ if $paper.links.arxiv }}
+                            {{ $paperUrl = $paper.links.arxiv }}
+                        {{ else if $paper.links.inspire }}
+                            {{ $paperUrl = $paper.links.inspire }}
+                        {{ else if $paper.links.openalex }}
+                            {{ $paperUrl = $paper.links.openalex }}
+                        {{ else if $paper.doi }}
+                            {{ $paperUrl = printf "https://doi.org/%s" $paper.doi }}
+                        {{ end }}
+                        
+                        <a href="{{ $paperUrl }}" class="paper-title" target="_blank" rel="noopener noreferrer">{{ $paper.title }}</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">{{ delimit $paper.authors ", " }}</span>
+                            <span>•</span>
+                            <span class="paper-venue">{{ $paper.venue }} ({{ $paper.year }})</span>
+                            {{ if $paper.doi }}
+                            <span>•</span>
+                            <span class="paper-doi">DOI: {{ $paper.doi }}</span>
+                            {{ end }}
+                        </div>
+                        {{ if $paper.keywords }}
+                        <div class="paper-tags">
+                            {{ range $paper.keywords }}
+                            <span class="tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+    // Collapse/expand sections
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.section .section-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.parentElement.classList.toggle('collapsed');
+            });
+        });
+    });
+
+    function expandAll() {
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('collapsed'));
+    }
+
+    function collapseAll() {
+        document.querySelectorAll('.section').forEach(s => s.classList.add('collapsed'));
+        document.getElementById('statistics')?.classList.remove('collapsed');
+    }
+
+    // Search functionality
+    document.getElementById('searchInput')?.addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const papers = document.querySelectorAll('.paper-item');
+        let visibleCount = 0;
+        
+        papers.forEach(paper => {
+            const title = paper.querySelector('.paper-title').textContent.toLowerCase();
+            const authors = paper.querySelector('.paper-authors').textContent.toLowerCase();
+            const tags = Array.from(paper.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+            
+            if (title.includes(searchTerm) || authors.includes(searchTerm) || tags.includes(searchTerm)) {
+                paper.style.display = 'block';
+                visibleCount++;
+            } else {
+                paper.style.display = 'none';
+            }
+        });
+        
+        // Show/hide sections based on visible papers
+        document.querySelectorAll('.section:not(#statistics)').forEach(section => {
+            const visiblePapers = section.querySelectorAll('.paper-item[style*="display: block"], .paper-item:not([style*="display: none"])');
+            if (searchTerm && visiblePapers.length === 0) {
+                section.style.display = 'none';
+            } else {
+                section.style.display = 'block';
+            }
+        });
+    });
+
+    // Load statistics data from Hugo (re-define variable for this scope)
+    const stats = {{ .Site.Data.livingreview.stats | jsonify | safeJS }};
+    
+    // Chart 1: Publications per year
+    Plotly.newPlot("chart1", [{
+        x: Object.keys(stats.per_year),
+        y: Object.values(stats.per_year),
+        type: "bar",
+        marker: {color: "#6096ba"}
+    }], {
+        title: "Publications per Year",
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        font: {color: 'var(--text-primary)'}
+    });
+
+    // Chart 2: Publications by category
+    const sortedCategories = Object.entries(stats.per_category)
+        .sort((a, b) => b[1] - a[1]);
+    
+    Plotly.newPlot("chart2", [{
+        x: sortedCategories.map(c => c[1]),
+        y: sortedCategories.map(c => c[0]),
+        type: "bar",
+        orientation: "h",
+        marker: {color: "#6096ba"}
+    }], {
+        title: "Publications by Category",
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        margin: {l: 220},
+        font: {color: 'var(--text-primary)'}
+    });
+
+    // Chart 3: Top venues
+    Plotly.newPlot("chart3", [{
+        labels: Object.keys(stats["per_venue/journal"]),
+        values: Object.values(stats["per_venue/journal"]),
+        type: "pie"
+    }], {
+        title: "Top Publication Venues",
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        font: {color: 'var(--text-primary)'}
+    });
+
+    // Chart 4: Top keywords
+    const topKeywords = Object.entries(stats.per_keyword)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 15);
+    
+    Plotly.newPlot("chart4", [{
+        x: topKeywords.map(k => k[1]),
+        y: topKeywords.map(k => k[0]),
+        type: "bar",
+        orientation: "h",
+        marker: {color: "#6096ba"}
+    }], {
+        title: "Top Keywords",
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        margin: {l: 150},
+        font: {color: 'var(--text-primary)'}
+    });
+
+    // Chart 5: Monthly trends
+    Plotly.newPlot("chart5", [{
+        x: Object.keys(stats.monthly_trends),
+        y: Object.values(stats.monthly_trends),
+        type: "scatter",
+        mode: "lines+markers",
+        line: {color: "#6096ba", width: 3}
+    }], {
+        title: "Monthly Publication Trends",
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        xaxis: {rangeslider: {visible: false}},
+        font: {color: 'var(--text-primary)'}
+    });
+</script>
+{{ end }}

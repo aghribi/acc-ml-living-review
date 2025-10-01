@@ -1,0 +1,1255 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>living_review package &mdash; AI for particle accelerators living review 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=01f34227"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            AI for particle accelerators living review
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">ARTIFACT</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">AI for particle accelerators living review</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">living_review package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/living_review.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="living-review-package">
+<h1>living_review package<a class="headerlink" href="#living-review-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-living_review.classifier">
+<span id="living-review-classifier-module"></span><h2>living_review.classifier module<a class="headerlink" href="#module-living_review.classifier" title="Link to this heading"></a></h2>
+<section id="classifier-py">
+<h3>classifier.py<a class="headerlink" href="#classifier-py" title="Link to this heading"></a></h3>
+<p>This module provides semantic filtering and classification utilities for
+scientific papers in the context of machine-learning applications to
+particle accelerator physics.</p>
+<p>It uses a pre-trained <cite>sentence-transformers</cite> model (MiniLM-L6-v2) to
+compute embeddings for papers, accelerator/ML reference queries, and
+category descriptions. Papers are first filtered for relevance
+(accelerators ∧ ML, excluding domain noise), and then assigned to
+categories using semantic similarity and keyword heuristics.</p>
+<section id="key-features">
+<h4>Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Device selection (CPU/GPU/MPS) for embedding computation</p></li>
+<li><p>On-demand lazy loading of the semantic model</p></li>
+<li><p>Semantic relevance filtering using accelerator/ML/noise queries</p></li>
+<li><p>Category classification with thresholds, keyword overrides, and
+deduplication</p></li>
+</ul>
+</section>
+<section id="typical-usage">
+<h4>Typical Usage<a class="headerlink" href="#typical-usage" title="Link to this heading"></a></h4>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.data_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Paper</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.classifier</span><span class="w"> </span><span class="kn">import</span> <span class="n">filter_relevant_papers</span><span class="p">,</span> <span class="n">classify_papers</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">papers</span> <span class="o">=</span> <span class="n">load_some_papers</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">relevant</span> <span class="o">=</span> <span class="n">filter_relevant_papers</span><span class="p">(</span><span class="n">papers</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classify_papers</span><span class="p">(</span><span class="n">relevant</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.classifier.classify_papers">
+<span class="sig-prename descclassname"><span class="pre">living_review.classifier.</span></span><span class="sig-name descname"><span class="pre">classify_papers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">papers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_cats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.classifier.classify_papers" title="Link to this definition"></a></dt>
+<dd><p>Assign semantic categories to each paper.</p>
+<p>Uses a combination of:
+- semantic similarity with predefined category descriptions,
+- special handling for review papers,
+- keyword overrides (e.g. “surrogate model” → Surrogate Models).</p>
+<p>Should be applied <strong>after</strong> <cite>filter_relevant_papers()</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>papers</strong> (<em>list</em><em> of </em><a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper"><em>Paper</em></a>) – Papers to classify in-place (field <cite>categories</cite> updated).</p></li>
+<li><p><strong>threshold</strong> (<em>float</em><em>, </em><em>optional</em>) – Minimum similarity required to assign a category (default=0.25).</p></li>
+<li><p><strong>max_cats</strong> (<em>int</em><em>, </em><em>optional</em>) – Maximum number of categories to keep per paper (default=2).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Papers are modified in place. Each <cite>.categories</cite> becomes a list
+of dicts with fields: <cite>{“label”: str, “score”: float}</cite>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>If no category passes the thresholds, a default <cite>Others</cite> category
+with score 0.0 is assigned.</p></li>
+<li><p>Deduplication ensures the highest score per label is kept.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.classifier.device_str">
+<span class="sig-prename descclassname"><span class="pre">living_review.classifier.</span></span><span class="sig-name descname"><span class="pre">device_str</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.classifier.device_str" title="Link to this definition"></a></dt>
+<dd><p>Select the most appropriate device for embedding computation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>“mps”</cite> if Apple Metal backend is available,
+<cite>“cuda”</cite> if NVIDIA GPU CUDA backend is available,
+otherwise <cite>“cpu”</cite>.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.classifier.dual_semantic_scores">
+<span class="sig-prename descclassname"><span class="pre">living_review.classifier.</span></span><span class="sig-name descname"><span class="pre">dual_semantic_scores</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">texts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.classifier.dual_semantic_scores" title="Link to this definition"></a></dt>
+<dd><p>Compute semantic relevance scores of input texts with respect to
+accelerator physics, machine learning, and noise queries.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>texts</strong> (<em>list</em><em> of </em><em>str</em>) – List of textual inputs (title + abstract concatenated).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>(scores_accel, scores_ml, scores_noise), each a list of floats
+aligned with the input order.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple of lists</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.classifier.filter_relevant_papers">
+<span class="sig-prename descclassname"><span class="pre">living_review.classifier.</span></span><span class="sig-name descname"><span class="pre">filter_relevant_papers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">papers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">accel_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.13</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ml_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.18</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.classifier.filter_relevant_papers" title="Link to this definition"></a></dt>
+<dd><p>Filter a list of papers to retain only those relevant to both
+accelerator physics and machine learning, while excluding noisy
+domains (detectors, spectroscopy, HEP analysis, etc.).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>papers</strong> (<em>list</em><em> of </em><a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper"><em>Paper</em></a>) – Papers to filter. Each must expose <cite>.title</cite> and <cite>.abstract</cite>.</p></li>
+<li><p><strong>accel_threshold</strong> (<em>float</em><em>, </em><em>optional</em>) – Minimum cosine similarity with the accelerator query (default=0.13).</p></li>
+<li><p><strong>ml_threshold</strong> (<em>float</em><em>, </em><em>optional</em>) – Minimum cosine similarity with the ML query (default=0.18).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Subset of input papers deemed relevant.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.classifier.load_sem_model">
+<span class="sig-prename descclassname"><span class="pre">living_review.classifier.</span></span><span class="sig-name descname"><span class="pre">load_sem_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.classifier.load_sem_model" title="Link to this definition"></a></dt>
+<dd><p>Lazy-load the sentence transformer model used for semantic similarity.</p>
+<p>Loads <cite>all-MiniLM-L6-v2</cite> from HuggingFace Hub on the first call and
+caches it globally. Subsequent calls return the cached model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The loaded MiniLM model, bound to the appropriate device.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>SentenceTransformer</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-living_review.cli">
+<span id="living-review-cli-module"></span><h2>living_review.cli module<a class="headerlink" href="#module-living_review.cli" title="Link to this heading"></a></h2>
+<section id="cli-py">
+<h3>cli.py<a class="headerlink" href="#cli-py" title="Link to this heading"></a></h3>
+<p>Command-line interface (CLI) for the Living Review pipeline.</p>
+<p>This script allows users to run the <strong>Living Review: ML/AI for Accelerator Physics</strong>
+pipeline directly from the terminal. It provides options to configure the scan
+window, data sources, classification thresholds, and output location.</p>
+<section id="main-features">
+<h4>Main Features<a class="headerlink" href="#main-features" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Configure the date range (number of days back from today).</p></li>
+<li><p>Select which data sources to query (arXiv, Inspire, HAL, OpenAlex, Crossref).</p></li>
+<li><p>Override default accelerator/ML relevance thresholds.</p></li>
+<li><p>Control output directory and chunk size for large runs.</p></li>
+<li><p>Optionally enable incremental mode (not yet fully implemented).</p></li>
+</ul>
+</section>
+<section id="id1">
+<h4>Typical Usage<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<p>Run a full scan of the last 30 days from all sources with default thresholds:</p>
+<blockquote>
+<div><p>$ python -m living_review.cli</p>
+</div></blockquote>
+<p>Run a 60-day scan only from arXiv and Inspire with custom thresholds:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>$ python -m living_review.cli –days 60 –sources arxiv,inspire </dt><dd><p>–accel-threshold 0.15 –ml-threshold 0.20 –output results</p>
+</dd>
+</dl>
+</div></blockquote>
+<p class="rubric">Notes</p>
+<p>Incremental mode is available via <cite>–incremental</cite>, but currently only prints a
+warning and does not perform partial scans.</p>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.cli.main">
+<span class="sig-prename descclassname"><span class="pre">living_review.cli.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.cli.main" title="Link to this definition"></a></dt>
+<dd><p>Entry point for the Living Review CLI.</p>
+<p>Parses command-line arguments, builds the date range and configuration,
+initializes the <cite>LivingReviewPipeline</cite>, and runs it.</p>
+<section id="command-line-arguments">
+<h3>Command-line Arguments<a class="headerlink" href="#command-line-arguments" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>–days<span class="classifier">int, optional</span></dt><dd><p>Number of days back to scan (default=30).</p>
+</dd>
+<dt>–sources<span class="classifier">str, optional</span></dt><dd><p>Comma-separated list of sources to scan. Valid options:
+<cite>arxiv,inspire,hal,openalex,crossref,all</cite> (default=”all”).</p>
+</dd>
+<dt>–accel-threshold<span class="classifier">float, optional</span></dt><dd><p>Minimum semantic similarity score for accelerator relevance.
+Defaults to <cite>DEFAULT_THRESHOLDS[‘accel’]</cite>.</p>
+</dd>
+<dt>–ml-threshold<span class="classifier">float, optional</span></dt><dd><p>Minimum semantic similarity score for ML relevance.
+Defaults to <cite>DEFAULT_THRESHOLDS[‘ml’]</cite>.</p>
+</dd>
+<dt>–output<span class="classifier">str, optional</span></dt><dd><p>Directory for JSON/HTML outputs (default=”output”).</p>
+</dd>
+<dt>–chunk-size<span class="classifier">int, optional</span></dt><dd><p>Number of papers per chunk for processing (optional).</p>
+</dd>
+<dt>–incremental<span class="classifier">flag</span></dt><dd><p>If set, run in incremental mode (not fully implemented yet).</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Runs the pipeline and writes results to the specified output directory.</p>
+</dd>
+<dt class="field-even">rtype<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+</section>
+<section id="module-living_review.config">
+<span id="living-review-config-module"></span><h2>living_review.config module<a class="headerlink" href="#module-living_review.config" title="Link to this heading"></a></h2>
+<section id="config-py">
+<h3>config.py<a class="headerlink" href="#config-py" title="Link to this heading"></a></h3>
+<p>Central configuration module for the <strong>Living Review</strong> project.</p>
+<p>This file collects all constants, keywords, category descriptions,
+semantic queries, and thresholds used across the pipeline. Keeping them
+centralized ensures consistency between different modules
+(fetchers, classifier, pipeline, etc.).</p>
+<section id="contents">
+<h4>Contents<a class="headerlink" href="#contents" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Accelerator / ML keywords</p></li>
+<li><p>Negative keywords (to filter out noise domains)</p></li>
+<li><p>Reference semantic queries (used for similarity scoring)</p></li>
+<li><p>Category descriptions (used for classification)</p></li>
+<li><p>Default thresholds and constants (date window, API page sizes)</p></li>
+</ul>
+</section>
+<section id="id2">
+<h4>Typical Usage<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review</span><span class="w"> </span><span class="kn">import</span> <span class="n">config</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">config</span><span class="o">.</span><span class="n">ACCEL_KEYWORDS</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+<span class="go">[&#39;accelerator&#39;, &#39;linac&#39;, &#39;synchrotron&#39;, &#39;collider&#39;, &#39;storage ring&#39;]</span>
+</pre></div>
+</div>
+</section>
+</section>
+<dl class="py data">
+<dt class="sig sig-object py" id="living_review.config.ARXIV_PAGE_SIZE">
+<span class="sig-prename descclassname"><span class="pre">living_review.config.</span></span><span class="sig-name descname"><span class="pre">ARXIV_PAGE_SIZE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100</span></em><a class="headerlink" href="#living_review.config.ARXIV_PAGE_SIZE" title="Link to this definition"></a></dt>
+<dd><p>Maximum number of results per page in arXiv API queries.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="living_review.config.DATE_WINDOW_DAYS">
+<span class="sig-prename descclassname"><span class="pre">living_review.config.</span></span><span class="sig-name descname"><span class="pre">DATE_WINDOW_DAYS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#living_review.config.DATE_WINDOW_DAYS" title="Link to this definition"></a></dt>
+<dd><p>Default sliding window (in days) for fetching new papers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="living_review.config.DEFAULT_THRESHOLDS">
+<span class="sig-prename descclassname"><span class="pre">living_review.config.</span></span><span class="sig-name descname"><span class="pre">DEFAULT_THRESHOLDS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'accel':</span> <span class="pre">0.13,</span> <span class="pre">'ml':</span> <span class="pre">0.18}</span></em><a class="headerlink" href="#living_review.config.DEFAULT_THRESHOLDS" title="Link to this definition"></a></dt>
+<dd><p>Default semantic similarity thresholds for relevance filtering.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-living_review.data_model">
+<span id="living-review-data-model-module"></span><h2>living_review.data_model module<a class="headerlink" href="#module-living_review.data_model" title="Link to this heading"></a></h2>
+<section id="data-model-py">
+<h3>data_model.py<a class="headerlink" href="#data-model-py" title="Link to this heading"></a></h3>
+<p>Data model definitions for the <strong>Living Review</strong> project.</p>
+<p>This module provides the <cite>Paper</cite> dataclass, which is the central
+representation of a scientific paper throughout the pipeline.
+It also includes helper functions for text normalization to ensure
+consistent deduplication.</p>
+<section id="id3">
+<h4>Contents<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><cite>Paper</cite>: dataclass representing a paper with metadata.</p></li>
+<li><p><cite>normalize_title</cite>: utility function for consistent title normalization.</p></li>
+</ul>
+</section>
+<section id="id4">
+<h4>Typical Usage<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.data_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Paper</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Paper</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;AI for Beam Dynamics&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">authors</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;A. Researcher&quot;</span><span class="p">,</span> <span class="s2">&quot;B. Scientist&quot;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="n">abstract</span><span class="o">=</span><span class="s2">&quot;We apply ML to accelerator physics...&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">date</span><span class="o">=</span><span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">(),</span>
+<span class="gp">... </span>    <span class="n">link</span><span class="o">=</span><span class="s2">&quot;http://arxiv.org/abs/1234.5678&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">source</span><span class="o">=</span><span class="s2">&quot;arxiv&quot;</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">key_for_dedup</span><span class="p">()</span>
+<span class="go">(&#39;1234.5678&#39;, &#39;&#39;, &#39;ai for beam dynamics&#39;)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="living_review.data_model.Paper">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">living_review.data_model.</span></span><span class="sig-name descname"><span class="pre">Paper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">authors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abstract</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arxiv_id=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doi=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categories=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">venue=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.data_model.Paper" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Representation of a scientific paper.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.title">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#living_review.data_model.Paper.title" title="Link to this definition"></a></dt>
+<dd><p>Title of the paper.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.authors">
+<span class="sig-name descname"><span class="pre">authors</span></span><a class="headerlink" href="#living_review.data_model.Paper.authors" title="Link to this definition"></a></dt>
+<dd><p>List of author names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.abstract">
+<span class="sig-name descname"><span class="pre">abstract</span></span><a class="headerlink" href="#living_review.data_model.Paper.abstract" title="Link to this definition"></a></dt>
+<dd><p>Abstract or summary of the paper.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.date">
+<span class="sig-name descname"><span class="pre">date</span></span><a class="headerlink" href="#living_review.data_model.Paper.date" title="Link to this definition"></a></dt>
+<dd><p>Publication date.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>datetime.date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.link">
+<span class="sig-name descname"><span class="pre">link</span></span><a class="headerlink" href="#living_review.data_model.Paper.link" title="Link to this definition"></a></dt>
+<dd><p>Primary link to the paper (e.g. arXiv, Inspire, publisher).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.source">
+<span class="sig-name descname"><span class="pre">source</span></span><a class="headerlink" href="#living_review.data_model.Paper.source" title="Link to this definition"></a></dt>
+<dd><p>Source identifier (e.g. “arxiv”, “inspire”, “hal”).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.arxiv_id">
+<span class="sig-name descname"><span class="pre">arxiv_id</span></span><a class="headerlink" href="#living_review.data_model.Paper.arxiv_id" title="Link to this definition"></a></dt>
+<dd><p>arXiv identifier if available.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.doi">
+<span class="sig-name descname"><span class="pre">doi</span></span><a class="headerlink" href="#living_review.data_model.Paper.doi" title="Link to this definition"></a></dt>
+<dd><p>Digital Object Identifier if available.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.categories">
+<span class="sig-name descname"><span class="pre">categories</span></span><a class="headerlink" href="#living_review.data_model.Paper.categories" title="Link to this definition"></a></dt>
+<dd><p>Classification categories assigned to the paper.
+Each element has keys <cite>{“label”: str, “score”: float}</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of dict, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.venue">
+<span class="sig-name descname"><span class="pre">venue</span></span><a class="headerlink" href="#living_review.data_model.Paper.venue" title="Link to this definition"></a></dt>
+<dd><p>Journal or conference venue if known.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">abstract</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#id0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">arxiv_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id5" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">authors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#id6" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">categories</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code><span class="pre">]</span></em><a class="headerlink" href="#id7" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id8">
+<span class="sig-name descname"><span class="pre">date</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">date</span></code></em><a class="headerlink" href="#id8" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id9">
+<span class="sig-name descname"><span class="pre">doi</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id9" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="living_review.data_model.Paper.key_for_dedup">
+<span class="sig-name descname"><span class="pre">key_for_dedup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.data_model.Paper.key_for_dedup" title="Link to this definition"></a></dt>
+<dd><p>Generate a key for deduplication of papers.</p>
+<p>The key combines:
+- arXiv ID (if available, else empty string),
+- DOI (if available, else empty string),
+- normalized title.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A tuple <cite>(arxiv_id, doi, normalized_title)</cite>.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>tuple of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id10">
+<span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#id10" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id11">
+<span class="sig-name descname"><span class="pre">source</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#id11" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id12">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#id12" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">venue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id13" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.data_model.normalize_title">
+<span class="sig-prename descclassname"><span class="pre">living_review.data_model.</span></span><span class="sig-name descname"><span class="pre">normalize_title</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.data_model.normalize_title" title="Link to this definition"></a></dt>
+<dd><p>Normalize a paper title for robust comparison.</p>
+<p>Operations performed:
+- Strip leading/trailing whitespace
+- Convert to lowercase
+- Apply Unicode normalization (NFKD)
+- Collapse multiple spaces into one</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>s</strong> (<em>str</em>) – The raw title string.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A normalized version of the title suitable for deduplication.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-living_review.exporters">
+<span id="living-review-exporters-module"></span><h2>living_review.exporters module<a class="headerlink" href="#module-living_review.exporters" title="Link to this heading"></a></h2>
+<section id="exporters-py">
+<h3>exporters.py<a class="headerlink" href="#exporters-py" title="Link to this heading"></a></h3>
+<p>Output/export utilities for the <strong>Living Review</strong> project.</p>
+<p>This module provides functions to export processed papers and statistics
+into JSON and HTML formats. The HTML output uses a Jinja2 template for
+rendering.</p>
+<section id="id14">
+<h4>Contents<a class="headerlink" href="#id14" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><cite>export_json</cite>: write results to a JSON file.</p></li>
+<li><p><cite>export_html</cite>: render results to an HTML report.</p></li>
+</ul>
+</section>
+<section id="id15">
+<h4>Typical Usage<a class="headerlink" href="#id15" title="Link to this heading"></a></h4>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review</span><span class="w"> </span><span class="kn">import</span> <span class="n">exporters</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">exporters</span><span class="o">.</span><span class="n">export_json</span><span class="p">(</span><span class="n">papers</span><span class="p">,</span> <span class="n">stats</span><span class="p">,</span> <span class="s2">&quot;output&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">exporters</span><span class="o">.</span><span class="n">export_html</span><span class="p">(</span><span class="n">papers</span><span class="p">,</span> <span class="n">stats</span><span class="p">,</span> <span class="s2">&quot;output&quot;</span><span class="p">,</span> <span class="n">template_dir</span><span class="o">=</span><span class="s2">&quot;templates&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.exporters.export_html">
+<span class="sig-prename descclassname"><span class="pre">living_review.exporters.</span></span><span class="sig-name descname"><span class="pre">export_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">papers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stats</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'templates'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.exporters.export_html" title="Link to this definition"></a></dt>
+<dd><p>Export results into an HTML file using a Jinja2 template.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>papers</strong> (<em>list</em><em> of </em><a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper"><em>Paper</em></a>) – List of processed papers (instances of <cite>data_model.Paper</cite>).</p></li>
+<li><p><strong>stats</strong> (<em>dict</em>) – Aggregated statistics (e.g. counts per category).</p></li>
+<li><p><strong>outdir</strong> (<em>str</em><em> or </em><em>Path</em>) – Directory where the HTML file will be written.</p></li>
+<li><p><strong>chunking</strong> (<em>dict</em><em>, </em><em>optional</em>) – Reserved for future use (chunked exports). Currently unused.</p></li>
+<li><p><strong>template_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing the Jinja2 template file
+(default=”templates”).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Writes <cite>ml-accelerator-review.html</cite> in the output directory.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.exporters.export_json">
+<span class="sig-prename descclassname"><span class="pre">living_review.exporters.</span></span><span class="sig-name descname"><span class="pre">export_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">papers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stats</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.exporters.export_json" title="Link to this definition"></a></dt>
+<dd><p>Export results into a JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>papers</strong> (<em>list</em><em> of </em><a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper"><em>Paper</em></a>) – List of processed papers (instances of <cite>data_model.Paper</cite>).</p></li>
+<li><p><strong>stats</strong> (<em>dict</em>) – Aggregated statistics (e.g. counts per category).</p></li>
+<li><p><strong>outdir</strong> (<em>str</em><em> or </em><em>Path</em>) – Directory where the JSON file will be written.</p></li>
+<li><p><strong>chunking</strong> (<em>dict</em><em>, </em><em>optional</em>) – Reserved for future use (chunked exports). Currently unused.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Writes <cite>accelerator_ml_review.json</cite> in the output directory.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-living_review.fetchers">
+<span id="living-review-fetchers-module"></span><h2>living_review.fetchers module<a class="headerlink" href="#module-living_review.fetchers" title="Link to this heading"></a></h2>
+<section id="fetchers-py">
+<h3>fetchers.py<a class="headerlink" href="#fetchers-py" title="Link to this heading"></a></h3>
+<p>Data-source fetchers for the <strong>Living Review</strong> project.</p>
+<p>This module provides functions to query multiple bibliographic APIs
+and return lists of <cite>Paper</cite> objects within a given date range.</p>
+<p>Supported sources:
+- <strong>arXiv</strong>: via <cite>arxiv</cite> Python client.
+- <strong>InspireHEP</strong>: via REST API.
+- <strong>HAL</strong> (Hyper Articles en Ligne).
+- <strong>OpenAlex</strong>.
+- <strong>Crossref</strong>.</p>
+<p>A shared <cite>requests.Session</cite> with retry logic is used for robustness.</p>
+<section id="id16">
+<h4>Contents<a class="headerlink" href="#id16" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>make_session: configure requests session with retry.</p></li>
+<li><p>fetch_arxiv: query arXiv for accelerator/ML papers.</p></li>
+<li><p>fetch_inspire: query InspireHEP API.</p></li>
+<li><p>fetch_hal: query HAL.</p></li>
+<li><p>fetch_openalex: query OpenAlex API.</p></li>
+<li><p>fetch_crossref: query Crossref API.</p></li>
+</ul>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.arxiv_query_for_window">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">arxiv_query_for_window</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.arxiv_query_for_window" title="Link to this definition"></a></dt>
+<dd><p>Build arXiv queries targeting accelerator physics and ML categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Query strings to be passed to the <cite>arxiv</cite> client.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_arxiv">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_arxiv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_arxiv" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from arXiv within the given date range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime.date</em>) – Start date.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>) – End date.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Papers retrieved from arXiv.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_crossref">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_crossref</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_crossref" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from Crossref API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime.date</em>) – Start date.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>) – End date.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Papers retrieved from Crossref.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_hal">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_hal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_hal" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from HAL API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime.date</em>) – Start date.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>) – End date.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Papers retrieved from HAL.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_inspire">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_inspire</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_pages</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_inspire" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from InspireHEP API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime.date</em>) – Start date.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>) – End date.</p></li>
+<li><p><strong>rows</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of results per page (default=50).</p></li>
+<li><p><strong>max_pages</strong> (<em>int</em><em>, </em><em>optional</em>) – Maximum number of pages to fetch (default=5).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Papers retrieved from InspireHEP.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_openalex">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_openalex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_openalex" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from OpenAlex API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime.date</em>) – Start date.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>) – End date.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Papers retrieved from OpenAlex.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.make_session">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">make_session</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.make_session" title="Link to this definition"></a></dt>
+<dd><p>Create a <cite>requests.Session</cite> with retry strategy.</p>
+<p>Retries on server errors (500, 502, 503, 504) up to 3 times with
+exponential backoff.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Configured session with retry-enabled adapters.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>requests.Session</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-living_review.logs">
+<span id="living-review-logs-module"></span><h2>living_review.logs module<a class="headerlink" href="#module-living_review.logs" title="Link to this heading"></a></h2>
+<section id="logs-py">
+<h3>logs.py<a class="headerlink" href="#logs-py" title="Link to this heading"></a></h3>
+<p>Logging utilities for the <strong>Living Review</strong> project.</p>
+<p>This module manages:
+- Persistent scan logs (<cite>scan_log.json</cite>) storing metadata about each run.
+- Error logs (<cite>errors.log</cite>) with stack traces.
+- Retrieval of the last scanned date range.</p>
+<section id="id17">
+<h4>Contents<a class="headerlink" href="#id17" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>append_scan_log: record metadata about a scan (papers, chunks, status).</p></li>
+<li><p>log_error: record exceptions and stack traces in a log file.</p></li>
+<li><p>get_last_scan: retrieve the last recorded scan range.</p></li>
+</ul>
+</section>
+<section id="id18">
+<h4>Typical Usage<a class="headerlink" href="#id18" title="Link to this heading"></a></h4>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review</span><span class="w"> </span><span class="kn">import</span> <span class="n">logs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">logs</span><span class="o">.</span><span class="n">append_scan_log</span><span class="p">(</span><span class="s2">&quot;logs&quot;</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">npapers</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">logs</span><span class="o">.</span><span class="n">log_error</span><span class="p">(</span><span class="s2">&quot;logs&quot;</span><span class="p">,</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Something went wrong&quot;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">last</span> <span class="o">=</span> <span class="n">logs</span><span class="o">.</span><span class="n">get_last_scan</span><span class="p">(</span><span class="s2">&quot;logs&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.logs.append_scan_log">
+<span class="sig-prename descclassname"><span class="pre">living_review.logs.</span></span><span class="sig-name descname"><span class="pre">append_scan_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">npapers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nchunks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ok'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.logs.append_scan_log" title="Link to this definition"></a></dt>
+<dd><p>Append an entry to the scan log (<cite>scan_log.json</cite>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>logdir</strong> (<em>str</em><em> or </em><em>Path</em>) – Directory where the log files are stored.</p></li>
+<li><p><strong>start</strong> (<em>datetime.date</em><em> or </em><em>str</em>) – Start date of the scan.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em><em> or </em><em>str</em>) – End date of the scan.</p></li>
+<li><p><strong>npapers</strong> (<em>int</em>) – Number of papers processed.</p></li>
+<li><p><strong>nchunks</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of chunks processed (default=1).</p></li>
+<li><p><strong>status</strong> (<em>str</em><em>, </em><em>optional</em>) – Status string for the run (default=”ok”).</p></li>
+<li><p><strong>error_msg</strong> (<em>str</em><em>, </em><em>optional</em>) – Error message if the scan encountered an issue.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Updates <cite>scan_log.json</cite> with a new entry.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.logs.get_last_scan">
+<span class="sig-prename descclassname"><span class="pre">living_review.logs.</span></span><span class="sig-name descname"><span class="pre">get_last_scan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logdir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.logs.get_last_scan" title="Link to this definition"></a></dt>
+<dd><p>Retrieve the last scan range from <cite>scan_log.json</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>logdir</strong> (<em>str</em><em> or </em><em>Path</em>) – Directory containing the scan log file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictionary with keys <cite>{“start”: str, “end”: str}</cite> if available,
+otherwise <cite>None</cite>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict or None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.logs.log_error">
+<span class="sig-prename descclassname"><span class="pre">living_review.logs.</span></span><span class="sig-name descname"><span class="pre">log_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logdir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.logs.log_error" title="Link to this definition"></a></dt>
+<dd><p>Append an error entry with stack trace to <cite>errors.log</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>logdir</strong> (<em>str</em><em> or </em><em>Path</em>) – Directory where the error log is stored.</p></li>
+<li><p><strong>exc</strong> (<em>Exception</em>) – Exception object to log.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Writes a timestamped error entry to <cite>errors.log</cite>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-living_review.pipeline">
+<span id="living-review-pipeline-module"></span><h2>living_review.pipeline module<a class="headerlink" href="#module-living_review.pipeline" title="Link to this heading"></a></h2>
+<section id="pipeline-py">
+<h3>pipeline.py<a class="headerlink" href="#pipeline-py" title="Link to this heading"></a></h3>
+<p>Main orchestration pipeline for the <strong>Living Review</strong> project.</p>
+<p>The <cite>LivingReviewPipeline</cite> class coordinates the entire workflow:
+1. Fetch papers from multiple bibliographic sources (arXiv, InspireHEP,</p>
+<blockquote>
+<div><p>HAL, OpenAlex, Crossref).</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Deduplicate results.</p></li>
+<li><p>Filter papers for semantic relevance (accelerators ∧ ML).</p></li>
+<li><p>Classify papers into categories.</p></li>
+<li><p>Compute statistics.</p></li>
+<li><p>Export results to JSON and HTML.</p></li>
+</ol>
+<section id="id19">
+<h4>Typical Usage<a class="headerlink" href="#id19" title="Link to this heading"></a></h4>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">LivingReviewPipeline</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">start</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2025</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">end</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2025</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pipe</span> <span class="o">=</span> <span class="n">LivingReviewPipeline</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">sources</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;arxiv&quot;</span><span class="p">,</span> <span class="s2">&quot;inspire&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pipe</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">living_review.pipeline.</span></span><span class="sig-name descname"><span class="pre">LivingReviewPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sources</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Orchestrates the end-to-end Living Review workflow.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.start">
+<span class="sig-name descname"><span class="pre">start</span></span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.start" title="Link to this definition"></a></dt>
+<dd><p>Start date of the scan.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>datetime.date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.end">
+<span class="sig-name descname"><span class="pre">end</span></span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.end" title="Link to this definition"></a></dt>
+<dd><p>End date of the scan.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>datetime.date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.sources">
+<span class="sig-name descname"><span class="pre">sources</span></span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.sources" title="Link to this definition"></a></dt>
+<dd><p>Data sources to query (default: all).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.thresholds">
+<span class="sig-name descname"><span class="pre">thresholds</span></span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.thresholds" title="Link to this definition"></a></dt>
+<dd><p>Semantic similarity thresholds for filtering (<cite>{“accel”: float, “ml”: float}</cite>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.output_dir">
+<span class="sig-name descname"><span class="pre">output_dir</span></span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.output_dir" title="Link to this definition"></a></dt>
+<dd><p>Directory where output files are written.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.chunking">
+<span class="sig-name descname"><span class="pre">chunking</span></span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.chunking" title="Link to this definition"></a></dt>
+<dd><p>Optional chunking configuration, e.g. <cite>{“size”: 100}</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict or None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.papers">
+<span class="sig-name descname"><span class="pre">papers</span></span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.papers" title="Link to this definition"></a></dt>
+<dd><p>Papers collected and processed during the run.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.stats">
+<span class="sig-name descname"><span class="pre">stats</span></span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.stats" title="Link to this definition"></a></dt>
+<dd><p>Aggregated statistics from the processed papers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.start_time">
+<span class="sig-name descname"><span class="pre">start_time</span></span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.start_time" title="Link to this definition"></a></dt>
+<dd><p>Start timestamp of the run.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.run" title="Link to this definition"></a></dt>
+<dd><p>Execute the pipeline:
+- Fetch papers from configured sources.
+- Deduplicate results.
+- Filter semantically relevant papers.
+- Classify papers into categories.
+- Compute statistics.
+- Export to JSON and HTML.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Produces output files in the configured directory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-living_review.stats">
+<span id="living-review-stats-module"></span><h2>living_review.stats module<a class="headerlink" href="#module-living_review.stats" title="Link to this heading"></a></h2>
+<section id="stats-py">
+<h3>stats.py<a class="headerlink" href="#stats-py" title="Link to this heading"></a></h3>
+<p>Computation of summary statistics for the <strong>Living Review</strong> project.</p>
+<p>This module aggregates counts of papers by year, category, venue, keyword,
+and monthly trends. These statistics are used for reporting and visualizations
+in the exported JSON/HTML outputs.</p>
+<section id="id20">
+<h4>Contents<a class="headerlink" href="#id20" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>KEYWORDS: predefined list of relevant keywords to track.</p></li>
+<li><p>compute_stats: aggregate statistics from a list of papers.</p></li>
+</ul>
+</section>
+<section id="id21">
+<h4>Typical Usage<a class="headerlink" href="#id21" title="Link to this heading"></a></h4>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">compute_stats</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stats</span> <span class="o">=</span> <span class="n">compute_stats</span><span class="p">(</span><span class="n">papers</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stats</span><span class="p">[</span><span class="s2">&quot;per_year&quot;</span><span class="p">]</span>
+<span class="go">{&#39;2024&#39;: 15, &#39;2025&#39;: 7}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.stats.compute_stats">
+<span class="sig-prename descclassname"><span class="pre">living_review.stats.</span></span><span class="sig-name descname"><span class="pre">compute_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">papers</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.stats.compute_stats" title="Link to this definition"></a></dt>
+<dd><p>Compute aggregated statistics from a list of papers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>papers</strong> (<em>list</em><em> of </em><a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper"><em>Paper</em></a>) – Papers to analyze. Each must have attributes <cite>.date</cite>, <cite>.categories</cite>,
+<cite>.venue</cite>, <cite>.title</cite>, and <cite>.abstract</cite>.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictionary with the following keys:
+- “per_year”: counts of papers per publication year.
+- “per_category”: counts of papers per semantic category.
+- “per_venue/journal”: counts of papers per venue/journal.
+- “per_keyword”: counts of predefined keywords matched in titles/abstracts.
+- “monthly_trends”: counts of papers per month (YYYY-MM).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-living_review.utils">
+<span id="living-review-utils-module"></span><h2>living_review.utils module<a class="headerlink" href="#module-living_review.utils" title="Link to this heading"></a></h2>
+<section id="utils-py">
+<h3>utils.py<a class="headerlink" href="#utils-py" title="Link to this heading"></a></h3>
+<p>Utility functions for the <strong>Living Review</strong> project.</p>
+<p>This module provides helper functions for:
+- Deduplicating papers based on unique keys.
+- Checking if a date lies within a given range.</p>
+<section id="id22">
+<h4>Contents<a class="headerlink" href="#id22" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>deduplicate: remove duplicate papers by <cite>(arxiv_id, doi, normalized_title)</cite>.</p></li>
+<li><p>within_range: test whether a date falls within [start, end].</p></li>
+</ul>
+</section>
+<section id="id23">
+<h4>Typical Usage<a class="headerlink" href="#id23" title="Link to this heading"></a></h4>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">deduplicate</span><span class="p">,</span> <span class="n">within_range</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">unique_papers</span> <span class="o">=</span> <span class="n">deduplicate</span><span class="p">(</span><span class="n">papers</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">within_range</span><span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2025</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.utils.deduplicate">
+<span class="sig-prename descclassname"><span class="pre">living_review.utils.</span></span><span class="sig-name descname"><span class="pre">deduplicate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">papers</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.utils.deduplicate" title="Link to this definition"></a></dt>
+<dd><p>Remove duplicate papers based on their deduplication key.</p>
+<p>Each <cite>Paper</cite> must implement <cite>.key_for_dedup()</cite> which returns a tuple
+<cite>(arxiv_id, doi, normalized_title)</cite>. Duplicates are detected when
+this key repeats.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>papers</strong> (<em>list</em><em> of </em><a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper"><em>Paper</em></a>) – Papers to deduplicate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Deduplicated list of papers (order preserved: first occurrence kept).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.utils.within_range">
+<span class="sig-prename descclassname"><span class="pre">living_review.utils.</span></span><span class="sig-name descname"><span class="pre">within_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.utils.within_range" title="Link to this definition"></a></dt>
+<dd><p>Check whether a date lies within a given range [start, end].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>d</strong> (<em>datetime.date</em>) – Date to test.</p></li>
+<li><p><strong>start</strong> (<em>datetime.date</em>) – Start of the range.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>) – End of the range.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if <cite>start &lt;= d &lt;= end</cite>, otherwise False.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-living_review">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-living_review" title="Link to this heading"></a></h2>
+<section id="living-review">
+<h3>living_review<a class="headerlink" href="#living-review" title="Link to this heading"></a></h3>
+<p>A Python package for managing and analyzing <strong>Living Reviews</strong>,
+with a focus on applications in particle accelerators and
+machine learning.</p>
+<p>This package provides:
+- Data model (<cite>Paper</cite> class) to represent scientific papers.
+- Fetchers for multiple bibliographic APIs (arXiv, InspireHEP, HAL,</p>
+<blockquote>
+<div><p>OpenAlex, Crossref).</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Semantic filtering and classification of papers using
+sentence-transformers.</p></li>
+<li><p>Statistics computation for bibliometrics and trends.</p></li>
+<li><p>Export utilities to JSON and HTML.</p></li>
+<li><p>Logging of scans and errors.</p></li>
+<li><p>A pipeline (<cite>LivingReviewPipeline</cite>) to orchestrate the entire workflow.</p></li>
+<li><p>A CLI (<cite>living_review.cli</cite>) for running scans from the terminal.</p></li>
+</ul>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="living_review.__version__">
+<span class="sig-prename descclassname"><span class="pre">living_review.</span></span><span class="sig-name descname"><span class="pre">__version__</span></span><a class="headerlink" href="#living_review.__version__" title="Link to this definition"></a></dt>
+<dd><p>Current version of the package.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Adnan GHRIBI.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

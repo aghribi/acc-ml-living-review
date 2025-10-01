@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML/AI for Accelerator Physics - Living Review</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #2563eb; --primary-dark: #1e40af; --secondary: #64748b;
+            --accent: #06b6d4; --bg-light: #ffffff; --bg-gray: #f8fafc;
+            --bg-dark: #0f172a; --text-dark: #1e293b; --text-light: #64748b;
+            --border: #e2e8f0;
+        }
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; color: var(--text-dark); background: var(--bg-gray); }
+        .hero { background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+                color: white; padding: 4rem 2rem; text-align: center; }
+        .hero h1 { font-size: 2.75rem; font-weight: 700; margin-bottom: 1rem; }
+        .hero .subtitle { font-size: 1.25rem; max-width: 900px; margin: 0 auto 2rem; }
+        .hero .tagline { font-size: 1rem; opacity: 0.85; font-style: italic; margin-bottom: 2rem; }
+        .controls { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 0.75rem 1.75rem; border: 2px solid white; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer;
+               background: rgba(255, 255, 255, 0.1); color: white; }
+        .btn:hover { background: white; color: var(--primary); }
+        .main-wrapper { 
+            display: flex; 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            gap: 2rem; 
+            padding: 3rem 2rem;
+            align-items: flex-start; /* ✅ important pour sticky */
+        }
+        .toc { 
+            width: 280px; 
+            flex-shrink: 0; 
+            position: sticky; 
+            top: 2rem; 
+            background: white; 
+            border-radius: 12px; 
+            padding: 1.5rem;
+            align-self: flex-start; /* ✅ garde la hauteur du menu */
+        }
+        .toc h3 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--primary); font-weight: 700; }
+        .toc-list { list-style: none; }
+        .toc-item { margin-bottom: 0.5rem; }
+        .toc-link { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; color: var(--text-light); text-decoration: none; border-radius: 6px; font-size: 0.9rem; }
+        .toc-link:hover { background: var(--bg-gray); color: var(--primary); }
+        .content { flex: 1; min-width: 0; }
+        .info-box { background: white; border-radius: 12px; padding: 2rem; margin-bottom: 3rem; border-left: 4px solid var(--primary); }
+        .section { background: white; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+        .section-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--bg-gray); }
+        .section-title { font-size: 1.75rem; font-weight: 700; }
+        .figure { background: white; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; border: 1px solid var(--border); }
+        .figure-content { background: var(--bg-gray); border-radius: 8px; padding: 1rem; min-height: 400px; }
+        .plotly-chart { width: 100%; height: 400px; }
+        .figure-caption { color: var(--text-light); font-size: 0.95rem; margin-top: 0.5rem; }
+        .paper-item { padding: 1rem 0; border-bottom: 1px solid var(--border); }
+        .paper-title { color: var(--text-dark); text-decoration: none; font-weight: 500; }
+        .paper-meta { display: flex; flex-wrap: wrap; gap: 0.75rem; font-size: 0.9rem; color: var(--text-light); }
+        footer { background: var(--bg-dark); color: white; padding: 3rem 2rem; margin-top: 4rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>ML/AI for Accelerator Physics</h1>
+        <p class="subtitle">A Living Review of Machine Learning and Artificial Intelligence Applications in Accelerator Physics and Technologies</p>
+        <p class="tagline">Advancing the frontiers of particle accelerator research through AI-driven innovation</p>
+        <div class="controls">
+            <button class="btn" onclick="expandAll()">Expand All</button>
+            <button class="btn" onclick="collapseAll()">Collapse All</button>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        <!-- === TOC === -->
+        <aside class="toc">
+            <h3>Table of Contents</h3>
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#statistics" class="toc-link">📊 Statistics & Trends</a></li>
+                {% for cat, grouped in papers|groupby("primary_category") %}
+                <li class="toc-item"><a href="#{{ cat|lower|replace(' ', '-') }}" class="toc-link">{{ cat }}</a></li>
+                {% endfor %}
+            </ul>
+        </aside>
+
+        <!-- === Content === -->
+        <div class="content">
+            <div class="info-box">
+                <h2>About This Living Review</h2>
+                <p>This living document compiles research applying ML/AI to particle accelerators. Data and charts are updated automatically based on the latest publications.</p>
+            </div>
+
+            <!-- === Statistics section === -->
+            <div class="section" id="statistics">
+                <div class="section-header"><h2 class="section-title">📊 Publication Statistics & Trends</h2></div>
+                <div class="figure"><div class="figure-content"><div id="chart1" class="plotly-chart"></div></div><div class="figure-caption"><strong>Figure 1:</strong> Publications per year.</div></div>
+                <div class="figure"><div class="figure-content"><div id="chart2" class="plotly-chart"></div></div><div class="figure-caption"><strong>Figure 2:</strong> Distribution across categories.</div></div>
+                <div class="figure"><div class="figure-content"><div id="chart3" class="plotly-chart"></div></div><div class="figure-caption"><strong>Figure 3:</strong> Top publication venues.</div></div>
+                <div class="figure"><div class="figure-content"><div id="chart4" class="plotly-chart"></div></div><div class="figure-caption"><strong>Figure 4:</strong> Most common keywords by frequency.</div></div>
+                <div class="figure"><div class="figure-content"><div id="chart5" class="plotly-chart"></div></div><div class="figure-caption"><strong>Figure 5:</strong> Monthly publication trends.</div></div>
+            </div>
+
+            <!-- === Paper Sections === -->
+            <div id="paper-sections">
+                {% for category, grouped in papers|groupby("primary_category") %}
+                <div class="section" id="{{ category|lower|replace(' ', '-') }}">
+                    <div class="section-header"><h2 class="section-title">{{ category }}</h2></div>
+                    {% for paper in grouped %}
+                    <div class="paper-item">
+                        <a href="{{ paper.url }}" class="paper-title" target="_blank">{{ paper.title }}</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">{{ paper.authors }}</span>
+                            <span class="paper-venue">{{ paper.venue }} ({{ paper.year }})</span>
+                            <span class="paper-cats">
+                                Categories:
+                                {% for c in paper.categories %}
+                                    {{ c.label }} ({{ "%.2f"|format(c.score) }}){% if not loop.last %}, {% endif %}
+                                {% endfor %}
+                            </span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Join the Community</h3>
+        <p>This living review is maintained by the accelerator physics community.</p>
+        {% if papers|length > 0 %}
+            <p>Last updated: {{ papers[0].date }}</p>
+        {% else %}
+            <p>No papers retrieved in this window.</p>
+        {% endif %}
+    </footer>
+
+    <script>
+        function expandAll() {
+            document.querySelectorAll('.section').forEach(s => s.classList.add('expanded'));
+        }
+        function collapseAll() {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('expanded'));
+        }
+
+        // === Stats injected ===
+        const yearData     = {{ stats.per_year|tojson }};
+        const categoryData = {{ stats.per_category|tojson }};
+        const venueData    = {{ stats["per_venue/journal"]|tojson }};
+        const keywordData  = {{ stats.per_keyword|tojson }};
+        const monthlyData  = {{ stats.monthly_trends|tojson }};
+
+        // Chart 1: per year
+        Plotly.newPlot("chart1", [{
+            x: Object.keys(yearData),
+            y: Object.values(yearData),
+            type: "bar",
+            marker: { color: "#3b82f6" }
+        }], { title: "Publications per Year" });
+
+        // Chart 2: per category
+        Plotly.newPlot("chart2", [{
+            x: Object.values(categoryData),
+            y: Object.keys(categoryData),
+            type: "bar",
+            orientation: "h",
+            marker: { color: "#06b6d4" }
+        }], { title: "Publications by Category" });
+
+        // Chart 3: per venue
+        Plotly.newPlot("chart3", [{
+            labels: Object.keys(venueData),
+            values: Object.values(venueData),
+            type: "pie"
+        }], { title: "Top Publication Venues" });
+
+        // Chart 4: keywords
+        Plotly.newPlot("chart4", [{
+            x: Object.values(keywordData),
+            y: Object.keys(keywordData),
+            type: "bar",
+            orientation: "h",
+            marker: { color: "#10b981" }
+        }], { title: "Top Keywords", margin: { l: 200 } });
+
+        // Chart 5: monthly trends
+        Plotly.newPlot("chart5", [{
+            x: Object.keys(monthlyData),
+            y: Object.values(monthlyData),
+            type: "scatter",
+            mode: "lines+markers",
+            line: { color: "#3b82f6", width: 3, shape: "spline" }
+        }], { title: "Monthly Trends", xaxis:{ rangeslider:{ visible:true } } });
+    </script>
+</body>
+</html>

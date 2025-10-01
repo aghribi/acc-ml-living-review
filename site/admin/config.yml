@@ -1,0 +1,150 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (main or master)
+
+# Local backend for development
+# Uncomment for local testing: npx decap-server
+# local_backend: true
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # Pending Submissions - New papers submitted via form
+  - name: "submissions"
+    label: "Pending Submissions"
+    folder: "data/submissions/pending"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Authors", name: "authors", widget: "list", required: true}
+      - {label: "Abstract", name: "abstract", widget: "text", required: true}
+      - {label: "DOI", name: "doi", widget: "string", required: false}
+      - {label: "URL", name: "url", widget: "string", required: true}
+      - {label: "Year", name: "year", widget: "number", value_type: "int", required: true}
+      - {label: "Venue", name: "venue", widget: "string", required: true}
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options: ["pending", "accepted", "rejected"]
+        default: "pending"
+      - {label: "Source", name: "source", widget: "string", default: "manual", required: false}
+      - {label: "Submitted At", name: "submitted_at", widget: "datetime", required: true}
+      - {label: "Submitter Name", name: "submitter_name", widget: "string", required: false}
+      - {label: "Submitter Email", name: "submitter_email", widget: "string", required: false}
+      - {label: "Comments", name: "comments", widget: "text", required: false}
+      - label: "Suggested Categories"
+        name: "categories"
+        widget: "list"
+        required: false
+      - {label: "Keywords", name: "keywords", widget: "list", required: false}
+      - {label: "Reviewer Notes", name: "reviewer_notes", widget: "text", required: false, hint: "Internal notes for curators"}
+
+  # Main Living Review Database
+  - name: "database"
+    label: "Living Review Database"
+    files:
+      - label: "Main Paper Database"
+        name: "livingreview"
+        file: "data/livingreview.json"
+        extension: "json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - label: "Papers"
+            name: "papers"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Authors", name: "authors", widget: "list"}
+              - {label: "Abstract", name: "abstract", widget: "text"}
+              - {label: "DOI", name: "doi", widget: "string", required: false}
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Year", name: "year", widget: "number"}
+              - {label: "Venue", name: "venue", widget: "string"}
+              - {label: "Categories", name: "categories", widget: "list"}
+              - {label: "Keywords", name: "keywords", widget: "list", required: false}
+              - {label: "Source", name: "source", widget: "string", required: false}
+              - {label: "Added At", name: "added_at", widget: "datetime", required: false}
+
+  # Approved submissions archive
+  - name: "approved"
+    label: "Approved Submissions"
+    folder: "data/submissions/approved"
+    create: false
+    extension: "json"
+    format: "json"
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Authors", name: "authors", widget: "list"}
+      - {label: "Abstract", name: "abstract", widget: "text"}
+      - {label: "DOI", name: "doi", widget: "string", required: false}
+      - {label: "URL", name: "url", widget: "string"}
+      - {label: "Year", name: "year", widget: "number"}
+      - {label: "Venue", name: "venue", widget: "string"}
+      - {label: "Status", name: "status", widget: "string", default: "accepted"}
+      - {label: "Approved At", name: "approved_at", widget: "datetime"}
+
+  # Rejected submissions archive
+  - name: "rejected"
+    label: "Rejected Submissions"
+    folder: "data/submissions/rejected"
+    create: false
+    extension: "json"
+    format: "json"
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Reason", name: "rejection_reason", widget: "text"}
+      - {label: "Rejected At", name: "rejected_at", widget: "datetime"}
+
+  # Pages collection
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/_index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      
+      - label: "Cite Us Page"
+        name: "cite"
+        file: "content/cite.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      
+      - label: "Documentation"
+        name: "docs"
+        file: "content/docs.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+  # Statistics/Data
+  - name: "statistics"
+    label: "Statistics"
+    files:
+      - label: "Review Statistics"
+        name: "stats"
+        file: "data/statistics.json"
+        extension: "json"
+        format: "json"
+        fields:
+          - {label: "Total Papers", name: "total_papers", widget: "number"}
+          - {label: "Last Updated", name: "last_updated", widget: "string"}
+          - {label: "Next Update", name: "next_update", widget: "string"}
+          - {label: "Total Categories", name: "total_categories", widget: "number"}

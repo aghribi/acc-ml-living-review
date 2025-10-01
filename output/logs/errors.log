@@ -1,0 +1,57 @@
+============================================================
+[2025-09-30T12:32:34.594915] ERROR: KeyError
+Traceback (most recent call last):
+  File "/Users/aghribi/Documents/work_space/projects_active/ARTIFACT/living_review2/living_review/pipeline.py", line 46, in run
+    self.papers.extend(fetch_inspire(self.start, self.end))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aghribi/Documents/work_space/projects_active/ARTIFACT/living_review2/living_review/fetchers.py", line 105, in fetch_inspire
+    link = hit.get("links", [{}])[0].get("url", "")
+           ~~~~~~~~~~~~~~~~~~~~~~^^^
+KeyError: 0
+
+============================================================
+[2025-09-30T12:48:53.373330] ERROR: UndefinedError
+Traceback (most recent call last):
+  File "/Users/aghribi/Documents/work_space/projects_active/ARTIFACT/living_review2/living_review/pipeline.py", line 69, in run
+    export_html(self.papers, self.stats, self.output_dir, chunking=self.chunking)
+  File "/Users/aghribi/Documents/work_space/projects_active/ARTIFACT/living_review2/living_review/exporters.py", line 48, in export_html
+    html_output = template.render(papers=papers_data, stats=stats)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/acc/lib/python3.12/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/opt/homebrew/anaconda3/envs/acc/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "templates/review_template.html", line 70, in top-level template code
+    {% for cat, grouped in papers|groupby("category") %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/acc/lib/python3.12/site-packages/jinja2/async_utils.py", line 45, in wrapper
+    return normal_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/acc/lib/python3.12/site-packages/jinja2/filters.py", line 1261, in sync_do_groupby
+    for key, values in groupby(sorted(value, key=expr), expr)
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'category'
+
+============================================================
+[2025-09-30T12:57:26.570573] ERROR: UndefinedError
+Traceback (most recent call last):
+  File "/Users/aghribi/Documents/work_space/projects_active/ARTIFACT/living_review2/living_review/pipeline.py", line 69, in run
+    export_html(self.papers, self.stats, self.output_dir, chunking=self.chunking)
+  File "/Users/aghribi/Documents/work_space/projects_active/ARTIFACT/living_review2/living_review/exporters.py", line 50, in export_html
+    html_output = template.render(papers=papers_data, stats=stats)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/acc/lib/python3.12/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/opt/homebrew/anaconda3/envs/acc/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "templates/review_template.html", line 96, in top-level template code
+    {% for category, grouped in papers|groupby("category") %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/acc/lib/python3.12/site-packages/jinja2/async_utils.py", line 45, in wrapper
+    return normal_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/acc/lib/python3.12/site-packages/jinja2/filters.py", line 1261, in sync_do_groupby
+    for key, values in groupby(sorted(value, key=expr), expr)
+                               ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'category'
+

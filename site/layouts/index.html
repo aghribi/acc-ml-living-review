@@ -1,0 +1,129 @@
+{{ define "title" }}{{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+{{ $data := .Site.Data.livingreview }}
+{{ $papers := $data.papers | default slice }}
+{{ $stats := $data.stats }}
+
+<!-- Calculate latest papers (from last month) -->
+{{ $latestPapers := slice }}
+{{ if $papers }}
+{{ $currentMonth := now.Format "2006-01" }}
+{{ range $papers }}
+    {{ $paperMonth := substr .date 0 7 }}
+    {{ if eq $paperMonth $currentMonth }}
+        {{ $latestPapers = $latestPapers | append . }}
+    {{ end }}
+{{ end }}
+{{ end }}
+
+<div class="page-header">
+    <h1>{{ .Site.Title }}</h1>
+    <p class="page-subtitle">{{ .Site.Params.description }}</p>
+    
+    <div class="header-badges">
+        <span class="living-badge">
+            <span class="status-dot"></span>
+            LIVING REVIEW • CONTINUOUSLY UPDATED
+        </span>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Key Statistics -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number">{{ len $papers }}+</div>
+            <div class="stat-label">Papers Reviewed</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ if $stats.per_category }}{{ len $stats.per_category }}{{ else }}0{{ end }}</div>
+            <div class="stat-label">Categories</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ now.Format "Jan 2006" }}</div>
+            <div class="stat-label">Last Updated</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ len $latestPapers }}</div>
+            <div class="stat-label">Papers This Month</div>
+        </div>
+    </div>
+
+    <!-- Overview Section -->
+    <div class="section">
+        <h2>Overview</h2>
+        <p class="intro-text">
+            This living review provides a comprehensive survey of artificial intelligence and machine learning applications in particle accelerator science. As the field rapidly evolves, we continuously update this review to reflect the latest research, methodologies, and experimental results from facilities worldwide. Our goal is to serve as a central reference for researchers, operators, and engineers working at the intersection of AI/ML and accelerator physics.
+        </p>
+    </div>
+
+    <!-- Latest Papers -->
+    {{ if gt (len $latestPapers) 0 }}
+    <div class="section">
+        <h2>Latest Additions</h2>
+        <p class="intro-text" style="margin-bottom: 20px;">Recently added papers from {{ now.Format "January 2006" }}</p>
+        
+        {{ range first 5 $latestPapers }}
+        <div class="paper-item">
+            {{ $paperUrl := "" }}
+            {{ if .links.arxiv }}
+                {{ $paperUrl = .links.arxiv }}
+            {{ else if .links.inspire }}
+                {{ $paperUrl = .links.inspire }}
+            {{ else if .links.openalex }}
+                {{ $paperUrl = .links.openalex }}
+            {{ else if .doi }}
+                {{ $paperUrl = printf "https://doi.org/%s" .doi }}
+            {{ end }}
+            
+            <a href="{{ $paperUrl }}" class="paper-title" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+            <div class="paper-meta">
+                <span class="paper-authors">{{ delimit (first 3 .authors) ", " }}{{ if gt (len .authors) 3 }}, et al.{{ end }}</span>
+                <span>•</span>
+                <span class="paper-venue">{{ .venue }} ({{ .year }})</span>
+            </div>
+            {{ if .keywords }}
+            <div class="paper-tags">
+                {{ range first 5 .keywords }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="/papers/" class="btn btn-primary">View All Papers →</a>
+        </div>
+    </div>
+    {{ end }}
+
+    <!-- Categories Overview -->
+    {{ if $stats.per_category }}
+    <div class="section">
+        <h2>Research Areas</h2>
+        <p class="intro-text" style="margin-bottom: 20px;">Explore papers across different application domains</p>
+        
+        <div class="topic-grid">
+            {{ range $category, $count := $stats.per_category }}
+            <a href="/papers/#{{ $category | urlize }}" class="topic-card">
+                <div class="topic-title">{{ $category }}</div>
+                <div class="topic-desc">{{ $count }} papers</div>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    <!-- Call to Action -->
+    <div class="cta-section" id="cite">
+        <h2 style="color: var(--text-heading); margin-bottom: 25px; transition: color 0.3s ease;">Get Involved</h2>
+        <a href="/papers/" class="cta-button primary">Browse All Papers</a>
+        <a href="/submit/" class="cta-button">Submit a Paper</a>
+        <a href="/cite/" class="cta-button">Cite This Review</a>
+        <a href="{{ .Site.Params.github }}" class="cta-button" target="_blank">View on GitHub</a>
+    </div>
+</div>
+
+{{ end }}

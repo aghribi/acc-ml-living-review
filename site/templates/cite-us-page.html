@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cite Us - The AI/ML for particle accelerators living review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: linear-gradient(180deg, #0f1419 0%, #1a1f2e 100%);
+            --bg-nav: rgba(15, 20, 25, 0.95);
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --bg-card-hover: rgba(255, 255, 255, 0.05);
+            --bg-section: rgba(255, 255, 255, 0.02);
+            --bg-button: rgba(96, 150, 186, 0.15);
+            --bg-button-hover: rgba(96, 150, 186, 0.25);
+            --border-primary: rgba(100, 150, 200, 0.2);
+            --border-card: rgba(96, 150, 186, 0.2);
+            --border-focus: rgba(96, 150, 186, 0.4);
+            --text-primary: #e0e0e0;
+            --text-heading: #e8eef3;
+            --text-secondary: #8b95a0;
+            --text-tertiary: #6b737c;
+            --accent-primary: #6096ba;
+            --accent-secondary: #507a9a;
+            --code-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        [data-theme="light"] {
+            --bg-primary: linear-gradient(180deg, #f5f7fa 0%, #e8ecf1 100%);
+            --bg-nav: rgba(255, 255, 255, 0.95);
+            --bg-card: rgba(96, 150, 186, 0.08);
+            --bg-card-hover: rgba(96, 150, 186, 0.12);
+            --bg-section: rgba(96, 150, 186, 0.05);
+            --bg-button: rgba(96, 150, 186, 0.15);
+            --bg-button-hover: rgba(96, 150, 186, 0.25);
+            --border-primary: rgba(96, 150, 186, 0.3);
+            --border-card: rgba(96, 150, 186, 0.3);
+            --border-focus: rgba(96, 150, 186, 0.5);
+            --text-primary: #2c3e50;
+            --text-heading: #1a2332;
+            --text-secondary: #5a6c7d;
+            --text-tertiary: #7a8a9a;
+            --accent-primary: #4a7a9a;
+            --accent-secondary: #6096ba;
+            --code-bg: rgba(96, 150, 186, 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        nav {
+            background: var(--bg-nav);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-primary);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-logo {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--accent-primary);
+            padding: 20px 0;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .nav-menu a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 20px 18px;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--accent-primary);
+            border-bottom-color: var(--accent-primary);
+            background: var(--bg-button);
+        }
+
+        .github-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: var(--bg-button);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            color: var(--text-secondary);
+            font-size: 0.85em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin: 10px 0;
+        }
+
+        .github-badge:hover {
+            background: var(--bg-button-hover);
+            border-color: var(--accent-primary);
+        }
+
+        .github-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .github-stats {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .theme-toggle {
+            background: var(--bg-button);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            margin: 10px 0;
+        }
+
+        .theme-toggle:hover {
+            background: var(--bg-button-hover);
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .page-subtitle {
+            font-size: 1.1em;
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+
+        .section {
+            background: var(--bg-section);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: var(--text-heading);
+            margin-bottom: 20px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .citation-box {
+            background: var(--code-bg);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .citation-text {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.6;
+            color: var(--text-primary);
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 8px 16px;
+            background: var(--bg-button);
+            border: 1px solid var(--border-card);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .copy-button:hover {
+            background: var(--bg-button-hover);
+            border-color: var(--accent-primary);
+        }
+
+        .copy-button.copied {
+            background: rgba(76, 175, 80, 0.2);
+            border-color: rgba(76, 175, 80, 0.6);
+            color: #81c784;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--bg-button);
+            border: 1px solid var(--border-card);
+            border-radius: 6px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--bg-button-hover);
+            border-color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        .btn.primary {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            color: #ffffff;
+        }
+
+        .btn.primary:hover {
+            background: var(--accent-secondary);
+            border-color: var(--accent-secondary);
+        }
+
+        .citation-format {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--bg-button);
+            border: 1px solid var(--border-card);
+            border-radius: 15px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .info-note {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-primary);
+            padding: 20px;
+            border-radius: 6px;
+            margin: 25px 0;
+            transition: all 0.3s ease;
+        }
+
+        .info-note p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            background: var(--bg-nav);
+            color: var(--text-primary);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            border-top: 1px solid var(--border-primary);
+            transition: all 0.3s ease;
+        }
+
+        footer h3 {
+            color: var(--text-heading);
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .citation-box {
+                padding: 20px;
+            }
+
+            .copy-button {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin-top: 15px;
+                width: 100%;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">The AI/ML for particle accelerators living review</a>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#review">Access the Living Review</a></li>
+                    <li><a href="#documentation">Documentation</a></li>
+                    <li><a href="#cite" class="active">Cite Us</a></li>
+                </ul>
+                <a href="https://github.com" class="github-badge" target="_blank">
+                    <svg class="github-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    <div class="github-stats">
+                        <span>⭐ 398</span>
+                        <span>🔱 122</span>
+                    </div>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="page-header">
+            <h1>How to Cite This Review</h1>
+            <p class="page-subtitle">Help us track the impact of this living review by citing it in your work</p>
+        </div>
+
+        <div class="section">
+            <h2>Standard Citation</h2>
+            <span class="citation-format">APA Format</span>
+            <div class="citation-box">
+                <button class="copy-button" onclick="copyToClipboard('citation-apa', this)">Copy</button>
+                <pre class="citation-text" id="citation-apa">AI/ML for Particle Accelerators Collaboration. (2025). The AI/ML for particle accelerators living review. Retrieved from https://ml-accel-review.org</pre>
+            </div>
+
+            <span class="citation-format">IEEE Format</span>
+            <div class="citation-box">
+                <button class="copy-button" onclick="copyToClipboard('citation-ieee', this)">Copy</button>
+                <pre class="citation-text" id="citation-ieee">AI/ML for Particle Accelerators Collaboration, "The AI/ML for particle accelerators living review," 2025. [Online]. Available: https://ml-accel-review.org</pre>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>BibTeX Entry</h2>
+            <p>Use this BibTeX entry for LaTeX documents:</p>
+            <div class="citation-box">
+                <button class="copy-button" onclick="copyToClipboard('bibtex', this)">Copy</button>
+                <pre class="citation-text" id="bibtex">@misc{ml_accel_review_2025,
+  title        = {The AI/ML for particle accelerators living review},
+  author       = {{AI/ML for Particle Accelerators Collaboration}},
+  year         = {2025},
+  howpublished = {\url{https://ml-accel-review.org}},
+  note         = {Accessed: 2025-09-30}
+}</pre>
+            </div>
+            <div class="download-buttons">
+                <a href="#" class="btn primary" download="ml-accel-review.bib">
+                    📋 Download BibTeX File
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Citation in Text</h2>
+            <p>When referencing this living review in your manuscript, we recommend the following format:</p>
+            <div class="info-note">
+                <p>"According to the AI/ML for Particle Accelerators Living Review [1], machine learning techniques have been successfully applied to..."</p>
+            </div>
+            <p>Since this is a living review that is continuously updated, please include the access date in your citation to indicate which version of the review you consulted.</p>
+        </div>
+
+        <div class="section">
+            <h2>Download Citation Files</h2>
+            <p>Download citation files in various formats for easy import into your reference manager:</p>
+            <div class="download-buttons">
+                <a href="#" class="btn" download="ml-accel-review.bib">
+                    📋 BibTeX (.bib)
+                </a>
+                <a href="#" class="btn" download="ml-accel-review.ris">
+                    📄 RIS Format (.ris)
+                </a>
+                <a href="#" class="btn" download="ml-accel-review.enw">
+                    📑 EndNote (.enw)
+                </a>
+                <a href="#" class="btn primary" download="ml-accel-review.pdf">
+                    📥 Download Full Review (PDF)
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Why Cite This Review?</h2>
+            <p>By citing this living review, you:</p>
+            <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 20px; margin-top: 10px;">
+                <li>Support the continued maintenance and development of this community resource</li>
+                <li>Help track the impact and reach of AI/ML applications in accelerator science</li>
+                <li>Enable funding agencies to recognize the value of open, collaborative reviews</li>
+                <li>Give credit to the many contributors who maintain and update this resource</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Questions?</h2>
+            <p>If you have questions about how to cite this review, need a specific citation format, or want to report a citation issue, please contact us through our GitHub repository or email the maintainers.</p>
+            <div class="download-buttons">
+                <a href="https://github.com" class="btn" target="_blank">
+                    💬 Open an Issue on GitHub
+                </a>
+                <a href="mailto:contact@ml-accel-review.org" class="btn">
+                    ✉️ Email the Maintainers
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Join the Community</h3>
+        <p>This living review is maintained by the accelerator physics community.</p>
+        <p>Last updated: September 2025</p>
+    </footer>
+
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        themeToggle.textContent = currentTheme === 'dark' ? '🌙' : '☀️';
+        
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme');
+            const newTheme = theme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+        });
+
+        // Copy to clipboard function
+        function copyToClipboard(elementId, button) {
+            const text = document.getElementById(elementId).textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = button.textContent;
+                button.textContent = '✓ Copied!';
+                button.classList.add('copied');
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                button.textContent = '✗ Failed';
+                setTimeout(() => {
+                    button.textContent = 'Copy';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

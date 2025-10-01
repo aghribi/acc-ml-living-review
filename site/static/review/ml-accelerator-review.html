@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML/AI for Accelerator Physics - Living Review</title>
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #2563eb; --primary-dark: #1e40af; --secondary: #64748b;
+      --accent: #06b6d4; --bg-light: #ffffff; --bg-gray: #f8fafc;
+      --bg-dark: #0f172a; --text-dark: #1e293b; --text-light: #64748b;
+      --border: #e2e8f0;
+    }
+    body { font-family: 'Inter', sans-serif; line-height: 1.7; color: var(--text-dark); background: var(--bg-gray); }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+            color: white; padding: 4rem 2rem; text-align: center; }
+    .hero h1 { font-size: 2.75rem; font-weight: 700; margin-bottom: 1rem; }
+    .hero .subtitle { font-size: 1.25rem; max-width: 900px; margin: 0 auto 2rem; }
+    .hero .tagline { font-size: 1rem; opacity: 0.85; font-style: italic; margin-bottom: 2rem; }
+    .controls { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 0.75rem 1.75rem; border: 2px solid white; border-radius: 8px;
+           font-size: 0.95rem; font-weight: 600; cursor: pointer;
+           background: rgba(255,255,255,0.1); color: white; transition: all 0.3s ease; }
+    .btn:hover { background: white; color: var(--primary); transform: translateY(-2px); }
+
+    /* LAYOUT */
+    .main-wrapper { display: flex; max-width: 1400px; margin: 0 auto; gap: 2rem; padding: 3rem 2rem; align-items: flex-start; }
+    .toc { width: 280px; flex-shrink: 0; position: sticky; top: 2rem; height: fit-content;
+           max-height: calc(100vh - 4rem); overflow-y: auto; background: white; border-radius: 12px;
+           padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    .toc h3 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--primary); font-weight: 700; }
+    .toc-list { list-style: none; }
+    .toc-item { margin-bottom: 0.5rem; }
+    .toc-link { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; color: var(--text-light);
+                text-decoration: none; border-radius: 6px; font-size: 0.9rem; transition: all 0.2s ease; }
+    .toc-link:hover, .toc-link.active { background: var(--bg-gray); color: var(--primary); font-weight: 600; }
+    .content { flex: 1; min-width: 0; }
+
+    /* INFO + SECTIONS */
+    .info-box { background: white; border-radius: 12px; padding: 2rem; margin-bottom: 3rem; border-left: 4px solid var(--primary); }
+    .section { background: white; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); scroll-margin-top: 2rem; }
+    .section-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--bg-gray); cursor: pointer; user-select: none; }
+    .section-title { font-size: 1.75rem; font-weight: 700; color: var(--text-dark); }
+    .section-header .chevron { margin-left: auto; transition: transform 0.2s ease; }
+    .section.collapsed .section-body { display: none; }
+    .section.collapsed .chevron { transform: rotate(-90deg); }
+
+    /* FIGURES */
+    .figure { background: white; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; border: 1px solid var(--border); }
+    .figure-content { background: var(--bg-gray); border-radius: 8px; padding: 1rem; min-height: 400px; }
+    .plotly-chart { width: 100%; height: 400px; }
+    .figure-caption { color: var(--text-light); font-size: 0.95rem; margin-top: 0.5rem; }
+
+    /* PAPERS */
+    .paper-item { padding: 1rem 0; border-bottom: 1px solid var(--border); }
+    .paper-title { color: var(--text-dark); text-decoration: none; font-weight: 500; }
+    .paper-title:hover { color: var(--primary); }
+    .paper-meta { display: flex; flex-wrap: wrap; gap: 0.75rem; font-size: 0.9rem; color: var(--text-light); }
+
+    footer { background: var(--bg-dark); color: white; padding: 3rem 2rem; margin-top: 4rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>ML/AI for Accelerator Physics</h1>
+    <p class="subtitle">A Living Review of Machine Learning and Artificial Intelligence Applications in Accelerator Physics and Technologies</p>
+    <p class="tagline">Advancing the frontiers of particle accelerator research through AI-driven innovation</p>
+    <div class="controls">
+      <button class="btn" onclick="expandAll()">Expand All</button>
+      <button class="btn" onclick="collapseAll()">Collapse All</button>
+    </div>
+  </div>
+
+  <div class="main-wrapper">
+    <!-- TOC -->
+    <aside class="toc">
+      <h3>Table of Contents</h3>
+      <ul class="toc-list">
+        <li class="toc-item"><a href="#statistics" class="toc-link">📊 Statistics & Trends</a></li>
+        
+        <li class="toc-item"><a href="#novel-applications" class="toc-link">Novel Applications</a></li>
+        
+        <li class="toc-item"><a href="#others" class="toc-link">Others</a></li>
+        
+        <li class="toc-item"><a href="#reinforcement-learning-&-autonomous-systems" class="toc-link">Reinforcement Learning & Autonomous Systems</a></li>
+        
+        <li class="toc-item"><a href="#statistics-&-trends" class="toc-link">Statistics & Trends</a></li>
+        
+        <li class="toc-item"><a href="#surrogate-models" class="toc-link">Surrogate Models</a></li>
+        
+        <li class="toc-item"><a href="#tools-&-libraries" class="toc-link">Tools & Libraries</a></li>
+        
+      </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="info-box">
+        <h2>About This Living Review</h2>
+        <p>This living document compiles research applying ML/AI to particle accelerators. Data and charts are updated automatically based on the latest publications.</p>
+      </div>
+
+      <!-- Stats -->
+      <div class="section" id="statistics">
+        <div class="section-header">
+          <h2 class="section-title">📊 Publication Statistics & Trends</h2>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="section-body">
+          <div class="figure"><div class="figure-content"><div id="chart1" class="plotly-chart"></div></div><div class="figure-caption"><strong>Figure 1:</strong> Publications per year.</div></div>
+          <div class="figure"><div class="figure-content"><div id="chart2" class="plotly-chart"></div></div><div class="figure-caption"><strong>Figure 2:</strong> Distribution across categories.</div></div>
+          <div class="figure"><div class="figure-content"><div id="chart3" class="plotly-chart"></div></div><div class="figure-caption"><strong>Figure 3:</strong> Top publication venues.</div></div>
+          <div class="figure"><div class="figure-content"><div id="chart4" class="plotly-chart"></div></div><div class="figure-caption"><strong>Figure 4:</strong> Most common keywords.</div></div>
+          <div class="figure"><div class="figure-content"><div id="chart5" class="plotly-chart"></div></div><div class="figure-caption"><strong>Figure 5:</strong> Monthly publication trends.</div></div>
+        </div>
+      </div>
+
+      <!-- Papers by category -->
+      <div id="paper-sections">
+        
+        <div class="section collapsed" id="novel-applications">
+          <div class="section-header">
+            <h2 class="section-title">Novel Applications</h2>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="section-body">
+            
+            <div class="paper-item">
+              <a href="http://arxiv.org/abs/2509.12945v1" class="paper-title" target="_blank" rel="noopener noreferrer">FusionMAE: large-scale pretrained model to optimize and simplify diagnostic and control of fusion plasma</a>
+              <div class="paper-meta">
+                <span class="paper-authors">Zongyu Yang, Zhenghao Yang, Wenjing Tian, Jiyuan Li, Xiang Sun, Guohui Zheng, Songfen Liu, Niannian Wu, Rongpeng Li, Zhaohe Xu, Bo Li, Zhongbing Shi, Zhe Gao, Wei Chen, Xiaoquan Ji, Min Xu, Wulyu Zhong</span>
+                <span class="paper-venue">arXiv (2025)</span>
+                <span class="paper-cats">
+                  Categories:
+                  
+                    Novel Applications (0.36), 
+                  
+                    Data Management (0.31)
+                  
+                </span>
+              </div>
+            </div>
+            
+            <div class="paper-item">
+              <a href="http://arxiv.org/abs/2509.06067v1" class="paper-title" target="_blank" rel="noopener noreferrer">A Surrogate model for High Temperature Superconducting Magnets to Predict Current Distribution with Neural Network</a>
+              <div class="paper-meta">
+                <span class="paper-authors">Mianjun Xiao, Peng Song, Yulong Liu, Cedric Korte, Ziyang Xu, Jiale Gao, Jiaqi Lu, Haoyang Nie, Qiantong Deng, Timing Qu</span>
+                <span class="paper-venue">arXiv (2025)</span>
+                <span class="paper-cats">
+                  Categories:
+                  
+                    Novel Applications (0.30), 
+                  
+                    Surrogate Models (1.00), 
+                  
+                    Tools & Libraries (1.00)
+                  
+                </span>
+              </div>
+            </div>
+            
+            <div class="paper-item">
+              <a href="#" class="paper-title" target="_blank" rel="noopener noreferrer">A machine learning approach to axion-like particle searches in CTAO observations of blazars</a>
+              <div class="paper-meta">
+                <span class="paper-authors">Schiavone, Francesco, Di Venere, Leonardo, Giordano, Francesco</span>
+                <span class="paper-venue">InspireHEP (2025)</span>
+                <span class="paper-cats">
+                  Categories:
+                  
+                    Novel Applications (0.41), 
+                  
+                    Tools & Libraries (0.36)
+                  
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="section collapsed" id="others">
+          <div class="section-header">
+            <h2 class="section-title">Others</h2>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="section-body">
+            
+            <div class="paper-item">
+              <a href="http://arxiv.org/abs/2509.25104v1" class="paper-title" target="_blank" rel="noopener noreferrer">Towards generalizable deep ptychography neural networks</a>
+              <div class="paper-meta">
+                <span class="paper-authors">Albert Vong, Steven Henke, Oliver Hoidn, Hanna Ruth, Junjing Deng, Alexander Hexemer, Apurva Mehta, Arianna Gleason, Levi Hancock, Nicholas Schwarz</span>
+                <span class="paper-venue">arXiv (2025)</span>
+                <span class="paper-cats">
+                  Categories:
+                  
+                    Others (0.00)
+                  
+                </span>
+              </div>
+            </div>
+            
+            <div class="paper-item">
+              <a href="https://openalex.org/W4414077364" class="paper-title" target="_blank" rel="noopener noreferrer">The promise of artificial intelligence-assisted radiotherapy for prostate cancer in Morocco: a transformational opportunity</a>
+              <div class="paper-meta">
+                <span class="paper-authors">Fadila Kouhen, Meryem Naciri, Hanae El Gouache, Nadia Errafiy, Abdelhak Maghous</span>
+                <span class="paper-venue">OpenAlex (2025)</span>
+                <span class="paper-cats">
+                  Categories:
+                  
+                    Others (0.00)
+                  
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="section collapsed" id="reinforcement-learning-&-autonomous-systems">
+          <div class="section-header">
+            <h2 class="section-title">Reinforcement Learning & Autonomous Systems</h2>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="section-body">
+            
+            <div class="paper-item">
+              <a href="http://arxiv.org/abs/2409.06336v4" class="paper-title" target="_blank" rel="noopener noreferrer">Towards Agentic AI on Particle Accelerators</a>
+              <div class="paper-meta">
+                <span class="paper-authors">Antonin Sulc, Thorsten Hellert, Raimund Kammering, Hayden Hoschouer, Jason St. John</span>
+                <span class="paper-venue">arXiv (2025)</span>
+                <span class="paper-cats">
+                  Categories:
+                  
+                    Reinforcement Learning & Autonomous Systems (0.60), 
+                  
+                    Novel Applications (0.59), 
+                  
+                    Tools & Libraries (1.00)
+                  
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="section collapsed" id="statistics-&-trends">
+          <div class="section-header">
+            <h2 class="section-title">Statistics & Trends</h2>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="section-body">
+            
+            <div class="paper-item">
+              <a href="http://arxiv.org/abs/2509.02227v1" class="paper-title" target="_blank" rel="noopener noreferrer">Application Of Large Language Models For The Extraction Of Information From Particle Accelerator Technical Documentation</a>
+              <div class="paper-meta">
+                <span class="paper-authors">Qing Dai, Rasmus Ischebeck, Maruisz Sapinski, Adam Grycner</span>
+                <span class="paper-venue">arXiv (2025)</span>
+                <span class="paper-cats">
+                  Categories:
+                  
+                    Statistics & Trends (0.40), 
+                  
+                    Tools & Libraries (0.38)
+                  
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="section collapsed" id="surrogate-models">
+          <div class="section-header">
+            <h2 class="section-title">Surrogate Models</h2>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="section-body">
+            
+            <div class="paper-item">
+              <a href="http://arxiv.org/abs/2509.12030v1" class="paper-title" target="_blank" rel="noopener noreferrer">Acceleration of Multi-Scale LTS Magnet Simulations with Neural Network Surrogate Models</a>
+              <div class="paper-meta">
+                <span class="paper-authors">Louis Denis, Julien Dular, Vincent Nuttens, Mariusz Wozniak, Benoît Vanderheyden, Christophe Geuzaine</span>
+                <span class="paper-venue">arXiv (2025)</span>
+                <span class="paper-cats">
+                  Categories:
+                  
+                    Surrogate Models (1.00)
+                  
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="section collapsed" id="tools-&-libraries">
+          <div class="section-header">
+            <h2 class="section-title">Tools & Libraries</h2>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="section-body">
+            
+            <div class="paper-item">
+              <a href="http://arxiv.org/abs/2506.03796v3" class="paper-title" target="_blank" rel="noopener noreferrer">Geoff: The Generic Optimization Framework & Frontend for Particle Accelerator Controls</a>
+              <div class="paper-meta">
+                <span class="paper-authors">Penelope Madysa, Sabrina Appel, Verena Kain, Michael Schenk</span>
+                <span class="paper-venue">arXiv (2025)</span>
+                <span class="paper-cats">
+                  Categories:
+                  
+                    Tools & Libraries (1.00), 
+                  
+                    Novel Applications (0.58)
+                  
+                </span>
+              </div>
+            </div>
+            
+            <div class="paper-item">
+              <a href="#" class="paper-title" target="_blank" rel="noopener noreferrer">Fast, accurate, and precise detector simulation with vision transformers</a>
+              <div class="paper-meta">
+                <span class="paper-authors">Favaro, Luigi, Giammanco, Andrea, Krause, Claudius</span>
+                <span class="paper-venue">InspireHEP (2025)</span>
+                <span class="paper-cats">
+                  Categories:
+                  
+                    Tools & Libraries (0.40), 
+                  
+                    Data Management (0.38)
+                  
+                </span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h3>Join the Community</h3>
+    <p>This living review is maintained by the accelerator physics community.</p>
+    
+      <p>Last updated: 2025-09-16</p>
+    
+  </footer>
+
+  <script>
+    // Toggle collapse on header click
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.section .section-header').forEach(header => {
+        header.addEventListener('click', () => {
+          header.parentElement.classList.toggle('collapsed');
+        });
+      });
+    });
+
+    function expandAll() {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('collapsed'));
+    }
+    function collapseAll() {
+      document.querySelectorAll('.section').forEach(s => s.classList.add('collapsed'));
+      // keep statistics open
+      document.getElementById('statistics')?.classList.remove('collapsed');
+    }
+
+    // Injected stats
+    const yearData     = {"2025": 10};
+    const categoryData = {"Data Management": 2, "Novel Applications": 5, "Others": 2, "Reinforcement Learning \u0026 Autonomous Systems": 1, "Statistics \u0026 Trends": 1, "Surrogate Models": 2, "Tools \u0026 Libraries": 6};
+    const venueData    = {"InspireHEP": 2, "OpenAlex": 1, "arXiv": 7};
+    const keywordData  = {"beam": 1, "control": 2, "deep learning": 1, "optimization": 1, "surrogate model": 2};
+    const monthlyData  = {"2025-09": 10};
+
+    Plotly.newPlot("chart1", [{x:Object.keys(yearData),y:Object.values(yearData),type:"bar",marker:{color:"#3b82f6"}}],{title:"Publications per Year"});
+    Plotly.newPlot("chart2", [{x:Object.values(categoryData),y:Object.keys(categoryData),type:"bar",orientation:"h",marker:{color:"#06b6d4"}}],{title:"Publications by Category"});
+    Plotly.newPlot("chart3", [{labels:Object.keys(venueData),values:Object.values(venueData),type:"pie"}],{title:"Top Publication Venues"});
+    Plotly.newPlot("chart4", [{x:Object.values(keywordData),y:Object.keys(keywordData),type:"bar",orientation:"h",marker:{color:"#10b981"}}],{title:"Top Keywords",margin:{l:200}});
+    Plotly.newPlot("chart5", [{x:Object.keys(monthlyData),y:Object.values(monthlyData),type:"scatter",mode:"lines+markers",line:{color:"#3b82f6",width:3,shape:"spline"}}],{title:"Monthly Trends",xaxis:{rangeslider:{visible:true}}});
+  </script>
+</body>
+</html>

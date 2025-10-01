@@ -1,0 +1,35 @@
+[
+  {
+    "timestamp": "2025-09-30T12:32:34.595772",
+    "scanned_range": {
+      "start": "2025-09-23",
+      "end": "2025-09-30"
+    },
+    "papers": 222,
+    "chunks": 0,
+    "status": "failed",
+    "error": "0"
+  },
+  {
+    "timestamp": "2025-09-30T12:48:53.383746",
+    "scanned_range": {
+      "start": "2025-09-23",
+      "end": "2025-09-30"
+    },
+    "papers": 212,
+    "chunks": 0,
+    "status": "failed",
+    "error": "'dict object' has no attribute 'category'"
+  },
+  {
+    "timestamp": "2025-09-30T12:57:26.573044",
+    "scanned_range": {
+      "start": "2025-09-23",
+      "end": "2025-09-30"
+    },
+    "papers": 211,
+    "chunks": 0,
+    "status": "failed",
+    "error": "'dict object' has no attribute 'category'"
+  }
+]

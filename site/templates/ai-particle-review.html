@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AI/ML for particle accelerators living review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: linear-gradient(180deg, #0f1419 0%, #1a1f2e 100%);
+            --bg-nav: rgba(15, 20, 25, 0.95);
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --bg-card-hover: rgba(255, 255, 255, 0.05);
+            --bg-section: rgba(255, 255, 255, 0.02);
+            --bg-button: rgba(96, 150, 186, 0.15);
+            --bg-button-hover: rgba(96, 150, 186, 0.25);
+            --border-primary: rgba(100, 150, 200, 0.2);
+            --border-card: rgba(96, 150, 186, 0.2);
+            --border-focus: rgba(96, 150, 186, 0.4);
+            --text-primary: #e0e0e0;
+            --text-heading: #e8eef3;
+            --text-secondary: #8b95a0;
+            --text-tertiary: #6b737c;
+            --accent-primary: #6096ba;
+            --accent-secondary: #507a9a;
+        }
+
+        [data-theme="light"] {
+            --bg-primary: linear-gradient(180deg, #f5f7fa 0%, #e8ecf1 100%);
+            --bg-nav: rgba(255, 255, 255, 0.95);
+            --bg-card: rgba(96, 150, 186, 0.08);
+            --bg-card-hover: rgba(96, 150, 186, 0.12);
+            --bg-section: rgba(96, 150, 186, 0.05);
+            --bg-button: rgba(96, 150, 186, 0.15);
+            --bg-button-hover: rgba(96, 150, 186, 0.25);
+            --border-primary: rgba(96, 150, 186, 0.3);
+            --border-card: rgba(96, 150, 186, 0.3);
+            --border-focus: rgba(96, 150, 186, 0.5);
+            --text-primary: #2c3e50;
+            --text-heading: #1a2332;
+            --text-secondary: #5a6c7d;
+            --text-tertiary: #7a8a9a;
+            --accent-primary: #4a7a9a;
+            --accent-secondary: #6096ba;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        nav {
+            background: var(--bg-nav);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-primary);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-logo {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--accent-primary);
+            padding: 20px 0;
+            transition: color 0.3s ease;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .nav-menu a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 20px 18px;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-menu a:hover {
+            color: var(--accent-primary);
+            border-bottom-color: var(--accent-primary);
+            background: var(--bg-button);
+        }
+
+        .nav-menu .download {
+            background: var(--bg-button);
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 10px 18px;
+            border: 1px solid var(--border-card);
+        }
+
+        .nav-menu .download:hover {
+            background: var(--bg-button-hover);
+            border-bottom-color: transparent;
+        }
+
+        .theme-toggle {
+            background: var(--bg-button);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            margin: 10px 0;
+        }
+
+        .theme-toggle:hover {
+            background: var(--bg-button-hover);
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 700;
+            color: var(--text-heading);
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .header-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .living-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: rgba(76, 175, 80, 0.15);
+            border: 1px solid rgba(76, 175, 80, 0.4);
+            color: #81c784;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        [data-theme="light"] .living-badge {
+            background: rgba(76, 175, 80, 0.25);
+            border: 1px solid rgba(76, 175, 80, 0.6);
+            color: #2e7d32;
+        }
+
+        [data-theme="light"] .status-dot {
+            background: #2e7d32;
+        }
+
+        .github-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            padding: 8px 20px;
+            background: var(--bg-button);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .github-badge:hover {
+            background: var(--bg-button-hover);
+            border-color: var(--accent-primary);
+        }
+
+        .nav-github {
+            margin: 10px 0;
+            padding: 8px 16px;
+            font-size: 0.85em;
+            gap: 10px;
+        }
+
+        .nav-github .github-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .nav-github .github-stats {
+            gap: 8px;
+        }
+
+        .github-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .github-stats {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background: #81c784;
+            border-radius: 50%;
+            animation: pulse-subtle 3s infinite;
+        }
+
+        @keyframes pulse-subtle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .search-section {
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+
+        .search-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 18px 24px 18px 50px;
+            font-size: 1.05em;
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            color: var(--text-primary);
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-bar:focus {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px var(--bg-button);
+        }
+
+        .search-bar::placeholder {
+            color: var(--text-tertiary);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-tertiary);
+            pointer-events: none;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            padding: 35px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-focus);
+        }
+
+        .stat-number {
+            font-size: 2.8em;
+            font-weight: 600;
+            color: var(--accent-primary);
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 1em;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .section {
+            background: var(--bg-section);
+            border: 1px solid var(--border-card);
+            padding: 50px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: var(--text-heading);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .intro-text {
+            color: var(--text-secondary);
+            font-size: 1.05em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 60px 40px;
+            margin-top: 40px;
+            background: var(--bg-section);
+            border-radius: 8px;
+            border: 1px solid var(--border-card);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--bg-button);
+            border: 1px solid var(--border-focus);
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            margin: 8px;
+        }
+
+        .cta-button:hover {
+            background: var(--bg-button-hover);
+            border-color: var(--accent-primary);
+            color: var(--text-primary);
+        }
+
+        .cta-button.primary {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            color: #ffffff;
+        }
+
+        .cta-button.primary:hover {
+            background: var(--accent-secondary);
+            border-color: var(--accent-secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-tertiary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-primary);
+            margin-top: 60px;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            h1 { font-size: 2em; }
+            .subtitle { font-size: 1em; }
+            .section { padding: 30px 25px; }
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header-badges {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">The AI/ML for particle accelerators living review</div>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#review">Access the Living Review</a></li>
+                    <li><a href="#documentation">Documentation</a></li>
+                    <li><a href="#cite">Cite Us</a></li>
+                </ul>
+                <a href="https://github.com" class="github-badge nav-github" target="_blank">
+                    <svg class="github-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    <div class="github-stats">
+                        <span class="stat-item">⭐ 398</span>
+                        <span class="stat-item">🔱 122</span>
+                    </div>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <header>
+            <h1>The AI/ML for particle accelerators living review</h1>
+            <p class="subtitle">A Comprehensive Living Review of Machine Learning Applications in Accelerator Science</p>
+            
+            <div class="header-badges">
+                <span class="living-badge">
+                    <span class="status-dot"></span>
+                    LIVING REVIEW • CONTINUOUSLY UPDATED
+                </span>
+            </div>
+        </header>
+
+        <div class="search-section">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-bar" placeholder="Search papers, methods, facilities, or topics...">
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">450+</div>
+                <div class="stat-label">Papers Reviewed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">Sep 2025</div>
+                <div class="stat-label">Last Updated</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">Oct 2025</div>
+                <div class="stat-label">Next Update</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Overview</h2>
+            <p class="intro-text">
+                This living review provides a comprehensive survey of artificial intelligence and machine learning applications in particle accelerator science. As the field rapidly evolves, we continuously update this review to reflect the latest research, methodologies, and experimental results from facilities worldwide. Our goal is to serve as a central reference for researchers, operators, and engineers working at the intersection of AI/ML and accelerator physics.
+            </p>
+        </div>
+
+        <div class="cta-section" id="cite">
+            <h2 style="color: var(--text-heading); margin-bottom: 25px; transition: color 0.3s ease;">Access and Citation</h2>
+            <a href="#" class="cta-button primary">Access the Full Living Review</a>
+            <a href="#" class="cta-button">Download Review Paper (PDF)</a>
+            <a href="#" class="cta-button">Download BibTeX Citation</a>
+            <a href="#" class="cta-button">Subscribe to Updates</a>
+        </div>
+
+        <footer>
+            © 2025 The AI/ML for particle accelerators living review • Updated Quarterly • Community-Driven Research
+        </footer>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to 'dark'
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        themeToggle.textContent = currentTheme === 'dark' ? '🌙' : '☀️';
+        
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme');
+            const newTheme = theme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+        });
+    </script>
+</body>
+</html>

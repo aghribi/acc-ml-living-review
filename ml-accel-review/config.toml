@@ -1,0 +1,48 @@
+baseURL = "https://yourusername.github.io/ml-accel-review/"
+languageCode = "en-us"
+title = "The AI/ML for particle accelerators living review"
+theme = ""
+
+[params]
+  description = "A Comprehensive Living Review of Machine Learning Applications in Accelerator Science"
+  author = "AI/ML for Particle Accelerators Collaboration"
+  github = "https://github.com/yourusername/ml-accel-review"
+  githubStars = "398"
+  githubForks = "122"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Access the Living Review"
+    url = "/papers/"
+    weight = 1
+  
+  [[menu.main]]
+    name = "Submit Paper"
+    url = "/submit/"
+    weight = 2
+  
+  [[menu.main]]
+    name = "Documentation"
+    url = "/docs/"
+    weight = 3
+  
+  [[menu.main]]
+    name = "Cite Us"
+    url = "/cite/"
+    weight = 4
+
+[build]
+  writeStats = true

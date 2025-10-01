@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme="dark">
+<head><script src="/ml-accel-review/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ml-accel-review/livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse the Living Review | The AI/ML for particle accelerators living review</title>
+    <meta name="description" content="A Comprehensive Living Review of Machine Learning Applications in Accelerator Science">
+    
+    
+    <link rel="stylesheet" href="/ml-accel-review/css/style.css">
+    
+    
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+    
+</head>
+<body>
+    <nav>
+    <div class="nav-container">
+        <a href="/" class="nav-logo">The AI/ML for particle accelerators living review</a>
+        <div class="nav-right">
+            <ul class="nav-menu">
+                
+                <li><a href="/ml-accel-review/papers/" >Access the Living Review</a></li>
+                
+                <li><a href="/ml-accel-review/submit/" >Submit Paper</a></li>
+                
+                <li><a href="/ml-accel-review/docs/" >Documentation</a></li>
+                
+                <li><a href="/ml-accel-review/cite/" >Cite Us</a></li>
+                
+            </ul>
+            <a href="https://github.com/yourusername/ml-accel-review" class="github-badge" target="_blank">
+                <svg class="github-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                <div class="github-stats">
+                    <span>⭐ 398</span>
+                    <span>🔱 122</span>
+                </div>
+            </a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        </div>
+    </div>
+</nav>
+    
+    <main>
+        
+
+
+
+
+<div class="page-header">
+    <h1>Browse the Living Review</h1>
+    <p class="page-subtitle">533+ papers on AI/ML applications in particle accelerator science</p>
+    <div class="search-section">
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-bar" id="searchInput" placeholder="Search papers, methods, facilities, or topics...">
+        </div>
+    </div>
+    <div class="controls">
+        <button class="btn" onclick="expandAll()">Expand All</button>
+        <button class="btn" onclick="collapseAll()">Collapse All</button>
+    </div>
+</div>
+
+<div class="main-wrapper">
+    
+    <aside class="toc">
+        <h3>Table of Contents</h3>
+        <ul class="toc-list">
+            <li class="toc-item"><a href="#statistics" class="toc-link">📊 Statistics & Trends</a></li>
+            
+        </ul>
+    </aside>
+
+    
+    <div class="content">
+        <div class="info-box">
+            <h2>About This Living Review</h2>
+            <p>This living document compiles research applying ML/AI to particle accelerators. Data and charts are updated automatically based on the latest publications from arXiv, INSPIRE-HEP, and other sources.</p>
+            <p style="margin-top: 10px;">
+                <strong>Total papers:</strong> 533<br>
+                <strong>Last updated:</strong> October 1, 2025
+            </p>
+        </div>
+
+        
+        <div class="section" id="statistics">
+            <div class="section-header">
+                <h2 class="section-title">📊 Publication Statistics & Trends</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-body">
+                <div class="figure">
+                    <div class="figure-content">
+                        <div id="chart1" class="plotly-chart"></div>
+                    </div>
+                    <div class="figure-caption"><strong>Figure 1:</strong> Publications per year showing growth in AI/ML applications for accelerators.</div>
+                </div>
+                <div class="figure">
+                    <div class="figure-content">
+                        <div id="chart2" class="plotly-chart"></div>
+                    </div>
+                    <div class="figure-caption"><strong>Figure 2:</strong> Distribution of papers across application categories.</div>
+                </div>
+                <div class="figure">
+                    <div class="figure-content">
+                        <div id="chart3" class="plotly-chart"></div>
+                    </div>
+                    <div class="figure-caption"><strong>Figure 3:</strong> Top publication venues and preprint servers.</div>
+                </div>
+                <div class="figure">
+                    <div class="figure-content">
+                        <div id="chart4" class="plotly-chart"></div>
+                    </div>
+                    <div class="figure-caption"><strong>Figure 4:</strong> Most common keywords and techniques.</div>
+                </div>
+                <div class="figure">
+                    <div class="figure-content">
+                        <div id="chart5" class="plotly-chart"></div>
+                    </div>
+                    <div class="figure-caption"><strong>Figure 5:</strong> Monthly publication trends over the past year.</div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+</div>
+
+
+    </main>
+    
+    <footer>
+    <h3>Join the Community</h3>
+    <p>This living review is maintained by the accelerator physics community.</p>
+    <p>Last updated: October 2025</p>
+    <p style="margin-top: 10px; font-size: 0.9em;">
+        <a href="https://github.com/yourusername/ml-accel-review" target="_blank" style="color: inherit;">GitHub</a> • 
+        <a href="/admin/" style="color: inherit;">Admin</a>
+    </p>
+</footer>
+    
+    
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        if (themeToggle) {
+            themeToggle.textContent = currentTheme === 'dark' ? '🌙' : '☀️';
+        }
+        
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                const theme = html.getAttribute('data-theme');
+                const newTheme = theme === 'dark' ? 'light' : 'dark';
+                
+                html.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                themeToggle.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+            });
+        }
+    </script>
+    
+    
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+    
+    
+<script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.section .section-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.parentElement.classList.toggle('collapsed');
+            });
+        });
+    });
+
+    function expandAll() {
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('collapsed'));
+    }
+
+    function collapseAll() {
+        document.querySelectorAll('.section').forEach(s => s.classList.add('collapsed'));
+        document.getElementById('statistics')?.classList.remove('collapsed');
+    }
+
+    
+    document.getElementById('searchInput')?.addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const papers = document.querySelectorAll('.paper-item');
+        let visibleCount = 0;
+        
+        papers.forEach(paper => {
+            const title = paper.querySelector('.paper-title').textContent.toLowerCase();
+            const authors = paper.querySelector('.paper-authors').textContent.toLowerCase();
+            const tags = Array.from(paper.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
+            
+            if (title.includes(searchTerm) || authors.includes(searchTerm) || tags.includes(searchTerm)) {
+                paper.style.display = 'block';
+                visibleCount++;
+            } else {
+                paper.style.display = 'none';
+            }
+        });
+        
+        
+        document.querySelectorAll('.section:not(#statistics)').forEach(section => {
+            const visiblePapers = section.querySelectorAll('.paper-item[style*="display: block"], .paper-item:not([style*="display: none"])');
+            if (searchTerm && visiblePapers.length === 0) {
+                section.style.display = 'none';
+            } else {
+                section.style.display = 'block';
+            }
+        });
+    });
+
+    
+    const stats = null;
+    
+    
+    Plotly.newPlot("chart1", [{
+        x: Object.keys(stats.per_year),
+        y: Object.values(stats.per_year),
+        type: "bar",
+        marker: {color: "#6096ba"}
+    }], {
+        title: "Publications per Year",
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        font: {color: 'var(--text-primary)'}
+    });
+
+    
+    const sortedCategories = Object.entries(stats.per_category)
+        .sort((a, b) => b[1] - a[1]);
+    
+    Plotly.newPlot("chart2", [{
+        x: sortedCategories.map(c => c[1]),
+        y: sortedCategories.map(c => c[0]),
+        type: "bar",
+        orientation: "h",
+        marker: {color: "#6096ba"}
+    }], {
+        title: "Publications by Category",
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        margin: {l: 220},
+        font: {color: 'var(--text-primary)'}
+    });
+
+    
+    Plotly.newPlot("chart3", [{
+        labels: Object.keys(stats["per_venue/journal"]),
+        values: Object.values(stats["per_venue/journal"]),
+        type: "pie"
+    }], {
+        title: "Top Publication Venues",
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        font: {color: 'var(--text-primary)'}
+    });
+
+    
+    const topKeywords = Object.entries(stats.per_keyword)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 15);
+    
+    Plotly.newPlot("chart4", [{
+        x: topKeywords.map(k => k[1]),
+        y: topKeywords.map(k => k[0]),
+        type: "bar",
+        orientation: "h",
+        marker: {color: "#6096ba"}
+    }], {
+        title: "Top Keywords",
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        margin: {l: 150},
+        font: {color: 'var(--text-primary)'}
+    });
+
+    
+    Plotly.newPlot("chart5", [{
+        x: Object.keys(stats.monthly_trends),
+        y: Object.values(stats.monthly_trends),
+        type: "scatter",
+        mode: "lines+markers",
+        line: {color: "#6096ba", width: 3}
+    }], {
+        title: "Monthly Publication Trends",
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        xaxis: {rangeslider: {visible: false}},
+        font: {color: 'var(--text-primary)'}
+    });
+</script>
+
+</body>
+</html>
