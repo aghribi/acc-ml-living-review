@@ -1,0 +1,17 @@
+[build]
+  command = "hugo -s site"
+  publish = "site/public"
+
+[build.environment]
+  HUGO_VERSION = "0.150.1"
+  HUGO_ENABLEGITINFO = "true"
+
+# Functions
+[functions]
+  directory = "site/functions"
+
+# Decap CMS Auth (Git Gateway)
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 200

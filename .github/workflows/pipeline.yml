@@ -1,0 +1,33 @@
+name: Update Living Review Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'   # every night at 3am UTC
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_PAT }}  # personal token for commit
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: python -m living_review.pipeline --outdir site
+
+      - name: Commit updated data
+        run: |
+          git config user.name "livingreview-bot"
+          git config user.email "bot@example.com"
+          git add site/data/*.json site/static/downloads/*
+          git commit -m "Update living review data" || echo "No changes"
+          git push
