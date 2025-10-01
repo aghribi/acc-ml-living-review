@@ -1,7 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "The AI/ML for particle accelerators living review"
-theme = ""  # We'll use custom layouts
 
 [params]
   description = "A Comprehensive Living Review of Machine Learning Applications in Accelerator Science"
