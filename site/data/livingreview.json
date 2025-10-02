@@ -10,11 +10,12 @@
       "2020": 8,
       "2019": 8,
       "2018": 2,
-      "2016": 6
+      "2016": 6,
+      "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 83,
-      "Novel Applications": 135,
+      "Tools & Libraries": 84,
+      "Novel Applications": 136,
       "Reinforcement Learning & Autonomous Systems": 25,
       "Surrogate Models": 27,
       "Statistics & Trends": 37,
@@ -26,12 +27,12 @@
       "RF Systems": 4,
       "Reviews": 10,
       "By Facility Type": 5,
-      "Anomaly Detection & Fault Prediction": 16,
+      "Anomaly Detection & Fault Prediction": 17,
       "Optimization & Control": 5,
       "Operations & Control": 2
     },
     "per_venue/journal": {
-      "arXiv": 177,
+      "arXiv": 178,
       "InspireHEP": 2,
       "OpenAlex": 7
     },
@@ -124,10 +125,11 @@
       "2022-05": 1,
       "2020-03": 1,
       "2019-03": 1,
-      "2017-01": 1
+      "2017-01": 1,
+      "2000-08": 1
     },
-    "last_updated": "2025-10-01T17:47:51.961682+00:00",
-    "next_update": "2025-10-02T17:47:51.961682+00:00"
+    "last_updated": "2025-10-01T22:53:13.070188+00:00",
+    "next_update": "2025-10-02T22:53:13.070188+00:00"
   },
   "papers": {
     "('2506.03796', '', 'geoff the generic optimization framework frontend for particle accelerator controls')": {
@@ -7560,11 +7562,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.41093188524246216
+          "score": 0.41093194484710693
         },
         {
           "label": "Novel Applications",
-          "score": 0.40798383951187134
+          "score": 0.4079839587211609
         }
       ],
       "keywords": [],
@@ -8748,6 +8750,53 @@
       ],
       "history": [],
       "last_updated": "2025-10-01T13:59:17Z"
+    },
+    "('physics/0008030', '', 'rbf neural net based classifier for the airix accelerator fault diagnosis')": {
+      "id": "arxiv:physics/0008030",
+      "doi": null,
+      "arxiv_id": "physics/0008030",
+      "inspire_id": null,
+      "title": "RBF neural net based classifier for the AIRIX accelerator fault diagnosis",
+      "authors": [
+        "J. C. Ribes",
+        "G. Delaunay",
+        "J. Delvaux",
+        "E. Merle",
+        "M. Mouillet"
+      ],
+      "abstract": "The AIRIX facility is a high current linear accelerator (2-3.5kA) used for\nflash-radiography at the CEA of Moronvilliers France. The general background of\nthis study is the diagnosis and the predictive maintenance of AIRIX. We will\npresent a tool for fault diagnosis and monitoring based on pattern recognition\nusing artificial neural network. Parameters extracted from the signals recorded\non each shot are used to define a vector to be classified. The principal\ncomponent analysis permits us to select the most pertinent information and\nreduce the redundancy. A three layer Radial Basis Function (RBF) neural network\nis used to classify the states of the accelerator. We initialize the network by\napplying an unsupervised fuzzy technique to the training base. This allows us\nto determine the number of clusters and real classes, which define the number\nof cells on the hidden and output layers of the network. The weights between\nthe hidden and the output layers, realising the non-convex union of the\nclusters, are determined by a least square method. Membership and ambiguity\nrejection enable the network to learn unknown failures, and to monitor\naccelerator operations to predict future failures. We will present the first\nresults obtained on the injector.",
+      "date": "2000-08-10",
+      "year": 2000,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.42191046476364136
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.3452337980270386
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/physics/0008030v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-10-01T22:49:33Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-01T22:49:33Z"
     }
   }
 }

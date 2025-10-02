@@ -18,13 +18,10 @@
     <!-- Table of Contents -->
     <aside class="toc">
         <h3>Table of Contents</h3>
-
-        <!-- ✅ Filter bar inside TOC -->
         <div class="filter-container">
             <input type="text" class="filter-bar" id="searchInput" 
                    placeholder="Filter papers by title, author, keyword...">
         </div>
-
         <ul class="toc-list">
             <li class="toc-item"><a href="#statistics" class="toc-link">📊 Statistics & Trends</a></li>
             {{ range $category, $count := $stats.per_category }}
@@ -126,11 +123,16 @@
                             <span class="paper-doi">DOI: {{ $paper.doi }}</span>
                             {{ end }}
                         </div>
-                        {{ if $paper.keywords }}
+
+                        <!-- ✅ Categories with similarity scores -->
+                        {{ if $paper.categories }}
                         <div class="paper-tags">
-                            {{ range $paper.keywords }}
-                            <span class="tag">{{ . }}</span>
-                            {{ end }}
+                          {{ range $paper.categories }}
+                            <span class="tag">
+                              {{ .label }}
+                              {{ with .score }} ({{ printf "%.1f%%" (mul . 100) }}){{ end }}
+                            </span>
+                          {{ end }}
                         </div>
                         {{ end }}
                     </div>
@@ -141,7 +143,6 @@
         {{ end }}
     </div>
 </div>
-
 {{ end }}
 
 {{ define "scripts" }}
@@ -180,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Theme colors
+    // === Plots ===
     function getThemeColors() {
         const root = getComputedStyle(document.documentElement);
         return {
@@ -192,7 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let colors = getThemeColors();
     const stats = {{ site.Data.livingreview.stats | default dict | jsonify | safeJS }};
 
-    // === Plots ===
     Plotly.newPlot("chart1", [{
         x: Object.keys(stats.per_year || {}),
         y: Object.values(stats.per_year || {}),
