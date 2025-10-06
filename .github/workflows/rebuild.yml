@@ -1,0 +1,40 @@
+name: Rebuild and Deploy after Data Update
+
+on:
+  workflow_run:
+    workflows: ["Update Living Review Data"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.150.1'
+          extended: true
+
+      - name: Build Hugo site
+        run: |
+          hugo -s site --minify --baseURL "https://aghribi.github.io/acc-ml-living-review/"
+          echo "===== Build finished at $(date -u) ====="
+          echo "Contents of site/public:"
+          ls -R site/public | head -n 40 || true
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site/public
+          publish_branch: gh-pages
