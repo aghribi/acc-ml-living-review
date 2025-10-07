@@ -5,15 +5,20 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write   # needed to push to gh-pages
+  contents: write   # needed for build steps, not used for SSH deploy
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # -------------------
+      # Checkout repository
+      # -------------------
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false  # important: disable HTTPS token creds
 
       # -------------------
       # Build Hugo site
@@ -56,12 +61,20 @@ jobs:
       # -------------------
       - name: Prepare deployment folder
         run: |
-          mkdir deploy
-          cp -r site/public/* deploy/
           mkdir -p deploy/docs
+          cp -r site/public/* deploy/
           cp -r docs/build/html/* deploy/docs/
           echo "===== Contents of deploy ====="
           ls -R deploy || true
+
+      # -------------------
+      # Verify remote and SSH key setup
+      # -------------------
+      - name: Debug SSH environment
+        run: |
+          echo "SSH key should be injected by peaceiris action."
+          echo "Git remote before deploy:"
+          git remote -v || true
 
       # -------------------
       # Deploy to gh-pages (using SSH deploy key)
@@ -74,4 +87,3 @@ jobs:
           publish_branch: gh-pages
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
-
