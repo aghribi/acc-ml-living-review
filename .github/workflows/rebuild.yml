@@ -15,16 +15,28 @@ permissions:
 jobs:
   rebuild:
     runs-on: ubuntu-latest
+
     steps:
+      # -------------------
+      # Checkout repository
+      # -------------------
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false  # important: disable HTTPS creds
 
+      # -------------------
+      # Setup Hugo
+      # -------------------
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.150.1'
           extended: true
 
+      # -------------------
+      # Build Hugo site
+      # -------------------
       - name: Build Hugo site
         run: |
           hugo -s site --minify --baseURL "https://aghribi.github.io/acc-ml-living-review/"
@@ -32,9 +44,14 @@ jobs:
           echo "Contents of site/public:"
           ls -R site/public | head -n 40 || true
 
+      # -------------------
+      # Deploy to GitHub Pages (via SSH deploy key)
+      # -------------------
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./site/public
           publish_branch: gh-pages
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
