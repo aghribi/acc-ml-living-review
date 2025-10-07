@@ -64,11 +64,14 @@ jobs:
           ls -R deploy || true
 
       # -------------------
-      # Deploy to gh-pages
+      # Deploy to gh-pages (using SSH deploy key)
       # -------------------
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./deploy
           publish_branch: gh-pages
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+
