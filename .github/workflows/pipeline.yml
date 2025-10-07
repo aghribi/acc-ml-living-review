@@ -27,7 +27,7 @@ jobs:
           pip install -e .   # optional, if you want your package available
 
       - name: Run pipeline
-        run: python -m living_review.pipeline --outdir site
+        run: python -m living_review.cli --days 30 --sources all
 
       - name: Commit updated data
         run: |
