@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The AI/ML for particle accelerators living review</title>
-    <link>//localhost:1313/</link>
+    <link>http://localhost:56507/acc-ml-living-review/</link>
     <description>Recent content on The AI/ML for particle accelerators living review</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:56507/acc-ml-living-review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cite Us</title>
-      <link>//localhost:1313/cite-us/</link>
+      <link>http://localhost:56507/acc-ml-living-review/cite-us/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/cite-us/</guid>
+      <guid>http://localhost:56507/acc-ml-living-review/cite-us/</guid>
       <description>&lt;div class=&#34;container&#34;&gt;&#xA; &lt;div class=&#34;page-header&#34;&gt;&#xA;&lt;h1&gt;How to Cite This Review&lt;/h1&gt;&#xA;&lt;p class=&#34;page-subtitle&#34;&gt;Help us track the impact of this living review by citing it in your work&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;section&#34;&gt;&#xA;&lt;h2&gt;Standard Citation&lt;/h2&gt;&#xA;&lt;span class=&#34;citation-format&#34;&gt;APA Format&lt;/span&gt;&#xA;&lt;div class=&#34;citation-box&#34;&gt;&#xA;&lt;button class=&#34;copy-button&#34; onclick=&#34;copyToClipboard(&#39;citation-apa&#39;, this)&#34;&gt;Copy&lt;/button&gt;&#xA;&lt;pre class=&#34;citation-text&#34; id=&#34;citation-apa&#34;&gt;AI/ML for Particle Accelerators Collaboration. (2025). The AI/ML for particle accelerators living review. Retrieved from https://ml-accel-review.org&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&lt;span class=&#34;citation-format&#34;&gt;IEEE Format&lt;/span&gt;&#xA;&lt;div class=&#34;citation-box&#34;&gt;&#xA;&lt;button class=&#34;copy-button&#34; onclick=&#34;copyToClipboard(&#39;citation-ieee&#39;, this)&#34;&gt;Copy&lt;/button&gt;&#xA;&lt;pre class=&#34;citation-text&#34; id=&#34;citation-ieee&#34;&gt;AI/ML for Particle Accelerators Collaboration, &#34;The AI/ML for particle accelerators living review,&#34; 2025. [Online]. Available: https://ml-accel-review.org&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;script&gt;&#xA;function copyToClipboard(elementId, button) {&#xA;    const text = document.getElementById(elementId).textContent;&#xA;    navigator.clipboard.writeText(text).then(() =&gt; {&#xA;        button.textContent = &#39;Copied!&#39;;&#xA;        setTimeout(() =&gt; button.textContent = &#39;Copy&#39;, 2000);&#xA;    });&#xA;}&#xA;&lt;/script&gt;</description>
     </item>
     <item>
       <title>Documentation</title>
-      <link>//localhost:1313/documentation/</link>
+      <link>http://localhost:56507/acc-ml-living-review/documentation/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/documentation/</guid>
+      <guid>http://localhost:56507/acc-ml-living-review/documentation/</guid>
       <description>&lt;h1 id=&#34;documentation&#34;&gt;Documentation&lt;/h1&gt;&#xA;&lt;p&gt;Documentation for the AI/ML for Particle Accelerators Living Review.&lt;/p&gt;&#xA;&lt;h2 id=&#34;for-contributors&#34;&gt;For Contributors&lt;/h2&gt;&#xA;&lt;p&gt;[Add documentation content]&lt;/p&gt;&#xA;&lt;h2 id=&#34;external-resources&#34;&gt;External Resources&lt;/h2&gt;&#xA;&lt;p&gt;[You can add external links here later]&lt;/p&gt;</description>
     </item>
     <item>
       <title>Submit a Paper</title>
-      <link>//localhost:1313/contribute/</link>
+      <link>http://localhost:56507/acc-ml-living-review/contribute/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/contribute/</guid>
+      <guid>http://localhost:56507/acc-ml-living-review/contribute/</guid>
       <description>&lt;h1 id=&#34;submit-a-paper&#34;&gt;Submit a Paper&lt;/h1&gt;&#xA;&lt;p&gt;Thank you for your interest in contributing to the AI/ML for Particle Accelerators Living Review.&lt;/p&gt;&#xA;&lt;h2 id=&#34;submission-guidelines&#34;&gt;Submission Guidelines&lt;/h2&gt;&#xA;&lt;p&gt;[Add your submission process here]&lt;/p&gt;&#xA;&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;&#xA;&lt;p&gt;For questions about submissions, please contact [your contact info]&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/cite/</link>
+      <link>http://localhost:56507/acc-ml-living-review/cite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/cite/</guid>
-      <description>&lt;div class=&#34;container&#34;&gt;&#xA;  &lt;div class=&#34;page-header&#34;&gt;&#xA;    &lt;h1&gt;How to Cite This Review&lt;/h1&gt;&#xA;    &lt;p class=&#34;page-subtitle&#34;&gt;Help us track the impact of this living review by citing it in your work&lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- 📥 Download section moved on top --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;Download Citation Files&lt;/h2&gt;&#xA;    &lt;p&gt;Download citation files in various formats for easy import into your reference manager:&lt;/p&gt;&#xA;    &lt;div class=&#34;download-buttons&#34;&gt;&#xA;      &lt;a href=&#34;//localhost:1313/downloads/ml-accel-review.bib&#34; class=&#34;btn&#34; download&gt;📋 BibTeX (.bib)&lt;/a&gt;&#xA;      &lt;a href=&#34;//localhost:1313/downloads/ml-accel-review.ris&#34; class=&#34;btn&#34; download&gt;📄 RIS Format (.ris)&lt;/a&gt;&#xA;      &lt;a href=&#34;//localhost:1313/downloads/ml-accel-review.enw&#34; class=&#34;btn&#34; download&gt;📑 EndNote (.enw)&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- BibTeX entry --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;BibTeX Entry&lt;/h2&gt;&#xA;    &lt;p&gt;Use this BibTeX entry for LaTeX documents:&lt;/p&gt;&#xA;    &lt;div class=&#34;citation-box&#34;&gt;&#xA;      &lt;button class=&#34;copy-button&#34; onclick=&#34;copyToClipboard(&#39;bibtex&#39;, this)&#34;&gt;Copy&lt;/button&gt;&#xA;      &lt;pre class=&#34;citation-text&#34; id=&#34;bibtex&#34;&gt;&#xA;@misc{ml_accel_review_2025,&#xA;  title        = {The AI/ML for particle accelerators living review},&#xA;  author       = {{AI/ML for Particle Accelerators Collaboration}},&#xA;  year         = {2025},&#xA;  howpublished = {\url{https://ml-accel-review.org}},&#xA;  note         = {Accessed: 2025-09-30}&#xA;}&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- Why Cite --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;Why Cite This Review?&lt;/h2&gt;&#xA;    &lt;p&gt;By citing this living review, you:&lt;/p&gt;</description>
+      <guid>http://localhost:56507/acc-ml-living-review/cite/</guid>
+      <description>&lt;div class=&#34;container&#34;&gt;&#xA;  &lt;div class=&#34;page-header&#34;&gt;&#xA;    &lt;h1&gt;How to Cite This Review&lt;/h1&gt;&#xA;    &lt;p class=&#34;page-subtitle&#34;&gt;Help us track the impact of this living review by citing it in your work&lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- 📥 Download section moved on top --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;Download Citation Files&lt;/h2&gt;&#xA;    &lt;p&gt;Download citation files in various formats for easy import into your reference manager:&lt;/p&gt;&#xA;    &lt;div class=&#34;download-buttons&#34;&gt;&#xA;      &lt;a href=&#34;http://localhost:56507/acc-ml-living-review/downloads/ml-accel-review.bib&#34; class=&#34;btn&#34; download&gt;📋 BibTeX (.bib)&lt;/a&gt;&#xA;      &lt;a href=&#34;http://localhost:56507/acc-ml-living-review/downloads/ml-accel-review.ris&#34; class=&#34;btn&#34; download&gt;📄 RIS Format (.ris)&lt;/a&gt;&#xA;      &lt;a href=&#34;http://localhost:56507/acc-ml-living-review/downloads/ml-accel-review.enw&#34; class=&#34;btn&#34; download&gt;📑 EndNote (.enw)&lt;/a&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- BibTeX entry --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;BibTeX Entry&lt;/h2&gt;&#xA;    &lt;p&gt;Use this BibTeX entry for LaTeX documents:&lt;/p&gt;&#xA;    &lt;div class=&#34;citation-box&#34;&gt;&#xA;      &lt;button class=&#34;copy-button&#34; onclick=&#34;copyToClipboard(&#39;bibtex&#39;, this)&#34;&gt;Copy&lt;/button&gt;&#xA;      &lt;pre class=&#34;citation-text&#34; id=&#34;bibtex&#34;&gt;&#xA;@misc{ml_accel_review_2025,&#xA;  title        = {The AI/ML for particle accelerators living review},&#xA;  author       = {{AI/ML for Particle Accelerators Collaboration}},&#xA;  year         = {2025},&#xA;  howpublished = {\url{https://ml-accel-review.org}},&#xA;  note         = {Accessed: 2025-09-30}&#xA;}&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;!-- Why Cite --&gt;&#xA;  &lt;div class=&#34;section&#34;&gt;&#xA;    &lt;h2&gt;Why Cite This Review?&lt;/h2&gt;&#xA;    &lt;p&gt;By citing this living review, you:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/review/</link>
+      <link>http://localhost:56507/acc-ml-living-review/review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/review/</guid>
+      <guid>http://localhost:56507/acc-ml-living-review/review/</guid>
       <description></description>
     </item>
     <item>
       <title>About</title>
-      <link>//localhost:1313/about/</link>
+      <link>http://localhost:56507/acc-ml-living-review/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/about/</guid>
+      <guid>http://localhost:56507/acc-ml-living-review/about/</guid>
       <description>&lt;p&gt;This site hosts the &lt;strong&gt;Accelerator ML Living Review&lt;/strong&gt;, a continuously updated overview of AI and machine learning applications in particle accelerator physics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Submit a Paper</title>
-      <link>//localhost:1313/submit/</link>
+      <link>http://localhost:56507/acc-ml-living-review/submit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/submit/</guid>
+      <guid>http://localhost:56507/acc-ml-living-review/submit/</guid>
       <description>&lt;p&gt;This is the Submit Paper page.&lt;/p&gt;</description>
     </item>
   </channel>
