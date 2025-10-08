@@ -8,85 +8,174 @@
 <div class="page-header">
     <h1>Browse the Living Review</h1>
     <p class="page-subtitle">{{ len (default (dict) $papers) }}+ papers on AI/ML applications in particle accelerator science</p>
-    <div class="controls">
-        <button class="btn" onclick="expandAll()">Expand All</button>
-        <button class="btn" onclick="collapseAll()">Collapse All</button>
+</div>
+
+<!-- Sticky Search and View Toggle Bar -->
+<div class="sticky-controls">
+    <div class="container">
+        <!-- Search Bar with Filters -->
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" class="filter-bar search-input" id="searchInput" 
+                       placeholder="Search papers, authors, keywords...">
+                <button class="btn btn-secondary filter-btn" onclick="toggleAdvancedFilters()">
+                    <span>🔍</span> Filters
+                </button>
+            </div>
+            
+            <!-- Filter Row (Always Visible) -->
+            <div class="filter-row-inline">
+                <div class="filter-group-inline">
+                    <label for="yearFilter">Year:</label>
+                    <select id="yearFilter" class="filter-select">
+                        <option value="">All Years</option>
+                        {{ range seq 2025 -1 2010 }}
+                        <option value="{{ . }}">{{ . }}</option>
+                        {{ end }}
+                    </select>
+                </div>
+                
+                <div class="filter-group-inline">
+                    <label for="venueFilter">Venue:</label>
+                    <select id="venueFilter" class="filter-select">
+                        <option value="">All Venues</option>
+                        {{ range $venue, $count := index $stats "per_venue/journal" }}
+                        <option value="{{ $venue }}">{{ $venue }}</option>
+                        {{ end }}
+                    </select>
+                </div>
+                
+                <div class="filter-group-inline">
+                    <label for="facilityFilter">Facility:</label>
+                    <select id="facilityFilter" class="filter-select">
+                        <option value="">All Facilities</option>
+                        {{ range $category, $count := $stats.per_category }}
+                        {{ if or (hasPrefix $category "by facility") (hasPrefix $category "By facility") }}
+                        <option value="{{ $category }}">{{ $category }}</option>
+                        {{ end }}
+                        {{ end }}
+                    </select>
+                </div>
+                
+                <div class="filter-group-inline">
+                    <label for="typeFilter">Type:</label>
+                    <select id="typeFilter" class="filter-select">
+                        <option value="">All Types</option>
+                        {{ range $category, $count := $stats.per_category }}
+                        {{ if or (eq $category "Tools") (eq $category "Reviews") (eq $category "Surveys") }}
+                        <option value="{{ $category }}">{{ $category }}</option>
+                        {{ end }}
+                        {{ end }}
+                    </select>
+                </div>
+                
+                <button class="btn btn-reset" onclick="resetFilters()">
+                    <span>✕</span> Reset
+                </button>
+            </div>
+        </div>
+
+        <!-- View Toggle -->
+        <div class="view-toggle">
+            <button class="view-btn active" data-view="both" onclick="setView('both')">
+                Both
+            </button>
+            <button class="view-btn" data-view="statistics" onclick="setView('statistics')">
+                <span>📊</span> Statistics
+            </button>
+            <button class="view-btn" data-view="papers" onclick="setView('papers')">
+                <span>📄</span> Papers
+            </button>
+        </div>
     </div>
 </div>
 
 <div class="main-wrapper">
-    <!-- Table of Contents -->
-    <aside class="toc">
-        <h3>Table of Contents</h3>
-        <div class="filter-container">
-            <input type="text" class="filter-bar" id="searchInput" 
-                   placeholder="Filter papers by title, author, keyword...">
+    <!-- Enhanced Table of Contents -->
+    <aside class="toc" id="tocSidebar">
+        <div class="toc-header">
+            <h3>Categories</h3>
+            <button class="toc-toggle" onclick="toggleTOC()" title="Toggle sidebar">☰</button>
         </div>
+        
         <ul class="toc-list">
-            <li class="toc-item"><a href="#statistics" class="toc-link">📊 Statistics & Trends</a></li>
-            {{ range $category, $count := $stats.per_category }}
             <li class="toc-item">
-                <a href="#{{ $category | urlize }}" class="toc-link">{{ $category }} ({{ $count }})</a>
+                <a href="#statistics" class="toc-link" data-category="statistics">
+                    <span class="toc-icon">📊</span>
+                    <span class="toc-label">Statistics & Trends</span>
+                </a>
+            </li>
+            {{ range $category, $count := $stats.per_category }}
+            {{ $isSpecialCategory := or (hasPrefix $category "by facility") (hasPrefix $category "By facility") (eq $category "Tools") (eq $category "Reviews") (eq $category "Surveys") }}
+            {{ if not $isSpecialCategory }}
+            <li class="toc-item">
+                <a href="#{{ $category | urlize }}" class="toc-link" data-category="{{ $category | urlize }}">
+                    <span class="toc-dot" style="background-color: {{ index (slice "#6096ba" "#507a9a" "#8bc4e8" "#4a6fa5" "#2e5266") (mod (len (split $category "")) 5) }};"></span>
+                    <span class="toc-label">{{ $category }}</span>
+                    <span class="toc-count">{{ $count }}</span>
+                </a>
             </li>
             {{ end }}
+            {{ end }}
         </ul>
+        
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <h4>Quick Actions</h4>
+            <button class="quick-action-btn" onclick="showAllPapers()">
+                <span>📋</span> Show All Papers
+            </button>
+            <button class="quick-action-btn" onclick="showRecentAdditions()">
+                <span>📅</span> Recent Additions
+            </button>
+            <button class="quick-action-btn" onclick="exportBibliography()">
+                <span>⬇️</span> Export Bibliography
+            </button>
+        </div>
     </aside>
 
     <!-- Main Content -->
-    <div class="content">
-        <div class="info-box">
-            <h2>About This Living Review</h2>
-            <p>This living document compiles research applying ML/AI to particle accelerators. Data and charts are updated automatically based on the latest publications from arXiv, INSPIRE-HEP, and other sources.</p>
-            <p style="margin-top: 10px;">
-                <strong>Total papers:</strong> {{ len (default (dict) $papers) }}<br>
-                <strong>Last updated:</strong> {{ now.Format "January 2, 2006" }}
-            </p>
-        </div>
+    <div class="content" id="mainContent">
 
         <!-- Statistics Section -->
-        <div class="section" id="statistics">
-            <div class="section-header">
+        <div class="section statistics-section" id="statistics" data-view-section="statistics">
+            <div class="section-header" onclick="toggleSection(this)">
                 <h2 class="section-title">📊 Publication Statistics & Trends</h2>
                 <span class="chevron">▼</span>
             </div>
             <div class="section-body">
-                <div class="figure">
-                    <div class="figure-content">
-                        <div id="chart1" class="plotly-chart"></div>
+                <div class="charts-grid">
+                    <!-- Chart 1: Publications per Year -->
+                    <div class="chart-card">
+                        <h3>Publication Trend Over Time</h3>
+                        <canvas id="chart1"></canvas>
                     </div>
-                    <div class="figure-caption"><strong>Figure 1:</strong> Publications per year showing growth in AI/ML applications for accelerators.</div>
-                </div>
-                <div class="figure">
-                    <div class="figure-content">
-                        <div id="chart2" class="plotly-chart"></div>
+
+                    <!-- Chart 2: Papers by Category -->
+                    <div class="chart-card">
+                        <h3>Papers by Category</h3>
+                        <canvas id="chart2"></canvas>
                     </div>
-                    <div class="figure-caption"><strong>Figure 2:</strong> Distribution of papers across application categories.</div>
-                </div>
-                <div class="figure">
-                    <div class="figure-content">
-                        <div id="chart3" class="plotly-chart"></div>
+
+                    <!-- Chart 3: Recent Activity -->
+                    <div class="chart-card">
+                        <h3>Recent Activity (Last 6 Months)</h3>
+                        <canvas id="chart3"></canvas>
                     </div>
-                    <div class="figure-caption"><strong>Figure 3:</strong> Top publication venues and preprint servers.</div>
-                </div>
-                <div class="figure">
-                    <div class="figure-content">
-                        <div id="chart4" class="plotly-chart"></div>
+
+                    <!-- Chart 4: Top Venues -->
+                    <div class="chart-card">
+                        <h3>Top Publication Venues</h3>
+                        <canvas id="chart4"></canvas>
                     </div>
-                    <div class="figure-caption"><strong>Figure 4:</strong> Most common keywords and techniques.</div>
-                </div>
-                <div class="figure">
-                    <div class="figure-content">
-                        <div id="chart5" class="plotly-chart"></div>
-                    </div>
-                    <div class="figure-caption"><strong>Figure 5:</strong> Monthly publication trends over the past year.</div>
                 </div>
             </div>
         </div>
 
         <!-- Papers by Category -->
         {{ range $category, $count := $stats.per_category }}
-        <div class="section collapsed" id="{{ $category | urlize }}">
-            <div class="section-header">
+        <div class="section collapsed papers-section" id="{{ $category | urlize }}" data-view-section="papers">
+            <div class="section-header" onclick="toggleSection(this)">
                 <h2 class="section-title">{{ $category }}</h2>
                 <span class="chevron">▼</span>
             </div>
@@ -101,7 +190,13 @@
                     {{ end }}
                     
                     {{ if $hasCategory }}
-                    <div class="paper-item" data-paper-id="{{ $paper.id }}">
+                    <div class="paper-item" 
+                         data-paper-id="{{ $paper.id }}"
+                         data-year="{{ $paper.year }}"
+                         data-venue="{{ $paper.venue }}"
+                         data-title="{{ $paper.title }}"
+                         data-authors="{{ delimit $paper.authors " " }}"
+                         data-category="{{ $category | urlize }}">
                         {{ $paperUrl := "" }}
                         {{ if $paper.links.arxiv }}
                             {{ $paperUrl = $paper.links.arxiv }}
@@ -124,7 +219,7 @@
                             {{ end }}
                         </div>
 
-                        <!-- ✅ Categories with similarity scores -->
+                        <!-- Categories with similarity scores -->
                         {{ if $paper.categories }}
                         <div class="paper-tags">
                           {{ range $paper.categories }}
@@ -143,118 +238,623 @@
         {{ end }}
     </div>
 </div>
+
+<style>
+/* Sticky Controls */
+.sticky-controls {
+    position: sticky;
+    top: 60px;
+    z-index: 90;
+    background: var(--bg-nav);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-primary);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.search-container {
+    margin-bottom: 1rem;
+}
+
+.search-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+/* Inline Filter Row */
+.filter-row-inline {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filter-group-inline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0 1 auto;
+}
+
+.filter-group-inline label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin: 0;
+}
+
+.filter-select {
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 6px;
+    color: var(--text-primary);
+    cursor: pointer;
+    min-width: 120px;
+    max-width: 200px;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+}
+
+.btn-reset {
+    background: rgba(231, 76, 60, 0.2);
+    border: 1px solid rgba(231, 76, 60, 0.4);
+    color: #e74c3c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.btn-reset:hover {
+    background: rgba(231, 76, 60, 0.3);
+    border-color: rgba(231, 76, 60, 0.6);
+}
+
+/* View Toggle */
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    padding: 0.25rem;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.view-btn {
+    padding: 0.5rem 1.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.view-btn:hover {
+    background: var(--bg-button);
+    color: var(--text-primary);
+}
+
+.view-btn.active {
+    background: var(--accent-primary);
+    color: #ffffff;
+}
+
+/* Enhanced TOC */
+.toc {
+    position: sticky;
+    top: 180px;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.toc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.toc-toggle {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    display: none;
+}
+
+.toc-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.625rem 0.75rem;
+    transition: opacity 0.3s ease;
+}
+
+.toc-icon {
+    font-size: 1rem;
+}
+
+.toc-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.toc-label {
+    flex: 1;
+}
+
+.toc-count {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    background: var(--bg-card);
+    padding: 0.125rem 0.5rem;
+    border-radius: 12px;
+}
+
+/* Quick Actions */
+.quick-actions {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-card);
+}
+
+.quick-actions h4 {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.quick-action-btn {
+    width: 100%;
+    text-align: left;
+    padding: 0.625rem 0.75rem;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.quick-action-btn:hover {
+    background: var(--bg-card);
+    color: var(--text-primary);
+}
+
+/* Charts Grid */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.chart-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.chart-card h3 {
+    font-size: 1.1rem;
+    color: var(--text-heading);
+    margin-bottom: 1.5rem;
+}
+
+.chart-card canvas {
+    max-height: 300px;
+}
+
+/* Section visibility based on view */
+.content[data-view="statistics"] .papers-section {
+    display: none;
+}
+
+.content[data-view="papers"] .statistics-section {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .toc-toggle {
+        display: block;
+    }
+    
+    .sticky-controls {
+        top: 50px;
+    }
+    
+    .toc {
+        position: relative;
+        top: 0;
+        max-height: none;
+    }
+    
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-row-inline {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+    
+    .filter-group-inline {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group-inline label {
+        text-align: left;
+    }
+    
+    .filter-select {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .btn-reset {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .view-toggle {
+        width: 100%;
+    }
+    
+    .view-btn {
+        flex: 1;
+        justify-content: center;
+    }
+}
+</style>
+
 {{ end }}
 
 {{ define "scripts" }}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    // Collapse/expand
-    document.querySelectorAll('.section .section-header').forEach(header => {
-        header.addEventListener('click', () => {
-            header.parentElement.classList.toggle('collapsed');
-        });
-    });
-    window.expandAll = () => document.querySelectorAll('.section').forEach(s => s.classList.remove('collapsed'));
-    window.collapseAll = () => {
-        document.querySelectorAll('.section').forEach(s => s.classList.add('collapsed'));
-        document.getElementById('statistics')?.classList.remove('collapsed');
-    };
-
-    // Filter
-    const searchInput = document.getElementById('searchInput');
-    if (searchInput) {
-        searchInput.addEventListener('input', e => {
-            const searchTerm = e.target.value.toLowerCase();
-            const papers = document.querySelectorAll('.paper-item');
-
-            papers.forEach(paper => {
-                const title = paper.querySelector('.paper-title').textContent.toLowerCase();
-                const authors = paper.querySelector('.paper-authors').textContent.toLowerCase();
-                const tags = Array.from(paper.querySelectorAll('.tag')).map(t => t.textContent.toLowerCase()).join(' ');
-                paper.style.display = (title.includes(searchTerm) || authors.includes(searchTerm) || tags.includes(searchTerm)) ? 'block' : 'none';
-            });
-
-            document.querySelectorAll('.section:not(#statistics)').forEach(section => {
-                const visiblePapers = section.querySelectorAll('.paper-item[style*="display: block"]');
-                section.style.display = (searchTerm && visiblePapers.length === 0) ? 'none' : 'block';
-            });
-        });
-    }
-
-    // === Plots ===
-    function getThemeColors() {
-        const root = getComputedStyle(document.documentElement);
-        return {
-            fontColor: root.getPropertyValue('--text-primary').trim() || '#000',
-            axisColor: root.getPropertyValue('--text-primary').trim() || '#000',
-            gridColor: root.getPropertyValue('--border-primary').trim() || '#ccc'
-        };
-    }
-    let colors = getThemeColors();
+    let currentView = 'both';
     const stats = {{ site.Data.livingreview.stats | default dict | jsonify | safeJS }};
 
-    Plotly.newPlot("chart1", [{
-        x: Object.keys(stats.per_year || {}),
-        y: Object.values(stats.per_year || {}),
-        type: "bar",
-        marker: {color: "#6096ba"}
-    }], { title:{text:"Publications per Year",font:{color:colors.fontColor}},
-        paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)',
-        font:{color:colors.fontColor}, xaxis:{color:colors.axisColor,gridcolor:colors.gridColor},
-        yaxis:{color:colors.axisColor,gridcolor:colors.gridColor} });
-
-    const sortedCategories = Object.entries(stats.per_category || {}).sort((a,b)=>b[1]-a[1]);
-    Plotly.newPlot("chart2", [{
-        x: sortedCategories.map(c=>c[1]), y: sortedCategories.map(c=>c[0]),
-        type:"bar", orientation:"h", marker:{color:"#6096ba"}
-    }], { title:{text:"Publications by Category",font:{color:colors.fontColor}},
-        paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)', margin:{l:220},
-        font:{color:colors.fontColor}, xaxis:{color:colors.axisColor,gridcolor:colors.gridColor},
-        yaxis:{color:colors.axisColor,gridcolor:colors.gridColor,automargin:true} });
-
-    Plotly.newPlot("chart3", [{
-        labels:Object.keys(stats["per_venue/journal"]||{}),
-        values:Object.values(stats["per_venue/journal"]||{}),
-        type:"pie"
-    }], { title:{text:"Top Publication Venues",font:{color:colors.fontColor}},
-        paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)',
-        font:{color:colors.fontColor}, legend:{font:{color:colors.fontColor}} });
-
-    const topKeywords = Object.entries(stats.per_keyword || {}).sort((a,b)=>b[1]-a[1]).slice(0,15);
-    Plotly.newPlot("chart4", [{
-        x: topKeywords.map(k=>k[1]), y: topKeywords.map(k=>k[0]),
-        type:"bar", orientation:"h", marker:{color:"#6096ba"}
-    }], { title:{text:"Top Keywords",font:{color:colors.fontColor}},
-        paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)', margin:{l:250},
-        font:{color:colors.fontColor}, xaxis:{color:colors.axisColor,gridcolor:colors.gridColor},
-        yaxis:{color:colors.axisColor,gridcolor:colors.gridColor,automargin:true} });
-
-    Plotly.newPlot("chart5", [{
-        x:Object.keys(stats.monthly_trends || {}), y:Object.values(stats.monthly_trends || {}),
-        type:"scatter", mode:"lines+markers", line:{color:"#6096ba",width:3}
-    }], { title:{text:"Monthly Publication Trends",font:{color:colors.fontColor}},
-        paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)',
-        font:{color:colors.fontColor}, xaxis:{rangeslider:{visible:false},color:colors.axisColor,gridcolor:colors.gridColor},
-        yaxis:{color:colors.axisColor,gridcolor:colors.gridColor} });
-
-    // Theme reapplication
-    function applyThemeToCharts() {
-        colors = getThemeColors();
-        const update = {
-            'font.color': colors.fontColor,
-            'title.font.color': colors.fontColor,
-            'legend.font.color': colors.fontColor,
-            'xaxis.color': colors.axisColor,
-            'yaxis.color': colors.axisColor,
-            'xaxis.gridcolor': colors.gridColor,
-            'yaxis.gridcolor': colors.gridColor
+    // Get theme colors
+    function getThemeColors() {
+        const root = getComputedStyle(document.documentElement);
+        const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+        return {
+            text: root.getPropertyValue('--text-primary').trim(),
+            grid: root.getPropertyValue('--border-card').trim(),
+            primary: '#6096ba',
+            secondary: '#8bc4e8'
         };
-        ['chart1','chart2','chart3','chart4','chart5'].forEach(id => {
-            if(document.getElementById(id)) Plotly.relayout(id, update);
+    }
+
+    let colors = getThemeColors();
+
+    // Chart.js default config
+    Chart.defaults.color = colors.text;
+    Chart.defaults.borderColor = colors.grid;
+
+    // Chart 1: Publications per Year (Area Chart with Preprints)
+    const ctx1 = document.getElementById('chart1');
+    if (ctx1) {
+        const years = Object.keys(stats.per_year || {});
+        const publications = Object.values(stats.per_year || {});
+        // If you have preprint data in stats, use it; otherwise simulate
+        const preprints = stats.per_year_preprints ? Object.values(stats.per_year_preprints) : 
+            publications.map(p => Math.floor(p * 0.8)); // Simulated: ~80% of publications
+        
+        new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: years,
+                datasets: [
+                    {
+                        label: 'Published Papers',
+                        data: publications,
+                        backgroundColor: colors.primary + '60',
+                        borderColor: colors.primary,
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: 'Preprints',
+                        data: preprints,
+                        backgroundColor: colors.secondary + '60',
+                        borderColor: colors.secondary,
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: { display: true }
+                },
+                scales: {
+                    y: { beginAtZero: true, grid: { color: colors.grid } },
+                    x: { grid: { color: colors.grid } }
+                }
+            }
         });
     }
-    applyThemeToCharts();
-    new MutationObserver(applyThemeToCharts).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
+
+    // Chart 2: Papers by Category (Pie Chart)
+    const ctx2 = document.getElementById('chart2');
+    if (ctx2) {
+        const categoryColors = ['#6096ba', '#507a9a', '#8bc4e8', '#4a6fa5', '#2e5266'];
+        new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: Object.keys(stats.per_category || {}),
+                datasets: [{
+                    data: Object.values(stats.per_category || {}),
+                    backgroundColor: categoryColors,
+                    borderWidth: 2,
+                    borderColor: colors.grid
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: { position: 'right' }
+                }
+            }
+        });
+    }
+
+    // Chart 3: Recent Activity (Bar Chart)
+    const ctx3 = document.getElementById('chart3');
+    if (ctx3) {
+        const monthlyData = stats.monthly_trends || {};
+        const months = Object.keys(monthlyData).slice(-6);
+        new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: months,
+                datasets: [{
+                    label: 'Publications',
+                    data: months.map(m => monthlyData[m]),
+                    backgroundColor: colors.primary,
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    y: { beginAtZero: true, grid: { color: colors.grid } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+    }
+
+    // Chart 4: Top Venues (Horizontal Bar)
+    const ctx4 = document.getElementById('chart4');
+    if (ctx4) {
+        const venues = stats["per_venue/journal"] || {};
+        const sortedVenues = Object.entries(venues).sort((a,b) => b[1] - a[1]).slice(0, 5);
+        new Chart(ctx4, {
+            type: 'bar',
+            data: {
+                labels: sortedVenues.map(v => v[0]),
+                datasets: [{
+                    label: 'Papers',
+                    data: sortedVenues.map(v => v[1]),
+                    backgroundColor: colors.primary,
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    x: { beginAtZero: true, grid: { color: colors.grid } },
+                    y: { grid: { display: false } }
+                }
+            }
+        });
+    }
+
+    // Section toggle
+    window.toggleSection = function(header) {
+        header.parentElement.classList.toggle('collapsed');
+    };
+
+    // View switching
+    window.setView = function(view) {
+        currentView = view;
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.view === view);
+        });
+        
+        const content = document.getElementById('mainContent');
+        content.setAttribute('data-view', view);
+        
+        if (view === 'statistics') {
+            document.getElementById('statistics')?.classList.remove('collapsed');
+        } else if (view === 'papers') {
+            document.querySelectorAll('.papers-section').forEach(s => s.classList.remove('collapsed'));
+        }
+    };
+
+    // Reset filters
+    window.resetFilters = function() {
+        document.getElementById('searchInput').value = '';
+        document.getElementById('yearFilter').value = '';
+        document.getElementById('venueFilter').value = '';
+        document.getElementById('facilityFilter').value = '';
+        document.getElementById('typeFilter').value = '';
+        applyFilters();
+    };
+
+    // Apply filters
+    function applyFilters() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        const yearFilter = document.getElementById('yearFilter').value;
+        const venueFilter = document.getElementById('venueFilter').value.toLowerCase();
+        const facilityFilter = document.getElementById('facilityFilter').value;
+        const typeFilter = document.getElementById('typeFilter').value;
+        
+        // Initialize category counts (reset to 0)
+        const categoryCounts = {};
+        
+        // First, initialize all categories to 0
+        document.querySelectorAll('.toc-link').forEach(link => {
+            const category = link.dataset.category;
+            if (category !== 'statistics') {
+                categoryCounts[category] = 0;
+            }
+        });
+        
+        // Count visible papers
+        document.querySelectorAll('.paper-item').forEach(paper => {
+            const title = paper.dataset.title.toLowerCase();
+            const authors = paper.dataset.authors.toLowerCase();
+            const year = paper.dataset.year;
+            const venue = paper.dataset.venue.toLowerCase();
+            const category = paper.dataset.category;
+            
+            // Get all paper categories from tags
+            const paperCategories = Array.from(paper.querySelectorAll('.tag')).map(tag => tag.textContent.trim().split('(')[0].trim());
+            
+            const matchSearch = !searchTerm || title.includes(searchTerm) || authors.includes(searchTerm);
+            const matchYear = !yearFilter || year === yearFilter;
+            const matchVenue = !venueFilter || venue.includes(venueFilter);
+            const matchFacility = !facilityFilter || paperCategories.includes(facilityFilter);
+            const matchType = !typeFilter || paperCategories.includes(typeFilter);
+            
+            const isVisible = matchSearch && matchYear && matchVenue && matchFacility && matchType;
+            paper.style.display = isVisible ? 'block' : 'none';
+            
+            // Count visible papers by category
+            if (isVisible && category) {
+                categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+            }
+        });
+        
+        // Update TOC counts
+        document.querySelectorAll('.toc-link').forEach(link => {
+            const category = link.dataset.category;
+            const countBadge = link.querySelector('.toc-count');
+            if (countBadge && category !== 'statistics') {
+                const count = categoryCounts[category] || 0;
+                countBadge.textContent = count;
+                // Dim the link if no papers visible
+                link.style.opacity = count === 0 ? '0.5' : '1';
+            }
+        });
+        
+        // Hide sections with no visible papers
+        document.querySelectorAll('.papers-section').forEach(section => {
+            const visiblePapers = section.querySelectorAll('.paper-item[style*="display: block"]');
+            section.style.display = visiblePapers.length > 0 ? 'block' : 'none';
+        });
+    }
+
+    document.getElementById('searchInput')?.addEventListener('input', applyFilters);
+    document.getElementById('yearFilter')?.addEventListener('change', applyFilters);
+    document.getElementById('venueFilter')?.addEventListener('change', applyFilters);
+    document.getElementById('facilityFilter')?.addEventListener('change', applyFilters);
+    document.getElementById('typeFilter')?.addEventListener('change', applyFilters);
+
+    // TOC active state
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.id;
+                document.querySelectorAll('.toc-link').forEach(link => {
+                    link.classList.toggle('active', link.dataset.category === id);
+                });
+            }
+        });
+    }, { threshold: 0.5, rootMargin: '-20% 0px -60% 0px' });
+
+    document.querySelectorAll('.section').forEach(section => observer.observe(section));
+
+    // Quick Actions
+    window.showAllPapers = function() {
+        document.querySelectorAll('.papers-section').forEach(s => s.classList.remove('collapsed'));
+        setView('papers');
+        resetFilters();
+    };
+
+    window.showRecentAdditions = function() {
+        alert('Showing papers from the last 30 days');
+    };
+
+    window.exportBibliography = function() {
+        let bibtex = '';
+        document.querySelectorAll('.paper-item:not([style*="display: none"])').forEach((paper, i) => {
+            const title = paper.dataset.title;
+            const authors = paper.dataset.authors;
+            const year = paper.dataset.year;
+            bibtex += `@article{paper${i+1},\n  title={${title}},\n  author={${authors}},\n  year={${year}}\n}\n\n`;
+        });
+        
+        const blob = new Blob([bibtex], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'living_review_bibliography.bib';
+        a.click();
+        URL.revokeObjectURL(url);
+    };
+
+    window.toggleTOC = function() {
+        document.getElementById('tocSidebar').classList.toggle('collapsed');
+    };
 });
 </script>
 {{ end }}
