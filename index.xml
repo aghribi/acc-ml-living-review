@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The AI/ML for particle accelerators living review</title><link>https://aghribi.github.io/acc-ml-living-review/</link><description>Recent content on The AI/ML for particle accelerators living review</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://aghribi.github.io/acc-ml-living-review/index.xml" rel="self" type="application/rss+xml"/><item><title>Cite Us</title><link>https://aghribi.github.io/acc-ml-living-review/cite-us/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://aghribi.github.io/acc-ml-living-review/cite-us/</guid><description>&lt;div class="container"&gt;
+ &lt;div class="page-header"&gt;
+&lt;h1&gt;How to Cite This Review&lt;/h1&gt;
+&lt;p class="page-subtitle"&gt;Help us track the impact of this living review by citing it in your work&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section"&gt;
+&lt;h2&gt;Standard Citation&lt;/h2&gt;
+&lt;span class="citation-format"&gt;APA Format&lt;/span&gt;
+&lt;div class="citation-box"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard('citation-apa', this)"&gt;Copy&lt;/button&gt;
+&lt;pre class="citation-text" id="citation-apa"&gt;AI/ML for Particle Accelerators Collaboration. (2025). The AI/ML for particle accelerators living review. Retrieved from https://ml-accel-review.org&lt;/pre&gt;
+&lt;/div&gt;
+&lt;span class="citation-format"&gt;IEEE Format&lt;/span&gt;
+&lt;div class="citation-box"&gt;
+&lt;button class="copy-button" onclick="copyToClipboard('citation-ieee', this)"&gt;Copy&lt;/button&gt;
+&lt;pre class="citation-text" id="citation-ieee"&gt;AI/ML for Particle Accelerators Collaboration, "The AI/ML for particle accelerators living review," 2025. [Online]. Available: https://ml-accel-review.org&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+function copyToClipboard(elementId, button) {
+ const text = document.getElementById(elementId).textContent;
+ navigator.clipboard.writeText(text).then(() =&gt; {
+ button.textContent = 'Copied!';
+ setTimeout(() =&gt; button.textContent = 'Copy', 2000);
+ });
+}
+&lt;/script&gt;</description></item><item><title>Documentation</title><link>https://aghribi.github.io/acc-ml-living-review/documentation/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://aghribi.github.io/acc-ml-living-review/documentation/</guid><description>&lt;h1 id="documentation"&gt;Documentation&lt;/h1&gt;
+&lt;p&gt;Documentation for the AI/ML for Particle Accelerators Living Review.&lt;/p&gt;
+&lt;h2 id="for-contributors"&gt;For Contributors&lt;/h2&gt;
+&lt;p&gt;[Add documentation content]&lt;/p&gt;
+&lt;h2 id="external-resources"&gt;External Resources&lt;/h2&gt;
+&lt;p&gt;[You can add external links here later]&lt;/p&gt;</description></item><item><title>Submit a Paper</title><link>https://aghribi.github.io/acc-ml-living-review/contribute/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://aghribi.github.io/acc-ml-living-review/contribute/</guid><description>&lt;h1 id="submit-a-paper"&gt;Submit a Paper&lt;/h1&gt;
+&lt;p&gt;Thank you for your interest in contributing to the AI/ML for Particle Accelerators Living Review.&lt;/p&gt;
+&lt;h2 id="submission-guidelines"&gt;Submission Guidelines&lt;/h2&gt;
+&lt;p&gt;[Add your submission process here]&lt;/p&gt;
+&lt;h2 id="contact"&gt;Contact&lt;/h2&gt;
+&lt;p&gt;For questions about submissions, please contact [your contact info]&lt;/p&gt;</description></item><item><title/><link>https://aghribi.github.io/acc-ml-living-review/cite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aghribi.github.io/acc-ml-living-review/cite/</guid><description>&lt;div class="container"&gt;
+ &lt;div class="page-header"&gt;
+ &lt;h1&gt;How to Cite This Review&lt;/h1&gt;
+ &lt;p class="page-subtitle"&gt;Help us track the impact of this living review by citing it in your work&lt;/p&gt;
+ &lt;/div&gt;
+ &lt;!-- 📥 Download section moved on top --&gt;
+ &lt;div class="section"&gt;
+ &lt;h2&gt;Download Citation Files&lt;/h2&gt;
+ &lt;p&gt;Download citation files in various formats for easy import into your reference manager:&lt;/p&gt;
+ &lt;div class="download-buttons"&gt;
+ &lt;a href="https://aghribi.github.io/acc-ml-living-review/downloads/ml-accel-review.bib" class="btn" download&gt;📋 BibTeX (.bib)&lt;/a&gt;
+ &lt;a href="https://aghribi.github.io/acc-ml-living-review/downloads/ml-accel-review.ris" class="btn" download&gt;📄 RIS Format (.ris)&lt;/a&gt;
+ &lt;a href="https://aghribi.github.io/acc-ml-living-review/downloads/ml-accel-review.enw" class="btn" download&gt;📑 EndNote (.enw)&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;!-- BibTeX entry --&gt;
+ &lt;div class="section"&gt;
+ &lt;h2&gt;BibTeX Entry&lt;/h2&gt;
+ &lt;p&gt;Use this BibTeX entry for LaTeX documents:&lt;/p&gt;
+ &lt;div class="citation-box"&gt;
+ &lt;button class="copy-button" onclick="copyToClipboard('bibtex', this)"&gt;Copy&lt;/button&gt;
+ &lt;pre class="citation-text" id="bibtex"&gt;
+@misc{ml_accel_review_2025,
+ title = {The AI/ML for particle accelerators living review},
+ author = {{AI/ML for Particle Accelerators Collaboration}},
+ year = {2025},
+ howpublished = {\url{https://ml-accel-review.org}},
+ note = {Accessed: 2025-09-30}
+}&lt;/pre&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;!-- Why Cite --&gt;
+ &lt;div class="section"&gt;
+ &lt;h2&gt;Why Cite This Review?&lt;/h2&gt;
+ &lt;p&gt;By citing this living review, you:&lt;/p&gt;</description></item><item><title/><link>https://aghribi.github.io/acc-ml-living-review/review/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aghribi.github.io/acc-ml-living-review/review/</guid><description/></item><item><title>About</title><link>https://aghribi.github.io/acc-ml-living-review/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aghribi.github.io/acc-ml-living-review/about/</guid><description>&lt;p&gt;This site hosts the &lt;strong&gt;Accelerator ML Living Review&lt;/strong&gt;, a continuously updated overview of AI and machine learning applications in particle accelerator physics.&lt;/p&gt;</description></item><item><title>Submit a Paper</title><link>https://aghribi.github.io/acc-ml-living-review/submit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aghribi.github.io/acc-ml-living-review/submit/</guid><description>&lt;p&gt;This is the Submit Paper page.&lt;/p&gt;</description></item></channel></rss>
