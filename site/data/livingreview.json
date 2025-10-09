@@ -11460,6 +11460,63 @@
       ],
       "history": [],
       "last_updated": "2025-10-09T13:00:08Z"
-    }
+    },
+    "('10.1109/TASC.2025.3537056', '', 'predicting voltage of ni rebco pancake coils to detect normal-state transition using convolutional neural network')": {
+    "id": "doi:10.1109/TASC.2025.3537056",
+    "doi": "10.1109/TASC.2025.3537056",
+    "arxiv_id": null,
+    "inspire_id": null,
+    "title": "Predicting Voltage of NI REBCO Pancake Coils to Detect Normal-State Transition Using Convolutional Neural Network",
+    "authors": [
+      "Takanobu Mato",
+      "So Noguchi"
+    ],
+    "abstract": "No-insulation (NI) rare-earth barium copper oxide (REBCO) pancake coils are a leading candidate for high-field generation due to their high performances under high fields. However, the need for active quench protection has begun arising because the high energy density makes it difficult to protect REBCO magnets only by adopting the NI techniques. One of the challenging parts of the protection is the quench detection difficult for the NI REBCO pancake coil. The slow normal-zone propagation speed and the low coil resistance lead to delayed quench detection and frequent protection failures of the NI REBCO coils system. To address the problem in the local-normal-zone detection of NI REBCO pancake coils, we have been focusing on a deep-learning technology to detect any anomalous voltage rise of the REBCO pancake coils. The deep learning has a high potential for the quench detection of the REBCO pancake coil since it can flexibly learn the characteristics of objects that people cannot recognize. In this paper, we build a CNN-based (convolutional-neural-network-based) voltage predictor to detect steep voltage rises during the normal-state transition of NI REBCO pancake coils. The CNN model is trained with the numerous quench data generated with the well-established partial equivalent element method (PEEC) simulation coupled with thermal finite element analysis. The test results of the trained CNN are presented.",
+    "date": "2025-08-01",
+    "year": 2025,
+    "venue": "IEEE Transactions on Applied Superconductivity",
+    "status": "preprint",
+    "categories": [
+      {
+        "label": "Anomaly Detection & Fault Prediction",
+        "score": 0.61
+      },
+      {
+        "label": "Surrogate Models",
+        "score": 0.42
+      },
+      {
+        "label": "Novel Applications",
+        "score": 0.35
+      }
+    ],
+    "keywords": [
+      "Voltage",
+      "Coils",
+      "Training",
+      "Heating systems",
+      "Predictive models",
+      "Finite element analysis",
+      "Feature extraction",
+      "Superconducting magnets",
+      "Convolutional neural networks",
+      "Superconductivity"
+    ],
+    "curated": false,
+    "notes": "Submitted manually by Damien Minenna (CEA).",
+    "links": {
+      "doi": "https://doi.org/10.1109/TASC.2025.3537056",
+      "ieee": "https://ieeexplore.ieee.org/document/10858868"
+    },
+    "sources": [
+      {
+        "source": "manual",
+        "seen_at": "2025-10-09T12:49:58.443Z"
+      }
+    ],
+    "history": [],
+    "last_updated": "2025-10-09T12:49:58.443Z"
+  }
+
   }
 }
