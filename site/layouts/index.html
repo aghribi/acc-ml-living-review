@@ -26,16 +26,16 @@
         <span class="living-badge">
             <span class="status-dot"></span>
             LIVING REVIEW • CONTINUOUSLY UPDATED
-        </span>
-        <span class="living-badge">
+        <!-- </span>
+        <span class="living-badge"> -->
             🕒 Last update: 
             {{ with $summary.last_updated }}
               {{ (time .).Format "January 2, 2006, 15:04 MST" }}
             {{ else }}
               N/A
             {{ end }}
-        </span>
-        <span class="living-badge">
+        <!-- </span>
+        <span class="living-badge"> -->
             🔮 Next update: 
             {{ with $summary.next_update }}
               {{ (time .).Format "January 2, 2006, 15:04 MST" }}
