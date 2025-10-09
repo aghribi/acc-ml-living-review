@@ -1,0 +1,259 @@
+{
+  "stats": {
+    "per_year": {
+      "2025": 5
+    },
+    "per_category": {
+      "Tools & Libraries": 1,
+      "Novel Applications": 3,
+      "Surrogate Models": 1,
+      "Others": 1,
+      "Data Management": 2
+    },
+    "per_venue/journal": {
+      "arXiv": 5
+    },
+    "per_keyword": {
+      "optimization": 1,
+      "surrogate model": 1,
+      "deep learning": 1,
+      "transformer": 1,
+      "control": 1
+    },
+    "monthly_trends": {
+      "2025-09": 5
+    },
+    "last_updated": "2025-10-09T07:38:55.089995+00:00",
+    "next_update": "2025-10-10T07:38:55.089995+00:00"
+  },
+  "papers": {
+    "('2506.03796', '', 'geoff the generic optimization framework frontend for particle accelerator controls')": {
+      "id": "arxiv:2506.03796",
+      "doi": null,
+      "arxiv_id": "2506.03796",
+      "inspire_id": null,
+      "title": "Geoff: The Generic Optimization Framework & Frontend for Particle Accelerator Controls",
+      "authors": [
+        "Penelope Madysa",
+        "Sabrina Appel",
+        "Verena Kain",
+        "Michael Schenk"
+      ],
+      "abstract": "Geoff is a collection of Python packages that form a framework for automation\nof particle accelerator controls. With particle accelerator laboratories around\nthe world researching machine learning techniques to improve accelerator\nperformance and uptime, a multitude of approaches and algorithms have emerged.\nThe purpose of Geoff is to harmonize these approaches and to minimize friction\nwhen comparing or migrating between them. It provides standardized interfaces\nfor optimization problems, utility functions to speed up development, and a\nreference GUI application that ties everything together. Geoff is an\nopen-source library developed at CERN and maintained and updated in\ncollaboration between CERN and GSI as part of the EURO-LABS project. This paper\ngives an overview over Geoff's design, features, and current usage.",
+      "date": "2025-09-16",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.5761764049530029
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2506.03796v3"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-10-09T07:20:11Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-09T07:20:11Z"
+    },
+    "('2509.12030', '', 'acceleration of multi scale lts magnet simulations with neural network surrogate models')": {
+      "id": "arxiv:2509.12030",
+      "doi": null,
+      "arxiv_id": "2509.12030",
+      "inspire_id": null,
+      "title": "Acceleration of Multi-Scale LTS Magnet Simulations with Neural Network Surrogate Models",
+      "authors": [
+        "Louis Denis",
+        "Julien Dular",
+        "Vincent Nuttens",
+        "Mariusz Wozniak",
+        "Benoît Vanderheyden",
+        "Christophe Geuzaine"
+      ],
+      "abstract": "While the prediction of AC losses during transients is critical for designing\nlarge-scale low-temperature superconducting (LTS) magnets, brute-force\nfinite-element (FE) simulation of their detailed geometry down to the length\nscale of the conductors is a computational challenge. Multi-scale methods,\nbalancing between a coarse approximation of the fields at the scale of the\nmagnet and a detailed description at the scale of the conductors, are promising\napproaches to reduce the computational load while keeping a sufficient\naccuracy. In this work, we introduce a neural network approach to accelerate\nmulti-scale magneto-thermal simulations of LTS magnets by replacing costly\nsingle-turn FE models with neural network surrogates. The neural network\narchitecture is presented and discussed, together with an automated procedure\nfor generating simulation data for its training. The resulting accelerated\nmulti-scale model is used to simulate current ramp-up procedures for the IBA\nS2C2 magnet. The surrogate-based multi-scale model is compared with a\nconventional multi-scale model based on a composite wire-in-channel FE model.\nThe surrogate model is shown to reproduce single-turn filament hysteresis,\ninter-filament coupling, and eddy losses, while the computational time of the\nmulti-scale method is reduced by a factor of 800.",
+      "date": "2025-09-15",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Surrogate Models",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2509.12030v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-10-09T07:20:18Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-09T07:20:18Z"
+    },
+    "('2509.25104', '', 'towards generalizable deep ptychography neural networks')": {
+      "id": "arxiv:2509.25104",
+      "doi": null,
+      "arxiv_id": "2509.25104",
+      "inspire_id": null,
+      "title": "Towards generalizable deep ptychography neural networks",
+      "authors": [
+        "Albert Vong",
+        "Steven Henke",
+        "Oliver Hoidn",
+        "Hanna Ruth",
+        "Junjing Deng",
+        "Alexander Hexemer",
+        "Apurva Mehta",
+        "Arianna Gleason",
+        "Levi Hancock",
+        "Nicholas Schwarz"
+      ],
+      "abstract": "X-ray ptychography is a data-intensive imaging technique expected to become\nubiquitous at next-generation light sources delivering many-fold increases in\ncoherent flux. The need for real-time feedback under accelerated acquisition\nrates motivates surrogate reconstruction models like deep neural networks,\nwhich offer orders-of-magnitude speedup over conventional methods. However,\nexisting deep learning approaches lack robustness across diverse experimental\nconditions. We propose an unsupervised training workflow emphasizing probe\nlearning by combining experimentally-measured probes with synthetic,\nprocedurally generated objects. This probe-centric approach enables a single\nphysics-informed neural network to reconstruct unseen experiments across\nmultiple beamlines; among the first demonstrations of multi-probe\ngeneralization. We find probe learning is equally important as in-distribution\nlearning; models trained using this synthetic workflow achieve reconstruction\nfidelity comparable to those trained exclusively on experimental data, even\nwhen changing the type of synthetic training object. The proposed approach\nenables training of experiment-steering models that provide real-time feedback\nunder dynamic experimental conditions.",
+      "date": "2025-09-29",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2509.25104v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-10-09T07:21:52Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-09T07:21:52Z"
+    },
+    "('2509.26411', '', 'trackformers part 2 enhanced transformer based models for high energy physics track reconstruction')": {
+      "id": "arxiv:2509.26411",
+      "doi": null,
+      "arxiv_id": "2509.26411",
+      "inspire_id": null,
+      "title": "TrackFormers Part 2: Enhanced Transformer-Based Models for High-Energy Physics Track Reconstruction",
+      "authors": [
+        "Sascha Caron",
+        "Nadezhda Dobreva",
+        "Maarten Kimpel",
+        "Uraz Odyurt",
+        "Slav Pshenov",
+        "Roberto Ruiz de Austri Bazan",
+        "Eugene Shalugin",
+        "Zef Wolffs",
+        "Yue Zhao"
+      ],
+      "abstract": "High-Energy Physics experiments are rapidly escalating in generated data\nvolume, a trend that will intensify with the upcoming High-Luminosity LHC\nupgrade. This surge in data necessitates critical revisions across the data\nprocessing pipeline, with particle track reconstruction being a prime candidate\nfor improvement. In our previous work, we introduced \"TrackFormers\", a\ncollection of Transformer-based one-shot encoder-only models that effectively\nassociate hits with expected tracks. In this study, we extend our earlier\nefforts by incorporating loss functions that account for inter-hit\ncorrelations, conducting detailed investigations into (various) Transformer\nattention mechanisms, and a study on the reconstruction of higher-level\nobjects. Furthermore we discuss new datasets that allow the training on hit\nlevel for a range of physics processes. These developments collectively aim to\nboost both the accuracy, and potentially the efficiency of our tracking models,\noffering a robust solution to meet the demands of next-generation high-energy\nphysics experiments.",
+      "date": "2025-09-30",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Data Management",
+          "score": 0.42183807492256165
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.37437403202056885
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2509.26411v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-10-09T07:22:02Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-09T07:22:02Z"
+    },
+    "('2509.12945', '', 'fusionmae large scale pretrained model to optimize and simplify diagnostic and control of fusion plasma')": {
+      "id": "arxiv:2509.12945",
+      "doi": null,
+      "arxiv_id": "2509.12945",
+      "inspire_id": null,
+      "title": "FusionMAE: large-scale pretrained model to optimize and simplify diagnostic and control of fusion plasma",
+      "authors": [
+        "Zongyu Yang",
+        "Zhenghao Yang",
+        "Wenjing Tian",
+        "Jiyuan Li",
+        "Xiang Sun",
+        "Guohui Zheng",
+        "Songfen Liu",
+        "Niannian Wu",
+        "Rongpeng Li",
+        "Zhaohe Xu",
+        "Bo Li",
+        "Zhongbing Shi",
+        "Zhe Gao",
+        "Wei Chen",
+        "Xiaoquan Ji",
+        "Min Xu",
+        "Wulyu Zhong"
+      ],
+      "abstract": "In magnetically confined fusion device, the complex, multiscale, and\nnonlinear dynamics of plasmas necessitate the integration of extensive\ndiagnostic systems to effectively monitor and control plasma behaviour. The\ncomplexity and uncertainty arising from these extensive systems and their\ntangled interrelations has long posed a significant obstacle to the\nacceleration of fusion energy development. In this work, a large-scale model,\nfusion masked auto-encoder (FusionMAE) is pre-trained to compress the\ninformation from 88 diagnostic signals into a concrete embedding, to provide a\nunified interface between diagnostic systems and control actuators. Two\nmechanisms are proposed to ensure a meaningful embedding: compression-reduction\nand missing-signal reconstruction. Upon completion of pre-training, the model\nacquires the capability for 'virtual backup diagnosis', enabling the inference\nof missing diagnostic data with 96.7% reliability. Furthermore, the model\ndemonstrates three emergent capabilities: automatic data analysis, universal\ncontrol-diagnosis interface, and enhancement of control performance on multiple\ntasks. This work pioneers large-scale AI model integration in fusion energy,\ndemonstrating how pre-trained embeddings can simplify the system interface,\nreducing necessary diagnostic systems and optimize operation performance for\nfuture fusion reactors.",
+      "date": "2025-09-16",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3564392626285553
+        },
+        {
+          "label": "Data Management",
+          "score": 0.31196922063827515
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2509.12945v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-10-09T07:22:33Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-09T07:22:33Z"
+    }
+  }
+}

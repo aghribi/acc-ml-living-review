@@ -1,5 +1,8 @@
 name: Update Living Review Data
 
+env:
+  SPRINGER_API_KEY: ${{ secrets.SPRINGER_API_KEY }}
+  
 on:
   workflow_dispatch:
   schedule:

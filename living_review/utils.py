@@ -36,7 +36,8 @@ import datetime as dt
 import re
 import difflib
 from typing import Optional, List
-
+import requests
+from requests.adapters import HTTPAdapter, Retry
 
 def deduplicate(papers):
     """
@@ -160,3 +161,19 @@ def similar_title(a: str, b: str) -> float:
         Similarity ratio in [0, 1], where 1 = identical.
     """
     return difflib.SequenceMatcher(None, simplify_title(a) or "", simplify_title(b) or "").ratio()
+
+def make_session():
+    """
+    Create a shared requests.Session with retry strategy.
+    Retries on server errors (500, 502, 503, 504) up to 3 times with
+    exponential backoff.
+    """
+    session = requests.Session()
+    retries = Retry(total=3, backoff_factor=1,
+                    status_forcelist=[500, 502, 503, 504])
+    session.mount("http://", HTTPAdapter(max_retries=retries))
+    session.mount("https://", HTTPAdapter(max_retries=retries))
+    return session
+
+# global session instance
+SESSION = make_session()

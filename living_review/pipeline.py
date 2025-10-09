@@ -36,7 +36,7 @@ Other outputs
 """
 
 import os, time
-from .fetchers import fetch_arxiv, fetch_inspire, fetch_hal, fetch_openalex, fetch_crossref
+from .fetchers import fetch_arxiv, fetch_inspire, fetch_hal, fetch_openalex, fetch_crossref, fetch_semanticscholar, fetch_springer, fetch_pubmed
 from .classifier import filter_relevant_papers, classify_papers
 from .stats import compute_stats
 from .exporters import export_json, export_bibtex, export_pdf
@@ -116,6 +116,12 @@ class LivingReviewPipeline:
             print("[info] Ingesting OpenAlex:", db.merge_from_list(fetch_openalex(self.start, self.end)))
         if "crossref" in self.sources:
             print("[info] Ingesting CrossRef:", db.merge_from_list(fetch_crossref(self.start, self.end)))
+        if "semanticscholar" in self.sources:
+            print("[info] Ingesting Semantic Scholar:", db.merge_from_list(fetch_semanticscholar(self.start, self.end)))
+        if "springer" in self.sources:
+            print("[info] Ingesting Springer:", db.merge_from_list(fetch_springer(self.start, self.end)))
+        if "pubmed" in self.sources:
+            print("[info] Ingesting PubMed:", db.merge_from_list(fetch_pubmed(self.start, self.end)))
 
         # --- Manual submissions (from CMS) ---
         if self.promote_manual:

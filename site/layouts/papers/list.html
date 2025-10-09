@@ -46,23 +46,13 @@
                 </div>
                 
                 <div class="filter-group-inline">
-                    <label for="facilityFilter">Facility:</label>
-                    <select id="facilityFilter" class="filter-select">
-                        <option value="">All Facilities</option>
+                    <label for="specialFilter">Other:</label>
+                    <select id="specialFilter" class="filter-select">
+                        <option value="">All Categories</option>
                         {{ range $category, $count := $stats.per_category }}
-                        {{ if or (hasPrefix $category "by facility") (hasPrefix $category "By facility") }}
-                        <option value="{{ $category }}">{{ $category }}</option>
-                        {{ end }}
-                        {{ end }}
-                    </select>
-                </div>
-                
-                <div class="filter-group-inline">
-                    <label for="typeFilter">Type:</label>
-                    <select id="typeFilter" class="filter-select">
-                        <option value="">All Types</option>
-                        {{ range $category, $count := $stats.per_category }}
-                        {{ if or (eq $category "Tools") (eq $category "Reviews") (eq $category "Surveys") }}
+                        {{ $isByFacility := or (hasPrefix $category "by facility") (hasPrefix $category "By facility") (in $category "facility type") (in $category "Facility type") }}
+                        {{ $isToolsOrMethods := or (in $category "Tools") (in $category "tools") (in $category "Methods") (in $category "methods") (eq $category "Reviews") (eq $category "Surveys") }}
+                        {{ if or $isByFacility $isToolsOrMethods }}
                         <option value="{{ $category }}">{{ $category }}</option>
                         {{ end }}
                         {{ end }}
@@ -105,18 +95,54 @@
                     <span class="toc-label">Statistics & Trends</span>
                 </a>
             </li>
-            {{ range $category, $count := $stats.per_category }}
-            {{ $isSpecialCategory := or (hasPrefix $category "by facility") (hasPrefix $category "By facility") (eq $category "Tools") (eq $category "Reviews") (eq $category "Surveys") }}
-            {{ if not $isSpecialCategory }}
+            
             <li class="toc-item">
-                <a href="#{{ $category | urlize }}" class="toc-link" data-category="{{ $category | urlize }}">
-                    <span class="toc-dot" style="background-color: {{ index (slice "#6096ba" "#507a9a" "#8bc4e8" "#4a6fa5" "#2e5266") (mod (len (split $category "")) 5) }};"></span>
-                    <span class="toc-label">{{ $category }}</span>
-                    <span class="toc-count">{{ $count }}</span>
+                <a href="#control" class="toc-link" data-category="control">
+                    <span class="toc-dot" style="background-color: #6096ba;"></span>
+                    <span class="toc-label">Control</span>
+                    <span class="toc-count">0</span>
                 </a>
             </li>
-            {{ end }}
-            {{ end }}
+            
+            <li class="toc-item">
+                <a href="#optimization" class="toc-link" data-category="optimization">
+                    <span class="toc-dot" style="background-color: #507a9a;"></span>
+                    <span class="toc-label">Optimization</span>
+                    <span class="toc-count">0</span>
+                </a>
+            </li>
+            
+            <li class="toc-item">
+                <a href="#anomalies" class="toc-link" data-category="anomalies">
+                    <span class="toc-dot" style="background-color: #8bc4e8;"></span>
+                    <span class="toc-label">Anomalies</span>
+                    <span class="toc-count">0</span>
+                </a>
+            </li>
+            
+            <li class="toc-item">
+                <a href="#simulations" class="toc-link" data-category="simulations">
+                    <span class="toc-dot" style="background-color: #4a6fa5;"></span>
+                    <span class="toc-label">Simulations</span>
+                    <span class="toc-count">0</span>
+                </a>
+            </li>
+            
+            <li class="toc-item">
+                <a href="#novel-applications" class="toc-link" data-category="novel-applications">
+                    <span class="toc-dot" style="background-color: #2e5266;"></span>
+                    <span class="toc-label">Novel Applications</span>
+                    <span class="toc-count">0</span>
+                </a>
+            </li>
+            
+            <li class="toc-item">
+                <a href="#other-topics" class="toc-link" data-category="other-topics">
+                    <span class="toc-dot" style="background-color: #6096ba;"></span>
+                    <span class="toc-label">Other Topics</span>
+                    <span class="toc-count">0</span>
+                </a>
+            </li>
         </ul>
         
         <!-- Quick Actions -->
@@ -136,6 +162,80 @@
 
     <!-- Main Content -->
     <div class="content" id="mainContent">
+        
+        <!-- Latest Additions Section (not in TOC) -->
+        <div class="section latest-additions-section" id="latest-additions" data-view-section="papers">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">📅 Latest Additions (Last 30 Days)</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-body">
+                {{ $thirtyDaysAgo := now.AddDate 0 0 -30 }}
+                {{ $recentPapers := slice }}
+                {{ range $papers }}
+                    {{ $paperDate := .date }}
+                    {{ $isRecent := false }}
+                    {{ if $paperDate }}
+                        {{ $parsedDate := time $paperDate }}
+                        {{ if ge $parsedDate $thirtyDaysAgo }}
+                            {{ $isRecent = true }}
+                        {{ end }}
+                    {{ else if or (eq .year "2025") (eq .year "2024") }}
+                        {{ $isRecent = true }}
+                    {{ end }}
+                    
+                    {{ if $isRecent }}
+                        {{ $recentPapers = $recentPapers | append . }}
+                    {{ end }}
+                {{ end }}
+                
+                {{ range $recentPapers }}
+                    {{ $paper := . }}
+                    <div class="paper-item" 
+                         data-paper-id="{{ $paper.id }}"
+                         data-year="{{ $paper.year }}"
+                         data-date="{{ with $paper.date }}{{ . }}{{ else }}{{ end }}"
+                         data-venue="{{ $paper.venue }}"
+                         data-title="{{ $paper.title }}"
+                         data-authors="{{ delimit $paper.authors " " }}"
+                         data-main-category="latest-additions"
+                         data-all-categories="{{ range .categories }}{{ .label }}|{{ end }}">
+                        {{ $paperUrl := "" }}
+                        {{ if $paper.links.arxiv }}
+                            {{ $paperUrl = $paper.links.arxiv }}
+                        {{ else if $paper.links.inspire }}
+                            {{ $paperUrl = $paper.links.inspire }}
+                        {{ else if $paper.links.openalex }}
+                            {{ $paperUrl = $paper.links.openalex }}
+                        {{ else if $paper.doi }}
+                            {{ $paperUrl = printf "https://doi.org/%s" $paper.doi }}
+                        {{ end }}
+                        
+                        <a href="{{ $paperUrl }}" class="paper-title" target="_blank" rel="noopener noreferrer">{{ $paper.title }}</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">{{ delimit $paper.authors ", " }}</span>
+                            <span>•</span>
+                            <span class="paper-venue">{{ $paper.venue }} ({{ $paper.year }})</span>
+                            {{ if $paper.doi }}
+                            <span>•</span>
+                            <span class="paper-doi">DOI: {{ $paper.doi }}</span>
+                            {{ end }}
+                        </div>
+
+                        {{ if $paper.categories }}
+                        <div class="paper-tags">
+                          {{ range $paper.categories }}
+                            <span class="tag">
+                              {{ .label }}
+                              {{ with .score }} ({{ printf "%.1f%%" (mul . 100) }}){{ end }}
+                            </span>
+                          {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </div>
+        </div>
 
         <!-- Statistics Section -->
         <div class="section statistics-section" id="statistics" data-view-section="statistics">
@@ -172,31 +272,50 @@
             </div>
         </div>
 
-        <!-- Papers by Category -->
-        {{ range $category, $count := $stats.per_category }}
-        <div class="section collapsed papers-section" id="{{ $category | urlize }}" data-view-section="papers">
+        <!-- Papers by Main Category Groups -->
+        {{ $categoryGroups := dict 
+            "control" (slice "Control" "Controls" "Feedback" "Tuning" "Operation" "Operations")
+            "optimization" (slice "Optimization" "Optimisation" "Parameter" "Multi-Objective")
+            "anomalies" (slice "Anomaly" "Fault" "Error" "Beam Loss" "Loss")
+            "simulations" (slice "Simulation" "Surrogate" "Virtual" "Digital Twin" "Modeling" "Modelling")
+            "novel-applications" (slice "Novel" "Emerging" "Advanced" "New Techniques")
+        }}
+        
+        {{ range $groupId, $keywords := $categoryGroups }}
+        <div class="section collapsed papers-section" id="{{ $groupId }}" data-view-section="papers" data-main-category="{{ $groupId }}">
             <div class="section-header" onclick="toggleSection(this)">
-                <h2 class="section-title">{{ $category }}</h2>
+                <h2 class="section-title">{{ replace (replace $groupId "-" " ") "applications" "Applications" | title }}</h2>
                 <span class="chevron">▼</span>
             </div>
             <div class="section-body">
                 {{ range $papers }}
                     {{ $paper := . }}
-                    {{ $hasCategory := false }}
+                    {{ $shouldShow := false }}
+                    
                     {{ range .categories }}
-                        {{ if eq .label $category }}
-                            {{ $hasCategory = true }}
+                        {{ $cat := .label }}
+                        {{ $isByFacility := or (hasPrefix $cat "by facility") (hasPrefix $cat "By facility") (in $cat "facility type") (in $cat "Facility type") }}
+                        {{ $isToolsOrMethods := or (in $cat "Tools") (in $cat "tools") (in $cat "Methods") (in $cat "methods") (eq $cat "Reviews") (eq $cat "Surveys") }}
+                        
+                        {{ if not (or $isByFacility $isToolsOrMethods) }}
+                            {{ range $keyword := $keywords }}
+                                {{ if in $cat $keyword }}
+                                    {{ $shouldShow = true }}
+                                {{ end }}
+                            {{ end }}
                         {{ end }}
                     {{ end }}
                     
-                    {{ if $hasCategory }}
+                    {{ if $shouldShow }}
                     <div class="paper-item" 
                          data-paper-id="{{ $paper.id }}"
                          data-year="{{ $paper.year }}"
+                         data-date="{{ with $paper.date }}{{ . }}{{ else }}{{ end }}"
                          data-venue="{{ $paper.venue }}"
                          data-title="{{ $paper.title }}"
                          data-authors="{{ delimit $paper.authors " " }}"
-                         data-category="{{ $category | urlize }}">
+                         data-main-category="{{ $groupId }}"
+                         data-all-categories="{{ range .categories }}{{ .label }}|{{ end }}">
                         {{ $paperUrl := "" }}
                         {{ if $paper.links.arxiv }}
                             {{ $paperUrl = $paper.links.arxiv }}
@@ -219,7 +338,6 @@
                             {{ end }}
                         </div>
 
-                        <!-- Categories with similarity scores -->
                         {{ if $paper.categories }}
                         <div class="paper-tags">
                           {{ range $paper.categories }}
@@ -236,6 +354,83 @@
             </div>
         </div>
         {{ end }}
+        
+        <!-- Other Topics -->
+        <div class="section collapsed papers-section" id="other-topics" data-view-section="papers" data-main-category="other-topics">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Other Topics</h2>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="section-body">
+                {{ range $papers }}
+                    {{ $paper := . }}
+                    {{ $isOther := true }}
+                    
+                    {{ range .categories }}
+                        {{ $cat := .label }}
+                        {{ $isByFacility := or (hasPrefix $cat "by facility") (hasPrefix $cat "By facility") (in $cat "facility type") (in $cat "Facility type") }}
+                        {{ $isToolsOrMethods := or (in $cat "Tools") (in $cat "tools") (in $cat "Methods") (in $cat "methods") (eq $cat "Reviews") (eq $cat "Surveys") }}
+                        
+                        {{ if or $isByFacility $isToolsOrMethods }}
+                            {{ $isOther = false }}
+                        {{ end }}
+                        
+                        {{ range $groupId, $keywords := $categoryGroups }}
+                            {{ range $keyword := $keywords }}
+                                {{ if in $cat $keyword }}
+                                    {{ $isOther = false }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                    
+                    {{ if $isOther }}
+                    <div class="paper-item" 
+                         data-paper-id="{{ $paper.id }}"
+                         data-year="{{ $paper.year }}"
+                         data-date="{{ with $paper.date }}{{ . }}{{ else }}{{ end }}"
+                         data-venue="{{ $paper.venue }}"
+                         data-title="{{ $paper.title }}"
+                         data-authors="{{ delimit $paper.authors " " }}"
+                         data-main-category="other-topics"
+                         data-all-categories="{{ range .categories }}{{ .label }}|{{ end }}">
+                        {{ $paperUrl := "" }}
+                        {{ if $paper.links.arxiv }}
+                            {{ $paperUrl = $paper.links.arxiv }}
+                        {{ else if $paper.links.inspire }}
+                            {{ $paperUrl = $paper.links.inspire }}
+                        {{ else if $paper.links.openalex }}
+                            {{ $paperUrl = $paper.links.openalex }}
+                        {{ else if $paper.doi }}
+                            {{ $paperUrl = printf "https://doi.org/%s" $paper.doi }}
+                        {{ end }}
+                        
+                        <a href="{{ $paperUrl }}" class="paper-title" target="_blank" rel="noopener noreferrer">{{ $paper.title }}</a>
+                        <div class="paper-meta">
+                            <span class="paper-authors">{{ delimit $paper.authors ", " }}</span>
+                            <span>•</span>
+                            <span class="paper-venue">{{ $paper.venue }} ({{ $paper.year }})</span>
+                            {{ if $paper.doi }}
+                            <span>•</span>
+                            <span class="paper-doi">DOI: {{ $paper.doi }}</span>
+                            {{ end }}
+                        </div>
+
+                        {{ if $paper.categories }}
+                        <div class="paper-tags">
+                          {{ range $paper.categories }}
+                            <span class="tag">
+                              {{ .label }}
+                              {{ with .score }} ({{ printf "%.1f%%" (mul . 100) }}){{ end }}
+                            </span>
+                          {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
     </div>
 </div>
 
@@ -484,12 +679,23 @@
 }
 
 /* Section visibility based on view */
-.content[data-view="statistics"] .papers-section {
+.content[data-view="statistics"] .papers-section,
+.content[data-view="statistics"] .latest-additions-section {
     display: none;
 }
 
 .content[data-view="papers"] .statistics-section {
     display: none;
+}
+
+/* Latest Additions Section Highlight */
+.latest-additions-section {
+    background: var(--bg-section);
+    border-left: 4px solid var(--accent-primary);
+}
+
+.latest-additions-section .section-title {
+    color: var(--accent-primary);
 }
 
 /* Responsive */
@@ -579,23 +785,48 @@ document.addEventListener('DOMContentLoaded', () => {
     Chart.defaults.color = colors.text;
     Chart.defaults.borderColor = colors.grid;
 
-    // Chart 1: Publications per Year (Area Chart with Preprints)
+    // Store chart instances for theme updates
+    const chartInstances = {};
+
+    // Chart 1: Publications per Year - Calculate from actual papers
     const ctx1 = document.getElementById('chart1');
     if (ctx1) {
-        const years = Object.keys(stats.per_year || {});
-        const publications = Object.values(stats.per_year || {});
-        // If you have preprint data in stats, use it; otherwise simulate
-        const preprints = stats.per_year_preprints ? Object.values(stats.per_year_preprints) : 
-            publications.map(p => Math.floor(p * 0.8)); // Simulated: ~80% of publications
+        // Count papers by year and type (arXiv vs published)
+        const yearData = {};
         
-        new Chart(ctx1, {
+        document.querySelectorAll('.paper-item').forEach(paper => {
+            const year = paper.dataset.year;
+            const venue = (paper.dataset.venue || '').toLowerCase();
+            
+            if (year) {
+                if (!yearData[year]) {
+                    yearData[year] = { preprints: 0, published: 0 };
+                }
+                
+                // Check if it's arXiv (preprint) or published
+                if (venue.includes('arxiv')) {
+                    yearData[year].preprints++;
+                } else {
+                    yearData[year].published++;
+                }
+            }
+        });
+        
+        // Sort years and prepare data
+        const years = Object.keys(yearData).sort();
+        const preprintsData = years.map(y => yearData[y].preprints);
+        const publishedData = years.map(y => yearData[y].published);
+        
+        console.log('Chart 1 - Publications by year:', yearData);
+        
+        chartInstances.chart1 = new Chart(ctx1, {
             type: 'line',
             data: {
                 labels: years,
                 datasets: [
                     {
                         label: 'Published Papers',
-                        data: publications,
+                        data: publishedData,
                         backgroundColor: colors.primary + '60',
                         borderColor: colors.primary,
                         borderWidth: 2,
@@ -604,7 +835,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     },
                     {
                         label: 'Preprints',
-                        data: preprints,
+                        data: preprintsData,
                         backgroundColor: colors.secondary + '60',
                         borderColor: colors.secondary,
                         borderWidth: 2,
@@ -617,26 +848,104 @@ document.addEventListener('DOMContentLoaded', () => {
                 responsive: true,
                 maintainAspectRatio: true,
                 plugins: {
-                    legend: { display: true }
+                    legend: { 
+                        display: true,
+                        labels: {
+                            color: colors.text
+                        }
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                label += context.parsed.y;
+                                return label;
+                            },
+                            footer: function() {
+                                return 'Calculated from actual paper venues';
+                            }
+                        }
+                    }
                 },
                 scales: {
-                    y: { beginAtZero: true, grid: { color: colors.grid } },
-                    x: { grid: { color: colors.grid } }
+                    y: { 
+                        beginAtZero: true, 
+                        grid: { color: colors.grid },
+                        ticks: { color: colors.text },
+                        stacked: false
+                    },
+                    x: { 
+                        grid: { color: colors.grid },
+                        ticks: { color: colors.text }
+                    }
                 }
             }
         });
     }
 
-    // Chart 2: Papers by Category (Pie Chart)
+    // Chart 2: Papers by Category (Pie Chart) - Calculate from main categories
     const ctx2 = document.getElementById('chart2');
     if (ctx2) {
-        const categoryColors = ['#6096ba', '#507a9a', '#8bc4e8', '#4a6fa5', '#2e5266'];
-        new Chart(ctx2, {
+        // Count papers by main category (matching TOC categories)
+        const mainCategoryCounts = {
+            'Control': 0,
+            'Optimization': 0,
+            'Anomalies': 0,
+            'Simulations': 0,
+            'Novel Applications': 0,
+            'Other Topics': 0
+        };
+        
+        // Keywords for matching (same as used in paper grouping)
+        const categoryKeywords = {
+            'Control': ['Control', 'Controls', 'Feedback', 'Tuning', 'Operation', 'Operations'],
+            'Optimization': ['Optimization', 'Optimisation', 'Parameter', 'Multi-Objective'],
+            'Anomalies': ['Anomaly', 'Fault', 'Error', 'Beam Loss', 'Loss'],
+            'Simulations': ['Simulation', 'Surrogate', 'Virtual', 'Digital Twin', 'Modeling', 'Modelling'],
+            'Novel Applications': ['Novel', 'Emerging', 'Advanced', 'New Techniques']
+        };
+        
+        document.querySelectorAll('.paper-item').forEach(paper => {
+            const allCats = (paper.dataset.allCategories || '').toLowerCase();
+            let categorized = false;
+            
+            // Check which main category this paper belongs to
+            for (const [mainCat, keywords] of Object.entries(categoryKeywords)) {
+                for (const keyword of keywords) {
+                    if (allCats.includes(keyword.toLowerCase())) {
+                        mainCategoryCounts[mainCat]++;
+                        categorized = true;
+                        break;
+                    }
+                }
+                if (categorized) break;
+            }
+            
+            // If not categorized and not a special category (tools/facility), put in Other
+            if (!categorized) {
+                const isSpecial = allCats.includes('tool') || allCats.includes('method') || 
+                                 allCats.includes('facility') || allCats.includes('review');
+                if (!isSpecial) {
+                    mainCategoryCounts['Other Topics']++;
+                }
+            }
+        });
+        
+        console.log('Chart 2 - Papers by main category:', mainCategoryCounts);
+        
+        const categoryColors = ['#6096ba', '#507a9a', '#8bc4e8', '#4a6fa5', '#2e5266', '#7aa8c0'];
+        
+        chartInstances.chart2 = new Chart(ctx2, {
             type: 'pie',
             data: {
-                labels: Object.keys(stats.per_category || {}),
+                labels: Object.keys(mainCategoryCounts),
                 datasets: [{
-                    data: Object.values(stats.per_category || {}),
+                    data: Object.values(mainCategoryCounts),
                     backgroundColor: categoryColors,
                     borderWidth: 2,
                     borderColor: colors.grid
@@ -646,7 +955,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 responsive: true,
                 maintainAspectRatio: true,
                 plugins: {
-                    legend: { position: 'right' }
+                    legend: { position: 'right' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const label = context.label || '';
+                                const value = context.parsed || 0;
+                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                const percentage = ((value / total) * 100).toFixed(1);
+                                return `${label}: ${value} (${percentage}%)`;
+                            }
+                        }
+                    }
                 }
             }
         });
@@ -657,7 +977,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ctx3) {
         const monthlyData = stats.monthly_trends || {};
         const months = Object.keys(monthlyData).slice(-6);
-        new Chart(ctx3, {
+        chartInstances.chart3 = new Chart(ctx3, {
             type: 'bar',
             data: {
                 labels: months,
@@ -684,7 +1004,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ctx4) {
         const venues = stats["per_venue/journal"] || {};
         const sortedVenues = Object.entries(venues).sort((a,b) => b[1] - a[1]).slice(0, 5);
-        new Chart(ctx4, {
+        chartInstances.chart4 = new Chart(ctx4, {
             type: 'bar',
             data: {
                 labels: sortedVenues.map(v => v[0]),
@@ -734,8 +1054,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('searchInput').value = '';
         document.getElementById('yearFilter').value = '';
         document.getElementById('venueFilter').value = '';
-        document.getElementById('facilityFilter').value = '';
-        document.getElementById('typeFilter').value = '';
+        document.getElementById('specialFilter').value = '';
         applyFilters();
     };
 
@@ -744,43 +1063,38 @@ document.addEventListener('DOMContentLoaded', () => {
         const searchTerm = document.getElementById('searchInput').value.toLowerCase();
         const yearFilter = document.getElementById('yearFilter').value;
         const venueFilter = document.getElementById('venueFilter').value.toLowerCase();
-        const facilityFilter = document.getElementById('facilityFilter').value;
-        const typeFilter = document.getElementById('typeFilter').value;
+        const specialFilter = document.getElementById('specialFilter').value;
         
-        // Initialize category counts (reset to 0)
-        const categoryCounts = {};
-        
-        // First, initialize all categories to 0
-        document.querySelectorAll('.toc-link').forEach(link => {
-            const category = link.dataset.category;
-            if (category !== 'statistics') {
-                categoryCounts[category] = 0;
-            }
-        });
+        // Initialize category counts
+        const categoryCounts = {
+            'control': 0,
+            'optimization': 0,
+            'anomalies': 0,
+            'simulations': 0,
+            'novel-applications': 0,
+            'other-topics': 0
+        };
         
         // Count visible papers
         document.querySelectorAll('.paper-item').forEach(paper => {
-            const title = paper.dataset.title.toLowerCase();
-            const authors = paper.dataset.authors.toLowerCase();
-            const year = paper.dataset.year;
-            const venue = paper.dataset.venue.toLowerCase();
-            const category = paper.dataset.category;
-            
-            // Get all paper categories from tags
-            const paperCategories = Array.from(paper.querySelectorAll('.tag')).map(tag => tag.textContent.trim().split('(')[0].trim());
+            const title = (paper.dataset.title || '').toLowerCase();
+            const authors = (paper.dataset.authors || '').toLowerCase();
+            const year = paper.dataset.year || '';
+            const venue = (paper.dataset.venue || '').toLowerCase();
+            const mainCategory = paper.dataset.mainCategory || '';
+            const allCategories = (paper.dataset.allCategories || '').toLowerCase();
             
             const matchSearch = !searchTerm || title.includes(searchTerm) || authors.includes(searchTerm);
             const matchYear = !yearFilter || year === yearFilter;
             const matchVenue = !venueFilter || venue.includes(venueFilter);
-            const matchFacility = !facilityFilter || paperCategories.includes(facilityFilter);
-            const matchType = !typeFilter || paperCategories.includes(typeFilter);
+            const matchSpecial = !specialFilter || allCategories.includes(specialFilter.toLowerCase());
             
-            const isVisible = matchSearch && matchYear && matchVenue && matchFacility && matchType;
+            const isVisible = matchSearch && matchYear && matchVenue && matchSpecial;
             paper.style.display = isVisible ? 'block' : 'none';
             
-            // Count visible papers by category
-            if (isVisible && category) {
-                categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+            // Count visible papers by main category
+            if (isVisible && mainCategory && categoryCounts.hasOwnProperty(mainCategory)) {
+                categoryCounts[mainCategory]++;
             }
         });
         
@@ -788,10 +1102,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.toc-link').forEach(link => {
             const category = link.dataset.category;
             const countBadge = link.querySelector('.toc-count');
-            if (countBadge && category !== 'statistics') {
+            
+            if (countBadge && category && category !== 'statistics') {
                 const count = categoryCounts[category] || 0;
                 countBadge.textContent = count;
-                // Dim the link if no papers visible
                 link.style.opacity = count === 0 ? '0.5' : '1';
             }
         });
@@ -806,8 +1120,73 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('searchInput')?.addEventListener('input', applyFilters);
     document.getElementById('yearFilter')?.addEventListener('change', applyFilters);
     document.getElementById('venueFilter')?.addEventListener('change', applyFilters);
-    document.getElementById('facilityFilter')?.addEventListener('change', applyFilters);
-    document.getElementById('typeFilter')?.addEventListener('change', applyFilters);
+    document.getElementById('specialFilter')?.addEventListener('change', applyFilters);
+    
+    // Initialize counts on page load - wait for DOM to be fully ready
+    window.addEventListener('load', function() {
+        console.log('Initializing paper counts...');
+        console.log('Total papers found:', document.querySelectorAll('.paper-item').length);
+        applyFilters();
+    });
+    
+    // Also try immediately
+    applyFilters();
+
+    // Watch for theme changes and update charts
+    function updateChartsTheme() {
+        colors = getThemeColors();
+        
+        // Update Chart.js defaults
+        Chart.defaults.color = colors.text;
+        Chart.defaults.borderColor = colors.grid;
+        
+        // Update each chart
+        Object.values(chartInstances).forEach(chart => {
+            if (chart && chart.options) {
+                // Update scales colors
+                if (chart.options.scales) {
+                    if (chart.options.scales.x) {
+                        chart.options.scales.x.grid = chart.options.scales.x.grid || {};
+                        chart.options.scales.x.grid.color = colors.grid;
+                        chart.options.scales.x.ticks = chart.options.scales.x.ticks || {};
+                        chart.options.scales.x.ticks.color = colors.text;
+                    }
+                    if (chart.options.scales.y) {
+                        chart.options.scales.y.grid = chart.options.scales.y.grid || {};
+                        chart.options.scales.y.grid.color = colors.grid;
+                        chart.options.scales.y.ticks = chart.options.scales.y.ticks || {};
+                        chart.options.scales.y.ticks.color = colors.text;
+                    }
+                }
+                
+                // Update legend color
+                if (chart.options.plugins && chart.options.plugins.legend) {
+                    chart.options.plugins.legend.labels = chart.options.plugins.legend.labels || {};
+                    chart.options.plugins.legend.labels.color = colors.text;
+                }
+                
+                // Update the chart
+                chart.update('none'); // 'none' mode for instant update without animation
+            }
+        });
+        
+        console.log('Charts theme updated to:', document.documentElement.getAttribute('data-theme'));
+    }
+    
+    // Observe theme changes
+    const themeObserver = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.attributeName === 'data-theme') {
+                updateChartsTheme();
+            }
+        });
+    });
+    
+    // Start observing
+    themeObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-theme']
+    });
 
     // TOC active state
     const observer = new IntersectionObserver((entries) => {
@@ -830,8 +1209,32 @@ document.addEventListener('DOMContentLoaded', () => {
         resetFilters();
     };
 
+    // window.showRecentAdditions = function() {
+    //     alert('Showing papers from the last 30 days');
+    // };
+    // Quick Action: Scroll to "Latest Additions" section
     window.showRecentAdditions = function() {
-        alert('Showing papers from the last 30 days');
+    // Switch to "papers" view so the section is visible
+    setView('papers');
+
+    const latestSection = document.getElementById('latest-additions');
+    if (latestSection) {
+        // Expand if collapsed
+        latestSection.classList.remove('collapsed');
+
+        // Smooth scroll to the section
+        latestSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+        });
+
+        // Optional: visual highlight pulse for clarity
+        latestSection.style.transition = 'box-shadow 0.4s ease';
+        latestSection.style.boxShadow = '0 0 0 4px var(--accent-primary)';
+        setTimeout(() => {
+        latestSection.style.boxShadow = 'none';
+        }, 1500);
+    }
     };
 
     window.exportBibliography = function() {
