@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 69,
+      "2025": 70,
       "2024": 70,
       "2023": 26,
       "2022": 29,
@@ -16,7 +16,7 @@
     "per_category": {
       "Tools & Libraries": 116,
       "Novel Applications": 183,
-      "Others": 13,
+      "Others": 14,
       "Anomaly Detection & Fault Prediction": 23,
       "Statistics & Trends": 48,
       "Reinforcement Learning & Autonomous Systems": 28,
@@ -76,7 +76,8 @@
       "64th ASTRO Annual Meeting": 1,
       "Journal of Applied Crystallography": 1,
       "Engineering": 1,
-      "AIRO Springer Series": 1
+      "AIRO Springer Series": 1,
+      "Lecture Notes in Computer Science": 1
     },
     "per_keyword": {
       "optimization": 47,
@@ -98,7 +99,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 4,
+      "2025-10": 5,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -170,8 +171,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-11T03:31:29.464210+00:00",
-    "next_update": "2025-10-12T03:31:29.464210+00:00"
+    "last_updated": "2025-10-12T03:38:55.127146+00:00",
+    "next_update": "2025-10-13T03:38:55.127146+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -11498,6 +11499,49 @@
       ],
       "history": [],
       "last_updated": "2025-10-11T03:30:53Z"
+    },
+    "('', '10.1007/978-3-032-07845-2_8', 'radisimclip a radiology vision language model pretrained on simulated radiologist learning dataset for zero shot medical image understanding')": {
+      "id": "doi:10.1007/978-3-032-07845-2_8",
+      "doi": "10.1007/978-3-032-07845-2_8",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "RadiSimCLIP: A Radiology Vision-Language Model Pretrained on Simulated Radiologist Learning Dataset for Zero-Shot Medical Image Understanding",
+      "authors": [
+        "Minhui Tan",
+        "Qingxia Wu",
+        "Boyang Zhang",
+        "Genqiang Ren",
+        "Jianlong Nie",
+        "Zhong Xue",
+        "Xiaohuan Cao",
+        "Dinggang Shen"
+      ],
+      "abstract": "",
+      "date": "2025-10-12",
+      "year": 2025,
+      "venue": "Lecture Notes in Computer Science",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-3-032-07845-2_8",
+        "crossref": "https://doi.org/10.1007/978-3-032-07845-2_8"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-12T03:38:21Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-12T03:38:21Z"
     }
   }
 }
