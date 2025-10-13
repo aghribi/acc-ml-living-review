@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 70,
+      "2025": 71,
       "2024": 70,
       "2023": 26,
       "2022": 29,
@@ -14,7 +14,7 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 116,
+      "Tools & Libraries": 117,
       "Novel Applications": 183,
       "Others": 14,
       "Anomaly Detection & Fault Prediction": 23,
@@ -77,7 +77,8 @@
       "Journal of Applied Crystallography": 1,
       "Engineering": 1,
       "AIRO Springer Series": 1,
-      "Lecture Notes in Computer Science": 1
+      "Lecture Notes in Computer Science": 1,
+      "Information Systems Engineering and Management": 1
     },
     "per_keyword": {
       "optimization": 47,
@@ -99,7 +100,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 5,
+      "2025-10": 6,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -171,8 +172,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-12T03:38:55.127146+00:00",
-    "next_update": "2025-10-13T03:38:55.127146+00:00"
+    "last_updated": "2025-10-13T03:54:46.671541+00:00",
+    "next_update": "2025-10-14T03:54:46.671541+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -11542,6 +11543,45 @@
       ],
       "history": [],
       "last_updated": "2025-10-12T03:38:21Z"
+    },
+    "('', '10.1007/978-3-031-97709-1_27', 'machine learning for precision dental diagnosis real time x ray detection and patient record integration smiloscope')": {
+      "id": "doi:10.1007/978-3-031-97709-1_27",
+      "doi": "10.1007/978-3-031-97709-1_27",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine Learning for Precision Dental Diagnosis: Real-Time X-Ray Detection and Patient Record Integration—SmiloScope",
+      "authors": [
+        "M. S. Padmini",
+        "Asha Rani Mahadeva",
+        "Madhu Nagaraj",
+        "Namratha Gopinath"
+      ],
+      "abstract": "",
+      "date": "2025-10-13",
+      "year": 2025,
+      "venue": "Information Systems Engineering and Management",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.26246756315231323
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-3-031-97709-1_27",
+        "crossref": "https://doi.org/10.1007/978-3-031-97709-1_27"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-13T03:54:23Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-13T03:54:23Z"
     }
   }
 }
