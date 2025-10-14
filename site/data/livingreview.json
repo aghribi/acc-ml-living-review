@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 71,
+      "2025": 73,
       "2024": 70,
       "2023": 26,
       "2022": 29,
@@ -14,11 +14,11 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 117,
+      "Tools & Libraries": 119,
       "Novel Applications": 183,
       "Others": 14,
       "Anomaly Detection & Fault Prediction": 23,
-      "Statistics & Trends": 48,
+      "Statistics & Trends": 50,
       "Reinforcement Learning & Autonomous Systems": 28,
       "Surrogate Models": 34,
       "Data Management": 22,
@@ -27,7 +27,7 @@
       "Operations & Control": 4,
       "Beamline Design & Simulation": 29,
       "Beam Dynamics": 8,
-      "Reviews": 15,
+      "Reviews": 17,
       "Beam Diagnostics": 11,
       "Optimization & Control": 6
     },
@@ -35,7 +35,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 167,
+      "arXiv": 169,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -84,7 +84,7 @@
       "optimization": 47,
       "control": 56,
       "surrogate model": 18,
-      "transformer": 2,
+      "transformer": 4,
       "deep learning": 36,
       "proton therapy": 1,
       "beam": 109,
@@ -100,7 +100,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 6,
+      "2025-10": 8,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -172,8 +172,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-13T03:54:46.671541+00:00",
-    "next_update": "2025-10-14T03:54:46.671541+00:00"
+    "last_updated": "2025-10-14T03:38:28.431560+00:00",
+    "next_update": "2025-10-15T03:38:28.431560+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -2484,11 +2484,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5130079388618469
+          "score": 0.5130079984664917
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4592275321483612
+          "score": 0.4592275023460388
         }
       ],
       "keywords": [],
@@ -3861,11 +3861,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4323156476020813
+          "score": 0.4323157072067261
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4314613342285156
+          "score": 0.43146151304244995
         },
         {
           "label": "Surrogate Models",
@@ -4222,11 +4222,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6074836850166321
+          "score": 0.6074837446212769
         },
         {
           "label": "Novel Applications",
-          "score": 0.4914327561855316
+          "score": 0.4914328455924988
         },
         {
           "label": "Tools & Libraries",
@@ -8765,11 +8765,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6074836850166321
+          "score": 0.6074837446212769
         },
         {
           "label": "Novel Applications",
-          "score": 0.4914327561855316
+          "score": 0.4914328455924988
         },
         {
           "label": "Tools & Libraries",
@@ -11582,6 +11582,93 @@
       ],
       "history": [],
       "last_updated": "2025-10-13T03:54:23Z"
+    },
+    "('2510.09376', '', 'a living review pipeline for ai ml applications in accelerator physics')": {
+      "id": "arxiv:2510.09376",
+      "doi": null,
+      "arxiv_id": "2510.09376",
+      "inspire_id": null,
+      "title": "A Living Review Pipeline for AI/ML Applications in Accelerator Physics",
+      "authors": [
+        "Adnan Ghribi"
+      ],
+      "abstract": "We present an open-source pipeline for generating a \\emph{living review} of\nartificial intelligence (AI) and machine learning (ML) applications in\naccelerator physics and technologies. Traditional review articles provide\nstatic snapshots that are quickly outdated by the rapid pace of research. The\npresented system automatically harvests publications from multiple\nbibliographic sources (arXiv, InspireHEP, HAL, OpenAlex, Crossref, and\nSpringer), deduplicates entries, applies semantic filtering to ensure\naccelerator and ML relevance, and classifies papers into thematic categories.\nThe resulting curated dataset was exported in JSON, HTML, PDF, and Bib\\TeX\nformats, enabling continuous updates and integration with web frameworks. We\ndescribe the methodology, including semantic similarity filtering using\nsentence-transformer embeddings, threshold calibration, and expert-informed\nclassification. The results demonstrate the robust filtering of $\\sim$12000 raw\npapers/month into a focused corpus of $\\sim$2\\% relevant works. The pipeline\nprovides the basis for an evolving community-driven review of AI/ML in\naccelerator science.",
+      "date": "2025-10-13",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.5242547988891602
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2510.09376v2"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-10-14T03:34:27Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-14T03:34:27Z"
+    },
+    "('', '', 'a living review pipeline for ai ml applications in accelerator physics')": {
+      "id": "hash:b742806e0f3f",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A Living Review Pipeline for AI/ML Applications in Accelerator Physics",
+      "authors": [
+        "Ghribi, Adnan"
+      ],
+      "abstract": "We present an open-source pipeline for generating a \\emph{living review} of artificial intelligence (AI) and machine learning (ML) applications in accelerator physics and technologies. Traditional review articles provide static snapshots that are quickly outdated by the rapid pace of research. The presented system automatically harvests publications from multiple bibliographic sources (arXiv, InspireHEP, HAL, OpenAlex, Crossref, and Springer), deduplicates entries, applies semantic filtering to ensure accelerator and ML relevance, and classifies papers into thematic categories. The resulting curated dataset was exported in JSON, HTML, PDF, and Bib\\TeX formats, enabling continuous updates and integration with web frameworks. We describe the methodology, including semantic similarity filtering using sentence-transformer embeddings, threshold calibration, and expert-informed classification. The results demonstrate the robust filtering of $\\sim$12000 raw papers/month into a focused corpus of $\\sim$2% relevant works. The pipeline provides the basis for an evolving community-driven review of AI/ML in accelerator science.",
+      "date": "2025-10-10",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.5227451324462891
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3066924",
+        "arxiv": "https://arxiv.org/abs/2510.09376"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2025-10-14T03:37:44Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-14T03:37:44Z"
     }
   }
 }
