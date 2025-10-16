@@ -1,8 +1,8 @@
 {
   "stats": {
     "per_year": {
-      "2025": 75,
-      "2024": 70,
+      "2025": 77,
+      "2024": 69,
       "2023": 26,
       "2022": 29,
       "2021": 22,
@@ -18,7 +18,7 @@
       "Novel Applications": 183,
       "Others": 14,
       "Anomaly Detection & Fault Prediction": 25,
-      "Statistics & Trends": 50,
+      "Statistics & Trends": 51,
       "Reinforcement Learning & Autonomous Systems": 28,
       "Surrogate Models": 34,
       "Data Management": 22,
@@ -79,7 +79,8 @@
       "AIRO Springer Series": 1,
       "Lecture Notes in Computer Science": 1,
       "Information Systems Engineering and Management": 1,
-      "Lecture Notes on Multidisciplinary Industrial Engineering": 2
+      "Lecture Notes on Multidisciplinary Industrial Engineering": 2,
+      "Lecture Notes in Mechanical Engineering": 1
     },
     "per_keyword": {
       "optimization": 47,
@@ -101,7 +102,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 10,
+      "2025-10": 12,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -109,7 +110,7 @@
       "2024-10": 7,
       "2025-04": 5,
       "2024-09": 8,
-      "2024-08": 6,
+      "2024-08": 5,
       "2024-06": 3,
       "2024-05": 6,
       "2024-04": 2,
@@ -173,8 +174,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-15T03:42:21.961614+00:00",
-    "next_update": "2025-10-16T03:42:21.961614+00:00"
+    "last_updated": "2025-10-16T03:41:47.095485+00:00",
+    "next_update": "2025-10-17T03:41:47.095485+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1894,19 +1895,19 @@
         "A. Specka",
         "F. Massimo"
       ],
-      "abstract": "The optimisation of the plasma target design for high quality beam\nlaser-driven plasma injector electron source relies on numerical parametric\nstudies using Particle in Cell (PIC) codes. The common input parameters to\nexplore are laser characteristics and plasma density profiles extracted from\ncomputational fluid dynamic studies compatible with experimental measurements\nof target plasma density profiles. We demonstrate the construction of surrogate\nmodels using machine learning technique for a laser-plasma injector (LPI)\nelectron source based on more than 12000 simulations of a laser wakefield\nacceleration performed for sparsely spaced input parameters [1]. Surrogate\nmodels are very interesting for LPI design and optimisation because they are\nmuch faster than PIC simulations. We develop and compare the performance of\nthree surrogate models, namely, Gaussian processes (GP), multilayer perceptron\n(MLP), and decision trees (DT). We then use the best surrogate model to quickly\nfind optimal working points to get a selected electron beam energy, charge and\nenergy spread using different methods, namely random search, Bayesian\noptimisation and multi-objective Bayesian optimisation",
-      "date": "2024-08-28",
-      "year": 2024,
+      "abstract": "Designing a high-quality plasma injector electron source driven by a laser\nbeam relies on numerical parametric studies using particle-in-cell codes. The\ncommon input parameters to explore are laser characteristics, plasma species\nand density profiles produced by computational fluid dynamic studies. We\ndemonstrate the construction of surrogate models using machine learning\ntechniques for a laser-plasma injector (LPI) based on more than $3000$\nparticle-in-cell simulations of laser wakefield acceleration performed for\nsparsely spaced input parameters published by Drobniak [Phys. Rev. Accel.\nBeams, 26, 091302, (2023)]. Surrogate models are relevant for LPI design and\noptimisation, as they are approximately $10^7$ times faster than PIC\nsimulations. Their speed enables more efficient design studies by allowing\nextensive exploration of the input-output relationship without significant\ncomputational cost. We develop and compare the performance of three surrogate\nmodels, namely, multilayer perceptron (MLP), decision trees (DT) and Gaussian\nprocesses (GP). We show that using a simple and frugal MLP-based model trained\non a reasonable-size random scan data set of 500 particles in cell simulations,\nwe can predict beam parameters with a coefficient determination score\n$R^2=0.93$ . The best surrogate model is used to quickly find optimal working\npoints and stability regions and get targeted electron beam energy, charge,\nenergy spread and emittance using different methods, namely random search,\nBayesian optimisation and multi-objective Bayesian optimisation. This simple\napproach can serve more global design study of an LPI in a start-to-end linear\nlaser-driven accelerator.on beam energy, charge and energy spread using\ndifferent methods, namely random search, Bayesian optimisation and\nmulti-objective Bayesian optimisation",
+      "date": "2025-10-14",
+      "year": 2025,
       "venue": "arXiv",
       "status": "preprint",
       "categories": [
         {
-          "label": "Beamline Design & Simulation",
-          "score": 0.43000590801239014
+          "label": "Novel Applications",
+          "score": 0.47767528891563416
         },
         {
-          "label": "Novel Applications",
-          "score": 0.424477219581604
+          "label": "Beamline Design & Simulation",
+          "score": 0.4597344398498535
         },
         {
           "label": "Surrogate Models",
@@ -1917,16 +1918,16 @@
       "curated": false,
       "notes": null,
       "links": {
-        "arxiv": "http://arxiv.org/abs/2408.15845v1"
+        "arxiv": "http://arxiv.org/abs/2408.15845v2"
       },
       "sources": [
         {
           "source": "arxiv",
-          "seen_at": "2025-10-09T12:34:06Z"
+          "seen_at": "2025-10-16T03:37:47Z"
         }
       ],
       "history": [],
-      "last_updated": "2025-10-09T12:34:06Z"
+      "last_updated": "2025-10-16T03:37:47Z"
     },
     "('2408.13657', '', 'beamline steering using deep learning models')": {
       "id": "arxiv:2408.13657",
@@ -11745,6 +11746,45 @@
       ],
       "history": [],
       "last_updated": "2025-10-15T03:41:47Z"
+    },
+    "('', '10.1007/978-3-032-05610-8_4', 'prediction of tensile strength and impact strength in fused deposition modeling using a machine learning pipeline')": {
+      "id": "doi:10.1007/978-3-032-05610-8_4",
+      "doi": "10.1007/978-3-032-05610-8_4",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Prediction of Tensile Strength and Impact Strength in Fused Deposition Modeling Using a Machine Learning Pipeline",
+      "authors": [
+        "Anne Vogler",
+        "Benjamin Küster",
+        "Malte Stonis",
+        "Ludger Overmeyer"
+      ],
+      "abstract": "",
+      "date": "2025-10-16",
+      "year": 2025,
+      "venue": "Lecture Notes in Mechanical Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Statistics & Trends",
+          "score": 0.25771820545196533
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-3-032-05610-8_4",
+        "crossref": "https://doi.org/10.1007/978-3-032-05610-8_4"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-16T03:41:14Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-16T03:41:14Z"
     }
   }
 }
