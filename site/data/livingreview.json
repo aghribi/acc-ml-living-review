@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 77,
+      "2025": 80,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,21 +14,21 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 119,
+      "Tools & Libraries": 120,
       "Novel Applications": 183,
       "Others": 14,
       "Anomaly Detection & Fault Prediction": 25,
       "Statistics & Trends": 51,
-      "Reinforcement Learning & Autonomous Systems": 28,
+      "Reinforcement Learning & Autonomous Systems": 29,
       "Surrogate Models": 34,
-      "Data Management": 22,
+      "Data Management": 24,
       "By Facility Type": 7,
       "RF Systems": 6,
       "Operations & Control": 4,
       "Beamline Design & Simulation": 29,
       "Beam Dynamics": 8,
       "Reviews": 17,
-      "Beam Diagnostics": 11,
+      "Beam Diagnostics": 12,
       "Optimization & Control": 6
     },
     "per_venue/journal": {
@@ -80,14 +80,16 @@
       "Lecture Notes in Computer Science": 1,
       "Information Systems Engineering and Management": 1,
       "Lecture Notes on Multidisciplinary Industrial Engineering": 2,
-      "Lecture Notes in Mechanical Engineering": 1
+      "Lecture Notes in Mechanical Engineering": 1,
+      "Proceedings of the 2025 58th IEEE/ACM International Symposium on Microarchitecture": 2,
+      "Sensors": 1
     },
     "per_keyword": {
       "optimization": 47,
       "control": 56,
       "surrogate model": 18,
       "transformer": 4,
-      "deep learning": 36,
+      "deep learning": 38,
       "proton therapy": 1,
       "beam": 109,
       "reinforcement learning": 25,
@@ -102,7 +104,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 12,
+      "2025-10": 15,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -174,8 +176,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-17T03:48:42.496614+00:00",
-    "next_update": "2025-10-18T03:48:42.496614+00:00"
+    "last_updated": "2025-10-18T03:33:31.308115+00:00",
+    "next_update": "2025-10-19T03:33:31.308115+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -831,11 +833,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.39594677090644836
+          "score": 0.3959466516971588
         },
         {
           "label": "RF Systems",
-          "score": 0.3401947021484375
+          "score": 0.3401947617530823
         },
         {
           "label": "Tools & Libraries",
@@ -2250,7 +2252,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.4223136603832245
+          "score": 0.4223136305809021
         }
       ],
       "keywords": [],
@@ -11785,6 +11787,137 @@
       ],
       "history": [],
       "last_updated": "2025-10-16T03:41:14Z"
+    },
+    "('', '10.1145/3725843.3756075', 'taidl tensor accelerator isa definition language with auto generation of scalable test oracles')": {
+      "id": "doi:10.1145/3725843.3756075",
+      "doi": "10.1145/3725843.3756075",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "TAIDL: Tensor Accelerator ISA Definition Language with Auto-generation of Scalable Test Oracles",
+      "authors": [
+        "Devansh Jain",
+        "Marco Frigo",
+        "Jai Arora",
+        "Akash Pardeshi",
+        "Zhihao Wang",
+        "Krut Patel",
+        "Charith Mendis"
+      ],
+      "abstract": "",
+      "date": "2025-10-18",
+      "year": 2025,
+      "venue": "Proceedings of the 2025 58th IEEE/ACM International Symposium on Microarchitecture",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Data Management",
+          "score": 0.4327123165130615
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.42237013578414917
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1145/3725843.3756075",
+        "crossref": "https://doi.org/10.1145/3725843.3756075"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-18T03:32:56Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-18T03:32:56Z"
+    },
+    "('', '10.1145/3725843.3756044', 'bitl a hybrid bit serial and parallel deep learning accelerator for critical path reduction')": {
+      "id": "doi:10.1145/3725843.3756044",
+      "doi": "10.1145/3725843.3756044",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "BitL: A Hybrid Bit-Serial and Parallel Deep Learning Accelerator for Critical Path Reduction",
+      "authors": [
+        "Seunghyun Lee",
+        "Dongho Ha",
+        "Sungbin Kim",
+        "Sungwoo Kim",
+        "Hyunwuk Lee",
+        "Won Woo Ro"
+      ],
+      "abstract": "",
+      "date": "2025-10-18",
+      "year": 2025,
+      "venue": "Proceedings of the 2025 58th IEEE/ACM International Symposium on Microarchitecture",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.41736605763435364
+        },
+        {
+          "label": "Data Management",
+          "score": 0.4129208028316498
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1145/3725843.3756044",
+        "crossref": "https://doi.org/10.1145/3725843.3756044"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-18T03:32:56Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-18T03:32:56Z"
+    },
+    "('', '10.3390/s25206431', 'bolt anchorage defect identification based on ultrasonic guided wave and deep learning')": {
+      "id": "doi:10.3390/s25206431",
+      "doi": "10.3390/s25206431",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Bolt Anchorage Defect Identification Based on Ultrasonic Guided Wave and Deep Learning",
+      "authors": [
+        "Hui Xing",
+        "Weiguo Di",
+        "Xiaoyun Sun",
+        "Mingming Wang",
+        "Chaobo Li"
+      ],
+      "abstract": "<jats:p>As a critical supporting component in geotechnical engineering structures such as bridges, tunnels, and highways, the anchorage quality of bolts directly impacts their structural safety. The ultrasonic guided wave method is a popular method for the non-destructive testing of anchorage quality. However, noise from complex field environments, modal mixing caused by anchoring interface reflections, and dispersion effects make it challenging to directly extract defect features from guided wave signals in the time or frequency domains. To address these challenges, this study proposes a solution based on the combination of the guided wave time–frequency spectrum and the gated attention residual network (GA-ResNet). The GA-ResNet introduces a gating mechanism to balance spatial attention and channel attention, and it is used for anchoring model type recognition. Experiments were conducted on four types of anchorage models, and the time–frequency spectrum was selected to be the input feature. The results demonstrate that the GA-ResNet can effectively predict the anchorage bolt defect type and prevent potential safety accidents.</jats:p>",
+      "date": "2025-10-17",
+      "year": 2025,
+      "venue": "Sensors",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.2713361978530884
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.3390/s25206431",
+        "crossref": "https://doi.org/10.3390/s25206431"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-18T03:32:56Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-18T03:32:56Z"
     }
   }
 }
