@@ -22,7 +22,7 @@ jobs:
         run: pip install -r docs/requirements.txt
 
       - name: Build Sphinx HTML
-        run: sphinx-build -b html docs docs/build/html
+        run: sphinx-build -b html docs/source site/static/docs
 
       # Optionally deploy docs to gh-pages/docs
       - name: Deploy docs
