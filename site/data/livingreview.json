@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 81,
+      "2025": 83,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,10 +14,10 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 120,
+      "Tools & Libraries": 121,
       "Novel Applications": 183,
       "Others": 14,
-      "Anomaly Detection & Fault Prediction": 25,
+      "Anomaly Detection & Fault Prediction": 27,
       "Statistics & Trends": 52,
       "Reinforcement Learning & Autonomous Systems": 29,
       "Surrogate Models": 34,
@@ -83,14 +83,16 @@
       "Lecture Notes in Mechanical Engineering": 1,
       "Proceedings of the 2025 58th IEEE/ACM International Symposium on Microarchitecture": 2,
       "Sensors": 1,
-      "Communications in Computer and Information Science": 1
+      "Communications in Computer and Information Science": 1,
+      "AIJ Journal of Technology and Design": 1,
+      "Smart and Sustainable Built Environment": 1
     },
     "per_keyword": {
       "optimization": 47,
       "control": 56,
       "surrogate model": 18,
       "transformer": 4,
-      "deep learning": 38,
+      "deep learning": 39,
       "proton therapy": 1,
       "beam": 109,
       "reinforcement learning": 25,
@@ -105,7 +107,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 16,
+      "2025-10": 18,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -177,8 +179,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-19T03:50:26.578825+00:00",
-    "next_update": "2025-10-20T03:50:26.578825+00:00"
+    "last_updated": "2025-10-20T04:00:09.001028+00:00",
+    "next_update": "2025-10-21T04:00:09.001028+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1252,11 +1254,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6375529766082764
+          "score": 0.6375530958175659
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5897579789161682
+          "score": 0.5897579193115234
         }
       ],
       "keywords": [],
@@ -10835,7 +10837,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.36582526564598083
+          "score": 0.3658253252506256
         }
       ],
       "keywords": [],
@@ -11965,6 +11967,85 @@
       ],
       "history": [],
       "last_updated": "2025-10-19T03:49:51Z"
+    },
+    "('', '10.3130/aijt.31.1391', 'deep learning based classification of seismic damage on partition wall and artificial cracking pattern')": {
+      "id": "doi:10.3130/aijt.31.1391",
+      "doi": "10.3130/aijt.31.1391",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "DEEP LEARNING-BASED CLASSIFICATION OF SEISMIC DAMAGE ON PARTITION WALL AND ARTIFICIAL CRACKING PATTERN",
+      "authors": [
+        "Kotoka FUJISAWA",
+        "Noriyuki TAKAHASHI"
+      ],
+      "abstract": "",
+      "date": "2025-10-20",
+      "year": 2025,
+      "venue": "AIJ Journal of Technology and Design",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.3218085765838623
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.3130/aijt.31.1391",
+        "crossref": "https://doi.org/10.3130/aijt.31.1391"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-20T03:59:35Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-20T03:59:35Z"
+    },
+    "('', '10.1108/sasbe-05-2025-0254', 'enhancing rfi management in construction through machine learning driven predictive models')": {
+      "id": "doi:10.1108/sasbe-05-2025-0254",
+      "doi": "10.1108/sasbe-05-2025-0254",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Enhancing RFI management in construction through machine learning-driven predictive models",
+      "authors": [
+        "Neziha Yilmaz",
+        "Esin Ergen",
+        "Ahmet Muhtar Citipitioglu"
+      ],
+      "abstract": "<jats:sec>\n                  <jats:title>Purpose</jats:title>\n                  <jats:p>Request for information (RFI) documents are essential for communication and issue resolution in construction projects; however, prolonged RFI resolution times can impact project timelines. This study aims to predict RFI closure durations as they are created and addressed to help identify and prioritize RFIs likely to remain open longer.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Design/methodology/approach</jats:title>\n                  <jats:p>A dataset of 3,628 RFI documents from a large-scale airport project was used. Five machine learning (ML) algorithms, support vector machine (SVM), logistic regression (LR), K-nearest neighbors (KNN), decision tree (DT) and random forest (RF), were used to create a multi-model prediction framework for RFI closure durations. The models incorporated both categorical metadata and textual data with a staged input structure simulating real project conditions.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Findings</jats:title>\n                  <jats:p>The most effective algorithms for predicting RFI closure durations were SVM for the model using only RFI metadata parameters as input, and DT when using RFI metadata parameters together with RFI response durations as input. Prediction accuracy improved significantly after using the first response durations, ranging from 59% to 92% for the different models presented.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Practical implications</jats:title>\n                  <jats:p>Integrated into common data environments, the models enable real-time prediction and prioritization of RFIs, helping teams reduce delays and optimize resources. They also support digital transformation in construction and suggest potential for policy development around predictive analytics in project management.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Originality/value</jats:title>\n                  <jats:p>This study created prediction models for prioritizing RFIs based on their expected closure durations and identified the most effective ML algorithms for different input variables.</jats:p>\n               </jats:sec>",
+      "date": "2025-10-20",
+      "year": 2025,
+      "venue": "Smart and Sustainable Built Environment",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.28519123792648315
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1108/sasbe-05-2025-0254",
+        "crossref": "https://doi.org/10.1108/sasbe-05-2025-0254"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-20T03:59:35Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-20T03:59:35Z"
     }
   }
 }
