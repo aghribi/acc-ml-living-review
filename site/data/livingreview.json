@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 83,
+      "2025": 84,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,13 +14,13 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 121,
-      "Novel Applications": 183,
+      "Tools & Libraries": 122,
+      "Novel Applications": 184,
       "Others": 14,
       "Anomaly Detection & Fault Prediction": 27,
       "Statistics & Trends": 52,
       "Reinforcement Learning & Autonomous Systems": 29,
-      "Surrogate Models": 34,
+      "Surrogate Models": 35,
       "Data Management": 25,
       "By Facility Type": 7,
       "RF Systems": 6,
@@ -51,7 +51,7 @@
       "Supercond.Sci.Technol.": 1,
       "Astrophys.J.": 1,
       "Nuovo Cim.C": 1,
-      "Journal": 3,
+      "Journal": 4,
       "Mach.Learn.Sci.Tech.": 2,
       "Astron.Astrophys.": 1,
       "PoS": 2,
@@ -88,17 +88,17 @@
       "Smart and Sustainable Built Environment": 1
     },
     "per_keyword": {
-      "optimization": 47,
+      "optimization": 48,
       "control": 56,
       "surrogate model": 18,
       "transformer": 4,
       "deep learning": 39,
       "proton therapy": 1,
-      "beam": 109,
-      "reinforcement learning": 25,
+      "beam": 110,
+      "reinforcement learning": 26,
       "diagnostics": 17,
       "uncertainty quantification": 4,
-      "anomaly detection": 14,
+      "anomaly detection": 15,
       "time series": 6,
       "GAN": 1,
       "cloud": 3
@@ -107,7 +107,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 18,
+      "2025-10": 19,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -179,8 +179,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-20T04:00:09.001028+00:00",
-    "next_update": "2025-10-21T04:00:09.001028+00:00"
+    "last_updated": "2025-10-21T03:44:03.318970+00:00",
+    "next_update": "2025-10-22T03:44:03.318970+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1254,11 +1254,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6375530958175659
+          "score": 0.6375532150268555
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5897579193115234
+          "score": 0.5897581577301025
         }
       ],
       "keywords": [],
@@ -2726,7 +2726,7 @@
         },
         {
           "label": "Optimization & Control",
-          "score": 0.4638978838920593
+          "score": 0.46389806270599365
         }
       ],
       "keywords": [],
@@ -3779,11 +3779,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.44071048498153687
+          "score": 0.4407104551792145
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.33210331201553345
+          "score": 0.33210334181785583
         }
       ],
       "keywords": [],
@@ -11351,7 +11351,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.6115000247955322
+          "score": 0.611500084400177
         },
         {
           "label": "Novel Applications",
@@ -12046,6 +12046,51 @@
       ],
       "history": [],
       "last_updated": "2025-10-20T03:59:35Z"
+    },
+    "('', '', 'digital twin framework for pip ii linac ai driven multi scale modeling from ion source to 800 mev')": {
+      "id": "hash:330bdc16dfe5",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Digital Twin Framework for PIP-II Linac: AI-Driven Multi-Scale Modeling from Ion Source to 800 MeV",
+      "authors": [
+        "Pathak, Abhishek",
+        "Hanlet, Pierrick",
+        "Miceli, Tia"
+      ],
+      "abstract": "The PIP-II linac will enable >1.2 MW beam power for DUNE, requiring unprecedented operational reliability across its warm front-end (RFQ, MEBT) and five distinct SRF sections operating at 162.5/325/650 MHz. We present a comprehensive digital twin framework uniquely combining a fully differentiable fast beam transport code with neural network surrogates trained on high-fidelity PIC simulations, capturing space charge and nonlinear dynamics beyond traditional envelope codes while achieving 10&#8308;× speedup at <1% accuracy. End-to-end differentiability enables gradient-based optimization across 500+ parameters simultaneously—previously impossible with conventional tools—while the model incorporates static/dynamic errors and serves as a virtual commissioning platform for diverse hardware integration. The framework facilitates reinforcement learning for pulsed/CW mode transitions, predictive maintenance through anomaly detection, and autonomous tuning algorithm development with real-time execution capability. Validation against physics simulations shows excellent agreement for the front-end, with initial results demonstrating potential for 30% commissioning time reduction and proactive fault mitigation, providing a scalable blueprint for operating next-generation high-intensity accelerators.",
+      "date": "2025-10-20",
+      "year": 2025,
+      "venue": "Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Surrogate Models",
+          "score": 0.4991194009780884
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.4953474700450897
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3071095"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2025-10-21T03:43:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-21T03:43:16Z"
     }
   }
 }
