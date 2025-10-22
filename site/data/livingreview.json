@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 84,
+      "2025": 85,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -16,7 +16,7 @@
     "per_category": {
       "Tools & Libraries": 122,
       "Novel Applications": 184,
-      "Others": 14,
+      "Others": 15,
       "Anomaly Detection & Fault Prediction": 27,
       "Statistics & Trends": 52,
       "Reinforcement Learning & Autonomous Systems": 29,
@@ -85,7 +85,8 @@
       "Sensors": 1,
       "Communications in Computer and Information Science": 1,
       "AIJ Journal of Technology and Design": 1,
-      "Smart and Sustainable Built Environment": 1
+      "Smart and Sustainable Built Environment": 1,
+      "Mechanisms and Machine Science": 1
     },
     "per_keyword": {
       "optimization": 48,
@@ -107,7 +108,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 19,
+      "2025-10": 20,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -179,8 +180,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-21T03:44:03.318970+00:00",
-    "next_update": "2025-10-22T03:44:03.318970+00:00"
+    "last_updated": "2025-10-22T03:49:47.410893+00:00",
+    "next_update": "2025-10-23T03:49:47.410893+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -11398,11 +11399,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6051356792449951
+          "score": 0.6051355600357056
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.5503079891204834
+          "score": 0.5503079295158386
         },
         {
           "label": "Reviews",
@@ -12091,6 +12092,48 @@
       ],
       "history": [],
       "last_updated": "2025-10-21T03:43:16Z"
+    },
+    "('', '10.1007/978-3-031-96732-0_12', 'a bottom up approach for constructing underground engineering knowledge graph')": {
+      "id": "doi:10.1007/978-3-031-96732-0_12",
+      "doi": "10.1007/978-3-031-96732-0_12",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A “Bottom-Up” Approach for Constructing Underground Engineering Knowledge Graph",
+      "authors": [
+        "Yiming Luo",
+        "Yunfei Xiang",
+        "Peng Lin",
+        "Yong Xia",
+        "Yuanguang Liu",
+        "Yao Xu",
+        "Chaoyi Li"
+      ],
+      "abstract": "",
+      "date": "2025-10-22",
+      "year": 2025,
+      "venue": "Mechanisms and Machine Science",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-3-031-96732-0_12",
+        "crossref": "https://doi.org/10.1007/978-3-031-96732-0_12"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-22T03:49:12Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-22T03:49:12Z"
     }
   }
 }
