@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 85,
+      "2025": 87,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,12 +14,12 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 122,
-      "Novel Applications": 184,
+      "Tools & Libraries": 123,
+      "Novel Applications": 185,
       "Others": 15,
       "Anomaly Detection & Fault Prediction": 27,
-      "Statistics & Trends": 52,
-      "Reinforcement Learning & Autonomous Systems": 29,
+      "Statistics & Trends": 53,
+      "Reinforcement Learning & Autonomous Systems": 30,
       "Surrogate Models": 35,
       "Data Management": 25,
       "By Facility Type": 7,
@@ -86,7 +86,9 @@
       "Communications in Computer and Information Science": 1,
       "AIJ Journal of Technology and Design": 1,
       "Smart and Sustainable Built Environment": 1,
-      "Mechanisms and Machine Science": 1
+      "Mechanisms and Machine Science": 1,
+      "Advanced Functional Materials": 1,
+      "Institute of Electrical and Electronics Engineers (IEEE)": 1
     },
     "per_keyword": {
       "optimization": 48,
@@ -108,7 +110,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 20,
+      "2025-10": 22,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -180,8 +182,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-23T03:41:55.005149+00:00",
-    "next_update": "2025-10-24T03:41:55.005149+00:00"
+    "last_updated": "2025-10-24T03:39:02.348742+00:00",
+    "next_update": "2025-10-25T03:39:02.348742+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1255,11 +1257,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6375532150268555
+          "score": 0.6375529766082764
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5897581577301025
+          "score": 0.5897579789161682
         }
       ],
       "keywords": [],
@@ -11352,7 +11354,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.611500084400177
+          "score": 0.6115000247955322
         },
         {
           "label": "Novel Applications",
@@ -11399,11 +11401,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6051355600357056
+          "score": 0.6051356792449951
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.5503079295158386
+          "score": 0.5503079891204834
         },
         {
           "label": "Reviews",
@@ -11946,11 +11948,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.347952663898468
+          "score": 0.3479526937007904
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.26563793420791626
+          "score": 0.26563799381256104
         }
       ],
       "keywords": [],
@@ -12134,6 +12136,98 @@
       ],
       "history": [],
       "last_updated": "2025-10-22T03:49:12Z"
+    },
+    "('', '10.1002/adfm.202519854', 'achievement of high quality gallium oxide epitaxial growth via machine learning')": {
+      "id": "doi:10.1002/adfm.202519854",
+      "doi": "10.1002/adfm.202519854",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Achievement of High‐Quality Gallium Oxide Epitaxial Growth via Machine Learning",
+      "authors": [
+        "Yaoping Lu",
+        "Yu Zhang",
+        "Ben Niu",
+        "Titao Li",
+        "Zhenjie Zheng",
+        "Lemin Jia",
+        "Duanyang Chen",
+        "Hongji Qi",
+        "Kelvin H. L. Zhang",
+        "Min Zhu",
+        "Haizhong Zhang",
+        "Xiaoqiang Lu"
+      ],
+      "abstract": "",
+      "date": "2025-10-21",
+      "year": 2025,
+      "venue": "Advanced Functional Materials",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.26770344376564026
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.26512789726257324
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W4415396711"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-10-24T03:38:24Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-24T03:38:24Z"
+    },
+    "('', '10.36227/techrxiv.176127198.84709317/v1', 'unsupervised online learning for ac optimal power flow a gradient guided physics informed neural network approach')": {
+      "id": "doi:10.36227/techrxiv.176127198.84709317/v1",
+      "doi": "10.36227/techrxiv.176127198.84709317/v1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Unsupervised Online Learning for AC Optimal Power Flow: A Gradient-Guided Physics-Informed Neural Network Approach",
+      "authors": [
+        "Bozhen Jiang",
+        "Jing Qu",
+        "Qin Wang"
+      ],
+      "abstract": "",
+      "date": "2025-10-24",
+      "year": 2025,
+      "venue": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.33519113063812256
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.31967830657958984
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.36227/techrxiv.176127198.84709317/v1",
+        "crossref": "https://doi.org/10.36227/techrxiv.176127198.84709317/v1"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-24T03:38:26Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-24T03:38:26Z"
     }
   }
 }
