@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 87,
+      "2025": 88,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,11 +14,11 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 123,
+      "Tools & Libraries": 124,
       "Novel Applications": 185,
       "Others": 15,
       "Anomaly Detection & Fault Prediction": 27,
-      "Statistics & Trends": 53,
+      "Statistics & Trends": 54,
       "Reinforcement Learning & Autonomous Systems": 30,
       "Surrogate Models": 35,
       "Data Management": 25,
@@ -88,7 +88,8 @@
       "Smart and Sustainable Built Environment": 1,
       "Mechanisms and Machine Science": 1,
       "Advanced Functional Materials": 1,
-      "Institute of Electrical and Electronics Engineers (IEEE)": 1
+      "Institute of Electrical and Electronics Engineers (IEEE)": 1,
+      "Arabian Journal for Science and Engineering": 1
     },
     "per_keyword": {
       "optimization": 48,
@@ -110,7 +111,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 22,
+      "2025-10": 23,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -182,8 +183,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-24T03:39:02.348742+00:00",
-    "next_update": "2025-10-25T03:39:02.348742+00:00"
+    "last_updated": "2025-10-25T03:40:26.277149+00:00",
+    "next_update": "2025-10-26T03:40:26.277149+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -12228,6 +12229,49 @@
       ],
       "history": [],
       "last_updated": "2025-10-24T03:38:26Z"
+    },
+    "('', '10.1007/s13369-025-10763-0', 'enhancing predictive accuracy in shear strength of rc deep beams a comprehensive analysis using ensemble machine learning models')": {
+      "id": "doi:10.1007/s13369-025-10763-0",
+      "doi": "10.1007/s13369-025-10763-0",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Enhancing Predictive Accuracy in Shear Strength of RC Deep Beams: A Comprehensive Analysis Using Ensemble Machine Learning Models",
+      "authors": [
+        "Arslan Qayyum Khan",
+        "Muhammad Huzaifa Naveed",
+        "Muhammad Dawood Rasheed",
+        "Amorn Pimanmas"
+      ],
+      "abstract": "",
+      "date": "2025-10-24",
+      "year": 2025,
+      "venue": "Arabian Journal for Science and Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Statistics & Trends",
+          "score": 0.28408944606781006
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.2582853436470032
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s13369-025-10763-0",
+        "crossref": "https://doi.org/10.1007/s13369-025-10763-0"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-25T03:39:50Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-25T03:39:50Z"
     }
   }
 }
