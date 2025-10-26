@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 88,
+      "2025": 89,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -16,7 +16,7 @@
     "per_category": {
       "Tools & Libraries": 124,
       "Novel Applications": 185,
-      "Others": 15,
+      "Others": 16,
       "Anomaly Detection & Fault Prediction": 27,
       "Statistics & Trends": 54,
       "Reinforcement Learning & Autonomous Systems": 30,
@@ -89,14 +89,15 @@
       "Mechanisms and Machine Science": 1,
       "Advanced Functional Materials": 1,
       "Institute of Electrical and Electronics Engineers (IEEE)": 1,
-      "Arabian Journal for Science and Engineering": 1
+      "Arabian Journal for Science and Engineering": 1,
+      "Proceedings of the International Workshop on Application-driven Point Cloud Processing and 3D Vision": 1
     },
     "per_keyword": {
       "optimization": 48,
       "control": 56,
       "surrogate model": 18,
       "transformer": 4,
-      "deep learning": 39,
+      "deep learning": 40,
       "proton therapy": 1,
       "beam": 110,
       "reinforcement learning": 26,
@@ -111,7 +112,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 23,
+      "2025-10": 24,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -183,8 +184,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-25T03:40:26.277149+00:00",
-    "next_update": "2025-10-26T03:40:26.277149+00:00"
+    "last_updated": "2025-10-26T03:46:33.772662+00:00",
+    "next_update": "2025-10-27T03:46:33.772662+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -12272,6 +12273,43 @@
       ],
       "history": [],
       "last_updated": "2025-10-25T03:39:50Z"
+    },
+    "('', '10.1145/3728486.3759209', 'two step deep learning approach for fine grained railway catenary segmentation')": {
+      "id": "doi:10.1145/3728486.3759209",
+      "doi": "10.1145/3728486.3759209",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Two-Step Deep Learning Approach for Fine-Grained Railway Catenary Segmentation",
+      "authors": [
+        "Milo Beliën",
+        "Metehan Doyran"
+      ],
+      "abstract": "",
+      "date": "2025-10-26",
+      "year": 2025,
+      "venue": "Proceedings of the International Workshop on Application-driven Point Cloud Processing and 3D Vision",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1145/3728486.3759209",
+        "crossref": "https://doi.org/10.1145/3728486.3759209"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-26T03:45:59Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-26T03:45:59Z"
     }
   }
 }
