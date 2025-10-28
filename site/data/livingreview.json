@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 89,
+      "2025": 91,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -16,7 +16,7 @@
     "per_category": {
       "Tools & Libraries": 124,
       "Novel Applications": 185,
-      "Others": 16,
+      "Others": 18,
       "Anomaly Detection & Fault Prediction": 27,
       "Statistics & Trends": 54,
       "Reinforcement Learning & Autonomous Systems": 30,
@@ -90,10 +90,11 @@
       "Advanced Functional Materials": 1,
       "Institute of Electrical and Electronics Engineers (IEEE)": 1,
       "Arabian Journal for Science and Engineering": 1,
-      "Proceedings of the International Workshop on Application-driven Point Cloud Processing and 3D Vision": 1
+      "Proceedings of the International Workshop on Application-driven Point Cloud Processing and 3D Vision": 1,
+      "Lecture Notes in Networks and Systems": 2
     },
     "per_keyword": {
-      "optimization": 48,
+      "optimization": 49,
       "control": 56,
       "surrogate model": 18,
       "transformer": 4,
@@ -112,7 +113,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 24,
+      "2025-10": 26,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -184,8 +185,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-10-27T04:05:37.116107+00:00",
-    "next_update": "2025-10-28T04:05:37.116107+00:00"
+    "last_updated": "2025-10-28T03:46:59.448256+00:00",
+    "next_update": "2025-10-29T03:46:59.448256+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -12310,6 +12311,83 @@
       ],
       "history": [],
       "last_updated": "2025-10-26T03:45:59Z"
+    },
+    "('', '10.1007/978-981-96-7614-9_33', 'saffron adulteration prediction based on fine grained deep features')": {
+      "id": "doi:10.1007/978-981-96-7614-9_33",
+      "doi": "10.1007/978-981-96-7614-9_33",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Saffron Adulteration Prediction Based on Fine-Grained Deep Features",
+      "authors": [
+        "Ishrat Nazeer",
+        "Ranjeet Kumar Rout",
+        "Saiyed Umer"
+      ],
+      "abstract": "",
+      "date": "2025-10-28",
+      "year": 2025,
+      "venue": "Lecture Notes in Networks and Systems",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-981-96-7614-9_33",
+        "crossref": "https://doi.org/10.1007/978-981-96-7614-9_33"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-28T03:46:25Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-28T03:46:25Z"
+    },
+    "('', '10.1007/978-981-96-7614-9_2', 'machine learning approach for pulsed electromagnetic field therapy parameters optimization for enhanced tissue penetration')": {
+      "id": "doi:10.1007/978-981-96-7614-9_2",
+      "doi": "10.1007/978-981-96-7614-9_2",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine-Learning Approach for Pulsed Electromagnetic Field Therapy Parameters Optimization for Enhanced Tissue Penetration",
+      "authors": [
+        "Pooja Kumari Jha",
+        "Vikas Kumar",
+        "Manoj Kumar Parida",
+        "S. Kanagaraj"
+      ],
+      "abstract": "",
+      "date": "2025-10-28",
+      "year": 2025,
+      "venue": "Lecture Notes in Networks and Systems",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-981-96-7614-9_2",
+        "crossref": "https://doi.org/10.1007/978-981-96-7614-9_2"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-10-28T03:46:25Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-10-28T03:46:25Z"
     }
   }
 }
