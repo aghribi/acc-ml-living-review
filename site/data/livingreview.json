@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 95,
+      "2025": 96,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,12 +14,12 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 126,
-      "Novel Applications": 186,
+      "Tools & Libraries": 127,
+      "Novel Applications": 187,
       "Others": 18,
       "Anomaly Detection & Fault Prediction": 28,
       "Statistics & Trends": 55,
-      "Reinforcement Learning & Autonomous Systems": 31,
+      "Reinforcement Learning & Autonomous Systems": 32,
       "Surrogate Models": 36,
       "Data Management": 25,
       "By Facility Type": 7,
@@ -35,7 +35,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 169,
+      "arXiv": 170,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -97,14 +97,14 @@
       "Springer Science and Business Media LLC": 1
     },
     "per_keyword": {
-      "optimization": 49,
-      "control": 56,
+      "optimization": 50,
+      "control": 57,
       "surrogate model": 18,
       "transformer": 5,
       "deep learning": 40,
       "proton therapy": 1,
-      "beam": 111,
-      "reinforcement learning": 26,
+      "beam": 112,
+      "reinforcement learning": 27,
       "diagnostics": 17,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
@@ -116,7 +116,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 30,
+      "2025-10": 31,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -188,8 +188,8 @@
       "2018-11": 1,
       "2000-08": 1
     },
-    "last_updated": "2025-11-02T03:50:34.123133+00:00",
-    "next_update": "2025-11-03T03:50:34.123133+00:00"
+    "last_updated": "2025-11-03T03:56:11.812012+00:00",
+    "next_update": "2025-11-04T03:56:11.812012+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -892,7 +892,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.42218053340911865
+          "score": 0.4221804738044739
         }
       ],
       "keywords": [],
@@ -3052,7 +3052,7 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5739486217498779
+          "score": 0.5739485025405884
         },
         {
           "label": "Novel Applications",
@@ -11320,7 +11320,7 @@
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3669094145298004
+          "score": 0.366909384727478
         }
       ],
       "keywords": [],
@@ -12560,6 +12560,54 @@
       ],
       "history": [],
       "last_updated": "2025-10-29T03:53:25Z"
+    },
+    "('2510.26805', '', 'reinforcement learning for accelerator beamline control a simulation based approach')": {
+      "id": "arxiv:2510.26805",
+      "doi": null,
+      "arxiv_id": "2510.26805",
+      "inspire_id": null,
+      "title": "Reinforcement Learning for Accelerator Beamline Control: a simulation-based approach",
+      "authors": [
+        "Anwar Ibrahim",
+        "Alexey Petrenko",
+        "Maxim Kaledin",
+        "Ehab Suleiman",
+        "Fedor Ratnikov",
+        "Denis Derkach"
+      ],
+      "abstract": "Particle accelerators play a pivotal role in advancing scientific research,\nyet optimizing beamline configurations to maximize particle transmission\nremains a labor-intensive task requiring expert intervention. In this work, we\nintroduce RLABC (Reinforcement Learning for Accelerator Beamline Control), a\nPython-based library that reframes beamline optimization as a reinforcement\nlearning (RL) problem. Leveraging the Elegant simulation framework, RLABC\nautomates the creation of an RL environment from standard lattice and element\ninput files, enabling sequential tuning of magnets to minimize particle losses.\nWe define a comprehensive state representation capturing beam statistics,\nactions for adjusting magnet parameters, and a reward function focused on\ntransmission efficiency. Employing the Deep Deterministic Policy Gradient\n(DDPG) algorithm, we demonstrate RLABC's efficacy on two beamlines, achieving\ntransmission rates of 94% and 91%, comparable to expert manual optimizations.\nThis approach bridges accelerator physics and machine learning, offering a\nversatile tool for physicists and RL researchers alike to streamline beamline\ntuning.",
+      "date": "2025-10-18",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.6057682037353516
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.5601047873497009
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2510.26805v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-11-03T03:51:53Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-03T03:51:53Z"
     }
   }
 }
