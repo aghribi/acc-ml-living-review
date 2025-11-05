@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 100,
+      "2025": 103,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,14 +14,14 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 129,
+      "Tools & Libraries": 131,
       "Novel Applications": 189,
       "Others": 20,
-      "Anomaly Detection & Fault Prediction": 28,
+      "Anomaly Detection & Fault Prediction": 29,
       "Statistics & Trends": 55,
-      "Reinforcement Learning & Autonomous Systems": 33,
+      "Reinforcement Learning & Autonomous Systems": 34,
       "Surrogate Models": 36,
-      "Data Management": 25,
+      "Data Management": 26,
       "By Facility Type": 7,
       "RF Systems": 6,
       "Operations & Control": 4,
@@ -95,17 +95,20 @@
       "Applied and Computational Engineering": 1,
       "Frontiers of Computer Science": 1,
       "Springer Science and Business Media LLC": 1,
-      "Circulation": 1
+      "Circulation": 1,
+      "International Journal of Structural Integrity": 1,
+      "Machine Learning: Science and Technology": 1,
+      "Anais do Encontro Nacional de Engenharia de Produção": 1
     },
     "per_keyword": {
-      "optimization": 52,
+      "optimization": 53,
       "control": 58,
       "surrogate model": 18,
       "transformer": 5,
       "deep learning": 41,
       "proton therapy": 1,
       "beam": 114,
-      "reinforcement learning": 28,
+      "reinforcement learning": 29,
       "diagnostics": 17,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
@@ -188,10 +191,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 2
+      "2025-11": 5
     },
-    "last_updated": "2025-11-04T03:48:47.316185+00:00",
-    "next_update": "2025-11-05T03:48:47.316185+00:00"
+    "last_updated": "2025-11-05T03:49:49.325158+00:00",
+    "next_update": "2025-11-06T03:49:49.325158+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -314,11 +317,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2741978168487549
+          "score": 0.27419787645339966
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.2530145049095154
+          "score": 0.25301453471183777
         }
       ],
       "keywords": [],
@@ -1306,11 +1309,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.3572598397731781
+          "score": 0.3572598695755005
         },
         {
           "label": "Data Management",
-          "score": 0.3400529623031616
+          "score": 0.34005290269851685
         }
       ],
       "keywords": [],
@@ -1345,11 +1348,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.41033846139907837
+          "score": 0.4103383719921112
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3847968578338623
+          "score": 0.3847969174385071
         }
       ],
       "keywords": [],
@@ -6605,7 +6608,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.2655929625034332
+          "score": 0.26559293270111084
         }
       ],
       "keywords": [],
@@ -8497,7 +8500,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.46931928396224976
+          "score": 0.46931925415992737
         }
       ],
       "keywords": [],
@@ -11322,7 +11325,7 @@
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.366909384727478
+          "score": 0.3669094145298004
         }
       ],
       "keywords": [],
@@ -11825,11 +11828,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.43271228671073914
+          "score": 0.4327123165130615
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4223700761795044
+          "score": 0.42237013578414917
         }
       ],
       "keywords": [],
@@ -11870,11 +11873,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4173662066459656
+          "score": 0.41736605763435364
         },
         {
           "label": "Data Management",
-          "score": 0.41292089223861694
+          "score": 0.4129208028316498
         }
       ],
       "keywords": [],
@@ -11956,11 +11959,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.3479526937007904
+          "score": 0.347952663898468
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.26563799381256104
+          "score": 0.26563793420791626
         }
       ],
       "keywords": [],
@@ -12173,11 +12176,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.26770350337028503
+          "score": 0.26770344376564026
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.26512783765792847
+          "score": 0.26512789726257324
         }
       ],
       "keywords": [],
@@ -12419,7 +12422,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.35399144887924194
+          "score": 0.3539915084838867
         }
       ],
       "keywords": [],
@@ -12633,7 +12636,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6057682037353516
+          "score": 0.6057682633399963
         },
         {
           "label": "Novel Applications",
@@ -12789,6 +12792,132 @@
       ],
       "history": [],
       "last_updated": "2025-11-04T03:48:11Z"
+    },
+    "('', '10.1108/ijsi-07-2025-0180', 'a data driven hybrid method combining experiments finite element modeling and machine learning for impact response prediction of tpu composites')": {
+      "id": "doi:10.1108/ijsi-07-2025-0180",
+      "doi": "10.1108/ijsi-07-2025-0180",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A data-driven hybrid method combining experiments, finite element modeling and machine learning for impact response prediction of TPU composites",
+      "authors": [
+        "Shunqi Zhang",
+        "Luca Lomazzi",
+        "Dayou Ma",
+        "Andrea Manes"
+      ],
+      "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>This study aims to develop a robust and generalizable hybrid strategy for investigating impact behaviors of high-performance composites, significantly advancing composite impact engineering and demonstrating strong potential for applications in protective and structural systems.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design/methodology/approach</jats:title>\n                    <jats:p>With the hybrid framework that integrates experimental testing, finite element (FE) modeling and machine learning (ML), the study on the low-velocity impact behavior of Kevlar fiber-reinforced composites with thermoplastic polyurethane matrix was carried out: with the validation of the FE model by experiments, the numerical model was used to produce data to train the ML methods.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Findings</jats:title>\n                    <jats:p>The best-performing Levenberg–Marquardt artificial neural network model achieved excellent agreement with FE simulation data, yielding a correlation coefficient R &amp;gt; 0.98 and a low mean squared error, which was also proven through experimental validation with satisfactory accuracy.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Originality/value</jats:title>\n                    <jats:p>In the current work, the combined method with the FE model, experiments and ML was developed for low-velocity impact of thermoplastic composite materials. The damage process was investigated, while the accuracy of the proposed methodology was verified when compared to experimental outcomes.</jats:p>\n                  </jats:sec>",
+      "date": "2025-11-05",
+      "year": 2025,
+      "venue": "International Journal of Structural Integrity",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1108/ijsi-07-2025-0180",
+        "crossref": "https://doi.org/10.1108/ijsi-07-2025-0180"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-05T03:49:13Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-05T03:49:13Z"
+    },
+    "('', '10.1088/2632-2153/ae1563', 'human in the loop reinforcement learning for data quality monitoring in particle physics experiments')": {
+      "id": "doi:10.1088/2632-2153/ae1563",
+      "doi": "10.1088/2632-2153/ae1563",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Human-in-the-loop reinforcement learning for data quality monitoring in particle physics experiments",
+      "authors": [
+        "Olivia Jullian Parra",
+        "Julián García Pardiñas",
+        "Lorenzo Del Pianta Pérez",
+        "Maximilian Janisch",
+        "Suzanne Klaver",
+        "Thomas Lehéricy",
+        "Nicola Serra"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Ensuring data integrity via data quality monitoring (DQM) is critical in large-scale particle physics experiments. This traditionally relies on labor-intensive manual inspection or static machine learning models, which are adequate for stable operating conditions. However, the current era of major detector upgrades at the large hadron collider (LHC) challenges this paradigm. These upgrades are followed by prolonged commissioning periods with frequent and unpredictable changes in detector conditions, a regime for which static models are ill-suited. To address this, we reframe DQM as a dynamic decision-making problem and introduce a human-in-the-loop reinforcement learning (RLHL) framework. Our proximal policy optimization agent learns both to classify data and to strategically decide when to query human experts, optimizing the automation-oversight balance. On synthetic data, the system rapidly adapts to abrupt condition changes and successfully learns from noisy labels. In a simulated online regime, the agent minimizes human intervention by requesting it mainly when its uncertainty is high. A preliminary study on a real offline dataset from the LHCb experiment demonstrates that our synthetic approach is a reasonable proxy for real-world scenarios. The algorithm generalizes effectively with only superficial hyperparameter tuning, robustly identifying anomalies even when trained on augmented data. This work presents a scalable, adaptive solution for semi-autonomous DQM.</jats:p>",
+      "date": "2025-11-04",
+      "year": 2025,
+      "venue": "Machine Learning: Science and Technology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.49741339683532715
+        },
+        {
+          "label": "Data Management",
+          "score": 0.49066928029060364
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1088/2632-2153/ae1563",
+        "crossref": "https://doi.org/10.1088/2632-2153/ae1563"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-05T03:49:13Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-05T03:49:13Z"
+    },
+    "('', '10.14488/enegep2025_tn_wpg_424_2075_48651', 'estimativa de vida útil remanescente de placas cerâmicas utilizadas em filtragem de minério de ferro através de modelo de confiabilidade e métodos de machine learning aplicados a variáveis de processo industrial de um sistema pims')": {
+      "id": "doi:10.14488/enegep2025_tn_wpg_424_2075_48651",
+      "doi": "10.14488/enegep2025_tn_wpg_424_2075_48651",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "ESTIMATIVA DE VIDA ÚTIL REMANESCENTE DE PLACAS CERÂMICAS UTILIZADAS EM FILTRAGEM DE MINÉRIO DE FERRO ATRAVÉS DE MODELO DE CONFIABILIDADE E MÉTODOS DE MACHINE LEARNING APLICADOS A VARIÁVEIS DE PROCESSO INDUSTRIAL DE UM SISTEMA PIMS",
+      "authors": [
+        "ROBERT BENTO FLORENTINO",
+        "LUIZ GUSTAVO LOURENÇO MOURA"
+      ],
+      "abstract": "",
+      "date": "2025-11-04",
+      "year": 2025,
+      "venue": "Anais do Encontro Nacional de Engenharia de Produção",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.28052759170532227
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.14488/enegep2025_tn_wpg_424_2075_48651",
+        "crossref": "https://doi.org/10.14488/enegep2025_tn_wpg_424_2075_48651"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-05T03:49:13Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-05T03:49:13Z"
     }
   }
 }
