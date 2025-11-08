@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 104,
+      "2025": 107,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,14 +14,14 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 131,
-      "Novel Applications": 189,
+      "Tools & Libraries": 132,
+      "Novel Applications": 190,
       "Others": 20,
-      "Anomaly Detection & Fault Prediction": 29,
+      "Anomaly Detection & Fault Prediction": 31,
       "Statistics & Trends": 55,
-      "Reinforcement Learning & Autonomous Systems": 35,
+      "Reinforcement Learning & Autonomous Systems": 36,
       "Surrogate Models": 36,
-      "Data Management": 26,
+      "Data Management": 27,
       "By Facility Type": 7,
       "RF Systems": 6,
       "Operations & Control": 5,
@@ -80,7 +80,7 @@
       "Lecture Notes in Computer Science": 1,
       "Information Systems Engineering and Management": 1,
       "Lecture Notes on Multidisciplinary Industrial Engineering": 2,
-      "Lecture Notes in Mechanical Engineering": 2,
+      "Lecture Notes in Mechanical Engineering": 3,
       "Proceedings of the 2025 58th IEEE/ACM International Symposium on Microarchitecture": 2,
       "Sensors": 1,
       "Communications in Computer and Information Science": 1,
@@ -99,7 +99,9 @@
       "International Journal of Structural Integrity": 1,
       "Machine Learning: Science and Technology": 1,
       "Anais do Encontro Nacional de Engenharia de Produção": 1,
-      "arXiv (Cornell University)": 1
+      "arXiv (Cornell University)": 1,
+      "Artificial Intelligence for Biomass-based Biofuel Production": 1,
+      "Measurement Science and Technology": 1
     },
     "per_keyword": {
       "optimization": 53,
@@ -192,10 +194,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 5
+      "2025-11": 8
     },
-    "last_updated": "2025-11-07T03:49:32.144979+00:00",
-    "next_update": "2025-11-08T03:49:32.144979+00:00"
+    "last_updated": "2025-11-08T03:40:51.303106+00:00",
+    "next_update": "2025-11-09T03:40:51.303106+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -5913,11 +5915,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.2886365056037903
+          "score": 0.2886364459991455
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2624962627887726
+          "score": 0.2624962329864502
         }
       ],
       "keywords": [],
@@ -12589,7 +12591,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6057682037353516
+          "score": 0.6057682633399963
         },
         {
           "label": "Novel Applications",
@@ -12963,6 +12965,137 @@
       ],
       "history": [],
       "last_updated": "2025-11-07T03:48:57Z"
+    },
+    "('', '10.1007/978-981-96-8508-0_21', 'a machine learning approach to li ion battery module')": {
+      "id": "doi:10.1007/978-981-96-8508-0_21",
+      "doi": "10.1007/978-981-96-8508-0_21",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A Machine Learning Approach to Li-Ion Battery Module",
+      "authors": [
+        "Ram U. Kalyankar",
+        "Kalpak R. Sagar",
+        "Vipul M. Patel",
+        "Jyotirmay Banerjee",
+        "Hemantkumar B. Mehta"
+      ],
+      "abstract": "",
+      "date": "2025-11-08",
+      "year": 2025,
+      "venue": "Lecture Notes in Mechanical Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3004032075405121
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.29416465759277344
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-981-96-8508-0_21",
+        "crossref": "https://doi.org/10.1007/978-981-96-8508-0_21"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-08T03:40:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-08T03:40:16Z"
+    },
+    "('', '10.1201/9781003571223-4', 'an overview of artificial intelligence and machine learning')": {
+      "id": "doi:10.1201/9781003571223-4",
+      "doi": "10.1201/9781003571223-4",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "An Overview of Artificial Intelligence and Machine Learning",
+      "authors": [
+        "Adwika Singh",
+        "Falguni Sharma",
+        "Anshuman Shastri"
+      ],
+      "abstract": "",
+      "date": "2025-11-07",
+      "year": 2025,
+      "venue": "Artificial Intelligence for Biomass-based Biofuel Production",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.33777305483818054
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.3084327280521393
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1201/9781003571223-4",
+        "crossref": "https://doi.org/10.1201/9781003571223-4"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-08T03:40:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-08T03:40:16Z"
+    },
+    "('', '10.1088/1361-6501/ae1858', 'igd yolov8s insulator defect detection via iterative attention and generalized dynamic feature pyramids')": {
+      "id": "doi:10.1088/1361-6501/ae1858",
+      "doi": "10.1088/1361-6501/ae1858",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "IGD-YOLOv8s: insulator defect detection via iterative attention and generalized dynamic feature pyramids",
+      "authors": [
+        "Zhiqin Zhang",
+        "Guowu Yuan",
+        "Junlin Rao",
+        "Xiang Li",
+        "Pengfei Yu",
+        "Hao Zhou"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Insulators are critical components in transmission lines. Common defects, such as structural loss of the insulator caused by spontaneous rupture, breakage, and fouling can lead to short circuits and tripping faults, posing serious threats to power grid stability and the safety of the power supply. However, in practical applications, insulator defect detection faces several challenges, including small target sizes, insufficient representation of multiscale features, complex backgrounds, and imbalanced datasets with a limited number of defective samples. Traditional detection methods often struggle with missed detections of small targets and lack robustness in scenarios with large-scale variations and complex environments. To address these issues, this paper proposes an enhanced detection model based on YOLOv8s. The model introduces an iterative attentional feature fusion module to optimize multiscale feature representation and incorporates a Generalized Dynamic Feature Pyramid Network (GDFPN) to improve feature retention for small target detection, thereby enhancing robustness in complex backgrounds. Additionally, to mitigate the problem of limited defective sample data, the Stable Diffusion generative model is utilized to augment the dataset, effectively improving detection performance in small-sample scenarios. Experimental results demonstrate that the proposed method significantly outperforms the original YOLOv8s model in terms of recall, accuracy, and precision on the insulator defect dataset. The model exhibits strong detection capabilities and generalization performance, making it well-suited for real-world challenges such as small targets, multiscale variation, and complex backgrounds.</jats:p>",
+      "date": "2025-11-07",
+      "year": 2025,
+      "venue": "Measurement Science and Technology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.3776553273200989
+        },
+        {
+          "label": "Data Management",
+          "score": 0.25477808713912964
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1088/1361-6501/ae1858",
+        "crossref": "https://doi.org/10.1088/1361-6501/ae1858"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-08T03:40:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-08T03:40:16Z"
     }
   }
 }
