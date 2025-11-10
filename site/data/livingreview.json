@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 107,
+      "2025": 108,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -15,7 +15,7 @@
     },
     "per_category": {
       "Tools & Libraries": 132,
-      "Novel Applications": 190,
+      "Novel Applications": 191,
       "Others": 20,
       "Anomaly Detection & Fault Prediction": 31,
       "Statistics & Trends": 55,
@@ -24,7 +24,7 @@
       "Data Management": 27,
       "By Facility Type": 7,
       "RF Systems": 6,
-      "Operations & Control": 5,
+      "Operations & Control": 6,
       "Beamline Design & Simulation": 30,
       "Beam Dynamics": 8,
       "Reviews": 17,
@@ -101,7 +101,8 @@
       "Anais do Encontro Nacional de Engenharia de Produção": 1,
       "arXiv (Cornell University)": 1,
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
-      "Measurement Science and Technology": 1
+      "Measurement Science and Technology": 1,
+      "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1
     },
     "per_keyword": {
       "optimization": 53,
@@ -194,10 +195,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 8
+      "2025-11": 9
     },
-    "last_updated": "2025-11-09T03:49:08.844479+00:00",
-    "next_update": "2025-11-10T03:49:08.844479+00:00"
+    "last_updated": "2025-11-10T03:57:15.959173+00:00",
+    "next_update": "2025-11-11T03:57:15.959173+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -13096,6 +13097,47 @@
       ],
       "history": [],
       "last_updated": "2025-11-08T03:40:16Z"
+    },
+    "('', '10.1145/3769994.3770061', 'a teachable machine for transformers')": {
+      "id": "doi:10.1145/3769994.3770061",
+      "doi": "10.1145/3769994.3770061",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A Teachable Machine for Transformers",
+      "authors": [
+        "Nicolas Pope",
+        "Matti Tedre"
+      ],
+      "abstract": "",
+      "date": "2025-11-10",
+      "year": 2025,
+      "venue": "Proceedings of the 25th Koli Calling International Conference on Computing Education Research",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3041575849056244
+        },
+        {
+          "label": "Operations & Control",
+          "score": 0.27956461906433105
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1145/3769994.3770061",
+        "crossref": "https://doi.org/10.1145/3769994.3770061"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-10T03:56:42Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-10T03:56:42Z"
     }
   }
 }
