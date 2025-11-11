@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 108,
+      "2025": 109,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -17,7 +17,7 @@
       "Tools & Libraries": 132,
       "Novel Applications": 191,
       "Others": 20,
-      "Anomaly Detection & Fault Prediction": 31,
+      "Anomaly Detection & Fault Prediction": 32,
       "Statistics & Trends": 55,
       "Reinforcement Learning & Autonomous Systems": 36,
       "Surrogate Models": 36,
@@ -83,7 +83,7 @@
       "Lecture Notes in Mechanical Engineering": 3,
       "Proceedings of the 2025 58th IEEE/ACM International Symposium on Microarchitecture": 2,
       "Sensors": 1,
-      "Communications in Computer and Information Science": 1,
+      "Communications in Computer and Information Science": 2,
       "AIJ Journal of Technology and Design": 1,
       "Smart and Sustainable Built Environment": 1,
       "Mechanisms and Machine Science": 1,
@@ -195,10 +195,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 9
+      "2025-11": 10
     },
-    "last_updated": "2025-11-10T03:57:15.959173+00:00",
-    "next_update": "2025-11-11T03:57:15.959173+00:00"
+    "last_updated": "2025-11-11T03:51:10.023932+00:00",
+    "next_update": "2025-11-12T03:51:10.023932+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -13138,6 +13138,43 @@
       ],
       "history": [],
       "last_updated": "2025-11-10T03:56:42Z"
+    },
+    "('', '10.1007/978-981-95-4409-7_11', 'predictive modeling of icu mortality using supervised machine learning algorithms')": {
+      "id": "doi:10.1007/978-981-95-4409-7_11",
+      "doi": "10.1007/978-981-95-4409-7_11",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Predictive Modeling of ICU Mortality Using Supervised Machine Learning Algorithms",
+      "authors": [
+        "Malithi Upeksha",
+        "Sulanie Perera"
+      ],
+      "abstract": "",
+      "date": "2025-11-11",
+      "year": 2025,
+      "venue": "Communications in Computer and Information Science",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.2590833604335785
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-981-95-4409-7_11",
+        "crossref": "https://doi.org/10.1007/978-981-95-4409-7_11"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-11T03:50:36Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-11T03:50:36Z"
     }
   }
 }
