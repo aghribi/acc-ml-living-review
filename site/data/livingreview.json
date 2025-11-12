@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 109,
+      "2025": 111,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,10 +14,10 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 132,
+      "Tools & Libraries": 134,
       "Novel Applications": 191,
       "Others": 20,
-      "Anomaly Detection & Fault Prediction": 32,
+      "Anomaly Detection & Fault Prediction": 33,
       "Statistics & Trends": 55,
       "Reinforcement Learning & Autonomous Systems": 36,
       "Surrogate Models": 36,
@@ -28,14 +28,14 @@
       "Beamline Design & Simulation": 30,
       "Beam Dynamics": 8,
       "Reviews": 17,
-      "Beam Diagnostics": 12,
+      "Beam Diagnostics": 13,
       "Optimization & Control": 6
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 171,
+      "arXiv": 172,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -102,16 +102,17 @@
       "arXiv (Cornell University)": 1,
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
       "Measurement Science and Technology": 1,
-      "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1
+      "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
+      "Rapid Prototyping Journal": 1
     },
     "per_keyword": {
-      "optimization": 53,
+      "optimization": 54,
       "control": 59,
       "surrogate model": 18,
       "transformer": 5,
       "deep learning": 41,
       "proton therapy": 1,
-      "beam": 114,
+      "beam": 115,
       "reinforcement learning": 30,
       "diagnostics": 17,
       "uncertainty quantification": 4,
@@ -124,7 +125,7 @@
       "2025-09": 12,
       "2025-08": 5,
       "2025-07": 9,
-      "2025-10": 34,
+      "2025-10": 35,
       "2025-03": 8,
       "2025-01": 10,
       "2024-12": 9,
@@ -195,10 +196,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 10
+      "2025-11": 11
     },
-    "last_updated": "2025-11-11T03:51:10.023932+00:00",
-    "next_update": "2025-11-12T03:51:10.023932+00:00"
+    "last_updated": "2025-11-12T03:52:09.810918+00:00",
+    "next_update": "2025-11-13T03:52:09.810918+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -2977,7 +2978,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5289809107780457
+          "score": 0.5289808511734009
         },
         {
           "label": "Statistics & Trends",
@@ -7387,7 +7388,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2719574272632599
+          "score": 0.2719574570655823
         },
         {
           "label": "Tools & Libraries",
@@ -8643,11 +8644,11 @@
       "categories": [
         {
           "label": "Optimization & Control",
-          "score": 0.36318260431289673
+          "score": 0.3631826639175415
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.354033887386322
+          "score": 0.35403385758399963
         },
         {
           "label": "Tools & Libraries",
@@ -12221,11 +12222,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.33519113063812256
+          "score": 0.33519119024276733
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.31967830657958984
+          "score": 0.3196783661842346
         }
       ],
       "keywords": [],
@@ -13175,6 +13176,90 @@
       ],
       "history": [],
       "last_updated": "2025-11-11T03:50:36Z"
+    },
+    "('2510.26340', '', 'saber symbolic regression based angle of arrival and beam pattern estimator')": {
+      "id": "arxiv:2510.26340",
+      "doi": null,
+      "arxiv_id": "2510.26340",
+      "inspire_id": null,
+      "title": "SABER: Symbolic Regression-based Angle of Arrival and Beam Pattern Estimator",
+      "authors": [
+        "Shih-Kai Chou",
+        "Mengran Zhao",
+        "Cheng-Nan Hu",
+        "Kuang-Chung Chou",
+        "Carolina Fortuna",
+        "Jernej Hribar"
+      ],
+      "abstract": "Accurate Angle-of-arrival (AoA) estimation is essential for next-generation wireless communication systems to enable reliable beamforming, high-precision localization, and integrated sensing. Unfortunately, classical high-resolution techniques require multi-element arrays and extensive snapshot collection, while generic Machine Learning (ML) approaches often yield black-box models that lack physical interpretability. To address these limitations, we propose a Symbolic Regression (SR)-based ML framework. Namely, Symbolic Regression-based Angle of Arrival and Beam Pattern Estimator (SABER), a constrained symbolic-regression framework that automatically discovers closed-form beam pattern and AoA models from path loss measurements with interpretability. SABER achieves high accuracy while bridging the gap between opaque ML methods and interpretable physics-driven estimators. First, we validate our approach in a controlled free-space anechoic chamber, showing that both direct inversion of the known $\\cos^n$ beam and a low-order polynomial surrogate achieve sub-0.5 degree Mean Absolute Error (MAE). A purely unconstrained SR method can further reduce the error of the predicted angles, but produces complex formulas that lack physical insight. Then, we implement the same SR-learned inversions in a real-world, Reconfigurable Intelligent Surface (RIS)-aided indoor testbed. SABER and unconstrained SR models accurately recover the true AoA with near-zero error. Finally, we benchmark SABER against the Cramér-Rao Lower Bounds (CRLBs). Our results demonstrate that SABER is an interpretable and accurate alternative to state-of-the-art and black-box ML-based methods for AoA estimation.",
+      "date": "2025-10-31",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.34982168674468994
+        },
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.28307533264160156
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2510.26340v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-11-12T03:50:17Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-12T03:50:17Z"
+    },
+    "('', '10.1108/rpj-06-2025-0219', 'machine learning driven optimization of energy absorption in pla composites reinforced with carbon fibers through fff additive manufacturing')": {
+      "id": "doi:10.1108/rpj-06-2025-0219",
+      "doi": "10.1108/rpj-06-2025-0219",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning-driven optimization of energy absorption in PLA composites reinforced with carbon fibers through FFF additive manufacturing",
+      "authors": [
+        "Rezgar Hasanzadeh"
+      ],
+      "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>This study aims to optimize the energy absorption capacity (EAC) of polylactic acid (PLA) composite materials reinforced with short micro carbon fibers, fabricated via fused filament fabrication (FFF) 3D printing. The objective is to understand how key process parameters influence mechanical performance and to explore the potential of machine learning in enhancing material property prediction and optimization.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design/methodology/approach</jats:title>\n                    <jats:p>A series of controlled experiments were conducted by varying nozzle diameter, nozzle temperature, and fan speed. The EAC of the 3D-printed samples was determined through impact testing and density measurements. Three regression-based machine learning models-first-order, second-order, and second-order with interaction terms-were developed and evaluated to predict EAC based on process parameters.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Findings</jats:title>\n                    <jats:p>The second-order model with interaction terms showed the highest predictive accuracy (R2 = 0.9984, adjusted R2 = 0.9955, predicted R2 = 0.9758). Optimization analysis identified the ideal conditions (0.4 mm nozzle diameter, 200 °C nozzle temperature, 100% fan speed), achieving a maximum EAC of 72.64 kJ.m/g. The study revealed the significant effect of printing parameters on EAC, confirming that fine-tuning these variables enhances composite performance.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Originality/value</jats:title>\n                    <jats:p>This research highlights the effective integration of machine learning with additive manufacturing to predict and optimize mechanical properties of PLA composites. It provides a valuable framework for improving energy absorption through data-driven tuning of 3D printing parameters, contributing to the advancement of high-performance, customized polymer composites.</jats:p>\n                  </jats:sec>",
+      "date": "2025-11-12",
+      "year": 2025,
+      "venue": "Rapid Prototyping Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1108/rpj-06-2025-0219",
+        "crossref": "https://doi.org/10.1108/rpj-06-2025-0219"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-12T03:51:43Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-12T03:51:43Z"
     }
   }
 }
