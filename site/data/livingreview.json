@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 111,
+      "2025": 120,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,22 +14,22 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 134,
-      "Novel Applications": 191,
-      "Others": 20,
-      "Anomaly Detection & Fault Prediction": 33,
-      "Statistics & Trends": 55,
+      "Tools & Libraries": 135,
+      "Novel Applications": 195,
+      "Others": 21,
+      "Anomaly Detection & Fault Prediction": 34,
+      "Statistics & Trends": 59,
       "Reinforcement Learning & Autonomous Systems": 36,
       "Surrogate Models": 36,
-      "Data Management": 27,
+      "Data Management": 28,
       "By Facility Type": 7,
-      "RF Systems": 6,
+      "RF Systems": 7,
       "Operations & Control": 6,
       "Beamline Design & Simulation": 30,
       "Beam Dynamics": 8,
       "Reviews": 17,
       "Beam Diagnostics": 13,
-      "Optimization & Control": 6
+      "Optimization & Control": 8
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
@@ -77,7 +77,7 @@
       "Journal of Applied Crystallography": 1,
       "Engineering": 1,
       "AIRO Springer Series": 1,
-      "Lecture Notes in Computer Science": 1,
+      "Lecture Notes in Computer Science": 2,
       "Information Systems Engineering and Management": 1,
       "Lecture Notes on Multidisciplinary Industrial Engineering": 2,
       "Lecture Notes in Mechanical Engineering": 3,
@@ -94,7 +94,7 @@
       "Lecture Notes in Networks and Systems": 3,
       "Applied and Computational Engineering": 1,
       "Frontiers of Computer Science": 1,
-      "Springer Science and Business Media LLC": 1,
+      "Springer Science and Business Media LLC": 2,
       "Circulation": 1,
       "International Journal of Structural Integrity": 1,
       "Machine Learning: Science and Technology": 1,
@@ -103,16 +103,18 @@
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
       "Measurement Science and Technology": 1,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
-      "Rapid Prototyping Journal": 1
+      "Rapid Prototyping Journal": 1,
+      "JACOW": 6,
+      "Frontiers in Oncology": 1
     },
     "per_keyword": {
-      "optimization": 54,
+      "optimization": 57,
       "control": 59,
       "surrogate model": 18,
       "transformer": 5,
-      "deep learning": 41,
+      "deep learning": 43,
       "proton therapy": 1,
-      "beam": 115,
+      "beam": 116,
       "reinforcement learning": 30,
       "diagnostics": 17,
       "uncertainty quantification": 4,
@@ -196,10 +198,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 11
+      "2025-11": 20
     },
-    "last_updated": "2025-11-13T03:53:03.254941+00:00",
-    "next_update": "2025-11-14T03:53:03.254941+00:00"
+    "last_updated": "2025-11-14T03:50:31.720698+00:00",
+    "next_update": "2025-11-15T03:50:31.720698+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1314,11 +1316,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.3572598695755005
+          "score": 0.3572598397731781
         },
         {
           "label": "Data Management",
-          "score": 0.34005290269851685
+          "score": 0.3400529623031616
         }
       ],
       "keywords": [],
@@ -1353,11 +1355,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4103383719921112
+          "score": 0.41033846139907837
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3847969174385071
+          "score": 0.3847968578338623
         }
       ],
       "keywords": [],
@@ -2105,7 +2107,7 @@
         },
         {
           "label": "RF Systems",
-          "score": 0.42476701736450195
+          "score": 0.4247669577598572
         }
       ],
       "keywords": [],
@@ -2849,11 +2851,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.4146744906902313
+          "score": 0.4146745204925537
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4130493402481079
+          "score": 0.41304928064346313
         }
       ],
       "keywords": [],
@@ -3933,7 +3935,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3772347867488861
+          "score": 0.3772347569465637
         },
         {
           "label": "Statistics & Trends",
@@ -6816,11 +6818,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.39880144596099854
+          "score": 0.398801326751709
         },
         {
           "label": "Novel Applications",
-          "score": 0.3775925636291504
+          "score": 0.37759262323379517
         },
         {
           "label": "Tools & Libraries",
@@ -12222,11 +12224,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.33519119024276733
+          "score": 0.33519113063812256
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3196783661842346
+          "score": 0.31967830657958984
         }
       ],
       "keywords": [],
@@ -13260,6 +13262,391 @@
       ],
       "history": [],
       "last_updated": "2025-11-12T03:51:43Z"
+    },
+    "('', '10.18429/jacow-ipac2025-thpm031', 'beam energy forecasting using machine learning at the clear accelerator')": {
+      "id": "doi:10.18429/jacow-ipac2025-thpm031",
+      "doi": "10.18429/jacow-ipac2025-thpm031",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Beam Energy Forecasting using Machine Learning at the CLEAR accelerator",
+      "authors": [
+        "Gilardi, Antonio",
+        "Malyzhenkov, Alexander",
+        "Petersson,Alfred",
+        "Mostacci Andrea",
+        "Pollastro, Andrea",
+        "Aksoy, Avni",
+        "Filippetto, Daniele",
+        "Gamba,Davide",
+        "Granados, Eduardo",
+        "Tangari,Giacomo",
+        "Sjobak, Kyrre",
+        "Bonnard,Ladislas",
+        "Wroe,Laurence",
+        "Carranza-García, Manuel",
+        "Franek Ondrej",
+        "Korysko,Pierre",
+        "Corsini Roberto",
+        "Rieker,Vilde",
+        "Farabolini, Wilfrid",
+        "Mazzoni, Stefano"
+      ],
+      "abstract": "",
+      "date": "2025-11-05",
+      "year": 2025,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4491236209869385
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.3980206847190857
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7104265541"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-11-14T03:50:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-14T03:50:05Z"
+    },
+    "('', '10.18429/jacow-ipac2025-thps110', 'advancing accelerator science through data intensive research and training')": {
+      "id": "doi:10.18429/jacow-ipac2025-thps110",
+      "doi": "10.18429/jacow-ipac2025-thps110",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Advancing accelerator science through data-intensive research and training",
+      "authors": [
+        "Welsch, Carsten"
+      ],
+      "abstract": "",
+      "date": "2025-11-05",
+      "year": 2025,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.6817673444747925
+        },
+        {
+          "label": "Data Management",
+          "score": 0.6181437969207764
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7104250131"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-11-14T03:50:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-14T03:50:05Z"
+    },
+    "('', '10.18429/jacow-ipac2025-mopm092', 'machine learning approach to mdi optimization for 3 tev c o m muon collider')": {
+      "id": "doi:10.18429/jacow-ipac2025-mopm092",
+      "doi": "10.18429/jacow-ipac2025-mopm092",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning approach to MDI optimization for 3 TeV c.o.m. Muon Collider",
+      "authors": [
+        "Castelli, Luca"
+      ],
+      "abstract": "",
+      "date": "2025-11-05",
+      "year": 2025,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4003908336162567
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.350715309381485
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7104276804"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-11-14T03:50:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-14T03:50:05Z"
+    },
+    "('', '10.18429/jacow-ipac2025-wepm062', 'advances in machine learning inference of dynamic aperture evaluation for the lhc')": {
+      "id": "doi:10.18429/jacow-ipac2025-wepm062",
+      "doi": "10.18429/jacow-ipac2025-wepm062",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Advances in machine learning inference of dynamic aperture evaluation for the LHC",
+      "authors": [
+        "Montanari,Carlo Emilio",
+        "Di Croce, Davide",
+        "Van der Veken,Frederik",
+        "Giovannozzi, Massimo",
+        "Appleby, Robert",
+        "Redaelli, Stefano",
+        "Pieloni, Tatiana"
+      ],
+      "abstract": "",
+      "date": "2025-11-05",
+      "year": 2025,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4261140823364258
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.3864346742630005
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7104262551"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-11-14T03:50:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-14T03:50:05Z"
+    },
+    "('', '10.18429/jacow-ipac2025-thps135', 'machine learning for calibration drift forecasting in superconducting rf cavities')": {
+      "id": "doi:10.18429/jacow-ipac2025-thps135",
+      "doi": "10.18429/jacow-ipac2025-thps135",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning for calibration drift forecasting in superconducting RF cavities",
+      "authors": [
+        "Sun Yue",
+        "Bellandi Andrea",
+        "Eichler, Annika",
+        "Richter,Bozo",
+        "Diomede,Marco",
+        "Schmidt, Christian",
+        "Schlarb Holger",
+        "Branlard, Julien",
+        "Herrmann,Max"
+      ],
+      "abstract": "",
+      "date": "2025-11-05",
+      "year": 2025,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "RF Systems",
+          "score": 0.49180230498313904
+        },
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.3448007106781006
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7104291355"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-11-14T03:50:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-14T03:50:05Z"
+    },
+    "('', '10.18429/jacow-ipac2025-thpm017', 'uncertainty quantified machine model construction using physics informed gaussian processes and bayesian optimization')": {
+      "id": "doi:10.18429/jacow-ipac2025-thpm017",
+      "doi": "10.18429/jacow-ipac2025-thpm017",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Uncertainty-Quantified Machine Model Construction Using Physics-Informed Gaussian Processes and Bayesian Optimization",
+      "authors": [
+        "Isensee,Victoria",
+        "Oeftiger, Adrian",
+        "Boine-Frankenheim, Oliver"
+      ],
+      "abstract": "",
+      "date": "2025-11-05",
+      "year": 2025,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Statistics & Trends",
+          "score": 0.28911012411117554
+        },
+        {
+          "label": "Optimization & Control",
+          "score": 0.2881034314632416
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7104265548"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-11-14T03:50:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-14T03:50:05Z"
+    },
+    "('', '10.1007/978-3-032-07904-6_17', 'physics informed deep learning for improved input function estimation in motion blurred dynamic 18 f fdg pet images')": {
+      "id": "doi:10.1007/978-3-032-07904-6_17",
+      "doi": "10.1007/978-3-032-07904-6_17",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Physics-Informed Deep Learning for Improved Input Function Estimation in Motion-Blurred Dynamic [$$^{18}$$F]FDG PET Images",
+      "authors": [
+        "Christian Salomonsen",
+        "Kristoffer K. Wickstrøm",
+        "Samuel Kuttner",
+        "Elisabeth Wetzer"
+      ],
+      "abstract": "",
+      "date": "2025-11-14",
+      "year": 2025,
+      "venue": "Lecture Notes in Computer Science",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-3-032-07904-6_17",
+        "crossref": "https://doi.org/10.1007/978-3-032-07904-6_17"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-14T03:50:06Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-14T03:50:06Z"
+    },
+    "('', '10.3389/fonc.2025.1681029', 'fusion model combining ultrasound based radiomics and deep transfer learning with clinical parameters for preoperative prediction of pelvic lymph node metastasis in cervical cancer')": {
+      "id": "doi:10.3389/fonc.2025.1681029",
+      "doi": "10.3389/fonc.2025.1681029",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Fusion model combining ultrasound-based radiomics and deep transfer learning with clinical parameters for preoperative prediction of pelvic lymph node metastasis in cervical cancer",
+      "authors": [
+        "Jihan Wang",
+        "Shengxian Bao",
+        "Tongtong Huang",
+        "Yongzhi Cai",
+        "Binbin Jin",
+        "Ji Wu"
+      ],
+      "abstract": "<jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>To develop and validate a multimodal fusion model integrating ultrasound-based radiomics, deep transfer learning (DTL), and clinical parameters for preoperative pelvic lymph node metastasis (PLNM) prediction in cervical cancer.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A retrospective cohort of 421 patients with surgically confirmed cervical cancer was divided into the training (70%, n = 294) and testing (30%, n = 127) sets. Ultrasound-based radiomics (1,561 handcrafted features) and 3 DTL architectures (DenseNet121, ResNet50, AlexNet) were employed for feature extraction. After redundancy reduction (Spearman correlation, least absolute shrinkage and selection operator regression) and principal component analysis, fused radiomics-DTL features were combined with clinical predictors. Eight machine learning classifiers were evaluated, and the optimal model was used to construct a nomogram. Performance was assessed using area under the curve (AUC), calibration curves, and decision curve analysis (DCA).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>The multilayer perceptron-based fusion model achieved a testing AUC of 0.753, outperforming standalone radiomics (AUC = 0.729) and DTL models (best AUC = 0.702; DenseNet121). Integration of clinical predictors (maximum tumor diameter and red blood cell count) further enhanced performance, yielding a nomogram with training/testing AUCs of 0.871 and 0.764, and a testing sensitivity and specificity of 58.1% and 84.4%,respectively. DCA demonstrated superior clinical utility for the nomogram across threshold probabilities (10%–50%).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>We developed a multimodal fusion model integrating ultrasound-based radiomics, DTL, and clinical parameters for preoperative PLNM prediction in cervical cancer. The proposed nomogram provides a clinically applicable, cost-effective tool for preoperative PLNM prediction, particularly valuable for optimizing treatment decisions in resource-limited settings.</jats:p>\n                  </jats:sec>",
+      "date": "2025-11-13",
+      "year": 2025,
+      "venue": "Frontiers in Oncology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.3389/fonc.2025.1681029",
+        "crossref": "https://doi.org/10.3389/fonc.2025.1681029"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-14T03:50:06Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-14T03:50:06Z"
+    },
+    "('', '10.21203/rs.3.rs-8089868/v1', 'hybrid machine learning based optimization with beamforming of 6g mobile radio network for leo satellite base station in urban areas')": {
+      "id": "doi:10.21203/rs.3.rs-8089868/v1",
+      "doi": "10.21203/rs.3.rs-8089868/v1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Hybrid Machine Learning based Optimization with Beamforming of 6G Mobile Radio Network for LEO Satellite base station in Urban Areas",
+      "authors": [
+        "Haymanot Derebe Bizuneh"
+      ],
+      "abstract": "<title>Abstract</title>\n                <p>The rapid evolution of sixth-generation (6G) mobile communication networks  requires advanced optimization and intelligent deep learning models to meet the  demands of ultra-reliable, low-latency, and energy-efficient wireless systems. Low  Earth Orbit (LEO) satellites has a vital role in enabling non-terrestrial net works (NTN), particularly in dense urban environment areas. This paper presents  a comparative analysis of hybrid optimization approaches integrating Artificial  Bee Colony (ABC), Grey Wolf Optimizer (GWO), Ant Lion Optimizer (ALO),  Whale Optimization Algorithm (WOA), Salp Swarm Algorithm (SSA), and Par ticle Swarm Optimization (PSO) with Extreme Learning Machine (ELM) for  beamforming in 6G mobile radio networks. Integrated with beamforming for  6G NTN. The models are analysis using pathloss (PL),signal-to-interference plus-noise ratio (SINR), coverage area, capacity, spectral efficiency (SE), energy  efficiency (EE), bandwidth efficiency (BE), bit error rate (BER), and propaga tion delay. ABC-ELM has performed with result mean values of the PL (187.46  dB), SINR (22.62 dB), coverage area (68.03%), capacity (10.82 Gbps), SE (10.82  bits/Hz), EE (44.10%), BE (44.10%), BER (1.45−8 bps ) and propagation delay (48.65%) in urban areas. As a result, demonstrating of hybrid ELM-based opti mization integrated with beamforming is a promising approach for enabling 6G  LEO satellite networks.</p>",
+      "date": "2025-11-13",
+      "year": 2025,
+      "venue": "Springer Science and Business Media LLC",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Optimization & Control",
+          "score": 0.31860435009002686
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.21203/rs.3.rs-8089868/v1",
+        "crossref": "https://doi.org/10.21203/rs.3.rs-8089868/v1"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-14T03:50:06Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-14T03:50:06Z"
     }
   }
 }
