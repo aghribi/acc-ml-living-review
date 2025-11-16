@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 123,
+      "2025": 126,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,12 +14,12 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 138,
-      "Novel Applications": 196,
+      "Tools & Libraries": 139,
+      "Novel Applications": 197,
       "Others": 21,
-      "Anomaly Detection & Fault Prediction": 34,
-      "Statistics & Trends": 59,
-      "Reinforcement Learning & Autonomous Systems": 36,
+      "Anomaly Detection & Fault Prediction": 35,
+      "Statistics & Trends": 60,
+      "Reinforcement Learning & Autonomous Systems": 37,
       "Surrogate Models": 36,
       "Data Management": 30,
       "By Facility Type": 7,
@@ -77,7 +77,7 @@
       "Journal of Applied Crystallography": 1,
       "Engineering": 1,
       "AIRO Springer Series": 1,
-      "Lecture Notes in Computer Science": 2,
+      "Lecture Notes in Computer Science": 3,
       "Information Systems Engineering and Management": 1,
       "Lecture Notes on Multidisciplinary Industrial Engineering": 2,
       "Lecture Notes in Mechanical Engineering": 3,
@@ -91,7 +91,7 @@
       "Institute of Electrical and Electronics Engineers (IEEE)": 1,
       "Arabian Journal for Science and Engineering": 1,
       "Proceedings of the International Workshop on Application-driven Point Cloud Processing and 3D Vision": 1,
-      "Lecture Notes in Networks and Systems": 3,
+      "Lecture Notes in Networks and Systems": 4,
       "Applied and Computational Engineering": 1,
       "Frontiers of Computer Science": 1,
       "Springer Science and Business Media LLC": 2,
@@ -107,14 +107,15 @@
       "JACOW": 6,
       "Frontiers in Oncology": 1,
       "Phys.Part.Nucl.": 1,
-      "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1
+      "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
+      "International Symposium for Testing and Failure Analysis": 1
     },
     "per_keyword": {
       "optimization": 58,
       "control": 59,
       "surrogate model": 18,
       "transformer": 6,
-      "deep learning": 44,
+      "deep learning": 45,
       "proton therapy": 1,
       "beam": 117,
       "reinforcement learning": 30,
@@ -200,10 +201,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 22
+      "2025-11": 25
     },
-    "last_updated": "2025-11-15T03:45:33.865695+00:00",
-    "next_update": "2025-11-16T03:45:33.865695+00:00"
+    "last_updated": "2025-11-16T03:53:45.719213+00:00",
+    "next_update": "2025-11-17T03:53:45.719213+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -13779,6 +13780,132 @@
       ],
       "history": [],
       "last_updated": "2025-11-15T03:44:58Z"
+    },
+    "('', '10.31399/asm.cp.istfa2025tp00x1', 'machine learning in semiconductor failure analysis techniques and case studies 2025 update')": {
+      "id": "doi:10.31399/asm.cp.istfa2025tp00x1",
+      "doi": "10.31399/asm.cp.istfa2025tp00x1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine Learning in Semiconductor Failure Analysis: Techniques and Case Studies (2025 Update)",
+      "authors": [
+        "Michael Kögel",
+        "Sebastian Brand",
+        "Frank Altmann"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Presentation slides for the ISTFA 2025 Tutorial session “Machine Learning in Semiconductor Failure Analysis: Techniques and Case Studies.”</jats:p>",
+      "date": "2025-11-16",
+      "year": 2025,
+      "venue": "International Symposium for Testing and Failure Analysis",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.510526180267334
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.2630026042461395
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.31399/asm.cp.istfa2025tp00x1",
+        "crossref": "https://doi.org/10.31399/asm.cp.istfa2025tp00x1"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-16T03:53:12Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-16T03:53:12Z"
+    },
+    "('', '10.1007/978-3-032-10466-3_23', 'nnia 8 an 8 core risc v neural network inference accelerator with efficient processing elements and memory utilization')": {
+      "id": "doi:10.1007/978-3-032-10466-3_23",
+      "doi": "10.1007/978-3-032-10466-3_23",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "NNia-8: An 8-Core RISC-V Neural Network Inference Accelerator with Efficient Processing Elements and Memory Utilization",
+      "authors": [
+        "Xingbo Wang",
+        "Yucong Huang",
+        "Xinyu Kang",
+        "Yuru Li",
+        "Qi Wang",
+        "Terry Tao Ye"
+      ],
+      "abstract": "",
+      "date": "2025-11-16",
+      "year": 2025,
+      "venue": "Lecture Notes in Computer Science",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.4272313416004181
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.38921570777893066
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-3-032-10466-3_23",
+        "crossref": "https://doi.org/10.1007/978-3-032-10466-3_23"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-16T03:53:12Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-16T03:53:12Z"
+    },
+    "('', '10.1007/978-981-96-8796-1_15', 'railway track obstacle detection and alert system using deep learning')": {
+      "id": "doi:10.1007/978-981-96-8796-1_15",
+      "doi": "10.1007/978-981-96-8796-1_15",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Railway Track Obstacle Detection and Alert System Using Deep Learning",
+      "authors": [
+        "R. Anand",
+        "D. P. Monish",
+        "D. Madhukar",
+        "C. G. Paari"
+      ],
+      "abstract": "",
+      "date": "2025-11-16",
+      "year": 2025,
+      "venue": "Lecture Notes in Networks and Systems",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.25003308057785034
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-981-96-8796-1_15",
+        "crossref": "https://doi.org/10.1007/978-981-96-8796-1_15"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-16T03:53:12Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-16T03:53:12Z"
     }
   }
 }
