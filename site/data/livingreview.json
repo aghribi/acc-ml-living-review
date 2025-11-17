@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 126,
+      "2025": 129,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,13 +14,13 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 139,
-      "Novel Applications": 197,
-      "Others": 21,
+      "Tools & Libraries": 141,
+      "Novel Applications": 198,
+      "Others": 22,
       "Anomaly Detection & Fault Prediction": 35,
       "Statistics & Trends": 60,
-      "Reinforcement Learning & Autonomous Systems": 37,
-      "Surrogate Models": 36,
+      "Reinforcement Learning & Autonomous Systems": 38,
+      "Surrogate Models": 37,
       "Data Management": 30,
       "By Facility Type": 7,
       "RF Systems": 7,
@@ -35,7 +35,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 173,
+      "arXiv": 174,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -83,7 +83,7 @@
       "Lecture Notes in Mechanical Engineering": 3,
       "Proceedings of the 2025 58th IEEE/ACM International Symposium on Microarchitecture": 2,
       "Sensors": 1,
-      "Communications in Computer and Information Science": 2,
+      "Communications in Computer and Information Science": 3,
       "AIJ Journal of Technology and Design": 1,
       "Smart and Sustainable Built Environment": 1,
       "Mechanisms and Machine Science": 1,
@@ -108,14 +108,15 @@
       "Frontiers in Oncology": 1,
       "Phys.Part.Nucl.": 1,
       "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
-      "International Symposium for Testing and Failure Analysis": 1
+      "International Symposium for Testing and Failure Analysis": 1,
+      "Medical alphabet": 1
     },
     "per_keyword": {
-      "optimization": 58,
-      "control": 59,
-      "surrogate model": 18,
+      "optimization": 59,
+      "control": 60,
+      "surrogate model": 19,
       "transformer": 6,
-      "deep learning": 45,
+      "deep learning": 46,
       "proton therapy": 1,
       "beam": 117,
       "reinforcement learning": 30,
@@ -201,10 +202,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 25
+      "2025-11": 28
     },
-    "last_updated": "2025-11-16T03:53:45.719213+00:00",
-    "next_update": "2025-11-17T03:53:45.719213+00:00"
+    "last_updated": "2025-11-17T03:55:02.328040+00:00",
+    "next_update": "2025-11-18T03:55:02.328040+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -7177,7 +7178,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.310451865196228
+          "score": 0.31045183539390564
         },
         {
           "label": "By Facility Type",
@@ -12910,7 +12911,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.28052759170532227
+          "score": 0.28052765130996704
         }
       ],
       "keywords": [],
@@ -13906,6 +13907,140 @@
       ],
       "history": [],
       "last_updated": "2025-11-16T03:53:12Z"
+    },
+    "('2503.21198', '', 'deep learning assisted modeling for χ 2 nonlinear optics')": {
+      "id": "arxiv:2503.21198",
+      "doi": null,
+      "arxiv_id": "2503.21198",
+      "inspire_id": null,
+      "title": "Deep Learning Assisted Modeling for $χ^{(2)}$ Nonlinear Optics",
+      "authors": [
+        "Jack Hirschman",
+        "Erfan Abedi",
+        "Minyang Wang",
+        "Hao Zhang",
+        "Abhimanyu Borthakur",
+        "Justin Baker",
+        "Andrea L. Bertozzi",
+        "Randy Lemons",
+        "Sergio Carbajo"
+      ],
+      "abstract": "Modeling second-order ($χ^{(2)}$) nonlinear optical processes remains computationally expensive due to the need to resolve fast field oscillations and simulate wave propagation using methods like the split-step Fourier method (SSFM). This can become a bottleneck in real-time applications, such as high-repetition-rate laser systems requiring rapid feedback and control. We present an LSTM-based surrogate model trained on SSFM simulations generated from a start-to-end model of the photocathode drive laser at SLAC National Accelerator Laboratory's Linac Coherent Light Source II. The model achieves over 250x speedup while maintaining high fidelity, enabling future real-time optimization and laying the foundation for data-integrated modeling frameworks and digital twins of laser systems.",
+      "date": "2025-11-14",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Surrogate Models",
+          "score": 1.0
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.3501254916191101
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2503.21198v2"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-11-17T03:50:17Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-17T03:50:17Z"
+    },
+    "('', '10.1007/978-981-95-4109-6_6', 'robust training to secure automated ai accelerator generation against malicious platforms')": {
+      "id": "doi:10.1007/978-981-95-4109-6_6",
+      "doi": "10.1007/978-981-95-4109-6_6",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Robust Training to Secure Automated AI Accelerator Generation Against Malicious Platforms",
+      "authors": [
+        "Chao Guo",
+        "Youhua Shi"
+      ],
+      "abstract": "",
+      "date": "2025-11-17",
+      "year": 2025,
+      "venue": "Communications in Computer and Information Science",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.5189216136932373
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.5122343897819519
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-981-95-4109-6_6",
+        "crossref": "https://doi.org/10.1007/978-981-95-4109-6_6"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-17T03:54:27Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-17T03:54:27Z"
+    },
+    "('', '10.33667/2078-5631-2025-27-30-38', 'machine learning with ultrasound examination for prediction of intraoperative hypotension during robot assisted radical prostatectomy')": {
+      "id": "doi:10.33667/2078-5631-2025-27-30-38",
+      "doi": "10.33667/2078-5631-2025-27-30-38",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning with ultrasound examination for prediction of intraoperative hypotension during robot-assisted radical prostatectomy",
+      "authors": [
+        "V. S. Andreenkov",
+        "A. V. Vlasenko",
+        "A. N. Kornienko",
+        "A. S. Kazakov",
+        "E. P. Rodionov",
+        "K. B. Kolontarev",
+        "E. A. Evdokimov"
+      ],
+      "abstract": "<jats:p>\n                    <jats:bold>Introduction.</jats:bold>\n                    Robot-assisted radical prostatectomy is one of the leading methods of prostate cancer treatment. A common complication of general anesthesia during this operation is intraoperative hypotension. In recent years, the use of preoperative ultrasound examinations to predict this condition and carry out personalized prevention has been gaining popularity. Machine learning methods trained with additional predictors\n                  </jats:p>\n                  <jats:p>can improve the accuracy of these predictions.</jats:p>\n                  <jats:p>\n                    <jats:bold>Objective.</jats:bold>\n                    To improve the treatment outcomes of patients with prostate cancer by optimizing their volemic status in the perioperative period before robot-assisted prostatectomy.\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Materials and methods.</jats:bold>\n                    The prospective study included 64 patients scheduled for robot-assisted radical prostatectomy. Before surgery, patients underwent bedside ultrasound examination to determine the diameters and collapsibility indices of the inferior vena cava and subclavian veins, corrected carotid flow time (cCFT), and respiratory variation of blood flow peak velocity (ΔV). These data were used in the training of machine learning predictive models to ameliorate intraoperative hypotension prediction efficacy.\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Results.</jats:bold>\n                    The respiratory variation of blood flow peak velocity had the highest predictive value (AUROC 0.843, accuracy 75 %). The indicator’s optimal threshold for intraoperative hypotension prediction was 8.33 %. The accuracy of the prediction has been increased using the machine learning model based on gradient boosting with additional predictors (AUROC 0.933, accuracy 95 %).\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Conclusions.</jats:bold>\n                    Determining the respiratory variation of blood flow peak velocity is the most prognostically valuable indicator for intraoperative hypotension prediction during robot-assisted radical prostatectomy. The use of machine learning methods to predict intraoperative hypotension increases the accuracy of prediction.\n                  </jats:p>",
+      "date": "2025-11-16",
+      "year": 2025,
+      "venue": "Medical alphabet",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.33667/2078-5631-2025-27-30-38",
+        "crossref": "https://doi.org/10.33667/2078-5631-2025-27-30-38"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-17T03:54:27Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-17T03:54:27Z"
     }
   }
 }
