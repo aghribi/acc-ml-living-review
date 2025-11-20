@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 129,
+      "2025": 132,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,12 +14,12 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 141,
+      "Tools & Libraries": 142,
       "Novel Applications": 198,
       "Others": 22,
-      "Anomaly Detection & Fault Prediction": 35,
+      "Anomaly Detection & Fault Prediction": 36,
       "Statistics & Trends": 60,
-      "Reinforcement Learning & Autonomous Systems": 38,
+      "Reinforcement Learning & Autonomous Systems": 39,
       "Surrogate Models": 37,
       "Data Management": 30,
       "By Facility Type": 7,
@@ -29,7 +29,7 @@
       "Beam Dynamics": 8,
       "Reviews": 17,
       "Beam Diagnostics": 13,
-      "Optimization & Control": 8
+      "Optimization & Control": 9
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
@@ -91,7 +91,7 @@
       "Institute of Electrical and Electronics Engineers (IEEE)": 1,
       "Arabian Journal for Science and Engineering": 1,
       "Proceedings of the International Workshop on Application-driven Point Cloud Processing and 3D Vision": 1,
-      "Lecture Notes in Networks and Systems": 4,
+      "Lecture Notes in Networks and Systems": 5,
       "Applied and Computational Engineering": 1,
       "Frontiers of Computer Science": 1,
       "Springer Science and Business Media LLC": 2,
@@ -109,14 +109,16 @@
       "Phys.Part.Nucl.": 1,
       "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
       "International Symposium for Testing and Failure Analysis": 1,
-      "Medical alphabet": 1
+      "Medical alphabet": 1,
+      "Machine-Learning-Assisted Software Defect Prediction": 1,
+      "Lecture Notes in Civil Engineering": 1
     },
     "per_keyword": {
       "optimization": 59,
       "control": 60,
       "surrogate model": 19,
       "transformer": 6,
-      "deep learning": 46,
+      "deep learning": 47,
       "proton therapy": 1,
       "beam": 117,
       "reinforcement learning": 30,
@@ -202,10 +204,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 28
+      "2025-11": 31
     },
-    "last_updated": "2025-11-19T03:50:26.642170+00:00",
-    "next_update": "2025-11-20T03:50:26.642170+00:00"
+    "last_updated": "2025-11-20T03:49:03.471700+00:00",
+    "next_update": "2025-11-21T03:49:03.471700+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -7178,7 +7180,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.31045183539390564
+          "score": 0.310451865196228
         },
         {
           "label": "By Facility Type",
@@ -14041,6 +14043,124 @@
       ],
       "history": [],
       "last_updated": "2025-11-17T03:54:27Z"
+    },
+    "('', '10.1007/978-3-032-01336-1_2', 'categories of defect prediction')": {
+      "id": "doi:10.1007/978-3-032-01336-1_2",
+      "doi": "10.1007/978-3-032-01336-1_2",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Categories of Defect Prediction",
+      "authors": [
+        "Zhou Xu"
+      ],
+      "abstract": "",
+      "date": "2025-11-20",
+      "year": 2025,
+      "venue": "Machine-Learning-Assisted Software Defect Prediction",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.4321112036705017
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-3-032-01336-1_2",
+        "crossref": "https://doi.org/10.1007/978-3-032-01336-1_2"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-20T03:48:26Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-20T03:48:26Z"
+    },
+    "('', '10.1007/978-3-032-04645-1_20', 'optimized supervised machine learning for accurate estimation of reinforcement in rc beams and columns')": {
+      "id": "doi:10.1007/978-3-032-04645-1_20",
+      "doi": "10.1007/978-3-032-04645-1_20",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Optimized Supervised Machine Learning for Accurate Estimation of Reinforcement in RC Beams and Columns",
+      "authors": [
+        "Nhan Thanh Vu Nguyen",
+        "Chon Tran",
+        "Duong Thai Le",
+        "Quy Thue Nguyen"
+      ],
+      "abstract": "",
+      "date": "2025-11-20",
+      "year": 2025,
+      "venue": "Lecture Notes in Civil Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.4105933606624603
+        },
+        {
+          "label": "Optimization & Control",
+          "score": 0.34232085943222046
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-3-032-04645-1_20",
+        "crossref": "https://doi.org/10.1007/978-3-032-04645-1_20"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-20T03:48:26Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-20T03:48:26Z"
+    },
+    "('', '10.1007/978-981-96-9533-1_7', 'radial pulse pattern recognition using deep learning')": {
+      "id": "doi:10.1007/978-981-96-9533-1_7",
+      "doi": "10.1007/978-981-96-9533-1_7",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Radial Pulse Pattern Recognition Using Deep Learning",
+      "authors": [
+        "Nishant Patil",
+        "Ghanshyam Jindal",
+        "Sanjeev Rai",
+        "Gajanan Nagare"
+      ],
+      "abstract": "",
+      "date": "2025-11-20",
+      "year": 2025,
+      "venue": "Lecture Notes in Networks and Systems",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.26261284947395325
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-981-96-9533-1_7",
+        "crossref": "https://doi.org/10.1007/978-981-96-9533-1_7"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-20T03:48:26Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-20T03:48:26Z"
     }
   }
 }
