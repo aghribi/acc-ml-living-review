@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 132,
+      "2025": 133,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -19,12 +19,12 @@
       "Others": 22,
       "Anomaly Detection & Fault Prediction": 36,
       "Statistics & Trends": 60,
-      "Reinforcement Learning & Autonomous Systems": 39,
+      "Reinforcement Learning & Autonomous Systems": 40,
       "Surrogate Models": 37,
       "Data Management": 30,
       "By Facility Type": 7,
       "RF Systems": 7,
-      "Operations & Control": 6,
+      "Operations & Control": 7,
       "Beamline Design & Simulation": 30,
       "Beam Dynamics": 8,
       "Reviews": 17,
@@ -77,7 +77,7 @@
       "Journal of Applied Crystallography": 1,
       "Engineering": 1,
       "AIRO Springer Series": 1,
-      "Lecture Notes in Computer Science": 3,
+      "Lecture Notes in Computer Science": 4,
       "Information Systems Engineering and Management": 1,
       "Lecture Notes on Multidisciplinary Industrial Engineering": 2,
       "Lecture Notes in Mechanical Engineering": 3,
@@ -204,10 +204,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 31
+      "2025-11": 32
     },
-    "last_updated": "2025-11-20T03:49:03.471700+00:00",
-    "next_update": "2025-11-21T03:49:03.471700+00:00"
+    "last_updated": "2025-11-21T03:48:24.564893+00:00",
+    "next_update": "2025-11-22T03:48:24.564893+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -14161,6 +14161,46 @@
       ],
       "history": [],
       "last_updated": "2025-11-20T03:48:26Z"
+    },
+    "('', '10.1007/978-3-032-09087-4_13', 'measurement and evaluation of intelligent robots')": {
+      "id": "doi:10.1007/978-3-032-09087-4_13",
+      "doi": "10.1007/978-3-032-09087-4_13",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Measurement and Evaluation of Intelligent Robots",
+      "authors": [
+        "Claude Sammut"
+      ],
+      "abstract": "",
+      "date": "2025-11-21",
+      "year": 2025,
+      "venue": "Lecture Notes in Computer Science",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.3194364905357361
+        },
+        {
+          "label": "Operations & Control",
+          "score": 0.3088069558143616
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-3-032-09087-4_13",
+        "crossref": "https://doi.org/10.1007/978-3-032-09087-4_13"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-21T03:47:48Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-21T03:47:48Z"
     }
   }
 }
