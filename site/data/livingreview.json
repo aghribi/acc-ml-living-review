@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 133,
+      "2025": 134,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,8 +14,8 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 142,
-      "Novel Applications": 198,
+      "Tools & Libraries": 143,
+      "Novel Applications": 199,
       "Others": 22,
       "Anomaly Detection & Fault Prediction": 36,
       "Statistics & Trends": 60,
@@ -101,7 +101,7 @@
       "Anais do Encontro Nacional de Engenharia de Produção": 1,
       "arXiv (Cornell University)": 1,
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
-      "Measurement Science and Technology": 1,
+      "Measurement Science and Technology": 2,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
       "Rapid Prototyping Journal": 1,
       "JACOW": 6,
@@ -204,10 +204,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 32
+      "2025-11": 33
     },
-    "last_updated": "2025-11-21T03:48:24.564893+00:00",
-    "next_update": "2025-11-22T03:48:24.564893+00:00"
+    "last_updated": "2025-11-22T03:42:39.032109+00:00",
+    "next_update": "2025-11-23T03:42:39.032109+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -7180,7 +7180,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.310451865196228
+          "score": 0.31045183539390564
         },
         {
           "label": "By Facility Type",
@@ -14201,6 +14201,51 @@
       ],
       "history": [],
       "last_updated": "2025-11-21T03:47:48Z"
+    },
+    "('', '10.1088/1361-6501/ae15ae', 'parameter estimation of three phase voltage source converter using physics informed machine learning')": {
+      "id": "doi:10.1088/1361-6501/ae15ae",
+      "doi": "10.1088/1361-6501/ae15ae",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Parameter estimation of three-phase voltage source converter using physics-informed machine learning",
+      "authors": [
+        "Cuiyu Liu",
+        "Zhiming Yang",
+        "Yipeng Yang",
+        "Ziwen Xiao",
+        "Chuanfeng Li",
+        "Yang Yu"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Voltage source converters (VSCs) are crucial in modern power systems, and accurate parameter estimation is vital for their optimal performance. Existing parameter estimation methods for VSCs have limitations including high data requirements, detachment from physical models, and difficulties in real-world implementation. To address these issues, a novel parameter estimation method for three-phase VSCs using physics-informed machine learning is proposed. This method integrates VSC physical knowledge into deep neural network training. The contributions of this work include achieving accurate parameter identification for VSCs by integrating physical models with machine learning, requiring less data and eliminating the need for external signal injection. In simulations, operating-point sweeps maintain identification errors typically at\n                    <jats:inline-formula>\n                      <jats:tex-math>\n                        \n                      </jats:tex-math>\n                      <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" overflow=\"scroll\">\n                        <mml:mrow>\n                          <mml:mtext>⩽</mml:mtext>\n                        </mml:mrow>\n                      </mml:math>\n                    </jats:inline-formula>\n                    3.3%. Hardware validation conducted across three units yields typical errors of 1%–4%. Additionally, the framework is demonstrated to scale to three independent gate signals without the need for external injection.\n                  </jats:p>",
+      "date": "2025-11-21",
+      "year": 2025,
+      "venue": "Measurement Science and Technology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3115675449371338
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1088/1361-6501/ae15ae",
+        "crossref": "https://doi.org/10.1088/1361-6501/ae15ae"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-22T03:42:02Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-22T03:42:02Z"
     }
   }
 }
