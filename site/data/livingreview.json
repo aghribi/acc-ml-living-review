@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 137,
+      "2025": 140,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -15,10 +15,10 @@
     },
     "per_category": {
       "Tools & Libraries": 143,
-      "Novel Applications": 201,
+      "Novel Applications": 204,
       "Others": 23,
-      "Anomaly Detection & Fault Prediction": 36,
-      "Statistics & Trends": 61,
+      "Anomaly Detection & Fault Prediction": 37,
+      "Statistics & Trends": 62,
       "Reinforcement Learning & Autonomous Systems": 40,
       "Surrogate Models": 37,
       "Data Management": 30,
@@ -29,7 +29,7 @@
       "Beam Dynamics": 8,
       "Reviews": 17,
       "Beam Diagnostics": 13,
-      "Optimization & Control": 10
+      "Optimization & Control": 11
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
@@ -51,7 +51,7 @@
       "Supercond.Sci.Technol.": 1,
       "Astrophys.J.": 1,
       "Nuovo Cim.C": 1,
-      "Journal": 4,
+      "Journal": 6,
       "Mach.Learn.Sci.Tech.": 2,
       "Astron.Astrophys.": 1,
       "PoS": 2,
@@ -112,16 +112,17 @@
       "Medical alphabet": 1,
       "Machine-Learning-Assisted Software Defect Prediction": 1,
       "Lecture Notes in Civil Engineering": 1,
-      "Evolutionary Intelligence": 1
+      "Evolutionary Intelligence": 1,
+      "Proceedings of the Institution of Civil Engineers - Construction Materials": 1
     },
     "per_keyword": {
       "optimization": 60,
-      "control": 61,
+      "control": 62,
       "surrogate model": 19,
       "transformer": 7,
       "deep learning": 47,
       "proton therapy": 1,
-      "beam": 119,
+      "beam": 121,
       "reinforcement learning": 31,
       "diagnostics": 17,
       "uncertainty quantification": 4,
@@ -205,10 +206,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 36
+      "2025-11": 39
     },
-    "last_updated": "2025-11-25T03:53:53.989078+00:00",
-    "next_update": "2025-11-26T03:53:53.989078+00:00"
+    "last_updated": "2025-11-26T03:53:34.235542+00:00",
+    "next_update": "2025-11-27T03:53:34.235542+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -3117,11 +3118,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.3868652582168579
+          "score": 0.38686513900756836
         },
         {
           "label": "Data Management",
-          "score": 0.37402960658073425
+          "score": 0.3740295469760895
         }
       ],
       "keywords": [],
@@ -5293,7 +5294,7 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.42257726192474365
+          "score": 0.4225772023200989
         },
         {
           "label": "Novel Applications",
@@ -6700,11 +6701,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4214934706687927
+          "score": 0.4214935004711151
         },
         {
           "label": "Novel Applications",
-          "score": 0.34556663036346436
+          "score": 0.34556666016578674
         }
       ],
       "keywords": [],
@@ -14377,6 +14378,144 @@
       ],
       "history": [],
       "last_updated": "2025-11-25T03:53:18Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop011', 'automated rf phase adjustment for beam stabilization in the fermilab linac')": {
+      "id": "doi:10.18429/jacow-napac2025-mop011",
+      "doi": "10.18429/jacow-napac2025-mop011",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Automated RF Phase Adjustment for Beam Stabilization in the Fermilab Linac",
+      "authors": [
+        "Chichili, R.R.",
+        "Sulskis, J.A.",
+        "Sharankova, R.",
+        "Vamanan, B.",
+        "Ravi, S."
+      ],
+      "abstract": "The Fermilab Linac experiences longitudinal beam phase drift, leading to increased particle loss, conventionally corrected through labor-intensive manual RF adjustments. This project explores machine learning-based automation for drift correction, employing a prototype-based classification approach. Our model utilizes a 34-dimensional feature set (RF settings and BPM readings) and leverages a 7x27 response matrix for system modeling. To overcome limited real-world data, we generate synthetic data, enhancing model training and generalizability. Custom loss functions, including a surrogate energy-consistent loss and a temporal smoothness constraint, ensure physically plausible drift predictions. The goal is a robust system for autonomous phase adjustments, ensuring stable beam acceleration and reduced manual intervention.",
+      "date": "2025-11-24",
+      "year": 2025,
+      "venue": "Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.37618112564086914
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.31788986921310425
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3086171",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP011",
+        "arxiv": "https://arxiv.org/abs/2511.19141"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2025-11-26T03:52:43Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-26T03:52:43Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop039', 'fast adaptive neural control of resonant extraction at fermilab')": {
+      "id": "doi:10.18429/jacow-napac2025-mop039",
+      "doi": "10.18429/jacow-napac2025-mop039",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Fast Adaptive Neural Control of Resonant Extraction at Fermilab",
+      "authors": [
+        "Whitbeck, A.",
+        "Berlioz, J.",
+        "Danison-Fieldhouse, K.",
+        "Hazelwood, K.",
+        "Khan, M.",
+        "Mitrevski, J.",
+        "Narayanan, A.",
+        "John, J.St.",
+        "Tran, N.",
+        "Ji, J.",
+        "Walter, M."
+      ],
+      "abstract": "We present progress on the development of a machine learning (ML) regulation system for third-order resonant extraction of the beam delivered to the Mu2e experiment at Fermilab. We consider classical and ML-based controllers optimized on semi-analytic simulations and provide performance comparisons for several models. Additionally, we discuss the efficiency of each model in training, which has implications for future work on adaptive control. We also discuss progress on developing optimized implementations of ML models for edge-based inference.",
+      "date": "2025-11-24",
+      "year": 2025,
+      "venue": "Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.37268489599227905
+        },
+        {
+          "label": "Optimization & Control",
+          "score": 0.3611193299293518
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3086174",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP039",
+        "arxiv": "https://arxiv.org/abs/2511.19099"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2025-11-26T03:52:43Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-26T03:52:43Z"
+    },
+    "('', '10.1680/jcoma.24.00099', 'study on estimation of internal cracks using electromagnetic waves and machine learning')": {
+      "id": "doi:10.1680/jcoma.24.00099",
+      "doi": "10.1680/jcoma.24.00099",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Study on estimation of internal cracks using electromagnetic waves and machine learning",
+      "authors": [
+        "Hinata Yamamoto",
+        "Hitoshi Ito",
+        "Toshiaki Mizobuchi"
+      ],
+      "abstract": "<jats:p>In recent years, the aging of reinforced concrete structures and a shortage and aging of engineers have become problems in Japan. There is a need for methods that allow inspection of reinforced concrete structures without the need for skilled engineers. The focus of this study was on electromagnetic radar which can relatively easily detect reinforcing bars and internal defects. Then, machine learning approaches, convolutional neural network (CNN) and convolutional auto encoder (CAE), were used to detect small cracks inside concrete caused by rebar corrosion from electromagnetic radar measurement data. In this study, output images from electromagnetic radar were learned and judged by machine learning. The results showed that both approaches were able to determine the presence or absence of internal cracks. The CNN determination showed the existence of cracks in the range of 0.04–1.0 mm in crack width, while the CAE determination showed the possibility of estimating crack growth.</jats:p>",
+      "date": "2025-11-26",
+      "year": 2025,
+      "venue": "Proceedings of the Institution of Civil Engineers - Construction Materials",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.3191933035850525
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.30973321199417114
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1680/jcoma.24.00099",
+        "crossref": "https://doi.org/10.1680/jcoma.24.00099"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-26T03:52:56Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-26T03:52:56Z"
     }
   }
 }
