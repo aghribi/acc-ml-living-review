@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 140,
+      "2025": 142,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -16,13 +16,13 @@
     "per_category": {
       "Tools & Libraries": 143,
       "Novel Applications": 204,
-      "Others": 23,
+      "Others": 24,
       "Anomaly Detection & Fault Prediction": 37,
       "Statistics & Trends": 62,
       "Reinforcement Learning & Autonomous Systems": 40,
       "Surrogate Models": 37,
       "Data Management": 30,
-      "By Facility Type": 7,
+      "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 7,
       "Beamline Design & Simulation": 30,
@@ -113,7 +113,9 @@
       "Machine-Learning-Assisted Software Defect Prediction": 1,
       "Lecture Notes in Civil Engineering": 1,
       "Evolutionary Intelligence": 1,
-      "Proceedings of the Institution of Civil Engineers - Construction Materials": 1
+      "Proceedings of the Institution of Civil Engineers - Construction Materials": 1,
+      "ACS Omega": 1,
+      "American Association for Cancer Research (AACR)": 1
     },
     "per_keyword": {
       "optimization": 60,
@@ -206,10 +208,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 39
+      "2025-11": 41
     },
-    "last_updated": "2025-11-26T03:53:34.235542+00:00",
-    "next_update": "2025-11-27T03:53:34.235542+00:00"
+    "last_updated": "2025-11-27T03:50:15.768866+00:00",
+    "next_update": "2025-11-28T03:50:15.768866+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -3118,11 +3120,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.38686513900756836
+          "score": 0.3868652582168579
         },
         {
           "label": "Data Management",
-          "score": 0.3740295469760895
+          "score": 0.37402960658073425
         }
       ],
       "keywords": [],
@@ -14516,6 +14518,94 @@
       ],
       "history": [],
       "last_updated": "2025-11-26T03:52:56Z"
+    },
+    "('', '10.1021/acsomega.5c06755', 'a new pulsed neutron gamma density logging method based on gamma ray spectra and machine learning')": {
+      "id": "doi:10.1021/acsomega.5c06755",
+      "doi": "10.1021/acsomega.5c06755",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A New Pulsed Neutron-Gamma Density Logging Method Based on Gamma-Ray Spectra and Machine Learning",
+      "authors": [
+        "Duo Dong",
+        "Qiong Zhang",
+        "Defu Zang",
+        "Wensheng Wu",
+        "He Meng",
+        "Yunlong Ge",
+        "Hu Wang",
+        "Xiaoyu Song",
+        "Shitao Xiong"
+      ],
+      "abstract": "",
+      "date": "2025-11-26",
+      "year": 2025,
+      "venue": "ACS Omega",
+      "status": "published",
+      "categories": [
+        {
+          "label": "By Facility Type",
+          "score": 0.27425724267959595
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1021/acsomega.5c06755",
+        "crossref": "https://doi.org/10.1021/acsomega.5c06755"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-27T03:49:40Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-27T03:49:40Z"
+    },
+    "('', '10.1158/1055-9965.30722790', 'figure s3 from building practical risk prediction models for nasopharyngeal carcinoma screening with patient graph analysis and machine learning')": {
+      "id": "doi:10.1158/1055-9965.30722790",
+      "doi": "10.1158/1055-9965.30722790",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Figure S3 from Building Practical Risk Prediction Models for Nasopharyngeal Carcinoma Screening with Patient Graph Analysis and Machine Learning",
+      "authors": [
+        "Anjun Chen",
+        "Roufeng Lu",
+        "Ruobing Han",
+        "Ran Huang",
+        "Guanjie Qin",
+        "Jian Wen",
+        "Qinghua Li",
+        "Zhiyong Zhang",
+        "Wei Jiang"
+      ],
+      "abstract": "<jats:p>&lt;p&gt;Figure S3: Example topology of NPC patients resulting from searching 5 lab test factors. Blue nodes represent patients and yellow nodes represent lab test factors. This topology was generated using Cypher query #4 listed in Table S1. Each line connects a patient to a patient's factors. The topology shows how patients were distributed among a variety of lab factors.&lt;/p&gt;</jats:p>",
+      "date": "2025-11-26",
+      "year": 2025,
+      "venue": "American Association for Cancer Research (AACR)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1158/1055-9965.30722790",
+        "crossref": "https://doi.org/10.1158/1055-9965.30722790"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-27T03:49:40Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-27T03:49:40Z"
     }
   }
 }
