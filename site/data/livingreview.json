@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 142,
+      "2025": 144,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -15,10 +15,10 @@
     },
     "per_category": {
       "Tools & Libraries": 143,
-      "Novel Applications": 204,
-      "Others": 24,
+      "Novel Applications": 205,
+      "Others": 25,
       "Anomaly Detection & Fault Prediction": 37,
-      "Statistics & Trends": 62,
+      "Statistics & Trends": 63,
       "Reinforcement Learning & Autonomous Systems": 40,
       "Surrogate Models": 37,
       "Data Management": 30,
@@ -115,7 +115,9 @@
       "Evolutionary Intelligence": 1,
       "Proceedings of the Institution of Civil Engineers - Construction Materials": 1,
       "ACS Omega": 1,
-      "American Association for Cancer Research (AACR)": 1
+      "American Association for Cancer Research (AACR)": 1,
+      "Resonance": 1,
+      "Anthropologischer Anzeiger": 1
     },
     "per_keyword": {
       "optimization": 60,
@@ -208,10 +210,10 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 41
+      "2025-11": 43
     },
-    "last_updated": "2025-11-27T03:50:15.768866+00:00",
-    "next_update": "2025-11-28T03:50:15.768866+00:00"
+    "last_updated": "2025-11-28T03:51:27.281526+00:00",
+    "next_update": "2025-11-29T03:51:27.281526+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -14606,6 +14608,90 @@
       ],
       "history": [],
       "last_updated": "2025-11-27T03:49:40Z"
+    },
+    "('', '10.1007/s12045-025-1864-4', 'innovative approaches for learning electrical concepts in physics')": {
+      "id": "doi:10.1007/s12045-025-1864-4",
+      "doi": "10.1007/s12045-025-1864-4",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Innovative Approaches for Learning Electrical Concepts in Physics",
+      "authors": [
+        "Papun Mondal",
+        "Sanjoy Kumar Pal",
+        "Pradipta Panchadhyayee",
+        "Suman Kumar Dash",
+        "Subhash Chandra Samanta"
+      ],
+      "abstract": "",
+      "date": "2025-11-28",
+      "year": 2025,
+      "venue": "Resonance",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.40821921825408936
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.25986284017562866
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s12045-025-1864-4",
+        "crossref": "https://doi.org/10.1007/s12045-025-1864-4"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-28T03:50:49Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-28T03:50:49Z"
+    },
+    "('', '10.1127/anthranz/1839', 'a study on sex prediction by using machine algorithms with anthropometric measurements of the seventh cervical vertebra')": {
+      "id": "doi:10.1127/anthranz/1839",
+      "doi": "10.1127/anthranz/1839",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A study on sex prediction by using machine algorithms with anthropometric measurements of the seventh cervical vertebra",
+      "authors": [
+        "Esra Cetin Unlu",
+        "Zulal Oner",
+        "Serkan Oner",
+        "Muhammed Kamil Turan",
+        "Rukiye Sumeyye Bakici"
+      ],
+      "abstract": "",
+      "date": "2025-11-28",
+      "year": 2025,
+      "venue": "Anthropologischer Anzeiger",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1127/anthranz/1839",
+        "crossref": "https://doi.org/10.1127/anthranz/1839"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-11-28T03:50:49Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-11-28T03:50:49Z"
     }
   }
 }
