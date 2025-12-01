@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 144,
+      "2025": 147,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,10 +14,10 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 143,
+      "Tools & Libraries": 144,
       "Novel Applications": 205,
-      "Others": 25,
-      "Anomaly Detection & Fault Prediction": 37,
+      "Others": 27,
+      "Anomaly Detection & Fault Prediction": 38,
       "Statistics & Trends": 63,
       "Reinforcement Learning & Autonomous Systems": 40,
       "Surrogate Models": 37,
@@ -117,7 +117,10 @@
       "ACS Omega": 1,
       "American Association for Cancer Research (AACR)": 1,
       "Resonance": 1,
-      "Anthropologischer Anzeiger": 1
+      "Anthropologischer Anzeiger": 1,
+      "Applied Radiation and Isotopes": 1,
+      "Results in Engineering": 1,
+      "International Journal of Particle Therapy": 1
     },
     "per_keyword": {
       "optimization": 60,
@@ -210,10 +213,11 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 43
+      "2025-11": 43,
+      "2025-12": 3
     },
-    "last_updated": "2025-11-30T04:02:39.249610+00:00",
-    "next_update": "2025-12-01T04:02:39.249610+00:00"
+    "last_updated": "2025-12-01T04:15:56.219096+00:00",
+    "next_update": "2025-12-02T04:15:56.219096+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -14067,7 +14071,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4321112036705017
+          "score": 0.4321112632751465
         }
       ],
       "keywords": [],
@@ -14692,6 +14696,137 @@
       ],
       "history": [],
       "last_updated": "2025-11-28T03:50:49Z"
+    },
+    "('', '10.1016/j.apradiso.2025.112102', 'machine learning model for predicting the magnitude of tumor movement based on clinical information and ct based radiomics features')": {
+      "id": "doi:10.1016/j.apradiso.2025.112102",
+      "doi": "10.1016/j.apradiso.2025.112102",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning model for predicting the magnitude of tumor movement based on clinical information and CT-based radiomics features",
+      "authors": [
+        "Xinyu Song",
+        "Lian Duan",
+        "Guangyu Wang",
+        "Xiangyu Zhang",
+        "Qing Xiao",
+        "Guyu Dai",
+        "Jing Li",
+        "Yinglin Peng",
+        "Sen Bai",
+        "Guangjun Li"
+      ],
+      "abstract": "",
+      "date": "2025-12-01",
+      "year": 2025,
+      "venue": "Applied Radiation and Isotopes",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.apradiso.2025.112102",
+        "crossref": "https://doi.org/10.1016/j.apradiso.2025.112102"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-01T04:15:20Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-01T04:15:20Z"
+    },
+    "('', '10.1016/j.rineng.2025.107713', 'integrated engineering framework for fatigue damage prediction of fighter aircraft using machine learning')": {
+      "id": "doi:10.1016/j.rineng.2025.107713",
+      "doi": "10.1016/j.rineng.2025.107713",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Integrated engineering framework for fatigue damage prediction of fighter aircraft using machine learning",
+      "authors": [
+        "Zahid Ahmad",
+        "Ghulam Murtaza Amjad",
+        "Mian Ashfaq Ali",
+        "Faisal Siddiqui",
+        "Aamir Mubashar",
+        "Muhammad Ahsan"
+      ],
+      "abstract": "",
+      "date": "2025-12-01",
+      "year": 2025,
+      "venue": "Results in Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.41688859462738037
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.rineng.2025.107713",
+        "crossref": "https://doi.org/10.1016/j.rineng.2025.107713"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-01T04:15:20Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-01T04:15:20Z"
+    },
+    "('', '10.1016/j.ijpt.2025.100923', 'predicting suspected radiation necrosis in brain cancer patients with a machine learning model based on the proton lineal energy spectrum')": {
+      "id": "doi:10.1016/j.ijpt.2025.100923",
+      "doi": "10.1016/j.ijpt.2025.100923",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "PREDICTING SUSPECTED RADIATION NECROSIS IN BRAIN CANCER PATIENTS WITH A MACHINE LEARNING MODEL BASED ON THE PROTON LINEAL ENERGY SPECTRUM",
+      "authors": [
+        "Mark Newpower",
+        "Joseph Decunha",
+        "Radhe Mohan",
+        "Erik Traneus",
+        "Ozer Algan",
+        "Jerry Jaboin"
+      ],
+      "abstract": "",
+      "date": "2025-12-01",
+      "year": 2025,
+      "venue": "International Journal of Particle Therapy",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.ijpt.2025.100923",
+        "crossref": "https://doi.org/10.1016/j.ijpt.2025.100923"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-01T04:15:20Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-01T04:15:20Z"
     }
   }
 }
