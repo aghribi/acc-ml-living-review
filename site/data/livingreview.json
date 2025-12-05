@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 149,
+      "2025": 150,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,12 +14,12 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 146,
-      "Novel Applications": 206,
+      "Tools & Libraries": 147,
+      "Novel Applications": 207,
       "Others": 27,
       "Anomaly Detection & Fault Prediction": 38,
       "Statistics & Trends": 63,
-      "Reinforcement Learning & Autonomous Systems": 41,
+      "Reinforcement Learning & Autonomous Systems": 42,
       "Surrogate Models": 37,
       "Data Management": 30,
       "By Facility Type": 8,
@@ -35,7 +35,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 177,
+      "arXiv": 178,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -125,14 +125,14 @@
     },
     "per_keyword": {
       "optimization": 61,
-      "control": 63,
+      "control": 64,
       "surrogate model": 19,
       "transformer": 7,
       "deep learning": 47,
       "proton therapy": 1,
-      "beam": 122,
-      "reinforcement learning": 32,
-      "diagnostics": 18,
+      "beam": 123,
+      "reinforcement learning": 33,
+      "diagnostics": 19,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
       "time series": 6,
@@ -215,10 +215,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 43,
-      "2025-12": 5
+      "2025-12": 6
     },
-    "last_updated": "2025-12-04T04:00:49.116920+00:00",
-    "next_update": "2025-12-05T04:00:49.116920+00:00"
+    "last_updated": "2025-12-05T03:57:03.864988+00:00",
+    "next_update": "2025-12-06T03:57:03.864988+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -10912,11 +10912,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4523090124130249
+          "score": 0.4523090720176697
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.39967817068099976
+          "score": 0.39967814087867737
         }
       ],
       "keywords": [],
@@ -14920,6 +14920,59 @@
       ],
       "history": [],
       "last_updated": "2025-12-04T04:00:11Z"
+    },
+    "('', '', 'first experimental demonstration of machine learning based tuning on the psi injector 2 cyclotron')": {
+      "id": "hash:5f6196cd8856",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "First Experimental Demonstration of Machine Learning-Based Tuning on the PSI Injector 2 Cyclotron",
+      "authors": [
+        "Haj Tahar, M.",
+        "Joho, W.",
+        "Solodko, E.",
+        "Bocchio, M.",
+        "Marquie, S.",
+        "Busch, M.",
+        "Barchetti, A.",
+        "Grillenberger, J.",
+        "Snuverink, J.",
+        "Schneider, M."
+      ],
+      "abstract": "Reliable operation of high-power proton cyclotrons is a critical requirement for Accelerator Driven Systems (ADS) and other large-scale applications. Beam tuning in such machines is traditionally performed manually, a process that can be slow, non-optimal, and difficult to execute in the presence of faults or changing conditions. To address this, we developed and deployed a machine learning (ML) based tuning framework on the Injector 2 cyclotron at PSI, chosen as an ideal testbed for high-power operation. The system combined a tailored reinforcement learning algorithm with real-time diagnostics and control, and incorporated accelerator-physics inspired adaptations such as an overshoot strategy that reduced magnetic field settling times by nearly a factor of six. Over an extensive 12-day operational test campaign, relatively long in the context of real-time ML experiments, the ML agent successfully tuned the machine across multiple operating points, achieving convergence within hours and maintaining stable beam extraction with reduced losses. Beyond initial tuning, the system was also operated in evaluation mode overnight, where it autonomously monitored and corrected the machine to compensate for drifts, demonstrating robustness and long-term stability. Crucially, the learned policy generalized reliably from low-current training to higher-current operation, underscoring its scalability. These results constitute the first demonstration of ML-assisted tuning on a high-power cyclotron, with direct relevance to ADS-class drivers.",
+      "date": "2025-12-03",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.5587201118469238
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.5314569473266602
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3088966",
+        "arxiv": "https://arxiv.org/abs/2512.03829"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2025-12-05T03:56:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-05T03:56:16Z"
     }
   }
 }
