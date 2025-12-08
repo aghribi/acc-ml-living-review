@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 150,
+      "2025": 153,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -15,21 +15,21 @@
     },
     "per_category": {
       "Tools & Libraries": 147,
-      "Novel Applications": 207,
-      "Others": 27,
+      "Novel Applications": 208,
+      "Others": 28,
       "Anomaly Detection & Fault Prediction": 38,
       "Statistics & Trends": 63,
-      "Reinforcement Learning & Autonomous Systems": 42,
+      "Reinforcement Learning & Autonomous Systems": 43,
       "Surrogate Models": 37,
       "Data Management": 30,
       "By Facility Type": 8,
       "RF Systems": 7,
-      "Operations & Control": 7,
+      "Operations & Control": 8,
       "Beamline Design & Simulation": 30,
       "Beam Dynamics": 8,
       "Reviews": 17,
       "Beam Diagnostics": 13,
-      "Optimization & Control": 11
+      "Optimization & Control": 12
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
@@ -99,12 +99,12 @@
       "International Journal of Structural Integrity": 1,
       "Machine Learning: Science and Technology": 1,
       "Anais do Encontro Nacional de Engenharia de Produção": 1,
-      "arXiv (Cornell University)": 1,
+      "arXiv (Cornell University)": 2,
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
       "Measurement Science and Technology": 2,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
       "Rapid Prototyping Journal": 1,
-      "JACOW": 6,
+      "JACOW": 8,
       "Frontiers in Oncology": 1,
       "Phys.Part.Nucl.": 1,
       "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
@@ -124,8 +124,8 @@
       "International Journal of Scientific Research in Engineering and Management": 1
     },
     "per_keyword": {
-      "optimization": 61,
-      "control": 64,
+      "optimization": 62,
+      "control": 65,
       "surrogate model": 19,
       "transformer": 7,
       "deep learning": 47,
@@ -215,10 +215,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 43,
-      "2025-12": 6
+      "2025-12": 9
     },
-    "last_updated": "2025-12-07T04:02:43.984349+00:00",
-    "next_update": "2025-12-08T04:02:43.984349+00:00"
+    "last_updated": "2025-12-08T04:00:52.685059+00:00",
+    "next_update": "2025-12-09T04:00:52.685059+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1292,11 +1292,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6375530958175659
+          "score": 0.6375532150268555
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.589758038520813
+          "score": 0.5897581577301025
         }
       ],
       "keywords": [],
@@ -11389,7 +11389,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.6115000247955322
+          "score": 0.611500084400177
         },
         {
           "label": "Novel Applications",
@@ -13008,11 +13008,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3004032075405121
+          "score": 0.3004032373428345
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.29416465759277344
+          "score": 0.2941646873950958
         }
       ],
       "keywords": [],
@@ -13136,11 +13136,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3041576147079468
+          "score": 0.30415770411491394
         },
         {
           "label": "Operations & Control",
-          "score": 0.27956458926200867
+          "score": 0.27956461906433105
         }
       ],
       "keywords": [],
@@ -14072,7 +14072,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4321112334728241
+          "score": 0.4321112036705017
         }
       ],
       "keywords": [],
@@ -14190,11 +14190,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3194364905357361
+          "score": 0.31943652033805847
         },
         {
           "label": "Operations & Control",
-          "score": 0.3088069558143616
+          "score": 0.3088069260120392
         }
       ],
       "keywords": [],
@@ -14973,6 +14973,128 @@
       ],
       "history": [],
       "last_updated": "2025-12-05T03:56:16Z"
+    },
+    "('', '10.48550/arxiv.2512.03829', 'first experimental demonstration of machine learning based tuning on the psi injector 2 cyclotron')": {
+      "id": "doi:10.48550/arxiv.2512.03829",
+      "doi": "10.48550/arxiv.2512.03829",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "First Experimental Demonstration of Machine Learning-Based Tuning on the PSI Injector 2 Cyclotron",
+      "authors": [
+        "Sandrine Marquié"
+      ],
+      "abstract": "",
+      "date": "2025-12-03",
+      "year": 2025,
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.40799474716186523
+        },
+        {
+          "label": "Optimization & Control",
+          "score": 0.3955410122871399
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W4417032765"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-12-08T04:00:12Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-08T04:00:12Z"
+    },
+    "('', '10.18429/jacow-icalepcs2025-wesv001', 'xopt and badger a machine learning ecosystem for real time accelerator control and optimization')": {
+      "id": "doi:10.18429/jacow-icalepcs2025-wesv001",
+      "doi": "10.18429/jacow-icalepcs2025-wesv001",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Xopt and Badger: a machine learning ecosystem for real-time accelerator control and optimization",
+      "authors": [
+        "Roussel, Ryan",
+        "Kennedy,Dylan",
+        "Edelen, Auralee",
+        "Kuklev, Nikita",
+        "Miskovich,Sara",
+        "Zhang Zhe"
+      ],
+      "abstract": "",
+      "date": "2025-12-05",
+      "year": 2025,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.5988068580627441
+        },
+        {
+          "label": "Operations & Control",
+          "score": 0.5573815107345581
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7109063114"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-12-08T04:00:12Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-08T04:00:12Z"
+    },
+    "('', '10.18429/jacow-icalepcs2025-wepd077', 'long short term memory of recurrent neural network to the analysis of temperature rise on the production target in hadron experimental facility of j parc')": {
+      "id": "doi:10.18429/jacow-icalepcs2025-wepd077",
+      "doi": "10.18429/jacow-icalepcs2025-wepd077",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Long short-term memory of recurrent neural network to the analysis of temperature rise on the production target in Hadron Experimental Facility of J-PARC",
+      "authors": [
+        "Agari Keizo",
+        "Sato Yoshinori",
+        "Toyoda Akihisa",
+        "Morino Yuhei",
+        "Akiyama Hironobu"
+      ],
+      "abstract": "",
+      "date": "2025-12-05",
+      "year": 2025,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7109081007"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-12-08T04:00:12Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-08T04:00:12Z"
     }
   }
 }
