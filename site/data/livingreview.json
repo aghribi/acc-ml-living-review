@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 153,
+      "2025": 154,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -16,7 +16,7 @@
     "per_category": {
       "Tools & Libraries": 147,
       "Novel Applications": 208,
-      "Others": 28,
+      "Others": 29,
       "Anomaly Detection & Fault Prediction": 38,
       "Statistics & Trends": 63,
       "Reinforcement Learning & Autonomous Systems": 43,
@@ -121,7 +121,8 @@
       "Applied Radiation and Isotopes": 1,
       "Results in Engineering": 1,
       "International Journal of Particle Therapy": 1,
-      "International Journal of Scientific Research in Engineering and Management": 1
+      "International Journal of Scientific Research in Engineering and Management": 1,
+      "Journal of Mechanical Science and Technology": 1
     },
     "per_keyword": {
       "optimization": 62,
@@ -215,10 +216,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 43,
-      "2025-12": 9
+      "2025-12": 10
     },
-    "last_updated": "2025-12-09T03:56:22.108432+00:00",
-    "next_update": "2025-12-10T03:56:22.108432+00:00"
+    "last_updated": "2025-12-10T04:01:15.678314+00:00",
+    "next_update": "2025-12-11T04:01:15.678314+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -13050,11 +13051,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.33777305483818054
+          "score": 0.33777302503585815
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3084327280521393
+          "score": 0.30843275785446167
         }
       ],
       "keywords": [],
@@ -15095,6 +15096,44 @@
       ],
       "history": [],
       "last_updated": "2025-12-08T04:00:12Z"
+    },
+    "('', '10.1007/s12206-025-1109-1', 'health state assessment of air compressor based on stacking ensemble learning')": {
+      "id": "doi:10.1007/s12206-025-1109-1",
+      "doi": "10.1007/s12206-025-1109-1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Health state assessment of air compressor based on stacking ensemble learning",
+      "authors": [
+        "Dali Hou",
+        "Zhengrong Yang",
+        "Xiaoran Wang"
+      ],
+      "abstract": "",
+      "date": "2025-12-10",
+      "year": 2025,
+      "venue": "Journal of Mechanical Science and Technology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s12206-025-1109-1",
+        "crossref": "https://doi.org/10.1007/s12206-025-1109-1"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-10T04:00:37Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-10T04:00:37Z"
     }
   }
 }
