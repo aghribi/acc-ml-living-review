@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 154,
+      "2025": 158,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,14 +14,14 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 147,
-      "Novel Applications": 208,
+      "Tools & Libraries": 148,
+      "Novel Applications": 210,
       "Others": 29,
-      "Anomaly Detection & Fault Prediction": 38,
-      "Statistics & Trends": 63,
+      "Anomaly Detection & Fault Prediction": 39,
+      "Statistics & Trends": 65,
       "Reinforcement Learning & Autonomous Systems": 43,
       "Surrogate Models": 37,
-      "Data Management": 30,
+      "Data Management": 31,
       "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 8,
@@ -54,7 +54,7 @@
       "Journal": 6,
       "Mach.Learn.Sci.Tech.": 2,
       "Astron.Astrophys.": 1,
-      "PoS": 2,
+      "PoS": 3,
       "Europhys.News": 1,
       "Nucl.Phys.Atom.Energy": 1,
       "JACoW": 13,
@@ -122,16 +122,19 @@
       "Results in Engineering": 1,
       "International Journal of Particle Therapy": 1,
       "International Journal of Scientific Research in Engineering and Management": 1,
-      "Journal of Mechanical Science and Technology": 1
+      "Journal of Mechanical Science and Technology": 1,
+      "Springer Link (Chiba Institute of Technology)": 1,
+      "Simula SpringerBriefs on Computing": 1,
+      "International Journal of Middle East Studies": 1
     },
     "per_keyword": {
       "optimization": 62,
       "control": 65,
       "surrogate model": 19,
-      "transformer": 7,
-      "deep learning": 47,
+      "transformer": 8,
+      "deep learning": 48,
       "proton therapy": 1,
-      "beam": 123,
+      "beam": 124,
       "reinforcement learning": 33,
       "diagnostics": 19,
       "uncertainty quantification": 4,
@@ -215,11 +218,11 @@
       "2018-08": 1,
       "2018-11": 1,
       "2000-08": 1,
-      "2025-11": 43,
-      "2025-12": 10
+      "2025-11": 44,
+      "2025-12": 13
     },
-    "last_updated": "2025-12-10T04:01:15.678314+00:00",
-    "next_update": "2025-12-11T04:01:15.678314+00:00"
+    "last_updated": "2025-12-11T04:03:07.584547+00:00",
+    "next_update": "2025-12-12T04:03:07.584547+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -3725,7 +3728,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.41865530610084534
+          "score": 0.4186552166938782
         },
         {
           "label": "Novel Applications",
@@ -11437,11 +11440,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6051356792449951
+          "score": 0.6051355600357056
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.5503079891204834
+          "score": 0.5503079295158386
         },
         {
           "label": "Reviews",
@@ -13773,7 +13776,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.529990553855896
+          "score": 0.5299904942512512
         },
         {
           "label": "Tools & Libraries",
@@ -14465,7 +14468,7 @@
         },
         {
           "label": "Optimization & Control",
-          "score": 0.3611193299293518
+          "score": 0.36111944913864136
         }
       ],
       "keywords": [],
@@ -14636,11 +14639,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.40821921825408936
+          "score": 0.40821927785873413
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.25986284017562866
+          "score": 0.25986289978027344
         }
       ],
       "keywords": [],
@@ -15134,6 +15137,175 @@
       ],
       "history": [],
       "last_updated": "2025-12-10T04:00:37Z"
+    },
+    "('', '10.22323/1.489.0043', 'particle tracking in the na62 experiment')": {
+      "id": "doi:10.22323/1.489.0043",
+      "doi": "10.22323/1.489.0043",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Particle Tracking in the NA62 Experiment",
+      "authors": [
+        "Plini, Leonardo",
+        "Tinti, Gemma",
+        "Spadaro, Tommaso",
+        "Spinelli, Indro",
+        "Galasso, Fabio"
+      ],
+      "abstract": "The NA62 experiment at the Super Proton Synchrotron at CERN aims to measure the branchingratio of the ultra-rare channel 𝐾+ → 𝜋+𝜈𝜈¯ with a predicted BR = (8.6 ± 0.42) × 10^ −11. TheGigaTracker, a four-layer silicon-pixel tracker, measures the momentum and direction of incominghadron beam particles at a rate of 750 MHz. The experiment’s success relies on effectivelymanaging pile-up, temporal matching and vertex reconstruction between beam kaons and decaypions, a challenging task due to the current combinatorial track-building approach. This researchintegrates machine learning best practices in the current modeling strategies applied in the NA62experiment. In this study, we extensively evaluate different deep learning architectures for particletracking, showing the most effective approaches. In particular, we designed and implemented threedistinct strategies based on Multi-Layer Perceptron, Transformer and Graph Neural Network. Allmethods were evaluated using efficiency, purity and fake-track rate. The most promising ones werefurther assessed in an aggregation-free setup, where clustering based on ground truth informationwas removed to test their robustness in a real-world scenario.",
+      "date": "2025-12-05",
+      "year": 2025,
+      "venue": "PoS",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3821694254875183
+        },
+        {
+          "label": "Data Management",
+          "score": 0.3747723698616028
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3091596",
+        "doi": "https://doi.org/10.22323/1.489.0043"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2025-12-11T04:02:18Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-11T04:02:18Z"
+    },
+    "('', '10.1051/epjconf/202533810017/pdf', 'reconstruction of neutron spectra using silicon carbide detectors in monoenergetic fields with machine learning approach')": {
+      "id": "doi:10.1051/epjconf/202533810017/pdf",
+      "doi": "10.1051/epjconf/202533810017/pdf",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Reconstruction of Neutron Spectra Using Silicon Carbide Detectors in Monoenergetic Fields with Machine Learning Approach",
+      "authors": [
+        "Enrica Belfiore",
+        "Achment Chalil",
+        "Mehdi Ben Mosbah",
+        "Rodolphe Antoni",
+        "Olivier Llido",
+        "Abdallah Lyoussi",
+        "Christophe Destouches",
+        "Tomáš Slavíček",
+        "Andrea Šagátová",
+        "Jean-Emmanuel Groetz"
+      ],
+      "abstract": "",
+      "date": "2025-11-27",
+      "year": 2025,
+      "venue": "Springer Link (Chiba Institute of Technology)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3574141263961792
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.3363685607910156
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7110911771"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-12-11T04:02:28Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-11T04:02:28Z"
+    },
+    "('', '10.1007/978-3-032-00679-0_6', 'signal increase ratio prediction with cnns')": {
+      "id": "doi:10.1007/978-3-032-00679-0_6",
+      "doi": "10.1007/978-3-032-00679-0_6",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Signal increase ratio prediction with CNNs",
+      "authors": [
+        "Marius Zeinhofer",
+        "Kent-Andre Mardal"
+      ],
+      "abstract": "",
+      "date": "2025-12-11",
+      "year": 2025,
+      "venue": "Simula SpringerBriefs on Computing",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.2686596214771271
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-3-032-00679-0_6",
+        "crossref": "https://doi.org/10.1007/978-3-032-00679-0_6"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-11T04:02:31Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-11T04:02:31Z"
+    },
+    "('', '10.1017/s0020743825101219', 'revolutionary engineers learning politics and activism at aryamehr university of technology sepehr vakil mahdi ganjavi and mina khanlarzadeh cambridge ma mit press 2025 pp 236 50 paper isbn 9780262552196')": {
+      "id": "doi:10.1017/s0020743825101219",
+      "doi": "10.1017/s0020743825101219",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Revolutionary Engineers: Learning, Politics, and Activism at Aryamehr University of Technology. Sepehr Vakil, Mahdi Ganjavi, and Mina Khanlarzadeh (Cambridge, MA: MIT Press, 2025). Pp. 236. $50 paper. ISBN 9780262552196",
+      "authors": [
+        "Timothy Nunan"
+      ],
+      "abstract": "",
+      "date": "2025-12-10",
+      "year": 2025,
+      "venue": "International Journal of Middle East Studies",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Statistics & Trends",
+          "score": 0.27969008684158325
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.25315290689468384
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1017/s0020743825101219",
+        "crossref": "https://doi.org/10.1017/s0020743825101219"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-11T04:02:31Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-11T04:02:31Z"
     }
   }
 }
