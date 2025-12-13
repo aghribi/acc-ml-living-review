@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 158,
+      "2025": 160,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,12 +14,12 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 148,
+      "Tools & Libraries": 150,
       "Novel Applications": 210,
       "Others": 29,
       "Anomaly Detection & Fault Prediction": 39,
       "Statistics & Trends": 65,
-      "Reinforcement Learning & Autonomous Systems": 43,
+      "Reinforcement Learning & Autonomous Systems": 45,
       "Surrogate Models": 37,
       "Data Management": 31,
       "By Facility Type": 8,
@@ -99,7 +99,7 @@
       "International Journal of Structural Integrity": 1,
       "Machine Learning: Science and Technology": 1,
       "Anais do Encontro Nacional de Engenharia de Produção": 1,
-      "arXiv (Cornell University)": 2,
+      "arXiv (Cornell University)": 4,
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
       "Measurement Science and Technology": 2,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
@@ -219,10 +219,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 13
+      "2025-12": 15
     },
-    "last_updated": "2025-12-12T04:02:51.754979+00:00",
-    "next_update": "2025-12-13T04:02:51.754979+00:00"
+    "last_updated": "2025-12-13T03:53:50.733406+00:00",
+    "next_update": "2025-12-14T03:53:50.733406+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -15306,6 +15306,96 @@
       ],
       "history": [],
       "last_updated": "2025-12-11T04:02:31Z"
+    },
+    "('', '', 'photonic quantum accelerated machine learning')": {
+      "id": "hash:a067314f67dd",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Photonic Quantum-Accelerated Machine Learning",
+      "authors": [
+        "Rambach, Markus",
+        "Roy Abhishek",
+        "Gilchrist, Alexei",
+        "Sakurai, Akitada",
+        "Munro, William J.",
+        "Nemoto Kae",
+        "White, Andrew G."
+      ],
+      "abstract": "",
+      "date": "2025-12-09",
+      "year": 2025,
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.32905861735343933
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.2815614938735962
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7114820453"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-12-13T03:53:10Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-13T03:53:10Z"
+    },
+    "('', '10.48550/arxiv.2512.08318', 'photonic quantum accelerated machine learning')": {
+      "id": "doi:10.48550/arxiv.2512.08318",
+      "doi": "10.48550/arxiv.2512.08318",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Photonic Quantum-Accelerated Machine Learning",
+      "authors": [
+        "Rambach, Markus",
+        "Roy Abhishek",
+        "Gilchrist, Alexei",
+        "Sakurai, Akitada",
+        "Munro, William J.",
+        "Nemoto Kae",
+        "White, Andrew G."
+      ],
+      "abstract": "",
+      "date": "2025-12-09",
+      "year": 2025,
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.32905861735343933
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.2815614938735962
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7114764983"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-12-13T03:53:10Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-13T03:53:10Z"
     }
   }
 }
