@@ -221,8 +221,8 @@
       "2025-11": 44,
       "2025-12": 15
     },
-    "last_updated": "2025-12-15T04:09:47.694243+00:00",
-    "next_update": "2025-12-16T04:09:47.694243+00:00"
+    "last_updated": "2025-12-16T04:02:49.790306+00:00",
+    "next_update": "2025-12-17T04:02:49.790306+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -15151,7 +15151,7 @@
         "Spinelli, Indro",
         "Galasso, Fabio"
       ],
-      "abstract": "The NA62 experiment at the Super Proton Synchrotron at CERN aims to measure the branchingratio of the ultra-rare channel 𝐾+ → 𝜋+𝜈𝜈¯ with a predicted BR = (8.6 ± 0.42) × 10^ −11. TheGigaTracker, a four-layer silicon-pixel tracker, measures the momentum and direction of incominghadron beam particles at a rate of 750 MHz. The experiment’s success relies on effectivelymanaging pile-up, temporal matching and vertex reconstruction between beam kaons and decaypions, a challenging task due to the current combinatorial track-building approach. This researchintegrates machine learning best practices in the current modeling strategies applied in the NA62experiment. In this study, we extensively evaluate different deep learning architectures for particletracking, showing the most effective approaches. In particular, we designed and implemented threedistinct strategies based on Multi-Layer Perceptron, Transformer and Graph Neural Network. Allmethods were evaluated using efficiency, purity and fake-track rate. The most promising ones werefurther assessed in an aggregation-free setup, where clustering based on ground truth informationwas removed to test their robustness in a real-world scenario.",
+      "abstract": "The NA62 experiment at the Super Proton Synchrotron at CERN aims to measure the branchingratio of the ultra-rare channel $K^+ \\to\\pi^+\\nu\\bar{\\nu}$ with a predicted BR $= (8.6 \\pm 0.42) \\times 10^{-11}$. TheGigaTracker, a four-layer silicon-pixel tracker, measures the momentum and direction of incominghadron beam particles at a rate of 750 MHz. The experiment’s success relies on effectivelymanaging pile-up, temporal matching and vertex reconstruction between beam kaons and decaypions, a challenging task due to the current combinatorial track-building approach. This researchintegrates machine learning best practices in the current modeling strategies applied in the NA62 experiment. In this study, we extensively evaluate different deep learning architectures for particletracking, showing the most effective approaches. In particular, we designed and implemented threedistinct strategies based on Multi-Layer Perceptron, Transformer and Graph Neural Network. Allmethods were evaluated using efficiency, purity and fake-track rate. The most promising ones werefurther assessed in an aggregation-free setup, where clustering based on ground truth informationwas removed to test their robustness in a real-world scenario.",
       "date": "2025-12-05",
       "year": 2025,
       "venue": "PoS",
@@ -15159,11 +15159,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3821694254875183
+          "score": 0.3873022496700287
         },
         {
           "label": "Data Management",
-          "score": 0.3747723698616028
+          "score": 0.36902278661727905
         }
       ],
       "keywords": [],
@@ -15176,11 +15176,11 @@
       "sources": [
         {
           "source": "inspire",
-          "seen_at": "2025-12-11T04:02:18Z"
+          "seen_at": "2025-12-16T04:02:03Z"
         }
       ],
       "history": [],
-      "last_updated": "2025-12-11T04:02:18Z"
+      "last_updated": "2025-12-16T04:02:03Z"
     },
     "('', '10.1051/epjconf/202533810017/pdf', 'reconstruction of neutron spectra using silicon carbide detectors in monoenergetic fields with machine learning approach')": {
       "id": "doi:10.1051/epjconf/202533810017/pdf",
