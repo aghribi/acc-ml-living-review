@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 160,
+      "2025": 163,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,19 +14,19 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 150,
-      "Novel Applications": 210,
+      "Tools & Libraries": 152,
+      "Novel Applications": 213,
       "Others": 29,
       "Anomaly Detection & Fault Prediction": 39,
       "Statistics & Trends": 65,
-      "Reinforcement Learning & Autonomous Systems": 45,
-      "Surrogate Models": 37,
+      "Reinforcement Learning & Autonomous Systems": 46,
+      "Surrogate Models": 38,
       "Data Management": 31,
       "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 8,
       "Beamline Design & Simulation": 30,
-      "Beam Dynamics": 8,
+      "Beam Dynamics": 9,
       "Reviews": 17,
       "Beam Diagnostics": 13,
       "Optimization & Control": 12
@@ -35,7 +35,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 178,
+      "arXiv": 181,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -128,15 +128,15 @@
       "International Journal of Middle East Studies": 1
     },
     "per_keyword": {
-      "optimization": 62,
-      "control": 65,
-      "surrogate model": 19,
+      "optimization": 63,
+      "control": 66,
+      "surrogate model": 20,
       "transformer": 8,
-      "deep learning": 48,
+      "deep learning": 49,
       "proton therapy": 1,
-      "beam": 124,
-      "reinforcement learning": 33,
-      "diagnostics": 19,
+      "beam": 125,
+      "reinforcement learning": 34,
+      "diagnostics": 20,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
       "time series": 6,
@@ -219,10 +219,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 15
+      "2025-12": 18
     },
-    "last_updated": "2025-12-17T04:05:09.192280+00:00",
-    "next_update": "2025-12-18T04:05:09.192280+00:00"
+    "last_updated": "2025-12-18T04:01:23.994962+00:00",
+    "next_update": "2025-12-19T04:01:23.994962+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1296,11 +1296,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6375532150268555
+          "score": 0.6375529766082764
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5897581577301025
+          "score": 0.5897579789161682
         }
       ],
       "keywords": [],
@@ -4002,7 +4002,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4260273277759552
+          "score": 0.4260273575782776
         },
         {
           "label": "Statistics & Trends",
@@ -10657,7 +10657,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.552762508392334
+          "score": 0.5527625679969788
         },
         {
           "label": "Surrogate Models",
@@ -11393,7 +11393,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.611500084400177
+          "score": 0.6115000247955322
         },
         {
           "label": "Novel Applications",
@@ -11440,11 +11440,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6051355600357056
+          "score": 0.6051356792449951
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.5503079295158386
+          "score": 0.5503079891204834
         },
         {
           "label": "Reviews",
@@ -13012,11 +13012,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3004032373428345
+          "score": 0.3004032075405121
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2941646873950958
+          "score": 0.29416465759277344
         }
       ],
       "keywords": [],
@@ -13054,11 +13054,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.33777302503585815
+          "score": 0.33777305483818054
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.30843275785446167
+          "score": 0.3084327280521393
         }
       ],
       "keywords": [],
@@ -13140,7 +13140,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.30415770411491394
+          "score": 0.3041575849056244
         },
         {
           "label": "Operations & Control",
@@ -13776,7 +13776,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.5299904942512512
+          "score": 0.529990553855896
         },
         {
           "label": "Tools & Libraries",
@@ -14194,11 +14194,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.31943652033805847
+          "score": 0.3194364905357361
         },
         {
           "label": "Operations & Control",
-          "score": 0.3088069260120392
+          "score": 0.3088069558143616
         }
       ],
       "keywords": [],
@@ -14336,7 +14336,7 @@
         },
         {
           "label": "Optimization & Control",
-          "score": 0.3611193299293518
+          "score": 0.36111944913864136
         }
       ],
       "keywords": [],
@@ -14639,11 +14639,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.40821927785873413
+          "score": 0.40821921825408936
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.25986289978027344
+          "score": 0.25986284017562866
         }
       ],
       "keywords": [],
@@ -15248,7 +15248,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2686596214771271
+          "score": 0.2686595916748047
         }
       ],
       "keywords": [],
@@ -15330,11 +15330,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905861735343933
+          "score": 0.32905858755111694
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2815614938735962
+          "score": 0.2815614342689514
         }
       ],
       "keywords": [],
@@ -15375,11 +15375,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905861735343933
+          "score": 0.32905858755111694
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2815614938735962
+          "score": 0.2815614342689514
         }
       ],
       "keywords": [],
@@ -15396,6 +15396,143 @@
       ],
       "history": [],
       "last_updated": "2025-12-13T03:53:10Z"
+    },
+    "('2512.15521', '', 'autonomous pressure control in muvacas via deep reinforcement learning and deep learning surrogate models')": {
+      "id": "arxiv:2512.15521",
+      "doi": null,
+      "arxiv_id": "2512.15521",
+      "inspire_id": null,
+      "title": "Autonomous Pressure Control in MuVacAS via Deep Reinforcement Learning and Deep Learning Surrogate Models",
+      "authors": [
+        "Guillermo Rodriguez-Llorente",
+        "Galo Gallardo",
+        "Rodrigo Morant Navascués",
+        "Nikita Khvatkin Petrovsky",
+        "Anderson Sabogal",
+        "Roberto Gómez-Espinosa Martín"
+      ],
+      "abstract": "The development of nuclear fusion requires materials that can withstand extreme conditions. The IFMIF-DONES facility, a high-power particle accelerator, is being designed to qualify these materials. A critical testbed for its development is the MuVacAS prototype, which replicates the final segment of the accelerator beamline. Precise regulation of argon gas pressure within its ultra-high vacuum chamber is vital for this task. This work presents a fully data-driven approach for autonomous pressure control. A Deep Learning Surrogate Model, trained on real operational data, emulates the dynamics of the argon injection system. This high-fidelity digital twin then serves as a fast-simulation environment to train a Deep Reinforcement Learning agent. The results demonstrate that the agent successfully learns a control policy that maintains gas pressure within strict operational limits despite dynamic disturbances. This approach marks a significant step toward the intelligent, autonomous control systems required for the demanding next-generation particle accelerator facilities.",
+      "date": "2025-12-17",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4600822925567627
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.45866742730140686
+        },
+        {
+          "label": "Surrogate Models",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2512.15521v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-12-18T03:57:06Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-18T03:57:06Z"
+    },
+    "('2512.15022', '', 'machine learning based prediction of magnet errors in storage ring light sources')": {
+      "id": "arxiv:2512.15022",
+      "doi": null,
+      "arxiv_id": "2512.15022",
+      "inspire_id": null,
+      "title": "Machine learning-based prediction of magnet errors in storage ring light sources",
+      "authors": [
+        "Jianhao Xu"
+      ],
+      "abstract": "Magnet errors in storage rings significantly degrade beam performance, impacting the brightness and stability of the light source. Therefore, beam-based correction is crucial for the safe operation of machines and the stability of radiated photons. Unlike traditional correction methods such as linear optics from closed orbit, this paper proposes a machine learning (ML) framework to directly predict quadrupole/sextupole gradient errors and misalignment from beam position monitor-measured optics functions and closed-orbit distortion data. Based on a four-bend achromat storage ring lattice, we generate training datasets through ELEGANT numerical simulations and compare regression performance of Linear Regression, Support Vector Machine, Radial Basis Function Neural Network and Densely Connected Convolutional Network. Results demonstrate that ML models can effectively predict magnet errors and reconstruct ideal optics. This approach offers a novel strategy for accelerating storage ring commissioning and optimization, online diagnostics, and dynamic compensation for next-generation diffraction-limited rings.",
+      "date": "2025-12-17",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.31978079676628113
+        },
+        {
+          "label": "Beam Dynamics",
+          "score": 0.2705666422843933
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2512.15022v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-12-18T03:57:06Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-18T03:57:06Z"
+    },
+    "('2512.15230', '', 'colliderml the first release of an opendatadetector high luminosity physics benchmark dataset')": {
+      "id": "arxiv:2512.15230",
+      "doi": null,
+      "arxiv_id": "2512.15230",
+      "inspire_id": null,
+      "title": "ColliderML: The First Release of an OpenDataDetector High-Luminosity Physics Benchmark Dataset",
+      "authors": [
+        "Doğa Elitez",
+        "Paul Gessinger",
+        "Daniel Murnane",
+        "Marcus Selchou Raaholt",
+        "Andreas Salzburger",
+        "Stine Kofoed Skov",
+        "Andreas Stefl",
+        "Anna Zaborowska"
+      ],
+      "abstract": "We introduce ColliderML - a large, open, experiment-agnostic dataset of fully simulated and digitised proton-proton collisions in High-Luminosity Large Hadron Collider conditions ($\\sqrt{s}=14$ TeV, mean pile-up $μ= 200$). ColliderML provides one million events across ten Standard Model and Beyond Standard Model processes, plus extensive single-particle samples, all produced with modern next-to-leading order matrix element calculation and showering, realistic per-event pile-up overlay, a validated OpenDataDetector geometry, and standard reconstructions. The release fills a major gap for machine learning (ML) research on detector-level data, provided on the ML-friendly Hugging Face platform. We present physics coverage and the generation, simulation, digitisation and reconstruction pipeline, describe format and access, and initial collider physics benchmarks.",
+      "date": "2025-12-17",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.42370539903640747
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.3880927860736847
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2512.15230v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-12-18T03:58:24Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-18T03:58:24Z"
     }
   }
 }
