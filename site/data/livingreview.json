@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 163,
+      "2025": 165,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,19 +14,19 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 152,
-      "Novel Applications": 213,
+      "Tools & Libraries": 153,
+      "Novel Applications": 215,
       "Others": 29,
       "Anomaly Detection & Fault Prediction": 39,
       "Statistics & Trends": 65,
-      "Reinforcement Learning & Autonomous Systems": 46,
-      "Surrogate Models": 38,
+      "Reinforcement Learning & Autonomous Systems": 47,
+      "Surrogate Models": 39,
       "Data Management": 31,
       "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 8,
       "Beamline Design & Simulation": 30,
-      "Beam Dynamics": 9,
+      "Beam Dynamics": 10,
       "Reviews": 17,
       "Beam Diagnostics": 13,
       "Optimization & Control": 12
@@ -35,7 +35,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 181,
+      "arXiv": 183,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -128,15 +128,15 @@
       "International Journal of Middle East Studies": 1
     },
     "per_keyword": {
-      "optimization": 63,
-      "control": 66,
-      "surrogate model": 20,
+      "optimization": 64,
+      "control": 67,
+      "surrogate model": 21,
       "transformer": 8,
-      "deep learning": 49,
+      "deep learning": 50,
       "proton therapy": 1,
-      "beam": 125,
-      "reinforcement learning": 34,
-      "diagnostics": 20,
+      "beam": 126,
+      "reinforcement learning": 35,
+      "diagnostics": 21,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
       "time series": 6,
@@ -219,10 +219,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 18
+      "2025-12": 20
     },
-    "last_updated": "2025-12-18T04:01:23.994962+00:00",
-    "next_update": "2025-12-19T04:01:23.994962+00:00"
+    "last_updated": "2025-12-19T04:02:26.769473+00:00",
+    "next_update": "2025-12-20T04:02:26.769473+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -2960,7 +2960,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3331418037414551
+          "score": 0.33314186334609985
         },
         {
           "label": "Tools & Libraries",
@@ -6408,7 +6408,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.2780262529850006
+          "score": 0.27802616357803345
         }
       ],
       "keywords": [],
@@ -7239,11 +7239,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.41093188524246216
+          "score": 0.4109318256378174
         },
         {
           "label": "Novel Applications",
-          "score": 0.40798407793045044
+          "score": 0.4079841375350952
         }
       ],
       "keywords": [],
@@ -10172,11 +10172,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5358818769454956
+          "score": 0.5358819365501404
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4673149287700653
+          "score": 0.4673148989677429
         },
         {
           "label": "Reviews",
@@ -11987,11 +11987,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.347952663898468
+          "score": 0.3479526937007904
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.26563793420791626
+          "score": 0.26563799381256104
         }
       ],
       "keywords": [],
@@ -15533,6 +15533,99 @@
       ],
       "history": [],
       "last_updated": "2025-12-18T03:58:24Z"
+    },
+    "('', '', 'machine learning based prediction of magnet errors in storage ring light sources')": {
+      "id": "hash:2efbb4f47767",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning-based prediction of magnet errors in storage ring light sources",
+      "authors": [
+        "Xu, Jianhao"
+      ],
+      "abstract": "Magnet errors in storage rings significantly degrade beam performance, impacting the brightness and stability of the light source. Therefore, beam-based correction is crucial for the safe operation of machines and the stability of radiated photons. Unlike traditional correction methods such as linear optics from closed orbit, this paper proposes a machine learning (ML) framework to directly predict quadrupole/sextupole gradient errors and misalignment from beam position monitor-measured optics functions and closed-orbit distortion data. Based on a four-bend achromat storage ring lattice, we generate training datasets through ELEGANT numerical simulations and compare regression performance of Linear Regression, Support Vector Machine, Radial Basis Function Neural Network and Densely Connected Convolutional Network. Results demonstrate that ML models can effectively predict magnet errors and reconstruct ideal optics. This approach offers a novel strategy for accelerating storage ring commissioning and optimization, online diagnostics, and dynamic compensation for next-generation diffraction-limited rings.",
+      "date": "2025-12-17",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.31978079676628113
+        },
+        {
+          "label": "Beam Dynamics",
+          "score": 0.2705666422843933
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3093667",
+        "arxiv": "https://arxiv.org/abs/2512.15022"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2025-12-19T04:01:36Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-19T04:01:36Z"
+    },
+    "('', '', 'autonomous pressure control in muvacas via deep reinforcement learning and deep learning surrogate models')": {
+      "id": "hash:7e06da91ff13",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Autonomous Pressure Control in MuVacAS via Deep Reinforcement Learning and Deep Learning Surrogate Models",
+      "authors": [
+        "Rodriguez-Llorente, Guillermo",
+        "Gallardo, Galo",
+        "Navascués, Rodrigo Morant",
+        "Petrovsky, Nikita Khvatkin",
+        "Sabogal, Anderson",
+        "Martín, Roberto Gómez-Espinosa"
+      ],
+      "abstract": "The development of nuclear fusion requires materials that can withstand extreme conditions. The IFMIF-DONES facility, a high-power particle accelerator, is being designed to qualify these materials. A critical testbed for its development is the MuVacAS prototype, which replicates the final segment of the accelerator beamline. Precise regulation of argon gas pressure within its ultra-high vacuum chamber is vital for this task. This work presents a fully data-driven approach for autonomous pressure control. A Deep Learning Surrogate Model, trained on real operational data, emulates the dynamics of the argon injection system. This high-fidelity digital twin then serves as a fast-simulation environment to train a Deep Reinforcement Learning agent. The results demonstrate that the agent successfully learns a control policy that maintains gas pressure within strict operational limits despite dynamic disturbances. This approach marks a significant step toward the intelligent, autonomous control systems required for the demanding next-generation particle accelerator facilities.",
+      "date": "2025-12-17",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4600822925567627
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.45866742730140686
+        },
+        {
+          "label": "Surrogate Models",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3093734",
+        "arxiv": "https://arxiv.org/abs/2512.15521"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2025-12-19T04:01:36Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-19T04:01:36Z"
     }
   }
 }
