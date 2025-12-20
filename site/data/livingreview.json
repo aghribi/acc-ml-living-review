@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 165,
+      "2025": 169,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,20 +14,20 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 153,
+      "Tools & Libraries": 154,
       "Novel Applications": 215,
-      "Others": 29,
+      "Others": 31,
       "Anomaly Detection & Fault Prediction": 39,
       "Statistics & Trends": 65,
-      "Reinforcement Learning & Autonomous Systems": 47,
+      "Reinforcement Learning & Autonomous Systems": 48,
       "Surrogate Models": 39,
-      "Data Management": 31,
+      "Data Management": 32,
       "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 8,
       "Beamline Design & Simulation": 30,
       "Beam Dynamics": 10,
-      "Reviews": 17,
+      "Reviews": 18,
       "Beam Diagnostics": 13,
       "Optimization & Control": 12
     },
@@ -35,7 +35,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 183,
+      "arXiv": 182,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -51,7 +51,7 @@
       "Supercond.Sci.Technol.": 1,
       "Astrophys.J.": 1,
       "Nuovo Cim.C": 1,
-      "Journal": 6,
+      "Journal": 7,
       "Mach.Learn.Sci.Tech.": 2,
       "Astron.Astrophys.": 1,
       "PoS": 3,
@@ -125,14 +125,18 @@
       "Journal of Mechanical Science and Technology": 1,
       "Springer Link (Chiba Institute of Technology)": 1,
       "Simula SpringerBriefs on Computing": 1,
-      "International Journal of Middle East Studies": 1
+      "International Journal of Middle East Studies": 1,
+      "Berufsbildung": 1,
+      "Computer Applications in Engineering Education": 1,
+      "Scientific Reports": 1,
+      "Science and Technology of Engineering, Chemistry and Environmental Protection": 1
     },
     "per_keyword": {
-      "optimization": 64,
-      "control": 67,
+      "optimization": 65,
+      "control": 68,
       "surrogate model": 21,
-      "transformer": 8,
-      "deep learning": 50,
+      "transformer": 9,
+      "deep learning": 51,
       "proton therapy": 1,
       "beam": 126,
       "reinforcement learning": 35,
@@ -219,10 +223,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 20
+      "2025-12": 24
     },
-    "last_updated": "2025-12-19T04:02:26.769473+00:00",
-    "next_update": "2025-12-20T04:02:26.769473+00:00"
+    "last_updated": "2025-12-20T03:54:39.275784+00:00",
+    "next_update": "2025-12-21T03:54:39.275784+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1897,11 +1901,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5431400537490845
+          "score": 0.5431399941444397
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4682736396789551
+          "score": 0.4682735502719879
         },
         {
           "label": "Reviews",
@@ -3351,11 +3355,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4889257550239563
+          "score": 0.4889258146286011
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.46692079305648804
+          "score": 0.46692073345184326
         }
       ],
       "keywords": [],
@@ -11987,11 +11991,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.3479526937007904
+          "score": 0.347952663898468
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.26563799381256104
+          "score": 0.26563793420791626
         }
       ],
       "keywords": [],
@@ -12715,7 +12719,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4437161087989807
+          "score": 0.4437161684036255
         },
         {
           "label": "Tools & Libraries",
@@ -13398,7 +13402,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4003908336162567
+          "score": 0.4003908634185791
         },
         {
           "label": "Statistics & Trends",
@@ -15595,8 +15599,8 @@
       "abstract": "The development of nuclear fusion requires materials that can withstand extreme conditions. The IFMIF-DONES facility, a high-power particle accelerator, is being designed to qualify these materials. A critical testbed for its development is the MuVacAS prototype, which replicates the final segment of the accelerator beamline. Precise regulation of argon gas pressure within its ultra-high vacuum chamber is vital for this task. This work presents a fully data-driven approach for autonomous pressure control. A Deep Learning Surrogate Model, trained on real operational data, emulates the dynamics of the argon injection system. This high-fidelity digital twin then serves as a fast-simulation environment to train a Deep Reinforcement Learning agent. The results demonstrate that the agent successfully learns a control policy that maintains gas pressure within strict operational limits despite dynamic disturbances. This approach marks a significant step toward the intelligent, autonomous control systems required for the demanding next-generation particle accelerator facilities.",
       "date": "2025-12-17",
       "year": 2025,
-      "venue": "arXiv",
-      "status": "preprint",
+      "venue": "Journal",
+      "status": "published",
       "categories": [
         {
           "label": "Novel Applications",
@@ -15621,11 +15625,168 @@
       "sources": [
         {
           "source": "inspire",
-          "seen_at": "2025-12-19T04:01:36Z"
+          "seen_at": "2025-12-20T03:53:40Z"
         }
       ],
       "history": [],
-      "last_updated": "2025-12-19T04:01:36Z"
+      "last_updated": "2025-12-20T03:53:40Z"
+    },
+    "('', '10.3278/bb2504w016', 'bb magazin international frames of learning and integration')": {
+      "id": "doi:10.3278/bb2504w016",
+      "doi": "10.3278/bb2504w016",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "bb-Magazin international. Frames of Learning and Integration",
+      "authors": [
+        "Ali Osman"
+      ],
+      "abstract": "",
+      "date": "2025-12-20",
+      "year": 2025,
+      "venue": "Berufsbildung",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.3278/bb2504w016",
+        "crossref": "https://doi.org/10.3278/bb2504w016"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-20T03:53:59Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-20T03:53:59Z"
+    },
+    "('', '10.1002/cae.70128', 'enhancing learning outcomes in an undergraduate course of smart construction major through the application of a simulation tool')": {
+      "id": "doi:10.1002/cae.70128",
+      "doi": "10.1002/cae.70128",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Enhancing Learning Outcomes in an Undergraduate Course of Smart Construction Major Through the Application of a Simulation Tool",
+      "authors": [
+        "Linlin Zhao",
+        "Zhansheng Liu",
+        "XueFeng Zhao",
+        "Yan Bao"
+      ],
+      "abstract": "<jats:title>ABSTRACT</jats:title>\n                  <jats:p>With the development of digitalization and the advent of Industry 4.0, education in Smart Construction has undergone great revamping. Engineering System Analysis and Optimization (ESAO) is a cross‐disciplinary undergraduate course under the curricula of the Smart Construction Major. However, due to its difficulty and poor linkage to real project‐related problems, students lack interest in learning it. This study proposes developing a simulation program that is integrated into the course to improve learning effectiveness. The simulation program includes the following two models: (1) A subway station model that helps to understand the design and functions of a real subway station, the pedestrian flow in the subway station, and the evacuation pattern of pedestrians when a fire hazard occurs; (2) A road intersection model that was used to illustrate the functions of the intersection and explain how to select the optimal parameters to enhance the vehicle pass‐through rate. In order to assess the effects of the simulation program, the study used both quantitative and qualitative analyses. In the quantitative analysis, the participants were assigned to two groups: (1) the experimental group and (2) the control group by comparing their exam scores. Additionally, the qualitative analysis, including interviews and casual conversations, was adopted to attain students' opinions about the simulation program. Based on the analysis results, the simulation program has been demonstrated to increase the competence, confidence, and interest of students when compared to conventional teaching approaches.</jats:p>",
+      "date": "2025-12-19",
+      "year": 2025,
+      "venue": "Computer Applications in Engineering Education",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.26937243342399597
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1002/cae.70128",
+        "crossref": "https://doi.org/10.1002/cae.70128"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-20T03:53:59Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-20T03:53:59Z"
+    },
+    "('', '10.1038/s41598-025-27964-0', 'enhancing sustainable concrete using waste ceramic powder and natural pozzolan through experimental and machine learning approaches')": {
+      "id": "doi:10.1038/s41598-025-27964-0",
+      "doi": "10.1038/s41598-025-27964-0",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Enhancing sustainable concrete using waste ceramic powder and natural pozzolan through experimental and machine learning approaches",
+      "authors": [
+        "Danial Nasr",
+        "Rezvan Babagoli",
+        "Amirhossein Khaghani Dehaghani"
+      ],
+      "abstract": "",
+      "date": "2025-12-19",
+      "year": 2025,
+      "venue": "Scientific Reports",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1038/s41598-025-27964-0",
+        "crossref": "https://doi.org/10.1038/s41598-025-27964-0"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-20T03:53:59Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-20T03:53:59Z"
+    },
+    "('', '10.61173/p3eb3n60', 'research and analysis of railway obstacle detection technology based on deep learning')": {
+      "id": "doi:10.61173/p3eb3n60",
+      "doi": "10.61173/p3eb3n60",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Research and Analysis of Railway Obstacle Detection Technology Based on Deep Learning",
+      "authors": [
+        "Zhaoyun Chen"
+      ],
+      "abstract": "<jats:p>The advancement of intelligent detection technologies has made highly reliable obstacle identification a critical factor in enhancing the operational safety of railways. Nevertheless, traditional detection methods (such as railside infrared counters and vehicle-mounted millimeterwave radars) are limited by inherent defects such as strong environmental sensitivity, high detection rate of small targets and no classification ability, making it difficult to meet the safety needs in complex scenarios. In recent years, deep learning has promoted the transition of railway obstacle detection technology to intelligence with its multimodal feature autonomous extraction and dynamic scene modeling capabilities. This review offers a thorough analysis of the historical development and advancements in railway obstacle detection methods, highlighting the transformative advances brought about by deep learningbased models, comprehensively compares the application characteristics and scenarios of various technologies, and discusses the application and evolution of deep learning in the two core tasks of target recognition and semantic segmentation, covering representative models such as convolutional neural network and Transformer. This article also uses the analysis of public data sets to help the new generation of railway obstacle detection technology to provide a theoretical basis and also facilitate researchers to quickly carry out experimental verification.</jats:p>",
+      "date": "2025-12-19",
+      "year": 2025,
+      "venue": "Science and Technology of Engineering, Chemistry and Environmental Protection",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Data Management",
+          "score": 0.2565288245677948
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.61173/p3eb3n60",
+        "crossref": "https://doi.org/10.61173/p3eb3n60"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-20T03:53:59Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-20T03:53:59Z"
     }
   }
 }
