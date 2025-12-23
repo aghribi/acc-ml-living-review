@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 169,
+      "2025": 172,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,10 +14,10 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 154,
-      "Novel Applications": 215,
-      "Others": 31,
-      "Anomaly Detection & Fault Prediction": 39,
+      "Tools & Libraries": 155,
+      "Novel Applications": 216,
+      "Others": 32,
+      "Anomaly Detection & Fault Prediction": 40,
       "Statistics & Trends": 65,
       "Reinforcement Learning & Autonomous Systems": 48,
       "Surrogate Models": 39,
@@ -28,7 +28,7 @@
       "Beamline Design & Simulation": 30,
       "Beam Dynamics": 10,
       "Reviews": 18,
-      "Beam Diagnostics": 13,
+      "Beam Diagnostics": 14,
       "Optimization & Control": 12
     },
     "per_venue/journal": {
@@ -96,10 +96,10 @@
       "Frontiers of Computer Science": 1,
       "Springer Science and Business Media LLC": 2,
       "Circulation": 1,
-      "International Journal of Structural Integrity": 1,
+      "International Journal of Structural Integrity": 2,
       "Machine Learning: Science and Technology": 1,
       "Anais do Encontro Nacional de Engenharia de Produção": 1,
-      "arXiv (Cornell University)": 4,
+      "arXiv (Cornell University)": 5,
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
       "Measurement Science and Technology": 2,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
@@ -129,7 +129,8 @@
       "Berufsbildung": 1,
       "Computer Applications in Engineering Education": 1,
       "Scientific Reports": 1,
-      "Science and Technology of Engineering, Chemistry and Environmental Protection": 1
+      "Science and Technology of Engineering, Chemistry and Environmental Protection": 1,
+      "Вісник науки та освіти": 1
     },
     "per_keyword": {
       "optimization": 65,
@@ -223,10 +224,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 24
+      "2025-12": 27
     },
-    "last_updated": "2025-12-22T04:09:52.061375+00:00",
-    "next_update": "2025-12-23T04:09:52.061375+00:00"
+    "last_updated": "2025-12-23T04:05:01.081634+00:00",
+    "next_update": "2025-12-24T04:05:01.081634+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -15787,6 +15788,127 @@
       ],
       "history": [],
       "last_updated": "2025-12-20T03:53:59Z"
+    },
+    "('', '10.48550/arxiv.2512.05906', 'eventqueues autodifferentiable spike event queues for brain simulation on ai accelerators')": {
+      "id": "doi:10.48550/arxiv.2512.05906",
+      "doi": "10.48550/arxiv.2512.05906",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "EventQueues: Autodifferentiable spike event queues for brain simulation on AI accelerators",
+      "authors": [
+        "Amirreza Movahedin",
+        "Said Hamdioui"
+      ],
+      "abstract": "",
+      "date": "2025-12-05",
+      "year": 2025,
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.5077972412109375
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.48010945320129395
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W4417144686"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2025-12-23T04:04:19Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-23T04:04:19Z"
+    },
+    "('', '10.52058/2786-6165-2025-11(41)-2208-2222', 'використання інструментальних засобів e learning для підтримки експериментальних досліджень у steam освіті')": {
+      "id": "doi:10.52058/2786-6165-2025-11(41)-2208-2222",
+      "doi": "10.52058/2786-6165-2025-11(41)-2208-2222",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "ВИКОРИСТАННЯ ІНСТРУМЕНТАЛЬНИХ ЗАСОБІВ E-LEARNING ДЛЯ ПІДТРИМКИ ЕКСПЕРИМЕНТАЛЬНИХ ДОСЛІДЖЕНЬ У STEAM-ОСВІТІ",
+      "authors": [
+        "Ганна Кашина",
+        "Юрій Кутафін",
+        "Олексій Самойленко",
+        "Сергій Брезецький"
+      ],
+      "abstract": "",
+      "date": "2025-12-23",
+      "year": 2025,
+      "venue": "Вісник науки та освіти",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.52058/2786-6165-2025-11(41)-2208-2222",
+        "crossref": "https://doi.org/10.52058/2786-6165-2025-11(41)-2208-2222"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-23T04:04:20Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-23T04:04:20Z"
+    },
+    "('', '10.1108/ijsi-04-2025-0088', 'presenting new approaches based on zhao atlas marks distribution and machine learning for detecting structural damage in steel beams')": {
+      "id": "doi:10.1108/ijsi-04-2025-0088",
+      "doi": "10.1108/ijsi-04-2025-0088",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Presenting new approaches based on Zhao–Atlas–Marks distribution and machine learning for detecting structural damage in steel beams",
+      "authors": [
+        "Hamid Reza Ahmadi",
+        "Hesam Hooshyar",
+        "Mahmoud Bayat"
+      ],
+      "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>In this study, a new method for identifying damage in steel beams is presented. Ease of use, high accuracy, calculation volume reduction, output-only and reduction of health monitoring costs have been the main criteria in presenting the new methodology.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design/methodology/approach</jats:title>\n                    <jats:p>A new methodology for identifying damages in steel beams is presented based on the use of a Cone-Shape kernel distribution and machine learning. This research helps to improve the accuracy and ability to detect damage in steel beams.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Findings</jats:title>\n                    <jats:p>To evaluate and ensure the performance of the proposed method, the results of k-fold as well as the results of the percentages of damage obtained from the test scenario were used. The results showed that all introduced machine learning algorithms have significant accuracy in identifying damage. By comparing the results obtained from all machine algorithms, it was found that the MLP Neural Network algorithm has a higher detection accuracy than other algorithms in identifying the intensity and location of damages. The very high capability of the presented methodology in damage detection is such that it detects the presence of several damages at the same time with different severities with very high accuracy.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Originality/value</jats:title>\n                    <jats:p>The use of bilinear time–frequency distribution combined with machine learning algorithms is a completely new methodology for damage detection in steel beams. The capability of the presented methodology in damage detection is very remarkable. In such a way that the methodology can detect the presence of several damages at the same time with different severities with very high accuracy.</jats:p>\n                  </jats:sec>",
+      "date": "2025-12-23",
+      "year": 2025,
+      "venue": "International Journal of Structural Integrity",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.3335789144039154
+        },
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.3238597512245178
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1108/ijsi-04-2025-0088",
+        "crossref": "https://doi.org/10.1108/ijsi-04-2025-0088"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-23T04:04:20Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-23T04:04:20Z"
     }
   }
 }
