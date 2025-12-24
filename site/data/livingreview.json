@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 172,
+      "2025": 174,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -16,10 +16,10 @@
     "per_category": {
       "Tools & Libraries": 155,
       "Novel Applications": 216,
-      "Others": 32,
+      "Others": 33,
       "Anomaly Detection & Fault Prediction": 40,
       "Statistics & Trends": 65,
-      "Reinforcement Learning & Autonomous Systems": 48,
+      "Reinforcement Learning & Autonomous Systems": 49,
       "Surrogate Models": 39,
       "Data Management": 32,
       "By Facility Type": 8,
@@ -29,7 +29,7 @@
       "Beam Dynamics": 10,
       "Reviews": 18,
       "Beam Diagnostics": 14,
-      "Optimization & Control": 12
+      "Optimization & Control": 13
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
@@ -130,7 +130,9 @@
       "Computer Applications in Engineering Education": 1,
       "Scientific Reports": 1,
       "Science and Technology of Engineering, Chemistry and Environmental Protection": 1,
-      "Вісник науки та освіти": 1
+      "Вісник науки та освіти": 1,
+      "Real-Time Artificial Intelligence (AI)": 1,
+      "Transportmetrica A: Transport Science": 1
     },
     "per_keyword": {
       "optimization": 65,
@@ -140,7 +142,7 @@
       "deep learning": 51,
       "proton therapy": 1,
       "beam": 126,
-      "reinforcement learning": 35,
+      "reinforcement learning": 36,
       "diagnostics": 21,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
@@ -224,10 +226,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 27
+      "2025-12": 29
     },
-    "last_updated": "2025-12-23T04:05:01.081634+00:00",
-    "next_update": "2025-12-24T04:05:01.081634+00:00"
+    "last_updated": "2025-12-24T04:02:36.893532+00:00",
+    "next_update": "2025-12-25T04:02:36.893532+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -15909,6 +15911,87 @@
       ],
       "history": [],
       "last_updated": "2025-12-23T04:04:20Z"
+    },
+    "('', '10.1201/9781998511358-3', 'machine deep and reinforcement learning algorithms and applications')": {
+      "id": "doi:10.1201/9781998511358-3",
+      "doi": "10.1201/9781998511358-3",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine, Deep, and Reinforcement Learning Algorithms and Applications",
+      "authors": [
+        "K. Gowri",
+        "B. L. Shivakumar"
+      ],
+      "abstract": "",
+      "date": "2025-12-24",
+      "year": 2025,
+      "venue": "Real-Time Artificial Intelligence (AI)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.5003046989440918
+        },
+        {
+          "label": "Optimization & Control",
+          "score": 0.36328351497650146
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1201/9781998511358-3",
+        "crossref": "https://doi.org/10.1201/9781998511358-3"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-24T04:01:57Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-24T04:01:57Z"
+    },
+    "('', '10.1080/23249935.2025.2605210', 'multi task learning based high speed railway inflow and outflow prediction with large language models')": {
+      "id": "doi:10.1080/23249935.2025.2605210",
+      "doi": "10.1080/23249935.2025.2605210",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Multi-task learning-based high-speed railway inflow and outflow prediction with large language models",
+      "authors": [
+        "Xiaopei Hao",
+        "Xiaohui Zhong",
+        "Jian Yang",
+        "Siqi Sun",
+        "Jinlei Zhang"
+      ],
+      "abstract": "",
+      "date": "2025-12-23",
+      "year": 2025,
+      "venue": "Transportmetrica A: Transport Science",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1080/23249935.2025.2605210",
+        "crossref": "https://doi.org/10.1080/23249935.2025.2605210"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-24T04:01:57Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-24T04:01:57Z"
     }
   }
 }
