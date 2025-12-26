@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 174,
+      "2025": 175,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -14,10 +14,10 @@
       "2000": 1
     },
     "per_category": {
-      "Tools & Libraries": 155,
+      "Tools & Libraries": 156,
       "Novel Applications": 216,
       "Others": 33,
-      "Anomaly Detection & Fault Prediction": 40,
+      "Anomaly Detection & Fault Prediction": 41,
       "Statistics & Trends": 65,
       "Reinforcement Learning & Autonomous Systems": 49,
       "Surrogate Models": 39,
@@ -27,7 +27,7 @@
       "Operations & Control": 8,
       "Beamline Design & Simulation": 30,
       "Beam Dynamics": 10,
-      "Reviews": 18,
+      "Reviews": 19,
       "Beam Diagnostics": 14,
       "Optimization & Control": 13
     },
@@ -132,7 +132,8 @@
       "Science and Technology of Engineering, Chemistry and Environmental Protection": 1,
       "Вісник науки та освіти": 1,
       "Real-Time Artificial Intelligence (AI)": 1,
-      "Transportmetrica A: Transport Science": 1
+      "Transportmetrica A: Transport Science": 1,
+      "Development and Learning in Organizations: An International Journal": 1
     },
     "per_keyword": {
       "optimization": 65,
@@ -226,10 +227,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 29
+      "2025-12": 30
     },
-    "last_updated": "2025-12-25T04:04:49.037840+00:00",
-    "next_update": "2025-12-26T04:04:49.037840+00:00"
+    "last_updated": "2025-12-26T04:03:01.584444+00:00",
+    "next_update": "2025-12-27T04:03:01.584444+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -5694,7 +5695,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.41688764095306396
+          "score": 0.41688770055770874
         }
       ],
       "keywords": [],
@@ -7159,11 +7160,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.42241740226745605
+          "score": 0.42241737246513367
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.42106786370277405
+          "score": 0.4210679233074188
         }
       ],
       "keywords": [],
@@ -15992,6 +15993,48 @@
       ],
       "history": [],
       "last_updated": "2025-12-24T04:01:57Z"
+    },
+    "('', '10.1108/dlo-12-2025-0441', 'optimizing request for information rfi prioritization with machine learning')": {
+      "id": "doi:10.1108/dlo-12-2025-0441",
+      "doi": "10.1108/dlo-12-2025-0441",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Optimizing request for information (RFI) prioritization with machine learning",
+      "authors": [],
+      "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>This paper aims to review the latest management developments across the globe and pinpoint practical implications from cutting-edge research and case studies.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design/methodology/approach</jats:title>\n                    <jats:p>This briefing is prepared by an independent writer who adds their own impartial comments and places the articles in context.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Findings</jats:title>\n                    <jats:p>As conflict resolution and communication tools, RFI’s are key for tackling issues before they grow, especially in complex projects such as the construction industry. In the article by Yilmaz et al. (2025), the authors found empirically that machine learning models enable the prediction of RFI resolution times with high accuracy, allowing for prioritization of the largest tickets and reducing backlog for optimal resolution times and reduced costs.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Originality/value</jats:title>\n                    <jats:p>The briefing saves busy executives, strategists and researchers hours of reading time by selecting only the very best, most pertinent information and presenting it in a condensed and easy-to-digest format.</jats:p>\n                  </jats:sec>",
+      "date": "2025-12-26",
+      "year": 2025,
+      "venue": "Development and Learning in Organizations: An International Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.2594786584377289
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1108/dlo-12-2025-0441",
+        "crossref": "https://doi.org/10.1108/dlo-12-2025-0441"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-26T04:02:23Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-26T04:02:23Z"
     }
   }
 }
