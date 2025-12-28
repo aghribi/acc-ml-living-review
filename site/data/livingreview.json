@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 175,
+      "2025": 176,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -19,9 +19,9 @@
       "Others": 33,
       "Anomaly Detection & Fault Prediction": 41,
       "Statistics & Trends": 65,
-      "Reinforcement Learning & Autonomous Systems": 49,
+      "Reinforcement Learning & Autonomous Systems": 50,
       "Surrogate Models": 39,
-      "Data Management": 32,
+      "Data Management": 33,
       "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 8,
@@ -91,7 +91,7 @@
       "Institute of Electrical and Electronics Engineers (IEEE)": 1,
       "Arabian Journal for Science and Engineering": 1,
       "Proceedings of the International Workshop on Application-driven Point Cloud Processing and 3D Vision": 1,
-      "Lecture Notes in Networks and Systems": 5,
+      "Lecture Notes in Networks and Systems": 6,
       "Applied and Computational Engineering": 1,
       "Frontiers of Computer Science": 1,
       "Springer Science and Business Media LLC": 2,
@@ -136,14 +136,14 @@
       "Development and Learning in Organizations: An International Journal": 1
     },
     "per_keyword": {
-      "optimization": 65,
+      "optimization": 66,
       "control": 68,
       "surrogate model": 21,
       "transformer": 9,
       "deep learning": 51,
       "proton therapy": 1,
       "beam": 126,
-      "reinforcement learning": 36,
+      "reinforcement learning": 37,
       "diagnostics": 21,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
@@ -227,10 +227,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 30
+      "2025-12": 31
     },
-    "last_updated": "2025-12-27T04:00:21.413578+00:00",
-    "next_update": "2025-12-28T04:00:21.413578+00:00"
+    "last_updated": "2025-12-28T04:12:58.249409+00:00",
+    "next_update": "2025-12-29T04:12:58.249409+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -16035,6 +16035,48 @@
       ],
       "history": [],
       "last_updated": "2025-12-26T04:02:23Z"
+    },
+    "('', '10.1007/978-981-95-0684-2_14', 'sql query optimization using reinforcement learning for low power computing systems')": {
+      "id": "doi:10.1007/978-981-95-0684-2_14",
+      "doi": "10.1007/978-981-95-0684-2_14",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "SQL Query Optimization Using Reinforcement Learning for Low-Power Computing Systems",
+      "authors": [
+        "B. V. N. S. Diwakar",
+        "D. Subitha",
+        "J. C. Kavitha"
+      ],
+      "abstract": "",
+      "date": "2025-12-28",
+      "year": 2025,
+      "venue": "Lecture Notes in Networks and Systems",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Data Management",
+          "score": 0.33308351039886475
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.3312010169029236
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/978-981-95-0684-2_14",
+        "crossref": "https://doi.org/10.1007/978-981-95-0684-2_14"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-28T04:12:19Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-28T04:12:19Z"
     }
   }
 }
