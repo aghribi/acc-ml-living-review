@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 176,
+      "2025": 177,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -16,7 +16,7 @@
     "per_category": {
       "Tools & Libraries": 156,
       "Novel Applications": 216,
-      "Others": 33,
+      "Others": 34,
       "Anomaly Detection & Fault Prediction": 41,
       "Statistics & Trends": 65,
       "Reinforcement Learning & Autonomous Systems": 50,
@@ -133,7 +133,8 @@
       "Вісник науки та освіти": 1,
       "Real-Time Artificial Intelligence (AI)": 1,
       "Transportmetrica A: Transport Science": 1,
-      "Development and Learning in Organizations: An International Journal": 1
+      "Development and Learning in Organizations: An International Journal": 1,
+      "Journal of Nondestructive Evaluation": 1
     },
     "per_keyword": {
       "optimization": 66,
@@ -227,10 +228,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 31
+      "2025-12": 32
     },
-    "last_updated": "2025-12-28T04:12:58.249409+00:00",
-    "next_update": "2025-12-29T04:12:58.249409+00:00"
+    "last_updated": "2025-12-29T04:15:32.099001+00:00",
+    "next_update": "2025-12-30T04:15:32.099001+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -16077,6 +16078,48 @@
       ],
       "history": [],
       "last_updated": "2025-12-28T04:12:19Z"
+    },
+    "('', '10.1007/s10921-025-01318-2', 'acoustic emission guided damage delineation and machine learning prediction of flexural strength in lightweight mortar under thermal exposure')": {
+      "id": "doi:10.1007/s10921-025-01318-2",
+      "doi": "10.1007/s10921-025-01318-2",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Acoustic Emission-Guided Damage Delineation and Machine Learning Prediction of Flexural Strength in Lightweight Mortar under Thermal Exposure",
+      "authors": [
+        "Linlin Jiang",
+        "Jean Jacques Kouadjo Tchekwagep",
+        "Zihao Li",
+        "Fengzhen Yang",
+        "Zhenxiang Chen",
+        "Changhong Yang",
+        "Shifeng Huang"
+      ],
+      "abstract": "",
+      "date": "2025-12-28",
+      "year": 2025,
+      "venue": "Journal of Nondestructive Evaluation",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s10921-025-01318-2",
+        "crossref": "https://doi.org/10.1007/s10921-025-01318-2"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-29T04:14:52Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-29T04:14:52Z"
     }
   }
 }
