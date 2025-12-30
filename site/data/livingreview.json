@@ -1,7 +1,7 @@
 {
   "stats": {
     "per_year": {
-      "2025": 177,
+      "2025": 180,
       "2024": 69,
       "2023": 26,
       "2022": 29,
@@ -15,12 +15,12 @@
     },
     "per_category": {
       "Tools & Libraries": 156,
-      "Novel Applications": 216,
-      "Others": 34,
+      "Novel Applications": 217,
+      "Others": 35,
       "Anomaly Detection & Fault Prediction": 41,
       "Statistics & Trends": 65,
-      "Reinforcement Learning & Autonomous Systems": 50,
-      "Surrogate Models": 39,
+      "Reinforcement Learning & Autonomous Systems": 51,
+      "Surrogate Models": 40,
       "Data Management": 33,
       "By Facility Type": 8,
       "RF Systems": 7,
@@ -35,7 +35,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 182,
+      "arXiv": 184,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -134,13 +134,14 @@
       "Real-Time Artificial Intelligence (AI)": 1,
       "Transportmetrica A: Transport Science": 1,
       "Development and Learning in Organizations: An International Journal": 1,
-      "Journal of Nondestructive Evaluation": 1
+      "Journal of Nondestructive Evaluation": 1,
+      "Soft Computing": 1
     },
     "per_keyword": {
-      "optimization": 66,
+      "optimization": 67,
       "control": 68,
       "surrogate model": 21,
-      "transformer": 9,
+      "transformer": 10,
       "deep learning": 51,
       "proton therapy": 1,
       "beam": 126,
@@ -228,10 +229,10 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 32
+      "2025-12": 35
     },
-    "last_updated": "2025-12-29T04:15:32.099001+00:00",
-    "next_update": "2025-12-30T04:15:32.099001+00:00"
+    "last_updated": "2025-12-30T04:06:37.481745+00:00",
+    "next_update": "2025-12-31T04:06:37.481745+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -4829,7 +4830,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.4243842661380768
+          "score": 0.4243842363357544
         }
       ],
       "keywords": [],
@@ -4922,7 +4923,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4355793595314026
+          "score": 0.4355792999267578
         }
       ],
       "keywords": [],
@@ -9321,11 +9322,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4582022428512573
+          "score": 0.45820218324661255
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4362305998802185
+          "score": 0.43623048067092896
         }
       ],
       "keywords": [],
@@ -10136,7 +10137,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5890808701515198
+          "score": 0.5890807509422302
         },
         {
           "label": "Tools & Libraries",
@@ -16120,6 +16121,121 @@
       ],
       "history": [],
       "last_updated": "2025-12-29T04:14:52Z"
+    },
+    "('2512.23131', '', 'se mlp model for predicting prior acceleration features in penetration signals')": {
+      "id": "arxiv:2512.23131",
+      "doi": null,
+      "arxiv_id": "2512.23131",
+      "inspire_id": null,
+      "title": "SE-MLP Model for Predicting Prior Acceleration Features in Penetration Signals",
+      "authors": [
+        "Yankang Li",
+        "Changsheng Li"
+      ],
+      "abstract": "Accurate identification of the penetration process relies heavily on prior feature values of penetration acceleration. However, these feature values are typically obtained through long simulation cycles and expensive computations. To overcome this limitation, this paper proposes a multi-layer Perceptron architecture, termed squeeze and excitation multi-layer perceptron (SE-MLP), which integrates a channel attention mechanism with residual connections to enable rapid prediction of acceleration feature values. Using physical parameters under different working conditions as inputs, the model outputs layer-wise acceleration features, thereby establishing a nonlinear mapping between physical parameters and penetration characteristics. Comparative experiments against conventional MLP, XGBoost, and Transformer models demonstrate that SE-MLP achieves superior prediction accuracy, generalization, and stability. Ablation studies further confirm that both the channel attention module and residual structure contribute significantly to performance gains. Numerical simulations and range recovery tests show that the discrepancies between predicted and measured acceleration peaks and pulse widths remain within acceptable engineering tolerances. These results validate the feasibility and engineering applicability of the proposed method and provide a practical basis for rapidly generating prior feature values for penetration fuzes.",
+      "date": "2025-12-29",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3064057230949402
+        },
+        {
+          "label": "Surrogate Models",
+          "score": 0.30280202627182007
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2512.23131v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-12-30T04:03:30Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-30T04:03:30Z"
+    },
+    "('2512.22777', '', 'adapting fast and slow transportable circuits for few shot learning')": {
+      "id": "arxiv:2512.22777",
+      "doi": null,
+      "arxiv_id": "2512.22777",
+      "inspire_id": null,
+      "title": "Adapting, Fast and Slow: Transportable Circuits for Few-Shot Learning",
+      "authors": [
+        "Kasra Jalaldoust",
+        "Elias Bareinboim"
+      ],
+      "abstract": "Generalization across the domains is not possible without asserting a structure that constrains the unseen target domain w.r.t. the source domain. Building on causal transportability theory, we design an algorithm for zero-shot compositional generalization which relies on access to qualitative domain knowledge in form of a causal graph for intra-domain structure and discrepancies oracle for inter-domain mechanism sharing. \\textit{Circuit-TR} learns a collection of modules (i.e., local predictors) from the source data, and transport/compose them to obtain a circuit for prediction in the target domain if the causal structure licenses. Furthermore, circuit transportability enables us to design a supervised domain adaptation scheme that operates without access to an explicit causal structure, and instead uses limited target data. Our theoretical results characterize classes of few-shot learnable tasks in terms of graphical circuit transportability criteria, and connects few-shot generalizability with the established notion of circuit size complexity; controlled simulations corroborate our theoretical results.",
+      "date": "2025-12-28",
+      "year": 2025,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2512.22777v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2025-12-30T04:05:34Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-30T04:05:34Z"
+    },
+    "('', '10.1007/s00500-025-11106-9', 'retraction note enhancing the college and university physical education teaching and learning experience using virtual reality and particle swarm optimization')": {
+      "id": "doi:10.1007/s00500-025-11106-9",
+      "doi": "10.1007/s00500-025-11106-9",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Retraction Note: Enhancing the college and university physical education teaching and learning experience using virtual reality and particle swarm optimization",
+      "authors": [
+        "Jian Wang",
+        "Yulin Yang",
+        "Haiyang Liu",
+        "Lizhu Jiang"
+      ],
+      "abstract": "",
+      "date": "2025-12-30",
+      "year": 2025,
+      "venue": "Soft Computing",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.280514121055603
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s00500-025-11106-9",
+        "crossref": "https://doi.org/10.1007/s00500-025-11106-9"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2025-12-30T04:05:56Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2025-12-30T04:05:56Z"
     }
   }
 }
