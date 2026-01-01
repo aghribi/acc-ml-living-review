@@ -11,14 +11,15 @@
       "2019": 8,
       "2018": 3,
       "2016": 6,
-      "2000": 1
+      "2000": 1,
+      "2026": 1
     },
     "per_category": {
-      "Tools & Libraries": 156,
+      "Tools & Libraries": 157,
       "Novel Applications": 217,
       "Others": 35,
-      "Anomaly Detection & Fault Prediction": 41,
-      "Statistics & Trends": 65,
+      "Anomaly Detection & Fault Prediction": 42,
+      "Statistics & Trends": 66,
       "Reinforcement Learning & Autonomous Systems": 51,
       "Surrogate Models": 40,
       "Data Management": 33,
@@ -135,7 +136,8 @@
       "Transportmetrica A: Transport Science": 1,
       "Development and Learning in Organizations: An International Journal": 1,
       "Journal of Nondestructive Evaluation": 1,
-      "Soft Computing": 1
+      "Soft Computing": 1,
+      "Materials Today Physics": 1
     },
     "per_keyword": {
       "optimization": 67,
@@ -229,10 +231,11 @@
       "2018-11": 1,
       "2000-08": 1,
       "2025-11": 44,
-      "2025-12": 35
+      "2025-12": 35,
+      "2026-01": 1
     },
-    "last_updated": "2025-12-31T04:05:35.801683+00:00",
-    "next_update": "2026-01-01T04:05:35.801683+00:00"
+    "last_updated": "2026-01-01T04:16:44.039761+00:00",
+    "next_update": "2026-01-02T04:16:44.039761+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -16236,6 +16239,54 @@
       ],
       "history": [],
       "last_updated": "2025-12-30T04:05:56Z"
+    },
+    "('', '10.1016/j.mtphys.2025.101971', 'a physics informed machine learning framework for unified prediction of superconducting transition temperatures')": {
+      "id": "doi:10.1016/j.mtphys.2025.101971",
+      "doi": "10.1016/j.mtphys.2025.101971",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A physics-informed machine learning framework for unified prediction of superconducting transition temperatures",
+      "authors": [
+        "Ehsan Alibagheri",
+        "Mohammad Sandoghchi",
+        "Alireza Seyfi",
+        "Mohammad Khazaei",
+        "S. Mehdi Vaez Allaei"
+      ],
+      "abstract": "",
+      "date": "2026-01-01",
+      "year": 2026,
+      "venue": "Materials Today Physics",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.2823488712310791
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.257691353559494
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.mtphys.2025.101971",
+        "crossref": "https://doi.org/10.1016/j.mtphys.2025.101971"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-01T04:16:07Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-01T04:16:07Z"
     }
   }
 }
