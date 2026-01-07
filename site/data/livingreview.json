@@ -12,15 +12,15 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 3
+      "2026": 4
     },
     "per_category": {
       "Tools & Libraries": 157,
-      "Novel Applications": 217,
+      "Novel Applications": 218,
       "Others": 35,
       "Anomaly Detection & Fault Prediction": 44,
       "Statistics & Trends": 66,
-      "Reinforcement Learning & Autonomous Systems": 51,
+      "Reinforcement Learning & Autonomous Systems": 52,
       "Surrogate Models": 40,
       "Data Management": 33,
       "By Facility Type": 8,
@@ -139,11 +139,12 @@
       "Soft Computing": 1,
       "Materials Today Physics": 1,
       "Fracture and Structural Integrity": 1,
-      "Journal of Materials Engineering and Performance": 1
+      "Journal of Materials Engineering and Performance": 1,
+      "SCIENTIA SINICA Physica, Mechanica &amp; Astronomica": 1
     },
     "per_keyword": {
       "optimization": 67,
-      "control": 68,
+      "control": 69,
       "surrogate model": 21,
       "transformer": 10,
       "deep learning": 51,
@@ -234,10 +235,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 3
+      "2026-01": 4
     },
-    "last_updated": "2026-01-06T04:07:29.059137+00:00",
-    "next_update": "2026-01-07T04:07:29.059137+00:00"
+    "last_updated": "2026-01-07T04:08:15.561573+00:00",
+    "next_update": "2026-01-08T04:08:15.561573+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -16375,6 +16376,50 @@
       ],
       "history": [],
       "last_updated": "2026-01-06T04:06:51Z"
+    },
+    "('', '10.1360/sspma-2025-0278', 'machine learning for quantum control and information processing in trapped ion systems')": {
+      "id": "doi:10.1360/sspma-2025-0278",
+      "doi": "10.1360/sspma-2025-0278",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning for quantum control and information processing in trapped-ion systems",
+      "authors": [
+        "LI JiaChong",
+        "DING GeYi",
+        "YUAN Quan",
+        "YUAN MingZhe",
+        "FENG Mang"
+      ],
+      "abstract": "",
+      "date": "2026-01-06",
+      "year": 2026,
+      "venue": "SCIENTIA SINICA Physica, Mechanica &amp; Astronomica",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.35951298475265503
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.3212025761604309
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1360/sspma-2025-0278",
+        "crossref": "https://doi.org/10.1360/sspma-2025-0278"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-07T04:07:35Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-07T04:07:35Z"
     }
   }
 }
