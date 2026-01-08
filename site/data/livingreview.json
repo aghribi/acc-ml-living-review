@@ -12,14 +12,14 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 4
+      "2026": 5
     },
     "per_category": {
-      "Tools & Libraries": 157,
+      "Tools & Libraries": 158,
       "Novel Applications": 218,
       "Others": 35,
       "Anomaly Detection & Fault Prediction": 44,
-      "Statistics & Trends": 66,
+      "Statistics & Trends": 67,
       "Reinforcement Learning & Autonomous Systems": 52,
       "Surrogate Models": 40,
       "Data Management": 33,
@@ -140,7 +140,8 @@
       "Materials Today Physics": 1,
       "Fracture and Structural Integrity": 1,
       "Journal of Materials Engineering and Performance": 1,
-      "SCIENTIA SINICA Physica, Mechanica &amp; Astronomica": 1
+      "SCIENTIA SINICA Physica, Mechanica &amp; Astronomica": 1,
+      "Journal of Fusion Energy": 1
     },
     "per_keyword": {
       "optimization": 67,
@@ -151,7 +152,7 @@
       "proton therapy": 1,
       "beam": 126,
       "reinforcement learning": 37,
-      "diagnostics": 21,
+      "diagnostics": 22,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
       "time series": 6,
@@ -235,10 +236,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 4
+      "2026-01": 5
     },
-    "last_updated": "2026-01-07T04:08:15.561573+00:00",
-    "next_update": "2026-01-08T04:08:15.561573+00:00"
+    "last_updated": "2026-01-08T04:27:04.106692+00:00",
+    "next_update": "2026-01-09T04:27:04.106692+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -7080,11 +7081,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.39614051580429077
+          "score": 0.39614057540893555
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3654389977455139
+          "score": 0.3654390573501587
         }
       ],
       "keywords": [],
@@ -16420,6 +16421,49 @@
       ],
       "history": [],
       "last_updated": "2026-01-07T04:07:35Z"
+    },
+    "('', '10.1007/s10894-025-00546-8', 'machine learning based efficiency calculator malbec for nuclear fusion diagnostics')": {
+      "id": "doi:10.1007/s10894-025-00546-8",
+      "doi": "10.1007/s10894-025-00546-8",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine Learning Based Efficiency Calculator (MaLBEC) for Nuclear Fusion Diagnostics",
+      "authors": [
+        "Kimberley Lennon",
+        "Chantal Shand",
+        "Gemma Wilson",
+        "Robin Smith"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Diagnostics are critical for commercial and research fusion machines, since measuring and understanding plasma features is important to sustaining fusion reactions. The neutron flux (and therefore fusion power) can be indirectly calculated using neutron activation analyses, where potentially large numbers of activation foils are placed in the neutron flux, and delayed gammas from key reactions are measured via gamma spectrometry. In gamma spectrometry, absolute efficiency forms part of the activity calculation, and equals to the ratio of the total number of photons detected to the number emitted by a radioactive sample. Hence, it is imperative that they are calculated efficiently and accurately. This paper presents a novel digital efficiency calculation algorithm, the Machine Learning Based Efficiency Calculator (MaLBEC), that uses state-of-the-art supervised machine learning techniques to calculate efficiency values of a given sample, from only four inputs. In this paper, the performance of the MaLBEC is demonstrated with a fusion sample and compares the values to a traditional efficiency calculation method, Monte Carlo N-Particle (MCNP). The efficiencies from the MaLBEC were within an average 5% of the ones produced by MCNP, but with an exceptional reduction in computation time of 99.96%. When the efficiency values from both methods were used in the activity calculation, the MaLBEC was within 3% of the MCNP results.</jats:p>",
+      "date": "2026-01-07",
+      "year": 2026,
+      "venue": "Journal of Fusion Energy",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Statistics & Trends",
+          "score": 0.35738813877105713
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.3449626564979553
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s10894-025-00546-8",
+        "crossref": "https://doi.org/10.1007/s10894-025-00546-8"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-08T04:26:26Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-08T04:26:26Z"
     }
   }
 }
