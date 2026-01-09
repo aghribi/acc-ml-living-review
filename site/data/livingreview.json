@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 5
+      "2026": 6
     },
     "per_category": {
       "Tools & Libraries": 158,
       "Novel Applications": 218,
-      "Others": 35,
+      "Others": 36,
       "Anomaly Detection & Fault Prediction": 44,
       "Statistics & Trends": 67,
       "Reinforcement Learning & Autonomous Systems": 52,
@@ -141,7 +141,8 @@
       "Fracture and Structural Integrity": 1,
       "Journal of Materials Engineering and Performance": 1,
       "SCIENTIA SINICA Physica, Mechanica &amp; Astronomica": 1,
-      "Journal of Fusion Energy": 1
+      "Journal of Fusion Energy": 1,
+      "Handbook of Perovskites": 1
     },
     "per_keyword": {
       "optimization": 67,
@@ -236,10 +237,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 5
+      "2026-01": 6
     },
-    "last_updated": "2026-01-08T04:27:04.106692+00:00",
-    "next_update": "2026-01-09T04:27:04.106692+00:00"
+    "last_updated": "2026-01-09T04:08:01.786565+00:00",
+    "next_update": "2026-01-10T04:08:01.786565+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -16464,6 +16465,46 @@
       ],
       "history": [],
       "last_updated": "2026-01-08T04:26:26Z"
+    },
+    "('', '10.1201/9781003565253-21', 'design and development of perovskite materials using machine learning techniques')": {
+      "id": "doi:10.1201/9781003565253-21",
+      "doi": "10.1201/9781003565253-21",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Design and Development of Perovskite Materials Using Machine Learning Techniques",
+      "authors": [
+        "Md. Motinur Rahman",
+        "Subrata Saha",
+        "Md. Ziaul Hasan Majumder",
+        "Mohammod Abu Sayid Haque",
+        "M. Khalid Hossain"
+      ],
+      "abstract": "",
+      "date": "2026-01-08",
+      "year": 2026,
+      "venue": "Handbook of Perovskites",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1201/9781003565253-21",
+        "crossref": "https://doi.org/10.1201/9781003565253-21"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-09T04:07:22Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-09T04:07:22Z"
     }
   }
 }
