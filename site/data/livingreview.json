@@ -12,15 +12,15 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 6
+      "2026": 9
     },
     "per_category": {
-      "Tools & Libraries": 158,
-      "Novel Applications": 218,
-      "Others": 36,
+      "Tools & Libraries": 160,
+      "Novel Applications": 219,
+      "Others": 37,
       "Anomaly Detection & Fault Prediction": 44,
       "Statistics & Trends": 67,
-      "Reinforcement Learning & Autonomous Systems": 52,
+      "Reinforcement Learning & Autonomous Systems": 53,
       "Surrogate Models": 40,
       "Data Management": 33,
       "By Facility Type": 8,
@@ -98,7 +98,7 @@
       "Springer Science and Business Media LLC": 2,
       "Circulation": 1,
       "International Journal of Structural Integrity": 2,
-      "Machine Learning: Science and Technology": 1,
+      "Machine Learning: Science and Technology": 2,
       "Anais do Encontro Nacional de Engenharia de Produção": 1,
       "arXiv (Cornell University)": 5,
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
@@ -142,17 +142,19 @@
       "Journal of Materials Engineering and Performance": 1,
       "SCIENTIA SINICA Physica, Mechanica &amp; Astronomica": 1,
       "Journal of Fusion Energy": 1,
-      "Handbook of Perovskites": 1
+      "Handbook of Perovskites": 1,
+      "Annali Italiani di Chirurgia": 1,
+      "Oral Radiology": 1
     },
     "per_keyword": {
-      "optimization": 67,
+      "optimization": 68,
       "control": 69,
       "surrogate model": 21,
       "transformer": 10,
-      "deep learning": 51,
+      "deep learning": 52,
       "proton therapy": 1,
-      "beam": 126,
-      "reinforcement learning": 37,
+      "beam": 128,
+      "reinforcement learning": 38,
       "diagnostics": 22,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
@@ -237,10 +239,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 6
+      "2026-01": 9
     },
-    "last_updated": "2026-01-09T04:08:01.786565+00:00",
-    "next_update": "2026-01-10T04:08:01.786565+00:00"
+    "last_updated": "2026-01-10T04:02:42.832950+00:00",
+    "next_update": "2026-01-11T04:02:42.832950+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -3063,11 +3065,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4251556694507599
+          "score": 0.4251556992530823
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.37505751848220825
+          "score": 0.375057578086853
         }
       ],
       "keywords": [],
@@ -5103,7 +5105,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6150770783424377
+          "score": 0.615077018737793
         },
         {
           "label": "Tools & Libraries",
@@ -7353,7 +7355,7 @@
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.28238731622695923
+          "score": 0.2823873460292816
         }
       ],
       "keywords": [],
@@ -16505,6 +16507,133 @@
       ],
       "history": [],
       "last_updated": "2026-01-09T04:07:22Z"
+    },
+    "('', '10.62713/aic.4250', 'development and validation of a machine learning based radiomics model using ultrasound image features for prostate cancer risk stratification')": {
+      "id": "doi:10.62713/aic.4250",
+      "doi": "10.62713/aic.4250",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Development and Validation of a Machine Learning-Based Radiomics Model Using Ultrasound Image Features for Prostate Cancer Risk Stratification",
+      "authors": [
+        "Anli Zhao",
+        "Shunlan Du",
+        "Yanhong Du",
+        "Maoliang Zhang",
+        "Jiangfeng Wu",
+        "Zhengping Wang",
+        "Liyan Hu"
+      ],
+      "abstract": "<jats:p>AIM: This study aimed to construct a risk stratification model for prostate cancer (PCa) ultrasound imaging data and machine learning algorithms, with the goal of providing an effective tool for early diagnosis, personalized treatment, and clinical decision-making. METHODS: A total of 211 histopathologically confirmed PCa patients were retrospectively enrolled and categorized into low-risk (n = 65), intermediate-risk (n = 55), and high-risk (n = 91) groups based on prostate-specific antigen levels, Gleason scores, and clinical T stage. From ultrasound images, 135 quantitative radiomic features—including morphological, texture, and edge descriptors—were extracted using the PyRadiomics toolkit. Feature dimensionality was reduced using the Pearson correlation coefficient (PCC), followed by recursive feature elimination (RFE) with 10-fold nested cross-validation to select the most informative features. Three machine learning algorithms—support vector machine (SVM), random forest (RF), and logistic regression (LR)—were trained and evaluated. Model performance was assessed using accuracy, sensitivity, specificity, and area under the curve (AUC). RESULTS: The RF model achieved the best performance in both training and test cohorts, with AUCs of 0.87 and 0.86, and accuracies of 90% and 88%, respectively. DeLong's test confirmed that RF significantly outperformed SVM (p = 0.016) and LR (p = 0.004) in AUC comparison. The RF model also demonstrated robust predictive ability across risk subgroups: in the high-risk group, it achieved an AUC of 0.89, accuracy of 89%, sensitivity of 88%, and specificity of 90%; in the intermediate- and low-risk groups, AUCs were 0.86 and 0.81, respectively. Feature importance analysis revealed that wavelet-transformed Gray Level Dependence Matrix (GLDM) texture features, particularly DependenceEntropy and DependenceVariance, were the most predictive, highlighting the value of intratumoral textural heterogeneity in risk classification. CONCLUSIONS: The RF-based ultrasound radiomics model enables accurate stratification of PCa risk, with remarkable performance in identifying high-risk patients.</jats:p>",
+      "date": "2026-01-10",
+      "year": 2026,
+      "venue": "Annali Italiani di Chirurgia",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.62713/aic.4250",
+        "crossref": "https://doi.org/10.62713/aic.4250"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-10T04:02:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-10T04:02:05Z"
+    },
+    "('', '10.1007/s11282-025-00888-1', 'evaluation of the accuracy of detecting c shaped canals in mandibular second molars identified by cone beam computed tomography on panoramic radiographs using artificial intelligence algorithms developed with deep learning methods')": {
+      "id": "doi:10.1007/s11282-025-00888-1",
+      "doi": "10.1007/s11282-025-00888-1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Evaluation of the accuracy of detecting C-shaped canals in mandibular second molars identified by cone-beam computed tomography on panoramic radiographs using artificial intelligence algorithms developed with deep learning methods",
+      "authors": [
+        "O. Uysal",
+        "M. Polat",
+        "H. M. Akgül"
+      ],
+      "abstract": "",
+      "date": "2026-01-09",
+      "year": 2026,
+      "venue": "Oral Radiology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s11282-025-00888-1",
+        "crossref": "https://doi.org/10.1007/s11282-025-00888-1"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-10T04:02:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-10T04:02:05Z"
+    },
+    "('', '10.1088/2632-2153/ae2fa8', 'explainable physics based constraints on reinforcement learning for accelerator optimization')": {
+      "id": "doi:10.1088/2632-2153/ae2fa8",
+      "doi": "10.1088/2632-2153/ae2fa8",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Explainable physics-based constraints on reinforcement learning for accelerator optimization",
+      "authors": [
+        "Jonathan Colen",
+        "Malachi Schram",
+        "Kishansingh Rajput",
+        "Armen Kasparian"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>We present a reinforcement learning (RL) framework for optimizing particle accelerator experiments that builds explainable physics-based constraints on agent behavior. The goal is to increase transparency and trust by letting users verify that the agent’s decision-making process incorporates suitable physics. Our algorithm uses a learnable surrogate function for physical observables, such as energy, and uses them to fine-tune how actions are chosen. This surrogate can be represented by a neural network or by an interpretable sparse dictionary model. We test our algorithm on a range of particle accelerator optimization environments designed to emulate the Continuous Electron Beam Accelerator Facility at Jefferson Lab. By examining the mathematical form of the learned constraint function, we are able to confirm the agent has learned to use the established physics of each environment. In addition, we find that the introduction of a physics-based surrogate enables our RL algorithms to reliably converge for difficult high-dimensional accelerator optimization environments.</jats:p>",
+      "date": "2026-01-09",
+      "year": 2026,
+      "venue": "Machine Learning: Science and Technology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.5980844497680664
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.49617278575897217
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1088/2632-2153/ae2fa8",
+        "crossref": "https://doi.org/10.1088/2632-2153/ae2fa8"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-10T04:02:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-10T04:02:05Z"
     }
   }
 }
