@@ -12,17 +12,17 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 9
+      "2026": 11
     },
     "per_category": {
-      "Tools & Libraries": 160,
+      "Tools & Libraries": 161,
       "Novel Applications": 219,
       "Others": 37,
       "Anomaly Detection & Fault Prediction": 44,
-      "Statistics & Trends": 67,
+      "Statistics & Trends": 68,
       "Reinforcement Learning & Autonomous Systems": 53,
       "Surrogate Models": 40,
-      "Data Management": 33,
+      "Data Management": 35,
       "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 8,
@@ -129,7 +129,7 @@
       "International Journal of Middle East Studies": 1,
       "Berufsbildung": 1,
       "Computer Applications in Engineering Education": 1,
-      "Scientific Reports": 1,
+      "Scientific Reports": 2,
       "Science and Technology of Engineering, Chemistry and Environmental Protection": 1,
       "Вісник науки та освіти": 1,
       "Real-Time Artificial Intelligence (AI)": 1,
@@ -144,7 +144,8 @@
       "Journal of Fusion Energy": 1,
       "Handbook of Perovskites": 1,
       "Annali Italiani di Chirurgia": 1,
-      "Oral Radiology": 1
+      "Oral Radiology": 1,
+      "IJARCCE": 1
     },
     "per_keyword": {
       "optimization": 68,
@@ -239,10 +240,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 9
+      "2026-01": 11
     },
-    "last_updated": "2026-01-10T04:02:42.832950+00:00",
-    "next_update": "2026-01-11T04:02:42.832950+00:00"
+    "last_updated": "2026-01-11T04:15:31.208087+00:00",
+    "next_update": "2026-01-12T04:15:31.208087+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -16634,6 +16635,96 @@
       ],
       "history": [],
       "last_updated": "2026-01-10T04:02:05Z"
+    },
+    "('', '10.1038/s41598-026-35227-9', 'evaluating machine learned nuclear data precision in full core nuclear reactor monte carlo neutronics and computational efficiency analyses')": {
+      "id": "doi:10.1038/s41598-026-35227-9",
+      "doi": "10.1038/s41598-026-35227-9",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Evaluating machine learned nuclear data precision in full core nuclear reactor Monte Carlo neutronics and computational efficiency analyses",
+      "authors": [
+        "Alexander Hashemi",
+        "Rafael Macián-Juan",
+        "Martin Ohlerich"
+      ],
+      "abstract": "",
+      "date": "2026-01-10",
+      "year": 2026,
+      "venue": "Scientific Reports",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Statistics & Trends",
+          "score": 0.33720308542251587
+        },
+        {
+          "label": "Data Management",
+          "score": 0.2899414896965027
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1038/s41598-026-35227-9",
+        "crossref": "https://doi.org/10.1038/s41598-026-35227-9"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-11T04:14:52Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-11T04:14:52Z"
+    },
+    "('', '10.17148/ijarcce.2025.1412125', 'a machine learning framework for icu and medical surgical covid 19 admission forecasting')": {
+      "id": "doi:10.17148/ijarcce.2025.1412125",
+      "doi": "10.17148/ijarcce.2025.1412125",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A Machine Learning Framework for ICU and Medical-Surgical COVID-19 Admission Forecasting",
+      "authors": [
+        "Kevin Geng",
+        "Ishaan Gupta",
+        "Sai Bharadwaj",
+        "Dylan Lam",
+        "Atharv Rao",
+        "Rajveer Grover",
+        "Dhruva Kanna",
+        "Devansh Karavati",
+        "Akshainie Pandella"
+      ],
+      "abstract": "",
+      "date": "2026-01-10",
+      "year": 2026,
+      "venue": "IJARCCE",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Data Management",
+          "score": 0.26644742488861084
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.17148/ijarcce.2025.1412125",
+        "crossref": "https://doi.org/10.17148/ijarcce.2025.1412125"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-11T04:14:52Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-11T04:14:52Z"
     }
   }
 }
