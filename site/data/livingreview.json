@@ -12,14 +12,14 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 13
+      "2026": 15
     },
     "per_category": {
       "Tools & Libraries": 162,
-      "Novel Applications": 219,
+      "Novel Applications": 220,
       "Others": 38,
-      "Anomaly Detection & Fault Prediction": 44,
-      "Statistics & Trends": 69,
+      "Anomaly Detection & Fault Prediction": 45,
+      "Statistics & Trends": 70,
       "Reinforcement Learning & Autonomous Systems": 53,
       "Surrogate Models": 40,
       "Data Management": 35,
@@ -28,7 +28,7 @@
       "Operations & Control": 8,
       "Beamline Design & Simulation": 30,
       "Beam Dynamics": 10,
-      "Reviews": 19,
+      "Reviews": 20,
       "Beam Diagnostics": 15,
       "Optimization & Control": 14
     },
@@ -147,7 +147,9 @@
       "Oral Radiology": 1,
       "IJARCCE": 1,
       "Materials Testing": 1,
-      "Jurnal Pendidikan Teknik Mesin": 1
+      "Jurnal Pendidikan Teknik Mesin": 1,
+      "Defect and Diffusion Forum": 1,
+      "Seventh International Conference on Geoscience and Remote Sensing Mapping (GRSM 2025)": 1
     },
     "per_keyword": {
       "optimization": 68,
@@ -242,10 +244,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 13
+      "2026-01": 15
     },
-    "last_updated": "2026-01-13T04:08:25.252494+00:00",
-    "next_update": "2026-01-14T04:08:25.252494+00:00"
+    "last_updated": "2026-01-14T04:15:26.808932+00:00",
+    "next_update": "2026-01-15T04:15:26.808932+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -5748,11 +5750,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4046928286552429
+          "score": 0.40469300746917725
         },
         {
           "label": "Novel Applications",
-          "score": 0.3768412172794342
+          "score": 0.3768412470817566
         }
       ],
       "keywords": [],
@@ -16812,6 +16814,91 @@
       ],
       "history": [],
       "last_updated": "2026-01-13T04:07:46Z"
+    },
+    "('', '10.4028/p-a6ba7w', 'sintering process analysis of aluminum matrix composites using machine learning')": {
+      "id": "doi:10.4028/p-a6ba7w",
+      "doi": "10.4028/p-a6ba7w",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Sintering Process Analysis of Aluminum Matrix Composites Using Machine Learning",
+      "authors": [
+        "Kenjiro Sugio",
+        "Yuuki Shinohara",
+        "Yoshikazu Hayashi",
+        "Gen Sasaki"
+      ],
+      "abstract": "<jats:p>The sintering behavior of spark plasma sintering was analyzed by extracting features from process data obtained during the fabrication of aluminum matrix composites and machine learning using the obtained features were performed to predict relative density of composites. Seventy-five samples were sintered with different types of reinforcement, and different temperature and pressure conditions. Regression methods include linear regression such as Ridge, Lasso and Elastic Net, and nonlinear regression such as random forest, gradient boosting and XGBoost were tested. XGBoost had the highest prediction accuracy and the trained model was used for Shapley additive explanations value analysis and inverse analysis.</jats:p>",
+      "date": "2026-01-13",
+      "year": 2026,
+      "venue": "Defect and Diffusion Forum",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.2828977704048157
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.4028/p-a6ba7w",
+        "crossref": "https://doi.org/10.4028/p-a6ba7w"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-14T04:14:47Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-14T04:14:47Z"
+    },
+    "('', '10.1117/12.3096466', 'research on the application of machine learning algorithms in aeromagnetic survey')": {
+      "id": "doi:10.1117/12.3096466",
+      "doi": "10.1117/12.3096466",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Research on the application of machine learning algorithms in aeromagnetic survey",
+      "authors": [
+        "Li Liu",
+        "Lei Zhou",
+        "Qingfeng Xu"
+      ],
+      "abstract": "",
+      "date": "2026-01-13",
+      "year": 2026,
+      "venue": "Seventh International Conference on Geoscience and Remote Sensing Mapping (GRSM 2025)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.35717156529426575
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.30327123403549194
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1117/12.3096466",
+        "crossref": "https://doi.org/10.1117/12.3096466"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-14T04:14:47Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-14T04:14:47Z"
     }
   }
 }
