@@ -12,17 +12,17 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 15
+      "2026": 19
     },
     "per_category": {
       "Tools & Libraries": 162,
       "Novel Applications": 220,
       "Others": 38,
-      "Anomaly Detection & Fault Prediction": 45,
+      "Anomaly Detection & Fault Prediction": 47,
       "Statistics & Trends": 70,
-      "Reinforcement Learning & Autonomous Systems": 53,
+      "Reinforcement Learning & Autonomous Systems": 55,
       "Surrogate Models": 40,
-      "Data Management": 35,
+      "Data Management": 36,
       "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 8,
@@ -30,7 +30,7 @@
       "Beam Dynamics": 10,
       "Reviews": 20,
       "Beam Diagnostics": 15,
-      "Optimization & Control": 14
+      "Optimization & Control": 15
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
@@ -149,10 +149,13 @@
       "Materials Testing": 1,
       "Jurnal Pendidikan Teknik Mesin": 1,
       "Defect and Diffusion Forum": 1,
-      "Seventh International Conference on Geoscience and Remote Sensing Mapping (GRSM 2025)": 1
+      "Seventh International Conference on Geoscience and Remote Sensing Mapping (GRSM 2025)": 1,
+      "IEEE Sensors Journal": 2,
+      "IEEE Internet of Things Journal": 1,
+      "Electronics": 1
     },
     "per_keyword": {
-      "optimization": 68,
+      "optimization": 69,
       "control": 70,
       "surrogate model": 21,
       "transformer": 10,
@@ -165,7 +168,8 @@
       "anomaly detection": 15,
       "time series": 6,
       "GAN": 1,
-      "cloud": 3
+      "cloud": 3,
+      "federated learning": 1
     },
     "monthly_trends": {
       "2025-09": 12,
@@ -244,10 +248,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 15
+      "2026-01": 19
     },
-    "last_updated": "2026-01-14T04:15:26.808932+00:00",
-    "next_update": "2026-01-15T04:15:26.808932+00:00"
+    "last_updated": "2026-01-15T04:10:41.689925+00:00",
+    "next_update": "2026-01-16T04:10:41.689925+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -3290,7 +3294,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.49700766801834106
+          "score": 0.49700772762298584
         },
         {
           "label": "Reviews",
@@ -5071,11 +5075,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.49265700578689575
+          "score": 0.492656946182251
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.43218573927879333
+          "score": 0.43218567967414856
         }
       ],
       "keywords": [],
@@ -7552,7 +7556,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.44447043538093567
+          "score": 0.4444703459739685
         },
         {
           "label": "Statistics & Trends",
@@ -16899,6 +16903,179 @@
       ],
       "history": [],
       "last_updated": "2026-01-14T04:14:47Z"
+    },
+    "('', '10.1109/jsen.2025.3637548', 'identification of lightning strikes to towers using their electric field signatures and a machine learning approach')": {
+      "id": "doi:10.1109/jsen.2025.3637548",
+      "doi": "10.1109/jsen.2025.3637548",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Identification of Lightning Strikes to Towers Using Their Electric Field Signatures and a Machine Learning Approach",
+      "authors": [
+        "Ziqin Ding",
+        "Si Chen",
+        "Hanbo Yang",
+        "Kang Yang",
+        "Vladimir A. Rakov",
+        "Joel B. Harley",
+        "Yanan Zhu",
+        "Istvan Kereszy"
+      ],
+      "abstract": "",
+      "date": "2026-01-15",
+      "year": 2026,
+      "venue": "IEEE Sensors Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.3081069588661194
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1109/jsen.2025.3637548",
+        "crossref": "https://doi.org/10.1109/jsen.2025.3637548"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-15T04:10:01Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-15T04:10:01Z"
+    },
+    "('', '10.1109/jsen.2025.3639432', 'robust leakage localization in radioactive material transport via multitask learning')": {
+      "id": "doi:10.1109/jsen.2025.3639432",
+      "doi": "10.1109/jsen.2025.3639432",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Robust Leakage Localization in Radioactive Material Transport via Multitask Learning",
+      "authors": [
+        "Yafei Chen",
+        "Shaohua Hu",
+        "Kaijing Yang",
+        "Hualuo Sheng",
+        "Chaofeng Wang",
+        "Yaping Wan"
+      ],
+      "abstract": "",
+      "date": "2026-01-15",
+      "year": 2026,
+      "venue": "IEEE Sensors Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.295138955116272
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1109/jsen.2025.3639432",
+        "crossref": "https://doi.org/10.1109/jsen.2025.3639432"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-15T04:10:01Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-15T04:10:01Z"
+    },
+    "('', '10.1109/jiot.2025.3628900', 'ttbo fl joint training trajectory and beamforming optimization for energy efficient federated learning in uav swarm')": {
+      "id": "doi:10.1109/jiot.2025.3628900",
+      "doi": "10.1109/jiot.2025.3628900",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "TTBO-FL: Joint Training, Trajectory, and Beamforming Optimization for Energy-Efficient Federated Learning in UAV Swarm",
+      "authors": [
+        "Chunyu Zhang",
+        "Yanlu Li",
+        "Yiming Liu",
+        "Yuzhen Huang",
+        "Zhi Zhang"
+      ],
+      "abstract": "",
+      "date": "2026-01-15",
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.3537830710411072
+        },
+        {
+          "label": "Optimization & Control",
+          "score": 0.28799575567245483
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1109/jiot.2025.3628900",
+        "crossref": "https://doi.org/10.1109/jiot.2025.3628900"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-15T04:10:01Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-15T04:10:01Z"
+    },
+    "('', '10.3390/electronics15020370', 'radar signal classification with quantum machine learning ansatz depth impact on expressibility')": {
+      "id": "doi:10.3390/electronics15020370",
+      "doi": "10.3390/electronics15020370",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Radar Signal Classification with Quantum Machine Learning: Ansatz Depth Impact on Expressibility",
+      "authors": [
+        "Gabriel F. Martinez",
+        "Alberto Croci",
+        "Francesco Drago",
+        "Alessandro Niccolai",
+        "Marco Mussetta",
+        "Riccardo E. Zich"
+      ],
+      "abstract": "<jats:p>Radar systems serve as foundational components in both civil and military aerospace infrastructures. Modern radar must not only distinguish between detection and non-detection but must also classify detected objects. Signal processing increasingly integrates machine learning models into complex systems, such as radar. Additionally, developments have fused signal processing with quantum computing, creating an emerging field of research. This paper examines the applicability of quantum machine learning models for radar signal classification, focusing on the impact of Ansatz depth on expressibility. Multiple challenges arise due to the immature state of noisy intermediate-scale quantum hardware and the computational complexity of quantum circuit simulation. Nonetheless, results indicate that shallow Ansätze with fewer than 70 gates are sufficient to achieve the maximum available performance per data-encoding operation.</jats:p>",
+      "date": "2026-01-14",
+      "year": 2026,
+      "venue": "Electronics",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Data Management",
+          "score": 0.26178622245788574
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.2506561875343323
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.3390/electronics15020370",
+        "crossref": "https://doi.org/10.3390/electronics15020370"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-15T04:10:01Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-15T04:10:01Z"
     }
   }
 }
