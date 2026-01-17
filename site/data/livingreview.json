@@ -12,14 +12,14 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 19
+      "2026": 21
     },
     "per_category": {
       "Tools & Libraries": 162,
-      "Novel Applications": 220,
-      "Others": 38,
+      "Novel Applications": 221,
+      "Others": 39,
       "Anomaly Detection & Fault Prediction": 47,
-      "Statistics & Trends": 70,
+      "Statistics & Trends": 71,
       "Reinforcement Learning & Autonomous Systems": 55,
       "Surrogate Models": 40,
       "Data Management": 36,
@@ -152,7 +152,9 @@
       "Seventh International Conference on Geoscience and Remote Sensing Mapping (GRSM 2025)": 1,
       "IEEE Sensors Journal": 2,
       "IEEE Internet of Things Journal": 1,
-      "Electronics": 1
+      "Electronics": 1,
+      "Chinese Rare Earths": 1,
+      "Innovative Infrastructure Solutions": 1
     },
     "per_keyword": {
       "optimization": 69,
@@ -248,10 +250,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 19
+      "2026-01": 21
     },
-    "last_updated": "2026-01-16T04:08:01.468592+00:00",
-    "next_update": "2026-01-17T04:08:01.468592+00:00"
+    "last_updated": "2026-01-17T04:01:33.720812+00:00",
+    "next_update": "2026-01-18T04:01:33.720812+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -13427,7 +13429,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4003908634185791
+          "score": 0.4003908336162567
         },
         {
           "label": "Statistics & Trends",
@@ -17076,6 +17078,92 @@
       ],
       "history": [],
       "last_updated": "2026-01-15T04:10:01Z"
+    },
+    "('', '10.3724/s1004-0277.20250007', 'technology topic mining and patent data analysis of ndfeb permanent magnet materials based on machine learning')": {
+      "id": "doi:10.3724/s1004-0277.20250007",
+      "doi": "10.3724/s1004-0277.20250007",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Technology Topic Mining and Patent Data Analysis of NdFeB Permanent Magnet Materials Based on Machine Learning",
+      "authors": [
+        "Jian-zhong LIU",
+        "Yang BAI",
+        "Xin-fang ZHANG",
+        "Xiao-yu LIU",
+        "Zhen-jun JIN",
+        "Ke WANG",
+        "Meng-cheng ZHOU"
+      ],
+      "abstract": "",
+      "date": "2026-01-16",
+      "year": 2026,
+      "venue": "Chinese Rare Earths",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Statistics & Trends",
+          "score": 0.33693650364875793
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.3077370524406433
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.3724/s1004-0277.20250007",
+        "crossref": "https://doi.org/10.3724/s1004-0277.20250007"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-17T04:00:53Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-17T04:00:53Z"
+    },
+    "('', '10.1007/s41062-025-02476-y', 'predicting fire resistance of reinforced concrete rc and concrete filled steel tubular cfst columns through machine learning')": {
+      "id": "doi:10.1007/s41062-025-02476-y",
+      "doi": "10.1007/s41062-025-02476-y",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Predicting fire resistance of reinforced concrete (RC) and concrete-filled steel tubular (CFST) columns through machine learning",
+      "authors": [
+        "Muhammad Noman",
+        "Muhammad Salman",
+        "Mati Ullah",
+        "Muhammad Faizan",
+        "Afaq Ahmed"
+      ],
+      "abstract": "",
+      "date": "2026-01-16",
+      "year": 2026,
+      "venue": "Innovative Infrastructure Solutions",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s41062-025-02476-y",
+        "crossref": "https://doi.org/10.1007/s41062-025-02476-y"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-17T04:00:53Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-17T04:00:53Z"
     }
   }
 }
