@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 21
+      "2026": 22
     },
     "per_category": {
-      "Tools & Libraries": 162,
+      "Tools & Libraries": 163,
       "Novel Applications": 221,
       "Others": 39,
-      "Anomaly Detection & Fault Prediction": 47,
+      "Anomaly Detection & Fault Prediction": 48,
       "Statistics & Trends": 71,
       "Reinforcement Learning & Autonomous Systems": 55,
       "Surrogate Models": 40,
@@ -154,7 +154,8 @@
       "IEEE Internet of Things Journal": 1,
       "Electronics": 1,
       "Chinese Rare Earths": 1,
-      "Innovative Infrastructure Solutions": 1
+      "Innovative Infrastructure Solutions": 1,
+      "Machine Learning for Microbiome Statistics": 1
     },
     "per_keyword": {
       "optimization": 69,
@@ -250,10 +251,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 21
+      "2026-01": 22
     },
-    "last_updated": "2026-01-17T04:01:33.720812+00:00",
-    "next_update": "2026-01-18T04:01:33.720812+00:00"
+    "last_updated": "2026-01-18T04:11:16.333928+00:00",
+    "next_update": "2026-01-19T04:11:16.333928+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -17164,6 +17165,47 @@
       ],
       "history": [],
       "last_updated": "2026-01-17T04:00:53Z"
+    },
+    "('', '10.1201/9781003610281-8', 'support vector machines')": {
+      "id": "doi:10.1201/9781003610281-8",
+      "doi": "10.1201/9781003610281-8",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Support Vector Machines",
+      "authors": [
+        "Yinglin Xia",
+        "Jun Sun"
+      ],
+      "abstract": "",
+      "date": "2026-01-17",
+      "year": 2026,
+      "venue": "Machine Learning for Microbiome Statistics",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.31931889057159424
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.2539709210395813
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1201/9781003610281-8",
+        "crossref": "https://doi.org/10.1201/9781003610281-8"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-18T04:10:39Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-18T04:10:39Z"
     }
   }
 }
