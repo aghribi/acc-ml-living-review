@@ -12,16 +12,16 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 22
+      "2026": 23
     },
     "per_category": {
       "Tools & Libraries": 163,
-      "Novel Applications": 221,
+      "Novel Applications": 222,
       "Others": 39,
       "Anomaly Detection & Fault Prediction": 48,
       "Statistics & Trends": 71,
       "Reinforcement Learning & Autonomous Systems": 55,
-      "Surrogate Models": 40,
+      "Surrogate Models": 41,
       "Data Management": 36,
       "By Facility Type": 8,
       "RF Systems": 7,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 184,
+      "arXiv": 185,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -159,14 +159,14 @@
     },
     "per_keyword": {
       "optimization": 69,
-      "control": 70,
+      "control": 71,
       "surrogate model": 21,
       "transformer": 10,
       "deep learning": 52,
       "proton therapy": 1,
       "beam": 128,
       "reinforcement learning": 38,
-      "diagnostics": 22,
+      "diagnostics": 23,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
       "time series": 6,
@@ -251,10 +251,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 22
+      "2026-01": 23
     },
-    "last_updated": "2026-01-18T04:11:16.333928+00:00",
-    "next_update": "2026-01-19T04:11:16.333928+00:00"
+    "last_updated": "2026-01-19T04:17:22.219068+00:00",
+    "next_update": "2026-01-20T04:17:22.219068+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -3297,7 +3297,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.49700772762298584
+          "score": 0.49700766801834106
         },
         {
           "label": "Reviews",
@@ -5078,11 +5078,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.492656946182251
+          "score": 0.49265700578689575
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.43218567967414856
+          "score": 0.43218573927879333
         }
       ],
       "keywords": [],
@@ -5159,7 +5159,7 @@
       "categories": [
         {
           "label": "Optimization & Control",
-          "score": 0.43691521883010864
+          "score": 0.43691518902778625
         },
         {
           "label": "Novel Applications",
@@ -17206,6 +17206,49 @@
       ],
       "history": [],
       "last_updated": "2026-01-18T04:10:39Z"
+    },
+    "('2601.10898', '', 'u net based surrogate modeling for attosecond x ray free electron lasers')": {
+      "id": "arxiv:2601.10898",
+      "doi": null,
+      "arxiv_id": "2601.10898",
+      "inspire_id": null,
+      "title": "U-Net-based surrogate modeling for attosecond X-ray free-electron lasers",
+      "authors": [
+        "Yufei Wei",
+        "Bingyang Yan",
+        "Chenzhi Xu",
+        "Jiawei Yan",
+        "Haixiao Deng"
+      ],
+      "abstract": "Attosecond X-ray pulse generation in modern X-ray free-electron lasers relies on strongly compressed, precisely tailored electron bunches, making accurate diagnostics and control of the longitudinal phase space (LPS) essential. In the self-chirping scheme, collective effects in the linac generate a strong energy chirp that is converted into high peak current through pre-undulator compression, enabling isolated attosecond pulse generation. Reliable operation of this scheme depends on precise LPS control and fast diagnostics. In this work, we present a U-Net-based neural network surrogate that predicts two-dimensional LPS distributions directly from accelerator settings. The model exhibits excellent agreement with start-to-end simulation results. These results demonstrate the potential of neural network surrogates to facilitate real-time tuning and control in attosecond X-ray pulse generation.",
+      "date": "2026-01-15",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Surrogate Models",
+          "score": 1.0
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.38585174083709717
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2601.10898v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-01-19T04:13:23Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-19T04:13:23Z"
     }
   }
 }
