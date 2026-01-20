@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 23
+      "2026": 24
     },
     "per_category": {
       "Tools & Libraries": 163,
       "Novel Applications": 222,
       "Others": 39,
-      "Anomaly Detection & Fault Prediction": 48,
+      "Anomaly Detection & Fault Prediction": 49,
       "Statistics & Trends": 71,
       "Reinforcement Learning & Autonomous Systems": 55,
       "Surrogate Models": 41,
@@ -155,7 +155,8 @@
       "Electronics": 1,
       "Chinese Rare Earths": 1,
       "Innovative Infrastructure Solutions": 1,
-      "Machine Learning for Microbiome Statistics": 1
+      "Machine Learning for Microbiome Statistics": 1,
+      "Bulletin of Environmental Contamination and Toxicology": 1
     },
     "per_keyword": {
       "optimization": 69,
@@ -251,10 +252,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 23
+      "2026-01": 24
     },
-    "last_updated": "2026-01-19T04:17:22.219068+00:00",
-    "next_update": "2026-01-20T04:17:22.219068+00:00"
+    "last_updated": "2026-01-20T04:11:39.104925+00:00",
+    "next_update": "2026-01-21T04:11:39.104925+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -377,11 +378,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.27419787645339966
+          "score": 0.27419769763946533
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.25301453471183777
+          "score": 0.25301459431648254
         }
       ],
       "keywords": [],
@@ -418,11 +419,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.38932502269744873
+          "score": 0.3893250823020935
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3870469629764557
+          "score": 0.3870469033718109
         },
         {
           "label": "Tools & Libraries",
@@ -468,7 +469,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.576176643371582
+          "score": 0.5761763453483582
         }
       ],
       "keywords": [],
@@ -511,7 +512,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5890807509422302
+          "score": 0.5890808701515198
         },
         {
           "label": "Tools & Libraries",
@@ -593,11 +594,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.3979523181915283
+          "score": 0.3979526460170746
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3838859796524048
+          "score": 0.3838861584663391
         }
       ],
       "keywords": [],
@@ -639,7 +640,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4185507893562317
+          "score": 0.4185507297515869
         },
         {
           "label": "Tools & Libraries",
@@ -679,11 +680,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.30343180894851685
+          "score": 0.303431898355484
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2756759524345398
+          "score": 0.27567580342292786
         }
       ],
       "keywords": [],
@@ -778,11 +779,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3564392626285553
+          "score": 0.3564392030239105
         },
         {
           "label": "Data Management",
-          "score": 0.3119693994522095
+          "score": 0.31196925044059753
         }
       ],
       "keywords": [],
@@ -826,7 +827,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3002694547176361
+          "score": 0.3002695143222809
         },
         {
           "label": "Surrogate Models",
@@ -871,11 +872,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3604326844215393
+          "score": 0.36043259501457214
         },
         {
           "label": "By Facility Type",
-          "score": 0.33012300729751587
+          "score": 0.3301229774951935
         }
       ],
       "keywords": [],
@@ -914,7 +915,7 @@
         },
         {
           "label": "RF Systems",
-          "score": 0.3401947617530823
+          "score": 0.3401946425437927
         },
         {
           "label": "Tools & Libraries",
@@ -953,11 +954,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4633238911628723
+          "score": 0.46332406997680664
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.42218053340911865
+          "score": 0.422180712223053
         }
       ],
       "keywords": [],
@@ -994,7 +995,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6130755543708801
+          "score": 0.6130757331848145
         },
         {
           "label": "Operations & Control",
@@ -1088,11 +1089,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.43817582726478577
+          "score": 0.43817558884620667
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4078904390335083
+          "score": 0.40789034962654114
         },
         {
           "label": "Tools & Libraries",
@@ -1142,7 +1143,7 @@
       "categories": [
         {
           "label": "Beam Dynamics",
-          "score": 0.26355117559432983
+          "score": 0.2635510265827179
         }
       ],
       "keywords": [],
@@ -1181,11 +1182,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3894789218902588
+          "score": 0.38947904109954834
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3862571120262146
+          "score": 0.38625726103782654
         },
         {
           "label": "Tools & Libraries",
@@ -1242,11 +1243,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.40027183294296265
+          "score": 0.4002718925476074
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3737693727016449
+          "score": 0.37376946210861206
         }
       ],
       "keywords": [],
@@ -1284,7 +1285,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6229246854782104
+          "score": 0.6229248642921448
         },
         {
           "label": "Tools & Libraries",
@@ -1328,11 +1329,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6375529766082764
+          "score": 0.6375532150268555
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5897579789161682
+          "score": 0.5897578597068787
         }
       ],
       "keywords": [],
@@ -1369,11 +1370,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.3572598397731781
+          "score": 0.35725972056388855
         },
         {
           "label": "Data Management",
-          "score": 0.3400529623031616
+          "score": 0.3400528132915497
         }
       ],
       "keywords": [],
@@ -1408,11 +1409,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.41033846139907837
+          "score": 0.41033831238746643
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3847968578338623
+          "score": 0.384796679019928
         }
       ],
       "keywords": [],
@@ -1452,7 +1453,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3566967844963074
+          "score": 0.356696754693985
         },
         {
           "label": "Tools & Libraries",
@@ -1538,7 +1539,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4670400023460388
+          "score": 0.4670398235321045
         },
         {
           "label": "Surrogate Models",
@@ -1585,11 +1586,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6579601764678955
+          "score": 0.6579602360725403
         },
         {
           "label": "Novel Applications",
-          "score": 0.5763222575187683
+          "score": 0.5763219594955444
         },
         {
           "label": "Tools & Libraries",
@@ -1628,11 +1629,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.3627539873123169
+          "score": 0.36275389790534973
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.30540913343429565
+          "score": 0.3054090440273285
         }
       ],
       "keywords": [],
@@ -1671,7 +1672,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5045299530029297
+          "score": 0.5045301914215088
         },
         {
           "label": "Tools & Libraries",
@@ -1713,7 +1714,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.40865007042884827
+          "score": 0.40865015983581543
         },
         {
           "label": "Tools & Libraries",
@@ -1757,7 +1758,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3338199853897095
+          "score": 0.3338199555873871
         },
         {
           "label": "Tools & Libraries",
@@ -1801,11 +1802,11 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.4072885513305664
+          "score": 0.40728846192359924
         },
         {
           "label": "Novel Applications",
-          "score": 0.3951337933540344
+          "score": 0.3951335847377777
         }
       ],
       "keywords": [],
@@ -1843,11 +1844,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.48273396492004395
+          "score": 0.48273393511772156
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4545425474643707
+          "score": 0.45454248785972595
         }
       ],
       "keywords": [],
@@ -1885,11 +1886,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.38257861137390137
+          "score": 0.3825785517692566
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.37146472930908203
+          "score": 0.37146463990211487
         }
       ],
       "keywords": [],
@@ -1929,11 +1930,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5431399941444397
+          "score": 0.5431401133537292
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4682735502719879
+          "score": 0.46827349066734314
         },
         {
           "label": "Reviews",
@@ -1982,11 +1983,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.47767528891563416
+          "score": 0.47767534852027893
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4597344398498535
+          "score": 0.45973435044288635
         },
         {
           "label": "Surrogate Models",
@@ -2027,11 +2028,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.48838287591934204
+          "score": 0.48838290572166443
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.44360408186912537
+          "score": 0.44360390305519104
         }
       ],
       "keywords": [],
@@ -2068,11 +2069,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.438006728887558
+          "score": 0.43800681829452515
         },
         {
           "label": "By Facility Type",
-          "score": 0.37726467847824097
+          "score": 0.37726515531539917
         },
         {
           "label": "Tools & Libraries",
@@ -2111,11 +2112,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5716978907585144
+          "score": 0.5716979503631592
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5022737979888916
+          "score": 0.5022736191749573
         },
         {
           "label": "Tools & Libraries",
@@ -2156,11 +2157,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.47880488634109497
+          "score": 0.4788047969341278
         },
         {
           "label": "RF Systems",
-          "score": 0.4247669577598572
+          "score": 0.4247671067714691
         }
       ],
       "keywords": [],
@@ -2198,11 +2199,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.47364407777786255
+          "score": 0.47364360094070435
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4242047667503357
+          "score": 0.4242047965526581
         }
       ],
       "keywords": [],
@@ -2239,11 +2240,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.5783994197845459
+          "score": 0.5783992409706116
         },
         {
           "label": "Novel Applications",
-          "score": 0.542595386505127
+          "score": 0.5425954461097717
         }
       ],
       "keywords": [],
@@ -2281,11 +2282,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.40528053045272827
+          "score": 0.4052802622318268
         },
         {
           "label": "Data Management",
-          "score": 0.32931575179100037
+          "score": 0.32931554317474365
         }
       ],
       "keywords": [],
@@ -2325,11 +2326,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4610651135444641
+          "score": 0.46106472611427307
         },
         {
           "label": "Novel Applications",
-          "score": 0.4223136603832245
+          "score": 0.4223136007785797
         }
       ],
       "keywords": [],
@@ -2368,11 +2369,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5398096442222595
+          "score": 0.5398097634315491
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4896240830421448
+          "score": 0.4896242618560791
         }
       ],
       "keywords": [],
@@ -2410,11 +2411,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5660102367401123
+          "score": 0.5660104751586914
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5298165082931519
+          "score": 0.5298164486885071
         },
         {
           "label": "Surrogate Models",
@@ -2480,11 +2481,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4449161887168884
+          "score": 0.44491589069366455
         },
         {
           "label": "Novel Applications",
-          "score": 0.39594584703445435
+          "score": 0.39594563841819763
         }
       ],
       "keywords": [],
@@ -2526,11 +2527,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.48789623379707336
+          "score": 0.48789605498313904
         },
         {
           "label": "Novel Applications",
-          "score": 0.374500036239624
+          "score": 0.3745000958442688
         }
       ],
       "keywords": [],
@@ -2565,11 +2566,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5130079984664917
+          "score": 0.5130080580711365
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4592275023460388
+          "score": 0.45922768115997314
         }
       ],
       "keywords": [],
@@ -2609,11 +2610,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5447626113891602
+          "score": 0.5447624921798706
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4923652410507202
+          "score": 0.4923654794692993
         },
         {
           "label": "Reviews",
@@ -2656,11 +2657,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3932933211326599
+          "score": 0.39329320192337036
         },
         {
           "label": "Novel Applications",
-          "score": 0.31755173206329346
+          "score": 0.3175518214702606
         }
       ],
       "keywords": [],
@@ -2698,11 +2699,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5183514356613159
+          "score": 0.5183513164520264
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4706268608570099
+          "score": 0.47062668204307556
         }
       ],
       "keywords": [],
@@ -2746,11 +2747,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.34754008054733276
+          "score": 0.34753984212875366
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.32824277877807617
+          "score": 0.32824283838272095
         }
       ],
       "keywords": [],
@@ -2800,7 +2801,7 @@
         },
         {
           "label": "Optimization & Control",
-          "score": 0.4638978838920593
+          "score": 0.46389785408973694
         }
       ],
       "keywords": [],
@@ -2858,11 +2859,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5317566394805908
+          "score": 0.5317569375038147
         },
         {
           "label": "Surrogate Models",
-          "score": 0.5270073413848877
+          "score": 0.5270075798034668
         },
         {
           "label": "Tools & Libraries",
@@ -2904,11 +2905,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.4146744906902313
+          "score": 0.4146745204925537
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4130493402481079
+          "score": 0.41304904222488403
         }
       ],
       "keywords": [],
@@ -2952,7 +2953,7 @@
       "categories": [
         {
           "label": "Beam Dynamics",
-          "score": 0.322369247674942
+          "score": 0.32236912846565247
         },
         {
           "label": "Surrogate Models",
@@ -2992,11 +2993,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.33314186334609985
+          "score": 0.3331420421600342
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2609000504016876
+          "score": 0.26090022921562195
         }
       ],
       "keywords": [],
@@ -3033,11 +3034,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5289809107780457
+          "score": 0.5289809703826904
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4380359649658203
+          "score": 0.4380359351634979
         }
       ],
       "keywords": [],
@@ -3077,11 +3078,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4251556992530823
+          "score": 0.42515575885772705
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.375057578086853
+          "score": 0.3750572204589844
         }
       ],
       "keywords": [],
@@ -3117,11 +3118,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5739485025405884
+          "score": 0.5739482641220093
         },
         {
           "label": "Novel Applications",
-          "score": 0.544219970703125
+          "score": 0.5442197322845459
         }
       ],
       "keywords": [],
@@ -3163,11 +3164,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.3868652582168579
+          "score": 0.38686537742614746
         },
         {
           "label": "Data Management",
-          "score": 0.37402960658073425
+          "score": 0.3740295171737671
         }
       ],
       "keywords": [],
@@ -3206,7 +3207,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.41938289999961853
+          "score": 0.41938260197639465
         },
         {
           "label": "Novel Applications",
@@ -3253,11 +3254,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4483760893344879
+          "score": 0.4483761489391327
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.40080296993255615
+          "score": 0.40080294013023376
         }
       ],
       "keywords": [],
@@ -3293,11 +3294,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.5154440402984619
+          "score": 0.5154443383216858
         },
         {
           "label": "Novel Applications",
-          "score": 0.49700766801834106
+          "score": 0.4970075190067291
         },
         {
           "label": "Reviews",
@@ -3341,11 +3342,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.44307178258895874
+          "score": 0.44307181239128113
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4313000440597534
+          "score": 0.4313002824783325
         }
       ],
       "keywords": [],
@@ -3383,11 +3384,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4889258146286011
+          "score": 0.4889255166053772
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.46692073345184326
+          "score": 0.4669205844402313
         }
       ],
       "keywords": [],
@@ -3426,11 +3427,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.41818803548812866
+          "score": 0.41818782687187195
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.39055606722831726
+          "score": 0.3905562162399292
         }
       ],
       "keywords": [],
@@ -3467,11 +3468,11 @@
       "categories": [
         {
           "label": "Beam Dynamics",
-          "score": 0.34180766344070435
+          "score": 0.34180769324302673
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.33053117990493774
+          "score": 0.3305307626724243
         }
       ],
       "keywords": [],
@@ -3507,11 +3508,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5237252712249756
+          "score": 0.5237255692481995
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.47268223762512207
+          "score": 0.4726822078227997
         }
       ],
       "keywords": [],
@@ -3547,11 +3548,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5137489438056946
+          "score": 0.5137492418289185
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4303249716758728
+          "score": 0.4303250312805176
         },
         {
           "label": "Tools & Libraries",
@@ -3596,11 +3597,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.522112250328064
+          "score": 0.5221120715141296
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5128538608551025
+          "score": 0.512853741645813
         }
       ],
       "keywords": [],
@@ -3642,7 +3643,7 @@
         },
         {
           "label": "Data Management",
-          "score": 0.36139124631881714
+          "score": 0.36139100790023804
         }
       ],
       "keywords": [],
@@ -3685,7 +3686,7 @@
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.38645195960998535
+          "score": 0.3864521384239197
         }
       ],
       "keywords": [],
@@ -3720,11 +3721,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5246322154998779
+          "score": 0.5246323347091675
         },
         {
           "label": "Novel Applications",
-          "score": 0.4918442368507385
+          "score": 0.4918443560600281
         }
       ],
       "keywords": [],
@@ -3760,11 +3761,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4186552166938782
+          "score": 0.41865554451942444
         },
         {
           "label": "Novel Applications",
-          "score": 0.41617923974990845
+          "score": 0.4161792993545532
         },
         {
           "label": "Tools & Libraries",
@@ -3812,7 +3813,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.503053605556488
+          "score": 0.5030534267425537
         },
         {
           "label": "Tools & Libraries",
@@ -3853,11 +3854,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4407104551792145
+          "score": 0.4407103359699249
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.33210334181785583
+          "score": 0.33210355043411255
         }
       ],
       "keywords": [],
@@ -3895,11 +3896,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3571299910545349
+          "score": 0.3571297526359558
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3208552300930023
+          "score": 0.3208550810813904
         },
         {
           "label": "Tools & Libraries",
@@ -3942,11 +3943,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4323157072067261
+          "score": 0.432315856218338
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.43146151304244995
+          "score": 0.4314611554145813
         },
         {
           "label": "Surrogate Models",
@@ -3988,11 +3989,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3772347569465637
+          "score": 0.37723487615585327
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.35236579179763794
+          "score": 0.3523657023906708
         },
         {
           "label": "Tools & Libraries",
@@ -4034,7 +4035,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4260273575782776
+          "score": 0.4260273873806
         },
         {
           "label": "Statistics & Trends",
@@ -4080,7 +4081,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.39803826808929443
+          "score": 0.3980378210544586
         },
         {
           "label": "Tools & Libraries",
@@ -4122,11 +4123,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.42848503589630127
+          "score": 0.42848512530326843
         },
         {
           "label": "Data Management",
-          "score": 0.3615880012512207
+          "score": 0.36158818006515503
         },
         {
           "label": "Tools & Libraries",
@@ -4167,11 +4168,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3774595260620117
+          "score": 0.37745970487594604
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3313775360584259
+          "score": 0.3313775658607483
         }
       ],
       "keywords": [],
@@ -4215,11 +4216,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4504234790802002
+          "score": 0.45042330026626587
         },
         {
           "label": "Beam Diagnostics",
-          "score": 0.3809482455253601
+          "score": 0.38094836473464966
         },
         {
           "label": "Tools & Libraries",
@@ -4261,7 +4262,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3979305624961853
+          "score": 0.3979305326938629
         },
         {
           "label": "By Facility Type",
@@ -4303,11 +4304,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6074836850166321
+          "score": 0.6074838042259216
         },
         {
           "label": "Novel Applications",
-          "score": 0.4914327561855316
+          "score": 0.4914325177669525
         },
         {
           "label": "Tools & Libraries",
@@ -4348,11 +4349,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.43641167879104614
+          "score": 0.4364117681980133
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.413082093000412
+          "score": 0.41308221220970154
         }
       ],
       "keywords": [],
@@ -4388,11 +4389,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.42653888463974
+          "score": 0.42653873562812805
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3803858458995819
+          "score": 0.38038572669029236
         }
       ],
       "keywords": [],
@@ -4436,11 +4437,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.500532329082489
+          "score": 0.5005325078964233
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4597116708755493
+          "score": 0.45971181988716125
         }
       ],
       "keywords": [],
@@ -4482,11 +4483,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5388551354408264
+          "score": 0.5388549566268921
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.47756075859069824
+          "score": 0.47756072878837585
         },
         {
           "label": "Tools & Libraries",
@@ -4527,7 +4528,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.47507572174072266
+          "score": 0.4750756025314331
         },
         {
           "label": "Surrogate Models",
@@ -4573,7 +4574,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.37962979078292847
+          "score": 0.3796297311782837
         },
         {
           "label": "Tools & Libraries",
@@ -4630,11 +4631,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4977997839450836
+          "score": 0.497799813747406
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.3320251703262329
+          "score": 0.3320251405239105
         }
       ],
       "keywords": [],
@@ -4674,11 +4675,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4461631178855896
+          "score": 0.44616347551345825
         },
         {
           "label": "Novel Applications",
-          "score": 0.41266515851020813
+          "score": 0.4126647710800171
         }
       ],
       "keywords": [],
@@ -4720,11 +4721,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.46783125400543213
+          "score": 0.4678310751914978
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.451058566570282
+          "score": 0.45105820894241333
         }
       ],
       "keywords": [],
@@ -4759,7 +4760,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4791420102119446
+          "score": 0.4791419804096222
         },
         {
           "label": "Tools & Libraries",
@@ -4800,7 +4801,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5971343517303467
+          "score": 0.5971342325210571
         },
         {
           "label": "Tools & Libraries",
@@ -4852,7 +4853,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.4243842363357544
+          "score": 0.42438414692878723
         }
       ],
       "keywords": [],
@@ -4892,11 +4893,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5085130929946899
+          "score": 0.5085132122039795
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.46414440870285034
+          "score": 0.464144229888916
         },
         {
           "label": "Surrogate Models",
@@ -4941,11 +4942,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.46547001600265503
+          "score": 0.4654698967933655
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4355792999267578
+          "score": 0.43557947874069214
         }
       ],
       "keywords": [],
@@ -4993,7 +4994,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5805788040161133
+          "score": 0.5805788636207581
         },
         {
           "label": "Novel Applications",
@@ -5042,7 +5043,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.38018763065338135
+          "score": 0.38018742203712463
         }
       ],
       "keywords": [],
@@ -5078,11 +5079,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.49265700578689575
+          "score": 0.49265703558921814
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.43218573927879333
+          "score": 0.43218567967414856
         }
       ],
       "keywords": [],
@@ -5117,7 +5118,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.615077018737793
+          "score": 0.6150772571563721
         },
         {
           "label": "Tools & Libraries",
@@ -5163,7 +5164,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.31157657504081726
+          "score": 0.3115764856338501
         },
         {
           "label": "Surrogate Models",
@@ -5206,11 +5207,11 @@
       "categories": [
         {
           "label": "Optimization & Control",
-          "score": 0.40274009108543396
+          "score": 0.40274038910865784
         },
         {
           "label": "RF Systems",
-          "score": 0.36942222714424133
+          "score": 0.36942198872566223
         },
         {
           "label": "Tools & Libraries",
@@ -5256,7 +5257,7 @@
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3815770745277405
+          "score": 0.38157686591148376
         }
       ],
       "keywords": [],
@@ -5293,11 +5294,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5306963920593262
+          "score": 0.5306965708732605
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.46116387844085693
+          "score": 0.46116405725479126
         },
         {
           "label": "Tools & Libraries",
@@ -5339,11 +5340,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4225772023200989
+          "score": 0.4225769340991974
         },
         {
           "label": "Novel Applications",
-          "score": 0.4220989942550659
+          "score": 0.42209914326667786
         }
       ],
       "keywords": [],
@@ -5383,11 +5384,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.538998544216156
+          "score": 0.5389984846115112
         },
         {
           "label": "Operations & Control",
-          "score": 0.5380998849868774
+          "score": 0.5380999445915222
         }
       ],
       "keywords": [],
@@ -5430,11 +5431,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4659801125526428
+          "score": 0.46598032116889954
         },
         {
           "label": "Novel Applications",
-          "score": 0.43371689319610596
+          "score": 0.4337170720100403
         },
         {
           "label": "Surrogate Models",
@@ -5474,11 +5475,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5323720574378967
+          "score": 0.5323721170425415
         },
         {
           "label": "Data Management",
-          "score": 0.5131917595863342
+          "score": 0.513191819190979
         }
       ],
       "keywords": [],
@@ -5514,11 +5515,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5820252895355225
+          "score": 0.582024872303009
         },
         {
           "label": "Novel Applications",
-          "score": 0.5145212411880493
+          "score": 0.5145211219787598
         }
       ],
       "keywords": [],
@@ -5555,11 +5556,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6524985432624817
+          "score": 0.6524987816810608
         },
         {
           "label": "Novel Applications",
-          "score": 0.5227475166320801
+          "score": 0.5227476954460144
         },
         {
           "label": "Tools & Libraries",
@@ -5599,11 +5600,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.43031007051467896
+          "score": 0.4303102195262909
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3919859528541565
+          "score": 0.3919861912727356
         }
       ],
       "keywords": [],
@@ -5663,11 +5664,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.5016590356826782
+          "score": 0.5016592741012573
         },
         {
           "label": "Novel Applications",
-          "score": 0.4980234205722809
+          "score": 0.49802324175834656
         },
         {
           "label": "Reviews",
@@ -5715,11 +5716,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.42079681158065796
+          "score": 0.4207966923713684
         },
         {
           "label": "Novel Applications",
-          "score": 0.41688770055770874
+          "score": 0.4168873131275177
         }
       ],
       "keywords": [],
@@ -5757,11 +5758,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.40469300746917725
+          "score": 0.4046928584575653
         },
         {
           "label": "Novel Applications",
-          "score": 0.3768412470817566
+          "score": 0.3768411874771118
         }
       ],
       "keywords": [],
@@ -5801,7 +5802,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5152862071990967
+          "score": 0.5152860879898071
         },
         {
           "label": "Tools & Libraries",
@@ -5845,11 +5846,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4429498314857483
+          "score": 0.44294971227645874
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.35458770394325256
+          "score": 0.3545876741409302
         },
         {
           "label": "Tools & Libraries",
@@ -5892,7 +5893,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5003534555435181
+          "score": 0.5003536343574524
         }
       ],
       "keywords": [],
@@ -5933,7 +5934,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4516933560371399
+          "score": 0.45169320702552795
         },
         {
           "label": "Tools & Libraries",
@@ -5972,11 +5973,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.2886364459991455
+          "score": 0.28863632678985596
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2624962329864502
+          "score": 0.2624962627887726
         }
       ],
       "keywords": [],
@@ -6055,11 +6056,11 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.49797165393829346
+          "score": 0.49797171354293823
         },
         {
           "label": "Novel Applications",
-          "score": 0.3641239106655121
+          "score": 0.36412397027015686
         }
       ],
       "keywords": [],
@@ -6096,11 +6097,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.35912662744522095
+          "score": 0.3591267466545105
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.31545716524124146
+          "score": 0.31545740365982056
         }
       ],
       "keywords": [],
@@ -6176,11 +6177,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.30319786071777344
+          "score": 0.3031976819038391
         },
         {
           "label": "By Facility Type",
-          "score": 0.29679739475250244
+          "score": 0.2967974841594696
         },
         {
           "label": "Tools & Libraries",
@@ -6224,11 +6225,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.43073028326034546
+          "score": 0.43073058128356934
         },
         {
           "label": "Novel Applications",
-          "score": 0.32273730635643005
+          "score": 0.3227371871471405
         }
       ],
       "keywords": [],
@@ -6318,7 +6319,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3636682331562042
+          "score": 0.3636680841445923
         },
         {
           "label": "Tools & Libraries",
@@ -6362,7 +6363,7 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.2753675580024719
+          "score": 0.27536770701408386
         }
       ],
       "keywords": [],
@@ -6436,11 +6437,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3100738525390625
+          "score": 0.3100738227367401
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.27802616357803345
+          "score": 0.27802637219429016
         }
       ],
       "keywords": [],
@@ -6480,11 +6481,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.46181023120880127
+          "score": 0.46181026101112366
         },
         {
           "label": "Novel Applications",
-          "score": 0.42929932475090027
+          "score": 0.42929917573928833
         }
       ],
       "keywords": [],
@@ -6530,7 +6531,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4122166633605957
+          "score": 0.4122166335582733
         },
         {
           "label": "Data Management",
@@ -6574,11 +6575,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.34433627128601074
+          "score": 0.34433597326278687
         },
         {
           "label": "Data Management",
-          "score": 0.29640036821365356
+          "score": 0.2964003384113312
         },
         {
           "label": "Surrogate Models",
@@ -6623,7 +6624,7 @@
       "categories": [
         {
           "label": "Optimization & Control",
-          "score": 0.4619396924972534
+          "score": 0.4619393050670624
         },
         {
           "label": "Operations & Control",
@@ -6668,7 +6669,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.2655929625034332
+          "score": 0.26559287309646606
         }
       ],
       "keywords": [],
@@ -6706,11 +6707,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4336555600166321
+          "score": 0.43365535140037537
         },
         {
           "label": "Novel Applications",
-          "score": 0.369136780500412
+          "score": 0.3691368103027344
         }
       ],
       "keywords": [],
@@ -6746,11 +6747,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4214935004711151
+          "score": 0.4214935302734375
         },
         {
           "label": "Novel Applications",
-          "score": 0.34556666016578674
+          "score": 0.3455668091773987
         }
       ],
       "keywords": [],
@@ -6871,11 +6872,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.39880144596099854
+          "score": 0.39880114793777466
         },
         {
           "label": "Novel Applications",
-          "score": 0.3775925636291504
+          "score": 0.37759238481521606
         },
         {
           "label": "Tools & Libraries",
@@ -6918,11 +6919,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.45225533843040466
+          "score": 0.4522555470466614
         },
         {
           "label": "Optimization & Control",
-          "score": 0.3587721884250641
+          "score": 0.3587719798088074
         },
         {
           "label": "Tools & Libraries",
@@ -6968,11 +6969,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.45523226261138916
+          "score": 0.45523199439048767
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.41726863384246826
+          "score": 0.4172685742378235
         }
       ],
       "keywords": [],
@@ -7010,7 +7011,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.33555006980895996
+          "score": 0.3355502188205719
         },
         {
           "label": "Novel Applications",
@@ -7052,11 +7053,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.31887203454971313
+          "score": 0.3188721239566803
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.30897417664527893
+          "score": 0.3089742064476013
         }
       ],
       "keywords": [],
@@ -7096,11 +7097,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.39614057540893555
+          "score": 0.39614051580429077
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3654390573501587
+          "score": 0.36543920636177063
         }
       ],
       "keywords": [],
@@ -7143,11 +7144,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.32645267248153687
+          "score": 0.3264525830745697
         },
         {
           "label": "By Facility Type",
-          "score": 0.30047041177749634
+          "score": 0.3004702031612396
         }
       ],
       "keywords": [],
@@ -7184,11 +7185,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.42241737246513367
+          "score": 0.4224173128604889
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4210679233074188
+          "score": 0.421068012714386
         }
       ],
       "keywords": [],
@@ -7227,7 +7228,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.31045183539390564
+          "score": 0.31045180559158325
         },
         {
           "label": "By Facility Type",
@@ -7271,11 +7272,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.4109318256378174
+          "score": 0.41093164682388306
         },
         {
           "label": "Novel Applications",
-          "score": 0.4079841375350952
+          "score": 0.40798404812812805
         }
       ],
       "keywords": [],
@@ -7315,11 +7316,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.41203927993774414
+          "score": 0.4120391607284546
         },
         {
           "label": "Data Management",
-          "score": 0.3913349509239197
+          "score": 0.3913348317146301
         },
         {
           "label": "Tools & Libraries",
@@ -7363,11 +7364,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.283997118473053
+          "score": 0.28399720788002014
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2823873460292816
+          "score": 0.2823871076107025
         }
       ],
       "keywords": [],
@@ -7443,11 +7444,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2719574570655823
+          "score": 0.27195730805397034
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.27054286003112793
+          "score": 0.2705429196357727
         }
       ],
       "keywords": [],
@@ -7482,11 +7483,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.33083128929138184
+          "score": 0.3308311402797699
         },
         {
           "label": "Data Management",
-          "score": 0.25785547494888306
+          "score": 0.2578555643558502
         }
       ],
       "keywords": [],
@@ -7563,7 +7564,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.39732110500335693
+          "score": 0.3973209261894226
         },
         {
           "label": "Tools & Libraries",
@@ -7698,7 +7699,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3486720621585846
+          "score": 0.348672091960907
         },
         {
           "label": "Surrogate Models",
@@ -8023,7 +8024,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5468091368675232
+          "score": 0.546809196472168
         },
         {
           "label": "Tools & Libraries",
@@ -8072,11 +8073,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.3557785451412201
+          "score": 0.3557785153388977
         },
         {
           "label": "Novel Applications",
-          "score": 0.3197038769721985
+          "score": 0.3197038471698761
         },
         {
           "label": "Tools & Libraries",
@@ -8116,7 +8117,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.36470216512680054
+          "score": 0.3647023141384125
         },
         {
           "label": "Tools & Libraries",
@@ -8159,7 +8160,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4400723874568939
+          "score": 0.4400726854801178
         },
         {
           "label": "Tools & Libraries",
@@ -8203,11 +8204,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4185640811920166
+          "score": 0.41856420040130615
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.34078118205070496
+          "score": 0.34078124165534973
         }
       ],
       "keywords": [],
@@ -8246,11 +8247,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5018218159675598
+          "score": 0.5018216967582703
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.44352149963378906
+          "score": 0.4435216188430786
         }
       ],
       "keywords": [],
@@ -8293,7 +8294,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.576176643371582
+          "score": 0.5761763453483582
         }
       ],
       "keywords": [],
@@ -8337,11 +8338,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.45523226261138916
+          "score": 0.45523199439048767
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.41726863384246826
+          "score": 0.4172685742378235
         }
       ],
       "keywords": [],
@@ -8378,11 +8379,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.32681670784950256
+          "score": 0.3268166184425354
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.25174733996391296
+          "score": 0.25174713134765625
         },
         {
           "label": "Surrogate Models",
@@ -8430,7 +8431,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.44027769565582275
+          "score": 0.44027745723724365
         },
         {
           "label": "Novel Applications",
@@ -8510,11 +8511,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.38528621196746826
+          "score": 0.3852861523628235
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3480299115180969
+          "score": 0.34802988171577454
         }
       ],
       "keywords": [],
@@ -8556,11 +8557,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5689211487770081
+          "score": 0.5689213275909424
         },
         {
           "label": "Novel Applications",
-          "score": 0.46931925415992737
+          "score": 0.4693194627761841
         }
       ],
       "keywords": [],
@@ -8600,11 +8601,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5298722386360168
+          "score": 0.5298720002174377
         },
         {
           "label": "Data Management",
-          "score": 0.5248305797576904
+          "score": 0.5248309373855591
         },
         {
           "label": "Reviews",
@@ -8649,11 +8650,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3292938470840454
+          "score": 0.32929369807243347
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.31848299503326416
+          "score": 0.31848281621932983
         },
         {
           "label": "Tools & Libraries",
@@ -8699,11 +8700,11 @@
       "categories": [
         {
           "label": "Optimization & Control",
-          "score": 0.3631826639175415
+          "score": 0.36318251490592957
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.35403385758399963
+          "score": 0.35403379797935486
         },
         {
           "label": "Tools & Libraries",
@@ -8751,7 +8752,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4670400023460388
+          "score": 0.4670398235321045
         },
         {
           "label": "Surrogate Models",
@@ -8799,11 +8800,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6579601764678955
+          "score": 0.6579602360725403
         },
         {
           "label": "Novel Applications",
-          "score": 0.5763222575187683
+          "score": 0.5763219594955444
         },
         {
           "label": "Tools & Libraries",
@@ -8846,11 +8847,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6074836850166321
+          "score": 0.6074838042259216
         },
         {
           "label": "Novel Applications",
-          "score": 0.4914327561855316
+          "score": 0.4914325177669525
         },
         {
           "label": "Tools & Libraries",
@@ -8898,11 +8899,11 @@
       "categories": [
         {
           "label": "By Facility Type",
-          "score": 0.28814417123794556
+          "score": 0.28814414143562317
         },
         {
           "label": "Surrogate Models",
-          "score": 0.2641887068748474
+          "score": 0.2641884982585907
         }
       ],
       "keywords": [],
@@ -8939,11 +8940,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.382502019405365
+          "score": 0.38250213861465454
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.3662261366844177
+          "score": 0.36622604727745056
         },
         {
           "label": "Tools & Libraries",
@@ -8988,11 +8989,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.39245593547821045
+          "score": 0.3924559950828552
         },
         {
           "label": "Novel Applications",
-          "score": 0.3043503761291504
+          "score": 0.30435052514076233
         }
       ],
       "keywords": [],
@@ -9029,7 +9030,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.5486422181129456
+          "score": 0.5486423969268799
         },
         {
           "label": "Novel Applications",
@@ -9075,7 +9076,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4516933560371399
+          "score": 0.45169320702552795
         },
         {
           "label": "Tools & Libraries",
@@ -9163,7 +9164,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6841274499893188
+          "score": 0.684127688407898
         },
         {
           "label": "Tools & Libraries",
@@ -9207,11 +9208,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3901832699775696
+          "score": 0.3901832103729248
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3269779682159424
+          "score": 0.3269781172275543
         }
       ],
       "keywords": [],
@@ -9246,7 +9247,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.43595758080482483
+          "score": 0.435957670211792
         },
         {
           "label": "Tools & Libraries",
@@ -9296,11 +9297,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.35119566321372986
+          "score": 0.3511955738067627
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.29699867963790894
+          "score": 0.2969985604286194
         },
         {
           "label": "Surrogate Models",
@@ -9344,11 +9345,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.45820218324661255
+          "score": 0.45820194482803345
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.43623048067092896
+          "score": 0.43623051047325134
         }
       ],
       "keywords": [],
@@ -9384,11 +9385,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4344249963760376
+          "score": 0.4344249665737152
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4188380241394043
+          "score": 0.41883814334869385
         },
         {
           "label": "Tools & Libraries",
@@ -9432,7 +9433,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5045299530029297
+          "score": 0.5045301914215088
         },
         {
           "label": "Tools & Libraries",
@@ -9472,11 +9473,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6263312101364136
+          "score": 0.6263314485549927
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5727263689041138
+          "score": 0.5727264285087585
         }
       ],
       "keywords": [],
@@ -9515,7 +9516,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.40004873275756836
+          "score": 0.40004855394363403
         },
         {
           "label": "Tools & Libraries",
@@ -9561,7 +9562,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.49357926845550537
+          "score": 0.49357929825782776
         },
         {
           "label": "Tools & Libraries",
@@ -9605,7 +9606,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.7028098702430725
+          "score": 0.7028096318244934
         },
         {
           "label": "Tools & Libraries",
@@ -9654,7 +9655,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3338199853897095
+          "score": 0.3338199555873871
         },
         {
           "label": "Tools & Libraries",
@@ -9699,11 +9700,11 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.4130399823188782
+          "score": 0.4130399525165558
         },
         {
           "label": "Novel Applications",
-          "score": 0.3997310400009155
+          "score": 0.3997310996055603
         }
       ],
       "keywords": [],
@@ -9740,11 +9741,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4384578466415405
+          "score": 0.43845757842063904
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.36416178941726685
+          "score": 0.364161878824234
         },
         {
           "label": "Reviews",
@@ -9795,7 +9796,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.4475053548812866
+          "score": 0.447505384683609
         },
         {
           "label": "Surrogate Models",
@@ -9838,11 +9839,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.47247767448425293
+          "score": 0.47247758507728577
         },
         {
           "label": "Novel Applications",
-          "score": 0.3742819130420685
+          "score": 0.37428176403045654
         }
       ],
       "keywords": [],
@@ -9879,11 +9880,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3824932873249054
+          "score": 0.38249334692955017
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.34621602296829224
+          "score": 0.34621626138687134
         }
       ],
       "keywords": [],
@@ -9928,11 +9929,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5422219038009644
+          "score": 0.5422222018241882
         },
         {
           "label": "Novel Applications",
-          "score": 0.5321478247642517
+          "score": 0.5321478843688965
         },
         {
           "label": "Tools & Libraries",
@@ -9980,11 +9981,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5840196013450623
+          "score": 0.5840194821357727
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5551005601882935
+          "score": 0.5551003217697144
         },
         {
           "label": "Surrogate Models",
@@ -10024,7 +10025,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5255563855171204
+          "score": 0.525556206703186
         },
         {
           "label": "Tools & Libraries",
@@ -10067,11 +10068,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.48273396492004395
+          "score": 0.48273393511772156
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4545425474643707
+          "score": 0.45454248785972595
         }
       ],
       "keywords": [],
@@ -10110,11 +10111,11 @@
       "categories": [
         {
           "label": "Surrogate Models",
-          "score": 0.3398284912109375
+          "score": 0.33982861042022705
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.31166771054267883
+          "score": 0.31166762113571167
         }
       ],
       "keywords": [],
@@ -10159,7 +10160,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5890807509422302
+          "score": 0.5890808701515198
         },
         {
           "label": "Tools & Libraries",
@@ -10204,11 +10205,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5358819365501404
+          "score": 0.5358820557594299
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4673148989677429
+          "score": 0.4673149585723877
         },
         {
           "label": "Reviews",
@@ -10253,11 +10254,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.5327498912811279
+          "score": 0.5327499508857727
         },
         {
           "label": "Operations & Control",
-          "score": 0.5296401977539062
+          "score": 0.5296404361724854
         }
       ],
       "keywords": [],
@@ -10303,11 +10304,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.43000590801239014
+          "score": 0.4300057590007782
         },
         {
           "label": "Novel Applications",
-          "score": 0.424477219581604
+          "score": 0.42447710037231445
         },
         {
           "label": "Surrogate Models",
@@ -10349,11 +10350,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.48838287591934204
+          "score": 0.48838290572166443
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.44360408186912537
+          "score": 0.44360390305519104
         }
       ],
       "keywords": [],
@@ -10391,11 +10392,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.44642606377601624
+          "score": 0.44642573595046997
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3644724190235138
+          "score": 0.3644722104072571
         },
         {
           "label": "Tools & Libraries",
@@ -10453,11 +10454,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3103748857975006
+          "score": 0.31037473678588867
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2935618758201599
+          "score": 0.2935618460178375
         }
       ],
       "keywords": [],
@@ -10497,11 +10498,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4336555600166321
+          "score": 0.43365535140037537
         },
         {
           "label": "Novel Applications",
-          "score": 0.369136780500412
+          "score": 0.3691368103027344
         }
       ],
       "keywords": [],
@@ -10552,7 +10553,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.4850040078163147
+          "score": 0.48500412702560425
         }
       ],
       "keywords": [],
@@ -10593,11 +10594,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4473467469215393
+          "score": 0.44734710454940796
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4356151819229126
+          "score": 0.43561530113220215
         }
       ],
       "keywords": [],
@@ -10636,11 +10637,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4177919924259186
+          "score": 0.41779208183288574
         },
         {
           "label": "Novel Applications",
-          "score": 0.4120507836341858
+          "score": 0.41205087304115295
         },
         {
           "label": "Reviews",
@@ -10689,7 +10690,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5527625679969788
+          "score": 0.5527623891830444
         },
         {
           "label": "Surrogate Models",
@@ -10729,11 +10730,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5792196393013
+          "score": 0.5792193412780762
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.542995810508728
+          "score": 0.5429959893226624
         }
       ],
       "keywords": [],
@@ -10776,11 +10777,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6699134707450867
+          "score": 0.6699134111404419
         },
         {
           "label": "Novel Applications",
-          "score": 0.557954728603363
+          "score": 0.5579544901847839
         }
       ],
       "keywords": [],
@@ -10816,7 +10817,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5237215757369995
+          "score": 0.5237218141555786
         },
         {
           "label": "Surrogate Models",
@@ -10865,11 +10866,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5058296918869019
+          "score": 0.5058299899101257
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5018988847732544
+          "score": 0.5018988251686096
         }
       ],
       "keywords": [],
@@ -10907,11 +10908,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4495397210121155
+          "score": 0.44953957200050354
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.36582526564598083
+          "score": 0.3658250570297241
         }
       ],
       "keywords": [],
@@ -10948,11 +10949,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4523090720176697
+          "score": 0.4523088037967682
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.39967814087867737
+          "score": 0.3996778726577759
         }
       ],
       "keywords": [],
@@ -10992,11 +10993,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5697509050369263
+          "score": 0.5697506666183472
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5686947703361511
+          "score": 0.568694531917572
         },
         {
           "label": "Reviews",
@@ -11044,11 +11045,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.497647762298584
+          "score": 0.4976480007171631
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4780374765396118
+          "score": 0.4780377149581909
         }
       ],
       "keywords": [],
@@ -11095,7 +11096,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3636682331562042
+          "score": 0.3636680841445923
         },
         {
           "label": "Tools & Libraries",
@@ -11140,7 +11141,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.4539307653903961
+          "score": 0.45393091440200806
         }
       ],
       "keywords": [],
@@ -11199,11 +11200,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5317566394805908
+          "score": 0.5317569375038147
         },
         {
           "label": "Surrogate Models",
-          "score": 0.5270073413848877
+          "score": 0.5270075798034668
         },
         {
           "label": "Tools & Libraries",
@@ -11381,7 +11382,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.41723304986953735
+          "score": 0.4172332286834717
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
@@ -11425,11 +11426,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.6115000247955322
+          "score": 0.6115003228187561
         },
         {
           "label": "Novel Applications",
-          "score": 0.6033953428268433
+          "score": 0.6033951640129089
         },
         {
           "label": "Reviews",
@@ -11472,11 +11473,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6051356792449951
+          "score": 0.6051356196403503
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.5503079891204834
+          "score": 0.550308346748352
         },
         {
           "label": "Reviews",
@@ -11519,11 +11520,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4219106137752533
+          "score": 0.42191052436828613
         },
         {
           "label": "Novel Applications",
-          "score": 0.3452339172363281
+          "score": 0.34523388743400574
         },
         {
           "label": "Tools & Libraries",
@@ -11563,7 +11564,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3244960308074951
+          "score": 0.324495792388916
         }
       ],
       "keywords": [],
@@ -11645,7 +11646,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.26246756315231323
+          "score": 0.2624676823616028
         }
       ],
       "keywords": [],
@@ -11685,7 +11686,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5242547988891602
+          "score": 0.5242549777030945
         },
         {
           "label": "Reviews",
@@ -11728,7 +11729,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5227451324462891
+          "score": 0.5227454900741577
         },
         {
           "label": "Reviews",
@@ -11769,7 +11770,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.42680758237838745
+          "score": 0.42680755257606506
         }
       ],
       "keywords": [],
@@ -11807,7 +11808,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3472026288509369
+          "score": 0.34720274806022644
         }
       ],
       "keywords": [],
@@ -11846,7 +11847,7 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.25771820545196533
+          "score": 0.2577182650566101
         }
       ],
       "keywords": [],
@@ -11888,11 +11889,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.4327123165130615
+          "score": 0.43271249532699585
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.42237013578414917
+          "score": 0.42237016558647156
         }
       ],
       "keywords": [],
@@ -11933,11 +11934,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.41736605763435364
+          "score": 0.4173663258552551
         },
         {
           "label": "Data Management",
-          "score": 0.4129208028316498
+          "score": 0.4129209816455841
         }
       ],
       "keywords": [],
@@ -12019,11 +12020,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.347952663898468
+          "score": 0.3479527235031128
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.26563793420791626
+          "score": 0.26563799381256104
         }
       ],
       "keywords": [],
@@ -12098,7 +12099,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.28519123792648315
+          "score": 0.2851911783218384
         },
         {
           "label": "Tools & Libraries",
@@ -12140,11 +12141,11 @@
       "categories": [
         {
           "label": "Surrogate Models",
-          "score": 0.4991194009780884
+          "score": 0.49911949038505554
         },
         {
           "label": "Novel Applications",
-          "score": 0.4953474700450897
+          "score": 0.49534741044044495
         },
         {
           "label": "Tools & Libraries",
@@ -12236,11 +12237,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.26770344376564026
+          "score": 0.2677035629749298
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.26512789726257324
+          "score": 0.26512786746025085
         }
       ],
       "keywords": [],
@@ -12277,11 +12278,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.33519113063812256
+          "score": 0.3351910710334778
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.31967830657958984
+          "score": 0.31967833638191223
         }
       ],
       "keywords": [],
@@ -12320,11 +12321,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.28408944606781006
+          "score": 0.28408950567245483
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2582853436470032
+          "score": 0.25828540325164795
         }
       ],
       "keywords": [],
@@ -12478,11 +12479,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.38661593198776245
+          "score": 0.38661614060401917
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3539915084838867
+          "score": 0.35399138927459717
         }
       ],
       "keywords": [],
@@ -12518,7 +12519,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3881036341190338
+          "score": 0.38810357451438904
         },
         {
           "label": "Tools & Libraries",
@@ -12567,11 +12568,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.33736521005630493
+          "score": 0.3373652398586273
         },
         {
           "label": "Surrogate Models",
-          "score": 0.3180478811264038
+          "score": 0.31804800033569336
         }
       ],
       "keywords": [],
@@ -12648,11 +12649,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6057682037353516
+          "score": 0.6057684421539307
         },
         {
           "label": "Novel Applications",
-          "score": 0.5601047873497009
+          "score": 0.5601049065589905
         },
         {
           "label": "Tools & Libraries",
@@ -12696,11 +12697,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6057682037353516
+          "score": 0.6057684421539307
         },
         {
           "label": "Novel Applications",
-          "score": 0.5601047873497009
+          "score": 0.5601049065589905
         },
         {
           "label": "Tools & Libraries",
@@ -12743,11 +12744,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.48693084716796875
+          "score": 0.4869307577610016
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4437161684036255
+          "score": 0.443716436624527
         },
         {
           "label": "Tools & Libraries",
@@ -12915,11 +12916,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.49741339683532715
+          "score": 0.4974135458469391
         },
         {
           "label": "Data Management",
-          "score": 0.49066928029060364
+          "score": 0.490669310092926
         },
         {
           "label": "Tools & Libraries",
@@ -12960,7 +12961,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.28052759170532227
+          "score": 0.2805277705192566
         }
       ],
       "keywords": [],
@@ -13001,7 +13002,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.641206681728363
+          "score": 0.6412069797515869
         },
         {
           "label": "Operations & Control",
@@ -13044,11 +13045,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3004032075405121
+          "score": 0.3004032373428345
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.29416465759277344
+          "score": 0.294164776802063
         }
       ],
       "keywords": [],
@@ -13086,11 +13087,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.33777305483818054
+          "score": 0.33777278661727905
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3084327280521393
+          "score": 0.30843260884284973
         }
       ],
       "keywords": [],
@@ -13131,11 +13132,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3776553273200989
+          "score": 0.37765491008758545
         },
         {
           "label": "Data Management",
-          "score": 0.25477808713912964
+          "score": 0.2547779679298401
         }
       ],
       "keywords": [],
@@ -13176,7 +13177,7 @@
         },
         {
           "label": "Operations & Control",
-          "score": 0.27956461906433105
+          "score": 0.27956438064575195
         }
       ],
       "keywords": [],
@@ -13213,7 +13214,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2590833604335785
+          "score": 0.25908321142196655
         }
       ],
       "keywords": [],
@@ -13254,11 +13255,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.34982168674468994
+          "score": 0.34982162714004517
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.28307533264160156
+          "score": 0.2830750346183777
         },
         {
           "label": "Tools & Libraries",
@@ -13352,11 +13353,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4491236209869385
+          "score": 0.44912323355674744
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3980206847190857
+          "score": 0.39802032709121704
         }
       ],
       "keywords": [],
@@ -13391,11 +13392,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6817673444747925
+          "score": 0.6817675828933716
         },
         {
           "label": "Data Management",
-          "score": 0.6181437969207764
+          "score": 0.6181440353393555
         }
       ],
       "keywords": [],
@@ -13430,11 +13431,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4003908336162567
+          "score": 0.4003908038139343
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.350715309381485
+          "score": 0.35071510076522827
         }
       ],
       "keywords": [],
@@ -13475,11 +13476,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4261140823364258
+          "score": 0.4261142313480377
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3864346742630005
+          "score": 0.38643449544906616
         }
       ],
       "keywords": [],
@@ -13522,11 +13523,11 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.49180230498313904
+          "score": 0.4918024241924286
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3448007106781006
+          "score": 0.3448006212711334
         }
       ],
       "keywords": [],
@@ -13563,11 +13564,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.28911012411117554
+          "score": 0.28911009430885315
         },
         {
           "label": "Optimization & Control",
-          "score": 0.2881034314632416
+          "score": 0.288103312253952
         }
       ],
       "keywords": [],
@@ -13682,7 +13683,7 @@
       "categories": [
         {
           "label": "Optimization & Control",
-          "score": 0.31860435009002686
+          "score": 0.31860437989234924
         }
       ],
       "keywords": [],
@@ -13721,7 +13722,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.29370027780532837
+          "score": 0.2937001883983612
         },
         {
           "label": "Tools & Libraries",
@@ -13764,11 +13765,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.44514787197113037
+          "score": 0.4451480805873871
         },
         {
           "label": "Novel Applications",
-          "score": 0.43100833892822266
+          "score": 0.4310084581375122
         }
       ],
       "keywords": [],
@@ -13808,11 +13809,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.529990553855896
+          "score": 0.5299904942512512
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.5265927314758301
+          "score": 0.526593029499054
         }
       ],
       "keywords": [],
@@ -13850,11 +13851,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.510526180267334
+          "score": 0.5105263590812683
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.2630026042461395
+          "score": 0.2630027234554291
         }
       ],
       "keywords": [],
@@ -13895,11 +13896,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.4272313416004181
+          "score": 0.4272315204143524
         },
         {
           "label": "Novel Applications",
-          "score": 0.38921570777893066
+          "score": 0.3892157971858978
         }
       ],
       "keywords": [],
@@ -13938,7 +13939,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.25003308057785034
+          "score": 0.2500331699848175
         }
       ],
       "keywords": [],
@@ -13986,7 +13987,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.3501254916191101
+          "score": 0.35012558102607727
         },
         {
           "label": "Tools & Libraries",
@@ -14026,11 +14027,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.5189216136932373
+          "score": 0.5189215540885925
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5122343897819519
+          "score": 0.5122341513633728
         }
       ],
       "keywords": [],
@@ -14108,7 +14109,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4321112036705017
+          "score": 0.43211114406585693
         }
       ],
       "keywords": [],
@@ -14147,11 +14148,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4105933606624603
+          "score": 0.4105936884880066
         },
         {
           "label": "Optimization & Control",
-          "score": 0.34232085943222046
+          "score": 0.34232097864151
         }
       ],
       "keywords": [],
@@ -14190,7 +14191,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.26261284947395325
+          "score": 0.262612909078598
         }
       ],
       "keywords": [],
@@ -14226,11 +14227,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3194364905357361
+          "score": 0.31943678855895996
         },
         {
           "label": "Operations & Control",
-          "score": 0.3088069558143616
+          "score": 0.30880680680274963
         }
       ],
       "keywords": [],
@@ -14271,7 +14272,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3115675449371338
+          "score": 0.3115672171115875
         },
         {
           "label": "Tools & Libraries",
@@ -14315,11 +14316,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.37618112564086914
+          "score": 0.37618133425712585
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.31788986921310425
+          "score": 0.31789013743400574
         }
       ],
       "keywords": [],
@@ -14364,11 +14365,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.37268489599227905
+          "score": 0.3726847767829895
         },
         {
           "label": "Optimization & Control",
-          "score": 0.36111944913864136
+          "score": 0.36111927032470703
         }
       ],
       "keywords": [],
@@ -14445,11 +14446,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.37618112564086914
+          "score": 0.37618133425712585
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.31788986921310425
+          "score": 0.31789013743400574
         }
       ],
       "keywords": [],
@@ -14496,11 +14497,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.37268489599227905
+          "score": 0.3726847767829895
         },
         {
           "label": "Optimization & Control",
-          "score": 0.36111944913864136
+          "score": 0.36111927032470703
         }
       ],
       "keywords": [],
@@ -14543,7 +14544,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.30973321199417114
+          "score": 0.3097333312034607
         }
       ],
       "keywords": [],
@@ -14587,7 +14588,7 @@
       "categories": [
         {
           "label": "By Facility Type",
-          "score": 0.27425724267959595
+          "score": 0.2742573022842407
         }
       ],
       "keywords": [],
@@ -14671,11 +14672,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.40821921825408936
+          "score": 0.4082193672657013
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.25986284017562866
+          "score": 0.2598629891872406
         }
       ],
       "keywords": [],
@@ -14801,7 +14802,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.41688859462738037
+          "score": 0.41688889265060425
         },
         {
           "label": "Tools & Libraries",
@@ -14891,11 +14892,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5587201118469238
+          "score": 0.5587202310562134
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5314569473266602
+          "score": 0.5314568281173706
         },
         {
           "label": "Tools & Libraries",
@@ -14983,11 +14984,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5587201118469238
+          "score": 0.5587202310562134
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5314569473266602
+          "score": 0.5314568281173706
         },
         {
           "label": "Tools & Libraries",
@@ -15027,11 +15028,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.40799474716186523
+          "score": 0.40799465775489807
         },
         {
           "label": "Optimization & Control",
-          "score": 0.3955410122871399
+          "score": 0.39554116129875183
         }
       ],
       "keywords": [],
@@ -15071,11 +15072,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5988068580627441
+          "score": 0.598807156085968
         },
         {
           "label": "Operations & Control",
-          "score": 0.5573815107345581
+          "score": 0.5573816299438477
         }
       ],
       "keywords": [],
@@ -15191,11 +15192,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3873022496700287
+          "score": 0.3873021602630615
         },
         {
           "label": "Data Management",
-          "score": 0.36902278661727905
+          "score": 0.36902284622192383
         }
       ],
       "keywords": [],
@@ -15240,11 +15241,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3574141263961792
+          "score": 0.3574143648147583
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3363685607910156
+          "score": 0.33636853098869324
         }
       ],
       "keywords": [],
@@ -15280,7 +15281,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2686595916748047
+          "score": 0.26865965127944946
         }
       ],
       "keywords": [],
@@ -15316,11 +15317,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.27969008684158325
+          "score": 0.2796902060508728
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.25315290689468384
+          "score": 0.2531530559062958
         }
       ],
       "keywords": [],
@@ -15362,7 +15363,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905858755111694
+          "score": 0.32905876636505127
         },
         {
           "label": "Tools & Libraries",
@@ -15407,7 +15408,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905858755111694
+          "score": 0.32905876636505127
         },
         {
           "label": "Tools & Libraries",
@@ -15451,11 +15452,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4600822925567627
+          "score": 0.46008235216140747
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.45866742730140686
+          "score": 0.4586675465106964
         },
         {
           "label": "Surrogate Models",
@@ -15494,11 +15495,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.31978079676628113
+          "score": 0.3197808563709259
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.2705666422843933
+          "score": 0.270566463470459
         },
         {
           "label": "Tools & Libraries",
@@ -15544,11 +15545,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.42370539903640747
+          "score": 0.423705518245697
         },
         {
           "label": "Novel Applications",
-          "score": 0.3880927860736847
+          "score": 0.38809284567832947
         }
       ],
       "keywords": [],
@@ -15583,11 +15584,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.31978079676628113
+          "score": 0.3197808563709259
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.2705666422843933
+          "score": 0.270566463470459
         },
         {
           "label": "Tools & Libraries",
@@ -15632,11 +15633,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4600822925567627
+          "score": 0.46008235216140747
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.45866742730140686
+          "score": 0.4586675465106964
         },
         {
           "label": "Surrogate Models",
@@ -15715,7 +15716,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.26937243342399597
+          "score": 0.26937270164489746
         },
         {
           "label": "Tools & Libraries",
@@ -15793,7 +15794,7 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.2565288245677948
+          "score": 0.2565285563468933
         },
         {
           "label": "Reviews",
@@ -15834,11 +15835,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5077972412109375
+          "score": 0.5077973008155823
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.48010945320129395
+          "score": 0.48010942339897156
         }
       ],
       "keywords": [],
@@ -15914,11 +15915,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3335789144039154
+          "score": 0.33357858657836914
         },
         {
           "label": "Beam Diagnostics",
-          "score": 0.3238597512245178
+          "score": 0.3238598704338074
         }
       ],
       "keywords": [],
@@ -15955,11 +15956,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5003046989440918
+          "score": 0.500304639339447
         },
         {
           "label": "Optimization & Control",
-          "score": 0.36328351497650146
+          "score": 0.3632834255695343
         }
       ],
       "keywords": [],
@@ -16033,7 +16034,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2594786584377289
+          "score": 0.2594786286354065
         },
         {
           "label": "Reviews",
@@ -16079,11 +16080,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.33308351039886475
+          "score": 0.3330836594104767
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3312010169029236
+          "score": 0.33120134472846985
         }
       ],
       "keywords": [],
@@ -16162,11 +16163,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3064057230949402
+          "score": 0.30640584230422974
         },
         {
           "label": "Surrogate Models",
-          "score": 0.30280202627182007
+          "score": 0.3028019070625305
         }
       ],
       "keywords": [],
@@ -16240,7 +16241,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.280514121055603
+          "score": 0.28051409125328064
         }
       ],
       "keywords": [],
@@ -16280,7 +16281,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2823488712310791
+          "score": 0.2823489308357239
         },
         {
           "label": "Statistics & Trends",
@@ -16325,11 +16326,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3498407304286957
+          "score": 0.3498404622077942
         },
         {
           "label": "Beam Diagnostics",
-          "score": 0.27710777521133423
+          "score": 0.2771075665950775
         }
       ],
       "keywords": [],
@@ -16414,11 +16415,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.35951298475265503
+          "score": 0.35951313376426697
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3212025761604309
+          "score": 0.3212028741836548
         }
       ],
       "keywords": [],
@@ -16457,11 +16458,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.35738813877105713
+          "score": 0.3573880195617676
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3449626564979553
+          "score": 0.34496283531188965
         }
       ],
       "keywords": [],
@@ -16620,11 +16621,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5980844497680664
+          "score": 0.5980845093727112
         },
         {
           "label": "Novel Applications",
-          "score": 0.49617278575897217
+          "score": 0.49617284536361694
         },
         {
           "label": "Tools & Libraries",
@@ -16666,11 +16667,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.33720308542251587
+          "score": 0.3372032940387726
         },
         {
           "label": "Data Management",
-          "score": 0.2899414896965027
+          "score": 0.2899416387081146
         }
       ],
       "keywords": [],
@@ -16757,11 +16758,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.2609562277793884
+          "score": 0.2609563171863556
         },
         {
           "label": "Optimization & Control",
-          "score": 0.2536489963531494
+          "score": 0.253648966550827
         },
         {
           "label": "Tools & Libraries",
@@ -16842,7 +16843,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2828977704048157
+          "score": 0.2828976809978485
         }
       ],
       "keywords": [],
@@ -16880,11 +16881,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.35717156529426575
+          "score": 0.3571716248989105
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.30327123403549194
+          "score": 0.3032713532447815
         },
         {
           "label": "Reviews",
@@ -16931,7 +16932,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3081069588661194
+          "score": 0.3081068992614746
         }
       ],
       "keywords": [],
@@ -16972,7 +16973,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.295138955116272
+          "score": 0.29513874650001526
         }
       ],
       "keywords": [],
@@ -17012,11 +17013,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3537830710411072
+          "score": 0.3537832200527191
         },
         {
           "label": "Optimization & Control",
-          "score": 0.28799575567245483
+          "score": 0.2879955470561981
         }
       ],
       "keywords": [],
@@ -17061,7 +17062,7 @@
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.2506561875343323
+          "score": 0.25065624713897705
         }
       ],
       "keywords": [],
@@ -17103,11 +17104,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.33693650364875793
+          "score": 0.33693644404411316
         },
         {
           "label": "Novel Applications",
-          "score": 0.3077370524406433
+          "score": 0.30773717164993286
         }
       ],
       "keywords": [],
@@ -17184,11 +17185,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.31931889057159424
+          "score": 0.3193187713623047
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2539709210395813
+          "score": 0.25397104024887085
         }
       ],
       "keywords": [],
@@ -17232,7 +17233,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.38585174083709717
+          "score": 0.38585183024406433
         }
       ],
       "keywords": [],
@@ -17249,6 +17250,51 @@
       ],
       "history": [],
       "last_updated": "2026-01-19T04:13:23Z"
+    },
+    "('', '10.1007/s00128-025-04179-7', 'using machine learning to predict first order reaction rate constants of pfas degradation')": {
+      "id": "doi:10.1007/s00128-025-04179-7",
+      "doi": "10.1007/s00128-025-04179-7",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Using Machine Learning to Predict First-Order Reaction Rate Constants of PFAS Degradation",
+      "authors": [
+        "Chenhao Pei",
+        "Yifan Qian",
+        "Jie Shen",
+        "Naichi Zhang",
+        "Qi Liu",
+        "Zhiqiang Li",
+        "Shuailei Pu",
+        "Tongliang Wu",
+        "Yujun Wang",
+        "Cun Liu"
+      ],
+      "abstract": "",
+      "date": "2026-01-19",
+      "year": 2026,
+      "venue": "Bulletin of Environmental Contamination and Toxicology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.33221927285194397
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s00128-025-04179-7",
+        "crossref": "https://doi.org/10.1007/s00128-025-04179-7"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-20T04:11:13Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-20T04:11:13Z"
     }
   }
 }
