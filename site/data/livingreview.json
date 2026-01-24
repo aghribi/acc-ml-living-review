@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 30
+      "2026": 32
     },
     "per_category": {
       "Tools & Libraries": 164,
       "Novel Applications": 224,
       "Others": 39,
-      "Anomaly Detection & Fault Prediction": 50,
+      "Anomaly Detection & Fault Prediction": 52,
       "Statistics & Trends": 74,
       "Reinforcement Learning & Autonomous Systems": 56,
       "Surrogate Models": 41,
@@ -29,7 +29,7 @@
       "Beamline Design & Simulation": 30,
       "Beam Dynamics": 11,
       "Reviews": 20,
-      "Beam Diagnostics": 16,
+      "Beam Diagnostics": 17,
       "Optimization & Control": 15
     },
     "per_venue/journal": {
@@ -158,7 +158,9 @@
       "Machine Learning for Microbiome Statistics": 1,
       "Bulletin of Environmental Contamination and Toxicology": 1,
       "Industrial &amp; Engineering Chemistry Research": 1,
-      "Physics in Medicine &amp; Biology": 1
+      "Physics in Medicine &amp; Biology": 1,
+      "Mechanics Based Design of Structures and Machines": 1,
+      "Journal of Open Source Education": 1
     },
     "per_keyword": {
       "optimization": 69,
@@ -254,10 +256,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 30
+      "2026-01": 32
     },
-    "last_updated": "2026-01-23T04:15:39.611785+00:00",
-    "next_update": "2026-01-24T04:15:39.611785+00:00"
+    "last_updated": "2026-01-24T04:04:37.367586+00:00",
+    "next_update": "2026-01-25T04:04:37.367586+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -14111,7 +14113,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4321112036705017
+          "score": 0.43211114406585693
         }
       ],
       "keywords": [],
@@ -17187,11 +17189,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3193188011646271
+          "score": 0.3193187713623047
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2539709210395813
+          "score": 0.2539709806442261
         }
       ],
       "keywords": [],
@@ -17553,6 +17555,88 @@
       ],
       "history": [],
       "last_updated": "2026-01-22T04:14:21Z"
+    },
+    "('', '10.1080/15397734.2026.2614981', 'vibrational characterization and machine learning based classification of defects in twcnts')": {
+      "id": "doi:10.1080/15397734.2026.2614981",
+      "doi": "10.1080/15397734.2026.2614981",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Vibrational characterization and machine learning-based classification of defects in TWCNTs",
+      "authors": [
+        "Jalpa Ardeshana",
+        "Bhavik Ardeshana",
+        "Umang Jani",
+        "Jay Vala",
+        "Ajay Patel",
+        "Hitesh Shah",
+        "Vimal Vaghela"
+      ],
+      "abstract": "",
+      "date": "2026-01-23",
+      "year": 2026,
+      "venue": "Mechanics Based Design of Structures and Machines",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.2980623245239258
+        },
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.25184133648872375
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1080/15397734.2026.2614981",
+        "crossref": "https://doi.org/10.1080/15397734.2026.2614981"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-24T04:03:56Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-24T04:03:56Z"
+    },
+    "('', '10.21105/jose.00302', 'relialearnr learning modules for reliability analysis')": {
+      "id": "doi:10.21105/jose.00302",
+      "doi": "10.21105/jose.00302",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "ReliaLearnR: Learning Modules for Reliability Analysis",
+      "authors": [
+        "Paul B. Govan"
+      ],
+      "abstract": "",
+      "date": "2026-01-23",
+      "year": 2026,
+      "venue": "Journal of Open Source Education",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.30895698070526123
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.21105/jose.00302",
+        "crossref": "https://doi.org/10.21105/jose.00302"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-24T04:03:56Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-24T04:03:56Z"
     }
   }
 }
