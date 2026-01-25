@@ -12,7 +12,7 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 32
+      "2026": 33
     },
     "per_category": {
       "Tools & Libraries": 164,
@@ -27,9 +27,9 @@
       "RF Systems": 7,
       "Operations & Control": 8,
       "Beamline Design & Simulation": 30,
-      "Beam Dynamics": 11,
+      "Beam Dynamics": 12,
       "Reviews": 20,
-      "Beam Diagnostics": 17,
+      "Beam Diagnostics": 18,
       "Optimization & Control": 15
     },
     "per_venue/journal": {
@@ -160,7 +160,8 @@
       "Industrial &amp; Engineering Chemistry Research": 1,
       "Physics in Medicine &amp; Biology": 1,
       "Mechanics Based Design of Structures and Machines": 1,
-      "Journal of Open Source Education": 1
+      "Journal of Open Source Education": 1,
+      "Discover Civil Engineering": 1
     },
     "per_keyword": {
       "optimization": 69,
@@ -256,10 +257,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 32
+      "2026-01": 33
     },
-    "last_updated": "2026-01-24T04:04:37.367586+00:00",
-    "next_update": "2026-01-25T04:04:37.367586+00:00"
+    "last_updated": "2026-01-25T04:18:55.793578+00:00",
+    "next_update": "2026-01-26T04:18:55.793578+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -13177,11 +13178,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.30415767431259155
+          "score": 0.30415770411491394
         },
         {
           "label": "Operations & Control",
-          "score": 0.2795645594596863
+          "score": 0.27956464886665344
         }
       ],
       "keywords": [],
@@ -17189,11 +17190,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3193187713623047
+          "score": 0.3193188011646271
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2539709806442261
+          "score": 0.2539708614349365
         }
       ],
       "keywords": [],
@@ -17637,6 +17638,49 @@
       ],
       "history": [],
       "last_updated": "2026-01-24T04:03:56Z"
+    },
+    "('', '10.1007/s44290-026-00404-2', 'advancing shear behavior prediction in sfrc beams a comparative study of machine learning techniques')": {
+      "id": "doi:10.1007/s44290-026-00404-2",
+      "doi": "10.1007/s44290-026-00404-2",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Advancing shear behavior prediction in SFRC beams: a comparative study of machine learning techniques",
+      "authors": [
+        "Esayies A. Wassie",
+        "Leule M. Hailemariam",
+        "Habtamu A. Tadesse",
+        "Temesgen A. Kassie"
+      ],
+      "abstract": "",
+      "date": "2026-01-24",
+      "year": 2026,
+      "venue": "Discover Civil Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Beam Dynamics",
+          "score": 0.3667883276939392
+        },
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.30628153681755066
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s44290-026-00404-2",
+        "crossref": "https://doi.org/10.1007/s44290-026-00404-2"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-25T04:18:17Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-25T04:18:17Z"
     }
   }
 }
