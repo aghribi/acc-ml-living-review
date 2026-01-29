@@ -12,17 +12,17 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 36
+      "2026": 38
     },
     "per_category": {
-      "Tools & Libraries": 166,
-      "Novel Applications": 225,
+      "Tools & Libraries": 167,
+      "Novel Applications": 226,
       "Others": 39,
       "Anomaly Detection & Fault Prediction": 52,
       "Statistics & Trends": 74,
       "Reinforcement Learning & Autonomous Systems": 57,
       "Surrogate Models": 41,
-      "Data Management": 37,
+      "Data Management": 38,
       "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 9,
@@ -164,14 +164,16 @@
       "Discover Civil Engineering": 1,
       "Comput.Phys.Commun.": 1,
       "International Journal of Modern Physics E": 1,
-      "Cancers": 1
+      "Cancers": 1,
+      "Machine Learning and Knowledge Extraction": 1,
+      "Journal of Civil Structural Health Monitoring": 1
     },
     "per_keyword": {
       "optimization": 69,
       "control": 72,
       "surrogate model": 21,
-      "transformer": 10,
-      "deep learning": 53,
+      "transformer": 11,
+      "deep learning": 55,
       "proton therapy": 1,
       "beam": 129,
       "reinforcement learning": 39,
@@ -260,10 +262,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 36
+      "2026-01": 38
     },
-    "last_updated": "2026-01-28T04:11:49.410713+00:00",
-    "next_update": "2026-01-29T04:11:49.410713+00:00"
+    "last_updated": "2026-01-29T04:32:03.905030+00:00",
+    "next_update": "2026-01-30T04:32:03.905030+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -9708,7 +9710,7 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.4130398631095886
+          "score": 0.4130399227142334
         },
         {
           "label": "Novel Applications",
@@ -14235,11 +14237,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.31943655014038086
+          "score": 0.3194364905357361
         },
         {
           "label": "Operations & Control",
-          "score": 0.3088068962097168
+          "score": 0.3088069558143616
         }
       ],
       "keywords": [],
@@ -15416,7 +15418,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905858755111694
+          "score": 0.3290586471557617
         },
         {
           "label": "Tools & Libraries",
@@ -17813,6 +17815,90 @@
       ],
       "history": [],
       "last_updated": "2026-01-27T04:12:18Z"
+    },
+    "('', '10.3390/make8020031', 'attention driven feature extraction for xai in histopathology leveraging a hybrid xception architecture for multi cancer diagnosis')": {
+      "id": "doi:10.3390/make8020031",
+      "doi": "10.3390/make8020031",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Attention-Driven Feature Extraction for XAI in Histopathology Leveraging a Hybrid Xception Architecture for Multi-Cancer Diagnosis",
+      "authors": [
+        "Shirin Shila",
+        "Md. Safayat Hossain",
+        "Md Fuyad Al Masud",
+        "Mohammad Badrul Alam Miah",
+        "Afrig Aminuddin",
+        "Zia Muhammad"
+      ],
+      "abstract": "<jats:p>The automated and accurate results of classifying histopathology images are necessary in the early detection of cancer, especially the common cancers such as Colorectal Cancer (CRC) and Lung Cancer (LC). Nonetheless, classical deep learning frameworks often face challenges because the intra-class variations are large, the relations across classes are alike, and the quality of images is not stable. In order to eliminate these constraints, a multi-layer diagnostic framework is offered in detail. This process starts with a strong preprocessing pipeline, which involves gamma correction, bilateral filtering, and adaptive CLAHE, resulting in statistically significant changes in image quality quantitative measures. The hybrid attention architecture is presented and includes an Xception backbone, a Convolutional Block Attention Module (CBAM), a Transformer block, and an MLP classifier to successfully combine local features with global context. The proposed model achieved an outstanding performance with a classification of 99.98%, 99.58%, and 99.33% percent on LC25000, CRC-VAL-HE-7K, and NCT-CRC-HE-100K when tested on three publicly available datasets. In order to enhance transparency, very detailed explainability analyses are conducted with the help of layer-wise feature visualization and Grad-CAM. Finally, the real-world example of this framework is presented by its implementation in a web-based platform, which can be a useful and easy-to-use tool in helping to diagnose a pathology.</jats:p>",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "Machine Learning and Knowledge Extraction",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.3390/make8020031",
+        "crossref": "https://doi.org/10.3390/make8020031"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-29T04:31:25Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-29T04:31:25Z"
+    },
+    "('', '10.1007/s13349-025-01048-z', 'automatic detection of loose bolts in pipeline structures based on anti noise mel cepstrum differential features and deep learning')": {
+      "id": "doi:10.1007/s13349-025-01048-z",
+      "doi": "10.1007/s13349-025-01048-z",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Automatic detection of loose bolts in pipeline structures based on anti-noise mel cepstrum differential features and deep learning",
+      "authors": [
+        "Yixuan Chen",
+        "Hongyi Chen",
+        "Jingyi Wei",
+        "Jianchao Wu"
+      ],
+      "abstract": "",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "Journal of Civil Structural Health Monitoring",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Data Management",
+          "score": 0.33623021841049194
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.31300991773605347
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s13349-025-01048-z",
+        "crossref": "https://doi.org/10.1007/s13349-025-01048-z"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-01-29T04:31:25Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-29T04:31:25Z"
     }
   }
 }
