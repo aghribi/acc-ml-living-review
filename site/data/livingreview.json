@@ -12,24 +12,24 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 38
+      "2026": 42
     },
     "per_category": {
       "Tools & Libraries": 167,
-      "Novel Applications": 226,
+      "Novel Applications": 229,
       "Others": 39,
       "Anomaly Detection & Fault Prediction": 52,
-      "Statistics & Trends": 74,
-      "Reinforcement Learning & Autonomous Systems": 57,
+      "Statistics & Trends": 75,
+      "Reinforcement Learning & Autonomous Systems": 58,
       "Surrogate Models": 41,
       "Data Management": 38,
       "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 9,
-      "Beamline Design & Simulation": 30,
-      "Beam Dynamics": 12,
+      "Beamline Design & Simulation": 31,
+      "Beam Dynamics": 13,
       "Reviews": 20,
-      "Beam Diagnostics": 18,
+      "Beam Diagnostics": 19,
       "Optimization & Control": 15
     },
     "per_venue/journal": {
@@ -105,7 +105,7 @@
       "Measurement Science and Technology": 2,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
       "Rapid Prototyping Journal": 1,
-      "JACOW": 11,
+      "JACOW": 14,
       "Frontiers in Oncology": 1,
       "Phys.Part.Nucl.": 1,
       "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
@@ -166,18 +166,19 @@
       "International Journal of Modern Physics E": 1,
       "Cancers": 1,
       "Machine Learning and Knowledge Extraction": 1,
-      "Journal of Civil Structural Health Monitoring": 1
+      "Journal of Civil Structural Health Monitoring": 1,
+      "Plasma Physics and Controlled Fusion": 1
     },
     "per_keyword": {
-      "optimization": 69,
+      "optimization": 70,
       "control": 72,
       "surrogate model": 21,
       "transformer": 11,
       "deep learning": 55,
       "proton therapy": 1,
-      "beam": 129,
+      "beam": 130,
       "reinforcement learning": 39,
-      "diagnostics": 23,
+      "diagnostics": 24,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
       "time series": 6,
@@ -262,10 +263,10 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 38
+      "2026-01": 42
     },
-    "last_updated": "2026-01-30T04:45:45.740204+00:00",
-    "next_update": "2026-01-31T04:45:45.740204+00:00"
+    "last_updated": "2026-01-31T04:30:23.185059+00:00",
+    "next_update": "2026-02-01T04:30:23.185059+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1343,7 +1344,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5897580981254578
+          "score": 0.5897579789161682
         }
       ],
       "keywords": [],
@@ -1816,7 +1817,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.3951338529586792
+          "score": 0.3951338231563568
         }
       ],
       "keywords": [],
@@ -9710,7 +9711,7 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.4130399227142334
+          "score": 0.4130398631095886
         },
         {
           "label": "Novel Applications",
@@ -13059,7 +13060,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2941647171974182
+          "score": 0.2941647469997406
         }
       ],
       "keywords": [],
@@ -14119,7 +14120,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.43211114406585693
+          "score": 0.4321112036705017
         }
       ],
       "keywords": [],
@@ -14237,7 +14238,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3194364905357361
+          "score": 0.31943655014038086
         },
         {
           "label": "Operations & Control",
@@ -15291,7 +15292,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2686596214771271
+          "score": 0.26865965127944946
         }
       ],
       "keywords": [],
@@ -15373,11 +15374,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3290586471557617
+          "score": 0.32905852794647217
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2815614938735962
+          "score": 0.28156140446662903
         }
       ],
       "keywords": [],
@@ -15418,11 +15419,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3290586471557617
+          "score": 0.32905852794647217
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2815614938735962
+          "score": 0.28156140446662903
         }
       ],
       "keywords": [],
@@ -17199,7 +17200,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2539708614349365
+          "score": 0.2539709210395813
         }
       ],
       "keywords": [],
@@ -17625,7 +17626,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.30895698070526123
+          "score": 0.30895692110061646
         }
       ],
       "keywords": [],
@@ -17899,6 +17900,190 @@
       ],
       "history": [],
       "last_updated": "2026-01-29T04:31:25Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop057', 'machine learning at the spallation neutron source accelerator and target')": {
+      "id": "doi:10.18429/jacow-napac2025-mop057",
+      "doi": "10.18429/jacow-napac2025-mop057",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning at the Spallation Neutron Source accelerator and target",
+      "authors": [
+        "Armen Kasparian",
+        "Willem Blokland",
+        "Alexander Zhukov",
+        "Anant Ray",
+        "Drew Winder",
+        "Kishansingh Rajput",
+        "Malachi Schram"
+      ],
+      "abstract": "",
+      "date": "2026-01-29",
+      "year": 2026,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4791206121444702
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.441497802734375
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7126038308"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-01-31T04:29:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-31T04:29:41Z"
+    },
+    "('', '10.18429/jacow-napac2025-tup056', 'jutrack a julia based auto differentiable accelerator simulation code for advanced dynamics scientific machine learning and optimization')": {
+      "id": "doi:10.18429/jacow-napac2025-tup056",
+      "doi": "10.18429/jacow-napac2025-tup056",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "JuTrack, a Julia-based auto-differentiable accelerator simulation code for advanced dynamics, scientific machine learning and optimization",
+      "authors": [
+        "Jinyu Wan",
+        "Yue Hao",
+        "Christian Ratcliff",
+        "Ji Qiang",
+        "Yue Hao"
+      ],
+      "abstract": "",
+      "date": "2026-01-29",
+      "year": 2026,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Beamline Design & Simulation",
+          "score": 0.5642716884613037
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.5456193089485168
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7126023289"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-01-31T04:29:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-31T04:29:41Z"
+    },
+    "('', '10.1088/1361-6587/ae3eb3', 'data driven beam diagnostics using betatron radiation')": {
+      "id": "doi:10.1088/1361-6587/ae3eb3",
+      "doi": "10.1088/1361-6587/ae3eb3",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Data-driven beam diagnostics using betatron radiation",
+      "authors": [
+        "Hossein Saberi",
+        "Jasper Burvill",
+        "Carys Ann Siddle",
+        "Guoxing Xia",
+        "John Farmer",
+        "Fanting Kong"
+      ],
+      "abstract": "",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "Plasma Physics and Controlled Fusion",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.6890122890472412
+        },
+        {
+          "label": "Beam Dynamics",
+          "score": 0.4454059600830078
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7125928119"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-01-31T04:29:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-31T04:29:41Z"
+    },
+    "('', '10.18429/jacow-napac2025-weyn01', 'machine learning enhanced deterministic controls in lasers and accelerators')": {
+      "id": "doi:10.18429/jacow-napac2025-weyn01",
+      "doi": "10.18429/jacow-napac2025-weyn01",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning-enhanced deterministic controls in lasers and accelerators",
+      "authors": [
+        "Dan Wang",
+        "Alessio Amodio",
+        "Alex Picksley",
+        "A. J. Gonsalves",
+        "Curtis J. Berger",
+        "Hai-En Tsai",
+        "Jeroen van Tilborg",
+        "Mahek Logantha",
+        "N. R. Vora",
+        "Qiang Du",
+        "Russell Wilcox",
+        "Samuel K. Barber",
+        "Tong Zhou",
+        "Z. Eisentraut"
+      ],
+      "abstract": "",
+      "date": "2026-01-29",
+      "year": 2026,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.5202319025993347
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.4795066714286804
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7126103344"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-01-31T04:29:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-01-31T04:29:41Z"
     }
   }
 }
