@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 42
+      "2026": 44
     },
     "per_category": {
       "Tools & Libraries": 167,
       "Novel Applications": 229,
-      "Others": 39,
-      "Anomaly Detection & Fault Prediction": 52,
+      "Others": 40,
+      "Anomaly Detection & Fault Prediction": 53,
       "Statistics & Trends": 75,
       "Reinforcement Learning & Autonomous Systems": 58,
       "Surrogate Models": 41,
@@ -167,7 +167,9 @@
       "Cancers": 1,
       "Machine Learning and Knowledge Extraction": 1,
       "Journal of Civil Structural Health Monitoring": 1,
-      "Plasma Physics and Controlled Fusion": 1
+      "Plasma Physics and Controlled Fusion": 1,
+      "Journal of Structural Engineering": 1,
+      "Journal of Manufacturing Processes": 1
     },
     "per_keyword": {
       "optimization": 70,
@@ -263,10 +265,11 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 42
+      "2026-01": 42,
+      "2026-02": 2
     },
-    "last_updated": "2026-01-31T04:30:23.185059+00:00",
-    "next_update": "2026-02-01T04:30:23.185059+00:00"
+    "last_updated": "2026-02-01T05:06:29.698803+00:00",
+    "next_update": "2026-02-02T05:06:29.698803+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1817,7 +1820,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.3951338231563568
+          "score": 0.3951338529586792
         }
       ],
       "keywords": [],
@@ -9711,7 +9714,7 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.4130398631095886
+          "score": 0.4130399227142334
         },
         {
           "label": "Novel Applications",
@@ -11441,7 +11444,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.6033953428268433
+          "score": 0.6033955216407776
         },
         {
           "label": "Reviews",
@@ -13098,11 +13101,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.33777308464050293
+          "score": 0.337772935628891
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.30843284726142883
+          "score": 0.30843275785446167
         }
       ],
       "keywords": [],
@@ -18084,6 +18087,83 @@
       ],
       "history": [],
       "last_updated": "2026-01-31T04:29:41Z"
+    },
+    "('', '10.1061/jsendh.steng-14737', 'seismic response estimation and performance assessment of large scale structures using deep learning methods')": {
+      "id": "doi:10.1061/jsendh.steng-14737",
+      "doi": "10.1061/jsendh.steng-14737",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Seismic Response Estimation and Performance Assessment of Large-Scale Structures Using Deep-Learning Methods",
+      "authors": [
+        "Jacob A. Morgan",
+        "Kalil Erazo",
+        "Oral Buyukozturk"
+      ],
+      "abstract": "",
+      "date": "2026-02-01",
+      "year": 2026,
+      "venue": "Journal of Structural Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1061/jsendh.steng-14737",
+        "crossref": "https://doi.org/10.1061/jsendh.steng-14737"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-01T05:05:52Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-01T05:05:52Z"
+    },
+    "('', '10.1016/j.jmapro.2026.01.026', 'toward closed loop quality assurance in powder bed fusion additive manufacturing defect detection machine learning and computational modeling')": {
+      "id": "doi:10.1016/j.jmapro.2026.01.026",
+      "doi": "10.1016/j.jmapro.2026.01.026",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Toward closed-loop quality assurance in powder bed fusion additive manufacturing: Defect detection, machine learning, and computational modeling",
+      "authors": [
+        "Mohammad Taghian",
+        "Ali Pilehvar Meibody",
+        "Abdollah Saboori",
+        "Luca Iuliano"
+      ],
+      "abstract": "",
+      "date": "2026-02-01",
+      "year": 2026,
+      "venue": "Journal of Manufacturing Processes",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.2584514617919922
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.jmapro.2026.01.026",
+        "crossref": "https://doi.org/10.1016/j.jmapro.2026.01.026"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-01T05:05:52Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-01T05:05:52Z"
     }
   }
 }
