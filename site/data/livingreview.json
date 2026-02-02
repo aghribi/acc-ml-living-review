@@ -12,11 +12,11 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 44
+      "2026": 46
     },
     "per_category": {
-      "Tools & Libraries": 167,
-      "Novel Applications": 229,
+      "Tools & Libraries": 169,
+      "Novel Applications": 231,
       "Others": 40,
       "Anomaly Detection & Fault Prediction": 53,
       "Statistics & Trends": 75,
@@ -100,7 +100,7 @@
       "International Journal of Structural Integrity": 2,
       "Machine Learning: Science and Technology": 2,
       "Anais do Encontro Nacional de Engenharia de Produção": 1,
-      "arXiv (Cornell University)": 5,
+      "arXiv (Cornell University)": 7,
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
       "Measurement Science and Technology": 2,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
@@ -265,11 +265,11 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 42,
+      "2026-01": 44,
       "2026-02": 2
     },
-    "last_updated": "2026-02-01T05:06:29.698803+00:00",
-    "next_update": "2026-02-02T05:06:29.698803+00:00"
+    "last_updated": "2026-02-02T05:02:21.174070+00:00",
+    "next_update": "2026-02-03T05:02:21.174070+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1820,7 +1820,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.3951338529586792
+          "score": 0.3951338231563568
         }
       ],
       "keywords": [],
@@ -9044,7 +9044,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.5486422777175903
+          "score": 0.5486423969268799
         },
         {
           "label": "Novel Applications",
@@ -17379,7 +17379,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4959559440612793
+          "score": 0.49595579504966736
         }
       ],
       "keywords": [],
@@ -18164,6 +18164,92 @@
       ],
       "history": [],
       "last_updated": "2026-02-01T05:05:52Z"
+    },
+    "('', '', 'prism distribution free adaptive computation of matrix functions for accelerating neural network training')": {
+      "id": "hash:b19149b69b57",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "PRISM: Distribution-free Adaptive Computation of Matrix Functions for Accelerating Neural Network Training",
+      "authors": [
+        "Shenghao Yang",
+        "Zhichao Wang",
+        "Oleg Balabanov",
+        "N. Benjamin Erichson",
+        "Michael W. Mahoney"
+      ],
+      "abstract": "",
+      "date": "2026-01-29",
+      "year": 2026,
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.38369396328926086
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.34612470865249634
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7126282031"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-02-02T05:01:43Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-02T05:01:43Z"
+    },
+    "('', '10.48550/arxiv.2601.22137', 'prism distribution free adaptive computation of matrix functions for accelerating neural network training')": {
+      "id": "doi:10.48550/arxiv.2601.22137",
+      "doi": "10.48550/arxiv.2601.22137",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "PRISM: Distribution-free Adaptive Computation of Matrix Functions for Accelerating Neural Network Training",
+      "authors": [
+        "Shenghao Yang",
+        "Zhichao Wang",
+        "Oleg Balabanov",
+        "N. Benjamin Erichson",
+        "Michael W. Mahoney"
+      ],
+      "abstract": "",
+      "date": "2026-01-29",
+      "year": 2026,
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.38369396328926086
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.34612470865249634
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7126229854"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-02-02T05:01:43Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-02T05:01:43Z"
     }
   }
 }
