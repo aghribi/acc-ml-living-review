@@ -12,7 +12,7 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 46
+      "2026": 47
     },
     "per_category": {
       "Tools & Libraries": 169,
@@ -20,7 +20,7 @@
       "Others": 40,
       "Anomaly Detection & Fault Prediction": 53,
       "Statistics & Trends": 75,
-      "Reinforcement Learning & Autonomous Systems": 58,
+      "Reinforcement Learning & Autonomous Systems": 59,
       "Surrogate Models": 41,
       "Data Management": 38,
       "By Facility Type": 8,
@@ -30,7 +30,7 @@
       "Beam Dynamics": 13,
       "Reviews": 20,
       "Beam Diagnostics": 19,
-      "Optimization & Control": 15
+      "Optimization & Control": 16
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
@@ -169,10 +169,11 @@
       "Journal of Civil Structural Health Monitoring": 1,
       "Plasma Physics and Controlled Fusion": 1,
       "Journal of Structural Engineering": 1,
-      "Journal of Manufacturing Processes": 1
+      "Journal of Manufacturing Processes": 1,
+      "Chemistry Africa": 1
     },
     "per_keyword": {
-      "optimization": 70,
+      "optimization": 71,
       "control": 72,
       "surrogate model": 21,
       "transformer": 11,
@@ -266,10 +267,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 44,
-      "2026-02": 2
+      "2026-02": 3
     },
-    "last_updated": "2026-02-02T05:02:21.174070+00:00",
-    "next_update": "2026-02-03T05:02:21.174070+00:00"
+    "last_updated": "2026-02-03T04:51:20.091968+00:00",
+    "next_update": "2026-02-04T04:51:20.091968+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -9044,7 +9045,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.5486423969268799
+          "score": 0.5486422777175903
         },
         {
           "label": "Novel Applications",
@@ -9714,7 +9715,7 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.4130399227142334
+          "score": 0.4130398631095886
         },
         {
           "label": "Novel Applications",
@@ -11487,7 +11488,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6051356196403503
+          "score": 0.6051356792449951
         },
         {
           "label": "Tools & Libraries",
@@ -18250,6 +18251,46 @@
       ],
       "history": [],
       "last_updated": "2026-02-02T05:01:43Z"
+    },
+    "('', '10.1007/s42250-025-01560-1', 'optimization of the claus process using machine learning and real operational data a case study in an sru')": {
+      "id": "doi:10.1007/s42250-025-01560-1",
+      "doi": "10.1007/s42250-025-01560-1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Optimization of the Claus Process Using Machine Learning and Real Operational Data: A Case Study in an SRU",
+      "authors": [
+        "Amirfarzam Shokouhalaei"
+      ],
+      "abstract": "",
+      "date": "2026-02-02",
+      "year": 2026,
+      "venue": "Chemistry Africa",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Optimization & Control",
+          "score": 0.3133627772331238
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.308024525642395
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s42250-025-01560-1",
+        "crossref": "https://doi.org/10.1007/s42250-025-01560-1"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-03T04:50:40Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-03T04:50:40Z"
     }
   }
 }
