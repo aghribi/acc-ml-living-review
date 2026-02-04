@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 47
+      "2026": 48
     },
     "per_category": {
       "Tools & Libraries": 169,
       "Novel Applications": 231,
-      "Others": 40,
+      "Others": 41,
       "Anomaly Detection & Fault Prediction": 53,
       "Statistics & Trends": 75,
       "Reinforcement Learning & Autonomous Systems": 59,
@@ -170,7 +170,8 @@
       "Plasma Physics and Controlled Fusion": 1,
       "Journal of Structural Engineering": 1,
       "Journal of Manufacturing Processes": 1,
-      "Chemistry Africa": 1
+      "Chemistry Africa": 1,
+      "Nondestructive Testing and Evaluation": 1
     },
     "per_keyword": {
       "optimization": 71,
@@ -267,10 +268,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 44,
-      "2026-02": 3
+      "2026-02": 4
     },
-    "last_updated": "2026-02-03T04:51:20.091968+00:00",
-    "next_update": "2026-02-04T04:51:20.091968+00:00"
+    "last_updated": "2026-02-04T04:33:45.319277+00:00",
+    "next_update": "2026-02-05T04:33:45.319277+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -14687,11 +14688,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.40821942687034607
+          "score": 0.4082193672657013
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.25986284017562866
+          "score": 0.2598627805709839
         }
       ],
       "keywords": [],
@@ -18291,6 +18292,48 @@
       ],
       "history": [],
       "last_updated": "2026-02-03T04:50:40Z"
+    },
+    "('', '10.1080/10589759.2026.2624624', 'axial stress classification of steel pipes from magnetic remanence via topology aware multi probe graph learning controlled full scale validation')": {
+      "id": "doi:10.1080/10589759.2026.2624624",
+      "doi": "10.1080/10589759.2026.2624624",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Axial-stress classification of steel pipes from magnetic remanence via topology-aware multi-probe graph learning: controlled full-scale validation",
+      "authors": [
+        "He Dang",
+        "Laibin Zhang",
+        "Jianchun Fan",
+        "Fumin Gao",
+        "Rui Li",
+        "Huadong Song",
+        "Wenguang Hu"
+      ],
+      "abstract": "",
+      "date": "2026-02-03",
+      "year": 2026,
+      "venue": "Nondestructive Testing and Evaluation",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1080/10589759.2026.2624624",
+        "crossref": "https://doi.org/10.1080/10589759.2026.2624624"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-04T04:33:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-04T04:33:05Z"
     }
   }
 }
