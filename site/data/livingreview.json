@@ -12,23 +12,23 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 48
+      "2026": 52
     },
     "per_category": {
-      "Tools & Libraries": 169,
-      "Novel Applications": 231,
+      "Tools & Libraries": 171,
+      "Novel Applications": 234,
       "Others": 41,
-      "Anomaly Detection & Fault Prediction": 53,
-      "Statistics & Trends": 75,
+      "Anomaly Detection & Fault Prediction": 54,
+      "Statistics & Trends": 77,
       "Reinforcement Learning & Autonomous Systems": 59,
       "Surrogate Models": 41,
-      "Data Management": 38,
+      "Data Management": 39,
       "By Facility Type": 8,
       "RF Systems": 7,
       "Operations & Control": 9,
       "Beamline Design & Simulation": 31,
       "Beam Dynamics": 13,
-      "Reviews": 20,
+      "Reviews": 21,
       "Beam Diagnostics": 19,
       "Optimization & Control": 16
     },
@@ -95,7 +95,7 @@
       "Lecture Notes in Networks and Systems": 6,
       "Applied and Computational Engineering": 1,
       "Frontiers of Computer Science": 1,
-      "Springer Science and Business Media LLC": 2,
+      "Springer Science and Business Media LLC": 3,
       "Circulation": 1,
       "International Journal of Structural Integrity": 2,
       "Machine Learning: Science and Technology": 2,
@@ -171,18 +171,21 @@
       "Journal of Structural Engineering": 1,
       "Journal of Manufacturing Processes": 1,
       "Chemistry Africa": 1,
-      "Nondestructive Testing and Evaluation": 1
+      "Nondestructive Testing and Evaluation": 1,
+      "Journal of Instrumentation": 1,
+      "International Journal of Computational and Experimental Science and Engineering": 1,
+      "Onco Critical Care": 1
     },
     "per_keyword": {
       "optimization": 71,
-      "control": 72,
+      "control": 73,
       "surrogate model": 21,
-      "transformer": 11,
-      "deep learning": 55,
+      "transformer": 12,
+      "deep learning": 56,
       "proton therapy": 1,
-      "beam": 130,
+      "beam": 131,
       "reinforcement learning": 39,
-      "diagnostics": 24,
+      "diagnostics": 25,
       "uncertainty quantification": 4,
       "anomaly detection": 15,
       "time series": 6,
@@ -267,11 +270,11 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 44,
-      "2026-02": 4
+      "2026-01": 45,
+      "2026-02": 7
     },
-    "last_updated": "2026-02-04T04:33:45.319277+00:00",
-    "next_update": "2026-02-05T04:33:45.319277+00:00"
+    "last_updated": "2026-02-05T04:55:40.293015+00:00",
+    "next_update": "2026-02-06T04:55:40.293015+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1349,7 +1352,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5897579789161682
+          "score": 0.589758038520813
         }
       ],
       "keywords": [],
@@ -7499,11 +7502,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3308313190937042
+          "score": 0.330831378698349
         },
         {
           "label": "Data Management",
-          "score": 0.25785553455352783
+          "score": 0.257855623960495
         }
       ],
       "keywords": [],
@@ -9716,7 +9719,7 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.4130398631095886
+          "score": 0.4130399227142334
         },
         {
           "label": "Novel Applications",
@@ -11446,7 +11449,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.6033955216407776
+          "score": 0.6033953428268433
         },
         {
           "label": "Reviews",
@@ -11489,7 +11492,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6051356792449951
+          "score": 0.6051356196403503
         },
         {
           "label": "Tools & Libraries",
@@ -13065,7 +13068,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2941647469997406
+          "score": 0.2941647171974182
         }
       ],
       "keywords": [],
@@ -13103,11 +13106,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.337772935628891
+          "score": 0.33777308464050293
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.30843275785446167
+          "score": 0.30843284726142883
         }
       ],
       "keywords": [],
@@ -13189,11 +13192,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.30415770411491394
+          "score": 0.30415767431259155
         },
         {
           "label": "Operations & Control",
-          "score": 0.27956464886665344
+          "score": 0.2795645594596863
         }
       ],
       "keywords": [],
@@ -14247,7 +14250,7 @@
         },
         {
           "label": "Operations & Control",
-          "score": 0.3088069558143616
+          "score": 0.3088068962097168
         }
       ],
       "keywords": [],
@@ -14688,11 +14691,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4082193672657013
+          "score": 0.40821942687034607
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.2598627805709839
+          "score": 0.25986284017562866
         }
       ],
       "keywords": [],
@@ -15297,7 +15300,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.26865965127944946
+          "score": 0.2686595320701599
         }
       ],
       "keywords": [],
@@ -15379,11 +15382,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905852794647217
+          "score": 0.32905858755111694
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.28156140446662903
+          "score": 0.2815614938735962
         }
       ],
       "keywords": [],
@@ -15424,11 +15427,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905852794647217
+          "score": 0.32905858755111694
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.28156140446662903
+          "score": 0.2815614938735962
         }
       ],
       "keywords": [],
@@ -17381,7 +17384,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.49595579504966736
+          "score": 0.4959559440612793
         }
       ],
       "keywords": [],
@@ -17631,7 +17634,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.30895692110061646
+          "score": 0.30895698070526123
         }
       ],
       "keywords": [],
@@ -18334,6 +18337,177 @@
       ],
       "history": [],
       "last_updated": "2026-02-04T04:33:05Z"
+    },
+    "('', '', 'high resolution image reconstruction with unsupervised learning and noisy data applied to ion beam dynamics for particle accelerators')": {
+      "id": "hash:44484698aa74",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "High-Resolution Image Reconstruction with Unsupervised Learning and Noisy Data Applied to Ion-Beam Dynamics for Particle Accelerators",
+      "authors": [
+        "Francis Osswald",
+        "Mohammed Chahbaoui",
+        "X. Liang"
+      ],
+      "abstract": "Image reconstruction in the presence of severe degradation remains a challenging inverse problem, particularly in beam diagnostics for high-energy physics accelerators. As modern facilities demand precise detection of beam halo structures to control losses, traditional analysis tools have reached their performance limits. This work reviews existing image-processing techniques for data cleaning, contour extraction, and emittance reconstruction, and introduces a novel approach based on convolutional filtering and neural networks with optimized early-stopping strategies in order to control overfitting. Despite the absence of training datasets, the proposed unsupervised framework achieves robust denoising and high-fidelity reconstruction of beam emittance images under low signal-to-noise conditions. The method extends measurable amplitudes beyond seven standard deviations, enabling unprecedented halo resolution.",
+      "date": "2026-02-03",
+      "year": 2026,
+      "venue": "Journal of Instrumentation",
+      "status": "submitted",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4271663725376129
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.35541555285453796
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "hal": "https://hal.archives-ouvertes.fr/hal-05490988"
+      },
+      "sources": [
+        {
+          "source": "hal",
+          "seen_at": "2026-02-05T04:54:58Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-05T04:54:58Z"
+    },
+    "('', '10.22399/ijcesen.4827', 'a hybrid monte carlo machine learning framework for high energy neutron shielding using boron enhanced concrete')": {
+      "id": "doi:10.22399/ijcesen.4827",
+      "doi": "10.22399/ijcesen.4827",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A Hybrid Monte Carlo–Machine Learning Framework for High-Energy Neutron Shielding Using Boron-Enhanced Concrete",
+      "authors": [
+        "Demet Sariyer",
+        "Elif Yıldırım"
+      ],
+      "abstract": "",
+      "date": "2026-01-29",
+      "year": 2026,
+      "venue": "International Journal of Computational and Experimental Science and Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3015403747558594
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.2675224840641022
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7127050434"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-02-05T04:54:59Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-05T04:54:59Z"
+    },
+    "('', '10.18231/j.occ.70716.1770187942', 'current applications of artificial intelligence and machine learning in oncologic icu management')": {
+      "id": "doi:10.18231/j.occ.70716.1770187942",
+      "doi": "10.18231/j.occ.70716.1770187942",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Current applications of artificial intelligence and machine learning in oncologic ICU management",
+      "authors": [
+        "Shivam Dubey"
+      ],
+      "abstract": "",
+      "date": "2026-02-04",
+      "year": 2026,
+      "venue": "Onco Critical Care",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3742295503616333
+        },
+        {
+          "label": "Data Management",
+          "score": 0.3482181429862976
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.18231/j.occ.70716.1770187942",
+        "crossref": "https://doi.org/10.18231/j.occ.70716.1770187942"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-05T04:55:00Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-05T04:55:00Z"
+    },
+    "('', '10.21203/rs.3.rs-8721157/v1', 'the research on chain fault prediction in ac dc hybrid power grids based on deep learning')": {
+      "id": "doi:10.21203/rs.3.rs-8721157/v1",
+      "doi": "10.21203/rs.3.rs-8721157/v1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "The Research on Chain Fault Prediction in AC-DC Hybrid Power Grids Based on Deep Learning",
+      "authors": [
+        "Wenchao Qin",
+        "Xufei Liu",
+        "Yiran Tao"
+      ],
+      "abstract": "<title>Abstract</title>\n                <p>Accurate prediction of cascading faults in power grids is critical for ensuring their stability and preventing large-scale outages. This paper presents Hybrid Graph-Temporal Transformer (HGTT), for predicting cascading faults in AC/DC hybrid power grids. The HGTT model integrates Graph Attention Networks (GAT) and Temporal Transformers, effectively capturing both spatial and temporal dependencies. Key innovations include an attention mechanism that accounts for electrical distances between nodes, and a causal attention-based temporal feature extraction module. Additionally, two self-supervised tasks reduce reliance on labeled data. Experimental results show that HGTT improves prediction accuracy by over 15% and reduces labeled data requirements by 50%.</p>",
+      "date": "2026-02-04",
+      "year": 2026,
+      "venue": "Springer Science and Business Media LLC",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.39139583706855774
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.21203/rs.3.rs-8721157/v1",
+        "crossref": "https://doi.org/10.21203/rs.3.rs-8721157/v1"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-05T04:55:00Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-05T04:55:00Z"
     }
   }
 }
