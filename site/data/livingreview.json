@@ -12,14 +12,14 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 54
+      "2026": 55
     },
     "per_category": {
-      "Tools & Libraries": 172,
-      "Novel Applications": 234,
+      "Tools & Libraries": 173,
+      "Novel Applications": 235,
       "Others": 41,
       "Anomaly Detection & Fault Prediction": 55,
-      "Statistics & Trends": 78,
+      "Statistics & Trends": 79,
       "Reinforcement Learning & Autonomous Systems": 59,
       "Surrogate Models": 41,
       "Data Management": 39,
@@ -176,10 +176,11 @@
       "International Journal of Computational and Experimental Science and Engineering": 1,
       "Onco Critical Care": 1,
       "Engineering Perspective": 1,
-      "Progress in Additive Manufacturing": 1
+      "Progress in Additive Manufacturing": 1,
+      "J.Subatomic Part.Cosmol.": 1
     },
     "per_keyword": {
-      "optimization": 71,
+      "optimization": 72,
       "control": 73,
       "surrogate model": 21,
       "transformer": 12,
@@ -273,10 +274,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 45,
-      "2026-02": 9
+      "2026-02": 10
     },
-    "last_updated": "2026-02-06T04:57:21.524420+00:00",
-    "next_update": "2026-02-07T04:57:21.524420+00:00"
+    "last_updated": "2026-02-07T04:33:37.814507+00:00",
+    "next_update": "2026-02-08T04:33:37.814507+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -2635,7 +2636,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.492365300655365
+          "score": 0.4923652708530426
         },
         {
           "label": "Reviews",
@@ -9010,7 +9011,7 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.39245593547821045
+          "score": 0.3924559950828552
         },
         {
           "label": "Novel Applications",
@@ -18591,6 +18592,50 @@
       ],
       "history": [],
       "last_updated": "2026-02-06T04:56:52Z"
+    },
+    "('', '10.1016/j.jspc.2026.100309', 'hybrid machine learning monte carlo approach for neutron shielding in high energy proton facilities')": {
+      "id": "doi:10.1016/j.jspc.2026.100309",
+      "doi": "10.1016/j.jspc.2026.100309",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Hybrid machine learning-monte carlo approach for neutron shielding in high-energy proton facilities",
+      "authors": [
+        "Sariyer, Demet"
+      ],
+      "abstract": "•Hybrid MC–ML method enhances neutron shielding in accelerators.•Large FLUKA dataset enables robust ML model training.•RF and GBR show superior accuracy in dose predictions.•ML approach saves time and computational resources.•Practical tool for cost-effective shielding design optimization. In accelerator facilities, secondary neutron radiation arising from the interaction of high-energy protons with target materials constitutes a critical challenge for radiation safety and shielding design. In this study, a hybrid approach combining Monte Carlo (MC) simulations with machine learning (ML) techniques was developed to enable rapid and reliable prediction of neutron dose distributions. Using the FLUKA code, a total of 598 datasets were generated for 250 MeV and 1000 MeV proton energies, covering iron (Fe) and ferroboron (Fe₂B) shielding configurations. These datasets were employed for the training and validation of Logarithmic Linear Regression (log-linear LR), Gradient Boosting Regressor (GBR), K-Nearest Neighbors (KNN), and Random Forest (RF) models. The RF and GBR algorithms demonstrated high predictive accuracy (R² ≈ 0.95–0.99) while significantly reducing computational time compared to conventional MC simulations. The results indicate that ML-assisted approaches provide a reliable, cost-effective, and time-efficient alternative for neutron shielding design in nuclear facilities.",
+      "date": "2026-02-03",
+      "year": 2026,
+      "venue": "J.Subatomic Part.Cosmol.",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3850896954536438
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.36151739954948425
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3117152",
+        "doi": "https://doi.org/10.1016/j.jspc.2026.100309"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-07T04:32:48Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-07T04:32:48Z"
     }
   }
 }
