@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 55
+      "2026": 56
     },
     "per_category": {
       "Tools & Libraries": 173,
       "Novel Applications": 235,
-      "Others": 41,
+      "Others": 42,
       "Anomaly Detection & Fault Prediction": 55,
       "Statistics & Trends": 79,
       "Reinforcement Learning & Autonomous Systems": 59,
@@ -177,14 +177,15 @@
       "Onco Critical Care": 1,
       "Engineering Perspective": 1,
       "Progress in Additive Manufacturing": 1,
-      "J.Subatomic Part.Cosmol.": 1
+      "J.Subatomic Part.Cosmol.": 1,
+      "BMC Oral Health": 1
     },
     "per_keyword": {
       "optimization": 72,
       "control": 73,
       "surrogate model": 21,
       "transformer": 12,
-      "deep learning": 56,
+      "deep learning": 57,
       "proton therapy": 1,
       "beam": 131,
       "reinforcement learning": 39,
@@ -274,10 +275,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 45,
-      "2026-02": 10
+      "2026-02": 11
     },
-    "last_updated": "2026-02-07T04:33:37.814507+00:00",
-    "next_update": "2026-02-08T04:33:37.814507+00:00"
+    "last_updated": "2026-02-08T05:08:45.021630+00:00",
+    "next_update": "2026-02-09T05:08:45.021630+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -18636,6 +18637,45 @@
       ],
       "history": [],
       "last_updated": "2026-02-07T04:32:48Z"
+    },
+    "('', '10.1186/s12903-026-07727-7', 'advanced deep learning techniques for classifying dental conditions using panoramic x ray images')": {
+      "id": "doi:10.1186/s12903-026-07727-7",
+      "doi": "10.1186/s12903-026-07727-7",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Advanced deep learning techniques for classifying dental conditions using panoramic X-ray images",
+      "authors": [
+        "Alireza Golkarieh",
+        "Bahareh Afjehsoleymani",
+        "Kiana Kiashemshaki",
+        "Sajjad Rezvani Boroujeni"
+      ],
+      "abstract": "",
+      "date": "2026-02-07",
+      "year": 2026,
+      "venue": "BMC Oral Health",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1186/s12903-026-07727-7",
+        "crossref": "https://doi.org/10.1186/s12903-026-07727-7"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-08T05:08:04Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-08T05:08:04Z"
     }
   }
 }
