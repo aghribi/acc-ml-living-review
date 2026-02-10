@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 56
+      "2026": 57
     },
     "per_category": {
-      "Tools & Libraries": 173,
+      "Tools & Libraries": 174,
       "Novel Applications": 235,
       "Others": 42,
-      "Anomaly Detection & Fault Prediction": 55,
+      "Anomaly Detection & Fault Prediction": 56,
       "Statistics & Trends": 79,
       "Reinforcement Learning & Autonomous Systems": 59,
       "Surrogate Models": 41,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 185,
+      "arXiv": 186,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -275,10 +275,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 45,
-      "2026-02": 11
+      "2026-02": 12
     },
-    "last_updated": "2026-02-09T05:05:45.791045+00:00",
-    "next_update": "2026-02-10T05:05:45.791045+00:00"
+    "last_updated": "2026-02-10T05:18:32.678345+00:00",
+    "next_update": "2026-02-11T05:18:32.678345+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -3454,7 +3454,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3905560374259949
+          "score": 0.3905559778213501
         }
       ],
       "keywords": [],
@@ -5502,7 +5502,7 @@
         },
         {
           "label": "Data Management",
-          "score": 0.513191819190979
+          "score": 0.5131917595863342
         }
       ],
       "keywords": [],
@@ -18676,6 +18676,47 @@
       ],
       "history": [],
       "last_updated": "2026-02-08T05:08:04Z"
+    },
+    "('2602.08792', '', 'multimodal learning for arcing detection in pantograph catenary systems')": {
+      "id": "arxiv:2602.08792",
+      "doi": null,
+      "arxiv_id": "2602.08792",
+      "inspire_id": null,
+      "title": "Multimodal Learning for Arcing Detection in Pantograph-Catenary Systems",
+      "authors": [
+        "Hao Dong",
+        "Eleni Chatzi",
+        "Olga Fink"
+      ],
+      "abstract": "The pantograph-catenary interface is essential for ensuring uninterrupted and reliable power delivery in electrified rail systems. However, electrical arcing at this interface poses serious risks, including accelerated wear of contact components, degraded system performance, and potential service disruptions. Detecting arcing events at the pantograph-catenary interface is challenging due to their transient nature, noisy operating environment, data scarcity, and the difficulty of distinguishing arcs from other similar transient phenomena. To address these challenges, we propose a novel multimodal framework that combines high-resolution image data with force measurements to more accurately and robustly detect arcing events. First, we construct two arcing detection datasets comprising synchronized visual and force measurements. One dataset is built from data provided by the Swiss Federal Railways (SBB), and the other is derived from publicly available videos of arcing events in different railway systems and synthetic force data that mimic the characteristics observed in the real dataset. Leveraging these datasets, we propose MultiDeepSAD, an extension of the DeepSAD algorithm for multiple modalities with a new loss formulation. Additionally, we introduce tailored pseudo-anomaly generation techniques specific to each data type, such as synthetic arc-like artifacts in images and simulated force irregularities, to augment training data and improve the discriminative ability of the model. Through extensive experiments and ablation studies, we demonstrate that our framework significantly outperforms baseline approaches, exhibiting enhanced sensitivity to real arcing events even under domain shifts and limited availability of real arcing observations.",
+      "date": "2026-02-09",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.27533695101737976
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2602.08792v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-02-10T05:15:31Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-10T05:15:31Z"
     }
   }
 }
