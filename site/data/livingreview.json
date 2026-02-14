@@ -12,24 +12,24 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 58
+      "2026": 67
     },
     "per_category": {
-      "Tools & Libraries": 174,
-      "Novel Applications": 235,
+      "Tools & Libraries": 179,
+      "Novel Applications": 243,
       "Others": 43,
-      "Anomaly Detection & Fault Prediction": 56,
-      "Statistics & Trends": 79,
-      "Reinforcement Learning & Autonomous Systems": 59,
-      "Surrogate Models": 41,
-      "Data Management": 39,
-      "By Facility Type": 8,
+      "Anomaly Detection & Fault Prediction": 59,
+      "Statistics & Trends": 77,
+      "Reinforcement Learning & Autonomous Systems": 60,
+      "Surrogate Models": 43,
+      "Data Management": 40,
+      "By Facility Type": 9,
       "RF Systems": 7,
       "Operations & Control": 9,
-      "Beamline Design & Simulation": 31,
-      "Beam Dynamics": 13,
+      "Beamline Design & Simulation": 32,
+      "Beam Dynamics": 12,
       "Reviews": 21,
-      "Beam Diagnostics": 20,
+      "Beam Diagnostics": 22,
       "Optimization & Control": 16
     },
     "per_venue/journal": {
@@ -58,7 +58,7 @@
       "PoS": 3,
       "Europhys.News": 1,
       "Nucl.Phys.Atom.Energy": 1,
-      "JACoW": 13,
+      "JACoW": 27,
       "Instruments": 1,
       "CERN Yellow Rep.School Proc.": 1,
       "InspireHEP": 1,
@@ -105,7 +105,7 @@
       "Measurement Science and Technology": 2,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
       "Rapid Prototyping Journal": 1,
-      "JACOW": 14,
+      "JACOW": 8,
       "Frontiers in Oncology": 1,
       "Phys.Part.Nucl.": 1,
       "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
@@ -179,24 +179,26 @@
       "Progress in Additive Manufacturing": 1,
       "J.Subatomic Part.Cosmol.": 1,
       "BMC Oral Health": 1,
-      "Sensors and Materials": 1
+      "Sensors and Materials": 1,
+      "Front Matter": 1
     },
     "per_keyword": {
-      "optimization": 72,
-      "control": 73,
+      "optimization": 78,
+      "control": 77,
       "surrogate model": 21,
-      "transformer": 12,
+      "transformer": 13,
       "deep learning": 57,
       "proton therapy": 1,
-      "beam": 131,
-      "reinforcement learning": 39,
-      "diagnostics": 25,
+      "beam": 142,
+      "reinforcement learning": 40,
+      "diagnostics": 26,
       "uncertainty quantification": 4,
-      "anomaly detection": 15,
+      "anomaly detection": 19,
       "time series": 6,
       "GAN": 1,
       "cloud": 3,
-      "federated learning": 1
+      "federated learning": 1,
+      "RF cavity": 1
     },
     "monthly_trends": {
       "2025-09": 12,
@@ -275,11 +277,11 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 45,
-      "2026-02": 13
+      "2026-01": 53,
+      "2026-02": 14
     },
-    "last_updated": "2026-02-13T04:58:24.838654+00:00",
-    "next_update": "2026-02-14T04:58:24.838654+00:00"
+    "last_updated": "2026-02-14T04:49:09.002201+00:00",
+    "next_update": "2026-02-15T04:49:09.002201+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -896,7 +898,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3604327440261841
+          "score": 0.3604326844215393
         },
         {
           "label": "By Facility Type",
@@ -1019,11 +1021,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6130755543708801
+          "score": 0.6130754947662354
         },
         {
           "label": "Operations & Control",
-          "score": 0.5249068737030029
+          "score": 0.5249068140983582
         }
       ],
       "keywords": [],
@@ -1267,7 +1269,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.400272011756897
+          "score": 0.4002719819545746
         },
         {
           "label": "Statistics & Trends",
@@ -1653,11 +1655,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.3627539277076721
+          "score": 0.3627539873123169
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.30540895462036133
+          "score": 0.30540892481803894
         }
       ],
       "keywords": [],
@@ -1830,7 +1832,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.3951338231563568
+          "score": 0.3951338529586792
         }
       ],
       "keywords": [],
@@ -2594,7 +2596,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4592275619506836
+          "score": 0.4592275023460388
         }
       ],
       "keywords": [],
@@ -2977,7 +2979,7 @@
       "categories": [
         {
           "label": "Beam Dynamics",
-          "score": 0.322369247674942
+          "score": 0.32236921787261963
         },
         {
           "label": "Surrogate Models",
@@ -3021,7 +3023,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.26090008020401
+          "score": 0.2609001100063324
         }
       ],
       "keywords": [],
@@ -3408,11 +3410,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4889258146286011
+          "score": 0.4889257550239563
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4669209122657776
+          "score": 0.4669208824634552
         }
       ],
       "keywords": [],
@@ -3710,7 +3712,7 @@
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3864519000053406
+          "score": 0.38645195960998535
         }
       ],
       "keywords": [],
@@ -3967,11 +3969,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4323157072067261
+          "score": 0.4323156476020813
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4314614534378052
+          "score": 0.4314613342285156
         },
         {
           "label": "Surrogate Models",
@@ -4105,7 +4107,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3980382978916168
+          "score": 0.39803826808929443
         },
         {
           "label": "Tools & Libraries",
@@ -4552,7 +4554,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.47507569193840027
+          "score": 0.47507575154304504
         },
         {
           "label": "Surrogate Models",
@@ -4877,7 +4879,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.4243842661380768
+          "score": 0.42438429594039917
         }
       ],
       "keywords": [],
@@ -5018,7 +5020,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5805788040161133
+          "score": 0.5805788636207581
         },
         {
           "label": "Novel Applications",
@@ -5067,7 +5069,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.38018763065338135
+          "score": 0.38018760085105896
         }
       ],
       "keywords": [],
@@ -5142,7 +5144,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6150771975517273
+          "score": 0.6150771379470825
         },
         {
           "label": "Tools & Libraries",
@@ -5184,11 +5186,11 @@
       "categories": [
         {
           "label": "Optimization & Control",
-          "score": 0.43691515922546387
+          "score": 0.4369152784347534
         },
         {
           "label": "Novel Applications",
-          "score": 0.3115765452384949
+          "score": 0.31157660484313965
         },
         {
           "label": "Surrogate Models",
@@ -5503,7 +5505,7 @@
         },
         {
           "label": "Data Management",
-          "score": 0.5131917595863342
+          "score": 0.513191819190979
         }
       ],
       "keywords": [],
@@ -5580,11 +5582,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6524984836578369
+          "score": 0.6524986028671265
         },
         {
           "label": "Novel Applications",
-          "score": 0.5227475166320801
+          "score": 0.5227476358413696
         },
         {
           "label": "Tools & Libraries",
@@ -5628,7 +5630,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.39198601245880127
+          "score": 0.3919859528541565
         }
       ],
       "keywords": [],
@@ -5782,11 +5784,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4046928286552429
+          "score": 0.4046928882598877
         },
         {
           "label": "Novel Applications",
-          "score": 0.3768412470817566
+          "score": 0.376841276884079
         }
       ],
       "keywords": [],
@@ -5870,11 +5872,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4429498314857483
+          "score": 0.4429498612880707
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.35458749532699585
+          "score": 0.35458752512931824
         },
         {
           "label": "Tools & Libraries",
@@ -5917,7 +5919,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5003533959388733
+          "score": 0.5003535747528076
         }
       ],
       "keywords": [],
@@ -6461,7 +6463,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.31007400155067444
+          "score": 0.3100740313529968
         },
         {
           "label": "Statistics & Trends",
@@ -7077,11 +7079,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.31887197494506836
+          "score": 0.31887203454971313
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.30897417664527893
+          "score": 0.3089742064476013
         }
       ],
       "keywords": [],
@@ -7121,7 +7123,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.39614060521125793
+          "score": 0.39614054560661316
         },
         {
           "label": "Tools & Libraries",
@@ -7388,7 +7390,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.2839970886707306
+          "score": 0.2839970588684082
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
@@ -7507,11 +7509,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.330831378698349
+          "score": 0.3308313190937042
         },
         {
           "label": "Data Management",
-          "score": 0.257855623960495
+          "score": 0.25785553455352783
         }
       ],
       "keywords": [],
@@ -7584,11 +7586,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.44447052478790283
+          "score": 0.44447061419487
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.39732104539871216
+          "score": 0.39732110500335693
         },
         {
           "label": "Tools & Libraries",
@@ -8228,11 +8230,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.41856420040130615
+          "score": 0.4185641407966614
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.34078121185302734
+          "score": 0.34078115224838257
         }
       ],
       "keywords": [],
@@ -9054,7 +9056,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.5486422777175903
+          "score": 0.5486423969268799
         },
         {
           "label": "Novel Applications",
@@ -9724,7 +9726,7 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.4130399227142334
+          "score": 0.4130398631095886
         },
         {
           "label": "Novel Applications",
@@ -10282,7 +10284,7 @@
         },
         {
           "label": "Operations & Control",
-          "score": 0.5296401381492615
+          "score": 0.5296401977539062
         }
       ],
       "keywords": [],
@@ -10890,11 +10892,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5058296918869019
+          "score": 0.5058298707008362
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5018988847732544
+          "score": 0.501899003982544
         }
       ],
       "keywords": [],
@@ -11165,7 +11167,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.45393073558807373
+          "score": 0.4539307951927185
         }
       ],
       "keywords": [],
@@ -12044,11 +12046,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.3479527235031128
+          "score": 0.34795284271240234
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.2656378746032715
+          "score": 0.26563793420791626
         }
       ],
       "keywords": [],
@@ -12772,7 +12774,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4437161087989807
+          "score": 0.4437161386013031
         },
         {
           "label": "Tools & Libraries",
@@ -13455,11 +13457,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4003909230232239
+          "score": 0.4003908634185791
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.35071539878845215
+          "score": 0.3507153391838074
         }
       ],
       "keywords": [],
@@ -13789,11 +13791,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.44514787197113037
+          "score": 0.445147842168808
         },
         {
           "label": "Novel Applications",
-          "score": 0.4310084879398346
+          "score": 0.4310084581375122
         }
       ],
       "keywords": [],
@@ -14011,7 +14013,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.35012561082839966
+          "score": 0.35012567043304443
         },
         {
           "label": "Tools & Libraries",
@@ -14389,11 +14391,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3726848363876343
+          "score": 0.37268489599227905
         },
         {
           "label": "Optimization & Control",
-          "score": 0.36111927032470703
+          "score": 0.3611193299293518
         }
       ],
       "keywords": [],
@@ -14521,11 +14523,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3726848363876343
+          "score": 0.37268489599227905
         },
         {
           "label": "Optimization & Control",
-          "score": 0.36111927032470703
+          "score": 0.3611193299293518
         }
       ],
       "keywords": [],
@@ -14564,7 +14566,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3191932141780853
+          "score": 0.3191932439804077
         },
         {
           "label": "Novel Applications",
@@ -17371,127 +17373,42 @@
       "inspire_id": null,
       "title": "Towards continual machine learning for particle accelerators",
       "authors": [
-        "Kishansingh Rajput",
-        "Malachi Schram",
-        "Willem Blokland",
-        "Alexander Zhukov",
-        "Sen Lin"
+        "Rajput, Kishansingh",
+        "Schram, Malachi",
+        "Blokland, Willem",
+        "Zhukov, Alexander",
+        "Lin, Sen"
       ],
-      "abstract": "",
+      "abstract": "This talk covers our work on errant beam prognostics at the Spallation Neutron Source (SNS), focusing on the end-to-end process from data collection to the development and deployment of predictive models in specific. A short overview of AIML work done for accelerators and current trends will be presented. We will walk through key steps involved in creating robust Machine Learning (ML) models, including model training, validation, and deployment in an operational setting. In addition to presenting our technical approach, we will share valuable lessons learned, emphasizing the importance of infrastructure to support the continuous adaptation of models to evolving data and system behaviors. This talk will provide insights into the challenges and solutions involved in applying ML to real-world operational environments, with a particular focus on managing data drift and changes in accelerator setup while ensuring model resilience over time.",
       "date": "2026-01-20",
       "year": 2026,
-      "venue": "JACOW",
+      "venue": "JACoW",
       "status": "published",
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5513841509819031
+          "score": 0.5344231724739075
         },
         {
-          "label": "Statistics & Trends",
-          "score": 0.4959559440612793
+          "label": "Tools & Libraries",
+          "score": 0.5010966062545776
         }
       ],
       "keywords": [],
       "curated": false,
       "notes": null,
       "links": {
-        "openalex": "https://openalex.org/W7124838254"
+        "inspire": "https://inspirehep.net/literature/3119545",
+        "doi": "https://doi.org/10.18429/JACoW-IBIC2025-TUAI02"
       },
       "sources": [
         {
-          "source": "openalex",
-          "seen_at": "2026-01-22T04:14:20Z"
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
         }
       ],
       "history": [],
-      "last_updated": "2026-01-22T04:14:20Z"
-    },
-    "('', '10.18429/jacow-ibic2025-tupco11', 'evaluating machine learning models for multimode fiber based transverse beam profile reconstruction')": {
-      "id": "doi:10.18429/jacow-ibic2025-tupco11",
-      "doi": "10.18429/jacow-ibic2025-tupco11",
-      "arxiv_id": null,
-      "inspire_id": null,
-      "title": "Evaluating machine learning models for multimode-fiber-based transverse beam profile reconstruction",
-      "authors": [
-        "Qiyuan Xu",
-        "Alexander Hill",
-        "Kieran Hanahoe",
-        "Dani Z. Metin",
-        "Federico Roncarolo",
-        "Georges Sélim Trad",
-        "Hao Zhang",
-        "Pierre Korysko",
-        "Stephane Burger",
-        "Wilfrid Farabolini"
-      ],
-      "abstract": "",
-      "date": "2026-01-20",
-      "year": 2026,
-      "venue": "JACOW",
-      "status": "published",
-      "categories": [
-        {
-          "label": "Beam Dynamics",
-          "score": 0.39023223519325256
-        },
-        {
-          "label": "Beam Diagnostics",
-          "score": 0.3556101322174072
-        }
-      ],
-      "keywords": [],
-      "curated": false,
-      "notes": null,
-      "links": {
-        "openalex": "https://openalex.org/W7124851412"
-      },
-      "sources": [
-        {
-          "source": "openalex",
-          "seen_at": "2026-01-22T04:14:20Z"
-        }
-      ],
-      "history": [],
-      "last_updated": "2026-01-22T04:14:20Z"
-    },
-    "('', '10.18429/jacow-ibic2025-mopco02', 'prediction of fel performance using bpm measurements and machine learning')": {
-      "id": "doi:10.18429/jacow-ibic2025-mopco02",
-      "doi": "10.18429/jacow-ibic2025-mopco02",
-      "arxiv_id": null,
-      "inspire_id": null,
-      "title": "PREDICTION OF FEL PERFORMANCE USING BPM MEASUREMENTS AND MACHINE LEARNING",
-      "authors": [
-        "Can Liu",
-        "Yongbin Leng",
-        "Xing Yang",
-        "Youming Deng"
-      ],
-      "abstract": "",
-      "date": "2026-01-20",
-      "year": 2026,
-      "venue": "JACOW",
-      "status": "published",
-      "categories": [
-        {
-          "label": "Statistics & Trends",
-          "score": 0.28964394330978394
-        }
-      ],
-      "keywords": [],
-      "curated": false,
-      "notes": null,
-      "links": {
-        "openalex": "https://openalex.org/W7125019266"
-      },
-      "sources": [
-        {
-          "source": "openalex",
-          "seen_at": "2026-01-22T04:14:20Z"
-        }
-      ],
-      "history": [],
-      "last_updated": "2026-01-22T04:14:20Z"
+      "last_updated": "2026-02-14T04:48:16Z"
     },
     "('', '10.1038/s41598-026-36501-6', 'integrating physics and machine learning for unified seismic forward modeling and reservoir property inversion')": {
       "id": "doi:10.1038/s41598-026-36501-6",
@@ -17914,51 +17831,6 @@
       "history": [],
       "last_updated": "2026-01-29T04:31:25Z"
     },
-    "('', '10.18429/jacow-napac2025-mop057', 'machine learning at the spallation neutron source accelerator and target')": {
-      "id": "doi:10.18429/jacow-napac2025-mop057",
-      "doi": "10.18429/jacow-napac2025-mop057",
-      "arxiv_id": null,
-      "inspire_id": null,
-      "title": "Machine learning at the Spallation Neutron Source accelerator and target",
-      "authors": [
-        "Armen Kasparian",
-        "Willem Blokland",
-        "Alexander Zhukov",
-        "Anant Ray",
-        "Drew Winder",
-        "Kishansingh Rajput",
-        "Malachi Schram"
-      ],
-      "abstract": "",
-      "date": "2026-01-29",
-      "year": 2026,
-      "venue": "JACOW",
-      "status": "published",
-      "categories": [
-        {
-          "label": "Novel Applications",
-          "score": 0.4791206121444702
-        },
-        {
-          "label": "Statistics & Trends",
-          "score": 0.441497802734375
-        }
-      ],
-      "keywords": [],
-      "curated": false,
-      "notes": null,
-      "links": {
-        "openalex": "https://openalex.org/W7126038308"
-      },
-      "sources": [
-        {
-          "source": "openalex",
-          "seen_at": "2026-01-31T04:29:41Z"
-        }
-      ],
-      "history": [],
-      "last_updated": "2026-01-31T04:29:41Z"
-    },
     "('', '10.18429/jacow-napac2025-tup056', 'jutrack a julia based auto differentiable accelerator simulation code for advanced dynamics scientific machine learning and optimization')": {
       "id": "doi:10.18429/jacow-napac2025-tup056",
       "doi": "10.18429/jacow-napac2025-tup056",
@@ -17966,41 +17838,46 @@
       "inspire_id": null,
       "title": "JuTrack, a Julia-based auto-differentiable accelerator simulation code for advanced dynamics, scientific machine learning and optimization",
       "authors": [
-        "Jinyu Wan",
-        "Yue Hao",
-        "Christian Ratcliff",
-        "Ji Qiang",
-        "Yue Hao"
+        "Wan, Jinyu",
+        "Alamprese, Helena",
+        "Ratcliff, Christian",
+        "Qiang, Ji",
+        "Hao, Yue"
       ],
-      "abstract": "",
-      "date": "2026-01-29",
+      "abstract": "JuTrack is a high-performance accelerator modeling and particle tracking package developed in the Julia programming language. With compiler-level automatic differentiation (AD), JuTrack enables fast and precise derivative computations for arbitrary differentiable simulation functions. It supports efficient modeling of complex collective effects such as space-charge forces, wakefields, and beam-beam interactions. Beyond conventional tracking simulations, JuTrack also incorporates a machine learning–based module for self-field modeling and convenience interface that brings data-driven and physics-driven model together. In this paper, we demonstrate the capability and performance of JuTrack through a broad set of beam dynamics applications and optimization across various accelerator types, including a synchrotron light source, a heavy-ion linear accelerator, and the colliders. Built on Julia’s high-performance architecture and user-friendly syntax, JuTrack provides a powerful tool for beam dynamics studies and accelerator design optimization.",
+      "date": "2026-01-28",
       "year": 2026,
-      "venue": "JACOW",
+      "venue": "JACoW",
       "status": "published",
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5642716884613037
+          "score": 0.5532279014587402
         },
         {
           "label": "Novel Applications",
-          "score": 0.5456193089485168
+          "score": 0.5375093221664429
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
         }
       ],
       "keywords": [],
       "curated": false,
       "notes": null,
       "links": {
-        "openalex": "https://openalex.org/W7126023289"
+        "inspire": "https://inspirehep.net/literature/3119477",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-TUP056"
       },
       "sources": [
         {
-          "source": "openalex",
-          "seen_at": "2026-01-31T04:29:41Z"
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
         }
       ],
       "history": [],
-      "last_updated": "2026-01-31T04:29:41Z"
+      "last_updated": "2026-02-14T04:48:16Z"
     },
     "('', '10.1088/1361-6587/ae3eb3', 'data driven beam diagnostics using betatron radiation')": {
       "id": "doi:10.1088/1361-6587/ae3eb3",
@@ -18036,58 +17913,6 @@
       "notes": null,
       "links": {
         "openalex": "https://openalex.org/W7125928119"
-      },
-      "sources": [
-        {
-          "source": "openalex",
-          "seen_at": "2026-01-31T04:29:41Z"
-        }
-      ],
-      "history": [],
-      "last_updated": "2026-01-31T04:29:41Z"
-    },
-    "('', '10.18429/jacow-napac2025-weyn01', 'machine learning enhanced deterministic controls in lasers and accelerators')": {
-      "id": "doi:10.18429/jacow-napac2025-weyn01",
-      "doi": "10.18429/jacow-napac2025-weyn01",
-      "arxiv_id": null,
-      "inspire_id": null,
-      "title": "Machine learning-enhanced deterministic controls in lasers and accelerators",
-      "authors": [
-        "Dan Wang",
-        "Alessio Amodio",
-        "Alex Picksley",
-        "A. J. Gonsalves",
-        "Curtis J. Berger",
-        "Hai-En Tsai",
-        "Jeroen van Tilborg",
-        "Mahek Logantha",
-        "N. R. Vora",
-        "Qiang Du",
-        "Russell Wilcox",
-        "Samuel K. Barber",
-        "Tong Zhou",
-        "Z. Eisentraut"
-      ],
-      "abstract": "",
-      "date": "2026-01-29",
-      "year": 2026,
-      "venue": "JACOW",
-      "status": "published",
-      "categories": [
-        {
-          "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5202319025993347
-        },
-        {
-          "label": "Novel Applications",
-          "score": 0.4795066714286804
-        }
-      ],
-      "keywords": [],
-      "curated": false,
-      "notes": null,
-      "links": {
-        "openalex": "https://openalex.org/W7126103344"
       },
       "sources": [
         {
@@ -18756,6 +18581,580 @@
       ],
       "history": [],
       "last_updated": "2026-02-12T05:03:10Z"
+    },
+    "('', '10.18429/jacow-napac2025-thp028', 'digital twin framework for pip ii linac ai driven multi scale modeling from ion source to 800 mev')": {
+      "id": "doi:10.18429/jacow-napac2025-thp028",
+      "doi": "10.18429/jacow-napac2025-thp028",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Digital twin framework for PIP-II linac: AI-driven multi-scale modeling from ion source to 800 MeV",
+      "authors": [
+        "Pathak, Abhishek",
+        "Hanlet, Pierrick",
+        "Miceli, Tia"
+      ],
+      "abstract": "The PIP-II linac will enable >1.2 MW beam power for DUNE, requiring unprecedented operational reliability across its warm front-end (RFQ, MEBT) and five distinct SRF sections operating at 162.5/325/650 MHz. We present a comprehensive digital twin framework uniquely combining a fully differentiable fast beam transport code with neural network surrogates trained on high-fidelity PIC simulations, capturing space charge and nonlinear dynamics beyond traditional envelope codes while achieving 10⁴× speedup at <1% accuracy. End-to-end differentiability enables gradient-based optimization across 500+ parameters simultaneously—previously impossible with conventional tools—while the model incorporates static/dynamic errors and serves as a virtual commissioning platform for diverse hardware integration. The framework facilitates reinforcement learning for pulsed/CW mode transitions, predictive maintenance through anomaly detection, and autonomous tuning algorithm development with real-time execution capability. Validation against physics simulations shows excellent agreement for the front-end, with initial results demonstrating potential for 30% commissioning time reduction and proactive fault mitigation, providing a scalable blueprint for operating next-generation high-intensity accelerators.",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Surrogate Models",
+          "score": 0.53138667345047
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.513392448425293
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3071095",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-THP028"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop059', 'machine learning enhanced infrared imaging for temperature anomaly detection in power supplies')": {
+      "id": "doi:10.18429/jacow-napac2025-mop059",
+      "doi": "10.18429/jacow-napac2025-mop059",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning-enhanced infrared imaging for temperature anomaly detection in power supplies",
+      "authors": [
+        "Mohsen, Osama",
+        "Lobach, Ihar",
+        "Borland, Michael",
+        "Sun, Yine"
+      ],
+      "abstract": "The performance of particle accelerators is critically dependent on the reliability of their power supplies, which can number in the thousands in many facilities. In this work, we present a method for monitoring temperature anomalies in power supplies using infrared (IR) imaging. By applying various machine learning algorithms to the IR imaging data, we develop a reliable anomaly detection system that can improve the uptime of accelerator facilities. This approach enables early detection of potential issues, facilitating predictive maintenance and enhancing overall operational efficiency.",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.4592660069465637
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.3697162866592407
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119200",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP059"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop007', 'anomaly detection of slow moving variables at lansce for improved beam quality')": {
+      "id": "doi:10.18429/jacow-napac2025-mop007",
+      "doi": "10.18429/jacow-napac2025-mop007",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Anomaly detection of slow-moving variables at LANSCE for improved beam quality",
+      "authors": [
+        "Huang, En-Chuan",
+        "Yampolsky, Nikolai"
+      ],
+      "abstract": "Modern accelerator facilities operate with a large number of variables, many of which can influence beam quality. While most of these variables are constrained within predefined boundary conditions, slow fluctuations over extended periods—from tens of minutes to a full day—can still significantly degrade beam performance. Due to their gradual nature and the difficulty in distinguishing meaningful trends from background noise, such variables often go unnoticed and remain unoptimized by operators for days.This study investigates the use of machine learning algorithms to identify and analyze these slow-moving variables. By applying advanced time-series analysis and feature importance ranking, the proposed approach reveals hidden correlations between slow variable drifts and a key beam quality metric: the ring loss at the Los Alamos Neutron Science Center (LANSCE). The results demonstrate the potential of machine learning to detect subtle anomalies and offer actionable insights to mitigate persistent beam quality issues that can disrupt operations for weeks at a time.",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.5217158794403076
+        },
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.445449560880661
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119434",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP007"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop103', 'online optimizations of nsls ii linac and linac to booster beam lines using machine learning methods')": {
+      "id": "doi:10.18429/jacow-napac2025-mop103",
+      "doi": "10.18429/jacow-napac2025-mop103",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Online optimizations of NSLS-II Linac and Linac-to-Booster beam lines using machine learning methods",
+      "authors": [
+        "Song, Minghao",
+        "Wang, Guimei",
+        "Hidaka, Yoshiteru",
+        "Yang, Xi"
+      ],
+      "abstract": "The NSLS-II is a cutting-edge 3 GeV storage ring light source around the world. The electron beam is initially accelerated in a linear accelerator to an energy of 170 MeV and subsequently accelerated in a booster synchrotron to a beam energy of 3 GeV. Therefore, the performance of the Linac and the Linac-to-Booster beam lines is imperative for beam injection to the booster. Online optimization is an effective solution to improve accelerator performance when there is degradation. This paper presents the results of online optimization employing a machine learning method.",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4467878043651581
+        },
+        {
+          "label": "Beamline Design & Simulation",
+          "score": 0.42556238174438477
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119444",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP103"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop097', 'machine learning driven computations of 3d coherent synchrotron radiation')": {
+      "id": "doi:10.18429/jacow-napac2025-mop097",
+      "doi": "10.18429/jacow-napac2025-mop097",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning-driven computations of 3D Coherent Synchrotron Radiation",
+      "authors": [
+        "Leon, Christopher",
+        "Scheinker, Alexander",
+        "Yampolsky, Nikolai",
+        "Anisimov, Petr M."
+      ],
+      "abstract": "Calculating the effects of Coherent Synchrotron Radiation (CSR) is one of the most computationally expensive tasks in accelerator physics. Here, we use convolutional neural networks (CNN's), along with a latent conditional diffusion (LCD) model, trained on physics-based simulations to speed up calculations. Specifically, we produce the 3D CSR wakefields generated by electron bunches in circular orbit in the steady-state condition. Two datasets are used for training and testing the models: wakefields generated by three-dimensional Gaussian electron distributions and wakefields from a sum of up to 25 three-dimensional Gaussian distributions. The CNN's are able to accurately produce the 3D wakefields ~250-1000 times faster than the numerical calculations, while the LCD has a gain of a factor of ~34. We also test the extrapolation and out-of-distribution generalization ability of the models. They generalize well on distributions with larger spreads than what they were trained on, but struggle with smaller spreads.",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4154166877269745
+        },
+        {
+          "label": "By Facility Type",
+          "score": 0.3712007999420166
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119450",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP097"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-napac2025-weyn02', 'safe extremum seeking for real time adaptive accelerator control')": {
+      "id": "doi:10.18429/jacow-napac2025-weyn02",
+      "doi": "10.18429/jacow-napac2025-weyn02",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Safe extremum seeking for real-time adaptive accelerator control",
+      "authors": [
+        "Williams, Alan",
+        "Scheinker, Alexander"
+      ],
+      "abstract": "This talk presents Safe Extremum Seeking (Safe ES), a robust n-dimensional adaptive control method, applied to automatic tuning and optimization tasks of accelerators while guaranteeing that the system remains within safe operating conditions. A key strength of Safe ES is its ability to handle safety measures that are analytically unknown. For instance, the algorithm can adaptively tune quadrupole magnets to achieve a desired beam profile while maintaining safety by keeping beam losses below a user-defined threshold.The presentation provides a comprehensive technical overview of this optimization technique, highlighting its theoretical foundations and practical applications. It includes simulation studies demonstrating its effectiveness for accelerator systems, as well as results from an in-hardware demonstration conducted on the LANSCE accelerator at LANL. Also, the talk explores how Safe ES can be integrated with generative machine learning models to enable adaptive machine learning.",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.5541280508041382
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.49014174938201904
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119483",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-WEYN02"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop056', 'machine learning assisted bayesian calibration of accelerator digital twin from orbit response data')": {
+      "id": "doi:10.18429/jacow-napac2025-mop056",
+      "doi": "10.18429/jacow-napac2025-mop056",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning assisted Bayesian calibration of accelerator digital twin from orbit response data",
+      "authors": [
+        "Lin, Weijian",
+        "Kelly, Christopher",
+        "Hoffstaetter, Georg",
+        "Brown, Kevin",
+        "Urban, Nathan"
+      ],
+      "abstract": "Digital twins of particle accelerators are used to plan and control operations and design data collection campaigns. However, a digital twin relies on parameters that are hard to measure directly, e.g., magnet alignments, power supply transfer functions, magnet nonlinearities, and stray fields. These parameters can be constrained by beam position and profile measurements. We use Bayesian statistical inference to estimate the parameters, and their uncertainties, probabilistically by calibrating the Bmad digital twin to beam measurements. The inference is computationally accelerated using a machine learning emulator of the physical accelerator digital twin trained to a perturbed-parameter ensemble of Bmad simulations. The result is a joint posterior distribution over parameters (control currents, individual magnet transfer function coefficients, and beam monitor errors) which is propagated to uncertainties in predicted beam positions and profiles, which we validate against beam responses measured at the AGS booster at Brookhaven National Laboratory.",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Surrogate Models",
+          "score": 0.5572196245193481
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.447268545627594
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119552",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP056"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop065', 'integrating simulation and machine learning for proton storage ring beam analysis')": {
+      "id": "doi:10.18429/jacow-napac2025-mop065",
+      "doi": "10.18429/jacow-napac2025-mop065",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Integrating simulation and machine learning for Proton Storage Ring beam analysis",
+      "authors": [
+        "Leon, Christopher",
+        "Huang, En-Chuan",
+        "Scheinker, Alexander",
+        "Anisimov, Petr M."
+      ],
+      "abstract": "The Proton Storage Ring (PSR) at the Los Alamos Neutron Science Center (LANSCE) accumulates a 625-μs-long beam and compresses it into a 290-ns-long (base-to-base) short pulse for delivery to the Lujan Center. Due to its high-intensity operation, the PSR also functions as a highly-sensitive mass spectrometer for the entire accelerator complex. Changes in PSR beam losses are more responsive to linac drifts than any other diagnostic system, making continuous monitoring and characterization of the PSR critical to overall performance.Currently, PSR operation is primarily guided by beam loss signals, while key physics parameters—such as the betatron tune, closed orbit, and injection offsets—are typically measured only once per day. Furthermore, Beam Position Monitors (BPMs) can only provide meaningful data a single 290-ns-long injection, requiring dedicated machine time and resulting in operational downtime.However, recent upgrades to both the data acquisition and chopper systems now enable continuous measurements during standard operation. In this work, we employ a Convolutional Neural Network (CNN) trained on simulated data to infer critical beam parameters in real-time. This approach will be tested and implemented during the 2025 run cycle to enable online monitoring and improved control of PSR beam dynamics.",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.4767068028450012
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.4369666576385498
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119561",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP065"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-napac2025-tup101', 'towards differentiable beam dynamics modeling in blast impactx')": {
+      "id": "doi:10.18429/jacow-napac2025-tup101",
+      "doi": "10.18429/jacow-napac2025-tup101",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Towards differentiable beam dynamics modeling in BLAST/ImpactX",
+      "authors": [
+        "Huebl, Axel",
+        "Mitchell, Chad",
+        "Lehe, Remi",
+        "Charleux, Grégoire",
+        "Myers, Andrew",
+        "Zhang, Weiqun",
+        "Qiang, Ji",
+        "Vay, Jean-Luc",
+        "Kaiser, Jan",
+        "Hespe, Christian",
+        "Gonzalez-Aguilera, Juan Pablo",
+        "Xu, Chenran",
+        "Santamaria Garcia, Andrea",
+        "Roussel, Ryan",
+        "Edelen, Auralee",
+        "Moses, William Steven"
+      ],
+      "abstract": "Differentiable simulations are in demand in accelerator physics, demonstrating order-of-magnitude improvements for complex tasks such as many-parameter optimization for accelerator working points and reconstruction of hard-to-measure quantities. At its core, a differentiable simulation does not only solve a forward problem, but additionally provides gradients of output parameters (e.g. beam parameters) with respect to input parameters (e.g. beamline or source parameters).How to effectively program large dynamic simulations differentiably is still an open question, but there is general consensus that a “single-source” approach aided by automatic differentiation (AD) is desirable. Addressing this, there are a) emerging domain-specific languages in machine learning that are intrinsically differentiable, and b) highly-performing & scalable, general-purpose languages like ISO C++ of existing codes. The challenge of approach a) is syntax specialization, which can limit ease of implementation & performance for physics algorithms, while b) requires additional work for AD.Performance is important for modeling high-order beam dynamics and collective effects in accelerators. We compare the fast, modern codes ImpactX (C++/Python) and Cheetah (PyTorch) using traditional, gradient-free modeling. We then show progress in introducing single-source differentiability in ImpactX using modern compiler techniques, producing performant executables for gradient-based and gradient-free modeling.",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.460275799036026
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.45988577604293823
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119616",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-TUP101"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop006', 'a self supervised transformer for rf cavity signal denoising')": {
+      "id": "doi:10.18429/jacow-napac2025-mop006",
+      "doi": "10.18429/jacow-napac2025-mop006",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A self-supervised transformer for RF cavity signal denoising",
+      "authors": [
+        "Rajesh, Vikshar",
+        "Edelen, Auralee",
+        "Hall, Christopher",
+        "O'Shea, Finn",
+        "Edelen, Jonathan"
+      ],
+      "abstract": "A frequent occurrence within industrial particle accelerator systems is electromagnetic noise accumulating within RF Cavity Sensor readings, attributed to their electromagnetically dirtier operating environments and production, with less of an emphasis on their performance optimization. This phenomenon prevents signals from accurately relaying information to beam operators and specialists. Additionally, noisy signals inhibit the ability for feedback loops to meet their regulation requirements, making machine control much more difficult. Previous work has shown machine learning-based techniques as promising solutions for denoising that maintains signal quality and features. In this paper, we design, implement, and benchmark a self-supervised transformer-based machine learning algorithm that denoises In-Phase and Quadrature (I/Q) RF Cavity Signals without a need for referencing a clean ground-truth.",
+      "date": "2026-01-28",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3582143187522888
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.3088628351688385
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119634",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP006"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-ibic2025-mopco04', 'machine learning using beam loss monitors for diamond ii')": {
+      "id": "doi:10.18429/jacow-ibic2025-mopco04",
+      "doi": "10.18429/jacow-ibic2025-mopco04",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning using beam loss monitors for DIAMOND-II",
+      "authors": [
+        "Lehmann, Corey",
+        "Bobb, Lorraine",
+        "Burrows, Philip"
+      ],
+      "abstract": "The slow losses measured by Beam Loss Monitors (BLMs) at synchrotron light source facilities offer useful but indirect insight into the state of the beam. Patterns arise across the set of BLMs depending on the movement of insertion devices, beam current, temperature, humidity, and other contributors. A variety of neural network models were designed and evaluated to model this behaviour under user beam operation to enable anomaly detection and aid fault investigations.",
+      "date": "2026-01-20",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.4732258915901184
+        },
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.43074363470077515
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119350",
+        "doi": "https://doi.org/10.18429/JACoW-IBIC2025-MOPCO04"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.18429/jacow-ibic2025-tubc02', 'beam diagnostics data acquisition system and applications of machine learning at the kek e e linac')": {
+      "id": "doi:10.18429/jacow-ibic2025-tubc02",
+      "doi": "10.18429/jacow-ibic2025-tubc02",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Beam diagnostics, data acquisition system, and applications of machine learning at the KEK e-/e+ Linac",
+      "authors": [
+        "Miyahara, Fusashi",
+        "Kinoshita, Kaito",
+        "Kurata, Masakazu",
+        "Iwasaki, Masako",
+        "Natsui, Takuya",
+        "Okayasu, Yuichi",
+        "Satake, Itsuka",
+        "Satoh, Masanori",
+        "Uemura, Kosuke",
+        "Wang, Di"
+      ],
+      "abstract": "The KEK e⁺/e⁻ Linac supplies electron beams to SuperKEKB HER, PF, and PF-AR, and positron beams to SuperKEKB LER. We utilize machine learning for both online beam tuning and offline data analysis. Machine learning based on Bayesian optimization has been employed to improve and maintain beam quality, contributing to the enhancement and stabilization of beam injection efficiency into SuperKEKB HER and LER. In this report, we present monitors and beam tuning methods that incorporate machine learning. Identifying parameters that affect beam quality and stability is important, but finding them among the vast number of parameters is not easy. In machine learning-based beam tuning, selecting the appropriate parameters for tuning is crucial, and another important issue is identifying factors that lead to beam instability. To address this, we have applied explainable AI techniques to analyze archived data and attempted to extract parameters that have a significant impact on the beam. This report also covers our data archiving system and analysis efforts using explainable AI.",
+      "date": "2026-01-20",
+      "year": 2026,
+      "venue": "JACoW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.45498377084732056
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.43693700432777405
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3119807",
+        "doi": "https://doi.org/10.18429/JACoW-IBIC2025-TUBC02"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-14T04:48:16Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:16Z"
+    },
+    "('', '10.59350/w48p3-m6c80', 'prism project s update making spatial machine learning more reliable plus related activities')": {
+      "id": "doi:10.59350/w48p3-m6c80",
+      "doi": "10.59350/w48p3-m6c80",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "PRISM project's update: making spatial machine learning more reliable, plus related activities",
+      "authors": [
+        "Jakub Nowosad"
+      ],
+      "abstract": "<jats:p>Time flies, and I am now much closer to the end of the PRISM ( &lt;em&gt; PReservation and RecognItion of Spatial patterns using Machine learning &lt;/em&gt; ) project than to its beginning. &lt;sup&gt; 1 &lt;/sup&gt; . The project's primary goal is to develop methods for validating and including spatial patterns in machine learning. In this blog post, I summarize the project's progress from April 2025 to February 2026 and share related outputs and activities.</jats:p>",
+      "date": "2026-02-13",
+      "year": 2026,
+      "venue": "Front Matter",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.30884113907814026
+        },
+        {
+          "label": "Data Management",
+          "score": 0.29987257719039917
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.59350/w48p3-m6c80",
+        "crossref": "https://doi.org/10.59350/w48p3-m6c80"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-14T04:48:28Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-14T04:48:28Z"
     }
   }
 }
