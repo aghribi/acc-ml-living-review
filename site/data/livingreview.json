@@ -12,16 +12,16 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 67
+      "2026": 68
     },
     "per_category": {
       "Tools & Libraries": 179,
-      "Novel Applications": 243,
+      "Novel Applications": 244,
       "Others": 43,
       "Anomaly Detection & Fault Prediction": 59,
       "Statistics & Trends": 77,
       "Reinforcement Learning & Autonomous Systems": 60,
-      "Surrogate Models": 43,
+      "Surrogate Models": 44,
       "Data Management": 40,
       "By Facility Type": 9,
       "RF Systems": 7,
@@ -151,7 +151,7 @@
       "Defect and Diffusion Forum": 1,
       "Seventh International Conference on Geoscience and Remote Sensing Mapping (GRSM 2025)": 1,
       "IEEE Sensors Journal": 2,
-      "IEEE Internet of Things Journal": 1,
+      "IEEE Internet of Things Journal": 2,
       "Electronics": 1,
       "Chinese Rare Earths": 1,
       "Innovative Infrastructure Solutions": 1,
@@ -278,10 +278,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 53,
-      "2026-02": 14
+      "2026-02": 15
     },
-    "last_updated": "2026-02-14T04:49:09.002201+00:00",
-    "next_update": "2026-02-15T04:49:09.002201+00:00"
+    "last_updated": "2026-02-15T04:59:03.691669+00:00",
+    "next_update": "2026-02-16T04:59:03.691669+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -19155,6 +19155,53 @@
       ],
       "history": [],
       "last_updated": "2026-02-14T04:48:28Z"
+    },
+    "('', '10.1109/jiot.2025.3635785', 'ultraefficient compressed phonocardiogram classification on a custom embedded neural accelerator')": {
+      "id": "doi:10.1109/jiot.2025.3635785",
+      "doi": "10.1109/jiot.2025.3635785",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Ultraefficient Compressed Phonocardiogram Classification on a Custom Embedded Neural Accelerator",
+      "authors": [
+        "Domenico Ragusa",
+        "Rens Baeyens",
+        "Danilo Pau",
+        "Elisa Marenzi",
+        "Jan Steckel",
+        "Walter Daems",
+        "Francesco Leporati",
+        "Emanuele Torti"
+      ],
+      "abstract": "",
+      "date": "2026-02-15",
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.39406758546829224
+        },
+        {
+          "label": "Surrogate Models",
+          "score": 0.3546825051307678
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1109/jiot.2025.3635785",
+        "crossref": "https://doi.org/10.1109/jiot.2025.3635785"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-15T04:58:24Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-15T04:58:24Z"
     }
   }
 }
