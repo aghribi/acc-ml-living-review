@@ -12,10 +12,10 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 68
+      "2026": 69
     },
     "per_category": {
-      "Tools & Libraries": 179,
+      "Tools & Libraries": 180,
       "Novel Applications": 244,
       "Others": 43,
       "Anomaly Detection & Fault Prediction": 59,
@@ -180,7 +180,8 @@
       "J.Subatomic Part.Cosmol.": 1,
       "BMC Oral Health": 1,
       "Sensors and Materials": 1,
-      "Front Matter": 1
+      "Front Matter": 1,
+      "ResearchHub Technologies, Inc.": 1
     },
     "per_keyword": {
       "optimization": 78,
@@ -278,10 +279,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 53,
-      "2026-02": 15
+      "2026-02": 16
     },
-    "last_updated": "2026-02-17T04:58:42.241559+00:00",
-    "next_update": "2026-02-18T04:58:42.241559+00:00"
+    "last_updated": "2026-02-18T04:59:21.395222+00:00",
+    "next_update": "2026-02-19T04:59:21.395222+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -19202,6 +19203,42 @@
       ],
       "history": [],
       "last_updated": "2026-02-15T04:58:24Z"
+    },
+    "('', '10.55277/researchhub.ipt33sx1', 'cgmaxpra19 cs3 1 eng pdf dumps trusted learning resource')": {
+      "id": "doi:10.55277/researchhub.ipt33sx1",
+      "doi": "10.55277/researchhub.ipt33sx1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "CGMAXPRA19-CS3-1-ENG PDF Dumps – Trusted Learning Resource",
+      "authors": [
+        "Blade Shark"
+      ],
+      "abstract": "",
+      "date": "2026-02-17",
+      "year": 2026,
+      "venue": "ResearchHub Technologies, Inc.",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.2510921359062195
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.55277/researchhub.ipt33sx1",
+        "crossref": "https://doi.org/10.55277/researchhub.ipt33sx1"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-18T04:58:39Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-18T04:58:39Z"
     }
   }
 }
