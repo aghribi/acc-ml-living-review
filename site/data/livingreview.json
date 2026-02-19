@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 69
+      "2026": 70
     },
     "per_category": {
       "Tools & Libraries": 180,
       "Novel Applications": 244,
       "Others": 43,
-      "Anomaly Detection & Fault Prediction": 59,
+      "Anomaly Detection & Fault Prediction": 60,
       "Statistics & Trends": 77,
       "Reinforcement Learning & Autonomous Systems": 60,
       "Surrogate Models": 44,
@@ -181,7 +181,8 @@
       "BMC Oral Health": 1,
       "Sensors and Materials": 1,
       "Front Matter": 1,
-      "ResearchHub Technologies, Inc.": 1
+      "ResearchHub Technologies, Inc.": 1,
+      "ODU Digital Commons (Old Dominion University)": 1
     },
     "per_keyword": {
       "optimization": 78,
@@ -194,7 +195,7 @@
       "reinforcement learning": 40,
       "diagnostics": 26,
       "uncertainty quantification": 4,
-      "anomaly detection": 19,
+      "anomaly detection": 20,
       "time series": 6,
       "GAN": 1,
       "cloud": 3,
@@ -279,10 +280,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 53,
-      "2026-02": 16
+      "2026-02": 17
     },
-    "last_updated": "2026-02-18T04:59:21.395222+00:00",
-    "next_update": "2026-02-19T04:59:21.395222+00:00"
+    "last_updated": "2026-02-19T04:57:48.991225+00:00",
+    "next_update": "2026-02-20T04:57:48.991225+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -19239,6 +19240,41 @@
       ],
       "history": [],
       "last_updated": "2026-02-18T04:58:39Z"
+    },
+    "('', '10.25777/2pjk-8q69', 'machine learning for anomaly detection in neural network security and srf cavities')": {
+      "id": "doi:10.25777/2pjk-8q69",
+      "doi": "10.25777/2pjk-8q69",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine Learning for Anomaly Detection in Neural Network Security and SRF Cavities",
+      "authors": [
+        "Hal Ferguson"
+      ],
+      "abstract": "",
+      "date": "2026-02-17",
+      "year": 2026,
+      "venue": "ODU Digital Commons (Old Dominion University)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.4605732560157776
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7129631903"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-02-19T04:57:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-19T04:57:05Z"
     }
   }
 }
