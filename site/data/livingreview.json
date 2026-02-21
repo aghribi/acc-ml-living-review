@@ -12,15 +12,15 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 70
+      "2026": 72
     },
     "per_category": {
-      "Tools & Libraries": 180,
-      "Novel Applications": 244,
+      "Tools & Libraries": 181,
+      "Novel Applications": 246,
       "Others": 43,
       "Anomaly Detection & Fault Prediction": 60,
       "Statistics & Trends": 77,
-      "Reinforcement Learning & Autonomous Systems": 60,
+      "Reinforcement Learning & Autonomous Systems": 61,
       "Surrogate Models": 44,
       "Data Management": 40,
       "By Facility Type": 9,
@@ -41,7 +41,7 @@
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
       "IAES International Journal of Artificial Intelligence": 1,
-      "Unknown Venue": 3,
+      "Unknown Venue": 5,
       "ACM Transactions on Embedded Computing Systems": 1,
       "Meeting abstracts/Meeting abstracts (Electrochemical Society. CD-ROM)": 1,
       "Nuclear Science and Techniques": 1,
@@ -279,11 +279,11 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 53,
-      "2026-02": 17
+      "2026-01": 54,
+      "2026-02": 18
     },
-    "last_updated": "2026-02-20T04:56:13.028633+00:00",
-    "next_update": "2026-02-21T04:56:13.028633+00:00"
+    "last_updated": "2026-02-21T05:12:32.346699+00:00",
+    "next_update": "2026-02-22T05:12:32.346699+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -19275,6 +19275,90 @@
       ],
       "history": [],
       "last_updated": "2026-02-19T04:57:05Z"
+    },
+    "('', '10.2172/3012392', 'continual learning for particle accelerators')": {
+      "id": "doi:10.2172/3012392",
+      "doi": "10.2172/3012392",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Continual Learning for Particle Accelerators",
+      "authors": [
+        "Nuclear Physics (NP) USDOE Office of Science (SC)",
+        "M. Schram",
+        "Thomas Jefferson National Accelerator Facility (TJNAF)",
+        "Sen Lin",
+        "Kishansingh Rajput",
+        "Alexander Zhukov",
+        "Willem Blokland"
+      ],
+      "abstract": "",
+      "date": "2026-01-26",
+      "year": 2026,
+      "venue": "Unknown Venue",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.564447283744812
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.5532751083374023
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7125696242"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-02-21T05:11:53Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-21T05:11:53Z"
+    },
+    "('', '10.36227/techrxiv.177102159.95058346/v1', 'architectural taxonomy of ai accelerators a memory and interconnect centric perspective')": {
+      "id": "doi:10.36227/techrxiv.177102159.95058346/v1",
+      "doi": "10.36227/techrxiv.177102159.95058346/v1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Architectural Taxonomy of AI Accelerators: A Memory and Interconnect Centric Perspective",
+      "authors": [
+        "Nour Abu Jassar"
+      ],
+      "abstract": "",
+      "date": "2026-02-13",
+      "year": 2026,
+      "venue": "Unknown Venue",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.6492443680763245
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.606427788734436
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7128794138"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-02-21T05:11:53Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-21T05:11:53Z"
     }
   }
 }
