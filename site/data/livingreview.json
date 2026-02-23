@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 72
+      "2026": 73
     },
     "per_category": {
       "Tools & Libraries": 181,
       "Novel Applications": 246,
-      "Others": 43,
+      "Others": 44,
       "Anomaly Detection & Fault Prediction": 60,
       "Statistics & Trends": 77,
       "Reinforcement Learning & Autonomous Systems": 61,
@@ -182,14 +182,15 @@
       "Sensors and Materials": 1,
       "Front Matter": 1,
       "ResearchHub Technologies, Inc.": 1,
-      "ODU Digital Commons (Old Dominion University)": 1
+      "ODU Digital Commons (Old Dominion University)": 1,
+      "Construction Innovation": 1
     },
     "per_keyword": {
       "optimization": 78,
       "control": 77,
       "surrogate model": 21,
-      "transformer": 13,
-      "deep learning": 57,
+      "transformer": 14,
+      "deep learning": 58,
       "proton therapy": 1,
       "beam": 142,
       "reinforcement learning": 40,
@@ -280,10 +281,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 54,
-      "2026-02": 18
+      "2026-02": 19
     },
-    "last_updated": "2026-02-22T04:54:18.731358+00:00",
-    "next_update": "2026-02-23T04:54:18.731358+00:00"
+    "last_updated": "2026-02-23T05:03:29.238149+00:00",
+    "next_update": "2026-02-24T05:03:29.238149+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -943,7 +944,7 @@
         },
         {
           "label": "RF Systems",
-          "score": 0.3401947617530823
+          "score": 0.34019482135772705
         },
         {
           "label": "Tools & Libraries",
@@ -8275,11 +8276,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5018219947814941
+          "score": 0.5018219351768494
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.44352149963378906
+          "score": 0.4435214698314667
         }
       ],
       "keywords": [],
@@ -19359,6 +19360,45 @@
       ],
       "history": [],
       "last_updated": "2026-02-21T05:11:53Z"
+    },
+    "('', '10.1108/ci-08-2025-0377', 'real world evaluation of automated defect detection in masonry bridges using 360 imagery with machine learning')": {
+      "id": "doi:10.1108/ci-08-2025-0377",
+      "doi": "10.1108/ci-08-2025-0377",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Real-world evaluation of automated defect detection in masonry bridges using 360° imagery with machine learning",
+      "authors": [
+        "Arijit Sen",
+        "Quanbin Sun",
+        "Song Wu",
+        "Saeed Talebi"
+      ],
+      "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>The purpose of this study is to evaluate different deep learning approaches, Convolutional Neural Networks (CNN), transformer, hybrid and commercial models, for automated defect detection in UK masonry railway bridges, in both laboratory and real-world settings, using high-resolution 360° imagery.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design/methodology/approach</jats:title>\n                    <jats:p>Expert-annotated imagery was categorised into six defect types, with SMOTE oversampling applied to mitigate class imbalance. Four widely used architectures, EfficientNet, Swin Transformer, ConvNeXt and Azure CustomVision, were benchmarked using compact variants in a two-stage design: laboratory data and real-world evaluation, to assess feasibility and generalisability.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Findings</jats:title>\n                    <jats:p>All models achieved high performance on laboratory data (0.83–0.91 accuracy), demonstrating feasibility in controlled environments. However, when applied to real-world evaluation, accuracies declined to 0.76–0.86, with the Swin Transformer showing the greatest robustness (2% drop). This decline was largely attributable to extreme class imbalance (non-defect to defect ratio around 220:1), which caused models to favour the non-defect class. While Vegetation and Loss of Section showed moderate recall, crack detection was less reliable, likely affected by limited samples and textural similarity to other classes. Consequently, overall accuracy masked substantial class-level disparities, and ensemble modelling delivered only marginal improvements under these conditions.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Practical implications</jats:title>\n                    <jats:p>Automated detection can streamline inspections and enhance consistency, as compact models show feasibility. However, reliable deployment requires addressing imbalance, as some defect classes (e.g. cracks) remain unreliable.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Originality/value</jats:title>\n                    <jats:p>To the best of the authors’ knowledge, this study is the first comprehensive evaluation on masonry railway bridges with 360° imagery, which advances beyond prior laboratory environment by systematically testing generalisability in real-world sceneries, generating new insights into imbalance-driven errors and class-specific detection limits.</jats:p>\n                  </jats:sec>",
+      "date": "2026-02-23",
+      "year": 2026,
+      "venue": "Construction Innovation",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1108/ci-08-2025-0377",
+        "crossref": "https://doi.org/10.1108/ci-08-2025-0377"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-23T05:02:46Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-23T05:02:46Z"
     }
   }
 }
