@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 74
+      "2026": 75
     },
     "per_category": {
       "Tools & Libraries": 181,
       "Novel Applications": 247,
-      "Others": 44,
+      "Others": 45,
       "Anomaly Detection & Fault Prediction": 60,
       "Statistics & Trends": 79,
       "Reinforcement Learning & Autonomous Systems": 61,
@@ -184,7 +184,8 @@
       "ResearchHub Technologies, Inc.": 1,
       "ODU Digital Commons (Old Dominion University)": 1,
       "Construction Innovation": 1,
-      "Artificial Intelligence-Powered Electrical Machine Design": 1
+      "Artificial Intelligence-Powered Electrical Machine Design": 1,
+      "Anadolu Kültürel Araştırmalar Dergisi": 1
     },
     "per_keyword": {
       "optimization": 78,
@@ -282,10 +283,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 53,
-      "2026-02": 21
+      "2026-02": 22
     },
-    "last_updated": "2026-02-24T05:04:49.027631+00:00",
-    "next_update": "2026-02-25T05:04:49.027631+00:00"
+    "last_updated": "2026-02-25T04:57:42.388647+00:00",
+    "next_update": "2026-02-26T04:57:42.388647+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -2777,11 +2778,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.34754008054733276
+          "score": 0.3475399613380432
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3282427191734314
+          "score": 0.32824259996414185
         }
       ],
       "keywords": [],
@@ -3884,11 +3885,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.44071048498153687
+          "score": 0.4407104253768921
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.332103431224823
+          "score": 0.3321033716201782
         }
       ],
       "keywords": [],
@@ -19441,6 +19442,43 @@
       ],
       "history": [],
       "last_updated": "2026-02-24T05:04:10Z"
+    },
+    "('', '10.63556/ankad.v10i1.344', 'türkiye yüzyılı maarif modeli okul öncesi eğitim programı öğrenme çıktıları ile 2024 erken çocukluk eğitimi programının kazanım ve göstergelerinin 21 yüzyıl becerilerine yer verme durumu açısından karşılaştırılması')": {
+      "id": "doi:10.63556/ankad.v10i1.344",
+      "doi": "10.63556/ankad.v10i1.344",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Türkiye Yüzyılı Maarif Modeli Okul Öncesi Eğitim Programı Öğrenme Çıktıları ile 2024 Erken Çocukluk Eğitimi Programının Kazanım ve Göstergelerinin 21. Yüzyıl Becerilerine Yer Verme Durumu Açısından Karşılaştırılması",
+      "authors": [
+        "Gülden ERDOĞAN",
+        "Vedat BAYRAKTAR"
+      ],
+      "abstract": "<jats:p>Bu araştırma, Türkiye Yüzyılı Maarif Modeli Okul Öncesi Eğitim Programı Öğrenme Çıktıları ile 2024 Erken Çocukluk Eğitimi Programının Kazanım ve Göstergelerinin 21. Yüzyıl Becerilerine yer verme durumu açısından karşılaştırılması amacıyla gerçekleştirilen nitel bir çalışmadır. Bu çalışmada doküman olarak “Türkiye Yüzyılı Maarif Modeli Okul Öncesi Eğitim Programı ile 2024 Erken Çocukluk Eğitimi Programı” analiz edilmiştir. Analizde kullanılan 21. yüzyıl becerileri; P21 sınıflandırmasına göre 3 ana tema, 11 alt tema ve alt temaları içeren kodlardan oluşturulmuş. Temalar; öğrenme ve yenilik becerileri, bilgi, medya ve teknoloji becerileri; Alt Temalar; yaratıcılık ve yenilenme, eleştirel düşünme ve problem çözme, iletişim, işbirliği, bilgi okuryazarlığı, medya okuryazarlığı, bilgi ve iletişim teknolojileri(bit) okuryazarlığı, esneklik ve uyum, inisiyatif alma ve özdenetim, üretkenlik ve hesap verilebilirlik, liderlik ve sorumluluk, yaşam ve kariyer becerileridir. Türkiye Yüzyılı Maarif Modeli Okul Öncesi Programının öğrenme çıktıları ile 2024 Erken Çocukluk Eğitimi Programının kazanım ve göstergelerinin 21. Yüzyıl Becerilerine yer verme sıklığı karşılaştırılmasında; Türkiye Yüzyılı Maarif Modeli Okul Öncesi Programı öğrenme çıktılarında 2024 Erken Çocukluk Eğitimi Programı kazanım ve göstergelerine göre daha fazla sayıda 21. Yüzyıl becerisinin yer aldığı sonucuna ulaşılmıştır.</jats:p>",
+      "date": "2026-02-24",
+      "year": 2026,
+      "venue": "Anadolu Kültürel Araştırmalar Dergisi",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.63556/ankad.v10i1.344",
+        "crossref": "https://doi.org/10.63556/ankad.v10i1.344"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-25T04:57:00Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-25T04:57:00Z"
     }
   }
 }
