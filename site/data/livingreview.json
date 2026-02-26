@@ -12,15 +12,15 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 75
+      "2026": 77
     },
     "per_category": {
       "Tools & Libraries": 181,
       "Novel Applications": 247,
       "Others": 45,
-      "Anomaly Detection & Fault Prediction": 60,
+      "Anomaly Detection & Fault Prediction": 61,
       "Statistics & Trends": 79,
-      "Reinforcement Learning & Autonomous Systems": 61,
+      "Reinforcement Learning & Autonomous Systems": 62,
       "Surrogate Models": 44,
       "Data Management": 40,
       "By Facility Type": 9,
@@ -185,7 +185,9 @@
       "ODU Digital Commons (Old Dominion University)": 1,
       "Construction Innovation": 1,
       "Artificial Intelligence-Powered Electrical Machine Design": 1,
-      "Anadolu Kültürel Araştırmalar Dergisi": 1
+      "Anadolu Kültürel Araştırmalar Dergisi": 1,
+      "Journal of Robotic Surgery": 1,
+      "Applied Mechanics and Materials": 1
     },
     "per_keyword": {
       "optimization": 78,
@@ -283,10 +285,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 53,
-      "2026-02": 22
+      "2026-02": 24
     },
-    "last_updated": "2026-02-25T04:57:42.388647+00:00",
-    "next_update": "2026-02-26T04:57:42.388647+00:00"
+    "last_updated": "2026-02-26T04:59:57.207058+00:00",
+    "next_update": "2026-02-27T04:59:57.207058+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -9547,7 +9549,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.40004873275756836
+          "score": 0.4000486731529236
         },
         {
           "label": "Tools & Libraries",
@@ -18326,7 +18328,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3913958668708801
+          "score": 0.39139583706855774
         }
       ],
       "keywords": [],
@@ -19479,6 +19481,86 @@
       ],
       "history": [],
       "last_updated": "2026-02-25T04:57:00Z"
+    },
+    "('', '10.1007/s11701-025-03091-w', 'development and implementation of the imra multiplatform foundations in robotic surgery online learning curriculum')": {
+      "id": "doi:10.1007/s11701-025-03091-w",
+      "doi": "10.1007/s11701-025-03091-w",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Development and implementation of the IMRA multiplatform Foundations in Robotic Surgery online learning curriculum",
+      "authors": [
+        "Tayla Fay",
+        "Daniel Costello",
+        "Dean Driscoll",
+        "Niall M. Corcoran",
+        "Anthony J. Costello",
+        "Henry Woo",
+        "Helen Mohan"
+      ],
+      "abstract": "",
+      "date": "2026-02-26",
+      "year": 2026,
+      "venue": "Journal of Robotic Surgery",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.28982388973236084
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s11701-025-03091-w",
+        "crossref": "https://doi.org/10.1007/s11701-025-03091-w"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-26T04:59:26Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-26T04:59:26Z"
+    },
+    "('', '10.4028/p-me4dzs', 'diagnosing induction motor fault based on relieff feature selection algorithm and support vector machine model')": {
+      "id": "doi:10.4028/p-me4dzs",
+      "doi": "10.4028/p-me4dzs",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Diagnosing Induction Motor Fault Based on ReliefF Feature Selection Algorithm and Support Vector Machine Model",
+      "authors": [
+        "Felly Anta",
+        "Didik Djoko Susilo",
+        "Zainal Arifin"
+      ],
+      "abstract": "<jats:p>Early fault diagnosis is a crucial element in maintaining the optimal operation of rotating machinery and avoiding sudden failure resulting in material and non-material losses. This research aims to select the salient features to diagnose the induction motor faults using an SVM model. The induction motor is simulated experiencing three fault scenarios: single fault, double faults, and multiple faults. These scenarios consist of stator fault, rotor fault, bearing fault, stator-bearing fault, stator-rotor fault, bearing-rotor fault, and stator-bearing-rotor fault. Vibration signals for each of these conditions are collected using an accelerometer sensor with a sampling frequency of 20 kHz. The study utilizes 12 statistical features, comprising 7-time time-domain features, namely mean, standard deviation, kurtosis, RMS, skewness, peak value, crest factor, and 5 frequency domain features, namely mean frequency, median frequency, spectral entropy, power spectral density, and spectral centroid. These features are selected using the ReliefF feature selection algorithm, and the selected features are then employed as classification parameters. The results indicate that the most relevant statistical features used for classification parameters are RMS, Standard Deviation, and Power Spectral Density. Meanwhile, the performance of the Support Vector Machine is excellent for three cases of the induction motor faults. The accuracies for single faults, double faults, and multiple faults are 99%, 100%, and 99% respectively.</jats:p>",
+      "date": "2026-02-26",
+      "year": 2026,
+      "venue": "Applied Mechanics and Materials",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.39491167664527893
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.4028/p-me4dzs",
+        "crossref": "https://doi.org/10.4028/p-me4dzs"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-26T04:59:26Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-26T04:59:26Z"
     }
   }
 }
