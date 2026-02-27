@@ -12,11 +12,11 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 77
+      "2026": 78
     },
     "per_category": {
-      "Tools & Libraries": 181,
-      "Novel Applications": 247,
+      "Tools & Libraries": 182,
+      "Novel Applications": 248,
       "Others": 45,
       "Anomaly Detection & Fault Prediction": 61,
       "Statistics & Trends": 79,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 186,
+      "arXiv": 187,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -190,16 +190,16 @@
       "Applied Mechanics and Materials": 1
     },
     "per_keyword": {
-      "optimization": 78,
+      "optimization": 79,
       "control": 77,
       "surrogate model": 21,
-      "transformer": 14,
+      "transformer": 15,
       "deep learning": 58,
       "proton therapy": 1,
-      "beam": 142,
+      "beam": 143,
       "reinforcement learning": 40,
-      "diagnostics": 26,
-      "uncertainty quantification": 4,
+      "diagnostics": 27,
+      "uncertainty quantification": 5,
       "anomaly detection": 20,
       "time series": 6,
       "GAN": 1,
@@ -285,10 +285,10 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 53,
-      "2026-02": 24
+      "2026-02": 25
     },
-    "last_updated": "2026-02-26T04:59:57.207058+00:00",
-    "next_update": "2026-02-27T04:59:57.207058+00:00"
+    "last_updated": "2026-02-27T04:56:07.242974+00:00",
+    "next_update": "2026-02-28T04:56:07.242974+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1747,7 +1747,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4086500406265259
+          "score": 0.40865010023117065
         },
         {
           "label": "Tools & Libraries",
@@ -9418,7 +9418,7 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4344249367713928
+          "score": 0.4344250559806824
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
@@ -19561,6 +19561,48 @@
       ],
       "history": [],
       "last_updated": "2026-02-26T04:59:26Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop002', 'advancing accelerator virtual beam diagnostics through latent evolution modeling an integrated solution to forward inverse tuning and uq problems')": {
+      "id": "doi:10.18429/jacow-napac2025-mop002",
+      "doi": "10.18429/jacow-napac2025-mop002",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Advancing accelerator virtual beam diagnostics through latent evolution modeling: an integrated solution to forward, inverse, tuning, and UQ problems",
+      "authors": [
+        "Rautela, Mahindra",
+        "Scheinker, Alexander"
+      ],
+      "abstract": "Virtual beam diagnostics relies on computationally intensive beam dynamics simulations where high-dimensional charged particle beams evolve through the accelerator. We propose Latent Evolution Model (LEM), a hybrid machine learning framework with an autoencoder that projects high-dimensional phase spaces into lower-dimensional representations, coupled with transformers to learn temporal dynamics in the latent space. This approach provides a common foundational framework addressing multiple interconnected challenges in beam diagnostics. For \\textit{forward modeling}, a Conditional Variational Autoencoder (CVAE) encodes 15 unique projections of the 6D phase space into a latent representation, while a transformer predicts downstream latent states from upstream inputs. For \\textit{inverse problems}, we address two distinct challenges: (a) predicting upstream phase spaces from downstream observations by utilizing the same CVAE architecture with transformers trained on reversed temporal sequences along with aleatoric uncertainty quantification, and (b) estimating RF settings from the latent space of the trained LEM using a dedicated dense neural network that maps latent representations to RF parameters. For \\textit{tuning problems}, we leverage the trained LEM and RF estimator within a Bayesian optimization framework to determine optimal RF settings that minimize beam loss. This paper summarizes our recent efforts and demonstrates how this unified approach effectively addresses these traditionally separate challenges.",
+      "date": "2026-02-26",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4297029376029968
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3124034",
+        "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP002",
+        "arxiv": "https://arxiv.org/abs/2602.22618"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-02-27T04:55:23Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-27T04:55:23Z"
     }
   }
 }
