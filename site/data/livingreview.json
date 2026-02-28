@@ -12,15 +12,15 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 78
+      "2026": 82
     },
     "per_category": {
-      "Tools & Libraries": 182,
-      "Novel Applications": 248,
+      "Tools & Libraries": 184,
+      "Novel Applications": 251,
       "Others": 45,
       "Anomaly Detection & Fault Prediction": 61,
-      "Statistics & Trends": 79,
-      "Reinforcement Learning & Autonomous Systems": 62,
+      "Statistics & Trends": 80,
+      "Reinforcement Learning & Autonomous Systems": 64,
       "Surrogate Models": 44,
       "Data Management": 40,
       "By Facility Type": 9,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 187,
+      "arXiv": 188,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -105,7 +105,7 @@
       "Measurement Science and Technology": 2,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
       "Rapid Prototyping Journal": 1,
-      "JACOW": 8,
+      "JACOW": 10,
       "Frontiers in Oncology": 1,
       "Phys.Part.Nucl.": 1,
       "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
@@ -187,19 +187,20 @@
       "Artificial Intelligence-Powered Electrical Machine Design": 1,
       "Anadolu Kültürel Araştırmalar Dergisi": 1,
       "Journal of Robotic Surgery": 1,
-      "Applied Mechanics and Materials": 1
+      "Applied Mechanics and Materials": 1,
+      "Asia-pacific Journal of Convergent Research Interchange": 1
     },
     "per_keyword": {
-      "optimization": 79,
+      "optimization": 80,
       "control": 77,
       "surrogate model": 21,
-      "transformer": 15,
+      "transformer": 16,
       "deep learning": 58,
       "proton therapy": 1,
-      "beam": 143,
+      "beam": 144,
       "reinforcement learning": 40,
-      "diagnostics": 27,
-      "uncertainty quantification": 5,
+      "diagnostics": 28,
+      "uncertainty quantification": 6,
       "anomaly detection": 20,
       "time series": 6,
       "GAN": 1,
@@ -284,11 +285,11 @@
       "2000-08": 1,
       "2025-11": 44,
       "2025-12": 35,
-      "2026-01": 53,
-      "2026-02": 25
+      "2026-01": 55,
+      "2026-02": 27
     },
-    "last_updated": "2026-02-27T04:56:07.242974+00:00",
-    "next_update": "2026-02-28T04:56:07.242974+00:00"
+    "last_updated": "2026-02-28T04:21:10.934729+00:00",
+    "next_update": "2026-03-01T04:21:10.934729+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -14479,7 +14480,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3761811852455139
+          "score": 0.3761812150478363
         },
         {
           "label": "Statistics & Trends",
@@ -18701,7 +18702,7 @@
         },
         {
           "label": "Beam Diagnostics",
-          "score": 0.445449560880661
+          "score": 0.4454495310783386
         }
       ],
       "keywords": [],
@@ -19603,6 +19604,184 @@
       ],
       "history": [],
       "last_updated": "2026-02-27T04:55:23Z"
+    },
+    "('2602.22618', '', 'advancing accelerator virtual beam diagnostics through latent evolution modeling an integrated solution to forward inverse tuning and uq problems')": {
+      "id": "arxiv:2602.22618",
+      "doi": null,
+      "arxiv_id": "2602.22618",
+      "inspire_id": null,
+      "title": "Advancing accelerator virtual beam diagnostics through latent evolution modeling: an integrated solution to forward, inverse, tuning, and UQ problems",
+      "authors": [
+        "Mahindra Rautela",
+        "Alexander Scheinker"
+      ],
+      "abstract": "Virtual beam diagnostics relies on computationally intensive beam dynamics simulations where high-dimensional charged particle beams evolve through the accelerator. We propose Latent Evolution Model (LEM), a hybrid machine learning framework with an autoencoder that projects high-dimensional phase spaces into lower-dimensional representations, coupled with transformers to learn temporal dynamics in the latent space. This approach provides a common foundational framework addressing multiple interconnected challenges in beam diagnostics. For \\textit{forward modeling}, a Conditional Variational Autoencoder (CVAE) encodes 15 unique projections of the 6D phase space into a latent representation, while a transformer predicts downstream latent states from upstream inputs. For \\textit{inverse problems}, we address two distinct challenges: (a) predicting upstream phase spaces from downstream observations by utilizing the same CVAE architecture with transformers trained on reversed temporal sequences along with aleatoric uncertainty quantification, and (b) estimating RF settings from the latent space of the trained LEM using a dedicated dense neural network that maps latent representations to RF parameters. For \\textit{tuning problems}, we leverage the trained LEM and RF estimator within a Bayesian optimization framework to determine optimal RF settings that minimize beam loss. This paper summarizes our recent efforts and demonstrates how this unified approach effectively addresses these traditionally separate challenges.",
+      "date": "2026-02-26",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4297029376029968
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2602.22618v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-02-28T04:16:53Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-28T04:16:53Z"
+    },
+    "('', '10.18429/jacow-napac2025-mop057', 'machine learning at the spallation neutron source accelerator and target')": {
+      "id": "doi:10.18429/jacow-napac2025-mop057",
+      "doi": "10.18429/jacow-napac2025-mop057",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning at the Spallation Neutron Source accelerator and target",
+      "authors": [
+        "Armen Kasparian",
+        "Willem Blokland",
+        "Alexander Zhukov",
+        "Anant Ray",
+        "Drew Winder",
+        "Kishansingh Rajput",
+        "Malachi Schram"
+      ],
+      "abstract": "",
+      "date": "2026-01-29",
+      "year": 2026,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4791206121444702
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.441497802734375
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7126038308"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-02-28T04:20:27Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-28T04:20:27Z"
+    },
+    "('', '10.18429/jacow-napac2025-weyn01', 'machine learning enhanced deterministic controls in lasers and accelerators')": {
+      "id": "doi:10.18429/jacow-napac2025-weyn01",
+      "doi": "10.18429/jacow-napac2025-weyn01",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning-enhanced deterministic controls in lasers and accelerators",
+      "authors": [
+        "Dan Wang",
+        "Alessio Amodio",
+        "Alex Picksley",
+        "A. J. Gonsalves",
+        "Curtis J. Berger",
+        "Hai-En Tsai",
+        "Jeroen van Tilborg",
+        "Mahek Logantha",
+        "N. R. Vora",
+        "Qiang Du",
+        "Russell Wilcox",
+        "Samuel K. Barber",
+        "Tong Zhou",
+        "Z. Eisentraut"
+      ],
+      "abstract": "",
+      "date": "2026-01-29",
+      "year": 2026,
+      "venue": "JACOW",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.5202319025993347
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.4795066714286804
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7126103344"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-02-28T04:20:27Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-28T04:20:27Z"
+    },
+    "('', '10.47116/apjcri.2026.02.09', 'educational effects of an ai mobility accelerator platform amap based autonomous driving competition for high school students')": {
+      "id": "doi:10.47116/apjcri.2026.02.09",
+      "doi": "10.47116/apjcri.2026.02.09",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Educational Effects of an AI Mobility Accelerator Platform (aMAP)-Based Autonomous Driving Competition for High School Students",
+      "authors": [
+        "Chan Seob Park",
+        "Kuk Won Ko"
+      ],
+      "abstract": "",
+      "date": "2026-02-28",
+      "year": 2026,
+      "venue": "Asia-pacific Journal of Convergent Research Interchange",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.48817718029022217
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.42516666650772095
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.47116/apjcri.2026.02.09",
+        "crossref": "https://doi.org/10.47116/apjcri.2026.02.09"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-02-28T04:20:28Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-02-28T04:20:28Z"
     }
   }
 }
