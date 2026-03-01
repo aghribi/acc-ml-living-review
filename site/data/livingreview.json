@@ -12,15 +12,15 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 82
+      "2026": 86
     },
     "per_category": {
-      "Tools & Libraries": 184,
-      "Novel Applications": 251,
-      "Others": 45,
+      "Tools & Libraries": 185,
+      "Novel Applications": 252,
+      "Others": 46,
       "Anomaly Detection & Fault Prediction": 61,
       "Statistics & Trends": 80,
-      "Reinforcement Learning & Autonomous Systems": 64,
+      "Reinforcement Learning & Autonomous Systems": 65,
       "Surrogate Models": 44,
       "Data Management": 40,
       "By Facility Type": 9,
@@ -30,7 +30,7 @@
       "Beam Dynamics": 11,
       "Reviews": 21,
       "Beam Diagnostics": 21,
-      "Optimization & Control": 16
+      "Optimization & Control": 17
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
@@ -120,7 +120,7 @@
       "Resonance": 1,
       "Anthropologischer Anzeiger": 1,
       "Applied Radiation and Isotopes": 1,
-      "Results in Engineering": 1,
+      "Results in Engineering": 2,
       "International Journal of Particle Therapy": 1,
       "International Journal of Scientific Research in Engineering and Management": 1,
       "Journal of Mechanical Science and Technology": 1,
@@ -188,14 +188,17 @@
       "Anadolu Kültürel Araştırmalar Dergisi": 1,
       "Journal of Robotic Surgery": 1,
       "Applied Mechanics and Materials": 1,
-      "Asia-pacific Journal of Convergent Research Interchange": 1
+      "Asia-pacific Journal of Convergent Research Interchange": 1,
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence": 1,
+      "Expert Systems with Applications": 1,
+      "Materials Letters": 1
     },
     "per_keyword": {
       "optimization": 80,
       "control": 77,
       "surrogate model": 21,
       "transformer": 16,
-      "deep learning": 58,
+      "deep learning": 59,
       "proton therapy": 1,
       "beam": 144,
       "reinforcement learning": 40,
@@ -286,10 +289,11 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 55,
-      "2026-02": 27
+      "2026-02": 27,
+      "2026-03": 4
     },
-    "last_updated": "2026-02-28T04:21:10.934729+00:00",
-    "next_update": "2026-03-01T04:21:10.934729+00:00"
+    "last_updated": "2026-03-01T04:58:42.771218+00:00",
+    "next_update": "2026-03-02T04:58:42.771218+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -19782,6 +19786,172 @@
       ],
       "history": [],
       "last_updated": "2026-02-28T04:20:28Z"
+    },
+    "('', '10.1109/tpami.2025.3626549', 'i mecd i unlocking event level causal graph discovery for video reasoning')": {
+      "id": "doi:10.1109/tpami.2025.3626549",
+      "doi": "10.1109/tpami.2025.3626549",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "<i>MECD+:</i> Unlocking Event-Level Causal Graph Discovery for Video Reasoning",
+      "authors": [
+        "Tieyuan Chen",
+        "Huabin Liu",
+        "Yi Wang",
+        "Yihang Chen",
+        "Tianyao He",
+        "Chaofan Gan",
+        "Huanyu He",
+        "Weiyao Lin"
+      ],
+      "abstract": "",
+      "date": "2026-03-01",
+      "year": 2026,
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.265287846326828
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1109/tpami.2025.3626549",
+        "crossref": "https://doi.org/10.1109/tpami.2025.3626549"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-01T04:58:03Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-01T04:58:03Z"
+    },
+    "('', '10.1016/j.eswa.2025.130550', 'temporal frequency enhanced fourier neural operator and collaborative adversarial learning for multi physics coupled transient simulation of natural gas pipelines')": {
+      "id": "doi:10.1016/j.eswa.2025.130550",
+      "doi": "10.1016/j.eswa.2025.130550",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Temporal-frequency enhanced fourier neural operator and collaborative adversarial learning for multi-physics-coupled transient simulation of natural gas pipelines",
+      "authors": [
+        "Yuqian Wang",
+        "Gang Liu",
+        "Xiaojing Zhu",
+        "Jiaxing Zou",
+        "Lei Chen"
+      ],
+      "abstract": "",
+      "date": "2026-03-01",
+      "year": 2026,
+      "venue": "Expert Systems with Applications",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.344931423664093
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.27870744466781616
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.eswa.2025.130550",
+        "crossref": "https://doi.org/10.1016/j.eswa.2025.130550"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-01T04:58:03Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-01T04:58:03Z"
+    },
+    "('', '10.1016/j.rineng.2026.108978', 'optimizing pulsed field ablation for cardiac arrhythmias integrating taguchi method machine learning and genetic algorithms')": {
+      "id": "doi:10.1016/j.rineng.2026.108978",
+      "doi": "10.1016/j.rineng.2026.108978",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Optimizing pulsed field ablation for cardiac arrhythmias integrating Taguchi method, machine learning and genetic algorithms",
+      "authors": [
+        "Ethan Nabuurs",
+        "Kuljeet Singh Grewal",
+        "Amara Sanchez",
+        "Mikkayla Ellsworth-Reid",
+        "Robert F. Gilmour",
+        "Roderick Melnik",
+        "Sundeep Singh"
+      ],
+      "abstract": "",
+      "date": "2026-03-01",
+      "year": 2026,
+      "venue": "Results in Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Optimization & Control",
+          "score": 0.27953919768333435
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.rineng.2026.108978",
+        "crossref": "https://doi.org/10.1016/j.rineng.2026.108978"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-01T04:58:03Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-01T04:58:03Z"
+    },
+    "('', '10.1016/j.matlet.2026.140102', 'x ray ct analysis of internal defects in 3d printed continuous carbon fiber composites using deep learning')": {
+      "id": "doi:10.1016/j.matlet.2026.140102",
+      "doi": "10.1016/j.matlet.2026.140102",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "X-ray CT analysis of internal defects in 3D-printed continuous carbon fiber composites using deep learning",
+      "authors": [
+        "Runze Yang",
+        "Jinyue Zhang"
+      ],
+      "abstract": "",
+      "date": "2026-03-01",
+      "year": 2026,
+      "venue": "Materials Letters",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.matlet.2026.140102",
+        "crossref": "https://doi.org/10.1016/j.matlet.2026.140102"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-01T04:58:03Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-01T04:58:03Z"
     }
   }
 }
