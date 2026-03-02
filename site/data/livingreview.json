@@ -12,14 +12,14 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 86
+      "2026": 87
     },
     "per_category": {
       "Tools & Libraries": 185,
       "Novel Applications": 252,
       "Others": 46,
       "Anomaly Detection & Fault Prediction": 61,
-      "Statistics & Trends": 80,
+      "Statistics & Trends": 81,
       "Reinforcement Learning & Autonomous Systems": 65,
       "Surrogate Models": 44,
       "Data Management": 40,
@@ -191,7 +191,8 @@
       "Asia-pacific Journal of Convergent Research Interchange": 1,
       "IEEE Transactions on Pattern Analysis and Machine Intelligence": 1,
       "Expert Systems with Applications": 1,
-      "Materials Letters": 1
+      "Materials Letters": 1,
+      "Annals of Nuclear Energy": 1
     },
     "per_keyword": {
       "optimization": 80,
@@ -289,11 +290,11 @@
       "2025-11": 44,
       "2025-12": 35,
       "2026-01": 55,
-      "2026-02": 27,
+      "2026-02": 28,
       "2026-03": 4
     },
-    "last_updated": "2026-03-01T04:58:42.771218+00:00",
-    "next_update": "2026-03-02T04:58:42.771218+00:00"
+    "last_updated": "2026-03-02T04:53:11.043193+00:00",
+    "next_update": "2026-03-03T04:53:11.043193+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -19952,6 +19953,42 @@
       ],
       "history": [],
       "last_updated": "2026-03-01T04:58:03Z"
+    },
+    "('', '10.1016/j.anucene.2026.112244', 'high energy neutron shielding analysis using curve fitting and machine learning a monte carlo based study in concrete and ferro boron configurations')": {
+      "id": "doi:10.1016/j.anucene.2026.112244",
+      "doi": "10.1016/j.anucene.2026.112244",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "High-energy neutron shielding analysis using curve fitting and machine learning: a Monte Carlo-based study in concrete and Ferro-Boron configurations",
+      "authors": [
+        "Ali Osman GÖKCAN",
+        "Demet Sarıyer"
+      ],
+      "abstract": "",
+      "date": "2026-02-28",
+      "year": 2026,
+      "venue": "Annals of Nuclear Energy",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Statistics & Trends",
+          "score": 0.27906298637390137
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7132845605"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-03-02T04:52:28Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-02T04:52:28Z"
     }
   }
 }
