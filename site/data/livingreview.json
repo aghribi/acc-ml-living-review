@@ -12,23 +12,23 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 87
+      "2026": 88
     },
     "per_category": {
-      "Tools & Libraries": 185,
+      "Tools & Libraries": 186,
       "Novel Applications": 252,
       "Others": 46,
       "Anomaly Detection & Fault Prediction": 61,
       "Statistics & Trends": 81,
-      "Reinforcement Learning & Autonomous Systems": 65,
+      "Reinforcement Learning & Autonomous Systems": 66,
       "Surrogate Models": 44,
-      "Data Management": 40,
+      "Data Management": 41,
       "By Facility Type": 9,
       "RF Systems": 7,
       "Operations & Control": 10,
       "Beamline Design & Simulation": 32,
       "Beam Dynamics": 11,
-      "Reviews": 21,
+      "Reviews": 22,
       "Beam Diagnostics": 21,
       "Optimization & Control": 17
     },
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 188,
+      "arXiv": 189,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -202,8 +202,8 @@
       "deep learning": 59,
       "proton therapy": 1,
       "beam": 144,
-      "reinforcement learning": 40,
-      "diagnostics": 28,
+      "reinforcement learning": 41,
+      "diagnostics": 29,
       "uncertainty quantification": 6,
       "anomaly detection": 20,
       "time series": 6,
@@ -291,10 +291,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 4
+      "2026-03": 5
     },
-    "last_updated": "2026-03-02T04:53:11.043193+00:00",
-    "next_update": "2026-03-03T04:53:11.043193+00:00"
+    "last_updated": "2026-03-03T04:51:51.132891+00:00",
+    "next_update": "2026-03-04T04:51:51.132891+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -14355,7 +14355,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3761811852455139
+          "score": 0.3761812150478363
         },
         {
           "label": "Statistics & Trends",
@@ -18878,7 +18878,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.447268545627594
+          "score": 0.44726860523223877
         }
       ],
       "keywords": [],
@@ -19989,6 +19989,53 @@
       ],
       "history": [],
       "last_updated": "2026-03-02T04:52:28Z"
+    },
+    "('2603.01309', '', 'pac guarantees for reinforcement learning sample complexity coverage and structure')": {
+      "id": "arxiv:2603.01309",
+      "doi": null,
+      "arxiv_id": "2603.01309",
+      "inspire_id": null,
+      "title": "PAC Guarantees for Reinforcement Learning: Sample Complexity, Coverage, and Structure",
+      "authors": [
+        "Joshua Steier"
+      ],
+      "abstract": "When data is scarce or mistakes are costly, average-case metrics fall short. What a practitioner needs is a guarantee: with probability at least $1-δ$, the learned policy is $\\varepsilon$-close to optimal after $N$ episodes. This is the PAC promise, and between 2018 and 2025 the RL theory community made striking progress on when such promises can be kept. We survey that progress. Our organizing tool is the Coverage-Structure-Objective (CSO) framework, proposed here, which decomposes nearly every PAC sample complexity result into three factors: coverage (how data were obtained), structure (intrinsic MDP or function-class complexity), and objective (what the learner must deliver). CSO is not a theorem but an interpretive template that identifies bottlenecks and makes cross-setting comparison immediate. The technical core covers tight tabular baselines and the uniform-PAC bridge to regret; structural complexity measures (Bellman rank, witness rank, Bellman-Eluder dimension) governing learnability with function approximation; results for linear, kernel/NTK, and low-rank models; reward-free exploration as upfront coverage investment; and pessimistic offline RL where inherited coverage is the binding constraint. We provide practitioner tools: rate lookup tables indexed by CSO coordinates, Bellman residual diagnostics, coverage estimation with deployment gates, and per-episode policy certificates. A final section catalogs open problems, separating near-term targets from frontier questions where coverage, structure, and computation tangle in ways current theory cannot resolve.",
+      "date": "2026-03-01",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.29886358976364136
+        },
+        {
+          "label": "Data Management",
+          "score": 0.2745814323425293
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2603.01309v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-03-03T04:50:40Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-03T04:50:40Z"
     }
   }
 }
