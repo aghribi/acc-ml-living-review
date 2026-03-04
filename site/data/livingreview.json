@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 88
+      "2026": 90
     },
     "per_category": {
-      "Tools & Libraries": 186,
+      "Tools & Libraries": 187,
       "Novel Applications": 252,
-      "Others": 46,
-      "Anomaly Detection & Fault Prediction": 61,
+      "Others": 47,
+      "Anomaly Detection & Fault Prediction": 62,
       "Statistics & Trends": 81,
       "Reinforcement Learning & Autonomous Systems": 66,
       "Surrogate Models": 44,
@@ -192,7 +192,9 @@
       "IEEE Transactions on Pattern Analysis and Machine Intelligence": 1,
       "Expert Systems with Applications": 1,
       "Materials Letters": 1,
-      "Annals of Nuclear Energy": 1
+      "Annals of Nuclear Energy": 1,
+      "Jurnal Informatika Terpadu": 1,
+      "Machines": 1
     },
     "per_keyword": {
       "optimization": 80,
@@ -291,10 +293,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 5
+      "2026-03": 7
     },
-    "last_updated": "2026-03-03T04:51:51.132891+00:00",
-    "next_update": "2026-03-04T04:51:51.132891+00:00"
+    "last_updated": "2026-03-04T04:34:28.372108+00:00",
+    "next_update": "2026-03-05T04:34:28.372108+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -679,7 +681,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4185507893562317
+          "score": 0.4185508191585541
         },
         {
           "label": "Tools & Libraries",
@@ -6667,7 +6669,7 @@
         },
         {
           "label": "Operations & Control",
-          "score": 0.4233788847923279
+          "score": 0.42337894439697266
         }
       ],
       "keywords": [],
@@ -10633,7 +10635,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.44734686613082886
+          "score": 0.4473468065261841
         },
         {
           "label": "Beamline Design & Simulation",
@@ -20036,6 +20038,94 @@
       ],
       "history": [],
       "last_updated": "2026-03-03T04:50:40Z"
+    },
+    "('', '10.54914/jit.v12i1.2694', 'analisis sentimen kontaminasi radioaktif di kawasan industri cikande menggunakan algoritma support vector machine')": {
+      "id": "doi:10.54914/jit.v12i1.2694",
+      "doi": "10.54914/jit.v12i1.2694",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Analisis Sentimen Kontaminasi Radioaktif di Kawasan Industri Cikande Menggunakan Algoritma Support Vector Machine",
+      "authors": [
+        "Taufik Ramlan Alfiansyah",
+        "Audy Abdillah Hidayat",
+        "Alfarezi Hidayat Pratama",
+        "Agil Aqshol Mahenda",
+        "Muhammad Rafly"
+      ],
+      "abstract": "<jats:p>Dugaan ada kontaminasi radioaktif yang mencemari kawasan industri Cikande membuat masyarakat bereaksi keras, yang terlihat dari banyaknya komentar di TikTok. Penelitian ini bertujuan untuk menganalisis sentimen publik terhadap isu tersebut serta mengevaluasi kinerja algoritma Support Vector Machine (SVM) dalam mengklasifikasikan opini secara otomatis. Data yang digunakan berasal dari 3.160 komentar yang dikumpulkan dengan cara web scraping, lalu diproses melalui beberapa langkah seperti membersihkan teks, normalisasi, pemisahan kata, menghapus kata umum, dan merangkum kata sebelum digunakan metode TF-IDF untuk representasi. Komentar kemudian diberi label menggunakan cara berdasarkan leksikon, yang menunjukkan 70.79% komentar bersifat negatif dan 29.21% bersifat positif. Pemodelan dilakukan dengan SVM menggunakan data latih dan uji dengan perbandingan 80:20. Hasilnya menunjukkan bahwa model berhasil mendapatkan akurasi sebesar 89% dan bisa dengan baik mengenali kedua jenis sentimen. Secara umum, komentar negatif lebih banyak mengungkapkan kekhawatiran terhadap kesehatan, dampak lingkungan, dan kurangnya kepercayaan terhadap cara pengelolaan limbah, sementara komentar positif menekankan pentingnya verifikasi secara ilmiah dan pemantauan resmi. Temuan ini menunjukkan perlunya komunikasi tentang risiko yang lebih jelas, konsisten, dan berdasarkan data agar bisa mengurangi kekhawatiran masyarakat dan meningkatkan kepercayaan publik.</jats:p>",
+      "date": "2026-03-03",
+      "year": 2026,
+      "venue": "Jurnal Informatika Terpadu",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.54914/jit.v12i1.2694",
+        "crossref": "https://doi.org/10.54914/jit.v12i1.2694"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-04T04:33:45Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-04T04:33:45Z"
+    },
+    "('', '10.3390/machines14030286', 'support vector machine and k means clustering for advanced wheel flat identification a comparison of supervised and unsupervised methods')": {
+      "id": "doi:10.3390/machines14030286",
+      "doi": "10.3390/machines14030286",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Support Vector Machine and k-Means Clustering for Advanced Wheel Flat Identification: A Comparison of Supervised and Unsupervised Methods",
+      "authors": [
+        "Alireza Chegini",
+        "Mohammadreza Mohammadi",
+        "Araliya Mosleh",
+        "Cecilia Vale",
+        "Ramin Ghiasi",
+        "Ruben Silva",
+        "Antonio Guedes",
+        "Andreia Meixedo",
+        "Abdollah Malekjafarian"
+      ],
+      "abstract": "<jats:p>Artificial-intelligence-driven wayside monitoring has become a promising solution for early identification of railway wheel flats, enabling safer operations and more efficient maintenance planning. This study introduces a comparative investigation of supervised and unsupervised machine learning strategies for wheel flat identification, with particular emphasis on real-time applicability and sensor cost reduction. Support Vector Machines (SVMs) and k-means clustering are evaluated as representative supervised and unsupervised approaches using vibration data obtained from numerically simulated train–track interactions under realistic operating conditions, including train speeds of 120 km/h and 200 km/h and multiple wheel flat severities. A key contribution of this work is the proposal of a simplified supervised classification framework that directly exploits Auto-Regressive features extracted from rail-mounted accelerometers, eliminating the need for feature normalization and multi-sensor data fusion. This simplification significantly reduces computational effort, making the approach suitable for real-time deployment in operational railway environments. In parallel, a systematic sensitivity analysis is conducted to assess the influence of sensor placement and to identify the minimum sensor configuration required to achieve reliable damage classification. The outputs from the current study show that an SVM emerges with more accurate defect classification than the k-means clustering, allowing a wayside system with fewer sensors.</jats:p>",
+      "date": "2026-03-03",
+      "year": 2026,
+      "venue": "Machines",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.2954498529434204
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.3390/machines14030286",
+        "crossref": "https://doi.org/10.3390/machines14030286"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-04T04:33:45Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-04T04:33:45Z"
     }
   }
 }
