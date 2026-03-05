@@ -12,22 +12,22 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 90
+      "2026": 94
     },
     "per_category": {
-      "Tools & Libraries": 187,
-      "Novel Applications": 252,
+      "Tools & Libraries": 188,
+      "Novel Applications": 253,
       "Others": 47,
       "Anomaly Detection & Fault Prediction": 62,
-      "Statistics & Trends": 81,
-      "Reinforcement Learning & Autonomous Systems": 66,
+      "Statistics & Trends": 82,
+      "Reinforcement Learning & Autonomous Systems": 68,
       "Surrogate Models": 44,
       "Data Management": 41,
       "By Facility Type": 9,
       "RF Systems": 7,
       "Operations & Control": 10,
       "Beamline Design & Simulation": 32,
-      "Beam Dynamics": 11,
+      "Beam Dynamics": 12,
       "Reviews": 22,
       "Beam Diagnostics": 21,
       "Optimization & Control": 17
@@ -194,14 +194,17 @@
       "Materials Letters": 1,
       "Annals of Nuclear Energy": 1,
       "Jurnal Informatika Terpadu": 1,
-      "Machines": 1
+      "Machines": 1,
+      "Laser-based Micro- and Nanoprocessing XX": 2,
+      "Solid State Lasers XXXV: Technology and Devices": 1,
+      "Nanoscale and Quantum Materials: From Synthesis and Laser Processing to Applications 2026": 1
     },
     "per_keyword": {
       "optimization": 80,
       "control": 77,
       "surrogate model": 21,
       "transformer": 16,
-      "deep learning": 59,
+      "deep learning": 60,
       "proton therapy": 1,
       "beam": 144,
       "reinforcement learning": 41,
@@ -293,10 +296,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 7
+      "2026-03": 11
     },
-    "last_updated": "2026-03-04T04:34:28.372108+00:00",
-    "next_update": "2026-03-05T04:34:28.372108+00:00"
+    "last_updated": "2026-03-05T04:49:23.333343+00:00",
+    "next_update": "2026-03-06T04:49:23.333343+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -20126,6 +20129,162 @@
       ],
       "history": [],
       "last_updated": "2026-03-04T04:33:45Z"
+    },
+    "('', '10.1117/12.3079308', 'hybrid analytical machine learning model for data efficient prediction of ultrafast laser ablation')": {
+      "id": "doi:10.1117/12.3079308",
+      "doi": "10.1117/12.3079308",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Hybrid analytical-machine learning model for data-efficient prediction of ultrafast laser ablation",
+      "authors": [
+        "Eric P. Mottay"
+      ],
+      "abstract": "",
+      "date": "2026-03-05",
+      "year": 2026,
+      "venue": "Laser-based Micro- and Nanoprocessing XX",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.303936243057251
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.2936732769012451
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1117/12.3079308",
+        "crossref": "https://doi.org/10.1117/12.3079308"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-05T04:48:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-05T04:48:41Z"
+    },
+    "('', '10.1117/12.3083871', 'enhancing the extrapolative capabilities of deep learning models on temporal parameter sets in femtosecond laser processing')": {
+      "id": "doi:10.1117/12.3083871",
+      "doi": "10.1117/12.3083871",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Enhancing the extrapolative capabilities of deep learning models on temporal parameter sets in femtosecond laser processing",
+      "authors": [
+        "Shuntaro Tani"
+      ],
+      "abstract": "",
+      "date": "2026-03-05",
+      "year": 2026,
+      "venue": "Laser-based Micro- and Nanoprocessing XX",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.25172513723373413
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1117/12.3083871",
+        "crossref": "https://doi.org/10.1117/12.3083871"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-05T04:48:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-05T04:48:41Z"
+    },
+    "('', '10.1117/12.3081638', 'solid state laser design process empowered by machine learning and deep neural networks')": {
+      "id": "doi:10.1117/12.3081638",
+      "doi": "10.1117/12.3081638",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Solid-state laser design process empowered by machine learning and deep neural networks",
+      "authors": [
+        "John Vetrovec",
+        "Carey A. Smith",
+        "David M. Filgas",
+        "Drew A. Copeland",
+        "Cassidy S. Vetrovec"
+      ],
+      "abstract": "",
+      "date": "2026-03-05",
+      "year": 2026,
+      "venue": "Solid State Lasers XXXV: Technology and Devices",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.2984527349472046
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.26465970277786255
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1117/12.3081638",
+        "crossref": "https://doi.org/10.1117/12.3081638"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-05T04:48:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-05T04:48:41Z"
+    },
+    "('', '10.1117/12.3081781', 'machine learning based modeling for structural modification induced by femtosecond laser pulses')": {
+      "id": "doi:10.1117/12.3081781",
+      "doi": "10.1117/12.3081781",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning-based modeling for structural modification induced by femtosecond laser pulses",
+      "authors": [
+        "Shuntaro Tani"
+      ],
+      "abstract": "",
+      "date": "2026-03-05",
+      "year": 2026,
+      "venue": "Nanoscale and Quantum Materials: From Synthesis and Laser Processing to Applications 2026",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Beam Dynamics",
+          "score": 0.2514844238758087
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1117/12.3081781",
+        "crossref": "https://doi.org/10.1117/12.3081781"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-05T04:48:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-05T04:48:41Z"
     }
   }
 }
