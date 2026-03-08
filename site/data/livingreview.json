@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 94
+      "2026": 96
     },
     "per_category": {
       "Tools & Libraries": 188,
       "Novel Applications": 253,
-      "Others": 47,
+      "Others": 48,
       "Anomaly Detection & Fault Prediction": 62,
       "Statistics & Trends": 82,
       "Reinforcement Learning & Autonomous Systems": 68,
@@ -25,7 +25,7 @@
       "Data Management": 41,
       "By Facility Type": 9,
       "RF Systems": 7,
-      "Operations & Control": 10,
+      "Operations & Control": 11,
       "Beamline Design & Simulation": 32,
       "Beam Dynamics": 12,
       "Reviews": 22,
@@ -181,7 +181,7 @@
       "BMC Oral Health": 1,
       "Sensors and Materials": 1,
       "Front Matter": 1,
-      "ResearchHub Technologies, Inc.": 1,
+      "ResearchHub Technologies, Inc.": 3,
       "ODU Digital Commons (Old Dominion University)": 1,
       "Construction Innovation": 1,
       "Artificial Intelligence-Powered Electrical Machine Design": 1,
@@ -296,10 +296,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 11
+      "2026-03": 13
     },
-    "last_updated": "2026-03-07T04:26:47.075790+00:00",
-    "next_update": "2026-03-08T04:26:47.075790+00:00"
+    "last_updated": "2026-03-08T04:48:37.498711+00:00",
+    "next_update": "2026-03-09T04:48:37.498711+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -14153,7 +14153,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4321112036705017
+          "score": 0.43211114406585693
         }
       ],
       "keywords": [],
@@ -17229,11 +17229,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3193188011646271
+          "score": 0.3193187713623047
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2539709210395813
+          "score": 0.2539709806442261
         }
       ],
       "keywords": [],
@@ -20285,6 +20285,78 @@
       ],
       "history": [],
       "last_updated": "2026-03-05T04:48:41Z"
+    },
+    "('', '10.55277/researchhub.tvj62yy9', 'war machine 2026 srteaming ita cb01 altadefinizione')": {
+      "id": "doi:10.55277/researchhub.tvj62yy9",
+      "doi": "10.55277/researchhub.tvj62yy9",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "“War Machine” 2026 Srteaming-Ita CB01 [Altadefinizione]",
+      "authors": [
+        "coeth mitch"
+      ],
+      "abstract": "",
+      "date": "2026-03-07",
+      "year": 2026,
+      "venue": "ResearchHub Technologies, Inc.",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Operations & Control",
+          "score": 0.26010170578956604
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.55277/researchhub.tvj62yy9",
+        "crossref": "https://doi.org/10.55277/researchhub.tvj62yy9"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-08T04:47:55Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-08T04:47:55Z"
+    },
+    "('', '10.55277/researchhub.tjji9a6o', 'altadefinizione war machine 2026 streaming ita cb01')": {
+      "id": "doi:10.55277/researchhub.tjji9a6o",
+      "doi": "10.55277/researchhub.tjji9a6o",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "[Altadefinizione] “War Machine” 2026 Streaming-Ita CB01",
+      "authors": [
+        "coeth mitch"
+      ],
+      "abstract": "",
+      "date": "2026-03-07",
+      "year": 2026,
+      "venue": "ResearchHub Technologies, Inc.",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.55277/researchhub.tjji9a6o",
+        "crossref": "https://doi.org/10.55277/researchhub.tjji9a6o"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-08T04:47:55Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-08T04:47:55Z"
     }
   }
 }
