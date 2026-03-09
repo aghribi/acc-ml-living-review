@@ -12,11 +12,11 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 96
+      "2026": 97
     },
     "per_category": {
-      "Tools & Libraries": 188,
-      "Novel Applications": 253,
+      "Tools & Libraries": 189,
+      "Novel Applications": 254,
       "Others": 48,
       "Anomaly Detection & Fault Prediction": 62,
       "Statistics & Trends": 82,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 189,
+      "arXiv": 190,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -203,7 +203,7 @@
       "optimization": 80,
       "control": 77,
       "surrogate model": 21,
-      "transformer": 16,
+      "transformer": 17,
       "deep learning": 60,
       "proton therapy": 1,
       "beam": 144,
@@ -296,10 +296,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 13
+      "2026-03": 14
     },
-    "last_updated": "2026-03-08T04:48:37.498711+00:00",
-    "next_update": "2026-03-09T04:48:37.498711+00:00"
+    "last_updated": "2026-03-09T04:56:36.917485+00:00",
+    "next_update": "2026-03-10T04:56:36.917485+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -8338,7 +8338,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5761765837669373
+          "score": 0.576176643371582
         }
       ],
       "keywords": [],
@@ -13217,11 +13217,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.30415767431259155
+          "score": 0.30415770411491394
         },
         {
           "label": "Operations & Control",
-          "score": 0.2795645594596863
+          "score": 0.27956464886665344
         }
       ],
       "keywords": [],
@@ -17229,11 +17229,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3193187713623047
+          "score": 0.3193188011646271
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2539709806442261
+          "score": 0.2539708614349365
         }
       ],
       "keywords": [],
@@ -20357,6 +20357,45 @@
       ],
       "history": [],
       "last_updated": "2026-03-08T04:47:55Z"
+    },
+    "('2603.06492', '', 'noble accelerating transformers with nonlinear low rank branches')": {
+      "id": "arxiv:2603.06492",
+      "doi": null,
+      "arxiv_id": "2603.06492",
+      "inspire_id": null,
+      "title": "NOBLE: Accelerating Transformers with Nonlinear Low-Rank Branches",
+      "authors": [
+        "Ethan Smith"
+      ],
+      "abstract": "We introduce NOBLE (Nonlinear lOw-rank Branch for Linear Enhancement), an architectural augmentation that adds nonlinear low-rank branches to transformer linear layers. Unlike LoRA and other parameter-efficient fine-tuning (PEFT) methods, NOBLE is designed for pretraining from scratch. The branch is a permanent part of the architecture as opposed to an adapter for finetuning on top of frozen weights. The branch computes σ(xWdown)Wup where σ is a learnable nonlinearity. We evaluate several activation functions and find that CosNet, a two-layer cosine nonlinearity with learnable frequency and phase with a linear projection in between them in the bottleneck space, performs best. NOBLE achieves substantial improvements with minimal overhead: up to 1.47x step speedup to reach baseline eval loss (up to 32% fewer training steps), with as low as 4% additional parameters and 7% step time overhead, resulting in up to 1.22x net wallclock speedup. Experiments on LLMs (250M and 1.5B parameters), BERT, VQGAN, and ViT consistently show improved training efficiency. We identify one caveat: Mixup/CutMix augmentation interferes with NOBLE's benefits in Imagenet classification along with other stochastic augmentations, but when disabled, ViT also improves. This discrepancy is possibly explained by regularization techniques that encourage smoother fits to the target function while NOBLE may specialize more in sharper aspects of the target function.",
+      "date": "2026-03-06",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.324768990278244
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.3114599883556366
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2603.06492v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-03-09T04:53:28Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-09T04:53:28Z"
     }
   }
 }
