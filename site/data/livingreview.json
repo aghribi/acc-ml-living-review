@@ -12,23 +12,23 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 97
+      "2026": 102
     },
     "per_category": {
-      "Tools & Libraries": 189,
-      "Novel Applications": 254,
+      "Tools & Libraries": 192,
+      "Novel Applications": 258,
       "Others": 48,
       "Anomaly Detection & Fault Prediction": 62,
-      "Statistics & Trends": 82,
+      "Statistics & Trends": 84,
       "Reinforcement Learning & Autonomous Systems": 68,
       "Surrogate Models": 44,
       "Data Management": 41,
-      "By Facility Type": 9,
+      "By Facility Type": 10,
       "RF Systems": 7,
       "Operations & Control": 11,
-      "Beamline Design & Simulation": 32,
+      "Beamline Design & Simulation": 33,
       "Beam Dynamics": 12,
-      "Reviews": 22,
+      "Reviews": 23,
       "Beam Diagnostics": 21,
       "Optimization & Control": 17
     },
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 190,
+      "arXiv": 193,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -197,18 +197,20 @@
       "Machines": 1,
       "Laser-based Micro- and Nanoprocessing XX": 2,
       "Solid State Lasers XXXV: Technology and Devices": 1,
-      "Nanoscale and Quantum Materials: From Synthesis and Laser Processing to Applications 2026": 1
+      "Nanoscale and Quantum Materials: From Synthesis and Laser Processing to Applications 2026": 1,
+      "Radiation Physics and Chemistry": 1,
+      "Attributive Prüfprozesse in der Produktion": 1
     },
     "per_keyword": {
       "optimization": 80,
-      "control": 77,
+      "control": 78,
       "surrogate model": 21,
       "transformer": 17,
-      "deep learning": 60,
+      "deep learning": 61,
       "proton therapy": 1,
-      "beam": 144,
+      "beam": 145,
       "reinforcement learning": 41,
-      "diagnostics": 29,
+      "diagnostics": 30,
       "uncertainty quantification": 6,
       "anomaly detection": 20,
       "time series": 6,
@@ -296,10 +298,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 14
+      "2026-03": 19
     },
-    "last_updated": "2026-03-09T04:56:36.917485+00:00",
-    "next_update": "2026-03-10T04:56:36.917485+00:00"
+    "last_updated": "2026-03-10T04:47:27.512459+00:00",
+    "next_update": "2026-03-11T04:47:27.512459+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -513,7 +515,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5761765837669373
+          "score": 0.576176643371582
         }
       ],
       "keywords": [],
@@ -1377,7 +1379,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.589758038520813
+          "score": 0.5897580981254578
         }
       ],
       "keywords": [],
@@ -3208,7 +3210,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.38686516880989075
+          "score": 0.38686519861221313
         },
         {
           "label": "Data Management",
@@ -8601,11 +8603,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5689212679862976
+          "score": 0.5689213275909424
         },
         {
           "label": "Novel Applications",
-          "score": 0.46931928396224976
+          "score": 0.46931931376457214
         }
       ],
       "keywords": [],
@@ -15325,7 +15327,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2686595320701599
+          "score": 0.2686596214771271
         }
       ],
       "keywords": [],
@@ -15407,7 +15409,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905858755111694
+          "score": 0.3290586471557617
         },
         {
           "label": "Tools & Libraries",
@@ -15452,7 +15454,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905858755111694
+          "score": 0.3290586471557617
         },
         {
           "label": "Tools & Libraries",
@@ -19112,11 +19114,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.45498377084732056
+          "score": 0.4549838602542877
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.43693700432777405
+          "score": 0.4369369149208069
         }
       ],
       "keywords": [],
@@ -19316,11 +19318,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.564447283744812
+          "score": 0.5644471645355225
         },
         {
           "label": "Novel Applications",
-          "score": 0.5532751083374023
+          "score": 0.5532749891281128
         }
       ],
       "keywords": [],
@@ -20396,6 +20398,219 @@
       ],
       "history": [],
       "last_updated": "2026-03-09T04:53:28Z"
+    },
+    "('2603.06689', '', 'high resolution image reconstruction with unsupervised learning and noisy data applied to ion beam dynamics for particle accelerators')": {
+      "id": "arxiv:2603.06689",
+      "doi": null,
+      "arxiv_id": "2603.06689",
+      "inspire_id": null,
+      "title": "High-Resolution Image Reconstruction with Unsupervised Learning and Noisy Data Applied to Ion-Beam Dynamics for Particle Accelerators",
+      "authors": [
+        "Francis Osswald",
+        "Mohammed Chahbaoui",
+        "Xinyi Liang"
+      ],
+      "abstract": "Image reconstruction in the presence of severe degradation remains a challenging inverse problem, particularly in beam diagnostics for high-energy physics accelerators. As modern facilities demand precise detection of beam halo structures to control losses, traditional analysis tools have reached their performance limits. This work reviews existing image-processing techniques for data cleaning, contour extraction, and emittance reconstruction, and introduces a novel approach based on convolutional filtering and neural networks with optimized early-stopping strategies in order to control overfitting. Despite the absence of training datasets, the proposed unsupervised framework achieves robust denoising and high-fidelity reconstruction of beam emittance images under low signal-to-noise conditions. The method extends measurable amplitudes beyond seven standard deviations, enabling unprecedented halo resolution.",
+      "date": "2026-03-04",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4271664023399353
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.3554155230522156
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2603.06689v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-03-10T04:44:24Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-10T04:44:24Z"
+    },
+    "('2603.06675', '', 'gnn for muon particle momentum estimation')": {
+      "id": "arxiv:2603.06675",
+      "doi": null,
+      "arxiv_id": "2603.06675",
+      "inspire_id": null,
+      "title": "GNN For Muon Particle Momentum estimation",
+      "authors": [
+        "Vishak K Bhat",
+        "Eric A. F. Reinhardt",
+        "Sergei Gleyzer"
+      ],
+      "abstract": "Due to a high rate of overall data generation relative to data generation of interest, the CMS experiment at the Large Hadron Collider uses a combination of hardware- and software-based triggers to select data for capture. Accurate momentum calculation is crucial for improving the efficiency of the CMS trigger systems, enabling better classification of low- and high- momentum particles and reducing false triggers. This paper explores the use of Graph Neural Networks (GNNs) for the momentum estimation task. We present two graph construction methods and apply a GNN model to leverage the inherent graph structure of the data. In this paper firstly, we show that the GNN outperforms traditional models like TabNet in terms of Mean Absolute Error (MAE), demonstrating its effectiveness in capturing complex dependencies within the data. Secondly we show that the dimension of the node feature is crucial for the efficiency of GNN.",
+      "date": "2026-03-03",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.3924729526042938
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.35834258794784546
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2603.06675v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-03-10T04:44:34Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-10T04:44:34Z"
+    },
+    "('2603.08667', '', 'characterization and upgrade of a quantum graph neural network for charged particle tracking')": {
+      "id": "arxiv:2603.08667",
+      "doi": null,
+      "arxiv_id": "2603.08667",
+      "inspire_id": null,
+      "title": "Characterization and upgrade of a quantum graph neural network for charged particle tracking",
+      "authors": [
+        "Matteo Argenton",
+        "Laura Cappelli",
+        "Concezio Bozzi"
+      ],
+      "abstract": "In the forthcoming years the LHC experiments are going to be upgraded to benefit from the substantial increase of the LHC instantaneous luminosity, which will lead to larger, denser events, and, consequently, greater complexity in reconstructing charged particle tracks, motivating frontier research in new technologies. Quantum machine learning models are being investigated as potential new approaches to high energy physics (HEP) tasks. We characterize and upgrade a quantum graph neural network (QGNN) architecture for charged particle track reconstruction on a simulated high luminosity dataset. The model operates on a set of event graphs, each built from the hits generated in tracking detector layers by particles produced in proton collisions, performing a classification of the possible hit connections between adjacent layers. In this approach the QGNN is designed as a hybrid architecture, interleaving classical feedforward networks with parametrized quantum circuits. We characterize the interplay between the classical and quantum components. We report on the principal upgrades to the original design, and present new evidence of improved training behavior, specifically in terms of convergence toward the final trained configuration.",
+      "date": "2026-03-09",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.38381636142730713
+        },
+        {
+          "label": "By Facility Type",
+          "score": 0.34132808446884155
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2603.08667v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-03-10T04:45:04Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-10T04:45:04Z"
+    },
+    "('', '10.1016/j.radphyschem.2026.113775', 'method for reconstruction the energy spectrum of a linear electron accelerator using neural networks')": {
+      "id": "doi:10.1016/j.radphyschem.2026.113775",
+      "doi": "10.1016/j.radphyschem.2026.113775",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Method for reconstruction the energy spectrum of a linear electron accelerator using neural networks",
+      "authors": [
+        "A.A. Kim",
+        "F.R. Studenikin",
+        "V.V. Khankin",
+        "S.A. Zolotov",
+        "A.P. Lyubomudrov",
+        "A.P. Chernyaev"
+      ],
+      "abstract": "",
+      "date": "2026-03-01",
+      "year": 2026,
+      "venue": "Radiation Physics and Chemistry",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.5271793603897095
+        },
+        {
+          "label": "Beamline Design & Simulation",
+          "score": 0.5167219042778015
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7134116814"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-03-10T04:46:44Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-10T04:46:44Z"
+    },
+    "('', '10.3139/9783446484382.005', '5 künstliche intelligenz machine learning und deep learning in attributiven prüfprozessen')": {
+      "id": "doi:10.3139/9783446484382.005",
+      "doi": "10.3139/9783446484382.005",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "5 Künstliche Intelligenz, Machine Learning und Deep Learning in attributiven Prüfprozessen",
+      "authors": [],
+      "abstract": "",
+      "date": "2026-03-09",
+      "year": 2026,
+      "venue": "Attributive Prüfprozesse in der Produktion",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.32012227177619934
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.2786976099014282
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.3139/9783446484382.005",
+        "crossref": "https://doi.org/10.3139/9783446484382.005"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-10T04:46:45Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-10T04:46:45Z"
     }
   }
 }
