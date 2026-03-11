@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 102
+      "2026": 103
     },
     "per_category": {
       "Tools & Libraries": 192,
       "Novel Applications": 258,
       "Others": 48,
-      "Anomaly Detection & Fault Prediction": 62,
+      "Anomaly Detection & Fault Prediction": 63,
       "Statistics & Trends": 84,
       "Reinforcement Learning & Autonomous Systems": 68,
       "Surrogate Models": 44,
@@ -199,14 +199,15 @@
       "Solid State Lasers XXXV: Technology and Devices": 1,
       "Nanoscale and Quantum Materials: From Synthesis and Laser Processing to Applications 2026": 1,
       "Radiation Physics and Chemistry": 1,
-      "Attributive Prüfprozesse in der Produktion": 1
+      "Attributive Prüfprozesse in der Produktion": 1,
+      "The Astrophysical Journal Supplement Series": 1
     },
     "per_keyword": {
       "optimization": 80,
       "control": 78,
       "surrogate model": 21,
-      "transformer": 17,
-      "deep learning": 61,
+      "transformer": 18,
+      "deep learning": 62,
       "proton therapy": 1,
       "beam": 145,
       "reinforcement learning": 41,
@@ -298,10 +299,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 19
+      "2026-03": 20
     },
-    "last_updated": "2026-03-10T04:47:27.512459+00:00",
-    "next_update": "2026-03-11T04:47:27.512459+00:00"
+    "last_updated": "2026-03-11T04:48:35.546737+00:00",
+    "next_update": "2026-03-12T04:48:35.546737+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -2415,11 +2416,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.539810061454773
+          "score": 0.5398100018501282
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4896240830421448
+          "score": 0.48962411284446716
         }
       ],
       "keywords": [],
@@ -14273,11 +14274,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.31943655014038086
+          "score": 0.3194364905357361
         },
         {
           "label": "Operations & Control",
-          "score": 0.3088068962097168
+          "score": 0.3088069558143616
         }
       ],
       "keywords": [],
@@ -20611,6 +20612,47 @@
       ],
       "history": [],
       "last_updated": "2026-03-10T04:46:45Z"
+    },
+    "('', '10.3847/1538-4365/ae4595', 'a physics informed deep learning model for the magnetic classification of solar active regions')": {
+      "id": "doi:10.3847/1538-4365/ae4595",
+      "doi": "10.3847/1538-4365/ae4595",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A Physics-informed Deep Learning Model for the Magnetic Classification of Solar Active Regions",
+      "authors": [
+        "Ming Li",
+        "Siwei Liu",
+        "Jingjing Wang",
+        "Yanmei Cui",
+        "Bingxian Luo",
+        "Xin Wang"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Solar active regions (ARs) are the source of solar eruptive events such as flares. The morphology of sunspots within ARs is closely related to solar eruptive activity. The complexity of an AR serves as a critical reference for forecasting various solar eruptive events. The high temporal resolution of current solar observations has led to the rapid accumulation of solar activity data, making accurate and objective automatic identification and classification of sunspot groups in ARs highly important. This paper combines a vision transformer (ViT) with a convolutional neural network (CNN) and introduces the magnetic physical parameter\n                    <jats:italic>R</jats:italic>\n                    -value to construct a recognition model named ViT–CNN–\n                    <jats:italic>R</jats:italic>\n                    for Mount Wilson magnetic classification. Test results show that the model’s classification accuracy for Alpha, Beta, and Beta-x type ARs are 0.9282, 0.8479, and 0.9162, respectively, with true skill statistic scores of 0.8464, 0.6490, and 0.7996, respectively. Comparisons with models from other studies and testing the model’s generalization performance using Advanced Space-based Solar Observatory data reveal that the ViT–CNN–\n                    <jats:italic>R</jats:italic>\n                    model exhibits high classification performance for complex ARs of type Beta-x. This model can provide accurate magnetic classification information for ARs in subsequent forecasting research.\n                  </jats:p>",
+      "date": "2026-03-10",
+      "year": 2026,
+      "venue": "The Astrophysical Journal Supplement Series",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.27654826641082764
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.3847/1538-4365/ae4595",
+        "crossref": "https://doi.org/10.3847/1538-4365/ae4595"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-11T04:47:45Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-11T04:47:45Z"
     }
   }
 }
