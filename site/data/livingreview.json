@@ -12,7 +12,7 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 105
+      "2026": 106
     },
     "per_category": {
       "Tools & Libraries": 194,
@@ -20,7 +20,7 @@
       "Others": 48,
       "Anomaly Detection & Fault Prediction": 63,
       "Statistics & Trends": 84,
-      "Reinforcement Learning & Autonomous Systems": 69,
+      "Reinforcement Learning & Autonomous Systems": 70,
       "Surrogate Models": 44,
       "Data Management": 41,
       "By Facility Type": 10,
@@ -151,7 +151,7 @@
       "Defect and Diffusion Forum": 1,
       "Seventh International Conference on Geoscience and Remote Sensing Mapping (GRSM 2025)": 1,
       "IEEE Sensors Journal": 2,
-      "IEEE Internet of Things Journal": 2,
+      "IEEE Internet of Things Journal": 3,
       "Electronics": 1,
       "Chinese Rare Earths": 1,
       "Innovative Infrastructure Solutions": 1,
@@ -300,10 +300,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 22
+      "2026-03": 23
     },
-    "last_updated": "2026-03-14T04:47:59.756640+00:00",
-    "next_update": "2026-03-15T04:47:59.756640+00:00"
+    "last_updated": "2026-03-15T05:11:08.379535+00:00",
+    "next_update": "2026-03-16T05:11:08.379535+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -17578,7 +17578,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.30895698070526123
+          "score": 0.30895692110061646
         }
       ],
       "keywords": [],
@@ -20738,6 +20738,45 @@
       ],
       "history": [],
       "last_updated": "2026-03-13T04:48:45Z"
+    },
+    "('', '10.1109/jiot.2025.3647868', 'anhp adaptive neural hawkes processes for causal structure learning on event sequences')": {
+      "id": "doi:10.1109/jiot.2025.3647868",
+      "doi": "10.1109/jiot.2025.3647868",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "ANHP: Adaptive Neural Hawkes Processes for Causal Structure Learning on Event Sequences",
+      "authors": [
+        "Yongjian Chang",
+        "Duxin Chen",
+        "Yujin Cai",
+        "Wenwu Yu"
+      ],
+      "abstract": "",
+      "date": "2026-03-15",
+      "year": 2026,
+      "venue": "IEEE Internet of Things Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.2504275441169739
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1109/jiot.2025.3647868",
+        "crossref": "https://doi.org/10.1109/jiot.2025.3647868"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-15T05:10:25Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-15T05:10:25Z"
     }
   }
 }
