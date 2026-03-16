@@ -12,10 +12,10 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 106
+      "2026": 107
     },
     "per_category": {
-      "Tools & Libraries": 194,
+      "Tools & Libraries": 195,
       "Novel Applications": 259,
       "Others": 48,
       "Anomaly Detection & Fault Prediction": 63,
@@ -201,10 +201,11 @@
       "Radiation Physics and Chemistry": 1,
       "Attributive Prüfprozesse in der Produktion": 1,
       "The Astrophysical Journal Supplement Series": 1,
-      "Physical Review D": 1
+      "Physical Review D": 1,
+      "AI in Civil Engineering": 1
     },
     "per_keyword": {
-      "optimization": 81,
+      "optimization": 82,
       "control": 78,
       "surrogate model": 21,
       "transformer": 18,
@@ -300,10 +301,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 23
+      "2026-03": 24
     },
-    "last_updated": "2026-03-15T05:11:08.379535+00:00",
-    "next_update": "2026-03-16T05:11:08.379535+00:00"
+    "last_updated": "2026-03-16T05:19:34.468808+00:00",
+    "next_update": "2026-03-17T05:19:34.468808+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1381,7 +1382,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5897579789161682
+          "score": 0.589758038520813
         }
       ],
       "keywords": [],
@@ -3390,11 +3391,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.44307178258895874
+          "score": 0.44307172298431396
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4313000440597534
+          "score": 0.43130001425743103
         }
       ],
       "keywords": [],
@@ -7496,7 +7497,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.27054283022880554
+          "score": 0.27054286003112793
         }
       ],
       "keywords": [],
@@ -13097,7 +13098,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2941647469997406
+          "score": 0.2941647171974182
         }
       ],
       "keywords": [],
@@ -13221,11 +13222,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.30415770411491394
+          "score": 0.30415767431259155
         },
         {
           "label": "Operations & Control",
-          "score": 0.27956464886665344
+          "score": 0.2795645594596863
         }
       ],
       "keywords": [],
@@ -14279,7 +14280,7 @@
         },
         {
           "label": "Operations & Control",
-          "score": 0.3088069558143616
+          "score": 0.3088068962097168
         }
       ],
       "keywords": [],
@@ -15329,7 +15330,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.26865965127944946
+          "score": 0.2686595320701599
         }
       ],
       "keywords": [],
@@ -15411,11 +15412,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905852794647217
+          "score": 0.32905858755111694
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.28156140446662903
+          "score": 0.2815614938735962
         }
       ],
       "keywords": [],
@@ -15456,11 +15457,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905852794647217
+          "score": 0.32905858755111694
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.28156140446662903
+          "score": 0.2815614938735962
         }
       ],
       "keywords": [],
@@ -17578,7 +17579,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.30895692110061646
+          "score": 0.30895698070526123
         }
       ],
       "keywords": [],
@@ -19320,11 +19321,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5644472241401672
+          "score": 0.564447283744812
         },
         {
           "label": "Novel Applications",
-          "score": 0.5532750487327576
+          "score": 0.5532751083374023
         }
       ],
       "keywords": [],
@@ -20777,6 +20778,44 @@
       ],
       "history": [],
       "last_updated": "2026-03-15T05:10:25Z"
+    },
+    "('', '10.1007/s43503-026-00087-9', 'machine learning based prediction of the structural performance of a long bolted steel connection')": {
+      "id": "doi:10.1007/s43503-026-00087-9",
+      "doi": "10.1007/s43503-026-00087-9",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning-based prediction of the structural performance of a long-bolted steel connection",
+      "authors": [
+        "Mostafa Elhadary",
+        "Ahmed Bediwy",
+        "Ahmed Elshaer"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>In response to the housing shortage in Canada, particularly in northern and remote communities, modular houses have emerged as a viable solution. These prefabricated structures offer speed, cost-efficiency, and flexibility. To enhance the durability and functionality of these modular homes, innovative construction techniques are being explored. A new bolted connection, utilizing high-strength long bolts, has been introduced for hollow structural sections (HSS), which can be designed using regression models trained by an experimentally validated finite element model (FEM). This study employs machine learning techniques, including neural networks, genetic regression, and decision trees, to detect the failure mode and predict the ultimate moment capacity of HSS moment connections under monotonic loading. A nonlinear validated FEM was developed using LS-DYNA software, and a matrix of 240 FEMs was generated to train and test the machine learning models, including a range of various design parameters such as the extended plate thickness, number of bolts, bolt arrangement, and bolt diameter. Five machine learning algorithms were used for classification and regression learning, with hyperparameter optimization applied to enhance their accuracy. Mathematical formulas for predicting the ultimate moment capacity were developed using genetic algorithm-based symbolic regression, trained on 70% of the matrix parameters. These formulas were then validated and tested with the remaining 30%, demonstrating high accuracy. Findings illustrate the efficiency of machine learning approaches for precisely predicting the ultimate capacity and failure patterns of bolted connections, highlighting their promise as reliable tools in design, complementing both experimental and analytical methods.</jats:p>",
+      "date": "2026-03-16",
+      "year": 2026,
+      "venue": "AI in Civil Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s43503-026-00087-9",
+        "crossref": "https://doi.org/10.1007/s43503-026-00087-9"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-16T05:18:52Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-16T05:18:52Z"
     }
   }
 }
