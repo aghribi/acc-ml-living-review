@@ -12,11 +12,11 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 107
+      "2026": 108
     },
     "per_category": {
-      "Tools & Libraries": 195,
-      "Novel Applications": 259,
+      "Tools & Libraries": 196,
+      "Novel Applications": 260,
       "Others": 48,
       "Anomaly Detection & Fault Prediction": 63,
       "Statistics & Trends": 84,
@@ -202,14 +202,15 @@
       "Attributive Prüfprozesse in der Produktion": 1,
       "The Astrophysical Journal Supplement Series": 1,
       "Physical Review D": 1,
-      "AI in Civil Engineering": 1
+      "AI in Civil Engineering": 1,
+      "Nuclear Fusion": 1
     },
     "per_keyword": {
       "optimization": 82,
       "control": 78,
       "surrogate model": 21,
       "transformer": 18,
-      "deep learning": 62,
+      "deep learning": 63,
       "proton therapy": 1,
       "beam": 145,
       "reinforcement learning": 41,
@@ -301,10 +302,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 24
+      "2026-03": 25
     },
-    "last_updated": "2026-03-16T05:19:34.468808+00:00",
-    "next_update": "2026-03-17T05:19:34.468808+00:00"
+    "last_updated": "2026-03-17T04:56:59.618393+00:00",
+    "next_update": "2026-03-18T04:56:59.618393+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -3213,7 +3214,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.38686519861221313
+          "score": 0.38686516880989075
         },
         {
           "label": "Data Management",
@@ -8753,7 +8754,7 @@
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.35403382778167725
+          "score": 0.35403385758399963
         },
         {
           "label": "Tools & Libraries",
@@ -15501,11 +15502,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4600822627544403
+          "score": 0.46008217334747314
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4586675763130188
+          "score": 0.45866748690605164
         },
         {
           "label": "Surrogate Models",
@@ -19068,11 +19069,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4732258915901184
+          "score": 0.473225861787796
         },
         {
           "label": "Beam Diagnostics",
-          "score": 0.43074363470077515
+          "score": 0.4307437539100647
         }
       ],
       "keywords": [],
@@ -20816,6 +20817,52 @@
       ],
       "history": [],
       "last_updated": "2026-03-16T05:18:52Z"
+    },
+    "('', '10.1088/1741-4326/ae4b51', 'noise reduction for self emission x ray images in icf using a physics informed deep learning framework')": {
+      "id": "doi:10.1088/1741-4326/ae4b51",
+      "doi": "10.1088/1741-4326/ae4b51",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Noise reduction for self-emission x-ray images in ICF using a physics-informed deep learning framework",
+      "authors": [
+        "Rui Hua",
+        "Tianzhu Gong",
+        "Chuankui Sun",
+        "Chengmin Lan",
+        "Yanxu Su",
+        "Liang Guo",
+        "Changyin Sun"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Self-emission x-ray imaging is a key diagnostic in inertial confinement fusion (ICF), yet the recorded images are heavily degraded by shot noise arising from photon-counting statistics and scintillator blur, as well as impulsive noise induced by neutron interactions with silicon-based detectors. The complexity of these noise sources, together with the limited availability of experimental data, poses significant challenges for both physical interpretation and data-driven denoising. To address this problem, we propose a hybrid physics-informed and generative framework that enables realistic data synthesis and robust denoising of self-emission x-ray images from ICF experiments. Hot-spot signals are modeled using Legendre polynomial expansions, while shot and impulsive noise are synthesized from empirically measured distributions. A generative enhancement module further reduces the domain gap between synthetic and experimental data, resulting in more realistic training inputs and improved denoising performance. Self-emission x-ray images from experiments conducted on SG-180 kJ laser facility demonstrate the effectiveness of the proposed approach. The synthesized data achieve peak signal-to-noise ratio values reaching 61 dB, and the denoising results improve the signal-to-noise ratio of real experimental images from approximately −30 dB to +35 dB.</jats:p>",
+      "date": "2026-03-16",
+      "year": 2026,
+      "venue": "Nuclear Fusion",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.32785922288894653
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1088/1741-4326/ae4b51",
+        "crossref": "https://doi.org/10.1088/1741-4326/ae4b51"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-17T04:56:14Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-17T04:56:14Z"
     }
   }
 }
