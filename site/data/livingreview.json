@@ -12,16 +12,16 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 108
+      "2026": 111
     },
     "per_category": {
-      "Tools & Libraries": 196,
+      "Tools & Libraries": 197,
       "Novel Applications": 260,
-      "Others": 48,
+      "Others": 50,
       "Anomaly Detection & Fault Prediction": 63,
       "Statistics & Trends": 84,
-      "Reinforcement Learning & Autonomous Systems": 70,
-      "Surrogate Models": 44,
+      "Reinforcement Learning & Autonomous Systems": 71,
+      "Surrogate Models": 45,
       "Data Management": 41,
       "By Facility Type": 10,
       "RF Systems": 7,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 193,
+      "arXiv": 194,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -203,7 +203,9 @@
       "The Astrophysical Journal Supplement Series": 1,
       "Physical Review D": 1,
       "AI in Civil Engineering": 1,
-      "Nuclear Fusion": 1
+      "Nuclear Fusion": 1,
+      "The Journal of Physical Chemistry Letters": 1,
+      "European Journal of Pediatrics": 1
     },
     "per_keyword": {
       "optimization": 82,
@@ -302,10 +304,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 25
+      "2026-03": 28
     },
-    "last_updated": "2026-03-18T05:01:49.392739+00:00",
-    "next_update": "2026-03-19T05:01:49.392739+00:00"
+    "last_updated": "2026-03-19T05:06:13.503478+00:00",
+    "next_update": "2026-03-20T05:06:13.503478+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -2207,11 +2209,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.47880494594573975
+          "score": 0.47880488634109497
         },
         {
           "label": "RF Systems",
-          "score": 0.42476701736450195
+          "score": 0.42476707696914673
         }
       ],
       "keywords": [],
@@ -8754,7 +8756,7 @@
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.35403385758399963
+          "score": 0.35403382778167725
         },
         {
           "label": "Tools & Libraries",
@@ -15502,11 +15504,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.46008217334747314
+          "score": 0.4600822627544403
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.45866748690605164
+          "score": 0.4586675763130188
         },
         {
           "label": "Surrogate Models",
@@ -15683,11 +15685,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4600822627544403
+          "score": 0.46008217334747314
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4586675763130188
+          "score": 0.45866748690605164
         },
         {
           "label": "Surrogate Models",
@@ -19069,11 +19071,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.473225861787796
+          "score": 0.4732258915901184
         },
         {
           "label": "Beam Diagnostics",
-          "score": 0.4307437539100647
+          "score": 0.43074363470077515
         }
       ],
       "keywords": [],
@@ -20863,6 +20865,136 @@
       ],
       "history": [],
       "last_updated": "2026-03-17T04:56:14Z"
+    },
+    "('2603.17836', '', 'verification and validation of physics informed surrogate component models for dynamic power system simulation')": {
+      "id": "arxiv:2603.17836",
+      "doi": null,
+      "arxiv_id": "2603.17836",
+      "inspire_id": null,
+      "title": "Verification and Validation of Physics-Informed Surrogate Component Models for Dynamic Power-System Simulation",
+      "authors": [
+        "Petros Ellinas",
+        "Indrajit Chaudhuri",
+        "Johanna Vorwerk",
+        "Spyros Chatzivasileiadis"
+      ],
+      "abstract": "Physics-informed machine learning surrogates are increasingly explored to accelerate dynamic simulation of generators, converters, and other power grid components. The key question, however, is not only whether a surrogate matches a stand-alone component model on average, but whether it remains accurate after insertion into a differential-algebraic simulator, where the surrogate outputs enter the algebraic equations coupling the component to the rest of the system. This paper formulates that in-simulator use as a verification and validation (V\\&V) problem. A finite-horizon bound is derived that links allowable component-output error to algebraic-coupling sensitivity, dynamic error amplification, and the simulation horizon. Two complementary settings are then studied: model-based verification against a reference component solver, and data-based validation through conformal calibration of the component-output variables exchanged with the simulator. The framework is general, but the case study focuses on physics-informed neural-network surrogates of second-, fourth-, and sixth-order synchronous-machine models. Results show that good stand-alone surrogate accuracy does not by itself guarantee accurate in-simulator behavior, that the largest discrepancies concentrate in stressed operating regions, and that small equation residuals do not necessarily imply small state-trajectory errors.",
+      "date": "2026-03-18",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Surrogate Models",
+          "score": 0.3921964764595032
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.27663862705230713
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2603.17836v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-03-19T04:56:35Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-19T04:56:35Z"
+    },
+    "('', '10.1021/acs.jpclett.6c00030', 'comprehensive structural descriptors enable machine learning prediction of perovskite band characteristics')": {
+      "id": "doi:10.1021/acs.jpclett.6c00030",
+      "doi": "10.1021/acs.jpclett.6c00030",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Comprehensive Structural Descriptors Enable Machine Learning Prediction of Perovskite Band Characteristics",
+      "authors": [
+        "Zixuan Ni",
+        "Zhirui Zhang",
+        "Yiming Chen",
+        "Daye Zheng",
+        "Jian Xu"
+      ],
+      "abstract": "",
+      "date": "2026-03-18",
+      "year": 2026,
+      "venue": "The Journal of Physical Chemistry Letters",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1021/acs.jpclett.6c00030",
+        "crossref": "https://doi.org/10.1021/acs.jpclett.6c00030"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-19T05:05:29Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-19T05:05:29Z"
+    },
+    "('', '10.1007/s00431-026-06849-y', 'learning curves and training thresholds for paediatricians performing neonatal hip ultrasound using the graf method in a universal screening program')": {
+      "id": "doi:10.1007/s00431-026-06849-y",
+      "doi": "10.1007/s00431-026-06849-y",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Learning curves and training thresholds for paediatricians performing neonatal hip ultrasound using the Graf method in a universal screening program",
+      "authors": [
+        "I. Miras Aguilar",
+        "L. Fidalgo Marrón",
+        "M. Pangua Gómez",
+        "C. Gilarte Herrera",
+        "C. Olteanu Olteanu",
+        "E. Castaño Andreu",
+        "C. Llorente Ruiz",
+        "A. Andrés Bartolomé",
+        "A. Ortigado Matamala"
+      ],
+      "abstract": "",
+      "date": "2026-03-18",
+      "year": 2026,
+      "venue": "European Journal of Pediatrics",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s00431-026-06849-y",
+        "crossref": "https://doi.org/10.1007/s00431-026-06849-y"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-19T05:05:29Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-19T05:05:29Z"
     }
   }
 }
