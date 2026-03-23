@@ -12,17 +12,17 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 111
+      "2026": 113
     },
     "per_category": {
-      "Tools & Libraries": 197,
-      "Novel Applications": 260,
+      "Tools & Libraries": 199,
+      "Novel Applications": 262,
       "Others": 50,
       "Anomaly Detection & Fault Prediction": 63,
       "Statistics & Trends": 84,
       "Reinforcement Learning & Autonomous Systems": 71,
       "Surrogate Models": 45,
-      "Data Management": 41,
+      "Data Management": 43,
       "By Facility Type": 10,
       "RF Systems": 7,
       "Operations & Control": 11,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 194,
+      "arXiv": 196,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -209,21 +209,22 @@
     },
     "per_keyword": {
       "optimization": 82,
-      "control": 78,
+      "control": 80,
       "surrogate model": 21,
       "transformer": 18,
       "deep learning": 63,
       "proton therapy": 1,
-      "beam": 145,
+      "beam": 147,
       "reinforcement learning": 41,
-      "diagnostics": 30,
+      "diagnostics": 32,
       "uncertainty quantification": 6,
       "anomaly detection": 20,
       "time series": 6,
       "GAN": 1,
       "cloud": 3,
       "federated learning": 1,
-      "RF cavity": 1
+      "RF cavity": 1,
+      "data management": 2
     },
     "monthly_trends": {
       "2025-09": 12,
@@ -304,10 +305,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 28
+      "2026-03": 30
     },
-    "last_updated": "2026-03-22T04:57:15.436944+00:00",
-    "next_update": "2026-03-23T04:57:15.436944+00:00"
+    "last_updated": "2026-03-23T05:08:07.558251+00:00",
+    "next_update": "2026-03-24T05:08:07.558251+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -8756,7 +8757,7 @@
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.35403382778167725
+          "score": 0.35403385758399963
         },
         {
           "label": "Tools & Libraries",
@@ -15504,11 +15505,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4600822627544403
+          "score": 0.46008217334747314
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4586675763130188
+          "score": 0.45866748690605164
         },
         {
           "label": "Surrogate Models",
@@ -20995,6 +20996,127 @@
       ],
       "history": [],
       "last_updated": "2026-03-19T05:05:29Z"
+    },
+    "('2603.19507', '', 'ai ready control system for the fermilab accelerator complex')": {
+      "id": "arxiv:2603.19507",
+      "doi": null,
+      "arxiv_id": "2603.19507",
+      "inspire_id": null,
+      "title": "AI-Ready Control System for the Fermilab Accelerator Complex",
+      "authors": [
+        "Tia Miceli",
+        "Erik Gottschalk",
+        "Donovan Tooke",
+        "Evan Milton",
+        "Robert Santucci",
+        "Hayden Hoschouer",
+        "Michael Balcewicz",
+        "Jennifer Case",
+        "Abhishek Deshpande",
+        "Kit Fieldhouse",
+        "Sudeshna Ganguly",
+        "Beau Harrison",
+        "Aisha Ibrahim",
+        "Thomas Kobilarcik",
+        "Michael Olander",
+        "Abhishek Pathak",
+        "Jason St. John",
+        "Aaron Sauers"
+      ],
+      "abstract": "Reliable, high-intensity operation of the Fermilab Accelerator Complex is critical to the success of the Long-Baseline Neutrino Facility and Deep Underground Neutrino Experiment. We describe the requirements and infrastructure necessary to support routine use of artificial intelligence and machine learning (AI/ML) in the accelerator control system. Three capabilities are identified: a machine learning operations (MLOps) framework standardizing the lifecycle of AI/ML automation from data management through deployment and monitoring; a data quality framework defining and enforcing standards required to build trustworthy AI/ML applications; and workflow integration with large language models to assist physicists, engineers, and operators with information retrieval, code development, and routine analysis. Use cases spanning beam diagnostics, beam control, and support system automation illustrate the technical requirements across the complex.",
+      "date": "2026-03-19",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.6253108978271484
+        },
+        {
+          "label": "Data Management",
+          "score": 0.5941317677497864
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2603.19507v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-03-23T05:03:52Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-23T05:03:52Z"
+    },
+    "('', '', 'ai ready control system for the fermilab accelerator complex')": {
+      "id": "hash:a4b224e1eaaa",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "AI-Ready Control System for the Fermilab Accelerator Complex",
+      "authors": [
+        "Miceli, Tia",
+        "Gottschalk, Erik",
+        "Tooke, Donovan",
+        "Milton, Evan",
+        "Santucci, Robert",
+        "Hoschouer, Hayden",
+        "Balcewicz, Michael",
+        "Case, Jennifer",
+        "Deshpande, Abhishek",
+        "Fieldhouse, Kit",
+        "Ganguly, Sudeshna",
+        "Harrison, Beau",
+        "Ibrahim, Aisha",
+        "Kobilarcik, Thomas",
+        "Olander, Michael",
+        "Pathak, Abhishek",
+        "St. John, Jason",
+        "Sauers, Aaron"
+      ],
+      "abstract": "Reliable, high-intensity operation of the Fermilab Accelerator Complex is critical to the success of the Long-Baseline Neutrino Facility and Deep Underground Neutrino Experiment. We describe the requirements and infrastructure necessary to support routine use of artificial intelligence and machine learning (AI/ML) in the accelerator control system. Three capabilities are identified: a machine learning operations (MLOps) framework standardizing the lifecycle of AI/ML automation from data management through deployment and monitoring; a data quality framework defining and enforcing standards required to build trustworthy AI/ML applications; and workflow integration with large language models to assist physicists, engineers, and operators with information retrieval, code development, and routine analysis. Use cases spanning beam diagnostics, beam control, and support system automation illustrate the technical requirements across the complex.",
+      "date": "2026-03-19",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.6253108978271484
+        },
+        {
+          "label": "Data Management",
+          "score": 0.5941317677497864
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3132515",
+        "arxiv": "https://arxiv.org/abs/2603.19507"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-03-23T05:07:13Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-23T05:07:13Z"
     }
   }
 }
