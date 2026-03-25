@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 113
+      "2026": 114
     },
     "per_category": {
       "Tools & Libraries": 199,
       "Novel Applications": 262,
       "Others": 50,
-      "Anomaly Detection & Fault Prediction": 63,
+      "Anomaly Detection & Fault Prediction": 64,
       "Statistics & Trends": 84,
       "Reinforcement Learning & Autonomous Systems": 71,
       "Surrogate Models": 45,
@@ -205,7 +205,8 @@
       "AI in Civil Engineering": 1,
       "Nuclear Fusion": 1,
       "The Journal of Physical Chemistry Letters": 1,
-      "European Journal of Pediatrics": 1
+      "European Journal of Pediatrics": 1,
+      "Machine Learning: Engineering": 1
     },
     "per_keyword": {
       "optimization": 82,
@@ -305,10 +306,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 30
+      "2026-03": 31
     },
-    "last_updated": "2026-03-24T04:57:58.709754+00:00",
-    "next_update": "2026-03-25T04:57:58.709754+00:00"
+    "last_updated": "2026-03-25T04:58:44.543003+00:00",
+    "next_update": "2026-03-26T04:58:44.543003+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -21117,6 +21118,43 @@
       ],
       "history": [],
       "last_updated": "2026-03-23T05:07:13Z"
+    },
+    "('', '10.1088/3049-4761/ae565d', 'efficient two stage sequential machine learning model for progressive damage analysis in fiber reinforced composites')": {
+      "id": "doi:10.1088/3049-4761/ae565d",
+      "doi": "10.1088/3049-4761/ae565d",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Efficient Two-Stage Sequential Machine Learning Model for Progressive Damage Analysis in Fiber-Reinforced Composites",
+      "authors": [
+        "Mohammadamin Alibakhshi",
+        "Parisa Khodabakhshi"
+      ],
+      "abstract": "",
+      "date": "2026-03-24",
+      "year": 2026,
+      "venue": "Machine Learning: Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.29982173442840576
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1088/3049-4761/ae565d",
+        "crossref": "https://doi.org/10.1088/3049-4761/ae565d"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-25T04:58:00Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-25T04:58:00Z"
     }
   }
 }
