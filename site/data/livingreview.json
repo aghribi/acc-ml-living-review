@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 114
+      "2026": 115
     },
     "per_category": {
       "Tools & Libraries": 198,
       "Novel Applications": 261,
-      "Others": 51,
+      "Others": 52,
       "Anomaly Detection & Fault Prediction": 64,
       "Statistics & Trends": 84,
       "Reinforcement Learning & Autonomous Systems": 71,
@@ -207,7 +207,8 @@
       "The Journal of Physical Chemistry Letters": 1,
       "European Journal of Pediatrics": 1,
       "Machine Learning: Engineering": 1,
-      "reposiTUm (TU Wien)": 1
+      "reposiTUm (TU Wien)": 1,
+      "Acadlore Transactions on AI and Machine Learning": 1
     },
     "per_keyword": {
       "optimization": 82,
@@ -307,10 +308,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 31
+      "2026-03": 32
     },
-    "last_updated": "2026-03-27T05:12:03.244596+00:00",
-    "next_update": "2026-03-28T05:12:03.244596+00:00"
+    "last_updated": "2026-03-28T05:04:10.722303+00:00",
+    "next_update": "2026-03-29T05:04:10.722303+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -15507,11 +15508,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.46008217334747314
+          "score": 0.4600822627544403
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.45866748690605164
+          "score": 0.4586675763130188
         },
         {
           "label": "Surrogate Models",
@@ -15688,11 +15689,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4600822627544403
+          "score": 0.46008217334747314
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4586675763130188
+          "score": 0.45866748690605164
         },
         {
           "label": "Surrogate Models",
@@ -21130,6 +21131,42 @@
       ],
       "history": [],
       "last_updated": "2026-03-27T05:11:16Z"
+    },
+    "('', '10.56578/ataiml050107', 'mesh free modeling of heat transfer dynamics for rapid assessment of necrosis zones in hepatic tumor radiofrequency ablation using physics informed neural networks')": {
+      "id": "doi:10.56578/ataiml050107",
+      "doi": "10.56578/ataiml050107",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Mesh-Free Modeling of Heat Transfer Dynamics for Rapid Assessment of Necrosis Zones in Hepatic Tumor Radiofrequency Ablation Using Physics-Informed Neural Networks",
+      "authors": [
+        "Muhammet Kaan Yeşilyurt"
+      ],
+      "abstract": "",
+      "date": "2026-03-27",
+      "year": 2026,
+      "venue": "Acadlore Transactions on AI and Machine Learning",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.56578/ataiml050107",
+        "crossref": "https://doi.org/10.56578/ataiml050107"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-28T05:03:26Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-28T05:03:26Z"
     }
   }
 }
