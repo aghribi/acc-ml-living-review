@@ -12,15 +12,15 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 115
+      "2026": 117
     },
     "per_category": {
-      "Tools & Libraries": 198,
+      "Tools & Libraries": 199,
       "Novel Applications": 261,
-      "Others": 52,
+      "Others": 53,
       "Anomaly Detection & Fault Prediction": 64,
       "Statistics & Trends": 84,
-      "Reinforcement Learning & Autonomous Systems": 71,
+      "Reinforcement Learning & Autonomous Systems": 72,
       "Surrogate Models": 45,
       "Data Management": 42,
       "By Facility Type": 10,
@@ -160,7 +160,7 @@
       "Industrial &amp; Engineering Chemistry Research": 1,
       "Physics in Medicine &amp; Biology": 1,
       "Mechanics Based Design of Structures and Machines": 1,
-      "Journal of Open Source Education": 1,
+      "Journal of Open Source Education": 2,
       "Discover Civil Engineering": 1,
       "Comput.Phys.Commun.": 1,
       "International Journal of Modern Physics E": 1,
@@ -208,17 +208,18 @@
       "European Journal of Pediatrics": 1,
       "Machine Learning: Engineering": 1,
       "reposiTUm (TU Wien)": 1,
-      "Acadlore Transactions on AI and Machine Learning": 1
+      "Acadlore Transactions on AI and Machine Learning": 1,
+      "Radiological Physics and Technology": 1
     },
     "per_keyword": {
       "optimization": 82,
       "control": 79,
       "surrogate model": 21,
       "transformer": 18,
-      "deep learning": 63,
+      "deep learning": 64,
       "proton therapy": 1,
       "beam": 146,
-      "reinforcement learning": 41,
+      "reinforcement learning": 42,
       "diagnostics": 31,
       "uncertainty quantification": 6,
       "anomaly detection": 20,
@@ -308,10 +309,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 32
+      "2026-03": 34
     },
-    "last_updated": "2026-03-28T05:04:10.722303+00:00",
-    "next_update": "2026-03-29T05:04:10.722303+00:00"
+    "last_updated": "2026-03-29T05:57:16.674253+00:00",
+    "next_update": "2026-03-30T05:57:16.674253+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -13487,11 +13488,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4003908634185791
+          "score": 0.4003909230232239
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3507153391838074
+          "score": 0.35071539878845215
         }
       ],
       "keywords": [],
@@ -19829,7 +19830,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.265287846326828
+          "score": 0.2652878165245056
         }
       ],
       "keywords": [],
@@ -20599,7 +20600,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.32012227177619934
+          "score": 0.3201221823692322
         },
         {
           "label": "Statistics & Trends",
@@ -21167,6 +21168,94 @@
       ],
       "history": [],
       "last_updated": "2026-03-28T05:03:26Z"
+    },
+    "('', '10.21105/jose.00306', 'reinforcement learning a comprehensive open source course')": {
+      "id": "doi:10.21105/jose.00306",
+      "doi": "10.21105/jose.00306",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Reinforcement Learning: A Comprehensive Open-Source Course",
+      "authors": [
+        "Ali Hassan Ali Abdelwanis",
+        "Barnabas Haucke-Korber",
+        "Darius Jakobeit",
+        "Wilhelm Kirchgässner",
+        "Marvin Meyer",
+        "Maximilian Schenke",
+        "Hendrik Vater",
+        "Oliver Wallscheid",
+        "Daniel Weber"
+      ],
+      "abstract": "",
+      "date": "2026-03-28",
+      "year": 2026,
+      "venue": "Journal of Open Source Education",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.4737144410610199
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.36123883724212646
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.21105/jose.00306",
+        "crossref": "https://doi.org/10.21105/jose.00306"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-29T05:56:43Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-29T05:56:43Z"
+    },
+    "('', '10.1007/s12194-026-01043-z', 'fast 3d whole body occupational dose estimation in interventional radiology using physics informed deep learning')": {
+      "id": "doi:10.1007/s12194-026-01043-z",
+      "doi": "10.1007/s12194-026-01043-z",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Fast 3D whole-body occupational dose estimation in interventional radiology using physics-informed deep learning",
+      "authors": [
+        "Hussein Harb",
+        "Didier Benoit",
+        "Chi-Hieu Pham",
+        "Bahaa Nasr",
+        "Julien Bert"
+      ],
+      "abstract": "",
+      "date": "2026-03-28",
+      "year": 2026,
+      "venue": "Radiological Physics and Technology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s12194-026-01043-z",
+        "crossref": "https://doi.org/10.1007/s12194-026-01043-z"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-03-29T05:56:43Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-29T05:56:43Z"
     }
   }
 }
