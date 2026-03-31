@@ -12,16 +12,16 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 117
+      "2026": 119
     },
     "per_category": {
-      "Tools & Libraries": 199,
-      "Novel Applications": 261,
+      "Tools & Libraries": 201,
+      "Novel Applications": 263,
       "Others": 53,
       "Anomaly Detection & Fault Prediction": 64,
       "Statistics & Trends": 84,
       "Reinforcement Learning & Autonomous Systems": 72,
-      "Surrogate Models": 45,
+      "Surrogate Models": 47,
       "Data Management": 42,
       "By Facility Type": 10,
       "RF Systems": 7,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 195,
+      "arXiv": 197,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -213,14 +213,14 @@
     },
     "per_keyword": {
       "optimization": 82,
-      "control": 79,
-      "surrogate model": 21,
+      "control": 81,
+      "surrogate model": 23,
       "transformer": 18,
       "deep learning": 64,
       "proton therapy": 1,
       "beam": 146,
       "reinforcement learning": 42,
-      "diagnostics": 31,
+      "diagnostics": 33,
       "uncertainty quantification": 6,
       "anomaly detection": 20,
       "time series": 6,
@@ -309,10 +309,10 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 34
+      "2026-03": 36
     },
-    "last_updated": "2026-03-30T06:01:17.618732+00:00",
-    "next_update": "2026-03-31T06:01:17.618732+00:00"
+    "last_updated": "2026-03-31T05:13:49.457728+00:00",
+    "next_update": "2026-04-01T05:13:49.457728+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -8908,7 +8908,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.49143272638320923
+          "score": 0.4914328455924988
         },
         {
           "label": "Tools & Libraries",
@@ -10791,7 +10791,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5429959297180176
+          "score": 0.5429958701133728
         }
       ],
       "keywords": [],
@@ -15509,11 +15509,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4600822627544403
+          "score": 0.46008217334747314
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4586675763130188
+          "score": 0.45866748690605164
         },
         {
           "label": "Surrogate Models",
@@ -19169,7 +19169,7 @@
         },
         {
           "label": "Data Management",
-          "score": 0.29987257719039917
+          "score": 0.2998725473880768
         }
       ],
       "keywords": [],
@@ -21256,6 +21256,95 @@
       ],
       "history": [],
       "last_updated": "2026-03-29T05:56:43Z"
+    },
+    "('2603.28549', '', 'machine learning based virtual diagnostics of dielectric laser acceleration')": {
+      "id": "arxiv:2603.28549",
+      "doi": null,
+      "arxiv_id": "2603.28549",
+      "inspire_id": null,
+      "title": "Machine learning-based virtual diagnostics of dielectric laser acceleration",
+      "authors": [
+        "Thilo Egenolf",
+        "Oliver Boine-Frankenheim"
+      ],
+      "abstract": "We present the development of a digital twin-based reconstruction framework for dielectric laser acceleration (DLA) based on machine-learning-assisted inversion of single-shot electron energy spectra. DLA as a promising candidate for compact electron accelerator designs using optical nearfields in dielectric nanostructures lacks on direct diagnostics on the laser-electron interaction. Thus, the outgoing electron energy distribution is one of the few experimentally accessible observables. To exploit this information, DLA interaction and mapping on the downstream spectrometer are treated as nonlinear measurement device whose response is described by the symplectic sixdimensional tracking code DLAtrack6D. This forward simulation model serves as a digital twin mapping laser-electron interaction parameters onto resulting energy spectra. For diagnostics, we are interested in the inverse mapping represented by a neural network trained by synthetic datasets generated with the forward simulation model. The reconstruction performance and parameter identifiability of the inverse model are evaluated for parameter ranges relevant to planned experiments at the ARES linac in the SINBAD facility at DESY. Simulation studies demonstrate that the method can recover pulse front tilt angles with an accuracy of about 1 deg and phase offsets with an RMSE of about 0.36 rad corresponding to a difference of 0.4 fs in arrival time. Training with noisy spectra further improves robustness against spectrometer noise. The trained surrogate model evaluates in the millisecond range, enabling shot-to-shot parameter estimation compatible with the 50 Hz repetition rate of ARES. The approach effectively transforms the DLA interaction region into a virtual in situ diagnostics for otherwise inaccessible laser parameters during experiment and provides a foundation for real-time monitoring and control of future DLA experiments.",
+      "date": "2026-03-30",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Surrogate Models",
+          "score": 1.0
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.4334959387779236
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2603.28549v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-03-31T05:09:29Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-31T05:09:29Z"
+    },
+    "('', '', 'machine learning based virtual diagnostics of dielectric laser acceleration')": {
+      "id": "hash:c068a6e67fd8",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning-based virtual diagnostics of dielectric laser acceleration",
+      "authors": [
+        "Egenolf, Thilo",
+        "Boine-Frankenheim, Oliver"
+      ],
+      "abstract": "We present the development of a digital twin-based reconstruction framework for dielectric laser acceleration (DLA) based on machine-learning-assisted inversion of single-shot electron energy spectra. DLA as a promising candidate for compact electron accelerator designs using optical nearfields in dielectric nanostructures lacks on direct diagnostics on the laser-electron interaction. Thus, the outgoing electron energy distribution is one of the few experimentally accessible observables. To exploit this information, DLA interaction and mapping on the downstream spectrometer are treated as nonlinear measurement device whose response is described by the symplectic sixdimensional tracking code DLAtrack6D. This forward simulation model serves as a digital twin mapping laser-electron interaction parameters onto resulting energy spectra. For diagnostics, we are interested in the inverse mapping represented by a neural network trained by synthetic datasets generated with the forward simulation model. The reconstruction performance and parameter identifiability of the inverse model are evaluated for parameter ranges relevant to planned experiments at the ARES linac in the SINBAD facility at DESY. Simulation studies demonstrate that the method can recover pulse front tilt angles with an accuracy of about 1 deg and phase offsets with an RMSE of about 0.36 rad corresponding to a difference of 0.4 fs in arrival time. Training with noisy spectra further improves robustness against spectrometer noise. The trained surrogate model evaluates in the millisecond range, enabling shot-to-shot parameter estimation compatible with the 50 Hz repetition rate of ARES. The approach effectively transforms the DLA interaction region into a virtual in situ diagnostics for otherwise inaccessible laser parameters during experiment and provides a foundation for real-time monitoring and control of future DLA experiments.",
+      "date": "2026-03-30",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Surrogate Models",
+          "score": 1.0
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.4334959387779236
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3137432",
+        "arxiv": "https://arxiv.org/abs/2603.28549"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-03-31T05:12:51Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-03-31T05:12:51Z"
     }
   }
 }
