@@ -12,17 +12,17 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 119
+      "2026": 121
     },
     "per_category": {
       "Tools & Libraries": 201,
-      "Novel Applications": 263,
-      "Others": 53,
+      "Novel Applications": 264,
+      "Others": 54,
       "Anomaly Detection & Fault Prediction": 64,
       "Statistics & Trends": 84,
       "Reinforcement Learning & Autonomous Systems": 72,
       "Surrogate Models": 47,
-      "Data Management": 42,
+      "Data Management": 43,
       "By Facility Type": 10,
       "RF Systems": 7,
       "Operations & Control": 11,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 197,
+      "arXiv": 198,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -209,7 +209,8 @@
       "Machine Learning: Engineering": 1,
       "reposiTUm (TU Wien)": 1,
       "Acadlore Transactions on AI and Machine Learning": 1,
-      "Radiological Physics and Technology": 1
+      "Radiological Physics and Technology": 1,
+      "Engineering Structures": 1
     },
     "per_keyword": {
       "optimization": 82,
@@ -222,13 +223,13 @@
       "reinforcement learning": 42,
       "diagnostics": 33,
       "uncertainty quantification": 6,
-      "anomaly detection": 20,
+      "anomaly detection": 21,
       "time series": 6,
       "GAN": 1,
       "cloud": 3,
       "federated learning": 1,
       "RF cavity": 1,
-      "data management": 1
+      "data management": 2
     },
     "monthly_trends": {
       "2025-09": 12,
@@ -309,10 +310,11 @@
       "2025-12": 35,
       "2026-01": 55,
       "2026-02": 28,
-      "2026-03": 36
+      "2026-03": 37,
+      "2026-04": 1
     },
-    "last_updated": "2026-03-31T05:13:49.457728+00:00",
-    "next_update": "2026-04-01T05:13:49.457728+00:00"
+    "last_updated": "2026-04-01T05:29:22.687698+00:00",
+    "next_update": "2026-04-02T05:29:22.687698+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -21345,6 +21347,111 @@
       ],
       "history": [],
       "last_updated": "2026-03-31T05:12:51Z"
+    },
+    "('2603.29740', '', 'data driven optimisation of superconducting magnets at cea paris saclay')": {
+      "id": "arxiv:2603.29740",
+      "doi": null,
+      "arxiv_id": "2603.29740",
+      "inspire_id": null,
+      "title": "Data-Driven Optimisation of Superconducting Magnets at CEA Paris-Saclay",
+      "authors": [
+        "Damien F. G. Minenna",
+        "Guillaume Dilasser",
+        "Robin Penavaire",
+        "Valerio Calvelli",
+        "Thibault de Chabannes",
+        "Thibault Lecrevisse",
+        "Thomas Achard",
+        "Jason Le Coz",
+        "Christophe Berriaud",
+        "Benoît Bolzon",
+        "Antomne Caunes",
+        "Phillipe Fazilleau",
+        "Hélène Felice",
+        "Clément Genot",
+        "Antoine Guinet",
+        "Nikola Jerance",
+        "François-Paul Juster",
+        "Thibaut Lemercier",
+        "Gilles Lenoir",
+        "Clément Lorin",
+        "Yann Perron",
+        "Camille Pucheu-Plante",
+        "Étienne Rochepault",
+        "Damien Simon",
+        "Francesco Stacchi",
+        "Michel Segreti",
+        "Vincent Trauchessec",
+        "Olivier Tuske",
+        "Hajar Zgour"
+      ],
+      "abstract": "Superconducting magnets for particle accelerators are particularly challenging to design because they involve a large number of coupled physical phenomena and the management of complex datasets. Artificial Intelligence (AI), including machine learning and advanced optimisation techniques, offers promising approaches to address these challenges and accelerate the design process. This paper presents a new AI-based optimisation and data management platform, and highlights several ongoing applications of AI methods carried out at CEA Paris-Saclay, including multiphysics optimisation using active learning, topology optimisation, holistic modelling of an Electron Cyclotron Resonance (ERC) ion source, and anomaly detection in quench events.",
+      "date": "2026-03-31",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.5557818412780762
+        },
+        {
+          "label": "Data Management",
+          "score": 0.47585126757621765
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2603.29740v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-04-01T05:24:55Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-01T05:24:55Z"
+    },
+    "('', '10.1016/j.engstruct.2026.122262', 'reduced dataset based machine learning model for blast damage assessment of reinforced concrete columns')": {
+      "id": "doi:10.1016/j.engstruct.2026.122262",
+      "doi": "10.1016/j.engstruct.2026.122262",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Reduced dataset-based machine learning model for blast damage assessment of reinforced concrete columns",
+      "authors": [
+        "Yeeun Kim",
+        "Kihak Lee",
+        "Jiuk Shin"
+      ],
+      "abstract": "",
+      "date": "2026-04-01",
+      "year": 2026,
+      "venue": "Engineering Structures",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.engstruct.2026.122262",
+        "crossref": "https://doi.org/10.1016/j.engstruct.2026.122262"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-01T05:28:40Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-01T05:28:40Z"
     }
   }
 }
