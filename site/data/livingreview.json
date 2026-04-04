@@ -12,7 +12,7 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 123
+      "2026": 124
     },
     "per_category": {
       "Tools & Libraries": 202,
@@ -20,12 +20,12 @@
       "Others": 54,
       "Anomaly Detection & Fault Prediction": 65,
       "Statistics & Trends": 84,
-      "Reinforcement Learning & Autonomous Systems": 72,
+      "Reinforcement Learning & Autonomous Systems": 73,
       "Surrogate Models": 46,
       "Data Management": 43,
       "By Facility Type": 10,
       "RF Systems": 7,
-      "Operations & Control": 11,
+      "Operations & Control": 12,
       "Beamline Design & Simulation": 33,
       "Beam Dynamics": 12,
       "Reviews": 23,
@@ -211,7 +211,8 @@
       "Acadlore Transactions on AI and Machine Learning": 1,
       "Radiological Physics and Technology": 1,
       "Engineering Structures": 1,
-      "Bulletin of scientific research results": 1
+      "Bulletin of scientific research results": 1,
+      "Machine Learning Science and Technology": 1
     },
     "per_keyword": {
       "optimization": 82,
@@ -221,7 +222,7 @@
       "deep learning": 64,
       "proton therapy": 1,
       "beam": 146,
-      "reinforcement learning": 42,
+      "reinforcement learning": 43,
       "diagnostics": 34,
       "uncertainty quantification": 6,
       "anomaly detection": 21,
@@ -312,10 +313,10 @@
       "2026-01": 55,
       "2026-02": 28,
       "2026-03": 38,
-      "2026-04": 2
+      "2026-04": 3
     },
-    "last_updated": "2026-04-03T05:09:25.168224+00:00",
-    "next_update": "2026-04-04T05:09:25.168224+00:00"
+    "last_updated": "2026-04-04T04:54:45.876415+00:00",
+    "next_update": "2026-04-05T04:54:45.876415+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -21524,6 +21525,58 @@
       ],
       "history": [],
       "last_updated": "2026-04-03T05:08:41Z"
+    },
+    "('', '10.1088/2632-2153/ae5b20', 'microsecond latency feedback at a particle accelerator by online reinforcement learning on hardware')": {
+      "id": "doi:10.1088/2632-2153/ae5b20",
+      "doi": "10.1088/2632-2153/ae5b20",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Microsecond-latency feedback at a particle accelerator by online reinforcement learning on hardware",
+      "authors": [
+        "L. Scomparin",
+        "Michele Caselle",
+        "Andrea Santamaria Garcia",
+        "Chenran Xu",
+        "Edmund Blomley",
+        "Timo Dritschler",
+        "Akira Mochihashi",
+        "Marcel Schuh",
+        "Johannes Leonhard Steinmann",
+        "Erik Bründermann",
+        "Andreas Kopmann",
+        "Jürgen Becker",
+        "A.-S. Mueller",
+        "Marc Weber"
+      ],
+      "abstract": "",
+      "date": "2026-04-02",
+      "year": 2026,
+      "venue": "Machine Learning Science and Technology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.6012418270111084
+        },
+        {
+          "label": "Operations & Control",
+          "score": 0.5518139004707336
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7148491516"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-04-04T04:53:59Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-04T04:53:59Z"
     }
   }
 }
