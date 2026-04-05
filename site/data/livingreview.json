@@ -12,14 +12,14 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 124
+      "2026": 125
     },
     "per_category": {
       "Tools & Libraries": 202,
-      "Novel Applications": 265,
+      "Novel Applications": 266,
       "Others": 54,
       "Anomaly Detection & Fault Prediction": 65,
-      "Statistics & Trends": 84,
+      "Statistics & Trends": 85,
       "Reinforcement Learning & Autonomous Systems": 73,
       "Surrogate Models": 46,
       "Data Management": 43,
@@ -212,7 +212,8 @@
       "Radiological Physics and Technology": 1,
       "Engineering Structures": 1,
       "Bulletin of scientific research results": 1,
-      "Machine Learning Science and Technology": 1
+      "Machine Learning Science and Technology": 1,
+      "Journal of Phase Equilibria and Diffusion": 1
     },
     "per_keyword": {
       "optimization": 82,
@@ -313,10 +314,10 @@
       "2026-01": 55,
       "2026-02": 28,
       "2026-03": 38,
-      "2026-04": 3
+      "2026-04": 4
     },
-    "last_updated": "2026-04-04T04:54:45.876415+00:00",
-    "next_update": "2026-04-05T04:54:45.876415+00:00"
+    "last_updated": "2026-04-05T05:16:43.524671+00:00",
+    "next_update": "2026-04-06T05:16:43.524671+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -7289,11 +7290,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.310451865196228
+          "score": 0.31045180559158325
         },
         {
           "label": "By Facility Type",
-          "score": 0.265591561794281
+          "score": 0.26559150218963623
         }
       ],
       "keywords": [],
@@ -10795,7 +10796,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5429958701133728
+          "score": 0.5429959297180176
         }
       ],
       "keywords": [],
@@ -21577,6 +21578,48 @@
       ],
       "history": [],
       "last_updated": "2026-04-04T04:53:59Z"
+    },
+    "('', '10.1007/s11669-026-01241-7', 'publisher correction fine tuning universal machine learned interatomic potentials for applications in the science of steels')": {
+      "id": "doi:10.1007/s11669-026-01241-7",
+      "doi": "10.1007/s11669-026-01241-7",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Publisher Correction: Fine-Tuning Universal Machine-Learned Interatomic Potentials for Applications in the Science of Steels",
+      "authors": [
+        "Naveen K. Mohandas",
+        "Sebastián Echeverri Restrepo",
+        "Marcel H. F. Sluiter"
+      ],
+      "abstract": "",
+      "date": "2026-04-04",
+      "year": 2026,
+      "venue": "Journal of Phase Equilibria and Diffusion",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3198004961013794
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.3168262243270874
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s11669-026-01241-7",
+        "crossref": "https://doi.org/10.1007/s11669-026-01241-7"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-05T05:15:57Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-05T05:15:57Z"
     }
   }
 }
