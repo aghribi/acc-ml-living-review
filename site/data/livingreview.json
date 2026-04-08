@@ -12,23 +12,23 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 125
+      "2026": 126
     },
     "per_category": {
       "Tools & Libraries": 202,
-      "Novel Applications": 266,
+      "Novel Applications": 267,
       "Others": 54,
       "Anomaly Detection & Fault Prediction": 65,
       "Statistics & Trends": 85,
       "Reinforcement Learning & Autonomous Systems": 73,
       "Surrogate Models": 46,
-      "Data Management": 43,
+      "Data Management": 44,
       "By Facility Type": 10,
       "RF Systems": 7,
       "Operations & Control": 12,
       "Beamline Design & Simulation": 33,
       "Beam Dynamics": 12,
-      "Reviews": 23,
+      "Reviews": 24,
       "Beam Diagnostics": 21,
       "Optimization & Control": 17
     },
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 197,
+      "arXiv": 198,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -222,7 +222,7 @@
       "transformer": 18,
       "deep learning": 64,
       "proton therapy": 1,
-      "beam": 146,
+      "beam": 147,
       "reinforcement learning": 43,
       "diagnostics": 34,
       "uncertainty quantification": 6,
@@ -314,10 +314,10 @@
       "2026-01": 55,
       "2026-02": 28,
       "2026-03": 38,
-      "2026-04": 4
+      "2026-04": 5
     },
-    "last_updated": "2026-04-07T05:14:23.491770+00:00",
-    "next_update": "2026-04-08T05:14:23.491770+00:00"
+    "last_updated": "2026-04-08T05:15:51.302087+00:00",
+    "next_update": "2026-04-09T05:15:51.302087+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -8913,7 +8913,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.49143272638320923
+          "score": 0.4914328455924988
         },
         {
           "label": "Tools & Libraries",
@@ -10796,7 +10796,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5429959297180176
+          "score": 0.5429958701133728
         }
       ],
       "keywords": [],
@@ -14559,11 +14559,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.37268489599227905
+          "score": 0.3726848363876343
         },
         {
           "label": "Optimization & Control",
-          "score": 0.3611193299293518
+          "score": 0.36111927032470703
         }
       ],
       "keywords": [],
@@ -21620,6 +21620,51 @@
       ],
       "history": [],
       "last_updated": "2026-04-05T05:15:57Z"
+    },
+    "('2604.05914', '', 'machine state embeddings as an operational coordinate system for accelerator operation')": {
+      "id": "arxiv:2604.05914",
+      "doi": null,
+      "arxiv_id": "2604.05914",
+      "inspire_id": null,
+      "title": "Machine-State Embeddings as an Operational Coordinate System for Accelerator Operation",
+      "authors": [
+        "Chris Tennant",
+        "Jundong Li",
+        "Song Wang"
+      ],
+      "abstract": "We demonstrate that graph neural network (GNN) embeddings of injector configurations provide a practical operational coordinate system for the Continuous Electron Beam Accelerator Facility (CEBAF) injector at Jefferson Lab. Using 137,389 snapshots spanning January 2022 through March 2023, we show that injector operation occupies a small number of persistent, well-separated neighborhoods in a 16-dimensional learned state space rather than a featureless continuum. Density-based clustering identifies ten recurring operating regimes with strong operational run alignment, and regime persistence statistics confirm that these regimes are stable over timescales of hours to weeks. Large relocations between neighborhoods are rare and episodic; 99.6% of one-hour operating windows fall within an empirically derived jitter baseline. Geometric outlier screening narrows a year-long dataset to a small set of intervals warranting operational review, and nearest-neighbor retrieval enables case-based reasoning over the historical archive. A controlled beam study validates that deliberate injector reconfiguration traces coherent, interpretable trajectories in embedding space. Together these capabilities demonstrate that machine-state embeddings support holistic operational monitoring in ways that single-channel inspection cannot.",
+      "date": "2026-04-07",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4023655652999878
+        },
+        {
+          "label": "Data Management",
+          "score": 0.39333879947662354
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2604.05914v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-04-08T05:11:35Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-08T05:11:35Z"
     }
   }
 }
