@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 127
+      "2026": 128
     },
     "per_category": {
       "Tools & Libraries": 202,
       "Novel Applications": 267,
-      "Others": 54,
+      "Others": 55,
       "Anomaly Detection & Fault Prediction": 65,
       "Statistics & Trends": 85,
       "Reinforcement Learning & Autonomous Systems": 74,
@@ -213,7 +213,8 @@
       "Engineering Structures": 1,
       "Bulletin of scientific research results": 1,
       "Machine Learning Science and Technology": 1,
-      "Journal of Phase Equilibria and Diffusion": 1
+      "Journal of Phase Equilibria and Diffusion": 1,
+      "Iconic Research and Engineering Journals": 1
     },
     "per_keyword": {
       "optimization": 82,
@@ -314,10 +315,10 @@
       "2026-01": 55,
       "2026-02": 28,
       "2026-03": 38,
-      "2026-04": 6
+      "2026-04": 7
     },
-    "last_updated": "2026-04-10T05:29:47.397476+00:00",
-    "next_update": "2026-04-11T05:29:47.397476+00:00"
+    "last_updated": "2026-04-11T04:59:34.060590+00:00",
+    "next_update": "2026-04-12T04:59:34.060590+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -21707,6 +21708,40 @@
       ],
       "history": [],
       "last_updated": "2026-04-09T05:13:28Z"
+    },
+    "('', '10.64388/irev9i9-1715277', 'impact of problem based learning on interest and achievement in mechanics among senior secondary physics students in fct abuja')": {
+      "id": "doi:10.64388/irev9i9-1715277",
+      "doi": "10.64388/irev9i9-1715277",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Impact of Problem-Based Learning On Interest and Achievement in Mechanics Among Senior Secondary Physics Students in Fct, Abuja",
+      "authors": [],
+      "abstract": "",
+      "date": "2026-04-10",
+      "year": 2026,
+      "venue": "Iconic Research and Engineering Journals",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.64388/irev9i9-1715277",
+        "crossref": "https://doi.org/10.64388/irev9i9-1715277"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-11T04:58:47Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-11T04:58:47Z"
     }
   }
 }
