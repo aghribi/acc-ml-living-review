@@ -12,15 +12,15 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 128
+      "2026": 130
     },
     "per_category": {
       "Tools & Libraries": 202,
-      "Novel Applications": 267,
-      "Others": 55,
+      "Novel Applications": 268,
+      "Others": 56,
       "Anomaly Detection & Fault Prediction": 65,
       "Statistics & Trends": 85,
-      "Reinforcement Learning & Autonomous Systems": 74,
+      "Reinforcement Learning & Autonomous Systems": 75,
       "Surrogate Models": 46,
       "Data Management": 45,
       "By Facility Type": 10,
@@ -214,14 +214,16 @@
       "Bulletin of scientific research results": 1,
       "Machine Learning Science and Technology": 1,
       "Journal of Phase Equilibria and Diffusion": 1,
-      "Iconic Research and Engineering Journals": 1
+      "Iconic Research and Engineering Journals": 1,
+      "IEEE Control Systems": 1,
+      "Radiation Oncology": 1
     },
     "per_keyword": {
       "optimization": 82,
-      "control": 80,
+      "control": 81,
       "surrogate model": 22,
       "transformer": 18,
-      "deep learning": 65,
+      "deep learning": 66,
       "proton therapy": 1,
       "beam": 147,
       "reinforcement learning": 43,
@@ -315,10 +317,10 @@
       "2026-01": 55,
       "2026-02": 28,
       "2026-03": 38,
-      "2026-04": 7
+      "2026-04": 9
     },
-    "last_updated": "2026-04-11T04:59:34.060590+00:00",
-    "next_update": "2026-04-12T04:59:34.060590+00:00"
+    "last_updated": "2026-04-12T05:28:27.441120+00:00",
+    "next_update": "2026-04-13T05:28:27.441120+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -14428,11 +14430,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.37268489599227905
+          "score": 0.3726848363876343
         },
         {
           "label": "Optimization & Control",
-          "score": 0.3611193299293518
+          "score": 0.36111927032470703
         }
       ],
       "keywords": [],
@@ -14560,11 +14562,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3726848363876343
+          "score": 0.37268489599227905
         },
         {
           "label": "Optimization & Control",
-          "score": 0.36111927032470703
+          "score": 0.3611193299293518
         }
       ],
       "keywords": [],
@@ -21742,6 +21744,91 @@
       ],
       "history": [],
       "last_updated": "2026-04-11T04:58:47Z"
+    },
+    "('', '10.1109/mcs.2025.3646850', 'adaptive control meets deep learning extremum seeking in latent space with particle accelerator applications')": {
+      "id": "doi:10.1109/mcs.2025.3646850",
+      "doi": "10.1109/mcs.2025.3646850",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Adaptive Control Meets Deep Learning: EXTREMUM SEEKING IN LATENT SPACE WITH PARTICLE ACCELERATOR APPLICATIONS",
+      "authors": [
+        "Alexander Scheinker"
+      ],
+      "abstract": "",
+      "date": "2026-04-01",
+      "year": 2026,
+      "venue": "IEEE Control Systems",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.46089887619018555
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.4390747547149658
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7152393492"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-04-12T05:27:42Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-12T05:27:42Z"
+    },
+    "('', '10.1186/s13014-026-02829-6', 'machine learning approach to estimation of in vivo measured dose and treatment planning for total body irradiation')": {
+      "id": "doi:10.1186/s13014-026-02829-6",
+      "doi": "10.1186/s13014-026-02829-6",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning approach to estimation of in vivo measured dose and treatment planning for total body irradiation",
+      "authors": [
+        "Sangmin Lee",
+        "Jung-in Kim",
+        "Seonghee Kang",
+        "Jaeman Son",
+        "Hyeongmin Jin",
+        "Chang Heon Choi",
+        "Jong Min Park",
+        "Joo Ho Lee",
+        "Ji Hyun Chang",
+        "Hyun-Cheol Kang",
+        "Seongmoon Jung"
+      ],
+      "abstract": "",
+      "date": "2026-04-11",
+      "year": 2026,
+      "venue": "Radiation Oncology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1186/s13014-026-02829-6",
+        "crossref": "https://doi.org/10.1186/s13014-026-02829-6"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-12T05:27:43Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-12T05:27:43Z"
     }
   }
 }
