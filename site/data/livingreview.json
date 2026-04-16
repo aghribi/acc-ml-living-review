@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 132
+      "2026": 133
     },
     "per_category": {
       "Tools & Libraries": 202,
       "Novel Applications": 268,
-      "Others": 58,
+      "Others": 59,
       "Anomaly Detection & Fault Prediction": 65,
       "Statistics & Trends": 85,
       "Reinforcement Learning & Autonomous Systems": 75,
@@ -218,7 +218,8 @@
       "IEEE Control Systems": 1,
       "Radiation Oncology": 1,
       "Medical &amp; Biological Engineering &amp; Computing": 1,
-      "INTERNATIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT": 1
+      "INTERNATIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT": 1,
+      "Vietnam Journal of Computer Science": 1
     },
     "per_keyword": {
       "optimization": 82,
@@ -319,10 +320,10 @@
       "2026-01": 55,
       "2026-02": 28,
       "2026-03": 38,
-      "2026-04": 11
+      "2026-04": 12
     },
-    "last_updated": "2026-04-15T05:28:40.002811+00:00",
-    "next_update": "2026-04-16T05:28:40.002811+00:00"
+    "last_updated": "2026-04-16T05:35:15.382268+00:00",
+    "next_update": "2026-04-17T05:35:15.382268+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -5407,11 +5408,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4225771427154541
+          "score": 0.4225772023200989
         },
         {
           "label": "Novel Applications",
-          "score": 0.4220990538597107
+          "score": 0.42209911346435547
         }
       ],
       "keywords": [],
@@ -17893,7 +17894,7 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5532279014587402
+          "score": 0.5532277822494507
         },
         {
           "label": "Novel Applications",
@@ -21910,6 +21911,43 @@
       ],
       "history": [],
       "last_updated": "2026-04-14T05:27:36Z"
+    },
+    "('', '10.1142/s2196888826500089', 'a coupling contrastive learning with biggest margin trees for classifying chest x ray images')": {
+      "id": "doi:10.1142/s2196888826500089",
+      "doi": "10.1142/s2196888826500089",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A Coupling Contrastive Learning with Biggest Margin Trees for Classifying Chest X-ray Images",
+      "authors": [
+        "Thanh-Nghi Do",
+        "Tri-Thuc Vo"
+      ],
+      "abstract": "<jats:p>This paper proposes a novel approach for improving chest X-ray image classification by integrating self-supervised representation learning with a new margin-based ensemble classifier. A major limitation of supervised learning in medical image analysis is its strong dependence on large labeled datasets, which are expensive and time-consuming to obtain. To address this issue, we leverage self-supervised learning to exploit abundant unlabeled X-ray images and learn informative visual representations before fine-tuning with limited labeled data. In addition, we introduce a new classification algorithm, termed Random Forest of Biggest Margin Trees (RF-BMT), designed to enhance multi-class classification by combining large-margin decision boundaries with ensemble learning. RF-BMT is trained on features extracted from a linear fine-tuned Momentum Contrast (MoCo) model with a ResNet50 backbone, and serves as an alternative to the conventional softmax classifier in deep networks. This design improves classification robustness and provides stronger generalization, particularly in limited-data settings. We evaluate the proposed approach on chest X-ray datasets containing multiple conditions, including normal, covid-19, edema, mass-nodule, and pneumothorax cases, under varying proportions of labeled training data. Experimental results demonstrate that the proposed method consistently outperforms standard classifiers and significantly improves the performance of the MoCo-based representation. In particular, RF-BMT achieves 86.2% accuracy using only 5% of the labeled training data (3,467 images), corresponding to a 7.4% improvement over the baseline, highlighting its effectiveness in limited-data scenarios. When trained with the full dataset, the model reaches 88.4% accuracy, demonstrating its robustness and scalability. These results show that combining self-supervised learning with the proposed RF-BMT classifier provides an effective and practical solution for medical image classification with limited labeled data.</jats:p>",
+      "date": "2026-04-16",
+      "year": 2026,
+      "venue": "Vietnam Journal of Computer Science",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1142/s2196888826500089",
+        "crossref": "https://doi.org/10.1142/s2196888826500089"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-16T05:34:31Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-16T05:34:31Z"
     }
   }
 }
