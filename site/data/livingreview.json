@@ -12,21 +12,21 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 139
+      "2026": 144
     },
     "per_category": {
-      "Tools & Libraries": 203,
+      "Tools & Libraries": 206,
       "Novel Applications": 268,
-      "Others": 60,
-      "Anomaly Detection & Fault Prediction": 69,
+      "Others": 61,
+      "Anomaly Detection & Fault Prediction": 70,
       "Statistics & Trends": 86,
-      "Reinforcement Learning & Autonomous Systems": 76,
-      "Surrogate Models": 46,
+      "Reinforcement Learning & Autonomous Systems": 78,
+      "Surrogate Models": 47,
       "Data Management": 45,
       "By Facility Type": 10,
       "RF Systems": 7,
-      "Operations & Control": 12,
-      "Beamline Design & Simulation": 33,
+      "Operations & Control": 14,
+      "Beamline Design & Simulation": 34,
       "Beam Dynamics": 12,
       "Reviews": 24,
       "Beam Diagnostics": 21,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 198,
+      "arXiv": 201,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -221,18 +221,20 @@
       "INTERNATIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT": 1,
       "Vietnam Journal of Computer Science": 1,
       "International Conference on Machine Vision, Intelligent Imaging, and Pattern Recognition (MVIIPR 2025)": 1,
-      "Journal of Ultrasound in Medicine": 1
+      "Journal of Ultrasound in Medicine": 1,
+      "Physical Review Letters": 1,
+      "Engineering Research Express": 1
     },
     "per_keyword": {
-      "optimization": 82,
-      "control": 81,
+      "optimization": 84,
+      "control": 84,
       "surrogate model": 22,
       "transformer": 18,
-      "deep learning": 68,
+      "deep learning": 69,
       "proton therapy": 1,
-      "beam": 147,
-      "reinforcement learning": 43,
-      "diagnostics": 34,
+      "beam": 149,
+      "reinforcement learning": 45,
+      "diagnostics": 35,
       "uncertainty quantification": 6,
       "anomaly detection": 21,
       "time series": 6,
@@ -322,10 +324,10 @@
       "2026-01": 55,
       "2026-02": 28,
       "2026-03": 38,
-      "2026-04": 18
+      "2026-04": 23
     },
-    "last_updated": "2026-04-21T05:32:18.712651+00:00",
-    "next_update": "2026-04-22T05:32:18.712651+00:00"
+    "last_updated": "2026-04-22T05:30:26.895860+00:00",
+    "next_update": "2026-04-23T05:30:26.895860+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1605,11 +1607,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4874720871448517
+          "score": 0.4874719977378845
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4670400619506836
+          "score": 0.4670400023460388
         },
         {
           "label": "Surrogate Models",
@@ -2871,7 +2873,7 @@
         },
         {
           "label": "Optimization & Control",
-          "score": 0.46389806270599365
+          "score": 0.4638980031013489
         }
       ],
       "keywords": [],
@@ -3067,7 +3069,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2609001100063324
+          "score": 0.26090008020401
         }
       ],
       "keywords": [],
@@ -3454,11 +3456,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4889257550239563
+          "score": 0.4889258146286011
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4669208824634552
+          "score": 0.4669209122657776
         }
       ],
       "keywords": [],
@@ -6507,7 +6509,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3100740313529968
+          "score": 0.31007400155067444
         },
         {
           "label": "Statistics & Trends",
@@ -10978,11 +10980,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4495397210121155
+          "score": 0.4495396614074707
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.36582523584365845
+          "score": 0.36582526564598083
         }
       ],
       "keywords": [],
@@ -11023,7 +11025,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3996780514717102
+          "score": 0.3996780216693878
         }
       ],
       "keywords": [],
@@ -12818,7 +12820,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4437161386013031
+          "score": 0.4437161087989807
         },
         {
           "label": "Tools & Libraries",
@@ -15615,11 +15617,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.42370539903640747
+          "score": 0.42370545864105225
         },
         {
           "label": "Novel Applications",
-          "score": 0.3880927562713623
+          "score": 0.38809269666671753
         }
       ],
       "keywords": [],
@@ -15654,11 +15656,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3197808563709259
+          "score": 0.3197808861732483
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.2705666720867157
+          "score": 0.2705666124820709
         },
         {
           "label": "Tools & Libraries",
@@ -19047,11 +19049,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.358214408159256
+          "score": 0.3582143187522888
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.30886298418045044
+          "score": 0.3088628947734833
         }
       ],
       "keywords": [],
@@ -19178,11 +19180,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.30884113907814026
+          "score": 0.30884116888046265
         },
         {
           "label": "Data Management",
-          "score": 0.2998725473880768
+          "score": 0.29987257719039917
         }
       ],
       "keywords": [],
@@ -22195,6 +22197,231 @@
       ],
       "history": [],
       "last_updated": "2026-04-21T05:31:32Z"
+    },
+    "('2604.19101', '', 'closing the loop deploying auto generating digital twins for particle accelerators')": {
+      "id": "arxiv:2604.19101",
+      "doi": null,
+      "arxiv_id": "2604.19101",
+      "inspire_id": null,
+      "title": "Closing the Loop: Deploying Auto-Generating Digital Twins for Particle Accelerators",
+      "authors": [
+        "A. D. Brynes",
+        "M. King",
+        "K. R. L. Baker",
+        "R. Banerjee",
+        "R. Clarke",
+        "D. J. Dunning",
+        "J. K. Jones",
+        "M. Leputa",
+        "A. E. Pollard",
+        "M. Romanovschi",
+        "M. Shaw",
+        "N. Ziyan"
+      ],
+      "abstract": "The simulation of a physical system in a virtual replica, known as a digital twin, is a useful way to interrogate the system non-invasively, providing the ability to perform predictive maintenance and surveillance, and to investigate potential novel configurations without perturbing the system. This article presents the implementation of an auto-generating digital twin architecture for particle accelerators: a virtual control system is generated to mirror the physical accelerator hardware, and used to update a simulation model which then feeds back the results into virtual diagnostics. All of the information about the accelerator lattice is cascaded down from a ground source of truth, removing any ambiguity about the naming of parameters between the simulation model and the virtual hardware. This design is modular and extensible, allowing researchers from different institutions to use their own models (for example, a machine learning model) and accelerator lattices while maintaining the overall structural coherence of the digital twin. This architecture has been tested for three accelerator facilities \\textendash~CLARA, the ISIS injector, and the proposed UK XFEL \\textendash~and aims to provide the foundation for a collaborative community effort in the development of shared technology towards a generic digital twin solution.",
+      "date": "2026-04-21",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Surrogate Models",
+          "score": 0.6724468469619751
+        },
+        {
+          "label": "Beamline Design & Simulation",
+          "score": 0.5790537595748901
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2604.19101v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-04-22T05:26:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-22T05:26:05Z"
+    },
+    "('2604.19146', '', 'rl abc reinforcement learning for accelerator beamline control')": {
+      "id": "arxiv:2604.19146",
+      "doi": null,
+      "arxiv_id": "2604.19146",
+      "inspire_id": null,
+      "title": "RL-ABC: Reinforcement Learning for Accelerator Beamline Control",
+      "authors": [
+        "Anwar Ibrahim",
+        "Fedor Ratnikov",
+        "Maxim Kaledin",
+        "Alexey Petrenko",
+        "Denis Derkach"
+      ],
+      "abstract": "Particle accelerator beamline optimization is a high-dimensional control problem traditionally requiring significant expert intervention. We present RLABC (Reinforcement Learning for Accelerator Beamline Control), an open-source Python framework that automatically transforms standard Elegant beamline configurations into reinforcement learning environments. RLABC integrates with the widely-used Elegant beam dynamics simulation code via SDDS-based interfaces, enabling researchers to apply modern RL algorithms to beamline optimization with minimal RL-specific development.\n  The main contribution is a general methodology for formulating beamline tuning as a Markov decision process: RLABC automatically preprocesses lattice files to insert diagnostic watch points before each tunable element, constructs a 57-dimensional state representation from beam statistics, covariance information, and aperture constraints, and provides a configurable reward function for transmission optimization. The framework supports multiple RL algorithms through Stable-Baselines3 compatibility and implements stage learning strategies for improved training efficiency.\n  Validation on a test beamline derived from the VEPP-5 injection complex (37 control parameters across 11 quadrupoles and 4 dipoles) demonstrates that the framework successfully enables RL-based optimization, with a Deep Deterministic Policy Gradient agent achieving 70.3\\% particle transmission -- performance matching established methods such as differential evolution. The framework's stage learning capability allows decomposition of complex optimization problems into manageable subproblems, improving training efficiency. The complete framework, including configuration files and example notebooks, is available as open-source software to facilitate adoption and further research.",
+      "date": "2026-04-21",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.531819760799408
+        },
+        {
+          "label": "Operations & Control",
+          "score": 0.4360371232032776
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2604.19146v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-04-22T05:27:14Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-22T05:27:14Z"
+    },
+    "('', '', 'rl abc reinforcement learning for accelerator beamline control')": {
+      "id": "hash:641161ed2ceb",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "RL-ABC: Reinforcement Learning for Accelerator Beamline Control",
+      "authors": [
+        "Ibrahim, Anwar",
+        "Ratnikov, Fedor",
+        "Kaledin, Maxim",
+        "Petrenko, Alexey",
+        "Derkach, Denis"
+      ],
+      "abstract": "Particle accelerator beamline optimization is a high-dimensional control problem traditionally requiring significant expert intervention. We present RLABC (Reinforcement Learning for Accelerator Beamline Control), an open-source Python framework that automatically transforms standard Elegant beamline configurations into reinforcement learning environments. RLABC integrates with the widely-used Elegant beam dynamics simulation code via SDDS-based interfaces, enabling researchers to apply modern RL algorithms to beamline optimization with minimal RL-specific development. The main contribution is a general methodology for formulating beamline tuning as a Markov decision process: RLABC automatically preprocesses lattice files to insert diagnostic watch points before each tunable element, constructs a 57-dimensional state representation from beam statistics, covariance information, and aperture constraints, and provides a configurable reward function for transmission optimization. The framework supports multiple RL algorithms through Stable-Baselines3 compatibility and implements stage learning strategies for improved training efficiency. Validation on a test beamline derived from the VEPP-5 injection complex (37 control parameters across 11 quadrupoles and 4 dipoles) demonstrates that the framework successfully enables RL-based optimization, with a Deep Deterministic Policy Gradient agent achieving 70.3% particle transmission -- performance matching established methods such as differential evolution. The framework's stage learning capability allows decomposition of complex optimization problems into manageable subproblems, improving training efficiency. The complete framework, including configuration files and example notebooks, is available as open-source software to facilitate adoption and further research.",
+      "date": "2026-04-21",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.531819760799408
+        },
+        {
+          "label": "Operations & Control",
+          "score": 0.4360371232032776
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3147465",
+        "arxiv": "https://arxiv.org/abs/2604.19146"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-04-22T05:29:27Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-22T05:29:27Z"
+    },
+    "('', '10.1103/33q9-76qp', 'efficient learning method to connect observables')": {
+      "id": "doi:10.1103/33q9-76qp",
+      "doi": "10.1103/33q9-76qp",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Efficient learning method to connect observables",
+      "authors": [
+        "Anonymous"
+      ],
+      "abstract": "",
+      "date": "2026-04-21",
+      "year": 2026,
+      "venue": "Physical Review Letters",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1103/33q9-76qp",
+        "crossref": "https://doi.org/10.1103/33q9-76qp"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-22T05:29:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-22T05:29:41Z"
+    },
+    "('', '10.1088/2631-8695/ae62cf', 'research on mechanical equipment defect detection based on optimized deep learning model with multiple attention mechanism')": {
+      "id": "doi:10.1088/2631-8695/ae62cf",
+      "doi": "10.1088/2631-8695/ae62cf",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Research on mechanical equipment defect detection based on optimized deep learning model with multiple attention mechanism",
+      "authors": [
+        "Longkai Liu",
+        "Xinru Wei",
+        "Shan Wang",
+        "Na Wang",
+        "Pingjuan Niu"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>To address the problems of low detection accuracy and insufficient recognition capabilities for small and crack-like defects in complex industrial environments, this paper proposes an improved model based on YOLOv12. Specifically, the SE attention module is embedded after the P4 and P5 layers of the backbone network, and a dual attention mechanism composed of SE and CA is introduced into the detection head to enhance the response to key feature channels and spatial positions. Comparative experiments on a bearing defect dataset show that the improved model achieves 4.5% improvement in mAP@0.5, 4.6% increase in accuracy, and 2.1% gain in recall compared with the original YOLOv12, and demonstrates obvious advantages in identifying complex defects. This study provides a high-precision defect detection solution for the intelligent maintenance of mechanical equipment, showing promising potential for practical engineering applications.</jats:p>",
+      "date": "2026-04-21",
+      "year": 2026,
+      "venue": "Engineering Research Express",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.3899850845336914
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.29425811767578125
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1088/2631-8695/ae62cf",
+        "crossref": "https://doi.org/10.1088/2631-8695/ae62cf"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-22T05:29:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-22T05:29:41Z"
     }
   }
 }
