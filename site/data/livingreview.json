@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 146
+      "2026": 147
     },
     "per_category": {
       "Tools & Libraries": 208,
       "Novel Applications": 268,
-      "Others": 61,
+      "Others": 62,
       "Anomaly Detection & Fault Prediction": 71,
       "Statistics & Trends": 87,
       "Reinforcement Learning & Autonomous Systems": 78,
@@ -90,7 +90,7 @@
       "Mechanisms and Machine Science": 1,
       "Advanced Functional Materials": 1,
       "Institute of Electrical and Electronics Engineers (IEEE)": 1,
-      "Arabian Journal for Science and Engineering": 1,
+      "Arabian Journal for Science and Engineering": 2,
       "Proceedings of the International Workshop on Application-driven Point Cloud Processing and 3D Vision": 1,
       "Lecture Notes in Networks and Systems": 6,
       "Applied and Computational Engineering": 1,
@@ -326,10 +326,10 @@
       "2026-01": 55,
       "2026-02": 28,
       "2026-03": 38,
-      "2026-04": 25
+      "2026-04": 26
     },
-    "last_updated": "2026-04-27T05:59:00.361660+00:00",
-    "next_update": "2026-04-28T05:59:00.361660+00:00"
+    "last_updated": "2026-04-28T06:06:57.745515+00:00",
+    "next_update": "2026-04-29T06:06:57.745515+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -11803,7 +11803,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5227453112602234
+          "score": 0.5227452516555786
         },
         {
           "label": "Reviews",
@@ -22513,6 +22513,45 @@
       ],
       "history": [],
       "last_updated": "2026-04-24T05:40:38Z"
+    },
+    "('', '10.1007/s13369-026-11302-1', 'experimental and machine learning based investigation of mechanical properties of basalt fiber composite mortars containing plastic waste and recycled concrete aggregate')": {
+      "id": "doi:10.1007/s13369-026-11302-1",
+      "doi": "10.1007/s13369-026-11302-1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Experimental and Machine Learning-Based Investigation of Mechanical Properties of Basalt Fiber Composite Mortars Containing Plastic Waste and Recycled Concrete Aggregate",
+      "authors": [
+        "Memduh Nas",
+        "Yılmaz Yılmaz",
+        "Safa Nayır",
+        "Vahiddin Alperen Baki"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>This study investigated the compressive strength (CS) and flexural strength (FS) of basalt fiber (BF)-reinforced composite mortars containing plastic waste aggregate (PA) and recycled concrete aggregate (RCA) using experimental and machine learning (ML)-based methods. Within this scope, a total of 64 mortar mixtures containing different ratios of PA, RCA and BF were prepared, and unit weight, CS and FS tests were performed on samples cured for 28 days. Datasets consisting of 64 data points each for CS and FS were created using the obtained experimental results. These datasets were trained using six different ML algorithms, and their performances were compared. Additionally, an analytical prediction equation was obtained using the multiple linear regression (MLR) method for CS prediction. The experimental results showed a general decreasing trend in CS with increasing PA and BF ratios. In contrast, increasing the BF ratio increased FS, and specimens containing 15% PA reached the highest FS values. The most successful results in CS and FS estimation were obtained with the extreme gradient boosting regressor (XGR) model, with average absolute errors (MAE) of 2.218 and 0.523 MPa, respectively. However, the MLR model produced an equation with an MAE of 2.069 MPa for CS prediction. This study demonstrates that the effects of PA and BF ratios on CS and FS can be reliably predicted using ML-based regression models with limited experimental datasets.</jats:p>",
+      "date": "2026-04-28",
+      "year": 2026,
+      "venue": "Arabian Journal for Science and Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s13369-026-11302-1",
+        "crossref": "https://doi.org/10.1007/s13369-026-11302-1"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-28T06:06:25Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-28T06:06:25Z"
     }
   }
 }
