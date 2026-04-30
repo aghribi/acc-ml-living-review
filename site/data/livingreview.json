@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 148
+      "2026": 151
     },
     "per_category": {
-      "Tools & Libraries": 208,
+      "Tools & Libraries": 209,
       "Novel Applications": 268,
-      "Others": 62,
-      "Anomaly Detection & Fault Prediction": 71,
+      "Others": 63,
+      "Anomaly Detection & Fault Prediction": 73,
       "Statistics & Trends": 87,
       "Reinforcement Learning & Autonomous Systems": 78,
       "Surrogate Models": 47,
@@ -28,7 +28,7 @@
       "Operations & Control": 14,
       "Beamline Design & Simulation": 35,
       "Beam Dynamics": 12,
-      "Reviews": 25,
+      "Reviews": 26,
       "Beam Diagnostics": 21,
       "Optimization & Control": 17
     },
@@ -226,14 +226,17 @@
       "Engineering Research Express": 1,
       "Engineering Computations": 1,
       "Научные исследования в современном мире. Теория и практика: сборник статей LII всероссийской (национальной) научной конференции (Санкт-Петербург, Март 2026)": 1,
-      "IEEE Transactions on Applied Superconductivity": 1
+      "IEEE Transactions on Applied Superconductivity": 1,
+      "World Journal of Advanced Research and Reviews": 1,
+      "International Journal for Research in Applied Science and Engineering Technology": 1,
+      "International Journal of Intelligent Engineering and Systems": 1
     },
     "per_keyword": {
       "optimization": 84,
       "control": 84,
       "surrogate model": 22,
       "transformer": 18,
-      "deep learning": 69,
+      "deep learning": 70,
       "proton therapy": 1,
       "beam": 149,
       "reinforcement learning": 45,
@@ -327,10 +330,10 @@
       "2026-01": 55,
       "2026-02": 28,
       "2026-03": 38,
-      "2026-04": 27
+      "2026-04": 30
     },
-    "last_updated": "2026-04-29T05:59:33.650486+00:00",
-    "next_update": "2026-04-30T05:59:33.650486+00:00"
+    "last_updated": "2026-04-30T06:08:39.542944+00:00",
+    "next_update": "2026-05-01T06:08:39.542944+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -4928,7 +4931,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.42438429594039917
+          "score": 0.4243842661380768
         }
       ],
       "keywords": [],
@@ -5791,11 +5794,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4207967519760132
+          "score": 0.42079678177833557
         },
         {
           "label": "Novel Applications",
-          "score": 0.41688773036003113
+          "score": 0.4168877601623535
         }
       ],
       "keywords": [],
@@ -22594,6 +22597,124 @@
       ],
       "history": [],
       "last_updated": "2026-04-29T05:58:44Z"
+    },
+    "('', '10.30574/wjarr.2026.30.1.0757', 'predictive maintenance of induction motors using machine learning a random forest based fault prediction approach')": {
+      "id": "doi:10.30574/wjarr.2026.30.1.0757",
+      "doi": "10.30574/wjarr.2026.30.1.0757",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Predictive maintenance of induction motors using machine learning: A random forest based fault prediction approach",
+      "authors": [
+        "Swati Sucharita Barik",
+        "Anjali Gaur",
+        "Amruta Kulkarni",
+        "Rasika Pardeshi",
+        "Saniya Satpute"
+      ],
+      "abstract": "<jats:p>Predictive maintenance has emerged as a critical approach for improving reliability and availability of industrial and electrical equipment. Traditional maintenance strategies often lead to unexpected failures, increased downtime, and high operational costs. With the advancement of machine learning techniques, data-driven predictive maintenance has become an effective solution for early fault detection and failure prediction. This paper presents a comprehensive review of machine learning based predictive maintenance techniques, focusing on commonly used algorithms such as Random Forest, Support Vector Machine (SVM), and XGBoost. The review discusses sensor data utilization, preprocessing techniques, model performance, applications in industry and defence systems, challenges, and future research directions.</jats:p>",
+      "date": "2026-04-30",
+      "year": 2026,
+      "venue": "World Journal of Advanced Research and Reviews",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.5997699499130249
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.30574/wjarr.2026.30.1.0757",
+        "crossref": "https://doi.org/10.30574/wjarr.2026.30.1.0757"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-30T06:07:51Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-30T06:07:51Z"
+    },
+    "('', '10.22214/ijraset.2026.80244', 'development of a machine vision based non contact metrology system for inspection of mechanical components')": {
+      "id": "doi:10.22214/ijraset.2026.80244",
+      "doi": "10.22214/ijraset.2026.80244",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Development of a Machine Vision Based Non-Contact Metrology System for Inspection of Mechanical Components",
+      "authors": [
+        "Prathmesh Shinde"
+      ],
+      "abstract": "<jats:p>Machine learning and automation have become an integral part of modern manufacturing industries, enabling faster,\nsmarter, and more reliable production processes.\nIndustrial operations can now be automated using advanced machine learning algorithms combined with high-resolution\nimaging systems, driving the transition toward Industry 4.0. The central idea of this project is to automate the visual inspection\nprocess with high-precision defect detection.\nOne of the major challenges in today’s factories is ensuring consistent quality inspection, as faulty components may still reach\ncustomers due to human error.\nThis project focuses on developing an AI-driven system capable of performing dimensional and structural analysis of\nmechanical components such as pinions, bolts, and nuts. A compact inspection setup is used with a high-resolution camera and\nprecision platform.\nThe captured images are processed using image processing and machine learning techniques to extract parameters and detect\ndefects accurately, ensuring consistency, reliability, and improved productivity</jats:p>",
+      "date": "2026-04-30",
+      "year": 2026,
+      "venue": "International Journal for Research in Applied Science and Engineering Technology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.3437303304672241
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.26009684801101685
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.22214/ijraset.2026.80244",
+        "crossref": "https://doi.org/10.22214/ijraset.2026.80244"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-30T06:07:51Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-30T06:07:51Z"
+    },
+    "('', '10.22266/ijies2026.0430.70', 'multi sensor fusion with hybrid deep learning convolutional neural network long short term memory for real time welding activity recognition and occupational safety compliance')": {
+      "id": "doi:10.22266/ijies2026.0430.70",
+      "doi": "10.22266/ijies2026.0430.70",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Multi-sensor Fusion with Hybrid Deep Learning Convolutional Neural Network-Long Short Term Memory for Real-time Welding Activity Recognition and Occupational Safety Compliance",
+      "authors": [],
+      "abstract": "",
+      "date": "2026-04-30",
+      "year": 2026,
+      "venue": "International Journal of Intelligent Engineering and Systems",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.22266/ijies2026.0430.70",
+        "crossref": "https://doi.org/10.22266/ijies2026.0430.70"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-04-30T06:07:51Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-04-30T06:07:51Z"
     }
   }
 }
