@@ -12,21 +12,21 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 152
+      "2026": 154
     },
     "per_category": {
       "Tools & Libraries": 209,
       "Novel Applications": 269,
       "Others": 63,
-      "Anomaly Detection & Fault Prediction": 74,
-      "Statistics & Trends": 87,
+      "Anomaly Detection & Fault Prediction": 75,
+      "Statistics & Trends": 88,
       "Reinforcement Learning & Autonomous Systems": 78,
       "Surrogate Models": 48,
       "Data Management": 45,
       "By Facility Type": 10,
-      "RF Systems": 8,
+      "RF Systems": 9,
       "Operations & Control": 14,
-      "Beamline Design & Simulation": 35,
+      "Beamline Design & Simulation": 36,
       "Beam Dynamics": 12,
       "Reviews": 26,
       "Beam Diagnostics": 21,
@@ -230,7 +230,9 @@
       "World Journal of Advanced Research and Reviews": 1,
       "International Journal for Research in Applied Science and Engineering Technology": 1,
       "International Journal of Intelligent Engineering and Systems": 1,
-      "IEEE Trans.Appl.Supercond.": 1
+      "IEEE Trans.Appl.Supercond.": 1,
+      "APL Machine Learning": 1,
+      "International Conference on Shape Memory and Superelastic Technologies": 1
     },
     "per_keyword": {
       "optimization": 84,
@@ -331,11 +333,11 @@
       "2026-01": 55,
       "2026-02": 28,
       "2026-03": 38,
-      "2026-04": 30,
-      "2026-05": 1
+      "2026-04": 31,
+      "2026-05": 2
     },
-    "last_updated": "2026-05-03T06:09:28.226230+00:00",
-    "next_update": "2026-05-04T06:09:28.226230+00:00"
+    "last_updated": "2026-05-04T06:21:11.567749+00:00",
+    "next_update": "2026-05-05T06:21:11.567749+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -22765,6 +22767,90 @@
       ],
       "history": [],
       "last_updated": "2026-05-01T06:20:16Z"
+    },
+    "('', '10.1063/5.0333133', 'machine learning for mapping multipactor susceptibility in rf systems capabilities and generalization constraints')": {
+      "id": "doi:10.1063/5.0333133",
+      "doi": "10.1063/5.0333133",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine learning for mapping multipactor susceptibility in RF systems: Capabilities and generalization constraints",
+      "authors": [
+        "Asif Iqbal",
+        "John Verboncoeur",
+        "Peng Zhang"
+      ],
+      "abstract": "",
+      "date": "2026-04-29",
+      "year": 2026,
+      "venue": "APL Machine Learning",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.3343411684036255
+        },
+        {
+          "label": "RF Systems",
+          "score": 0.2884836196899414
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7159631672"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-05-04T06:20:26Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-04T06:20:26Z"
+    },
+    "('', '10.31399/asm.cp.smst2026p0028', 'how to overcome limitations of the abaqus superelasticity material model with reduced order modeling and machine learning')": {
+      "id": "doi:10.31399/asm.cp.smst2026p0028",
+      "doi": "10.31399/asm.cp.smst2026p0028",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "How to Overcome Limitations of the Abaqus Superelasticity Material Model with Reduced Order Modeling and Machine Learning",
+      "authors": [
+        "M. Fassin",
+        "C. Degel",
+        "P. Hempel",
+        "K. Schulz"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Standard constitutive models such as the Abaqus superelasticity model suffer key limitations in practical engineering workflows for nitinol applications—including oversimplified compression behavior, failure to capture residual elongation after superelastic unloading, and inaccurate unloading response following plastic deformation. This work demonstrates two of these shortcomings through Abaqus finite element simulations and proposes corresponding remedies: reduced-order modeling (ROM) for complex constitutive relations and machine learning approaches, including physics-informed neural networks (PINNs), with initial results presented for the latter.</jats:p>",
+      "date": "2026-05-04",
+      "year": 2026,
+      "venue": "International Conference on Shape Memory and Superelastic Technologies",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Statistics & Trends",
+          "score": 0.25447338819503784
+        },
+        {
+          "label": "Beamline Design & Simulation",
+          "score": 0.2521308958530426
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.31399/asm.cp.smst2026p0028",
+        "crossref": "https://doi.org/10.31399/asm.cp.smst2026p0028"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-05-04T06:20:28Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-04T06:20:28Z"
     }
   }
 }
