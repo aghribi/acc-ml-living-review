@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 157
+      "2026": 158
     },
     "per_category": {
       "Tools & Libraries": 209,
       "Novel Applications": 270,
       "Others": 63,
-      "Anomaly Detection & Fault Prediction": 76,
+      "Anomaly Detection & Fault Prediction": 77,
       "Statistics & Trends": 88,
       "Reinforcement Learning & Autonomous Systems": 79,
       "Surrogate Models": 48,
@@ -123,7 +123,7 @@
       "Results in Engineering": 2,
       "International Journal of Particle Therapy": 1,
       "International Journal of Scientific Research in Engineering and Management": 1,
-      "Journal of Mechanical Science and Technology": 1,
+      "Journal of Mechanical Science and Technology": 2,
       "Springer Link (Chiba Institute of Technology)": 1,
       "Simula SpringerBriefs on Computing": 1,
       "International Journal of Middle East Studies": 1,
@@ -241,7 +241,7 @@
       "control": 85,
       "surrogate model": 22,
       "transformer": 18,
-      "deep learning": 70,
+      "deep learning": 71,
       "proton therapy": 1,
       "beam": 150,
       "reinforcement learning": 45,
@@ -336,10 +336,10 @@
       "2026-02": 28,
       "2026-03": 38,
       "2026-04": 31,
-      "2026-05": 5
+      "2026-05": 6
     },
-    "last_updated": "2026-05-10T06:16:43.691859+00:00",
-    "next_update": "2026-05-11T06:16:43.691859+00:00"
+    "last_updated": "2026-05-11T07:31:59.933959+00:00",
+    "next_update": "2026-05-12T07:31:59.933959+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -22970,6 +22970,44 @@
       ],
       "history": [],
       "last_updated": "2026-05-07T06:16:35Z"
+    },
+    "('', '10.1007/s12206-026-0410-y', 'defect prediction for magnetorheological damper using a deep learning based clstm classifier')": {
+      "id": "doi:10.1007/s12206-026-0410-y",
+      "doi": "10.1007/s12206-026-0410-y",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Defect prediction for magnetorheological damper using a deep learning-based CLSTM classifier",
+      "authors": [
+        "Yoon-Mok Kim",
+        "Jong-Seok Oh",
+        "Bo-Gyu Kim"
+      ],
+      "abstract": "",
+      "date": "2026-05-11",
+      "year": 2026,
+      "venue": "Journal of Mechanical Science and Technology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.353196382522583
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s12206-026-0410-y",
+        "crossref": "https://doi.org/10.1007/s12206-026-0410-y"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-05-11T07:31:20Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-11T07:31:20Z"
     }
   }
 }
