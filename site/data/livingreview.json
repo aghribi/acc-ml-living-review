@@ -12,7 +12,7 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 166
+      "2026": 167
     },
     "per_category": {
       "Tools & Libraries": 213,
@@ -28,7 +28,7 @@
       "Operations & Control": 14,
       "Beamline Design & Simulation": 36,
       "Beam Dynamics": 12,
-      "Reviews": 26,
+      "Reviews": 27,
       "Beam Diagnostics": 21,
       "Optimization & Control": 20
     },
@@ -45,7 +45,7 @@
       "ACM Transactions on Embedded Computing Systems": 1,
       "Meeting abstracts/Meeting abstracts (Electrochemical Society. CD-ROM)": 1,
       "Nuclear Science and Techniques": 1,
-      "Dentomaxillofacial Radiology": 1,
+      "Dentomaxillofacial Radiology": 2,
       "EPJ Web Conf.": 3,
       "Proc.SPIE Int.Soc.Opt.Eng.": 2,
       "SoftwareX": 1,
@@ -244,10 +244,10 @@
     },
     "per_keyword": {
       "optimization": 85,
-      "control": 86,
+      "control": 87,
       "surrogate model": 22,
-      "transformer": 19,
-      "deep learning": 71,
+      "transformer": 20,
+      "deep learning": 72,
       "proton therapy": 1,
       "beam": 150,
       "reinforcement learning": 47,
@@ -342,10 +342,10 @@
       "2026-02": 28,
       "2026-03": 38,
       "2026-04": 31,
-      "2026-05": 14
+      "2026-05": 15
     },
-    "last_updated": "2026-05-15T06:50:11.418976+00:00",
-    "next_update": "2026-05-16T06:50:11.418976+00:00"
+    "last_updated": "2026-05-16T05:59:30.335997+00:00",
+    "next_update": "2026-05-17T05:59:30.335997+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -5084,11 +5084,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5805788636207581
+          "score": 0.5805789232254028
         },
         {
           "label": "Novel Applications",
-          "score": 0.5574472546577454
+          "score": 0.5574473142623901
         },
         {
           "label": "Surrogate Models",
@@ -15498,7 +15498,7 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905858755111694
+          "score": 0.3290586471557617
         },
         {
           "label": "Tools & Libraries",
@@ -17451,11 +17451,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5344232320785522
+          "score": 0.5344231724739075
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.5010966658592224
+          "score": 0.5010966062545776
         }
       ],
       "keywords": [],
@@ -20633,7 +20633,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.3201221823692322
+          "score": 0.32012227177619934
         },
         {
           "label": "Statistics & Trends",
@@ -23351,6 +23351,49 @@
       ],
       "history": [],
       "last_updated": "2026-05-15T06:49:29Z"
+    },
+    "('', '10.1093/dmfr/twag021', 'a multi task deep learning model for quality control of periapical radiographs simultaneous technical error classification and quality grading')": {
+      "id": "doi:10.1093/dmfr/twag021",
+      "doi": "10.1093/dmfr/twag021",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A Multi-Task Deep Learning Model for Quality Control of Periapical Radiographs: Simultaneous Technical Error Classification and Quality Grading",
+      "authors": [
+        "Wen Fang",
+        "Leqi Liu",
+        "Xiaokan Wang",
+        "Jun Wang",
+        "Yuqing Meng",
+        "Keying Wu",
+        "Tie Liu",
+        "Bin Feng"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Objectives</jats:title>\n                    <jats:p>To develop a multi-task deep learning model for the automated quality control of periapical radiographs, integrating identification of technical errors with standardized quality grading.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A dataset of 3510 periapical radiographs was curated from two centers for model development and external validation. We developed a multi-task deep learning model to simultaneously perform: (1) multi-label classification of six common technical errors (positioning, processing, exposure, and angulation issues); and (2) hierarchical quality grading according to two established standards: the National Radiological Protection Board (NRPB: Grades 1-3) and the College of General Dentistry (CGDent: Ranks A-B). Model performance was evaluated using ROC-AUC, sensitivity, specificity, precision, accuracy, and F1-score on both internal and external test sets. Furthermore, the model’s efficiency gain in daily quality control workflows was quantified.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>Among five widely-adopted Convolutional Neural Networks (CNNs) and transformer architectures evaluated, EfficientNet was selected as the optimal backbone. The final model identified technical errors with high performance on the external test set (sensitivity: 0.690-0.905; specificity: 0.965-0.995; AUC: 0.842-0.978). For quality grading, it achieved strong results for both trichotomous NRPB grading (sensitivity: 0.835-0.920; specificity: 0.881-0.989; AUC: 0.940-0.960) and binary ranking (sensitivity: 0.835-0.989; specificity: 0.835-0.989; AUC: 0.959).The system demonstrated superior computational efficiency, reducing the cumulative assessment time for a typical daily workload from over 32 minutes (manual review) to approximately 1.1 seconds. Grad-CAM visualizations confirmed the model’s focus was aligned with technical errors, supporting clinical interpretability.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>This multi-task model efficiently automates radiographic quality control by identifying technical errors and assigning quality grades. It offers significant potential to standardize quality assurance and streamline dental workflows.</jats:p>\n                  </jats:sec>",
+      "date": "2026-05-15",
+      "year": 2026,
+      "venue": "Dentomaxillofacial Radiology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reviews",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1093/dmfr/twag021",
+        "crossref": "https://doi.org/10.1093/dmfr/twag021"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-05-16T05:58:43Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-16T05:58:43Z"
     }
   }
 }
