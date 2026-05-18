@@ -12,15 +12,15 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 167
+      "2026": 169
     },
     "per_category": {
       "Tools & Libraries": 213,
       "Novel Applications": 273,
       "Others": 64,
-      "Anomaly Detection & Fault Prediction": 78,
+      "Anomaly Detection & Fault Prediction": 79,
       "Statistics & Trends": 88,
-      "Reinforcement Learning & Autonomous Systems": 82,
+      "Reinforcement Learning & Autonomous Systems": 83,
       "Surrogate Models": 48,
       "Data Management": 45,
       "By Facility Type": 10,
@@ -240,7 +240,9 @@
       "Physica Scripta": 1,
       "Welding in the World": 1,
       "Railway Sciences": 1,
-      "ArXiv.org": 1
+      "ArXiv.org": 1,
+      "CINECA IRIS Institutial Research Information System (University of Genoa)": 1,
+      "Creating Learning Systems for Higher Education": 1
     },
     "per_keyword": {
       "optimization": 85,
@@ -342,10 +344,10 @@
       "2026-02": 28,
       "2026-03": 38,
       "2026-04": 31,
-      "2026-05": 15
+      "2026-05": 17
     },
-    "last_updated": "2026-05-17T06:54:24.950499+00:00",
-    "next_update": "2026-05-18T06:54:24.950499+00:00"
+    "last_updated": "2026-05-18T07:44:22.872063+00:00",
+    "next_update": "2026-05-19T07:44:22.872063+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1423,7 +1425,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5897580981254578
+          "score": 0.5897579789161682
         }
       ],
       "keywords": [],
@@ -14199,7 +14201,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.43211114406585693
+          "score": 0.4321112036705017
         }
       ],
       "keywords": [],
@@ -14321,7 +14323,7 @@
         },
         {
           "label": "Operations & Control",
-          "score": 0.3088068962097168
+          "score": 0.3088069558143616
         }
       ],
       "keywords": [],
@@ -15371,7 +15373,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2686596214771271
+          "score": 0.26865965127944946
         }
       ],
       "keywords": [],
@@ -15453,11 +15455,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3290586471557617
+          "score": 0.32905852794647217
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2815614938735962
+          "score": 0.28156140446662903
         }
       ],
       "keywords": [],
@@ -15498,11 +15500,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3290586471557617
+          "score": 0.32905852794647217
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2815614938735962
+          "score": 0.28156140446662903
         }
       ],
       "keywords": [],
@@ -17279,7 +17281,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2539708614349365
+          "score": 0.2539709210395813
         }
       ],
       "keywords": [],
@@ -19362,11 +19364,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5644471645355225
+          "score": 0.5644472241401672
         },
         {
           "label": "Novel Applications",
-          "score": 0.5532749891281128
+          "score": 0.5532750487327576
         }
       ],
       "keywords": [],
@@ -23069,11 +23071,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4649292826652527
+          "score": 0.4649291932582855
         },
         {
           "label": "Optimization & Control",
-          "score": 0.27487263083457947
+          "score": 0.27487266063690186
         }
       ],
       "keywords": [],
@@ -23394,6 +23396,77 @@
       ],
       "history": [],
       "last_updated": "2026-05-16T05:58:43Z"
+    },
+    "('', '', 'advanced machine learning enabled modern power system')": {
+      "id": "hash:deff8ee16497",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Advanced Machine Learning Enabled Modern Power System",
+      "authors": [
+        "Muhammad Asim Amin"
+      ],
+      "abstract": "",
+      "date": "2026-05-18",
+      "year": 2026,
+      "venue": "CINECA IRIS Institutial Research Information System (University of Genoa)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.3342321813106537
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7159737020"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-05-18T07:43:31Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-18T07:43:31Z"
+    },
+    "('', '10.1108/978-1-80686-539-020261006', 'quantum phenomena')": {
+      "id": "doi:10.1108/978-1-80686-539-020261006",
+      "doi": "10.1108/978-1-80686-539-020261006",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Quantum Phenomena",
+      "authors": [
+        "John N. Moye"
+      ],
+      "abstract": "<jats:p>This chapter summarizes the quantum phenomena that explain various operations in quantum physics and bear relevance and application to the field of psychophysical learning. While these are much more complex than discussed, the important and functional concepts that can be used to model learning objects, artifacts, and events are presented as a method to validate quantum learning experiences and the quantum phenomena that make the connections with learning field design.</jats:p>",
+      "date": "2026-05-18",
+      "year": 2026,
+      "venue": "Creating Learning Systems for Higher Education",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.2969740331172943
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1108/978-1-80686-539-020261006",
+        "crossref": "https://doi.org/10.1108/978-1-80686-539-020261006"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-05-18T07:43:33Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-18T07:43:33Z"
     }
   }
 }
