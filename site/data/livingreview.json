@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 169
+      "2026": 172
     },
     "per_category": {
-      "Tools & Libraries": 213,
+      "Tools & Libraries": 214,
       "Novel Applications": 273,
-      "Others": 64,
-      "Anomaly Detection & Fault Prediction": 79,
+      "Others": 65,
+      "Anomaly Detection & Fault Prediction": 80,
       "Statistics & Trends": 88,
       "Reinforcement Learning & Autonomous Systems": 83,
       "Surrogate Models": 48,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 201,
+      "arXiv": 202,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -242,14 +242,16 @@
       "Railway Sciences": 1,
       "ArXiv.org": 1,
       "CINECA IRIS Institutial Research Information System (University of Genoa)": 1,
-      "Creating Learning Systems for Higher Education": 1
+      "Creating Learning Systems for Higher Education": 1,
+      "npj Quantum Materials": 1,
+      "Odontology": 1
     },
     "per_keyword": {
       "optimization": 85,
       "control": 87,
       "surrogate model": 22,
       "transformer": 20,
-      "deep learning": 72,
+      "deep learning": 73,
       "proton therapy": 1,
       "beam": 150,
       "reinforcement learning": 47,
@@ -344,10 +346,10 @@
       "2026-02": 28,
       "2026-03": 38,
       "2026-04": 31,
-      "2026-05": 17
+      "2026-05": 20
     },
-    "last_updated": "2026-05-20T07:20:34.929569+00:00",
-    "next_update": "2026-05-21T07:20:34.929569+00:00"
+    "last_updated": "2026-05-21T07:41:46.505469+00:00",
+    "next_update": "2026-05-22T07:41:46.505469+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -5854,7 +5856,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.376841276884079
+          "score": 0.3768412470817566
         }
       ],
       "keywords": [],
@@ -7408,7 +7410,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.41203930974006653
+          "score": 0.41203927993774414
         },
         {
           "label": "Data Management",
@@ -7652,11 +7654,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.44447061419487
+          "score": 0.44447052478790283
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.39732110500335693
+          "score": 0.39732104539871216
         },
         {
           "label": "Tools & Libraries",
@@ -12745,7 +12747,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5601047873497009
+          "score": 0.5601048469543457
         },
         {
           "label": "Tools & Libraries",
@@ -12793,7 +12795,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5601047873497009
+          "score": 0.5601048469543457
         },
         {
           "label": "Tools & Libraries",
@@ -13141,7 +13143,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2941647171974182
+          "score": 0.2941647469997406
         }
       ],
       "keywords": [],
@@ -21070,11 +21072,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.6253108978271484
+          "score": 0.625311017036438
         },
         {
           "label": "Data Management",
-          "score": 0.5941317677497864
+          "score": 0.5941318273544312
         },
         {
           "label": "Tools & Libraries",
@@ -23414,7 +23416,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3342321813106537
+          "score": 0.3342322111129761
         }
       ],
       "keywords": [],
@@ -23467,6 +23469,125 @@
       ],
       "history": [],
       "last_updated": "2026-05-18T07:43:33Z"
+    },
+    "('2605.20988', '', 'a sharper picture of generalization in transformers')": {
+      "id": "arxiv:2605.20988",
+      "doi": null,
+      "arxiv_id": "2605.20988",
+      "inspire_id": null,
+      "title": "A Sharper Picture of Generalization in Transformers",
+      "authors": [
+        "Paul Lintilhac",
+        "Sair Shaikh"
+      ],
+      "abstract": "We study transformers' generalization behavior on boolean domains from the perspective of the Fourier Spectra of their target functions. In contrast to prior work (Edelman et al., 2022; Trauger and Tewari, 2024), which derived generalization bounds from Rademacher complexity, we investigate the feasibility of obtaining generalization bounds via PAC-Bayes theory. We show that sparse spectra concentrated on low-degree components enable low-sharpness constructions with good generalization properties. Our idea is to show the existence of flat minima implementing any boolean function of sparsity no greater than the context length, and then apply a PAC-Bayes bound to an idealized low-sharpness learner, resulting in a non-vacuous generalization bound. We evaluate predictions empirically and conduct a mechanistic interpretability study to support the realism of our theoretical construction in real transformers.",
+      "date": "2026-05-20",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.2663534879684448
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2605.20988v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-05-21T07:40:28Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-21T07:40:28Z"
+    },
+    "('', '10.1038/s41535-026-00891-7', 'the diffusion driven orthorhombic to tetragonal transition in yba2cu3o7 derived with a machine learning interatomic potential')": {
+      "id": "doi:10.1038/s41535-026-00891-7",
+      "doi": "10.1038/s41535-026-00891-7",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "The diffusion-driven orthorhombic to tetragonal transition in YBa2Cu3O7 derived with a machine learning interatomic potential",
+      "authors": [
+        "Davide Gambino",
+        "Niccolò Di Eugenio",
+        "Jesper Byggmästar",
+        "Johan Klarbring",
+        "Daniele Torsello",
+        "Flyura Djurabekova",
+        "Francesco Laviano"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Defects in high-temperature superconductors such as YBa\n                    <jats:sub>2</jats:sub>\n                    Cu\n                    <jats:sub>3</jats:sub>\n                    O\n                    <jats:sub>7</jats:sub>\n                    (YBCO) critically influence their superconducting behavior, as they substantially degrade or even suppress superconductivity. With the renewed interest in cuprates for next-generation superconducting magnets operating in radiation-harsh environments such as fusion reactors and particle accelerators, accurate atomistic modeling of defects and their dynamics has become essential. Here, we present a general-purpose machine-learning interatomic potential for YBCO, based on the Atomic Cluster Expansion (ACE) method and trained on density functional theory (DFT) data, with particular emphasis on defects and their diffusion mechanisms. The potential is validated against DFT calculations of ground-state properties, defect formation energies of oxygen Frenkel pairs, and diffusion barriers for their formation. Remarkably, the potential captures the diffusion-driven orthorhombic to tetragonal transition at elevated temperatures, a transformation that is difficult to describe with empirical potentials, elucidating how the formation of oxygen Frenkel pairs in the basal plane governs this order-disorder transition. The ACE potential introduced here enables large-scale, predictive atomistic simulations of defect dynamics and transport processes in YBCO, providing a powerful tool to explore its stability, performance, and functionality under realistic operating conditions. Moreover, this work proves that machine learning interatomic potentials are suitable for studies of quaternary oxides with complex chemistry.\n                  </jats:p>",
+      "date": "2026-05-21",
+      "year": 2026,
+      "venue": "npj Quantum Materials",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1038/s41535-026-00891-7",
+        "crossref": "https://doi.org/10.1038/s41535-026-00891-7"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-05-21T07:41:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-21T07:41:05Z"
+    },
+    "('', '10.1007/s10266-026-01409-0', 'multi class anatomical landmark detection in periapical radiographs with deep learning')": {
+      "id": "doi:10.1007/s10266-026-01409-0",
+      "doi": "10.1007/s10266-026-01409-0",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Multi-class anatomical landmark detection in periapical radiographs with deep learning",
+      "authors": [
+        "Cansu Buyuk",
+        "Alperen Saruhan",
+        "Fatma Yuce",
+        "Ozer Celik",
+        "Elif Bilgir",
+        "İbrahim Sevki Bayrakdar"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>This study aims to develop a deep learning model for the detection and segmentation of multiple anatomical landmarks on periapical radiographs from the maxilla and mandible. A total of 1930 paralleling-technique periapical radiographs with 21 annotated anatomical landmarks were divided into training (80%), validation (10%), and test (10%) sets. Geometry-preserving preprocessing was applied before dataset splitting, while appearance-based augmentation was performed exclusively on the training subset after the split. A YOLOv8x-seg architecture was trained for multi-class detection and instance segmentation. Performance was evaluated using precision, recall, F1-score, Dice coefficient, Intersection-over-Union, mean average precision, and receiver operating characteristic analysis. The model demonstrated stable training and consistent performance. Overall precision, recall, and F1-score were 0.820, 0.725, and 0.769, respectively, with an overall Dice coefficient of 0.621. High detection accuracy was achieved for well-defined structures such as the maxillary sinus, nasal fossa, nasal fossa floor, and nasal septum, whereas low-contrast landmarks showed reduced performance. Confidence-dependent analysis indicated optimal performance at low confidence thresholds (approximately 0.05–0.10). In conclusion, the proposed model effectively detected major anatomical landmarks on periapical radiographs while demonstrating expected limitations for small or low-contrast structures. Despite substantial anatomical variability across maxillary and mandibular regions, anterior–posterior sites, and projection-dependent appearances of similar structures, these findings demonstrate that deep learning can reliably identify key anatomical landmarks, supporting safer, more consistent, and clinically meaningful radiographic interpretation in routine dental practice.</jats:p>",
+      "date": "2026-05-21",
+      "year": 2026,
+      "venue": "Odontology",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s10266-026-01409-0",
+        "crossref": "https://doi.org/10.1007/s10266-026-01409-0"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-05-21T07:41:05Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-21T07:41:05Z"
     }
   }
 }
