@@ -12,11 +12,11 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 172
+      "2026": 173
     },
     "per_category": {
-      "Tools & Libraries": 214,
-      "Novel Applications": 273,
+      "Tools & Libraries": 215,
+      "Novel Applications": 274,
       "Others": 65,
       "Anomaly Detection & Fault Prediction": 80,
       "Statistics & Trends": 88,
@@ -100,7 +100,7 @@
       "International Journal of Structural Integrity": 2,
       "Machine Learning: Science and Technology": 3,
       "Anais do Encontro Nacional de Engenharia de Produção": 1,
-      "arXiv (Cornell University)": 10,
+      "arXiv (Cornell University)": 11,
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
       "Measurement Science and Technology": 2,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
@@ -346,10 +346,10 @@
       "2026-02": 28,
       "2026-03": 38,
       "2026-04": 31,
-      "2026-05": 20
+      "2026-05": 21
     },
-    "last_updated": "2026-05-21T07:41:46.505469+00:00",
-    "next_update": "2026-05-22T07:41:46.505469+00:00"
+    "last_updated": "2026-05-22T06:54:38.151553+00:00",
+    "next_update": "2026-05-23T06:54:38.151553+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -17624,7 +17624,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.30895698070526123
+          "score": 0.30895692110061646
         }
       ],
       "keywords": [],
@@ -23588,6 +23588,47 @@
       ],
       "history": [],
       "last_updated": "2026-05-21T07:41:05Z"
+    },
+    "('', '10.48550/arxiv.2605.19405', 'a complete discussion on fully reconfigurable digital scalable graph and sparsity aware near memory accelerator for graph neural networks')": {
+      "id": "doi:10.48550/arxiv.2605.19405",
+      "doi": "10.48550/arxiv.2605.19405",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A complete discussion on fully reconfigurable, digital, scalable, graph and sparsity-aware near-memory accelerator for graph neural networks",
+      "authors": [
+        "Siddhartha Raman Sundara Raman",
+        "LIZY JOHN",
+        "Jaydeep P. Kulkarni"
+      ],
+      "abstract": "",
+      "date": "2026-05-19",
+      "year": 2026,
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3678019046783447
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.35441845655441284
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7161826602"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-05-22T06:53:40Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-22T06:53:40Z"
     }
   }
 }
