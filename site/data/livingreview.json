@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 173
+      "2026": 175
     },
     "per_category": {
-      "Tools & Libraries": 215,
-      "Novel Applications": 274,
-      "Others": 65,
+      "Tools & Libraries": 216,
+      "Novel Applications": 275,
+      "Others": 66,
       "Anomaly Detection & Fault Prediction": 80,
       "Statistics & Trends": 88,
       "Reinforcement Learning & Autonomous Systems": 83,
@@ -129,7 +129,7 @@
       "International Journal of Middle East Studies": 1,
       "Berufsbildung": 1,
       "Computer Applications in Engineering Education": 1,
-      "Scientific Reports": 7,
+      "Scientific Reports": 8,
       "Science and Technology of Engineering, Chemistry and Environmental Protection": 1,
       "Вісник науки та освіти": 1,
       "Real-Time Artificial Intelligence (AI)": 1,
@@ -240,7 +240,7 @@
       "Physica Scripta": 1,
       "Welding in the World": 1,
       "Railway Sciences": 1,
-      "ArXiv.org": 1,
+      "ArXiv.org": 2,
       "CINECA IRIS Institutial Research Information System (University of Genoa)": 1,
       "Creating Learning Systems for Higher Education": 1,
       "npj Quantum Materials": 1,
@@ -251,7 +251,7 @@
       "control": 87,
       "surrogate model": 22,
       "transformer": 20,
-      "deep learning": 73,
+      "deep learning": 74,
       "proton therapy": 1,
       "beam": 150,
       "reinforcement learning": 47,
@@ -346,10 +346,10 @@
       "2026-02": 28,
       "2026-03": 38,
       "2026-04": 31,
-      "2026-05": 21
+      "2026-05": 23
     },
-    "last_updated": "2026-05-22T06:54:38.151553+00:00",
-    "next_update": "2026-05-23T06:54:38.151553+00:00"
+    "last_updated": "2026-05-23T06:17:24.788552+00:00",
+    "next_update": "2026-05-24T06:17:24.788552+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -1427,7 +1427,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5897579789161682
+          "score": 0.589758038520813
         }
       ],
       "keywords": [],
@@ -13143,7 +13143,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.2941647469997406
+          "score": 0.2941647171974182
         }
       ],
       "keywords": [],
@@ -13267,11 +13267,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.30415770411491394
+          "score": 0.30415767431259155
         },
         {
           "label": "Operations & Control",
-          "score": 0.27956464886665344
+          "score": 0.2795645594596863
         }
       ],
       "keywords": [],
@@ -14325,7 +14325,7 @@
         },
         {
           "label": "Operations & Control",
-          "score": 0.3088069558143616
+          "score": 0.3088068962097168
         }
       ],
       "keywords": [],
@@ -15375,7 +15375,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.26865965127944946
+          "score": 0.2686595320701599
         }
       ],
       "keywords": [],
@@ -15457,11 +15457,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905852794647217
+          "score": 0.32905858755111694
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.28156140446662903
+          "score": 0.2815614938735962
         }
       ],
       "keywords": [],
@@ -15502,11 +15502,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.32905852794647217
+          "score": 0.32905858755111694
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.28156140446662903
+          "score": 0.2815614938735962
         }
       ],
       "keywords": [],
@@ -17624,7 +17624,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.30895692110061646
+          "score": 0.30895698070526123
         }
       ],
       "keywords": [],
@@ -19366,11 +19366,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5644472241401672
+          "score": 0.564447283744812
         },
         {
           "label": "Novel Applications",
-          "score": 0.5532750487327576
+          "score": 0.5532751083374023
         }
       ],
       "keywords": [],
@@ -22592,11 +22592,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.2822446823120117
+          "score": 0.2822447419166565
         },
         {
           "label": "RF Systems",
-          "score": 0.2813583314418793
+          "score": 0.2813583016395569
         }
       ],
       "keywords": [],
@@ -23416,7 +23416,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3342322111129761
+          "score": 0.3342321813106537
         }
       ],
       "keywords": [],
@@ -23629,6 +23629,89 @@
       ],
       "history": [],
       "last_updated": "2026-05-22T06:53:40Z"
+    },
+    "('', '', 'a complete discussion on fully reconfigurable digital scalable graph and sparsity aware near memory accelerator for graph neural networks')": {
+      "id": "hash:15d6be70f2c7",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A complete discussion on fully reconfigurable, digital, scalable, graph and sparsity-aware near-memory accelerator for graph neural networks",
+      "authors": [
+        "Siddhartha Raman Sundara Raman",
+        "LIZY JOHN",
+        "Jaydeep P. Kulkarni"
+      ],
+      "abstract": "",
+      "date": "2026-05-19",
+      "year": 2026,
+      "venue": "ArXiv.org",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3678019046783447
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.35441845655441284
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7162044124"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-05-23T06:16:37Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-23T06:16:37Z"
+    },
+    "('', '10.1038/s41598-026-54114-x', 'automated orbital wall fracture detection and severity classification of ocular injuries using deep learning')": {
+      "id": "doi:10.1038/s41598-026-54114-x",
+      "doi": "10.1038/s41598-026-54114-x",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Automated orbital wall fracture detection and severity classification of ocular injuries using deep learning",
+      "authors": [
+        "Farhad Salari",
+        "Zahra Meskar",
+        "Farhad Fallah",
+        "Maryam Fazeli",
+        "Reza Samiee",
+        "Hossein Arabalibeik",
+        "Seyed Mohsen Rafizadeh"
+      ],
+      "abstract": "",
+      "date": "2026-05-22",
+      "year": 2026,
+      "venue": "Scientific Reports",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1038/s41598-026-54114-x",
+        "crossref": "https://doi.org/10.1038/s41598-026-54114-x"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-05-23T06:16:37Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-23T06:16:37Z"
     }
   }
 }
