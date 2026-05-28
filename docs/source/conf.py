@@ -25,6 +25,16 @@ extensions = [
     'sphinx_autodoc_typehints',
 ]
 
+# Mock heavy ML packages so Sphinx can build without them installed
+autodoc_mock_imports = [
+    'torch',
+    'sentence_transformers',
+    'sklearn',
+    'numpy',
+    'scipy',
+    'transformers',
+]
+
 templates_path = ['_templates']
 exclude_patterns = []
 

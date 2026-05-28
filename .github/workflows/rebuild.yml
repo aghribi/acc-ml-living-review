@@ -41,8 +41,15 @@ jobs:
         run: |
           hugo -s site --minify --baseURL "https://aghribi.github.io/acc-ml-living-review/"
           echo "===== Build finished at $(date -u) ====="
-          echo "Contents of site/public:"
-          ls -R site/public | head -n 40 || true
+
+      # -------------------
+      # Include Sphinx docs
+      # -------------------
+      - name: Copy Sphinx docs into Hugo output
+        run: |
+          mkdir -p site/public/docs
+          cp -r docs/build/html/* site/public/docs/
+          echo "===== Sphinx docs included at /docs/ ====="
 
       # -------------------
       # Deploy to GitHub Pages (via SSH deploy key)
