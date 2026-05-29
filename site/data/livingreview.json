@@ -12,17 +12,17 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 177
+      "2026": 178
     },
     "per_category": {
-      "Tools & Libraries": 216,
+      "Tools & Libraries": 217,
       "Novel Applications": 275,
       "Others": 67,
       "Anomaly Detection & Fault Prediction": 81,
       "Statistics & Trends": 88,
-      "Reinforcement Learning & Autonomous Systems": 83,
+      "Reinforcement Learning & Autonomous Systems": 84,
       "Surrogate Models": 48,
-      "Data Management": 45,
+      "Data Management": 46,
       "By Facility Type": 10,
       "RF Systems": 9,
       "Operations & Control": 14,
@@ -245,17 +245,18 @@
       "Creating Learning Systems for Higher Education": 1,
       "npj Quantum Materials": 1,
       "Odontology": 1,
-      "Journal of Intensive Care": 1
+      "Journal of Intensive Care": 1,
+      "CEAS Space Journal": 1
     },
     "per_keyword": {
       "optimization": 85,
       "control": 87,
       "surrogate model": 22,
-      "transformer": 20,
+      "transformer": 21,
       "deep learning": 74,
       "proton therapy": 1,
       "beam": 150,
-      "reinforcement learning": 47,
+      "reinforcement learning": 48,
       "diagnostics": 35,
       "uncertainty quantification": 6,
       "anomaly detection": 21,
@@ -347,10 +348,10 @@
       "2026-02": 28,
       "2026-03": 38,
       "2026-04": 31,
-      "2026-05": 25
+      "2026-05": 26
     },
-    "last_updated": "2026-05-28T07:49:09.354124+00:00",
-    "next_update": "2026-05-29T07:49:09.354124+00:00"
+    "last_updated": "2026-05-29T07:46:05.409386+00:00",
+    "next_update": "2026-05-30T07:46:05.409386+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -3129,11 +3130,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5289809107780457
+          "score": 0.5289808511734009
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4380359947681427
+          "score": 0.43803608417510986
         }
       ],
       "keywords": [],
@@ -4896,7 +4897,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5971342921257019
+          "score": 0.5971343517303467
         },
         {
           "label": "Tools & Libraries",
@@ -23794,6 +23795,51 @@
       ],
       "history": [],
       "last_updated": "2026-05-26T06:50:31Z"
+    },
+    "('', '10.1007/s12567-026-00726-y', 'automatic scheduling of satellite tracking tasks by means of policy gradient reinforcement learning and transformer based pointer networks')": {
+      "id": "doi:10.1007/s12567-026-00726-y",
+      "doi": "10.1007/s12567-026-00726-y",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Automatic scheduling of satellite tracking tasks by means of policy-gradient reinforcement learning and transformer-based pointer networks",
+      "authors": [
+        "Ravi Dobariya",
+        "Thomas Hobiger"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Low-Earth-orbit (LEO) mega-constellations turn satellite–ground scheduling into a large-scale, real-time combinatorial problem. This work presents a neural-combinatorial framework that couples policy-gradient reinforcement learning with a transformer-based pointer network. The overall solution is implemented as a modular pipeline composed of distinct components for preprocessing, training, scheduling, and emergency handling, wherein the learning component consists of a single policy-gradient agent. The policy operates on ephemeris-derived contact graphs where candidates are encoded by priority, start time, satellite ID, and ground-station ID; feasibility is enforced through masking and a reward that captures buffer, non-overlap, and cool-down constraints. In simulations on OneWeb (\n                    <jats:inline-formula>\n                      <jats:alternatives>\n                        <jats:tex-math>$$\\approx 650$$</jats:tex-math>\n                        <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n                          <mml:mrow>\n                            <mml:mo>≈</mml:mo>\n                            <mml:mn>650</mml:mn>\n                          </mml:mrow>\n                        </mml:math>\n                      </jats:alternatives>\n                    </jats:inline-formula>\n                    sats) and Starlink (\n                    <jats:inline-formula>\n                      <jats:alternatives>\n                        <jats:tex-math>$$\\approx 3500$$</jats:tex-math>\n                        <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n                          <mml:mrow>\n                            <mml:mo>≈</mml:mo>\n                            <mml:mn>3500</mml:mn>\n                          </mml:mrow>\n                        </mml:math>\n                      </jats:alternatives>\n                    </jats:inline-formula>\n                    sats), the method reduces the mean number of missed satellites by up to 54.3% versus a tuned greedy search and by up to 29.5% versus dynamic programming (DP) over 6–48 h horizons, at the cost of modestly higher idle time (4.1–16.1%). End-to-end runtime is competitive at scale: for a 3500-satellite, 48 h test the policy schedules in 366.2 s (DP 234 s; greedy 410 s). The approach learns feasibility, scales to constellation size, and adapts to changing task priorities without post-processing, offering a promising alternative to traditional planners.\n                  </jats:p>",
+      "date": "2026-05-29",
+      "year": 2026,
+      "venue": "CEAS Space Journal",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.3459940552711487
+        },
+        {
+          "label": "Data Management",
+          "score": 0.2537503242492676
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s12567-026-00726-y",
+        "crossref": "https://doi.org/10.1007/s12567-026-00726-y"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-05-29T07:45:26Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-05-29T07:45:26Z"
     }
   }
 }
