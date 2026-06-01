@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 180
+      "2026": 181
     },
     "per_category": {
       "Tools & Libraries": 218,
       "Novel Applications": 277,
-      "Others": 67,
+      "Others": 68,
       "Anomaly Detection & Fault Prediction": 81,
       "Statistics & Trends": 89,
       "Reinforcement Learning & Autonomous Systems": 84,
@@ -247,7 +247,8 @@
       "Odontology": 1,
       "Journal of Intensive Care": 1,
       "CEAS Space Journal": 1,
-      "Süleyman Demirel Üniversitesi Fen Edebiyat Fakültesi Fen Dergisi": 1
+      "Süleyman Demirel Üniversitesi Fen Edebiyat Fakültesi Fen Dergisi": 1,
+      "Biomedical Engineering Advances": 1
     },
     "per_keyword": {
       "optimization": 85,
@@ -349,10 +350,11 @@
       "2026-02": 28,
       "2026-03": 38,
       "2026-04": 31,
-      "2026-05": 28
+      "2026-05": 28,
+      "2026-06": 1
     },
-    "last_updated": "2026-05-31T07:08:58.257026+00:00",
-    "next_update": "2026-06-01T07:08:58.257026+00:00"
+    "last_updated": "2026-06-01T09:22:22.330495+00:00",
+    "next_update": "2026-06-02T09:22:22.330495+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -23933,6 +23935,46 @@
       ],
       "history": [],
       "last_updated": "2026-05-30T06:39:30Z"
+    },
+    "('', '10.1016/j.bea.2026.100206', 'classification of psqa outcomes in prostate vmat treatments a comparative study of machine learning models')": {
+      "id": "doi:10.1016/j.bea.2026.100206",
+      "doi": "10.1016/j.bea.2026.100206",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Classification of PSQA outcomes in prostate VMAT treatments: a comparative study of machine learning models",
+      "authors": [
+        "Francis C. Djoumessi Zamo",
+        "Alexandre Ngwa Ebongue",
+        "Daniel Bongue",
+        "Maurice Moyo Ndontchueng",
+        "Christopher F. Njeh"
+      ],
+      "abstract": "",
+      "date": "2026-06-01",
+      "year": 2026,
+      "venue": "Biomedical Engineering Advances",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.bea.2026.100206",
+        "crossref": "https://doi.org/10.1016/j.bea.2026.100206"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-01T09:21:40Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-01T09:21:40Z"
     }
   }
 }
