@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 181
+      "2026": 185
     },
     "per_category": {
-      "Tools & Libraries": 218,
-      "Novel Applications": 277,
+      "Tools & Libraries": 220,
+      "Novel Applications": 279,
       "Others": 68,
-      "Anomaly Detection & Fault Prediction": 81,
+      "Anomaly Detection & Fault Prediction": 83,
       "Statistics & Trends": 89,
       "Reinforcement Learning & Autonomous Systems": 84,
       "Surrogate Models": 48,
@@ -28,7 +28,7 @@
       "Operations & Control": 14,
       "Beamline Design & Simulation": 36,
       "Beam Dynamics": 12,
-      "Reviews": 27,
+      "Reviews": 30,
       "Beam Diagnostics": 21,
       "Optimization & Control": 20
     },
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 203,
+      "arXiv": 206,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -248,24 +248,25 @@
       "Journal of Intensive Care": 1,
       "CEAS Space Journal": 1,
       "Süleyman Demirel Üniversitesi Fen Edebiyat Fakültesi Fen Dergisi": 1,
-      "Biomedical Engineering Advances": 1
+      "Biomedical Engineering Advances": 1,
+      "Journal of Mechanical Engineering and Manufacturing": 1
     },
     "per_keyword": {
-      "optimization": 85,
+      "optimization": 86,
       "control": 87,
       "surrogate model": 22,
-      "transformer": 21,
-      "deep learning": 74,
+      "transformer": 22,
+      "deep learning": 75,
       "proton therapy": 1,
-      "beam": 150,
-      "reinforcement learning": 48,
+      "beam": 154,
+      "reinforcement learning": 49,
       "diagnostics": 35,
       "uncertainty quantification": 6,
-      "anomaly detection": 21,
+      "anomaly detection": 23,
       "time series": 6,
       "GAN": 1,
       "cloud": 3,
-      "federated learning": 1,
+      "federated learning": 2,
       "RF cavity": 1,
       "data management": 2
     },
@@ -350,11 +351,11 @@
       "2026-02": 28,
       "2026-03": 38,
       "2026-04": 31,
-      "2026-05": 28,
-      "2026-06": 1
+      "2026-05": 31,
+      "2026-06": 2
     },
-    "last_updated": "2026-06-01T09:22:22.330495+00:00",
-    "next_update": "2026-06-02T09:22:22.330495+00:00"
+    "last_updated": "2026-06-02T07:29:12.251472+00:00",
+    "next_update": "2026-06-03T07:29:12.251472+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -607,11 +608,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.598140299320221
+          "score": 0.5981403589248657
         },
         {
           "label": "Novel Applications",
-          "score": 0.5890807509422302
+          "score": 0.589080810546875
         },
         {
           "label": "Tools & Libraries",
@@ -739,7 +740,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4185507297515869
+          "score": 0.4185507893562317
         },
         {
           "label": "Tools & Libraries",
@@ -1053,7 +1054,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4633238613605499
+          "score": 0.4633238911628723
         },
         {
           "label": "Tools & Libraries",
@@ -1098,7 +1099,7 @@
         },
         {
           "label": "Operations & Control",
-          "score": 0.5249068140983582
+          "score": 0.5249067544937134
         }
       ],
       "keywords": [],
@@ -1728,7 +1729,7 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.3627539873123169
+          "score": 0.3627539277076721
         },
         {
           "label": "Beam Dynamics",
@@ -1813,7 +1814,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.40865010023117065
+          "score": 0.4086500406265259
         },
         {
           "label": "Tools & Libraries",
@@ -2429,7 +2430,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.42231374979019165
+          "score": 0.4223136901855469
         }
       ],
       "keywords": [],
@@ -2468,11 +2469,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5398099422454834
+          "score": 0.539810061454773
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4896240234375
+          "score": 0.4896240830421448
         }
       ],
       "keywords": [],
@@ -2709,11 +2710,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5447626113891602
+          "score": 0.5447627305984497
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4923652708530426
+          "score": 0.492365300655365
         },
         {
           "label": "Reviews",
@@ -2798,11 +2799,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5183514952659607
+          "score": 0.5183515548706055
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4706268608570099
+          "score": 0.4706268906593323
         }
       ],
       "keywords": [],
@@ -2846,11 +2847,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3475399613380432
+          "score": 0.34754008054733276
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.328242689371109
+          "score": 0.3282427191734314
         }
       ],
       "keywords": [],
@@ -2896,11 +2897,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5790520906448364
+          "score": 0.5790521502494812
         },
         {
           "label": "Optimization & Control",
-          "score": 0.4638979434967041
+          "score": 0.46389806270599365
         }
       ],
       "keywords": [],
@@ -3133,11 +3134,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5289808511734009
+          "score": 0.5289809107780457
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.43803608417510986
+          "score": 0.4380359947681427
         }
       ],
       "keywords": [],
@@ -3181,7 +3182,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3750573992729187
+          "score": 0.3750574588775635
         }
       ],
       "keywords": [],
@@ -3393,11 +3394,11 @@
       "categories": [
         {
           "label": "Statistics & Trends",
-          "score": 0.5154440999031067
+          "score": 0.5154440402984619
         },
         {
           "label": "Novel Applications",
-          "score": 0.49700790643692017
+          "score": 0.497007817029953
         },
         {
           "label": "Reviews",
@@ -3445,7 +3446,7 @@
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.43129998445510864
+          "score": 0.4313000440597534
         }
       ],
       "keywords": [],
@@ -3530,7 +3531,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3905560076236725
+          "score": 0.3905560374259949
         }
       ],
       "keywords": [],
@@ -3567,11 +3568,11 @@
       "categories": [
         {
           "label": "Beam Dynamics",
-          "score": 0.3418075740337372
+          "score": 0.34180760383605957
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.33053112030029297
+          "score": 0.33053117990493774
         }
       ],
       "keywords": [],
@@ -4180,7 +4181,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.39803820848464966
+          "score": 0.3980382978916168
         },
         {
           "label": "Tools & Libraries",
@@ -4361,11 +4362,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3979305624961853
+          "score": 0.39793068170547485
         },
         {
           "label": "By Facility Type",
-          "score": 0.37074100971221924
+          "score": 0.3707410395145416
         }
       ],
       "keywords": [],
@@ -4403,11 +4404,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6074836850166321
+          "score": 0.6074837446212769
         },
         {
           "label": "Novel Applications",
-          "score": 0.491432785987854
+          "score": 0.49143272638320923
         },
         {
           "label": "Tools & Libraries",
@@ -4627,7 +4628,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.47507575154304504
+          "score": 0.47507569193840027
         },
         {
           "label": "Surrogate Models",
@@ -4774,11 +4775,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4461631178855896
+          "score": 0.4461630582809448
         },
         {
           "label": "Novel Applications",
-          "score": 0.4126650094985962
+          "score": 0.41266506910324097
         }
       ],
       "keywords": [],
@@ -4820,11 +4821,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.46783125400543213
+          "score": 0.4678313732147217
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4510584771633148
+          "score": 0.45105862617492676
         }
       ],
       "keywords": [],
@@ -5045,7 +5046,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4355793297290802
+          "score": 0.4355793595314026
         }
       ],
       "keywords": [],
@@ -5614,11 +5615,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5820252299308777
+          "score": 0.5820252895355225
         },
         {
           "label": "Novel Applications",
-          "score": 0.5145211815834045
+          "score": 0.5145212411880493
         }
       ],
       "keywords": [],
@@ -5992,7 +5993,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5003535151481628
+          "score": 0.5003533959388733
         }
       ],
       "keywords": [],
@@ -6674,11 +6675,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.34433630108833313
+          "score": 0.34433627128601074
         },
         {
           "label": "Data Management",
-          "score": 0.29640039801597595
+          "score": 0.29640036821365356
         },
         {
           "label": "Surrogate Models",
@@ -8216,7 +8217,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.36470216512680054
+          "score": 0.3647022247314453
         },
         {
           "label": "Tools & Libraries",
@@ -8303,11 +8304,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.41856423020362854
+          "score": 0.41856420040130615
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3407813012599945
+          "score": 0.34078121185302734
         }
       ],
       "keywords": [],
@@ -8346,11 +8347,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5018219351768494
+          "score": 0.5018219947814941
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4435214698314667
+          "score": 0.44352149963378906
         }
       ],
       "keywords": [],
@@ -8530,11 +8531,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.4402776062488556
+          "score": 0.44027766585350037
         },
         {
           "label": "Novel Applications",
-          "score": 0.43702423572540283
+          "score": 0.4370242953300476
         }
       ],
       "keywords": [],
@@ -8946,11 +8947,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.6074836850166321
+          "score": 0.6074837446212769
         },
         {
           "label": "Novel Applications",
-          "score": 0.491432785987854
+          "score": 0.49143272638320923
         },
         {
           "label": "Tools & Libraries",
@@ -9615,7 +9616,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4000486731529236
+          "score": 0.40004873275756836
         },
         {
           "label": "Tools & Libraries",
@@ -10255,11 +10256,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.598140299320221
+          "score": 0.5981403589248657
         },
         {
           "label": "Novel Applications",
-          "score": 0.5890807509422302
+          "score": 0.589080810546875
         },
         {
           "label": "Tools & Libraries",
@@ -10693,11 +10694,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4473468065261841
+          "score": 0.44734686613082886
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.4356152415275574
+          "score": 0.4356151819229126
         }
       ],
       "keywords": [],
@@ -10969,7 +10970,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5018988251686096
+          "score": 0.5018988847732544
         }
       ],
       "keywords": [],
@@ -11007,11 +11008,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4495396912097931
+          "score": 0.4495397210121155
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.36582526564598083
+          "score": 0.36582523584365845
         }
       ],
       "keywords": [],
@@ -12752,7 +12753,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5601048469543457
+          "score": 0.5601047873497009
         },
         {
           "label": "Tools & Libraries",
@@ -12800,7 +12801,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5601048469543457
+          "score": 0.5601047873497009
         },
         {
           "label": "Tools & Libraries",
@@ -14639,7 +14640,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3191932737827301
+          "score": 0.3191932141780853
         },
         {
           "label": "Novel Applications",
@@ -15551,11 +15552,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4600822925567627
+          "score": 0.4600822627544403
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.458667516708374
+          "score": 0.4586675763130188
         },
         {
           "label": "Surrogate Models",
@@ -15594,11 +15595,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3197808861732483
+          "score": 0.3197808563709259
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.2705667018890381
+          "score": 0.2705666720867157
         },
         {
           "label": "Tools & Libraries",
@@ -15683,11 +15684,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3197808861732483
+          "score": 0.3197808563709259
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.2705667018890381
+          "score": 0.2705666720867157
         },
         {
           "label": "Tools & Libraries",
@@ -15732,11 +15733,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4600822925567627
+          "score": 0.4600822627544403
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.458667516708374
+          "score": 0.4586675763130188
         },
         {
           "label": "Surrogate Models",
@@ -16942,7 +16943,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2828976511955261
+          "score": 0.28289762139320374
         }
       ],
       "keywords": [],
@@ -17157,11 +17158,11 @@
       "categories": [
         {
           "label": "Data Management",
-          "score": 0.26178622245788574
+          "score": 0.2617863118648529
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.25065624713897705
+          "score": 0.2506561875343323
         }
       ],
       "keywords": [],
@@ -17925,11 +17926,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.5532278418540955
+          "score": 0.5532279014587402
         },
         {
           "label": "Novel Applications",
-          "score": 0.5375092625617981
+          "score": 0.5375093221664429
         },
         {
           "label": "Tools & Libraries",
@@ -18265,7 +18266,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.35541558265686035
+          "score": 0.3554154932498932
         },
         {
           "label": "Reviews",
@@ -18853,7 +18854,7 @@
         },
         {
           "label": "By Facility Type",
-          "score": 0.3712007999420166
+          "score": 0.3712007403373718
         }
       ],
       "keywords": [],
@@ -18890,7 +18891,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.554128110408783
+          "score": 0.5541279911994934
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
@@ -18938,7 +18939,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.44726860523223877
+          "score": 0.447268545627594
         }
       ],
       "keywords": [],
@@ -19167,11 +19168,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4549838900566101
+          "score": 0.45498377084732056
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4369369149208069
+          "score": 0.43693700432777405
         }
       ],
       "keywords": [],
@@ -20475,7 +20476,7 @@
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.35541558265686035
+          "score": 0.3554154932498932
         },
         {
           "label": "Reviews",
@@ -21428,11 +21429,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5557818412780762
+          "score": 0.5557817220687866
         },
         {
           "label": "Data Management",
-          "score": 0.47585126757621765
+          "score": 0.47585129737854004
         }
       ],
       "keywords": [],
@@ -22427,11 +22428,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.38998499512672424
+          "score": 0.38998502492904663
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.29425811767578125
+          "score": 0.29425808787345886
         }
       ],
       "keywords": [],
@@ -22684,7 +22685,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.26009678840637207
+          "score": 0.26009684801101685
         }
       ],
       "keywords": [],
@@ -22887,11 +22888,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3726903200149536
+          "score": 0.372690349817276
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3330811858177185
+          "score": 0.3330812454223633
         }
       ],
       "keywords": [],
@@ -23975,6 +23976,183 @@
       ],
       "history": [],
       "last_updated": "2026-06-01T09:21:40Z"
+    },
+    "('2605.31259', '', 'lightweight cnn based anomaly detection for high voltage converter modulators in the spallation neutron source')": {
+      "id": "arxiv:2605.31259",
+      "doi": null,
+      "arxiv_id": "2605.31259",
+      "inspire_id": null,
+      "title": "Lightweight CNN-Based Anomaly Detection for High Voltage Converter Modulators in the Spallation Neutron Source",
+      "authors": [
+        "Alberto D. Cencillo",
+        "Leonardo Concepción",
+        "Julián Luengo",
+        "Isaac Triguero"
+      ],
+      "abstract": "Unscheduled trips of high-power pulsed converters are a leading source of downtime at large accelerator facilities. At the Spallation Neutron Source (SNS), the High Voltage Converter Modulators (HVCMs) are consistently the second-largest contributor to lost beam time. Each HVCM pulse is recorded across sensor channels spanning currents, voltages, and magnetic fluxes, whose mutual interactions encode the operating state of the system. Fault precursors do not manifest uniformly across these channels: depending on fault type, they may alter the temporal structure of individual signals, change the statistical dependencies among channels, or both. Existing deep-learning approaches typically process multi-channel signals with standard convolutional pipelines that entangle temporal and cross-channel operations from the first layer, giving the model no explicit mechanism to represent channel independence or structured inter-channel interaction. We hypothesise that architectural inductive bias, specifically the ordering of temporal filtering and cross-channel mixing, plays a central role in detection performance on this class of data. To test this, we vary the order in which these two operations are applied, and examine whether per-pulse adaptive channel reweighting further improves sensitivity. Evaluated on the public HVCM dataset across all four SNS subsystems (RFQ, DTL, CCL, SCL), our best variant achieves a pooled AUC-PR of 0.816 and AUC-ROC of 0.934, outperforming the state of the art on most subsystems and five of the six fault families. Ablations identify three dominant input channels and link per-fault-family performance to whether precursors manifest as amplitude shifts in individual channels or as subtler patterns requiring joint channel representations to surface.",
+      "date": "2026-05-29",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.32349053025245667
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2605.31259v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-06-02T07:25:51Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-02T07:25:51Z"
+    },
+    "('', '', 'lightweight cnn based anomaly detection for high voltage converter modulators in the spallation neutron source')": {
+      "id": "hash:a7ab67e85445",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Lightweight CNN-Based Anomaly Detection for High Voltage Converter Modulators in the Spallation Neutron Source",
+      "authors": [
+        "Cencillo, Alberto D.",
+        "Concepción, Leonardo",
+        "Luengo, Julián",
+        "Triguero, Isaac"
+      ],
+      "abstract": "Unscheduled trips of high-power pulsed converters are a leading source of downtime at large accelerator facilities. At the Spallation Neutron Source (SNS), the High Voltage Converter Modulators (HVCMs) are consistently the second-largest contributor to lost beam time. Each HVCM pulse is recorded across sensor channels spanning currents, voltages, and magnetic fluxes, whose mutual interactions encode the operating state of the system. Fault precursors do not manifest uniformly across these channels: depending on fault type, they may alter the temporal structure of individual signals, change the statistical dependencies among channels, or both. Existing deep-learning approaches typically process multi-channel signals with standard convolutional pipelines that entangle temporal and cross-channel operations from the first layer, giving the model no explicit mechanism to represent channel independence or structured inter-channel interaction. We hypothesise that architectural inductive bias, specifically the ordering of temporal filtering and cross-channel mixing, plays a central role in detection performance on this class of data. To test this, we vary the order in which these two operations are applied, and examine whether per-pulse adaptive channel reweighting further improves sensitivity. Evaluated on the public HVCM dataset across all four SNS subsystems (RFQ, DTL, CCL, SCL), our best variant achieves a pooled AUC-PR of 0.816 and AUC-ROC of 0.934, outperforming the state of the art on most subsystems and five of the six fault families. Ablations identify three dominant input channels and link per-fault-family performance to whether precursors manifest as amplitude shifts in individual channels or as subtler patterns requiring joint channel representations to surface.",
+      "date": "2026-05-29",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.32349053025245667
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3164001",
+        "arxiv": "https://arxiv.org/abs/2605.31259"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-06-02T07:28:03Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-02T07:28:03Z"
+    },
+    "('', '', 'an ai ready polarized electron positron collision dataset')": {
+      "id": "hash:cf7ca79503aa",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "An AI-ready, Polarized Electron-Positron Collision Dataset",
+      "authors": [
+        "Cheng, Chi Lung",
+        "Corrodi, Simon",
+        "Hobbs, T.J.",
+        "Mete, Alaettin Serhan",
+        "Nachman, Benjamin"
+      ],
+      "abstract": "We present a modernized, AI-ready release of reconstructed data from the SLD experiment at the SLAC Linear Collider (SLC). The dataset comprises approximately 660,000 reconstructed events collected at $\\sqrt{s}\\approx 91.2$~GeV with a highly polarized electron beam from 1996--1998. The data have been translated from legacy formats into modern, widely-used file formats with the help of AI agents. The release also includes a corpus of newly digitized SLD internal documentation. We describe the contents of both components and provide physics validation demonstrations along with illustrations of their utility for physics and machine learning research in particle physics.",
+      "date": "2026-05-29",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.3742210268974304
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.37116146087646484
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3164215",
+        "arxiv": "https://arxiv.org/abs/2606.00224"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-06-02T07:28:03Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-02T07:28:03Z"
+    },
+    "('', '10.53941/jmem.2026.100022', 'machine learning for process optimization and defect detection in metal additive manufacturing a critical review of algorithms in situ monitoring strategies and quality assurance frameworks')": {
+      "id": "doi:10.53941/jmem.2026.100022",
+      "doi": "10.53941/jmem.2026.100022",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Machine Learning for Process Optimization and Defect Detection in Metal Additive Manufacturing: A Critical Review of Algorithms, In-Situ Monitoring Strategies, and Quality Assurance Frameworks",
+      "authors": [
+        "Dara Jude",
+        "Ignatius Ekengwu",
+        "Anthonia Ilechukwu",
+        "Sunday Chimezie Anyaora",
+        "Augustine Uzochukwu Mmadumere"
+      ],
+      "abstract": "<jats:p>Among the many manufacturing technologies to emerge in the last three decades, metal additive manufacturing (AM)—spanning laser powder bed fusion (LPBF), directed energy deposition (DED), and electron beam melting (EBM)—stands out for the speed and breadth of its industrial adoption. Once confined to producing plastic concept models, it now fabricates flight-critical aerospace structures, load-bearing skeletal implants, and thermally demanding heat management components. Yet persistent process-induced defects—among them gas porosity, lack-of-fusion voids, hot cracking, and inter-layer delamination—continue to jeopardize part integrity and create formidable barriers to certification in regulated sectors. Machine learning (ML) and deep learning (DL) have attracted growing attention as remedies, offering the capacity to extract decision-relevant patterns from the rich multi-modal data streams that flow continuously during metal AM builds. This review undertakes a critical examination of the current state of ML-driven process optimization and defect detection for metal AM. Convolutional neural networks (CNNs) are evaluated for image-based anomaly identification; long short-term memory (LSTM) networks and transformer architectures are assessed for temporal process monitoring; reinforcement learning is examined for closed-loop parameter governance; and generative adversarial networks are considered as instruments for training data augmentation. In-situ monitoring hardware—encompassing melt-pool cameras, pyrometers, acoustic emission sensors, and photodiode arrays—is surveyed alongside the sensor fusion strategies that sharpen defect localization performance. Closed-loop quality assurance architectures, digital twin integration, and ML-guided parameter optimization receive detailed critical evaluation. Drawing on a systematic synthesis of more than 130 peer-reviewed studies spanning 2016 to 2025, we identify structural gaps: a shortage of large annotated benchmark datasets, insufficient cross-domain generalization, and the computational demands of real-time industrial deployment. A forward-looking research roadmap—centred on physics-informed neural networks, federated learning architectures, and edge-optimized inference—is advanced as the route toward certifiable, industrially viable ML quality assurance systems for metal AM.</jats:p>",
+      "date": "2026-06-02",
+      "year": 2026,
+      "venue": "Journal of Mechanical Engineering and Manufacturing",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.3217230439186096
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        },
+        {
+          "label": "Reviews",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.53941/jmem.2026.100022",
+        "crossref": "https://doi.org/10.53941/jmem.2026.100022"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-02T07:28:13Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-02T07:28:13Z"
     }
   }
 }
