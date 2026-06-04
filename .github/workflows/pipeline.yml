@@ -29,6 +29,12 @@ jobs:
           pip install -r requirements.txt
           pip install -e .   # optional, if you want your package available
 
+      - name: Cache HuggingFace model
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/huggingface
+          key: hf-minilm-l6-v2-${{ runner.os }}
+
       - name: Run pipeline
         run: python -m living_review.cli --days 30 --sources all
 
