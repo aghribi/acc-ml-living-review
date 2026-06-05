@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Index &mdash; AI for particle accelerators living review 0.1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=01f34227"></script>
-      <script src="_static/doctools.js?v=fd6eb6e6"></script>
-      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -85,6 +85,7 @@
  | <a href="#M"><strong>M</strong></a>
  | <a href="#N"><strong>N</strong></a>
  | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
  | <a href="#V"><strong>V</strong></a>
@@ -107,13 +108,15 @@
 </li>
       <li><a href="living_review.html#living_review.logs.append_scan_log">append_scan_log() (in module living_review.logs)</a>
 </li>
+      <li><a href="living_review.html#id5">arxiv_id (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.arxiv_id">[1]</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id4">arxiv_id (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.arxiv_id">[1]</a>
-</li>
       <li><a href="living_review.html#living_review.config.ARXIV_PAGE_SIZE">ARXIV_PAGE_SIZE (in module living_review.config)</a>
 </li>
-      <li><a href="living_review.html#id5">authors (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.authors">[1]</a>
+      <li><a href="living_review.html#living_review.fetchers.arxiv_query_for_window">arxiv_query_for_window() (in module living_review.fetchers)</a>
+</li>
+      <li><a href="living_review.html#id6">authors (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.authors">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -121,7 +124,7 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id6">categories (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.categories">[1]</a>
+      <li><a href="living_review.html#id7">categories (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.categories">[1]</a>
 </li>
       <li><a href="living_review.html#living_review.classifier.classify_papers">classify_papers() (in module living_review.classifier)</a>
 </li>
@@ -129,7 +132,7 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="living_review.html#living_review.stats.compute_stats">compute_stats() (in module living_review.stats)</a>
 </li>
-      <li><a href="living_review.html#id7">curated (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.curated">[1]</a>
+      <li><a href="living_review.html#id8">curated (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.curated">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -137,7 +140,7 @@
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id8">date (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.date">[1]</a>
+      <li><a href="living_review.html#id9">date (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.date">[1]</a>
 </li>
       <li><a href="living_review.html#living_review.config.DATE_WINDOW_DAYS">DATE_WINDOW_DAYS (in module living_review.config)</a>
 </li>
@@ -149,7 +152,7 @@
 </li>
       <li><a href="living_review.html#living_review.classifier.device_str">device_str() (in module living_review.classifier)</a>
 </li>
-      <li><a href="living_review.html#id9">doi (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.doi">[1]</a>
+      <li><a href="living_review.html#id10">doi (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.doi">[1]</a>
 </li>
       <li><a href="living_review.html#living_review.classifier.dual_semantic_scores">dual_semantic_scores() (in module living_review.classifier)</a>
 </li>
@@ -173,12 +176,28 @@
 <h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="living_review.html#living_review.fetchers.fetch_arxiv">fetch_arxiv() (in module living_review.fetchers)</a>
+</li>
+      <li><a href="living_review.html#living_review.fetchers.fetch_crossref">fetch_crossref() (in module living_review.fetchers)</a>
+</li>
+      <li><a href="living_review.html#living_review.fetchers.fetch_hal">fetch_hal() (in module living_review.fetchers)</a>
+</li>
+      <li><a href="living_review.html#living_review.fetchers.fetch_inspire">fetch_inspire() (in module living_review.fetchers)</a>
+</li>
+      <li><a href="living_review.html#living_review.fetchers.fetch_openalex">fetch_openalex() (in module living_review.fetchers)</a>
+</li>
+      <li><a href="living_review.html#living_review.fetchers.fetch_pubmed">fetch_pubmed() (in module living_review.fetchers)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="living_review.html#living_review.fetchers.fetch_semanticscholar">fetch_semanticscholar() (in module living_review.fetchers)</a>
+</li>
+      <li><a href="living_review.html#living_review.fetchers.fetch_springer">fetch_springer() (in module living_review.fetchers)</a>
+</li>
       <li><a href="living_review.html#living_review.classifier.filter_relevant_papers">filter_relevant_papers() (in module living_review.classifier)</a>
 </li>
       <li><a href="living_review.html#living_review.utils.first_author_key">first_author_key() (in module living_review.utils)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="living_review.html#living_review.data_model.Paper.from_dict">from_dict() (living_review.data_model.Paper static method)</a>
 </li>
       <li><a href="living_review.html#living_review.data_model.Paper.from_source">from_source() (living_review.data_model.Paper static method)</a>
@@ -197,7 +216,7 @@
 <h2 id="H">H</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id10">history (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.history">[1]</a>
+      <li><a href="living_review.html#id11">history (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.history">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -205,11 +224,11 @@
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id11">id (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.id">[1]</a>
+      <li><a href="living_review.html#id12">id (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.id">[1]</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id12">inspire_id (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.inspire_id">[1]</a>
+      <li><a href="living_review.html#id13">inspire_id (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.inspire_id">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -221,7 +240,7 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id13">keywords (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.keywords">[1]</a>
+      <li><a href="living_review.html#id14">keywords (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.keywords">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -229,9 +248,9 @@
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id14">last_updated (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.last_updated">[1]</a>
+      <li><a href="living_review.html#id15">last_updated (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.last_updated">[1]</a>
 </li>
-      <li><a href="living_review.html#id15">links (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.links">[1]</a>
+      <li><a href="living_review.html#id16">links (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.links">[1]</a>
 </li>
       <li>
     living_review
@@ -248,6 +267,13 @@
 </li>
       </ul></li>
       <li>
+    living_review.cli
+
+      <ul>
+        <li><a href="living_review.html#module-living_review.cli">module</a>
+</li>
+      </ul></li>
+      <li>
     living_review.config
 
       <ul>
@@ -261,8 +287,6 @@
         <li><a href="living_review.html#module-living_review.data_model">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     living_review.exporters
 
@@ -270,11 +294,27 @@
         <li><a href="living_review.html#module-living_review.exporters">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    living_review.fetchers
+
+      <ul>
+        <li><a href="living_review.html#module-living_review.fetchers">module</a>
+</li>
+      </ul></li>
       <li>
     living_review.logs
 
       <ul>
         <li><a href="living_review.html#module-living_review.logs">module</a>
+</li>
+      </ul></li>
+      <li>
+    living_review.pipeline
+
+      <ul>
+        <li><a href="living_review.html#module-living_review.pipeline">module</a>
 </li>
       </ul></li>
       <li>
@@ -291,6 +331,8 @@
         <li><a href="living_review.html#module-living_review.utils">module</a>
 </li>
       </ul></li>
+      <li><a href="living_review.html#living_review.pipeline.LivingReviewPipeline">LivingReviewPipeline (class in living_review.pipeline)</a>
+</li>
       <li><a href="living_review.html#living_review.classifier.load_sem_model">load_sem_model() (in module living_review.classifier)</a>
 </li>
       <li><a href="living_review.html#living_review.logs.log_error">log_error() (in module living_review.logs)</a>
@@ -301,8 +343,14 @@
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#living_review.utils.make_session">make_session() (in module living_review.utils)</a>
+      <li><a href="living_review.html#living_review.cli.main">main() (in module living_review.cli)</a>
 </li>
+      <li><a href="living_review.html#living_review.fetchers.make_session">make_session() (in module living_review.fetchers)</a>
+
+      <ul>
+        <li><a href="living_review.html#living_review.utils.make_session">(in module living_review.utils)</a>
+</li>
+      </ul></li>
       <li>
     module
 
@@ -311,13 +359,19 @@
 </li>
         <li><a href="living_review.html#module-living_review.classifier">living_review.classifier</a>
 </li>
+        <li><a href="living_review.html#module-living_review.cli">living_review.cli</a>
+</li>
         <li><a href="living_review.html#module-living_review.config">living_review.config</a>
 </li>
         <li><a href="living_review.html#module-living_review.data_model">living_review.data_model</a>
 </li>
         <li><a href="living_review.html#module-living_review.exporters">living_review.exporters</a>
 </li>
+        <li><a href="living_review.html#module-living_review.fetchers">living_review.fetchers</a>
+</li>
         <li><a href="living_review.html#module-living_review.logs">living_review.logs</a>
+</li>
+        <li><a href="living_review.html#module-living_review.pipeline">living_review.pipeline</a>
 </li>
         <li><a href="living_review.html#module-living_review.stats">living_review.stats</a>
 </li>
@@ -338,7 +392,7 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="living_review.html#living_review.utils.norm_space">norm_space() (in module living_review.utils)</a>
 </li>
-      <li><a href="living_review.html#id16">notes (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.notes">[1]</a>
+      <li><a href="living_review.html#id17">notes (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.notes">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -347,6 +401,14 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="living_review.html#living_review.data_model.Paper">Paper (class in living_review.data_model)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="living_review.html#living_review.pipeline.LivingReviewPipeline.run">run() (living_review.pipeline.LivingReviewPipeline method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -360,9 +422,9 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id17">sources (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.sources">[1]</a>
+      <li><a href="living_review.html#id18">sources (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.sources">[1]</a>
 </li>
-      <li><a href="living_review.html#id18">status (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.status">[1]</a>
+      <li><a href="living_review.html#id19">status (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.status">[1]</a>
 </li>
       <li><a href="living_review.html#living_review.data_model.status_rank">status_rank() (in module living_review.data_model)</a>
 </li>
@@ -372,7 +434,7 @@
 <h2 id="T">T</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id19">title (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.title">[1]</a>
+      <li><a href="living_review.html#id20">title (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.title">[1]</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -384,7 +446,7 @@
 <h2 id="V">V</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id20">venue (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.venue">[1]</a>
+      <li><a href="living_review.html#id21">venue (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.venue">[1]</a>
 </li>
   </ul></td>
 </tr></table>
@@ -400,7 +462,7 @@
 <h2 id="Y">Y</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="living_review.html#id21">year (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.year">[1]</a>
+      <li><a href="living_review.html#id22">year (living_review.data_model.Paper attribute)</a>, <a href="living_review.html#living_review.data_model.Paper.year">[1]</a>
 </li>
   </ul></td>
 </tr></table>

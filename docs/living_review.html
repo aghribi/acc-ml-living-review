@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>living_review package &mdash; AI for particle accelerators living review 0.1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=01f34227"></script>
-      <script src="_static/doctools.js?v=fd6eb6e6"></script>
-      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -58,11 +58,19 @@
 <li class="toctree-l3"><a class="reference internal" href="#living_review.classifier.load_sem_model"><code class="docutils literal notranslate"><span class="pre">load_sem_model()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#living-review-cli-module">living_review.cli module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-living_review.cli">living_review.cli module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cli-py">cli.py</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#main-features">Main Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Typical Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.cli.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#module-living_review.config">living_review.config module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#config-py">config.py</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#contents">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id1">Typical Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Typical Usage</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#living_review.config.ARXIV_PAGE_SIZE"><code class="docutils literal notranslate"><span class="pre">ARXIV_PAGE_SIZE</span></code></a></li>
@@ -72,9 +80,9 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-living_review.data_model">living_review.data_model module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#data-model-py">data_model.py</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id2">Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Contents</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#canonical-use">Canonical use</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">Typical Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Typical Usage</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#living_review.data_model.Paper"><code class="docutils literal notranslate"><span class="pre">Paper</span></code></a><ul>
@@ -98,28 +106,28 @@
 <li class="toctree-l4"><a class="reference internal" href="#living_review.data_model.Paper.history"><code class="docutils literal notranslate"><span class="pre">Paper.history</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#living_review.data_model.Paper.last_updated"><code class="docutils literal notranslate"><span class="pre">Paper.last_updated</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">Paper.abstract</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id4"><code class="docutils literal notranslate"><span class="pre">Paper.arxiv_id</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5"><code class="docutils literal notranslate"><span class="pre">Paper.authors</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id6"><code class="docutils literal notranslate"><span class="pre">Paper.categories</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id7"><code class="docutils literal notranslate"><span class="pre">Paper.curated</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id8"><code class="docutils literal notranslate"><span class="pre">Paper.date</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id9"><code class="docutils literal notranslate"><span class="pre">Paper.doi</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5"><code class="docutils literal notranslate"><span class="pre">Paper.arxiv_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6"><code class="docutils literal notranslate"><span class="pre">Paper.authors</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7"><code class="docutils literal notranslate"><span class="pre">Paper.categories</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8"><code class="docutils literal notranslate"><span class="pre">Paper.curated</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9"><code class="docutils literal notranslate"><span class="pre">Paper.date</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10"><code class="docutils literal notranslate"><span class="pre">Paper.doi</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#living_review.data_model.Paper.from_dict"><code class="docutils literal notranslate"><span class="pre">Paper.from_dict()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#living_review.data_model.Paper.from_source"><code class="docutils literal notranslate"><span class="pre">Paper.from_source()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id10"><code class="docutils literal notranslate"><span class="pre">Paper.history</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id11"><code class="docutils literal notranslate"><span class="pre">Paper.id</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id12"><code class="docutils literal notranslate"><span class="pre">Paper.inspire_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11"><code class="docutils literal notranslate"><span class="pre">Paper.history</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12"><code class="docutils literal notranslate"><span class="pre">Paper.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13"><code class="docutils literal notranslate"><span class="pre">Paper.inspire_id</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#living_review.data_model.Paper.key_for_dedup"><code class="docutils literal notranslate"><span class="pre">Paper.key_for_dedup()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id13"><code class="docutils literal notranslate"><span class="pre">Paper.keywords</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id14"><code class="docutils literal notranslate"><span class="pre">Paper.last_updated</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id15"><code class="docutils literal notranslate"><span class="pre">Paper.links</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id16"><code class="docutils literal notranslate"><span class="pre">Paper.notes</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id17"><code class="docutils literal notranslate"><span class="pre">Paper.sources</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id18"><code class="docutils literal notranslate"><span class="pre">Paper.status</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id19"><code class="docutils literal notranslate"><span class="pre">Paper.title</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id14"><code class="docutils literal notranslate"><span class="pre">Paper.keywords</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id15"><code class="docutils literal notranslate"><span class="pre">Paper.last_updated</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16"><code class="docutils literal notranslate"><span class="pre">Paper.links</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id17"><code class="docutils literal notranslate"><span class="pre">Paper.notes</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18"><code class="docutils literal notranslate"><span class="pre">Paper.sources</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id19"><code class="docutils literal notranslate"><span class="pre">Paper.status</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id20"><code class="docutils literal notranslate"><span class="pre">Paper.title</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#living_review.data_model.Paper.to_dict"><code class="docutils literal notranslate"><span class="pre">Paper.to_dict()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id20"><code class="docutils literal notranslate"><span class="pre">Paper.venue</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id21"><code class="docutils literal notranslate"><span class="pre">Paper.year</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id21"><code class="docutils literal notranslate"><span class="pre">Paper.venue</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id22"><code class="docutils literal notranslate"><span class="pre">Paper.year</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#living_review.data_model.status_rank"><code class="docutils literal notranslate"><span class="pre">status_rank()</span></code></a></li>
@@ -128,7 +136,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#module-living_review.exporters">living_review.exporters module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#exporters-py">exporters.py</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#export-targets">Export Targets</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id22">Typical Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id23">Typical Usage</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#living_review.exporters.export_bibtex"><code class="docutils literal notranslate"><span class="pre">export_bibtex()</span></code></a></li>
@@ -136,11 +144,27 @@
 <li class="toctree-l3"><a class="reference internal" href="#living_review.exporters.export_pdf"><code class="docutils literal notranslate"><span class="pre">export_pdf()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#living-review-fetchers-module">living_review.fetchers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-living_review.fetchers">living_review.fetchers module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fetchers-py">fetchers.py</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#each-fetcher">Each fetcher:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.fetchers.arxiv_query_for_window"><code class="docutils literal notranslate"><span class="pre">arxiv_query_for_window()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.fetchers.fetch_arxiv"><code class="docutils literal notranslate"><span class="pre">fetch_arxiv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.fetchers.fetch_crossref"><code class="docutils literal notranslate"><span class="pre">fetch_crossref()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.fetchers.fetch_hal"><code class="docutils literal notranslate"><span class="pre">fetch_hal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.fetchers.fetch_inspire"><code class="docutils literal notranslate"><span class="pre">fetch_inspire()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.fetchers.fetch_openalex"><code class="docutils literal notranslate"><span class="pre">fetch_openalex()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.fetchers.fetch_pubmed"><code class="docutils literal notranslate"><span class="pre">fetch_pubmed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.fetchers.fetch_semanticscholar"><code class="docutils literal notranslate"><span class="pre">fetch_semanticscholar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.fetchers.fetch_springer"><code class="docutils literal notranslate"><span class="pre">fetch_springer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.fetchers.make_session"><code class="docutils literal notranslate"><span class="pre">make_session()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#module-living_review.logs">living_review.logs module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#logs-py">logs.py</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id24">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id25">Typical Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id25">Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id26">Typical Usage</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#living_review.logs.append_scan_log"><code class="docutils literal notranslate"><span class="pre">append_scan_log()</span></code></a></li>
@@ -148,11 +172,22 @@
 <li class="toctree-l3"><a class="reference internal" href="#living_review.logs.log_error"><code class="docutils literal notranslate"><span class="pre">log_error()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#living-review-pipeline-module">living_review.pipeline module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-living_review.pipeline">living_review.pipeline module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pipeline-py">pipeline.py</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#canonical-db-location">Canonical DB location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-outputs">Other outputs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#living_review.pipeline.LivingReviewPipeline"><code class="docutils literal notranslate"><span class="pre">LivingReviewPipeline</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#living_review.pipeline.LivingReviewPipeline.run"><code class="docutils literal notranslate"><span class="pre">LivingReviewPipeline.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#module-living_review.stats">living_review.stats module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#stats-py">stats.py</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id26">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id27">Typical Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id27">Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id28">Typical Usage</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#living_review.stats.compute_stats"><code class="docutils literal notranslate"><span class="pre">compute_stats()</span></code></a></li>
@@ -160,8 +195,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-living_review.utils">living_review.utils module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#utils-py">utils.py</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id28">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id29">Typical Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id29">Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id30">Typical Usage</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#living_review.utils.deduplicate"><code class="docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
@@ -356,8 +391,52 @@ caches it globally. Subsequent calls return the cached model.</p>
 </dd></dl>
 
 </section>
-<section id="living-review-cli-module">
-<h2>living_review.cli module<a class="headerlink" href="#living-review-cli-module" title="Link to this heading"></a></h2>
+<section id="module-living_review.cli">
+<span id="living-review-cli-module"></span><h2>living_review.cli module<a class="headerlink" href="#module-living_review.cli" title="Link to this heading"></a></h2>
+<section id="cli-py">
+<h3>cli.py<a class="headerlink" href="#cli-py" title="Link to this heading"></a></h3>
+<p>Command-line interface (CLI) for the Living Review pipeline.</p>
+<p>This script allows users to run the <strong>Living Review: ML/AI for Accelerator Physics</strong>
+pipeline directly from the terminal. It provides options to configure the scan
+window, data sources, classification thresholds, and output location.</p>
+<section id="main-features">
+<h4>Main Features<a class="headerlink" href="#main-features" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Configure the date range (number of days back from today).</p></li>
+<li><p>Select which data sources to query (arXiv, Inspire, HAL, OpenAlex, Crossref).</p></li>
+<li><p>Override default accelerator/ML relevance thresholds.</p></li>
+<li><p>Control output directory and chunk size for large runs.</p></li>
+<li><p>Optionally enable incremental mode (not yet fully implemented).</p></li>
+<li><p>Enable/disable PDF and BibTeX exports.</p></li>
+</ul>
+</section>
+<section id="id1">
+<h4>Typical Usage<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<p>Run a full scan of the last 30 days from all sources with default thresholds:</p>
+<blockquote>
+<div><p>$ python -m living_review.cli</p>
+</div></blockquote>
+<p>Run a 60-day scan only from arXiv and Inspire with custom thresholds:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>$ python -m living_review.cli –days 60 –sources arxiv,inspire </dt><dd><p>–accel-threshold 0.15 –ml-threshold 0.20 –output results</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>Disable PDF export but keep BibTeX:</p>
+<blockquote>
+<div><p>$ python -m living_review.cli –no-pdf</p>
+</div></blockquote>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.cli.main">
+<span class="sig-prename descclassname"><span class="pre">living_review.cli.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.cli.main" title="Link to this definition"></a></dt>
+<dd><p>Entry point for the Living Review CLI.</p>
+<p>Parses command-line arguments, builds the date range and configuration,
+initializes the <cite>LivingReviewPipeline</cite>, and runs it.</p>
+</dd></dl>
+
 </section>
 <section id="module-living_review.config">
 <span id="living-review-config-module"></span><h2>living_review.config module<a class="headerlink" href="#module-living_review.config" title="Link to this heading"></a></h2>
@@ -378,8 +457,8 @@ centralized ensures consistency between different modules
 <li><p>Default thresholds and constants (date window, API page sizes)</p></li>
 </ul>
 </section>
-<section id="id1">
-<h4>Typical Usage<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<section id="id2">
+<h4>Typical Usage<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review</span><span class="w"> </span><span class="kn">import</span> <span class="n">config</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">config</span><span class="o">.</span><span class="n">ACCEL_KEYWORDS</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
 <span class="go">[&#39;accelerator&#39;, &#39;linac&#39;, &#39;synchrotron&#39;, &#39;collider&#39;, &#39;storage ring&#39;]</span>
@@ -389,7 +468,7 @@ centralized ensures consistency between different modules
 </section>
 <dl class="py data">
 <dt class="sig sig-object py" id="living_review.config.ARXIV_PAGE_SIZE">
-<span class="sig-prename descclassname"><span class="pre">living_review.config.</span></span><span class="sig-name descname"><span class="pre">ARXIV_PAGE_SIZE</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100</span></span><a class="headerlink" href="#living_review.config.ARXIV_PAGE_SIZE" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">living_review.config.</span></span><span class="sig-name descname"><span class="pre">ARXIV_PAGE_SIZE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100</span></em><a class="headerlink" href="#living_review.config.ARXIV_PAGE_SIZE" title="Link to this definition"></a></dt>
 <dd><p>Maximum number of results per page in arXiv API queries.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -400,7 +479,7 @@ centralized ensures consistency between different modules
 
 <dl class="py data">
 <dt class="sig sig-object py" id="living_review.config.DATE_WINDOW_DAYS">
-<span class="sig-prename descclassname"><span class="pre">living_review.config.</span></span><span class="sig-name descname"><span class="pre">DATE_WINDOW_DAYS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></span><a class="headerlink" href="#living_review.config.DATE_WINDOW_DAYS" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">living_review.config.</span></span><span class="sig-name descname"><span class="pre">DATE_WINDOW_DAYS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#living_review.config.DATE_WINDOW_DAYS" title="Link to this definition"></a></dt>
 <dd><p>Default sliding window (in days) for fetching new papers.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -411,7 +490,7 @@ centralized ensures consistency between different modules
 
 <dl class="py data">
 <dt class="sig sig-object py" id="living_review.config.DEFAULT_THRESHOLDS">
-<span class="sig-prename descclassname"><span class="pre">living_review.config.</span></span><span class="sig-name descname"><span class="pre">DEFAULT_THRESHOLDS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'accel':</span> <span class="pre">0.13,</span> <span class="pre">'ml':</span> <span class="pre">0.18}</span></span><a class="headerlink" href="#living_review.config.DEFAULT_THRESHOLDS" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">living_review.config.</span></span><span class="sig-name descname"><span class="pre">DEFAULT_THRESHOLDS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'accel':</span> <span class="pre">0.13,</span> <span class="pre">'ml':</span> <span class="pre">0.18}</span></em><a class="headerlink" href="#living_review.config.DEFAULT_THRESHOLDS" title="Link to this definition"></a></dt>
 <dd><p>Default semantic similarity thresholds for relevance filtering.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -430,8 +509,8 @@ centralized ensures consistency between different modules
 a scientific paper throughout the pipeline. It ensures consistent handling
 of metadata, provenance, and status progression, and provides helpers for
 deduplication and serialization.</p>
-<section id="id2">
-<h4>Contents<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
+<section id="id3">
+<h4>Contents<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p><cite>Paper</cite>: dataclass representing a paper with metadata, provenance,
 and audit trail.</p></li>
@@ -449,8 +528,8 @@ and audit trail.</p></li>
 guaranteeing a stable round-trip between memory and storage.</p></li>
 </ul>
 </section>
-<section id="id3">
-<h4>Typical Usage<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
+<section id="id4">
+<h4>Typical Usage<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.data_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Paper</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">raw</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;AI for Beam Dynamics&quot;</span><span class="p">,</span> <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A. Researcher&quot;</span><span class="p">],</span>
 <span class="gp">... </span>       <span class="s2">&quot;arxiv_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1234.5678&quot;</span><span class="p">,</span> <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;arxiv&quot;</span><span class="p">}</span>
@@ -466,7 +545,7 @@ guaranteeing a stable round-trip between memory and storage.</p></li>
 </section>
 <dl class="py class">
 <dt class="sig sig-object py" id="living_review.data_model.Paper">
-<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">living_review.data_model.</span></span><span class="sig-name descname"><span class="pre">Paper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arxiv_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inspire_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">authors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abstract</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">year</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">venue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categories</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keywords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curated</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">links</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sources</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">history</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_updated</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.data_model.Paper" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">living_review.data_model.</span></span><span class="sig-name descname"><span class="pre">Paper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doi=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arxiv_id=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inspire_id=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">authors=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abstract=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">year=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">venue=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categories=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keywords=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curated=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notes=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">links=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sources=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">history=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_updated=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.data_model.Paper" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Representation of a scientific paper.</p>
 <dl class="py attribute">
@@ -680,42 +759,42 @@ guaranteeing a stable round-trip between memory and storage.</p></li>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id0">
-<span class="sig-name descname"><span class="pre">abstract</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#id0" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="id4">
-<span class="sig-name descname"><span class="pre">arxiv_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#id4" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">abstract</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id0" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id5">
-<span class="sig-name descname"><span class="pre">authors</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#id5" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">arxiv_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id5" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id6">
-<span class="sig-name descname"><span class="pre">categories</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#id6" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">authors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#id6" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id7">
-<span class="sig-name descname"><span class="pre">curated</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></span><a class="headerlink" href="#id7" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">categories</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#id7" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id8">
-<span class="sig-name descname"><span class="pre">date</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#id8" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">curated</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#id8" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id9">
-<span class="sig-name descname"><span class="pre">doi</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#id9" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">date</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id9" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id10">
+<span class="sig-name descname"><span class="pre">doi</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id10" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="living_review.data_model.Paper.from_dict">
-<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.data_model.Paper.from_dict" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.data_model.Paper.from_dict" title="Link to this definition"></a></dt>
 <dd><p>Reconstruct a Paper object from its dictionary representation.</p>
 <p>Used when loading from the canonical DB (<cite>site/data/livingreview.json</cite>).</p>
 <dl class="field-list simple">
@@ -733,7 +812,7 @@ guaranteeing a stable round-trip between memory and storage.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="living_review.data_model.Paper.from_source">
-<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">from_source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.data_model.Paper.from_source" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.data_model.Paper.from_source" title="Link to this definition"></a></dt>
 <dd><p>Build a Paper from raw metadata (dict).</p>
 <p>Normalizes identifiers, title, and authors, and ensures provenance.
 Will assign a canonical <cite>id</cite> of form:
@@ -754,18 +833,18 @@ Will assign a canonical <cite>id</cite> of form:
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="id10">
-<span class="sig-name descname"><span class="pre">history</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#id10" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="id11">
-<span class="sig-name descname"><span class="pre">id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id11" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">history</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]]</span></em><a class="headerlink" href="#id11" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id12">
-<span class="sig-name descname"><span class="pre">inspire_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#id12" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#id12" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">inspire_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id13" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -783,38 +862,38 @@ Will assign a canonical <cite>id</cite> of form:
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="id13">
-<span class="sig-name descname"><span class="pre">keywords</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#id13" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="id14">
-<span class="sig-name descname"><span class="pre">last_updated</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#id14" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">keywords</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#id14" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id15">
-<span class="sig-name descname"><span class="pre">links</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#id15" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">last_updated</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id15" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id16">
-<span class="sig-name descname"><span class="pre">notes</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#id16" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">links</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#id16" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id17">
-<span class="sig-name descname"><span class="pre">sources</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#id17" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">notes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id17" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id18">
-<span class="sig-name descname"><span class="pre">status</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#id18" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">sources</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]]</span></em><a class="headerlink" href="#id18" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="id19">
-<span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></span><a class="headerlink" href="#id19" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id19" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id20">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#id20" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -837,13 +916,13 @@ Will assign a canonical <cite>id</cite> of form:
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="id20">
-<span class="sig-name descname"><span class="pre">venue</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#id20" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="id21">
+<span class="sig-name descname"><span class="pre">venue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id21" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="id21">
-<span class="sig-name descname"><span class="pre">year</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#id21" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="id22">
+<span class="sig-name descname"><span class="pre">year</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id22" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -894,8 +973,8 @@ Used by Hugo templates, Decap CMS, and downstream visualisations.</p>
 </li>
 </ul>
 </section>
-<section id="id22">
-<h4>Typical Usage<a class="headerlink" href="#id22" title="Link to this heading"></a></h4>
+<section id="id23">
+<h4>Typical Usage<a class="headerlink" href="#id23" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.exporters</span><span class="w"> </span><span class="kn">import</span> <span class="n">export_json</span><span class="p">,</span> <span class="n">export_bibtex</span><span class="p">,</span> <span class="n">export_pdf</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">export_json</span><span class="p">(</span><span class="n">papers</span><span class="p">,</span> <span class="n">stats</span><span class="p">,</span> <span class="n">outdir</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">export_bibtex</span><span class="p">(</span><span class="n">papers</span><span class="p">,</span> <span class="n">outdir</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
@@ -941,8 +1020,8 @@ Used by Hugo templates, Decap CMS, and downstream visualisations.</p>
 <dt class="sig sig-object py" id="living_review.exporters.export_pdf">
 <span class="sig-prename descclassname"><span class="pre">living_review.exporters.</span></span><span class="sig-name descname"><span class="pre">export_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">papers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stats</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outdir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.exporters.export_pdf" title="Link to this definition"></a></dt>
 <dd><p>Export a printable PDF summary of the review.</p>
-<section id="id23">
-<h3>Output file<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
+<section id="id24">
+<h3>Output file<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><cite>site/static/downloads/livingreview.pdf</cite></p></li>
 </ul>
@@ -950,8 +1029,198 @@ Used by Hugo templates, Decap CMS, and downstream visualisations.</p>
 </dd></dl>
 
 </section>
-<section id="living-review-fetchers-module">
-<h2>living_review.fetchers module<a class="headerlink" href="#living-review-fetchers-module" title="Link to this heading"></a></h2>
+<section id="module-living_review.fetchers">
+<span id="living-review-fetchers-module"></span><h2>living_review.fetchers module<a class="headerlink" href="#module-living_review.fetchers" title="Link to this heading"></a></h2>
+<section id="fetchers-py">
+<h3>fetchers.py<a class="headerlink" href="#fetchers-py" title="Link to this heading"></a></h3>
+<p>Data-source fetchers for the <strong>Living Review</strong> project.</p>
+<p>This module provides functions to query multiple bibliographic APIs
+and return lists of <cite>Paper</cite> objects (via <cite>Paper.from_source</cite>).</p>
+<p>Supported sources:
+- <strong>arXiv</strong>: via <cite>arxiv</cite> Python client.
+- <strong>InspireHEP</strong>: via REST API.
+- <strong>HAL</strong> (Hyper Articles en Ligne).
+- <strong>OpenAlex</strong>.
+- <strong>Crossref</strong>.</p>
+<section id="each-fetcher">
+<h4>Each fetcher:<a class="headerlink" href="#each-fetcher" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Retrieves results within a given date window.</p></li>
+<li><p>Normalizes metadata into the canonical schema expected by <cite>Paper</cite>.</p></li>
+<li><p>Populates <cite>links</cite>, <cite>status</cite>, and provenance (<cite>source</cite>).</p></li>
+</ul>
+<p>A shared <cite>requests.Session</cite> with retry logic is used for robustness.</p>
+</section>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.arxiv_query_for_window">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">arxiv_query_for_window</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.arxiv_query_for_window" title="Link to this definition"></a></dt>
+<dd><p>Build arXiv queries targeting accelerator physics and ML categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Query strings to be passed to the <cite>arxiv</cite> client.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_arxiv">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_arxiv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_arxiv" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from arXiv within the given date range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime.date</em>) – Start date.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>) – End date.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Papers retrieved from arXiv.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_crossref">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_crossref</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_crossref" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from Crossref API across PRAB, JACoW, and general accelerator+ML topics.</p>
+<p>Combines three categories:
+- PRAB (prefix:10.1103 PhysRevAccelBeams)
+- JACoW / IPAC / ICALEPCS / LINAC conference papers
+- Generic ‘accelerator machine learning’ search</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime.date</em>)</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_hal">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_hal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_hal" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from HAL API (filtered to ML + accelerator physics).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper"><code class="xref py py-class docutils literal notranslate"><span class="pre">Paper</span></code></a>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_inspire">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_inspire</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_pages</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_inspire" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from InspireHEP API (AI/ML applied to accelerators).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper"><code class="xref py py-class docutils literal notranslate"><span class="pre">Paper</span></code></a>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_openalex">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_openalex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_openalex" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from OpenAlex API (60-day windows etc.), and set <cite>venue</cite>
+to the actual journal/conference (not the source name).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper"><code class="xref py py-class docutils literal notranslate"><span class="pre">Paper</span></code></a>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_pubmed">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_pubmed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_pubmed" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from Europe PMC (PubMed interface).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime.date</em>) – Start date.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>) – End date.</p></li>
+<li><p><strong>rows</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of results per page (default=50).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Papers retrieved from Europe PMC / PubMed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_semanticscholar">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_semanticscholar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_semanticscholar" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from the Semantic Scholar Graph API related to
+machine learning and accelerator physics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime.date</em>) – Start date.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>) – End date.</p></li>
+<li><p><strong>limit</strong> (<em>int</em><em>, </em><em>optional</em>) – Max number of results to fetch (default=100).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Papers retrieved from Semantic Scholar.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.fetch_springer">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">fetch_springer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.fetch_springer" title="Link to this definition"></a></dt>
+<dd><p>Fetch papers from Springer Nature API (PAM v2).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime.date</em>) – Start date.</p></li>
+<li><p><strong>end</strong> (<em>datetime.date</em>) – End date.</p></li>
+<li><p><strong>rows</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of results to retrieve (default=20).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Papers retrieved from Springer.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <a class="reference internal" href="#living_review.data_model.Paper" title="living_review.data_model.Paper">Paper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="living_review.fetchers.make_session">
+<span class="sig-prename descclassname"><span class="pre">living_review.fetchers.</span></span><span class="sig-name descname"><span class="pre">make_session</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.fetchers.make_session" title="Link to this definition"></a></dt>
+<dd><p>Create a <cite>requests.Session</cite> with retry strategy.</p>
+<p>Retries on server errors (500, 502, 503, 504) up to 3 times with
+exponential backoff.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Configured session with retry-enabled adapters.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>requests.Session</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 <section id="module-living_review.logs">
 <span id="living-review-logs-module"></span><h2>living_review.logs module<a class="headerlink" href="#module-living_review.logs" title="Link to this heading"></a></h2>
@@ -962,16 +1231,16 @@ Used by Hugo templates, Decap CMS, and downstream visualisations.</p>
 - Persistent scan logs (<cite>scan_log.json</cite>) storing metadata about each run.
 - Error logs (<cite>errors.log</cite>) with stack traces.
 - Retrieval of the last scanned date range.</p>
-<section id="id24">
-<h4>Contents<a class="headerlink" href="#id24" title="Link to this heading"></a></h4>
+<section id="id25">
+<h4>Contents<a class="headerlink" href="#id25" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>append_scan_log: record metadata about a scan (papers, chunks, status).</p></li>
 <li><p>log_error: record exceptions and stack traces in a log file.</p></li>
 <li><p>get_last_scan: retrieve the last recorded scan range.</p></li>
 </ul>
 </section>
-<section id="id25">
-<h4>Typical Usage<a class="headerlink" href="#id25" title="Link to this heading"></a></h4>
+<section id="id26">
+<h4>Typical Usage<a class="headerlink" href="#id26" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review</span><span class="w"> </span><span class="kn">import</span> <span class="n">logs</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">logs</span><span class="o">.</span><span class="n">append_scan_log</span><span class="p">(</span><span class="s2">&quot;logs&quot;</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">npapers</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">logs</span><span class="o">.</span><span class="n">log_error</span><span class="p">(</span><span class="s2">&quot;logs&quot;</span><span class="p">,</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Something went wrong&quot;</span><span class="p">))</span>
@@ -1044,8 +1313,59 @@ otherwise <cite>None</cite>.</p>
 </dd></dl>
 
 </section>
-<section id="living-review-pipeline-module">
-<h2>living_review.pipeline module<a class="headerlink" href="#living-review-pipeline-module" title="Link to this heading"></a></h2>
+<section id="module-living_review.pipeline">
+<span id="living-review-pipeline-module"></span><h2>living_review.pipeline module<a class="headerlink" href="#module-living_review.pipeline" title="Link to this heading"></a></h2>
+<section id="pipeline-py">
+<h3>pipeline.py<a class="headerlink" href="#pipeline-py" title="Link to this heading"></a></h3>
+<p>Main orchestration pipeline for the <strong>Living Review</strong> project.</p>
+<p>The <cite>LivingReviewPipeline</cite> class coordinates the entire workflow:
+1. Load existing DB (if present).
+2. Fetch papers from multiple bibliographic sources (arXiv, InspireHEP,</p>
+<blockquote>
+<div><p>HAL, OpenAlex, Crossref).</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Deduplicate &amp; merge into canonical DB (preprint → journal, DOI, etc.).</p></li>
+<li><p>Optionally ingest CMS-approved manual submissions.</p></li>
+<li><p>Filter papers for semantic relevance (accelerators ∧ ML).</p></li>
+<li><p>Classify papers into categories.</p></li>
+<li><p>Compute statistics.</p></li>
+<li><p>Export results to Hugo site in multiple formats.</p></li>
+</ol>
+<section id="canonical-db-location">
+<h4>Canonical DB location<a class="headerlink" href="#canonical-db-location" title="Link to this heading"></a></h4>
+<p>The canonical JSON database is stored in the Hugo site’s <cite>/data/</cite> folder:</p>
+<blockquote>
+<div><p>site/data/livingreview.json</p>
+</div></blockquote>
+<p>This file is:
+- Updated by this pipeline when merging new papers,
+- Exported again at the end of the run (papers + stats),
+- Read by Hugo templates (<cite>.Site.Data.livingreview</cite>),
+- Editable via Decap CMS.</p>
+</section>
+<section id="other-outputs">
+<h4>Other outputs<a class="headerlink" href="#other-outputs" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>BibTeX → <cite>site/static/downloads/livingreview.bib</cite></p></li>
+<li><p>PDF    → <cite>site/static/downloads/livingreview.pdf</cite></p></li>
+</ul>
+<p>(Note: HTML export has been removed — Hugo now builds pages directly from the JSON DB.)</p>
+</section>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">living_review.pipeline.</span></span><span class="sig-name descname"><span class="pre">LivingReviewPipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sources</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'site/data/livingreview.json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">promote_manual</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Orchestrates the end-to-end Living Review workflow.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="living_review.pipeline.LivingReviewPipeline.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#living_review.pipeline.LivingReviewPipeline.run" title="Link to this definition"></a></dt>
+<dd><p>Execute the pipeline end-to-end.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="module-living_review.stats">
 <span id="living-review-stats-module"></span><h2>living_review.stats module<a class="headerlink" href="#module-living_review.stats" title="Link to this heading"></a></h2>
@@ -1055,15 +1375,15 @@ otherwise <cite>None</cite>.</p>
 <p>This module aggregates counts of papers by year, category, venue, keyword,
 and monthly trends. These statistics are used for reporting and visualizations
 in the exported JSON/HTML outputs.</p>
-<section id="id26">
-<h4>Contents<a class="headerlink" href="#id26" title="Link to this heading"></a></h4>
+<section id="id27">
+<h4>Contents<a class="headerlink" href="#id27" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>KEYWORDS: predefined list of relevant keywords to track.</p></li>
 <li><p>compute_stats: aggregate statistics from a list of papers.</p></li>
 </ul>
 </section>
-<section id="id27">
-<h4>Typical Usage<a class="headerlink" href="#id27" title="Link to this heading"></a></h4>
+<section id="id28">
+<h4>Typical Usage<a class="headerlink" href="#id28" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">compute_stats</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">stats</span> <span class="o">=</span> <span class="n">compute_stats</span><span class="p">(</span><span class="n">papers</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">stats</span><span class="p">[</span><span class="s2">&quot;per_year&quot;</span><span class="p">]</span>
@@ -1107,8 +1427,8 @@ in the exported JSON/HTML outputs.</p>
 - Cleaning up LaTeX markup and titles for comparison.
 - Fuzzy similarity scoring between titles.
 - Checking if a date lies within a given range.</p>
-<section id="id28">
-<h4>Contents<a class="headerlink" href="#id28" title="Link to this heading"></a></h4>
+<section id="id29">
+<h4>Contents<a class="headerlink" href="#id29" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>deduplicate: remove duplicate papers by <cite>(arxiv_id, doi, normalized_title)</cite>.</p></li>
 <li><p>within_range: test whether a date falls within [start, end].</p></li>
@@ -1119,8 +1439,8 @@ in the exported JSON/HTML outputs.</p>
 <li><p>similar_title: fuzzy similarity score between two titles.</p></li>
 </ul>
 </section>
-<section id="id29">
-<h4>Typical Usage<a class="headerlink" href="#id29" title="Link to this heading"></a></h4>
+<section id="id30">
+<h4>Typical Usage<a class="headerlink" href="#id30" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">norm_doi</span><span class="p">,</span> <span class="n">simplify_title</span><span class="p">,</span> <span class="n">within_range</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">norm_doi</span><span class="p">(</span><span class="s2">&quot;https://doi.org/10.1103/PhysRevLett.123.456&quot;</span><span class="p">)</span>
 <span class="go">&#39;10.1103/physrevlett.123.456&#39;</span>
