@@ -12,13 +12,13 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 185
+      "2026": 187
     },
     "per_category": {
-      "Tools & Libraries": 220,
+      "Tools & Libraries": 221,
       "Novel Applications": 279,
-      "Others": 68,
-      "Anomaly Detection & Fault Prediction": 83,
+      "Others": 69,
+      "Anomaly Detection & Fault Prediction": 84,
       "Statistics & Trends": 89,
       "Reinforcement Learning & Autonomous Systems": 84,
       "Surrogate Models": 48,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 206,
+      "arXiv": 207,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -249,14 +249,15 @@
       "CEAS Space Journal": 1,
       "Süleyman Demirel Üniversitesi Fen Edebiyat Fakültesi Fen Dergisi": 1,
       "Biomedical Engineering Advances": 1,
-      "Journal of Mechanical Engineering and Manufacturing": 1
+      "Journal of Mechanical Engineering and Manufacturing": 1,
+      "Journal of Environmental Health Science and Engineering": 1
     },
     "per_keyword": {
       "optimization": 86,
       "control": 87,
       "surrogate model": 22,
       "transformer": 22,
-      "deep learning": 75,
+      "deep learning": 76,
       "proton therapy": 1,
       "beam": 154,
       "reinforcement learning": 49,
@@ -352,10 +353,10 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 31,
-      "2026-06": 2
+      "2026-06": 4
     },
-    "last_updated": "2026-06-03T09:05:05.162657+00:00",
-    "next_update": "2026-06-04T09:05:05.162657+00:00"
+    "last_updated": "2026-06-05T07:12:56.262785+00:00",
+    "next_update": "2026-06-06T07:12:56.262785+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -8531,7 +8532,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.44027766585350037
+          "score": 0.4402778148651123
         },
         {
           "label": "Novel Applications",
@@ -9130,11 +9131,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.5486423969268799
+          "score": 0.5486422777175903
         },
         {
           "label": "Novel Applications",
-          "score": 0.5445798635482788
+          "score": 0.5445797443389893
         }
       ],
       "keywords": [],
@@ -24153,6 +24154,91 @@
       ],
       "history": [],
       "last_updated": "2026-06-02T07:28:13Z"
+    },
+    "('2606.05334', '', 'uncertainty aware functional behavior prediction and material fatigue assessment for circular factory')": {
+      "id": "arxiv:2606.05334",
+      "doi": null,
+      "arxiv_id": "2606.05334",
+      "inspire_id": null,
+      "title": "Uncertainty Aware Functional Behavior Prediction and Material Fatigue Assessment for Circular Factory",
+      "authors": [
+        "Nehal Afifi",
+        "Mehdi Khabou",
+        "Victor Mas",
+        "Jonas Hemmerich",
+        "Patric Grauberger",
+        "Stefan Dietrich",
+        "Volker Schulze",
+        "Sven Matthiesen"
+      ],
+      "abstract": "Returned products in circular factories re-enter production with heterogeneous degradation states, usage histories, and remaining capability. Reuse cannot be decided from the current inspection alone, because future function fulfillment and component integrity may evolve differently under the next service scenario. Existing PHM approaches support degradation prediction, but often target fixed operating conditions or isolated component benchmarks, while material-fatigue assessment is rarely linked to system-level functional prognosis. This paper addresses this gap for an angle grinder by combining uncertainty-aware functional prediction with component-level fatigue assessment in an instance-specific reliability workflow. The proposed framework combines the current tool state with recent force--torque usage windows. A convolutional encoder extracts loading patterns from spindle forces and shaft torque, and an LSTM backbone predicts nine functional variables as Gaussian mean and variance estimates. In parallel, the same loading history is translated into output-shaft fatigue information through finite-element-supported stress reconstruction, S--N/Miner damage evaluation with Haibach extension, and Paris-law crack-growth analysis. A streaming replay algorithm consolidates both branches into functional, material, and system reliability trajectories. Held-out tests show mean \\(2\\%\\)-tolerance accuracy of 0.9652 across nine outputs. Thermal variables are predicted near-perfectly, while drive motor current and load speed remain the most demanding dynamic outputs, with \\(R^2\\) values of 0.9750 and 0.9924. Torque history is especially important for these variables, and the conventional LSTM outperforms GRU and xLSTM in the short-history setting. Reliability calibration is most informative for drive motor current, where predicted and observed exceedance probabilities ...",
+      "date": "2026-06-03",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.4541112780570984
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2606.05334v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-06-05T07:11:41Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-05T07:11:41Z"
+    },
+    "('', '10.1007/s40201-026-00978-0', 'from satellite imagery to material outflows master plan and deep learning based quantification of demolition materials to support circular construction')": {
+      "id": "doi:10.1007/s40201-026-00978-0",
+      "doi": "10.1007/s40201-026-00978-0",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "From satellite imagery to material outflows: master plan and deep learning-based quantification of demolition materials to support circular construction",
+      "authors": [
+        "Aiganym Kumisbek",
+        "Aslan Nauyryzbay",
+        "Ferhat Karaca",
+        "Mert Guney"
+      ],
+      "abstract": "",
+      "date": "2026-06-05",
+      "year": 2026,
+      "venue": "Journal of Environmental Health Science and Engineering",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1007/s40201-026-00978-0",
+        "crossref": "https://doi.org/10.1007/s40201-026-00978-0"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-05T07:12:06Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-05T07:12:06Z"
     }
   }
 }
