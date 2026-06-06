@@ -12,17 +12,17 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 187
+      "2026": 188
     },
     "per_category": {
       "Tools & Libraries": 221,
       "Novel Applications": 279,
       "Others": 69,
-      "Anomaly Detection & Fault Prediction": 84,
+      "Anomaly Detection & Fault Prediction": 85,
       "Statistics & Trends": 89,
       "Reinforcement Learning & Autonomous Systems": 84,
       "Surrogate Models": 48,
-      "Data Management": 46,
+      "Data Management": 47,
       "By Facility Type": 10,
       "RF Systems": 9,
       "Operations & Control": 14,
@@ -250,7 +250,8 @@
       "Süleyman Demirel Üniversitesi Fen Edebiyat Fakültesi Fen Dergisi": 1,
       "Biomedical Engineering Advances": 1,
       "Journal of Mechanical Engineering and Manufacturing": 1,
-      "Journal of Environmental Health Science and Engineering": 1
+      "Journal of Environmental Health Science and Engineering": 1,
+      "INFORMS Journal on Applied Analytics": 1
     },
     "per_keyword": {
       "optimization": 86,
@@ -353,10 +354,10 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 31,
-      "2026-06": 4
+      "2026-06": 5
     },
-    "last_updated": "2026-06-05T07:12:56.262785+00:00",
-    "next_update": "2026-06-06T07:12:56.262785+00:00"
+    "last_updated": "2026-06-06T06:35:34.035675+00:00",
+    "next_update": "2026-06-07T06:35:34.035675+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -9131,11 +9132,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.5486422777175903
+          "score": 0.5486423969268799
         },
         {
           "label": "Novel Applications",
-          "score": 0.5445797443389893
+          "score": 0.5445798635482788
         }
       ],
       "keywords": [],
@@ -9801,11 +9802,11 @@
       "categories": [
         {
           "label": "RF Systems",
-          "score": 0.4130398631095886
+          "score": 0.4130399823188782
         },
         {
           "label": "Novel Applications",
-          "score": 0.39973098039627075
+          "score": 0.3997310698032379
         }
       ],
       "keywords": [],
@@ -24239,6 +24240,48 @@
       ],
       "history": [],
       "last_updated": "2026-06-05T07:12:06Z"
+    },
+    "('', '10.1287/inte.2025.0292', 'geiger uses machine learning to reduce customer churn in the promotional products industry')": {
+      "id": "doi:10.1287/inte.2025.0292",
+      "doi": "10.1287/inte.2025.0292",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Geiger Uses Machine Learning to Reduce Customer Churn in the Promotional Products Industry",
+      "authors": [
+        "Jan Schemm",
+        "Christian Schwarz",
+        "Marc Strickrodt"
+      ],
+      "abstract": "<jats:p>To reduce customer churn in its drop-shipment business, Geiger GmbH implemented a machine-learning-based prediction system that helps sales representatives identify customers at risk of leaving. Integrated into a Power BI dashboard, the solution supports proactive retention management and prioritizes intervention efforts. The deployed model identifies more than twice as many future churners as random targeting.</jats:p>",
+      "date": "2026-06-05",
+      "year": 2026,
+      "venue": "INFORMS Journal on Applied Analytics",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.31413352489471436
+        },
+        {
+          "label": "Data Management",
+          "score": 0.28386789560317993
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1287/inte.2025.0292",
+        "crossref": "https://doi.org/10.1287/inte.2025.0292"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-06T06:34:36Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-06T06:34:36Z"
     }
   }
 }
