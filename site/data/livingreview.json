@@ -12,18 +12,18 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 190
+      "2026": 191
     },
     "per_category": {
       "Tools & Libraries": 221,
-      "Novel Applications": 280,
+      "Novel Applications": 281,
       "Others": 69,
       "Anomaly Detection & Fault Prediction": 85,
       "Statistics & Trends": 89,
       "Reinforcement Learning & Autonomous Systems": 84,
       "Surrogate Models": 49,
       "Data Management": 47,
-      "By Facility Type": 10,
+      "By Facility Type": 11,
       "RF Systems": 9,
       "Operations & Control": 14,
       "Beamline Design & Simulation": 36,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 208,
+      "arXiv": 209,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -261,7 +261,7 @@
       "transformer": 22,
       "deep learning": 76,
       "proton therapy": 1,
-      "beam": 154,
+      "beam": 155,
       "reinforcement learning": 49,
       "diagnostics": 35,
       "uncertainty quantification": 6,
@@ -354,11 +354,11 @@
       "2026-02": 28,
       "2026-03": 38,
       "2026-04": 31,
-      "2026-05": 31,
+      "2026-05": 32,
       "2026-06": 7
     },
-    "last_updated": "2026-06-08T08:14:29.277280+00:00",
-    "next_update": "2026-06-09T08:14:29.277280+00:00"
+    "last_updated": "2026-06-09T06:55:28.234796+00:00",
+    "next_update": "2026-06-10T06:55:28.234796+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -4824,11 +4824,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4678313732147217
+          "score": 0.4678313136100769
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.45105862617492676
+          "score": 0.4510584771633148
         }
       ],
       "keywords": [],
@@ -9133,11 +9133,11 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.5486423969268799
+          "score": 0.5486422777175903
         },
         {
           "label": "Novel Applications",
-          "score": 0.5445798635482788
+          "score": 0.5445797443389893
         }
       ],
       "keywords": [],
@@ -24359,6 +24359,45 @@
       ],
       "history": [],
       "last_updated": "2026-06-08T08:13:42Z"
+    },
+    "('2606.07564', '', 'considerations for an integrated detector design at fcc ee a human ai exploration')": {
+      "id": "arxiv:2606.07564",
+      "doi": null,
+      "arxiv_id": "2606.07564",
+      "inspire_id": null,
+      "title": "Considerations for an Integrated Detector Design at FCC-ee: A Human-AI Exploration",
+      "authors": [
+        "Charles Young"
+      ],
+      "abstract": "This report explores detector design considerations for the Future Circular Collider in its electron-positron mode (FCC-ee) through an extended dialogue between a physicist and an AI assistant. Starting from initial \"prejudice\" detector concepts proposed by the AI assistant without explicit physicist input, each subsystem is examined in detail, with the AI's assumptions challenged and revised through the exchange. The discussion covers the full detector from beam pipe to luminosity monitor, with particular attention to the interplay between subsystem choices and the practical considerations - calibration, stability, and operational simplicity - that are essential for a fifteen-year precision physics program. The narrative documents how the integrated detector design evolved substantially from the starting point to revised \"prejudice\" detector concepts of the AI assistant. The focus of this report is on the process to illustrate both the potential and the limitations of human-AI collaboration in experimental physics design, and the physics capabilities of any of the \"prejudice\" detector concepts remain to be explored.",
+      "date": "2026-05-25",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.5047557353973389
+        },
+        {
+          "label": "By Facility Type",
+          "score": 0.4230673015117645
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2606.07564v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-06-09T06:52:14Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-09T06:52:14Z"
     }
   }
 }
