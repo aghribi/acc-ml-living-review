@@ -12,14 +12,14 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 191
+      "2026": 192
     },
     "per_category": {
-      "Tools & Libraries": 221,
+      "Tools & Libraries": 222,
       "Novel Applications": 281,
       "Others": 69,
       "Anomaly Detection & Fault Prediction": 85,
-      "Statistics & Trends": 89,
+      "Statistics & Trends": 90,
       "Reinforcement Learning & Autonomous Systems": 84,
       "Surrogate Models": 49,
       "Data Management": 47,
@@ -252,7 +252,8 @@
       "Journal of Mechanical Engineering and Manufacturing": 1,
       "Journal of Environmental Health Science and Engineering": 1,
       "INFORMS Journal on Applied Analytics": 1,
-      "International Journal of Intelligent Unmanned Systems": 1
+      "International Journal of Intelligent Unmanned Systems": 1,
+      "Machine Learning in Civil Engineering and Infrastructure Development": 1
     },
     "per_keyword": {
       "optimization": 86,
@@ -355,10 +356,10 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 32,
-      "2026-06": 7
+      "2026-06": 8
     },
-    "last_updated": "2026-06-09T06:55:28.234796+00:00",
-    "next_update": "2026-06-10T06:55:28.234796+00:00"
+    "last_updated": "2026-06-10T07:16:23.333770+00:00",
+    "next_update": "2026-06-11T07:16:23.333770+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -7586,11 +7587,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.3308313190937042
+          "score": 0.3308313488960266
         },
         {
           "label": "Data Management",
-          "score": 0.25785553455352783
+          "score": 0.2578555643558502
         }
       ],
       "keywords": [],
@@ -20475,11 +20476,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4271664619445801
+          "score": 0.4271663725376129
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3554154932498932
+          "score": 0.35541555285453796
         },
         {
           "label": "Reviews",
@@ -24398,6 +24399,50 @@
       ],
       "history": [],
       "last_updated": "2026-06-09T06:52:14Z"
+    },
+    "('', '10.1108/978-1-83662-866-820261009', 'training of ann using mountain gazelle optimizer for fire resistance of frp strengthened beams')": {
+      "id": "doi:10.1108/978-1-83662-866-820261009",
+      "doi": "10.1108/978-1-83662-866-820261009",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Training of ANN using Mountain Gazelle Optimizer for fire resistance of FRP-strengthened beams",
+      "authors": [
+        "Nima Khodadadi",
+        "M.Z. Naser",
+        "Francisco De Caso",
+        "Antonio Nanni",
+        "Khalid M Mosalam"
+      ],
+      "abstract": "<jats:p>Fibre-reinforced polymers (FRP) have become increasingly popular as both primary and secondary reinforcement materials in concrete structures due to their significant advantages over traditional steel reinforcement. However, the fire resistance of concrete structures strengthened with FRP remains a significant concern, exacerbated by the lack of reliable fire test data and specific testing protocols. This issue is further complicated by the substantial time and cost required to conduct these tests. Additionally, no artificial intelligence (AI)-based model currently utilises this data to predict outcomes, which could save significant time and costs in assessing the fire resistance of FRP-incorporated structures. Addressing this gap, this chapter develops the AI model for a comprehensive database of over 21&amp;lt;|&amp;gt;000 numerical data points on the fire performance of FRP-strengthened reinforced concrete beams. This database includes a wide range of parameters such as geometric dimensions, FRP-strengthening levels, steel reinforcement ratios, insulation configurations, material properties and load levels, aiming to facilitate applying machine learning (ML) techniques in predicting total load applied on beams. Specifically, the chapter explores the enhancement of artificial neural networks (ANNs) by integrating metaheuristic algorithms for optimising network structures. The approach described in this chapter optimises parameters across a feed-forward backpropagation network, employing the Mountain Gazelle Optimiser (MGO) algorithm in tandem with ANN. The experimental results are subsequently evaluated using coefficient of determination (R2), mean squared error (MSE), root mean squared error (RMSE) and mean absolute error (MAE) metrics. The refined MGO-ANN approach boasts an impressive R2 value of 0.8175. To make the findings accessible to practitioners, a graphical user interface (GUI) was developed, enabling users to input features and obtain predictions on the total load applied on beams in a user-friendly manner. This research not only fills a significant knowledge gap regarding the fire resistance of FRP-strengthened beams but also advances the use of ML in structural engineering by providing a reliable method for performance prediction.</jats:p>",
+      "date": "2026-06-10",
+      "year": 2026,
+      "venue": "Machine Learning in Civil Engineering and Infrastructure Development",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.2772717773914337
+        },
+        {
+          "label": "Statistics & Trends",
+          "score": 0.26054733991622925
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1108/978-1-83662-866-820261009",
+        "crossref": "https://doi.org/10.1108/978-1-83662-866-820261009"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-10T07:15:33Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-10T07:15:33Z"
     }
   }
 }
