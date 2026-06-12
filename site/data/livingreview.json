@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 192
+      "2026": 194
     },
     "per_category": {
-      "Tools & Libraries": 222,
+      "Tools & Libraries": 223,
       "Novel Applications": 281,
-      "Others": 69,
+      "Others": 70,
       "Anomaly Detection & Fault Prediction": 85,
       "Statistics & Trends": 90,
       "Reinforcement Learning & Autonomous Systems": 84,
@@ -253,7 +253,9 @@
       "Journal of Environmental Health Science and Engineering": 1,
       "INFORMS Journal on Applied Analytics": 1,
       "International Journal of Intelligent Unmanned Systems": 1,
-      "Machine Learning in Civil Engineering and Infrastructure Development": 1
+      "Machine Learning in Civil Engineering and Infrastructure Development": 1,
+      "BMC Medical Education": 1,
+      "International Journal of Contextual Science Education": 1
     },
     "per_keyword": {
       "optimization": 86,
@@ -356,10 +358,10 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 32,
-      "2026-06": 8
+      "2026-06": 10
     },
-    "last_updated": "2026-06-11T08:08:08.301566+00:00",
-    "next_update": "2026-06-12T08:08:08.301566+00:00"
+    "last_updated": "2026-06-12T07:27:47.062083+00:00",
+    "next_update": "2026-06-13T07:27:47.062083+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -3182,7 +3184,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.42515575885772705
+          "score": 0.4251558184623718
         },
         {
           "label": "Statistics & Trends",
@@ -9093,7 +9095,7 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.3924559950828552
+          "score": 0.39245590567588806
         },
         {
           "label": "Novel Applications",
@@ -10085,11 +10087,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.584019660949707
+          "score": 0.5840196013450623
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.5551004409790039
+          "score": 0.5551003217697144
         },
         {
           "label": "Surrogate Models",
@@ -18266,11 +18268,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4271664619445801
+          "score": 0.4271663725376129
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3554154932498932
+          "score": 0.35541555285453796
         },
         {
           "label": "Reviews",
@@ -24443,6 +24445,89 @@
       ],
       "history": [],
       "last_updated": "2026-06-10T07:15:33Z"
+    },
+    "('', '10.1186/s12909-026-09597-7', 'exploring the use of ai generated counterfactual chest x rays to enhance diagnostic learning in medical education')": {
+      "id": "doi:10.1186/s12909-026-09597-7",
+      "doi": "10.1186/s12909-026-09597-7",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Exploring the use of AI-generated counterfactual chest X-rays to enhance diagnostic learning in medical education",
+      "authors": [
+        "Greta Mohr",
+        "Yifei Zhu",
+        "Xujiong Ye",
+        "Marilyn Lennon",
+        "Calum MacLellan",
+        "John Maclay",
+        "David J. Lowe",
+        "Christopher Sainsbury",
+        "Feng Dong",
+        "David Lagnado"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Accurate interpretation of chest X-rays is a critical clinical skill, yet radiology training in medical education remains limited and often fails to provide broad exposure to a wide variety of conditions, including those that are rare, subtle, or easily confused with one another. Although artificial intelligence (AI) has shown impressive performance in medical image classification, its potential to actively improve clinical education has not been fully realised. In this study, we introduce AI-generated\n                    <jats:italic>counterfactual</jats:italic>\n                    chest X-rays—real patient images digitally altered to show a different but still realistic condition, while keeping the same patient’s anatomy. These counterfactuals create ‘what if’ scenarios within the same patient and offer a novel tool to enhance diagnostic learning, support decision-making, and improve confidence calibration in medical trainees and professionals.\n                  </jats:p>\n                  <jats:p>Forty-two participants, including medical students and doctors, completed a four-part online study involving diagnostic classification, comparison of counterfactual image pairs, image authenticity judgements, and clinical treatment planning. All image comparisons focused on three clinical conditions: healthy lungs, pneumonia, and pleural effusion. Statistical analyses included t-tests, ANOVAs, Pearson correlations, and linear regression.</jats:p>\n                  <jats:p>Results showed that counterfactual images meaningfully supported diagnostic learning. Participants demonstrated improved accuracy and confidence over time, particularly when distinguishing pleural effusion from healthy lungs. Confidence became more closely aligned with accuracy, and participants were better able to recognise condition-specific differences. These comparisons also revealed areas of diagnostic weakness that would be difficult to detect through conventional instruction alone. While real images led to higher raw diagnostic accuracy, counterfactuals proved highly effective in promoting learning and reflective reasoning. Image authenticity influenced clinical decision-making, and initial confidence was a stronger predictor of final treatment confidence than diagnostic correctness.</jats:p>\n                  <jats:p>These findings highlight the strong potential of counterfactual imaging to enhance radiology education. By enabling learners to engage with rare, complex, or demographically underrepresented cases in a controlled and consistent way, AI-generated counterfactuals offer a powerful and scalable tool to improve diagnostic preparedness and clinical confidence in future healthcare professionals.</jats:p>",
+      "date": "2026-06-12",
+      "year": 2026,
+      "venue": "BMC Medical Education",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1186/s12909-026-09597-7",
+        "crossref": "https://doi.org/10.1186/s12909-026-09597-7"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-12T07:26:58Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-12T07:26:58Z"
+    },
+    "('', '10.29303/ijcse.v4i2.1654', 'a correlational study of activity and physics learning outcomes in the implementation of problem based learning among grade xi science students at man 1 mataram')": {
+      "id": "doi:10.29303/ijcse.v4i2.1654",
+      "doi": "10.29303/ijcse.v4i2.1654",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A Correlational Study of Activity and Physics Learning Outcomes in the Implementation of Problem Based Learning among Grade XI Science Students at MAN 1 Mataram",
+      "authors": [
+        "Atika Wahyuni",
+        "Joni Rokhmat",
+        "I Wayan Gunada"
+      ],
+      "abstract": "<jats:p>This study aims to (1) describe the level of student learning activity, (2) describe the level of student physics learning outcomes, and (3) analyze the relationship between learning activity and physics learning outcomes in the implementation of Problem-Based Learning (PBL). This research employed a correlational design with a quantitative approach. The population consisted of all 168 students in the eleventh-grade science classes, and a saturated sampling technique was used so that the entire population become the sample. Descriptive analysis was used to determine the levels of student learning activity and physics learning outcomes. For hypothesis testing, non-parametric statistics (Spearman correlation) were used because the data were not normally distributed. The results showed that (1) the level of student learning activity was 20,8% high, 49,4% medium, and 29,8% low; (2) the level of student physics learning outcomes was 1,2% high, 83,9% medium, and 14,9% low; (3) the Spearman correlation test revealed a significant positive correlation between the two variables (sig. 2-tailed = 0,003 &lt; 0,05) with a low correlation level (correlation coefficient = 0,226). Based on the coefficient of determination, the contribution of learning activity to physics learning outcomes was only 5,1%. Thus, it can be concluded that there is a significant positive relationship between learning activity and physics learning outcomes, although this relationship is low and contributes only slightly.</jats:p>",
+      "date": "2026-06-12",
+      "year": 2026,
+      "venue": "International Journal of Contextual Science Education",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.29303/ijcse.v4i2.1654",
+        "crossref": "https://doi.org/10.29303/ijcse.v4i2.1654"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-12T07:26:58Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-12T07:26:58Z"
     }
   }
 }
