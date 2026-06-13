@@ -12,12 +12,12 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 194
+      "2026": 195
     },
     "per_category": {
       "Tools & Libraries": 223,
       "Novel Applications": 281,
-      "Others": 70,
+      "Others": 71,
       "Anomaly Detection & Fault Prediction": 85,
       "Statistics & Trends": 90,
       "Reinforcement Learning & Autonomous Systems": 84,
@@ -255,14 +255,15 @@
       "International Journal of Intelligent Unmanned Systems": 1,
       "Machine Learning in Civil Engineering and Infrastructure Development": 1,
       "BMC Medical Education": 1,
-      "International Journal of Contextual Science Education": 1
+      "International Journal of Contextual Science Education": 1,
+      "Advanced Modeling and Simulation in Engineering Sciences": 1
     },
     "per_keyword": {
       "optimization": 86,
       "control": 87,
       "surrogate model": 23,
       "transformer": 22,
-      "deep learning": 76,
+      "deep learning": 77,
       "proton therapy": 1,
       "beam": 155,
       "reinforcement learning": 49,
@@ -358,10 +359,10 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 32,
-      "2026-06": 10
+      "2026-06": 11
     },
-    "last_updated": "2026-06-12T07:27:47.062083+00:00",
-    "next_update": "2026-06-13T07:27:47.062083+00:00"
+    "last_updated": "2026-06-13T07:05:38.628402+00:00",
+    "next_update": "2026-06-14T07:05:38.628402+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -24528,6 +24529,48 @@
       ],
       "history": [],
       "last_updated": "2026-06-12T07:26:58Z"
+    },
+    "('', '10.1186/s40323-026-00329-6', 'remaining useful life of power transformers using efficient surrogates and deep learning techniques')": {
+      "id": "doi:10.1186/s40323-026-00329-6",
+      "doi": "10.1186/s40323-026-00329-6",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Remaining useful life of power transformers using efficient surrogates and deep learning techniques",
+      "authors": [
+        "Lila Achour",
+        "Sebastian Rodriguez",
+        "Paul-Henri Langlois",
+        "Fikri Hafid",
+        "Chady Ghnatios",
+        "Xavier Kestelyn",
+        "Francisco Chinesta"
+      ],
+      "abstract": "",
+      "date": "2026-06-13",
+      "year": 2026,
+      "venue": "Advanced Modeling and Simulation in Engineering Sciences",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Others",
+          "score": 0.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1186/s40323-026-00329-6",
+        "crossref": "https://doi.org/10.1186/s40323-026-00329-6"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-13T07:04:40Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-13T07:04:40Z"
     }
   }
 }
