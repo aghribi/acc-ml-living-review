@@ -12,11 +12,11 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 202
+      "2026": 203
     },
     "per_category": {
-      "Tools & Libraries": 226,
-      "Novel Applications": 281,
+      "Tools & Libraries": 227,
+      "Novel Applications": 282,
       "Others": 72,
       "Anomaly Detection & Fault Prediction": 88,
       "Statistics & Trends": 90,
@@ -26,7 +26,7 @@
       "By Facility Type": 11,
       "RF Systems": 9,
       "Operations & Control": 14,
-      "Beamline Design & Simulation": 36,
+      "Beamline Design & Simulation": 37,
       "Beam Dynamics": 12,
       "Reviews": 30,
       "Beam Diagnostics": 22,
@@ -192,7 +192,7 @@
       "IEEE Transactions on Pattern Analysis and Machine Intelligence": 1,
       "Expert Systems with Applications": 1,
       "Materials Letters": 1,
-      "Annals of Nuclear Energy": 1,
+      "Annals of Nuclear Energy": 2,
       "Jurnal Informatika Terpadu": 1,
       "Machines": 1,
       "Laser-based Micro- and Nanoprocessing XX": 2,
@@ -362,10 +362,10 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 32,
-      "2026-06": 18
+      "2026-06": 19
     },
-    "last_updated": "2026-06-18T08:13:14.695788+00:00",
-    "next_update": "2026-06-19T08:13:14.695788+00:00"
+    "last_updated": "2026-06-19T08:36:40.951700+00:00",
+    "next_update": "2026-06-20T08:36:40.951700+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -13541,11 +13541,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4003909230232239
+          "score": 0.4003908634185791
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.35071539878845215
+          "score": 0.3507153391838074
         }
       ],
       "keywords": [],
@@ -19883,7 +19883,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.2652878165245056
+          "score": 0.265287846326828
         }
       ],
       "keywords": [],
@@ -20653,7 +20653,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.3201221823692322
+          "score": 0.32012227177619934
         },
         {
           "label": "Statistics & Trends",
@@ -22608,11 +22608,11 @@
       "categories": [
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.2822446823120117
+          "score": 0.2822447419166565
         },
         {
           "label": "RF Systems",
-          "score": 0.2813583314418793
+          "score": 0.2813583016395569
         }
       ],
       "keywords": [],
@@ -23624,11 +23624,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3678020238876343
+          "score": 0.3678019046783447
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.35441839694976807
+          "score": 0.35441845655441284
         }
       ],
       "keywords": [],
@@ -23665,11 +23665,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3678020238876343
+          "score": 0.3678019046783447
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.35441839694976807
+          "score": 0.35441845655441284
         }
       ],
       "keywords": [],
@@ -24862,6 +24862,50 @@
       ],
       "history": [],
       "last_updated": "2026-06-18T08:12:17Z"
+    },
+    "('', '10.1016/j.anucene.2026.112572', 'a hybrid monte carlo machine learning framework for neutron dose attenuation modeling in layered iron concrete shields of a 1000 mev proton accelerator')": {
+      "id": "doi:10.1016/j.anucene.2026.112572",
+      "doi": "10.1016/j.anucene.2026.112572",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A hybrid monte Carlo-machine learning framework for neutron dose attenuation modeling in layered iron-concrete shields of a 1000 MeV proton accelerator",
+      "authors": [
+        "Demet Sarıyer",
+        "Ali Osman GÖKCAN"
+      ],
+      "abstract": "",
+      "date": "2026-06-17",
+      "year": 2026,
+      "venue": "Annals of Nuclear Energy",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.391092985868454
+        },
+        {
+          "label": "Beamline Design & Simulation",
+          "score": 0.3604336380958557
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7165017176"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-06-19T08:35:49Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-19T08:35:49Z"
     }
   }
 }
