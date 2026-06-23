@@ -12,31 +12,31 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 209
+      "2026": 213
     },
     "per_category": {
-      "Tools & Libraries": 231,
-      "Novel Applications": 286,
+      "Tools & Libraries": 232,
+      "Novel Applications": 287,
       "Others": 73,
-      "Anomaly Detection & Fault Prediction": 88,
+      "Anomaly Detection & Fault Prediction": 89,
       "Statistics & Trends": 91,
-      "Reinforcement Learning & Autonomous Systems": 87,
+      "Reinforcement Learning & Autonomous Systems": 88,
       "Surrogate Models": 49,
-      "Data Management": 47,
+      "Data Management": 48,
       "By Facility Type": 11,
       "RF Systems": 9,
       "Operations & Control": 14,
       "Beamline Design & Simulation": 37,
       "Beam Dynamics": 12,
       "Reviews": 30,
-      "Beam Diagnostics": 22,
-      "Optimization & Control": 20
+      "Beam Diagnostics": 23,
+      "Optimization & Control": 21
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 209,
+      "arXiv": 211,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -264,14 +264,16 @@
       "Proceedings of the 25th Annual ACM Interaction Design and Children Conference": 1,
       "Zeitschrift für wirtschaftlichen Fabrikbetrieb": 1,
       "Proceedings of the Great Lakes Symposium on VLSI 2026": 2,
-      "Proceedings of the 17th ACM International Conference on Future and Sustainable Energy Systems": 1
+      "Proceedings of the 17th ACM International Conference on Future and Sustainable Energy Systems": 1,
+      "Nature Communications": 1,
+      "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems": 1
     },
     "per_keyword": {
-      "optimization": 88,
+      "optimization": 89,
       "control": 87,
       "surrogate model": 23,
       "transformer": 22,
-      "deep learning": 78,
+      "deep learning": 79,
       "proton therapy": 1,
       "beam": 155,
       "reinforcement learning": 50,
@@ -367,10 +369,10 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 32,
-      "2026-06": 25
+      "2026-06": 29
     },
-    "last_updated": "2026-06-22T09:02:51.308226+00:00",
-    "next_update": "2026-06-23T09:02:51.308226+00:00"
+    "last_updated": "2026-06-23T06:55:40.131315+00:00",
+    "next_update": "2026-06-24T06:55:40.131315+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -19888,7 +19890,7 @@
       "categories": [
         {
           "label": "Tools & Libraries",
-          "score": 0.2652878165245056
+          "score": 0.265287846326828
         }
       ],
       "keywords": [],
@@ -23629,11 +23631,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3678020238876343
+          "score": 0.3678019046783447
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.35441839694976807
+          "score": 0.3544183373451233
         }
       ],
       "keywords": [],
@@ -23670,11 +23672,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3678020238876343
+          "score": 0.3678019046783447
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.35441839694976807
+          "score": 0.3544183373451233
         }
       ],
       "keywords": [],
@@ -24598,7 +24600,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.2592310309410095
+          "score": 0.25923097133636475
         }
       ],
       "keywords": [],
@@ -25165,6 +25167,168 @@
       ],
       "history": [],
       "last_updated": "2026-06-22T09:02:02Z"
+    },
+    "('2606.23353', '', 'ultra peripheral collisions as a nuclear structure interferometer with interpretable multitask deep learning')": {
+      "id": "arxiv:2606.23353",
+      "doi": null,
+      "arxiv_id": "2606.23353",
+      "inspire_id": null,
+      "title": "Ultra-Peripheral Collisions as a Nuclear-Structure Interferometer with Interpretable Multitask Deep Learning",
+      "authors": [
+        "Jing-Zong Zhang",
+        "Wang-Mei Zha",
+        "Lingxiao Wang",
+        "Guo-Liang Ma"
+      ],
+      "abstract": "Precise knowledge of nuclear structure is essential across fundamental physics, yet probing these structures is notoriously difficult. To address this challenge, ultra-peripheral collisions (UPCs) provide a femtoscopic tomography for imaging the atomic nucleus. UPCs offer a pristine electromagnetic pathway: coherent vector-meson photoproduction generates patterns of diffraction and two-source interference that directly encode the nuclear spatial density. Turning these patterns into quantitative constraints is, however, a challenging inverse problem, complicated by correlated sensitivities to deformation and neutron skin, phase smearing, and experimental backgrounds. Here we introduce an interpretable Multitask deep-learning framework that maps transverse momentum distributions to multiple nuclear-structure indicators simultaneously and identifies the kinematic regions driving each inference. We demonstrate the approach with coherent $J/ψ$ photoproduction in $^{96}_{40}\\text{Zr} + ^{96}_{40}\\text{Zr}$ collisions, showing that the learned features separate diffraction-dominated and interference-dominated information and provide analysis-ready observables for future high-luminosity data.",
+      "date": "2026-06-22",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2606.23353v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-06-23T06:53:10Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-23T06:53:10Z"
+    },
+    "('2606.22054', '', 'anticipating the optimism gap predicting distribution shift degradation of rf impairment detectors from in distribution statistics')": {
+      "id": "arxiv:2606.22054",
+      "doi": null,
+      "arxiv_id": "2606.22054",
+      "inspire_id": null,
+      "title": "Anticipating the Optimism Gap: Predicting Distribution-Shift Degradation of RF-Impairment Detectors from In-Distribution Statistics",
+      "authors": [
+        "Chakshu Baweja"
+      ],
+      "abstract": "Detectors for GNSS radio-frequency impairments (jamming, spoofing, multipath) are usually reported with a single AUC measured on the distribution they were tuned on. That number falls once conditions move, and the size of the drop is rarely known in advance because labelled field data is scarce. We ask whether this optimism can be predicted before any out-of-distribution data is seen. On an open, parameter-grounded synthetic testbed with a tunable severity shift, we evaluate thirteen detectors (five physics baselines, full-feature logistic regression and multilayer perceptrons, and single-feature learned controls) across four impairment classes. The optimism gap, the difference between in-distribution and shifted AUC, grows monotonically as the shift deepens (mean Spearman correlation 0.50). It is driven by how many observables a detector uses rather than by whether it is learned, and it varies systematically by class. Centrally, a ridge model built only from in-distribution score statistics predicts the gap for a detector it has never seen (R^2 = 0.47) and for an impairment class it has never seen (R^2 = 0.46); both are significant against a 2000-fold permutation null (p < 0.001) and survive removing the feature that is, by construction, part of the target. The headline findings are synthetic. We then run the pre-registered protocol on three open field corpora: on Jammertest 2024 the cross-detector prediction holds (R^2 = 0.11, p = 0.009), and on SatGrid, whose spoofer power sweep gives a calibrated severity axis, in-distribution AUC overstates higher-severity AUC by up to 0.22 and to the point of sign inversion, with in-distribution AUC and realised gap perfectly rank-correlated (Spearman rho = 1.0). The mechanism survives contact with real data, at smaller magnitude than in simulation. We release the testbed, a software-receiver front end, the ingest adapters and the protocol.",
+      "date": "2026-06-20",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.38228970766067505
+        },
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.3057211935520172
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2606.22054v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-06-23T06:54:30Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-23T06:54:30Z"
+    },
+    "('', '10.1038/s41467-026-74002-2', 'learning missing physics from legacy simulators with alternating neural integrators')": {
+      "id": "doi:10.1038/s41467-026-74002-2",
+      "doi": "10.1038/s41467-026-74002-2",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Learning missing physics from legacy simulators with alternating neural integrators",
+      "authors": [
+        "Hao Wang",
+        "Qinghe Wang",
+        "Caiyou Yuan",
+        "Kailiang Wu"
+      ],
+      "abstract": "",
+      "date": "2026-06-23",
+      "year": 2026,
+      "venue": "Nature Communications",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.4458790421485901
+        },
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.43404075503349304
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1038/s41467-026-74002-2",
+        "crossref": "https://doi.org/10.1038/s41467-026-74002-2"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-23T06:54:51Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-23T06:54:51Z"
+    },
+    "('', '10.1142/s0218488526500248', 'reflective learning based particle swarm optimization for feature selection')": {
+      "id": "doi:10.1142/s0218488526500248",
+      "doi": "10.1142/s0218488526500248",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Reflective Learning-Based Particle Swarm Optimization for Feature Selection",
+      "authors": [
+        "Hongbo Zhang",
+        "Xiaofeng Yue",
+        "Xueliang Gao"
+      ],
+      "abstract": "<jats:p>Swarm intelligence (SI) algorithms are widely used in feature selection (FS) problems. Yet, they often get trapped in local optima and have limited search capability. To address these issues, this paper proposes a reflective learning-based particle swarm optimization (PSO) algorithm named RPSO for FS problems. The main goal is to develop an efficient FS method by using domain knowledge and historical update information. Initially, a novel hybrid initialization is designed, incorporating the maximal information coefficient (MIC), ReliefF, and random initialization to generate a high-quality initial population. An exploration and exploitation switch strategy accelerates convergence and prevents stagnation. An adaptive movement strategy improves particle updates by considering feature importance, thereby improving adaptability. Finally, a reflective learning strategy utilizes the historical update information of particles to guide particle movement, thereby enhancing algorithmic reliability. Experimental results on 20 benchmark datasets demonstrate that RPSO outperforms the original PSO and other comparison algorithms across key performance metrics, validating the effectiveness of the four designed strategies. Thus, RPSO is a promising SI algorithm for FS problems.</jats:p>",
+      "date": "2026-06-23",
+      "year": 2026,
+      "venue": "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Optimization & Control",
+          "score": 0.3080242872238159
+        },
+        {
+          "label": "Data Management",
+          "score": 0.29291731119155884
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1142/s0218488526500248",
+        "crossref": "https://doi.org/10.1142/s0218488526500248"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-23T06:54:51Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-23T06:54:51Z"
     }
   }
 }
