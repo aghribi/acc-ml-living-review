@@ -12,17 +12,17 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 215
+      "2026": 217
     },
     "per_category": {
-      "Tools & Libraries": 232,
-      "Novel Applications": 287,
+      "Tools & Libraries": 233,
+      "Novel Applications": 288,
       "Others": 73,
       "Anomaly Detection & Fault Prediction": 90,
       "Statistics & Trends": 91,
-      "Reinforcement Learning & Autonomous Systems": 89,
+      "Reinforcement Learning & Autonomous Systems": 90,
       "Surrogate Models": 49,
-      "Data Management": 49,
+      "Data Management": 50,
       "By Facility Type": 11,
       "RF Systems": 9,
       "Operations & Control": 14,
@@ -36,7 +36,7 @@
       "Radiation Detection Technology and Methods": 1,
       "Med Phys": 1,
       "Bioengineering (Basel)": 1,
-      "arXiv": 212,
+      "arXiv": 213,
       "Thesis": 7,
       "Phys.Rev.Accel.Beams": 7,
       "Opt.Express": 2,
@@ -100,7 +100,7 @@
       "International Journal of Structural Integrity": 2,
       "Machine Learning: Science and Technology": 3,
       "Anais do Encontro Nacional de Engenharia de Produção": 1,
-      "arXiv (Cornell University)": 11,
+      "arXiv (Cornell University)": 12,
       "Artificial Intelligence for Biomass-based Biofuel Production": 1,
       "Measurement Science and Technology": 2,
       "Proceedings of the 25th Koli Calling International Conference on Computing Education Research": 1,
@@ -269,14 +269,14 @@
       "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems": 1
     },
     "per_keyword": {
-      "optimization": 90,
-      "control": 88,
+      "optimization": 91,
+      "control": 89,
       "surrogate model": 23,
       "transformer": 22,
       "deep learning": 79,
       "proton therapy": 1,
       "beam": 155,
-      "reinforcement learning": 51,
+      "reinforcement learning": 52,
       "diagnostics": 35,
       "uncertainty quantification": 6,
       "anomaly detection": 23,
@@ -369,10 +369,10 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 32,
-      "2026-06": 31
+      "2026-06": 33
     },
-    "last_updated": "2026-06-24T06:59:56.974483+00:00",
-    "next_update": "2026-06-25T06:59:56.974483+00:00"
+    "last_updated": "2026-06-25T06:53:28.902779+00:00",
+    "next_update": "2026-06-26T06:53:28.902779+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -23635,7 +23635,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3544183373451233
+          "score": 0.35441845655441284
         }
       ],
       "keywords": [],
@@ -23676,7 +23676,7 @@
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.3544183373451233
+          "score": 0.35441845655441284
         }
       ],
       "keywords": [],
@@ -24600,7 +24600,7 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.25923097133636475
+          "score": 0.2592310309410095
         }
       ],
       "keywords": [],
@@ -25419,6 +25419,96 @@
       ],
       "history": [],
       "last_updated": "2026-06-24T06:58:49Z"
+    },
+    "('', '', 'learning to trigger reinforcement learning at the large hadron collider')": {
+      "id": "hash:a37f2aa7ad28",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Learning to Trigger: Reinforcement Learning at the Large Hadron Collider",
+      "authors": [
+        "Ding, Zixin",
+        "Emami, Shaghayegh",
+        "Salvi, Giovanna",
+        "Tosciri, Cecilia",
+        "Gandrakota, Abhijith",
+        "Ngadiuba, Jennifer",
+        "Tran, Nhan",
+        "Herwig, Christian",
+        "Miller, David W.",
+        "Chen, Yuxin"
+      ],
+      "abstract": "High-throughput scientific facilities such as the Large Hadron Collider depend on real-time event filtering (\\textit{triggering}) under tight constraints on bandwidth, latency, and storage. In practice, trigger menus are largely static and hand-tuned and can become suboptimal as detector conditions, pileup, and background composition drift over time. We cast online threshold tuning as a sequential decision-making problem: a reinforcement learning agent ingests streaming summaries of recent rates and signal-sensitive features and updates trigger thresholds to maximize signal efficiency while tracking a target background rate within a tolerance band. We adapt Group-Filtered Policy Optimization (GFPO) to streaming control and introduce two variants (GFPO-F, GFPO-FR) that enforce background rate feasibility during training. On a benchmark that emulates realistic collider operation, we study two representative triggers: a total transverse energy ($H_{T}$) trigger sensitive to pileup variation, and an anomaly-detection (AD) trigger based on reconstruction loss for rare or non-standard signatures. On Monte Carlo streams, our agent increases the fraction of in-tolerance time intervals by 48% ($H_T$) and 28% (AD), with a cumulative gain of up to 2% in signal efficiency on those in-tolerance intervals. Transferring from simulation to \\emph{real} collision data (CMS Run 283408), the same agent, without fine-tuning, achieves a 56% ($H_T$) and 28% (AD) in-tolerance improvement over baselines, with further signal-efficiency gain on both triggers. To our knowledge, this is the \\emph{first} demonstration of RL-based trigger control on real Large Hadron Collider collision data. Code is available at https://github.com/Zixind/GFPO_LHC.",
+      "date": "2026-06-22",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.40635043382644653
+        },
+        {
+          "label": "Data Management",
+          "score": 0.3835764527320862
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3171505",
+        "arxiv": "https://arxiv.org/abs/2606.23993"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-06-25T06:52:15Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-25T06:52:15Z"
+    },
+    "('', '10.48550/arxiv.2606.20869', 'a3c3 ai algorithm and accelerator co design co search and co generation')": {
+      "id": "doi:10.48550/arxiv.2606.20869",
+      "doi": "10.48550/arxiv.2606.20869",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A3C3: AI Algorithm and Accelerator Co-design, Co-search, and Co-generation",
+      "authors": [
+        "Selin Yildirim",
+        "Y Huang",
+        "Deming Chen"
+      ],
+      "abstract": "",
+      "date": "2026-06-18",
+      "year": 2026,
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.5604351758956909
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.5177117586135864
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7165652907"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-06-25T06:52:24Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-25T06:52:24Z"
     }
   }
 }
