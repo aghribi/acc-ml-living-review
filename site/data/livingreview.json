@@ -12,11 +12,11 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 217
+      "2026": 218
     },
     "per_category": {
-      "Tools & Libraries": 233,
-      "Novel Applications": 288,
+      "Tools & Libraries": 234,
+      "Novel Applications": 289,
       "Others": 73,
       "Anomaly Detection & Fault Prediction": 90,
       "Statistics & Trends": 91,
@@ -240,7 +240,7 @@
       "Physica Scripta": 1,
       "Welding in the World": 1,
       "Railway Sciences": 1,
-      "ArXiv.org": 2,
+      "ArXiv.org": 3,
       "CINECA IRIS Institutial Research Information System (University of Genoa)": 2,
       "Creating Learning Systems for Higher Education": 1,
       "npj Quantum Materials": 1,
@@ -369,10 +369,10 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 32,
-      "2026-06": 33
+      "2026-06": 34
     },
-    "last_updated": "2026-06-25T06:53:28.902779+00:00",
-    "next_update": "2026-06-26T06:53:28.902779+00:00"
+    "last_updated": "2026-06-26T07:00:37.165777+00:00",
+    "next_update": "2026-06-27T07:00:37.165777+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -25509,6 +25509,47 @@
       ],
       "history": [],
       "last_updated": "2026-06-25T06:52:24Z"
+    },
+    "('', '', 'a3c3 ai algorithm and accelerator co design co search and co generation')": {
+      "id": "hash:f8c8136731f8",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "A3C3: AI Algorithm and Accelerator Co-design, Co-search, and Co-generation",
+      "authors": [
+        "Selin Yildirim",
+        "Yingbing Huang",
+        "Deming Chen"
+      ],
+      "abstract": "",
+      "date": "2026-06-18",
+      "year": 2026,
+      "venue": "ArXiv.org",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 0.5604351758956909
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.5177117586135864
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "openalex": "https://openalex.org/W7165816126"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-06-26T06:59:39Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-26T06:59:39Z"
     }
   }
 }
