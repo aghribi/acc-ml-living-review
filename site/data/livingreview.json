@@ -12,17 +12,17 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 218
+      "2026": 220
     },
     "per_category": {
-      "Tools & Libraries": 234,
-      "Novel Applications": 289,
+      "Tools & Libraries": 235,
+      "Novel Applications": 290,
       "Others": 73,
       "Anomaly Detection & Fault Prediction": 90,
       "Statistics & Trends": 91,
-      "Reinforcement Learning & Autonomous Systems": 90,
+      "Reinforcement Learning & Autonomous Systems": 91,
       "Surrogate Models": 49,
-      "Data Management": 50,
+      "Data Management": 51,
       "By Facility Type": 11,
       "RF Systems": 9,
       "Operations & Control": 14,
@@ -95,7 +95,7 @@
       "Lecture Notes in Networks and Systems": 6,
       "Applied and Computational Engineering": 1,
       "Frontiers of Computer Science": 1,
-      "Springer Science and Business Media LLC": 5,
+      "Springer Science and Business Media LLC": 6,
       "Circulation": 1,
       "International Journal of Structural Integrity": 2,
       "Machine Learning: Science and Technology": 3,
@@ -266,10 +266,11 @@
       "Proceedings of the Great Lakes Symposium on VLSI 2026": 2,
       "Proceedings of the 17th ACM International Conference on Future and Sustainable Energy Systems": 1,
       "Nature Communications": 1,
-      "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems": 1
+      "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems": 1,
+      "Proceedings of the 2026 ACM Workshop on Wireless Security and Machine Learning": 1
     },
     "per_keyword": {
-      "optimization": 91,
+      "optimization": 92,
       "control": 89,
       "surrogate model": 23,
       "transformer": 22,
@@ -369,10 +370,10 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 32,
-      "2026-06": 34
+      "2026-06": 36
     },
-    "last_updated": "2026-06-28T07:07:25.604574+00:00",
-    "next_update": "2026-06-29T07:07:25.604574+00:00"
+    "last_updated": "2026-06-29T08:17:38.789479+00:00",
+    "next_update": "2026-06-30T08:17:38.789479+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -25550,6 +25551,87 @@
       ],
       "history": [],
       "last_updated": "2026-06-26T06:59:39Z"
+    },
+    "('', '10.1145/3811880.3815099', 'wip false data injection against physics constrained neural networks for trajectory planning in autonomous racing')": {
+      "id": "doi:10.1145/3811880.3815099",
+      "doi": "10.1145/3811880.3815099",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "WIP: False-Data Injection Against Physics-Constrained Neural Networks for Trajectory Planning in Autonomous Racing",
+      "authors": [
+        "ChunTao Yang",
+        "Ryan Gerdes"
+      ],
+      "abstract": "",
+      "date": "2026-06-29",
+      "year": 2026,
+      "venue": "Proceedings of the 2026 ACM Workshop on Wireless Security and Machine Learning",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Reinforcement Learning & Autonomous Systems",
+          "score": 0.4637231230735779
+        },
+        {
+          "label": "Data Management",
+          "score": 0.3111637830734253
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1145/3811880.3815099",
+        "crossref": "https://doi.org/10.1145/3811880.3815099"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-29T08:16:48Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-29T08:16:48Z"
+    },
+    "('', '10.21203/rs.3.rs-10159095/v1', 'comparative performance analysis of xenon krypton and argon propellants for hall thrusters using a reproducible machine learning framework')": {
+      "id": "doi:10.21203/rs.3.rs-10159095/v1",
+      "doi": "10.21203/rs.3.rs-10159095/v1",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Comparative Performance Analysis of Xenon, Krypton, and Argon Propellants for Hall Thrusters Using a Reproducible Machine-learning Framework",
+      "authors": [
+        "Nazmul Hasan Anik Chawdhury"
+      ],
+      "abstract": "<title>Abstract</title>\n                <p>Hall-effect thrusters (HETs) are widely used for orbit raising, station keeping, and deep-space electric propulsion. Xenon remains the reference propellant because of its high atomic mass and relatively low first ionization energy, but cost and supply concerns motivate the evaluation of krypton and argon. This paper presents a literature-based, machine-learning-assisted comparison of xenon, krypton, and argon HET operation using a harmonized 600-operating-point dataset. Random Forest, Gradient Boosting, XGBoost, Multi-Layer Perceptron, and Gaussian Process regression models were evaluated for macroscopic performance prediction. The revised framework explicitly reports the final feature set, random-split and grouped-validation logic, hyperparameters, uncertainty treatment, and the assumptions behind cost-normalized propellant ranking. In the random-split evaluation, XGBoost achieved the best thrust-prediction performance, with R² = 0.978, RMSE = 1.21 mN, and MAE = 0.86 mN. The results reproduce the expected physical trend that xenon provides the highest thrust and efficiency, krypton offers a practical compromise between performance and cost, and argon requires careful thruster optimization because lower atomic mass and higher ionization energy reduce propellant utilization. The conclusions are interpreted as data-driven macroscopic input-output trends rather than direct resolution of plasma microphysics.</p>",
+      "date": "2026-06-29",
+      "year": 2026,
+      "venue": "Springer Science and Business Media LLC",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.37954235076904297
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.21203/rs.3.rs-10159095/v1",
+        "crossref": "https://doi.org/10.21203/rs.3.rs-10159095/v1"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-06-29T08:16:48Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-06-29T08:16:48Z"
     }
   }
 }
