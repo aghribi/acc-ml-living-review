@@ -12,10 +12,10 @@
       "2018": 3,
       "2016": 6,
       "2000": 1,
-      "2026": 220
+      "2026": 221
     },
     "per_category": {
-      "Tools & Libraries": 235,
+      "Tools & Libraries": 236,
       "Novel Applications": 290,
       "Others": 73,
       "Anomaly Detection & Fault Prediction": 90,
@@ -190,7 +190,7 @@
       "Applied Mechanics and Materials": 1,
       "Asia-pacific Journal of Convergent Research Interchange": 1,
       "IEEE Transactions on Pattern Analysis and Machine Intelligence": 1,
-      "Expert Systems with Applications": 1,
+      "Expert Systems with Applications": 2,
       "Materials Letters": 1,
       "Annals of Nuclear Energy": 2,
       "Jurnal Informatika Terpadu": 1,
@@ -274,7 +274,7 @@
       "control": 89,
       "surrogate model": 23,
       "transformer": 22,
-      "deep learning": 79,
+      "deep learning": 80,
       "proton therapy": 1,
       "beam": 155,
       "reinforcement learning": 52,
@@ -370,10 +370,11 @@
       "2026-03": 38,
       "2026-04": 31,
       "2026-05": 32,
-      "2026-06": 36
+      "2026-06": 36,
+      "2026-07": 1
     },
-    "last_updated": "2026-06-30T07:01:11.012263+00:00",
-    "next_update": "2026-07-01T07:01:11.012263+00:00"
+    "last_updated": "2026-07-01T07:19:34.451880+00:00",
+    "next_update": "2026-07-02T07:19:34.451880+00:00"
   },
   "papers": {
     "('', '10.1007/s41605-025-00527-7', 'machine learning as a service system for particle accelerator and its application in csns')": {
@@ -25632,6 +25633,44 @@
       ],
       "history": [],
       "last_updated": "2026-06-29T08:16:48Z"
+    },
+    "('', '10.1016/j.eswa.2026.132149', 'rse pinn a physics informed deep learning framework for peak particle velocity prediction in open pit blasting')": {
+      "id": "doi:10.1016/j.eswa.2026.132149",
+      "doi": "10.1016/j.eswa.2026.132149",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "RSE-PINN: A physics-informed deep learning framework for peak particle velocity prediction in open-pit blasting",
+      "authors": [
+        "Heng Li",
+        "Beijing Xie",
+        "Xiaoxu Li"
+      ],
+      "abstract": "",
+      "date": "2026-07-01",
+      "year": 2026,
+      "venue": "Expert Systems with Applications",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Tools & Libraries",
+          "score": 1.0
+        }
+      ],
+      "keywords": [],
+      "curated": false,
+      "notes": null,
+      "links": {
+        "doi": "https://doi.org/10.1016/j.eswa.2026.132149",
+        "crossref": "https://doi.org/10.1016/j.eswa.2026.132149"
+      },
+      "sources": [
+        {
+          "source": "crossref",
+          "seen_at": "2026-07-01T07:18:47Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-07-01T07:18:47Z"
     }
   }
 }
