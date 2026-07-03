@@ -49,7 +49,13 @@ NEGATIVE_KEYWORDS = [
     "beam search", "electron beam lithography", "laser beam welding",
     "calorimeter", "jet", "particle detectors", "higgs", "dark matter",
     "cross-section", "jet tagging", "spectroscopy", "beta decay",
-    "fine structure", "atomic levels"
+    "fine structure", "atomic levels", "earthquake", "tsunami", "climate",
+    "weather", "natural disaster", "hardware acceleration", "gpu acceleration",
+    "cuda", "fpga", "embedded device", "structural assessment",
+    "hardware accelerator", "cnn accelerator", "vlsi", "asic",
+    "embedded system", "chip", "processor", "microcontroller",
+    "on-chip", "edge computing", "internet of things", "iot",
+    "soc", "gpu", "hardware trojan", "secure hardware", "neural engine"
 ]
 
 # ---------------------------

@@ -35,52 +35,14 @@ import torch
 from sentence_transformers import SentenceTransformer, util
 
 from .data_model import Paper
-from .config import CATEGORY_DESCRIPTIONS, ACCEL_KEYWORDS, ML_KEYWORDS
-
-# ---------------------------------------------------------------------
-# Negative keywords (noise filter)
-# ---------------------------------------------------------------------
-NEGATIVE_KEYWORDS = [
-    "beam search", "electron beam lithography", "laser beam welding",
-    "calorimeter", "jet", "particle detectors", "higgs", "dark matter",
-    "cross-section", "jet tagging", "spectroscopy", "beta decay",
-    "fine structure", "atomic levels", "earthquake", "tsunami", "climate", 
-    "weather", "natural disaster", "hardware acceleration", "gpu acceleration", 
-    "cuda", "fpga", "embedded device", "structural assessment"
-]
-
-NEGATIVE_KEYWORDS += [
-    "hardware accelerator", "cnn accelerator", "fpga", "vlsi", "asic", 
-    "embedded system", "chip", "processor", "microcontroller", 
-    "on-chip", "edge computing", "internet of things", "iot", 
-    "soc", "gpu", "hardware trojan", "secure hardware", "neural engine"
-]
-
-
-# ---------------------------------------------------------------------
-# Reference semantic queries
-# ---------------------------------------------------------------------
-REF_QUERY_ACCEL = (
-    "particle accelerator, accelerator physics, beam dynamics, synchrotron, collider, linac, "
-    "superconducting cavity, RF cavity, cryomodule, beamline, accelerator design, accelerator tuning, "
-    "beam diagnostics, emittance, luminosity optimization, accelerator operation, accelerator maintenance, "
-    "accelerator fault detection, accelerator reliability, accelerator control, beam optics, beam instrumentation, "
-    "beam monitoring, beam feedback, beam loss, quench prevention, free electron laser, undulator, "
-    "plasma wakefield acceleration, synchrotron radiation, light source, FEL, BPM, SRF, particle beam, "
-    "charged particle, ion beam, electron beam, proton beam"
-)
-REF_QUERY_ML = (
-    "machine learning, deep learning, reinforcement learning, surrogate model, anomaly detection, "
-    "graph neural network, physics-informed neural network, foundation model, agentic AI, neural network, "
-    "autoencoder, GAN, diffusion model, transformer, supervised learning, unsupervised learning, "
-    "semi-supervised learning, classification, regression, clustering, dimensionality reduction, "
-    "feature engineering, time series, forecasting, optimization, policy learning, LLM, large language model, "
-    "causal inference, causality, interpretability, explainable AI, XAI, anomaly detection, fault detection"
-)
-REF_QUERY_NOISE = (
-    "cloud computing, workflow platform, Kubernetes, Docker, infrastructure, virtualization, "
-    "particle detectors, calorimeter, jet tagging, Higgs, dark matter, spectroscopy, "
-    "cross-section measurement, beta spectroscopy, atomic fine structure,"
+from .config import (
+    CATEGORY_DESCRIPTIONS,
+    ACCEL_KEYWORDS,
+    ML_KEYWORDS,
+    NEGATIVE_KEYWORDS,
+    REF_QUERY_ACCEL,
+    REF_QUERY_ML,
+    REF_QUERY_NOISE,
 )
 
 

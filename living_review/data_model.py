@@ -123,8 +123,9 @@ class Paper:
         Journal or conference venue.
     status : str, optional
         Publication status (pending, preprint, published...).
-    categories : list of str
-        Classification categories assigned to the paper.
+    categories : list of dict
+        Classification categories assigned to the paper, as
+        ``{"label": str, "score": float}`` entries.
     keywords : list of str
         List of keywords associated with the paper.
     curated : bool
@@ -154,7 +155,7 @@ class Paper:
     venue: Optional[str] = None
     status: Optional[str] = None
 
-    categories: List[str] = field(default_factory=list)
+    categories: List[Dict] = field(default_factory=list)
     keywords: List[str] = field(default_factory=list)
     curated: bool = False
     notes: Optional[str] = None
