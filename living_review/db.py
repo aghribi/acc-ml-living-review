@@ -37,7 +37,7 @@ import glob
 from pathlib import Path
 from typing import Dict, List
 
-from .data_model import Paper, status_rank
+from .data_model import Paper
 
 
 class DB:
@@ -114,19 +114,9 @@ class DB:
         if key not in self.entries:
             self.entries[key] = paper
             return True
-        else:
-            current = self.entries[key]
-            if status_rank(paper.status) > status_rank(current.status):
-                self.entries[key] = paper
-                return True
-            elif paper.status == current.status:
-                # Heuristic: prefer richer metadata
-                score_new = len(paper.abstract or "") + len(paper.links or {})
-                score_old = len(current.abstract or "") + len(current.links or {})
-                if score_new > score_old:
-                    self.entries[key] = paper
-                    return True
-        return False
+        # Field-wise merge that honors `curated` and terminal `review`
+        # decisions (the previous whole-record replacement clobbered both).
+        return self.entries[key].merge_with(paper)
 
     def __len__(self) -> int:
         return len(self.entries)

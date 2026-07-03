@@ -49,6 +49,16 @@ from .utils import norm_space, norm_doi, norm_arxiv_id, simplify_title, first_au
 # Publication status ordering (used in merges/status promotion)
 STATUS_ORDER = ["pending", "submitted", "preprint", "accepted", "published", "retracted"]
 
+# Legacy statuses found in the live DB, mapped onto STATUS_ORDER for ranking
+# purposes only (the stored value is preserved).
+STATUS_ALIASES = {
+    "proceeding": "published",
+    "report": "published",
+    "phd": "published",
+    "internship": "preprint",
+    "unknown": None,
+}
+
 
 def status_rank(status: Optional[str]) -> int:
     """
@@ -57,7 +67,9 @@ def status_rank(status: Optional[str]) -> int:
     Parameters
     ----------
     status : str or None
-        Status string (pending, preprint, published...).
+        Status string (pending, preprint, published...). Legacy values
+        (proceeding, report, phd, internship, unknown) are ranked via
+        STATUS_ALIASES without being rewritten.
 
     Returns
     -------
@@ -66,10 +78,18 @@ def status_rank(status: Optional[str]) -> int:
     """
     if not status:
         return -1
+    status = STATUS_ALIASES.get(status, status)
+    if not status:
+        return -1
     try:
         return STATUS_ORDER.index(status)
     except ValueError:
         return -1
+
+
+def _venue_is_placeholder(venue: Optional[str]) -> bool:
+    """True if the venue carries no real information."""
+    return not venue or venue.strip().lower() in ("arxiv", "unknown venue", "unknown")
 
 
 def _canonical_key(title: str, year: Optional[int], first_author: Optional[str]) -> str:
@@ -128,8 +148,13 @@ class Paper:
         ``{"label": str, "score": float}`` entries.
     keywords : list of str
         List of keywords associated with the paper.
+    arxiv_categories : list of str
+        arXiv subject categories, primary first (e.g. ["physics.acc-ph", "cs.LG"]).
     curated : bool
         Whether this entry has been manually curated (protected from overwrite).
+    review : dict
+        Relevance-decision provenance set by the funnel; accepted/rejected
+        decisions are terminal and survive merges.
     notes : str, optional
         Free-text notes by curators.
     links : dict
@@ -157,8 +182,16 @@ class Paper:
 
     categories: List[Dict] = field(default_factory=list)
     keywords: List[str] = field(default_factory=list)
+    arxiv_categories: List[str] = field(default_factory=list)
     curated: bool = False
     notes: Optional[str] = None
+
+    # Relevance-decision provenance, set by the funnel (gates / adjudicator /
+    # human). Shape: {"decision": "accepted"|"rejected"|"pending",
+    # "stage": "gate"|"nli"|"human"|"migration", "rule": str|None,
+    # "score": float|None, "model": str|None, "model_revision": str|None,
+    # "timestamp": iso-str}. Accepted/rejected decisions are terminal.
+    review: Dict = field(default_factory=dict)
 
     links: Dict[str, str] = field(default_factory=dict)
     sources: List[Dict[str, str]] = field(default_factory=list)
@@ -232,7 +265,9 @@ class Paper:
             status=status,
             categories=list(dict.fromkeys(raw.get("categories") or [])),
             keywords=list(dict.fromkeys(raw.get("keywords") or [])),
+            arxiv_categories=list(raw.get("arxiv_categories") or []),
             curated=bool(raw.get("curated", False)),
+            review=dict(raw.get("review") or {}),
             notes=raw.get("notes"),
             links={k: v for k, v in (raw.get("links") or {}).items() if v},
             sources=[{"source": raw.get("source", "unknown"), "seen_at": now}],
@@ -271,7 +306,9 @@ class Paper:
             status=d.get("status"),
             categories=list(d.get("categories") or []),
             keywords=list(d.get("keywords") or []),
+            arxiv_categories=list(d.get("arxiv_categories") or []),
             curated=bool(d.get("curated", False)),
+            review=dict(d.get("review") or {}),
             notes=d.get("notes"),
             links=d.get("links") or {},
             sources=d.get("sources") or [],
@@ -293,6 +330,90 @@ class Paper:
             (arxiv_id, doi, simplified_title)
         """
         return (self.arxiv_id or "", self.doi or "", simplify_title(self.title) or "")
+
+    def merge_with(self, other: "Paper") -> bool:
+        """
+        Merge another record for the same work into this one, in place.
+
+        `self` is the record already in the DB, `other` the incoming one.
+        Rules:
+        - Identifiers: fill any missing doi/arxiv_id/inspire_id.
+        - Abstract: prefer the longer one.
+        - Venue: prefer a real venue over None/"arXiv"/"Unknown Venue".
+        - Status: higher `status_rank` wins (stored value preserved).
+        - links / sources / keywords / arxiv_categories: union.
+        - `curated=True` protects the human-editable fields (title, abstract,
+          notes, categories, keywords, venue, status) from any overwrite.
+        - An existing `review` decision of accepted/rejected is terminal and
+          never replaced; otherwise a decided incoming review is adopted.
+
+        Returns
+        -------
+        bool
+            True if any field changed.
+        """
+        changed = False
+
+        for attr in ("doi", "arxiv_id", "inspire_id"):
+            if not getattr(self, attr) and getattr(other, attr):
+                setattr(self, attr, getattr(other, attr))
+                changed = True
+        # Upgrade a hash: id once a real identifier is known
+        if self.id.startswith("hash:"):
+            if self.doi:
+                self.id, changed = f"doi:{self.doi}", True
+            elif self.arxiv_id:
+                self.id, changed = f"arxiv:{self.arxiv_id}", True
+
+        if not self.curated:
+            if len(other.abstract or "") > len(self.abstract or ""):
+                self.abstract, changed = other.abstract, True
+            if _venue_is_placeholder(self.venue) and not _venue_is_placeholder(other.venue):
+                self.venue, changed = other.venue, True
+            if status_rank(other.status) > status_rank(self.status):
+                self.status, changed = other.status, True
+            if not self.title and other.title:
+                self.title, changed = other.title, True
+            if len(other.authors or []) > len(self.authors or []):
+                self.authors, changed = list(other.authors), True
+            if not self.categories and other.categories:
+                self.categories, changed = list(other.categories), True
+            for kw in other.keywords or []:
+                if kw not in self.keywords:
+                    self.keywords.append(kw)
+                    changed = True
+        if not self.date and other.date:
+            self.date, changed = other.date, True
+        if not self.year and other.year:
+            self.year, changed = other.year, True
+
+        for k, v in (other.links or {}).items():
+            if v and k not in self.links:
+                self.links[k] = v
+                changed = True
+        seen_sources = {(s.get("source"), s.get("seen_at")) for s in self.sources}
+        for s in other.sources or []:
+            if (s.get("source"), s.get("seen_at")) not in seen_sources:
+                self.sources.append(s)
+                changed = True
+        for c in other.arxiv_categories or []:
+            if c not in self.arxiv_categories:
+                self.arxiv_categories.append(c)
+                changed = True
+
+        if other.curated and not self.curated:
+            self.curated, changed = True, True
+
+        # Terminal review decisions: never overwrite accepted/rejected.
+        if self.review.get("decision") not in ("accepted", "rejected"):
+            if other.review.get("decision"):
+                self.review, changed = dict(other.review), True
+
+        if changed:
+            now = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+            self.history.append({"event": "merge", "at": now})
+            self.last_updated = now
+        return changed
 
     def to_dict(self) -> Dict:
         """
