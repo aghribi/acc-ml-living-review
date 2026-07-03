@@ -113,10 +113,42 @@ def norm_arxiv_id(ax: Optional[str]) -> Optional[str]:
     if not ax:
         return None
     s = ax.strip()
-    s = s.replace("https://arxiv.org/abs/", "").replace("http://arxiv.org/abs/", "")
-    s = s.replace("arxiv:", "").replace("ArXiv:", "").replace("ARXIV:", "")
-    s = s.split("v")[0]  # drop explicit version for canonical id
+    s = re.sub(r"^https?://arxiv\.org/(abs|pdf)/", "", s)
+    s = re.sub(r"^arxiv:\s*", "", s, flags=re.IGNORECASE)
+    s = re.sub(r"\.pdf$", "", s)
+    # Drop only a trailing version suffix; a bare split on "v" corrupts
+    # old-style ids such as "solv-int/9701001".
+    s = re.sub(r"v\d+$", "", s)
     return s or None
+
+
+def canonical_ids(paper) -> set:
+    """
+    Set of normalized identifier strings for a paper, used for
+    identifier-graph deduplication. Two papers sharing any element
+    of this set refer to the same work.
+
+    Parameters
+    ----------
+    paper : Paper
+        Any object exposing `.doi`, `.arxiv_id`, `.inspire_id`.
+
+    Returns
+    -------
+    set of str
+        Elements of the form ``doi:...``, ``arxiv:...``, ``inspire:...``.
+    """
+    ids = set()
+    doi = norm_doi(getattr(paper, "doi", None))
+    if doi:
+        ids.add(f"doi:{doi}")
+    ax = norm_arxiv_id(getattr(paper, "arxiv_id", None))
+    if ax:
+        ids.add(f"arxiv:{ax}")
+    iid = getattr(paper, "inspire_id", None)
+    if iid:
+        ids.add(f"inspire:{str(iid).strip()}")
+    return ids
 
 
 def _strip_tex(s: str) -> str:
