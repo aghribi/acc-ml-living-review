@@ -39,7 +39,7 @@ Typical Usage
 
 from __future__ import annotations
 from dataclasses import dataclass, field, asdict
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import List, Dict, Optional, Tuple
 import hashlib
 
@@ -249,7 +249,7 @@ class Paper:
 
         # Status
         status = raw.get("status") or ("preprint" if ax and not doi else None)
-        now = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+        now = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
         return Paper(
             id=cid,
@@ -410,7 +410,7 @@ class Paper:
                 self.review, changed = dict(other.review), True
 
         if changed:
-            now = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+            now = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
             self.history.append({"event": "merge", "at": now})
             self.last_updated = now
         return changed

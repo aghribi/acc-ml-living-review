@@ -1,0 +1,187 @@
+[
+  {
+    "id": "arxiv:2510.26805",
+    "doi": null,
+    "arxiv_id": "2510.26805",
+    "inspire_id": null,
+    "title": "Reinforcement Learning for Accelerator Beamline Control: a simulation-based approach",
+    "authors": [
+      "Anwar Ibrahim",
+      "Alexey Petrenko",
+      "Maxim Kaledin",
+      "Ehab Suleiman",
+      "Fedor Ratnikov",
+      "Denis Derkach"
+    ],
+    "abstract": "Particle accelerators play a pivotal role in advancing scientific research,\nyet optimizing beamline configurations to maximize particle transmission\nremains a labor-intensive task requiring expert intervention. In this work, we\nintroduce RLABC (Reinforcement Learning for Accelerator Beamline Control), a\nPython-based library that reframes beamline optimization as a reinforcement\nlearning (RL) problem. Leveraging the Elegant simulation framework, RLABC\nautomates the creation of an RL environment from standard lattice and element\ninput files, enabling sequential tuning of magnets to minimize particle losses.\nWe define a comprehensive state representation capturing beam statistics,\nactions for adjusting magnet parameters, and a reward function focused on\ntransmission efficiency. Employing the Deep Deterministic Policy Gradient\n(DDPG) algorithm, we demonstrate RLABC's efficacy on two beamlines, achieving\ntransmission rates of 94% and 91%, comparable to expert manual optimizations.\nThis approach bridges accelerator physics and machine learning, offering a\nversatile tool for physicists and RL researchers alike to streamline beamline\ntuning.",
+    "date": "2025-10-18",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "categories": [
+      {
+        "label": "Reinforcement Learning & Autonomous Systems",
+        "score": 0.6057684421539307
+      },
+      {
+        "label": "Novel Applications",
+        "score": 0.5601047873497009
+      },
+      {
+        "label": "Tools & Libraries",
+        "score": 1.0
+      }
+    ],
+    "keywords": [],
+    "curated": false,
+    "notes": null,
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2510.26805v1"
+    },
+    "sources": [
+      {
+        "source": "arxiv",
+        "seen_at": "2025-11-03T03:51:53Z"
+      }
+    ],
+    "history": [],
+    "last_updated": "2025-11-03T03:51:53Z"
+  },
+  {
+    "id": "hash:d8c7406015ac",
+    "doi": null,
+    "arxiv_id": null,
+    "inspire_id": null,
+    "title": "Reinforcement Learning for Accelerator Beamline Control: a simulation-based approach",
+    "authors": [
+      "Ibrahim, Anwar",
+      "Petrenko, Alexey",
+      "Kaledin, Maxim",
+      "Suleiman, Ehab",
+      "Ratnikov, Fedor",
+      "Derkach, Denis"
+    ],
+    "abstract": "Particle accelerators play a pivotal role in advancing scientific research, yet optimizing beamline configurations to maximize particle transmission remains a labor-intensive task requiring expert intervention. In this work, we introduce RLABC (Reinforcement Learning for Accelerator Beamline Control), a Python-based library that reframes beamline optimization as a reinforcement learning (RL) problem. Leveraging the Elegant simulation framework, RLABC automates the creation of an RL environment from standard lattice and element input files, enabling sequential tuning of magnets to minimize particle losses. We define a comprehensive state representation capturing beam statistics, actions for adjusting magnet parameters, and a reward function focused on transmission efficiency. Employing the Deep Deterministic Policy Gradient (DDPG) algorithm, we demonstrate RLABC's efficacy on two beamlines, achieving transmission rates of 94% and 91%, comparable to expert manual optimizations. This approach bridges accelerator physics and machine learning, offering a versatile tool for physicists and RL researchers alike to streamline beamline tuning.",
+    "date": "2025-10-18",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "categories": [
+      {
+        "label": "Reinforcement Learning & Autonomous Systems",
+        "score": 0.6057684421539307
+      },
+      {
+        "label": "Novel Applications",
+        "score": 0.5601047873497009
+      },
+      {
+        "label": "Tools & Libraries",
+        "score": 1.0
+      }
+    ],
+    "keywords": [],
+    "curated": false,
+    "notes": null,
+    "links": {
+      "inspire": "https://inspirehep.net/literature/3075619",
+      "arxiv": "https://arxiv.org/abs/2510.26805"
+    },
+    "sources": [
+      {
+        "source": "inspire",
+        "seen_at": "2025-11-04T03:47:57Z"
+      }
+    ],
+    "history": [],
+    "last_updated": "2025-11-04T03:47:57Z"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2510.26805",
+    "doi": "10.48550/arxiv.2510.26805",
+    "arxiv_id": null,
+    "inspire_id": null,
+    "title": "Reinforcement Learning for Accelerator Beamline Control: a simulation-based approach",
+    "authors": [
+      "Ibrahim Anwar",
+      "Petrenko, Alexey",
+      "Kaledin, Maxim",
+      "Suleiman, Ehab",
+      "Ratnikov, Fedor",
+      "Derkach Denis"
+    ],
+    "abstract": "",
+    "date": "2025-10-18",
+    "year": 2025,
+    "venue": "arXiv (Cornell University)",
+    "status": "published",
+    "categories": [
+      {
+        "label": "Reinforcement Learning & Autonomous Systems",
+        "score": 0.6412068009376526
+      },
+      {
+        "label": "Operations & Control",
+        "score": 0.5882421731948853
+      }
+    ],
+    "keywords": [],
+    "curated": false,
+    "notes": null,
+    "links": {
+      "openalex": "https://openalex.org/W4415909487"
+    },
+    "sources": [
+      {
+        "source": "openalex",
+        "seen_at": "2025-11-07T03:48:57Z"
+      }
+    ],
+    "history": [],
+    "last_updated": "2025-11-07T03:48:57Z"
+  },
+  {
+    "id": "doi:10.1142/s0218301326410272",
+    "doi": "10.1142/s0218301326410272",
+    "arxiv_id": null,
+    "inspire_id": null,
+    "title": "Reinforcement learning for accelerator beamline control: A simulation-based approach",
+    "authors": [
+      "Anwar Ibrahim",
+      "A. Petrenko",
+      "Maxim Kaledin",
+      "Ehab S Suleiman",
+      "F. Ratnikov",
+      "\u0414. \u0414\u0435\u0440\u043a\u0430\u0447"
+    ],
+    "abstract": "",
+    "date": "2026-01-26",
+    "year": 2026,
+    "venue": "International Journal of Modern Physics E",
+    "status": "published",
+    "categories": [
+      {
+        "label": "Reinforcement Learning & Autonomous Systems",
+        "score": 0.6412068009376526
+      },
+      {
+        "label": "Operations & Control",
+        "score": 0.5882421731948853
+      }
+    ],
+    "keywords": [],
+    "curated": false,
+    "notes": null,
+    "links": {
+      "openalex": "https://openalex.org/W7125638426"
+    },
+    "sources": [
+      {
+        "source": "openalex",
+        "seen_at": "2026-01-27T04:12:17Z"
+      }
+    ],
+    "history": [],
+    "last_updated": "2026-01-27T04:12:17Z"
+  }
+]

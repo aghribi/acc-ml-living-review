@@ -142,6 +142,12 @@ def canonical_ids(paper) -> set:
     doi = norm_doi(getattr(paper, "doi", None))
     if doi:
         ids.add(f"doi:{doi}")
+        # DataCite arXiv DOIs (10.48550/arXiv.XXXX) carry the arXiv id.
+        m = re.match(r"^10\.48550/arxiv\.(.+)$", doi)
+        if m:
+            ax_from_doi = norm_arxiv_id(m.group(1))
+            if ax_from_doi:
+                ids.add(f"arxiv:{ax_from_doi}")
     ax = norm_arxiv_id(getattr(paper, "arxiv_id", None))
     if ax:
         ids.add(f"arxiv:{ax}")

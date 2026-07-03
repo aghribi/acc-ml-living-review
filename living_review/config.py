@@ -117,6 +117,10 @@ CATEGORY_DESCRIPTIONS = {
 DATE_WINDOW_DAYS = 7
 """int: Default sliding window (in days) for fetching new papers."""
 
+FUZZY_TITLE_THRESHOLD = 0.93
+"""float: similar_title score at or above which two id-disjoint records
+are considered the same work (see dedup.py)."""
+
 ARXIV_PAGE_SIZE = 100
 """int: Maximum number of results per page in arXiv API queries."""
 

@@ -25,7 +25,7 @@ Typical Usage
 
 import json
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 import traceback
 
 
@@ -66,7 +66,7 @@ def append_scan_log(logdir, start, end, npapers, nchunks=1, status="ok", error_m
         log = []
 
     entry = {
-        "timestamp": datetime.utcnow().isoformat(),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "scanned_range": {"start": str(start), "end": str(end)},
         "papers": npapers,
         "chunks": nchunks,
@@ -103,7 +103,7 @@ def log_error(logdir, exc: Exception):
 
     with open(errfile, "a", encoding="utf-8") as f:
         f.write("="*60 + "\n")
-        f.write(f"[{datetime.utcnow().isoformat()}] ERROR: {type(exc).__name__}\n")
+        f.write(f"[{datetime.now(timezone.utc).isoformat()}] ERROR: {type(exc).__name__}\n")
         f.write("".join(traceback.format_exception(exc)))
         f.write("\n")
 
