@@ -202,8 +202,27 @@ are considered the same work (see dedup.py)."""
 ARXIV_PAGE_SIZE = 100
 """int: Maximum number of results per page in arXiv API queries."""
 
-DEFAULT_THRESHOLDS = {
-    "accel": 0.13,
-    "ml": 0.18
+# Deprecated cosine-filter thresholds; removed with the funnel rewiring
+# (kept one commit so cli.py/pipeline.py keep importing).
+DEFAULT_THRESHOLDS = {"accel": 0.13, "ml": 0.18}
+
+NLI_MODEL = "MoritzLaurer/deberta-v3-base-zeroshot-v2.0"
+"""str: Zero-shot NLI cross-encoder used by the Stage C adjudicator."""
+
+NLI_MODEL_REVISION = None
+"""str or None: Pinned HF revision hash for reproducibility (set after
+first calibration; None = latest)."""
+
+NLI_HYPOTHESIS = (
+    "This paper applies machine learning or artificial intelligence "
+    "to a particle accelerator, beamline, or particle beam."
+)
+"""str: Scope hypothesis, derived from SCOPE.md."""
+
+NLI_THRESHOLDS = {
+    "accept": 0.85,
+    "reject": 0.25,
 }
-"""dict: Default semantic similarity thresholds for relevance filtering."""
+"""dict: Entailment-score cutoffs. score >= accept -> accepted;
+score <= reject -> rejected; in between -> pending (human queue).
+Placeholders until scripts/calibrate_thresholds.py runs (see docs)."""
