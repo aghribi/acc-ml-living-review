@@ -23,10 +23,9 @@ Key Features
 Typical Usage
 -------------
 >>> from living_review.data_model import Paper
->>> from living_review.classifier import filter_relevant_papers, classify_papers
->>> papers = load_some_papers()
->>> relevant = filter_relevant_papers(papers)
->>> classify_papers(relevant)
+>>> from living_review.classifier import classify_papers
+>>> papers = load_accepted_papers()   # relevance is decided by relevance.py
+>>> classify_papers(papers)
 """
 
 import re
@@ -118,47 +117,13 @@ def dual_semantic_scores(texts: List[str]) -> Tuple[List[float], List[float], Li
     return scores_accel, scores_ml, scores_noise
 
 
-# ---------------------------------------------------------------------
-# Pre-filtering: relevance
-# ---------------------------------------------------------------------
-
-def filter_relevant_papers(
-    papers: List[Paper],
-    accel_threshold: float = 0.13,
-    ml_threshold: float = 0.18
-) -> List[Paper]:
-    """
-    Filter a list of papers to retain only those relevant to both
-    accelerator physics and machine learning, while excluding noisy
-    domains (detectors, spectroscopy, HEP analysis, etc.).
-
-    Parameters
-    ----------
-    papers : list of Paper
-        Papers to filter. Each must expose `.title` and `.abstract`.
-    accel_threshold : float, optional
-        Minimum cosine similarity with the accelerator query (default=0.13).
-    ml_threshold : float, optional
-        Minimum cosine similarity with the ML query (default=0.18).
-
-    Returns
-    -------
-    list of Paper
-        Subset of input papers deemed relevant.
-    """
-    if not papers:
-        return []
-    texts = [f"{p.title}. {p.abstract}" for p in papers]
-    scores_accel, scores_ml, scores_noise = dual_semantic_scores(texts)
-
-    kept = []
-    for p, sa, sm, sn in zip(papers, scores_accel, scores_ml, scores_noise):
-        txt = f"{p.title} {p.abstract}".lower()
-        if any(neg in txt for neg in NEGATIVE_KEYWORDS):
-            continue
-        if sa >= accel_threshold and sm >= ml_threshold and sa > sn:
-            kept.append(p)
-    return kept
+# NOTE: the former cosine-threshold relevance filter
+# (`filter_relevant_papers`, thresholds 0.13/0.18) was removed: measured on
+# the deployed DB, the accelerator threshold rejected 0 of 576 papers. The
+# relevance decision now lives in the staged funnel (gates.py +
+# adjudicator.py, orchestrated by relevance.py). `dual_semantic_scores` is
+# retained for ranking the pending queue and as an optional dedup
+# tie-breaker only — it no longer gates anything.
 
 
 # ---------------------------------------------------------------------
@@ -174,7 +139,7 @@ def classify_papers(papers: List[Paper], threshold: float = 0.25, max_cats: int 
     - special handling for review papers,
     - keyword overrides (e.g. "surrogate model" → Surrogate Models).
 
-    Should be applied **after** `filter_relevant_papers()`.
+    Should be applied only to papers accepted by the relevance funnel.
 
     Parameters
     ----------
@@ -215,6 +180,7 @@ def classify_papers(papers: List[Paper], threshold: float = 0.25, max_cats: int 
 
     for p, sims, text in zip(papers, sims_all, texts):
         lowtxt = text.lower()
+        lowtitle = (p.title or "").lower()
         cats: List[Dict] = []
 
         for i, s in enumerate(sims):
@@ -234,13 +200,18 @@ def classify_papers(papers: List[Paper], threshold: float = 0.25, max_cats: int 
         # Keep top-k
         cats = sorted(cats, key=lambda c: c["score"], reverse=True)[:max_cats]
 
-        # Keyword overrides
-        if any(w in lowtxt for w in reviews_keywords):
-            cats.append({"label": "Reviews", "score": 1.0})
-        if "surrogate model" in lowtxt:
-            cats.append({"label": "Surrogate Models", "score": 1.0})
-        if any(w in lowtxt for w in ["framework", "tool", "library", "package", "geoff"]):
-            cats.append({"label": "Tools & Libraries", "score": 1.0})
+        # Keyword overrides: only when the keyword appears in the TITLE, and
+        # never with a forced score of 1.0 (that labeled DNN-hardware surveys
+        # "Reviews" with full confidence) — floor at 0.5 instead.
+        def _override(label):
+            cats.append({"label": label, "score": max(0.5, float(sims[cat_labels.index(label)]))})
+
+        if any(w in lowtitle for w in reviews_keywords):
+            _override("Reviews")
+        if "surrogate model" in lowtitle:
+            _override("Surrogate Models")
+        if any(w in lowtitle for w in ["framework", "toolkit", "library", "package"]):
+            _override("Tools & Libraries")
 
         # Deduplicate by highest score
         dedup = {}

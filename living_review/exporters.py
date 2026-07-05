@@ -102,8 +102,14 @@ def export_json(papers, stats, outdir, chunking=None):
     interval_hours = int(os.getenv("UPDATE_INTERVAL_HOURS", "24"))
     stats["next_update"] = (now + timedelta(hours=interval_hours)).isoformat()
 
-    # Full papers DB
-    papers_dict = {str(p.key_for_dedup()): p.to_dict() for p in papers}
+    # Published papers, keyed by canonical id. Defensive filter: anything
+    # carrying an explicit non-accepted funnel decision never ships (papers
+    # without a review record pass, for standalone/legacy use).
+    papers = [
+        p for p in papers
+        if not p.review.get("decision") or p.review.get("decision") == "accepted"
+    ]
+    papers_dict = {p.id: p.to_dict() for p in papers}
     result = OrderedDict()
     result["stats"] = stats
     result["papers"] = papers_dict

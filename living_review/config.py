@@ -202,10 +202,6 @@ are considered the same work (see dedup.py)."""
 ARXIV_PAGE_SIZE = 100
 """int: Maximum number of results per page in arXiv API queries."""
 
-# Deprecated cosine-filter thresholds; removed with the funnel rewiring
-# (kept one commit so cli.py/pipeline.py keep importing).
-DEFAULT_THRESHOLDS = {"accel": 0.13, "ml": 0.18}
-
 NLI_MODEL = "MoritzLaurer/deberta-v3-base-zeroshot-v2.0"
 """str: Zero-shot NLI cross-encoder used by the Stage C adjudicator."""
 
