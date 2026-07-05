@@ -33,6 +33,7 @@ import arxiv
 from .utils import within_range, SESSION
 from .data_model import Paper
 from .config import ACCEL_KEYWORDS, ML_KEYWORDS, ARXIV_PAGE_SIZE
+from .enrich import reconstruct_openalex_abstract
 
 import xml.etree.ElementTree as ET
 # ---------------------------
@@ -438,10 +439,11 @@ def fetch_openalex(start: dt.date, end: dt.date) -> List[Paper]:
         doi = item.get("doi")
         venue = _get_openalex_venue(item)
 
+        # OpenAlex has no `abstract` field; it ships an inverted index.
         raw = {
             "title": item.get("title", "") or "",
             "authors": authors,
-            "abstract": item.get("abstract", "") or "",
+            "abstract": reconstruct_openalex_abstract(item.get("abstract_inverted_index")),
             "date": d.isoformat(),
             "year": d.year,
             "doi": doi,
