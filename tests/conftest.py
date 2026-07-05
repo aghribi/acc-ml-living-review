@@ -16,7 +16,7 @@ def make_paper():
             "abstract": kwargs.pop("abstract", "We study machine learning for beam control."),
             "year": kwargs.pop("year", 2024),
             "date": kwargs.pop("date", "2024-05-01"),
-            "venue": kwargs.pop("venue", "Phys. Rev. Accel. Beams"),
+            "venue": kwargs.pop("venue", "Journal of Testing"),
             "source": kwargs.pop("source", "test"),
         }
         raw.update(kwargs)
