@@ -131,6 +131,9 @@ FOREIGN_DOMAIN_TERMS = [
     r"\bradiograph\w+\b", r"\bMRI\b", r"\bultrasound\b", r"\bdental\b",
     r"\bstock market\b", r"\bfinancial\b", r"\bsentiment analysis\b",
     r"\btokamaks?\b", r"\bstellarators?\b",
+    # spam that has reached the DB (pirated-movie pages etc.)
+    r"\baltadefinizione\b", r"\bcb01\b", r"s?tr?eaming[- ]ita\b",
+    r"\bfilm completo\b", r"\bguardare? film\b",
 ]
 """Clear foreign-domain signals. Auto-reject requires one of these AND zero
 ACCEL_SYSTEM_VOCAB hits — a proton-therapy paper mentioning 'patients' and
@@ -216,9 +219,13 @@ NLI_HYPOTHESIS = (
 """str: Scope hypothesis, derived from SCOPE.md."""
 
 NLI_THRESHOLDS = {
-    "accept": 0.85,
-    "reject": 0.25,
+    "accept": 0.90,
+    "reject": 0.15,
 }
 """dict: Entailment-score cutoffs. score >= accept -> accepted;
 score <= reject -> rejected; in between -> pending (human queue).
-Placeholders until scripts/calibrate_thresholds.py runs (see docs)."""
+Calibrated 2026-07 on the gate-derived easy slices (142 positives /
+96 negatives): accept=0.90 admits 2/96 junk (both genuinely borderline
+accelerator-shielding papers), reject=0.15 loses 8/142 easy positives —
+all of which auto-accept at the gates in production and never reach the
+NLI. Re-run scripts/calibrate_thresholds.py after any model change."""
