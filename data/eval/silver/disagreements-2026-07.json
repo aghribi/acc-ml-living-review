@@ -1,0 +1,1996 @@
+{
+ "false_positives": [
+  {
+   "id": "hash:8b755192693e",
+   "title": "Electron neutrino selection with deep neural networks for the ICARUS experiment",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9736,
+    "categories": [
+     "Novel Applications",
+     "Tools & Libraries"
+    ],
+    "title": "Electron neutrino selection with deep neural networks for the ICARUS experiment"
+   },
+   "judge": {
+    "id": "hash:8b755192693e",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Neutrino event selection on detector data, no accelerator-subsystem ML"
+   }
+  },
+  {
+   "id": "doi:10.22323/1.478.0193",
+   "title": "Software Upgrades for the High-Luminosity LHC",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9606,
+    "categories": [
+     "Tools & Libraries",
+     "Novel Applications"
+    ],
+    "title": "Software Upgrades for the High-Luminosity LHC"
+   },
+   "judge": {
+    "id": "doi:10.22323/1.478.0193",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Detector-collaboration software upgrades for HL-LHC experiments, not machine/beam ML"
+   }
+  },
+  {
+   "id": "arxiv:2603.06675",
+   "title": "GNN For Muon Particle Momentum estimation",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9464,
+    "categories": [
+     "Tools & Libraries",
+     "Novel Applications"
+    ],
+    "title": "GNN For Muon Particle Momentum estimation"
+   },
+   "judge": {
+    "id": "arxiv:2603.06675",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "GNN muon momentum for CMS trigger, detector analysis ML"
+   }
+  },
+  {
+   "id": "doi:10.22323/1.489.0043",
+   "title": "Particle Tracking in the NA62 Experiment",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9822,
+    "categories": [
+     "Novel Applications",
+     "Data Management"
+    ],
+    "title": "Particle Tracking in the NA62 Experiment"
+   },
+   "judge": {
+    "id": "doi:10.22323/1.489.0043",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Detector track reconstruction for NA62 physics analysis, not accelerator operation"
+   }
+  },
+  {
+   "id": "doi:10.1016/j.cpc.2026.110032",
+   "title": "A machine learning based approach to online electron reconstruction at CLAS12",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9252,
+    "categories": [
+     "Novel Applications",
+     "Data Management"
+    ],
+    "title": "A machine learning based approach to online electron reconstruction at CLAS12"
+   },
+   "judge": {
+    "id": "doi:10.1016/j.cpc.2026.110032",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Online electron identification from detector data at CLAS12 — detector/analysis ML"
+   }
+  },
+  {
+   "id": "arxiv:2204.09947",
+   "title": "Towards Reliable Neural Generative Modeling of Detectors",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9566,
+    "categories": [
+     "Novel Applications",
+     "Tools & Libraries"
+    ],
+    "title": "Towards Reliable Neural Generative Modeling of Detectors"
+   },
+   "judge": {
+    "id": "arxiv:2204.09947",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "GAN simulation of detector responses, detector ML"
+   }
+  },
+  {
+   "id": "arxiv:2205.09185",
+   "title": "AI-assisted Optimization of the ECCE Tracking System at the Electron Ion Collider",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9378,
+    "categories": [
+     "Novel Applications",
+     "Tools & Libraries"
+    ],
+    "title": "AI-assisted Optimization of the ECCE Tracking System at the Electron Ion Collider"
+   },
+   "judge": {
+    "id": "arxiv:2205.09185",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "AI optimization of EIC tracking detector design; detector, not accelerator subsystem"
+   }
+  },
+  {
+   "id": "arxiv:2306.11899",
+   "title": "Closing the loop: Autonomous experiments enabled by machine-learning-based online data analysis in synchrotron beamline environments",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9706,
+    "categories": [
+     "Novel Applications",
+     "Tools & Libraries"
+    ],
+    "title": "Closing the loop: Autonomous experiments enabled by machine-learning-based online data analysis in synchrotron beamline environments"
+   },
+   "judge": {
+    "id": "arxiv:2306.11899",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "ML analysis of X-ray scattering data for autonomous experiments; acts on sample data, not beam/beamline"
+   }
+  },
+  {
+   "id": "arxiv:2401.16016",
+   "title": "Combined track finding with GNN & CKF",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9834,
+    "categories": [
+     "Data Management",
+     "Novel Applications"
+    ],
+    "title": "Combined track finding with GNN & CKF"
+   },
+   "judge": {
+    "id": "arxiv:2401.16016",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "GNN track reconstruction on collider detector data — detector/analysis ML"
+   }
+  },
+  {
+   "id": "arxiv:2606.23993",
+   "title": "Learning to Trigger: Reinforcement Learning at the Large Hadron Collider",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9883,
+    "categories": [
+     "Reinforcement Learning & Autonomous Systems",
+     "Data Management"
+    ],
+    "title": "Learning to Trigger: Reinforcement Learning at the Large Hadron Collider"
+   },
+   "judge": {
+    "id": "arxiv:2606.23993",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "RL for detector trigger threshold tuning, detector data selection not accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1038/s41598-026-48622-z",
+   "title": "Particle peak velocity prediction based on risk-oriented hybrid ensemble learning",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9287,
+    "categories": [
+     "Anomaly Detection & Fault Prediction",
+     "Reinforcement Learning & Autonomous Systems"
+    ],
+    "title": "Particle peak velocity prediction based on risk-oriented hybrid ensemble learning"
+   },
+   "judge": {
+    "id": "doi:10.1038/s41598-026-48622-z",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "blasting-engineering peak particle velocity, lexical accident"
+   }
+  },
+  {
+   "id": "hash:52da7c56bbea",
+   "title": "Particle identification in the GlueX detector with machine learning",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9708,
+    "categories": [
+     "Tools & Libraries",
+     "Novel Applications"
+    ],
+    "title": "Particle identification in the GlueX detector with machine learning"
+   },
+   "judge": {
+    "id": "hash:52da7c56bbea",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Particle identification in GlueX detector, detector-analysis ML"
+   }
+  },
+  {
+   "id": "doi:10.1134/s1063779625700881",
+   "title": "Machine Learning in High-Momentum Particle Identification in the MPD Experiment",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9616,
+    "categories": [
+     "Tools & Libraries",
+     "Novel Applications"
+    ],
+    "title": "Machine Learning in High-Momentum Particle Identification in the MPD Experiment"
+   },
+   "judge": {
+    "id": "doi:10.1134/s1063779625700881",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Particle identification on detector data at MPD/NICA; detector analysis"
+   }
+  },
+  {
+   "id": "arxiv:2411.11942",
+   "title": "Variable Rate Neural Compression for Sparse Detector Data",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9189,
+    "categories": [
+     "Novel Applications",
+     "Data Management"
+    ],
+    "title": "Variable Rate Neural Compression for Sparse Detector Data"
+   },
+   "judge": {
+    "id": "arxiv:2411.11942",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Neural compression of TPC detector data, downstream detector product"
+   }
+  },
+  {
+   "id": "arxiv:2606.07564",
+   "title": "Considerations for an Integrated Detector Design at FCC-ee: A Human-AI Exploration",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9214,
+    "categories": [
+     "Novel Applications",
+     "By Facility Type"
+    ],
+    "title": "Considerations for an Integrated Detector Design at FCC-ee: A Human-AI Exploration"
+   },
+   "judge": {
+    "id": "arxiv:2606.07564",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "AI-assisted FCC-ee detector design exploration, detector not accelerator"
+   }
+  },
+  {
+   "id": "arxiv:2109.12636",
+   "title": "Hybrid Quantum Classical Graph Neural Networks for Particle Track Reconstruction",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9384,
+    "categories": [
+     "Novel Applications",
+     "By Facility Type"
+    ],
+    "title": "Hybrid Quantum Classical Graph Neural Networks for Particle Track Reconstruction"
+   },
+   "judge": {
+    "id": "arxiv:2109.12636",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Quantum GNN track reconstruction on detector hits — detector/analysis ML"
+   }
+  },
+  {
+   "id": "doi:10.1051/epjconf/202533701010",
+   "title": "Real-Time event reconstruction for Nuclear Physics Experiments using Artificial Intelligence",
+   "funnel": {
+    "decision": "accepted",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.9134,
+    "categories": [
+     "Novel Applications",
+     "Tools & Libraries"
+    ],
+    "title": "Real-Time event reconstruction for Nuclear Physics Experiments using Artificial Intelligence"
+   },
+   "judge": {
+    "id": "doi:10.1051/epjconf/202533701010",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "AI track reconstruction of detector events — downstream detector analysis"
+   }
+  }
+ ],
+ "false_negatives": [
+  {
+   "id": "doi:10.22399/ijcesen.4827",
+   "title": "A Hybrid Monte Carlo–Machine Learning Framework for High-Energy Neutron Shielding Using Boron-Enhanced Concrete",
+   "funnel": {
+    "decision": "rejected",
+    "stage": "migration:gate",
+    "rule": "auto_reject:foreign_domain",
+    "score": null,
+    "categories": [
+     "Novel Applications",
+     "Statistics & Trends",
+     "Tools & Libraries"
+    ],
+    "title": "A Hybrid Monte Carlo–Machine Learning Framework for High-Energy Neutron Shielding Using Boron-Enhanced Concrete"
+   },
+   "judge": {
+    "id": "doi:10.22399/ijcesen.4827",
+    "verdict": "IN",
+    "categories": [
+     "Surrogate Models",
+     "Novel Applications"
+    ],
+    "reason": "ML surrogate for neutron shielding of a proton accelerator facility (machine-tied radiation safety)"
+   }
+  },
+  {
+   "id": "arxiv:2308.00718",
+   "title": "Beam Detection Based on Machine Learning Algorithms",
+   "funnel": {
+    "decision": "rejected",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.0869,
+    "categories": [
+     "Beam Diagnostics",
+     "Novel Applications"
+    ],
+    "title": "Beam Detection Based on Machine Learning Algorithms"
+   },
+   "judge": {
+    "id": "arxiv:2308.00718",
+    "verdict": "IN",
+    "categories": [
+     "Beam Diagnostics"
+    ],
+    "reason": "ML determination of FEL beam positions on screens"
+   }
+  },
+  {
+   "id": "doi:10.1016/j.anucene.2026.112572",
+   "title": "A hybrid monte Carlo-machine learning framework for neutron dose attenuation modeling in layered iron-concrete shields of a 1000 MeV proton accelerator",
+   "funnel": {
+    "decision": "rejected",
+    "stage": "migration:gate",
+    "rule": "auto_reject:foreign_domain",
+    "score": null,
+    "categories": [
+     "Novel Applications",
+     "Beamline Design & Simulation",
+     "Tools & Libraries"
+    ],
+    "title": "A hybrid monte Carlo-machine learning framework for neutron dose attenuation modeling in layered iron-concrete shields of a 1000 MeV proton accelerator"
+   },
+   "judge": {
+    "id": "doi:10.1016/j.anucene.2026.112572",
+    "verdict": "IN",
+    "categories": [
+     "Surrogate Models",
+     "Novel Applications"
+    ],
+    "reason": "MC-ML neutron shielding model for 1 GeV proton accelerator facility"
+   }
+  },
+  {
+   "id": "arxiv:2509.02227",
+   "title": "Application Of Large Language Models For The Extraction Of Information From Particle Accelerator Technical Documentation",
+   "funnel": {
+    "decision": "rejected",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.0532,
+    "categories": [
+     "Statistics & Trends",
+     "Tools & Libraries"
+    ],
+    "title": "Application Of Large Language Models For The Extraction Of Information From Particle Accelerator Technical Documentation"
+   },
+   "judge": {
+    "id": "arxiv:2509.02227",
+    "verdict": "IN",
+    "categories": [
+     "Data Management",
+     "Novel Applications"
+    ],
+    "reason": "LLM knowledge extraction from accelerator technical documentation — facility infrastructure ML"
+   }
+  },
+  {
+   "id": "doi:10.25777/2pjk-8q69",
+   "title": "Machine Learning for Anomaly Detection in Neural Network Security and SRF Cavities",
+   "funnel": {
+    "decision": "rejected",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.1058,
+    "categories": [
+     "Anomaly Detection & Fault Prediction"
+    ],
+    "title": "Machine Learning for Anomaly Detection in Neural Network Security and SRF Cavities"
+   },
+   "judge": {
+    "id": "doi:10.25777/2pjk-8q69",
+    "verdict": "IN",
+    "categories": [
+     "Anomaly Detection & Fault Prediction",
+     "RF Systems"
+    ],
+    "reason": "Dissertation includes SRF cavity anomaly detection at Jefferson Lab"
+   }
+  },
+  {
+   "id": "arxiv:2105.03584",
+   "title": "Adaptive Latent Space Tuning for Non-Stationary Distributions",
+   "funnel": {
+    "decision": "rejected",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.0644,
+    "categories": [
+     "Novel Applications",
+     "Tools & Libraries"
+    ],
+    "title": "Adaptive Latent Space Tuning for Non-Stationary Distributions"
+   },
+   "judge": {
+    "id": "arxiv:2105.03584",
+    "verdict": "IN",
+    "categories": [
+     "Beam Diagnostics",
+     "Surrogate Models"
+    ],
+    "reason": "Adaptive latent-space tuning of encoder-decoder diagnostics for time-varying charged-particle-beam systems"
+   }
+  },
+  {
+   "id": "doi:10.1109/mcs.2025.3646850",
+   "title": "Adaptive Control Meets Deep Learning: EXTREMUM SEEKING IN LATENT SPACE WITH PARTICLE ACCELERATOR APPLICATIONS",
+   "funnel": {
+    "decision": "rejected",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.0417,
+    "categories": [
+     "Reinforcement Learning & Autonomous Systems",
+     "Novel Applications"
+    ],
+    "title": "Adaptive Control Meets Deep Learning: EXTREMUM SEEKING IN LATENT SPACE WITH PARTICLE ACCELERATOR APPLICATIONS"
+   },
+   "judge": {
+    "id": "doi:10.1109/mcs.2025.3646850",
+    "verdict": "IN",
+    "categories": [
+     "Optimization & Control",
+     "Beam Diagnostics"
+    ],
+    "reason": "Extremum seeking in generative-model latent space applied to particle accelerators"
+   }
+  },
+  {
+   "id": "arxiv:2306.03739",
+   "title": "Learning to Do or Learning While Doing: Reinforcement Learning and Bayesian Optimisation for Online Continuous Tuning",
+   "funnel": {
+    "decision": "rejected",
+    "stage": "migration:nli",
+    "rule": null,
+    "score": 0.0357,
+    "categories": [
+     "Reinforcement Learning & Autonomous Systems",
+     "Optimization & Control"
+    ],
+    "title": "Learning to Do or Learning While Doing: Reinforcement Learning and Bayesian Optimisation for Online Continuous Tuning"
+   },
+   "judge": {
+    "id": "arxiv:2306.03739",
+    "verdict": "IN",
+    "categories": [
+     "Reinforcement Learning & Autonomous Systems",
+     "Optimization & Control"
+    ],
+    "reason": "RL vs Bayesian optimisation for online accelerator tuning"
+   }
+  }
+ ],
+ "pending_judged_in": [
+  {
+   "id": "hash:1a83a30d76ce",
+   "title": "Machine Learning for superconducting magnets application",
+   "judge": {
+    "id": "hash:1a83a30d76ce",
+    "verdict": "IN",
+    "categories": [
+     "Others"
+    ],
+    "reason": "ML characterization of accelerator superconducting magnets is facility-infrastructure ML"
+   }
+  },
+  {
+   "id": "doi:10.26083/tuprints-00029370",
+   "title": "Deep Lie Map Networks:A novel Approach to Infer Nonlinear Synchrotron Optics from Beam Oscillations",
+   "judge": {
+    "id": "doi:10.26083/tuprints-00029370",
+    "verdict": "IN",
+    "categories": [
+     "Beam Dynamics"
+    ],
+    "reason": "ML inference and correction of nonlinear synchrotron optics from beam oscillations"
+   }
+  },
+  {
+   "id": "doi:10.1051/epjconf/202533701223",
+   "title": "Machine Learning for Optimized Polarization at Jefferson Lab",
+   "judge": {
+    "id": "doi:10.1051/epjconf/202533701223",
+    "verdict": "IN",
+    "categories": [
+     "Operations & Control",
+     "Optimization & Control"
+    ],
+    "reason": "ML control to maintain polarized photon beam/target at JLab"
+   }
+  },
+  {
+   "id": "doi:10.1117/12.3058379",
+   "title": "Laser wakefield electron acceleration simulation using physics-informed diffusion probabilistic models",
+   "judge": {
+    "id": "doi:10.1117/12.3058379",
+    "verdict": "IN",
+    "categories": [
+     "Surrogate Models",
+     "Beam Dynamics"
+    ],
+    "reason": "physics-informed diffusion model simulates laser wakefield acceleration"
+   }
+  },
+  {
+   "id": "doi:10.1093/acrefore/9780190871994.013.138",
+   "title": "Machine Learning for Particle Accelerators",
+   "judge": {
+    "id": "doi:10.1093/acrefore/9780190871994.013.138",
+    "verdict": "IN",
+    "categories": [
+     "Reviews"
+    ],
+    "reason": "review of machine learning for particle accelerators"
+   }
+  },
+  {
+   "id": "doi:10.3390/instruments8040050",
+   "title": "Assessing the Performance of Deep Learning Predictions for Dynamic Aperture of a Hadron Circular Particle Accelerator",
+   "judge": {
+    "id": "doi:10.3390/instruments8040050",
+    "verdict": "IN",
+    "categories": [
+     "Beam Dynamics",
+     "Surrogate Models"
+    ],
+    "reason": "DL prediction of dynamic aperture of hadron synchrotrons"
+   }
+  },
+  {
+   "id": "doi:10.18429/jacow-ipac2021-thpab201",
+   "title": "A Machine Learning Technique for Dynamic Aperture Computation",
+   "judge": {
+    "id": "doi:10.18429/jacow-ipac2021-thpab201",
+    "verdict": "IN",
+    "categories": [
+     "Beam Dynamics",
+     "Surrogate Models"
+    ],
+    "reason": "Echo-state network extrapolates dynamic aperture of hadron colliders"
+   }
+  },
+  {
+   "id": "arxiv:2106.00432",
+   "title": "Invertible Surrogate Models: Joint surrogate modelling and reconstruction of Laser-Wakefield Acceleration by invertible neural networks",
+   "judge": {
+    "id": "arxiv:2106.00432",
+    "verdict": "IN",
+    "categories": [
+     "Surrogate Models",
+     "Beam Diagnostics"
+    ],
+    "reason": "Invertible NN surrogate and diagnostic reconstruction for laser-wakefield acceleration physics"
+   }
+  },
+  {
+   "id": "doi:10.1145/3731599.3767408",
+   "title": "ChatEED: An agentic retrieval assistant for accelerator operators",
+   "judge": {
+    "id": "doi:10.1145/3731599.3767408",
+    "verdict": "IN",
+    "categories": [
+     "Operations & Control",
+     "Data Management"
+    ],
+    "reason": "LLM agentic retrieval over accelerator operations logbooks at SLAC"
+   }
+  },
+  {
+   "id": "doi:10.1109/tasc.2026.3660099",
+   "title": "Development of an Experimental Test Stand and Machine Learning Surrogate Models for Capturing Complex Responses in Pulsed Septa",
+   "judge": {
+    "id": "doi:10.1109/tasc.2026.3660099",
+    "verdict": "IN",
+    "categories": [
+     "Anomaly Detection & Fault Prediction",
+     "Surrogate Models"
+    ],
+    "reason": "ML surrogates for fault/life-cycle prediction of pulsed septum magnets — accelerator hardware"
+   }
+  },
+  {
+   "id": "doi:10.1016/j.radphyschem.2026.113775",
+   "title": "Method for reconstruction the energy spectrum of a linear electron accelerator using neural networks",
+   "judge": {
+    "id": "doi:10.1016/j.radphyschem.2026.113775",
+    "verdict": "IN",
+    "categories": [
+     "Beam Diagnostics"
+    ],
+    "reason": "NN reconstruction of linear electron accelerator energy spectrum (beam characterization)"
+   }
+  },
+  {
+   "id": "doi:10.1063/5.0333133",
+   "title": "Machine learning for mapping multipactor susceptibility in RF systems: Capabilities and generalization constraints",
+   "judge": {
+    "id": "doi:10.1063/5.0333133",
+    "verdict": "IN",
+    "categories": [
+     "RF Systems"
+    ],
+    "reason": "ML mapping of multipactor susceptibility in accelerator RF systems"
+   }
+  },
+  {
+   "id": "arxiv:2210.02539",
+   "title": "Applications of object detection networks at high-power laser systems and experiments",
+   "judge": {
+    "id": "arxiv:2210.02539",
+    "verdict": "IN",
+    "categories": [
+     "Beam Diagnostics",
+     "Novel Applications"
+    ],
+    "reason": "Object detection for diagnostics and monitoring at high-power laser (plasma acceleration) facility"
+   }
+  },
+  {
+   "id": "arxiv:2212.00026",
+   "title": "Data-driven Science and Machine Learning Methods in Laser-Plasma Physics",
+   "judge": {
+    "id": "arxiv:2212.00026",
+    "verdict": "IN",
+    "categories": [
+     "Reviews"
+    ],
+    "reason": "Review of ML in laser-plasma physics incl. wakefield acceleration"
+   }
+  },
+  {
+   "id": "arxiv:1610.03378",
+   "title": "Machine learning applied to single-shot x-ray diagnostics in an XFEL",
+   "judge": {
+    "id": "arxiv:1610.03378",
+    "verdict": "IN",
+    "categories": [
+     "Beam Diagnostics"
+    ],
+    "reason": "ML single-shot photon pulse characterization tied to XFEL machine diagnostics"
+   }
+  },
+  {
+   "id": "arxiv:1907.13324",
+   "title": "Generative Adversarial Networks (GAN) for compact beam source modelling in Monte Carlo simulations",
+   "judge": {
+    "id": "arxiv:1907.13324",
+    "verdict": "IN",
+    "categories": [
+     "Surrogate Models",
+     "Novel Applications"
+    ],
+    "reason": "GAN models linac beam-source phase space for Monte Carlo"
+   }
+  },
+  {
+   "id": "doi:10.23730/cyrsp-2024-003.2131",
+   "title": "Machine learning",
+   "judge": {
+    "id": "doi:10.23730/cyrsp-2024-003.2131",
+    "verdict": "IN",
+    "categories": [
+     "Reviews"
+    ],
+    "reason": "CERN school chapter reviewing ML applications to particle accelerators"
+   }
+  },
+  {
+   "id": "arxiv:2307.02367",
+   "title": "Distance Preserving Machine Learning for Uncertainty Aware Accelerator Capacitance Predictions",
+   "judge": {
+    "id": "arxiv:2307.02367",
+    "verdict": "IN",
+    "categories": [
+     "Anomaly Detection & Fault Prediction",
+     "Surrogate Models"
+    ],
+    "reason": "Uncertainty-aware ML for accelerator system (capacitance) health prediction"
+   }
+  },
+  {
+   "id": "arxiv:2502.17505",
+   "title": "Inverse Surrogate Model of a Soft X-Ray Spectrometer using Domain Adaptation",
+   "judge": {
+    "id": "arxiv:2502.17505",
+    "verdict": "IN",
+    "categories": [
+     "Surrogate Models",
+     "Beamline Design & Simulation"
+    ],
+    "reason": "Inverse surrogate automates beamline/spectrometer alignment and calibration at BESSY II"
+   }
+  },
+  {
+   "id": "doi:10.1364/oe.562798",
+   "title": "femto-PIXAR: a self-supervised neural network method for reconstructing femtosecond X-ray free electron laser pulses",
+   "judge": {
+    "id": "doi:10.1364/oe.562798",
+    "verdict": "IN",
+    "categories": [
+     "Beam Diagnostics"
+    ],
+    "reason": "Self-supervised NN reconstruction of X-FEL pulses for machine tuning and shot-by-shot diagnostics"
+   }
+  },
+  {
+   "id": "arxiv:2501.04305",
+   "title": "Physics-Informed Super-Resolution Diffusion for 6D Phase Space Diagnostics",
+   "judge": {
+    "id": "arxiv:2501.04305",
+    "verdict": "IN",
+    "categories": [
+     "Beam Diagnostics",
+     "Surrogate Models"
+    ],
+    "reason": "Diffusion-based virtual diagnostics of 6D beam phase space"
+   }
+  },
+  {
+   "id": "arxiv:2107.06207",
+   "title": "Adaptive Machine Learning for Time-Varying Systems: Low Dimensional Latent Space Tuning",
+   "judge": {
+    "id": "arxiv:2107.06207",
+    "verdict": "IN",
+    "categories": [
+     "Beam Diagnostics",
+     "Surrogate Models"
+    ],
+    "reason": "Latent-space adaptive ML mapping accelerator parameters to beam phase-space projections"
+   }
+  }
+ ],
+ "pending_judged_out": [
+  {
+   "id": "doi:10.1145/3744255.3811718",
+   "title": "Unsupervised Learning for AC Optimal Power Flow with Fast Physics-Aware Layer",
+   "judge": {
+    "id": "doi:10.1145/3744255.3811718",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Power-grid optimal power flow, no accelerator"
+   }
+  },
+  {
+   "id": "arxiv:2507.16227",
+   "title": "Predictive Hydrodynamic Simulations for Laser Direct-drive Implosion Experiments via Artificial Intelligence",
+   "judge": {
+    "id": "arxiv:2507.16227",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "AI for ICF laser implosion hydrodynamics, no particle accelerator or beam"
+   }
+  },
+  {
+   "id": "doi:10.1051/epjconf/202533810017/pdf",
+   "title": "Reconstruction of Neutron Spectra Using Silicon Carbide Detectors in Monoenergetic Fields with Machine Learning Approach",
+   "judge": {
+    "id": "doi:10.1051/epjconf/202533810017/pdf",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "ML unfolds neutron spectra from detector data; no accelerator/beam subsystem involved"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-3-032-30524-4_38",
+   "title": "The Intersection of Finite Element Limit Analysis and Physics-Informed Machine Learning for Structural Vulnerability Assessment",
+   "judge": {
+    "id": "doi:10.1007/978-3-032-30524-4_38",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Civil-engineering structural vulnerability assessment, no accelerator"
+   }
+  },
+  {
+   "id": "arxiv:2411.10308",
+   "title": "A Realistic Collimated X-Ray Image Simulation Pipeline",
+   "judge": {
+    "id": "arxiv:2411.10308",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Medical X-ray imaging simulation, no accelerator/beam ML"
+   }
+  },
+  {
+   "id": "doi:10.1393/ncc/i2025-25149-3",
+   "title": "Graph Neural Networks for particle tracking in NA62 Experiment",
+   "judge": {
+    "id": "doi:10.1393/ncc/i2025-25149-3",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "detector tracking/vertex reconstruction for physics analysis, not machine ML"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-96-8058-0_8",
+   "title": "Steel Surface Defects Recognition Based on Multi-Type Statistical Features and Multiclass Support Vector Machine",
+   "judge": {
+    "id": "doi:10.1007/978-981-96-8058-0_8",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Steel surface defect recognition, materials inspection domain"
+   }
+  },
+  {
+   "id": "arxiv:2412.09500",
+   "title": "Loss function to optimise signal significance in particle physics",
+   "judge": {
+    "id": "arxiv:2412.09500",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Detector-analysis ML (signal significance in event classification), not accelerator ML"
+   }
+  },
+  {
+   "id": "doi:10.1145/3725843.3756044",
+   "title": "BitL: A Hybrid Bit-Serial and Parallel Deep Learning Accelerator for Critical Path Reduction",
+   "judge": {
+    "id": "doi:10.1145/3725843.3756044",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Deep learning hardware accelerator (compute chip)"
+   }
+  },
+  {
+   "id": "doi:10.54914/jit.v12i1.2694",
+   "title": "Analisis Sentimen Kontaminasi Radioaktif di Kawasan Industri Cikande Menggunakan Algoritma Support Vector Machine",
+   "judge": {
+    "id": "doi:10.54914/jit.v12i1.2694",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Social-media sentiment analysis about radioactive contamination, no machine ML"
+   }
+  },
+  {
+   "id": "doi:10.1107/s1600577522006816",
+   "title": "3D deep convolutional neural network segmentation model for precipitate and porosity identification in synchrotron X-ray tomograms",
+   "judge": {
+    "id": "doi:10.1107/s1600577522006816",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Segmentation of synchrotron tomograms — downstream sample data, light source only the tool"
+   }
+  },
+  {
+   "id": "arxiv:2412.17508",
+   "title": "An efficient search-and-score algorithm for ancestral graphs using multivariate information scores",
+   "judge": {
+    "id": "arxiv:2412.17508",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Causal graph discovery algorithm, unrelated domain"
+   }
+  },
+  {
+   "id": "doi:10.1007/s42250-025-01560-1",
+   "title": "Optimization of the Claus Process Using Machine Learning and Real Operational Data: A Case Study in an SRU",
+   "judge": {
+    "id": "doi:10.1007/s42250-025-01560-1",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Claus sulfur-recovery chemical process optimization, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-96-7614-9_33",
+   "title": "Saffron Adulteration Prediction Based on Fine-Grained Deep Features",
+   "judge": {
+    "id": "doi:10.1007/978-981-96-7614-9_33",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Saffron adulteration food classification, no accelerator"
+   }
+  },
+  {
+   "id": "hash:a9ace0354e17",
+   "title": "Machine Learning Methods for Tau Lepton Identification and Search for the Supersymmetric Partner of the Tau Lepton Using CMS Run 2 Data",
+   "judge": {
+    "id": "hash:a9ace0354e17",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "CMS detector-analysis ML for tau/stau physics, no machine ML"
+   }
+  },
+  {
+   "id": "doi:10.4028/p-a6ba7w",
+   "title": "Sintering Process Analysis of Aluminum Matrix Composites Using Machine Learning",
+   "judge": {
+    "id": "doi:10.4028/p-a6ba7w",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "ML for spark plasma sintering of composites, materials processing"
+   }
+  },
+  {
+   "id": "doi:10.1007/s12145-026-02133-7",
+   "title": "Comparative efficacy of supervised and semi-supervised machine learning classifiers for energy-based discrimination of near-fault pulse-type ground motion",
+   "judge": {
+    "id": "doi:10.1007/s12145-026-02133-7",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Seismic ground-motion classification; no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1109/jsen.2025.3639432",
+   "title": "Robust Leakage Localization in Radioactive Material Transport via Multitask Learning",
+   "judge": {
+    "id": "doi:10.1109/jsen.2025.3639432",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Radioactive-material transport leak localization, no accelerator"
+   }
+  },
+  {
+   "id": "arxiv:1905.11825",
+   "title": "Fast Data-Driven Simulation of Cherenkov Detectors Using Generative Adversarial Networks",
+   "judge": {
+    "id": "arxiv:1905.11825",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "GAN simulation of Cherenkov detector response — detector ML, not machine/beam"
+   }
+  },
+  {
+   "id": "doi:10.1117/12.3096466",
+   "title": "Research on the application of machine learning algorithms in aeromagnetic survey",
+   "judge": {
+    "id": "doi:10.1117/12.3096466",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Aeromagnetic geoscience survey, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-3-032-06671-8_2",
+   "title": "Deep Learning-Based Classification of Spine X-Ray Images Using Attention Mechanisms",
+   "judge": {
+    "id": "doi:10.1007/978-3-032-06671-8_2",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Medical image classification (spine X-rays), downstream product"
+   }
+  },
+  {
+   "id": "doi:10.1515/mt-2025-0389",
+   "title": "Comparative evaluation of machine learning models for thrust force estimation in aluminum 5083 H111",
+   "judge": {
+    "id": "doi:10.1515/mt-2025-0389",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Machining thrust-force prediction in aluminum, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-96-8508-0_21",
+   "title": "A Machine Learning Approach to Li-Ion Battery Module",
+   "judge": {
+    "id": "doi:10.1007/978-981-96-8508-0_21",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Li-ion battery module ML, different domain"
+   }
+  },
+  {
+   "id": "doi:10.1007/s12065-025-01109-8",
+   "title": "Hybrid deep semantic query expansion using multi-objective fireworks-transformer optimization: a reinforcement learning approach",
+   "judge": {
+    "id": "doi:10.1007/s12065-025-01109-8",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "NLP query expansion, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.14488/enegep2025_tn_wpg_424_2075_48651",
+   "title": "ESTIMATIVA DE VIDA ÚTIL REMANESCENTE DE PLACAS CERÂMICAS UTILIZADAS EM FILTRAGEM DE MINÉRIO DE FERRO ATRAVÉS DE MODELO DE CONFIABILIDADE E MÉTODOS DE MACHINE LEARNING APLICADOS A VARIÁVEIS DE PROCESSO INDUSTRIAL DE UM SISTEMA PIMS",
+   "judge": {
+    "id": "doi:10.14488/enegep2025_tn_wpg_424_2075_48651",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Remaining-life prediction of ore-filtration ceramic plates; no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1016/j.mtphys.2025.101971",
+   "title": "A physics-informed machine learning framework for unified prediction of superconducting transition temperatures",
+   "judge": {
+    "id": "doi:10.1016/j.mtphys.2025.101971",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Generic superconductor Tc materials prediction, no machine/beam"
+   }
+  },
+  {
+   "id": "arxiv:2307.06434",
+   "title": "Improved selective background Monte Carlo simulation at Belle II with graph attention networks and weighted events",
+   "judge": {
+    "id": "arxiv:2307.06434",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Belle II detector background simulation filtering, detector/analysis ML"
+   }
+  },
+  {
+   "id": "doi:10.1007/s40194-026-02476-1",
+   "title": "Integrated image processing and machine learning framework for defect detection and prediction in selective laser melting of Hastelloy X",
+   "judge": {
+    "id": "doi:10.1007/s40194-026-02476-1",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Defect detection in laser-melting additive manufacturing; no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.18494/sam6155",
+   "title": "Dual-stage Multi-attention Deep Learning Framework for X-ray-based Classification of Rotator Cuff Tears",
+   "judge": {
+    "id": "doi:10.18494/sam6155",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Medical X-ray image classification is downstream product analysis"
+   }
+  },
+  {
+   "id": "doi:10.1007/s12194-026-01043-z",
+   "title": "Fast 3D whole-body occupational dose estimation in interventional radiology using physics-informed deep learning",
+   "judge": {
+    "id": "doi:10.1007/s12194-026-01043-z",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "occupational dose in interventional radiology (X-ray tube), no accelerator machine ML"
+   }
+  },
+  {
+   "id": "arxiv:2302.06895",
+   "title": "SpeckleNN: A unified embedding for real-time speckle pattern classification in X-ray single-particle imaging with limited labeled examples",
+   "judge": {
+    "id": "arxiv:2302.06895",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Classifies XFEL speckle patterns of samples, downstream product ML"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-95-0684-2_14",
+   "title": "SQL Query Optimization Using Reinforcement Learning for Low-Power Computing Systems",
+   "judge": {
+    "id": "doi:10.1007/978-981-95-0684-2_14",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "SQL query optimization, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-3-032-07904-6_17",
+   "title": "Physics-Informed Deep Learning for Improved Input Function Estimation in Motion-Blurred Dynamic [$$^{18}$$F]FDG PET Images",
+   "judge": {
+    "id": "doi:10.1007/978-3-032-07904-6_17",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "PET image input-function estimation, downstream medical imaging"
+   }
+  },
+  {
+   "id": "doi:10.1088/2632-2153/ae68d4",
+   "title": "Machine learning time propagators for time-dependent density functional theory simulations",
+   "judge": {
+    "id": "doi:10.1088/2632-2153/ae68d4",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "ML propagators for TDDFT electron-structure simulations, not accelerator physics"
+   }
+  },
+  {
+   "id": "doi:10.1142/s0218488526500248",
+   "title": "Reflective Learning-Based Particle Swarm Optimization for Feature Selection",
+   "judge": {
+    "id": "doi:10.1142/s0218488526500248",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Generic PSO feature-selection algorithm, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-95-4409-7_11",
+   "title": "Predictive Modeling of ICU Mortality Using Supervised Machine Learning Algorithms",
+   "judge": {
+    "id": "doi:10.1007/978-981-95-4409-7_11",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "ICU mortality prediction; no accelerator"
+   }
+  },
+  {
+   "id": "arxiv:2603.06492",
+   "title": "NOBLE: Accelerating Transformers with Nonlinear Low-Rank Branches",
+   "judge": {
+    "id": "arxiv:2603.06492",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Transformer architecture research, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/s10921-025-01318-2",
+   "title": "Acoustic Emission-Guided Damage Delineation and Machine Learning Prediction of Flexural Strength in Lightweight Mortar under Thermal Exposure",
+   "judge": {
+    "id": "doi:10.1007/s10921-025-01318-2",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "mortar strength prediction, materials NDE"
+   }
+  },
+  {
+   "id": "doi:10.1051/epjconf/202533701016",
+   "title": "Online Electron Reconstruction at CLAS12",
+   "judge": {
+    "id": "doi:10.1051/epjconf/202533701016",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Detector particle identification at CLAS12 is analysis ML, not machine ML"
+   }
+  },
+  {
+   "id": "doi:10.1201/9781003610281-8",
+   "title": "Support Vector Machines",
+   "judge": {
+    "id": "doi:10.1201/9781003610281-8",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "SVM textbook chapter for microbiome statistics; no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.53941/jmem.2026.100022",
+   "title": "Machine Learning for Process Optimization and Defect Detection in Metal Additive Manufacturing: A Critical Review of Algorithms, In-Situ Monitoring Strategies, and Quality Assurance Frameworks",
+   "judge": {
+    "id": "doi:10.53941/jmem.2026.100022",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Metal additive-manufacturing process review; electron-beam melting is manufacturing, not accelerator ML"
+   }
+  },
+  {
+   "id": "arxiv:2412.01754",
+   "title": "Efficient Compression of Sparse Accelerator Data Using Implicit Neural Representations and Importance Sampling",
+   "judge": {
+    "id": "arxiv:2412.01754",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Compression of tracking-detector data, downstream detector product"
+   }
+  },
+  {
+   "id": "doi:10.18494/sam5934",
+   "title": "Deep-learning-based Ultrasonic Guided Wave Detection of Turnout Switch Rail Cracks",
+   "judge": {
+    "id": "doi:10.18494/sam5934",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "railway rail crack detection, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1016/j.matlet.2026.140102",
+   "title": "X-ray CT analysis of internal defects in 3D-printed continuous carbon fiber composites using deep learning",
+   "judge": {
+    "id": "doi:10.1016/j.matlet.2026.140102",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "CT defect analysis of printed composites, downstream sample data"
+   }
+  },
+  {
+   "id": "doi:10.1117/12.3081638",
+   "title": "Solid-state laser design process empowered by machine learning and deep neural networks",
+   "judge": {
+    "id": "doi:10.1117/12.3081638",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Solid-state laser design; no particle accelerator or beamline"
+   }
+  },
+  {
+   "id": "hash:cf7ca79503aa",
+   "title": "An AI-ready, Polarized Electron-Positron Collision Dataset",
+   "judge": {
+    "id": "hash:cf7ca79503aa",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Collider detector event dataset release; ML target is downstream analysis, not the machine"
+   }
+  },
+  {
+   "id": "arxiv:2207.14804",
+   "title": "Artifact Identification in X-ray Diffraction Data using Machine Learning Methods",
+   "judge": {
+    "id": "arxiv:2207.14804",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Artifact ID in synchrotron XRD sample data; downstream product"
+   }
+  },
+  {
+   "id": "doi:10.4337/9781035330676.00026",
+   "title": "Navigating learning analytics: challenges, opportunities, and recommendations",
+   "judge": {
+    "id": "doi:10.4337/9781035330676.00026",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Educational learning analytics, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/s40964-025-01514-6",
+   "title": "Advanced quality assessment and damage monitoring in 3D-printed plastic and composite beams using machine learning",
+   "judge": {
+    "id": "doi:10.1007/s40964-025-01514-6",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Structural 3D-printed beams, lexical accident"
+   }
+  },
+  {
+   "id": "doi:10.1007/s11282-025-00888-1",
+   "title": "Evaluation of the accuracy of detecting C-shaped canals in mandibular second molars identified by cone-beam computed tomography on panoramic radiographs using artificial intelligence algorithms developed with deep learning methods",
+   "judge": {
+    "id": "doi:10.1007/s11282-025-00888-1",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "dental radiograph analysis, downstream medical image"
+   }
+  },
+  {
+   "id": "arxiv:2104.01725",
+   "title": "Graph Generative Models for Fast Detector Simulations in High Energy Physics",
+   "judge": {
+    "id": "arxiv:2104.01725",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Fast detector simulation for HEP; detector, not machine/beam"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-95-4109-6_6",
+   "title": "Robust Training to Secure Automated AI Accelerator Generation Against Malicious Platforms",
+   "judge": {
+    "id": "doi:10.1007/978-981-95-4109-6_6",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Securing AI hardware accelerator generation, compute hardware"
+   }
+  },
+  {
+   "id": "doi:10.3278/bb2504w016",
+   "title": "bb-Magazin international. Frames of Learning and Integration",
+   "judge": {
+    "id": "doi:10.3278/bb2504w016",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Vocational-education magazine piece; lexical accident on 'learning'"
+   }
+  },
+  {
+   "id": "arxiv:2512.15230",
+   "title": "ColliderML: The First Release of an OpenDataDetector High-Luminosity Physics Benchmark Dataset",
+   "judge": {
+    "id": "arxiv:2512.15230",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Simulated collider detector benchmark dataset for analysis ML"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-96-8058-0_15",
+   "title": "Preventive Maintenance of Mining Excavators Using Machine Learning: Enhancing Operational Efficiency and Cost-Effectiveness",
+   "judge": {
+    "id": "doi:10.1007/978-981-96-8058-0_15",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "mining excavator maintenance, no accelerator"
+   }
+  },
+  {
+   "id": "hash:682092f81eef",
+   "title": "Developing Machine Learning Models for Proton Computed Tomography and LHCb Particle Tracking",
+   "judge": {
+    "id": "hash:682092f81eef",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Proton-CT imaging reconstruction and detector tracking, downstream products"
+   }
+  },
+  {
+   "id": "doi:10.1021/acsomega.5c06755",
+   "title": "A New Pulsed Neutron-Gamma Density Logging Method Based on Gamma-Ray Spectra and Machine Learning",
+   "judge": {
+    "id": "doi:10.1021/acsomega.5c06755",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Well-logging density measurement from gamma spectra, downstream geophysics product"
+   }
+  },
+  {
+   "id": "doi:10.1007/s11704-025-50448-3",
+   "title": "MiMu: mitigating multiple shortcut learning behavior of transformers",
+   "judge": {
+    "id": "doi:10.1007/s11704-025-50448-3",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Transformer shortcut-learning mitigation, generic ML"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-3-032-04645-1_20",
+   "title": "Optimized Supervised Machine Learning for Accurate Estimation of Reinforcement in RC Beams and Columns",
+   "judge": {
+    "id": "doi:10.1007/978-3-032-04645-1_20",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Reinforcement estimation in concrete beams — civil engineering lexical accident"
+   }
+  },
+  {
+   "id": "doi:10.1007/s00128-025-04179-7",
+   "title": "Using Machine Learning to Predict First-Order Reaction Rate Constants of PFAS Degradation",
+   "judge": {
+    "id": "doi:10.1007/s00128-025-04179-7",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "PFAS chemistry rate constants, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.3130/aijt.31.1391",
+   "title": "DEEP LEARNING-BASED CLASSIFICATION OF SEISMIC DAMAGE ON PARTITION WALL AND ARTIFICIAL CRACKING PATTERN",
+   "judge": {
+    "id": "doi:10.3130/aijt.31.1391",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Seismic damage classification of building walls, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1088/1741-4326/ae4b51",
+   "title": "Noise reduction for self-emission x-ray images in ICF using a physics-informed deep learning framework",
+   "judge": {
+    "id": "doi:10.1088/1741-4326/ae4b51",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "ICF x-ray image denoising; fusion diagnostics, no accelerator or beam ML"
+   }
+  },
+  {
+   "id": "doi:10.1107/s1600576724003704",
+   "title": "Neural networks for rapid phase quantification of cultural heritage X-ray powder diffraction data",
+   "judge": {
+    "id": "doi:10.1107/s1600576724003704",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Phase quantification of sample diffraction data measured at a synchrotron, downstream product"
+   }
+  },
+  {
+   "id": "doi:10.1088/1402-4896/ae5c44",
+   "title": "Leveraging reinforcement learning, genetic algorithms and transformers for background determination in particle physics",
+   "judge": {
+    "id": "doi:10.1088/1402-4896/ae5c44",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Background determination for hadron-decay analysis, detector/analysis ML"
+   }
+  },
+  {
+   "id": "doi:10.1016/j.eswa.2026.132149",
+   "title": "RSE-PINN: A physics-informed deep learning framework for peak particle velocity prediction in open-pit blasting",
+   "judge": {
+    "id": "doi:10.1016/j.eswa.2026.132149",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Blasting peak-particle-velocity prediction in mining; lexical particle only"
+   }
+  },
+  {
+   "id": "doi:10.1145/3725843.3756075",
+   "title": "TAIDL: Tensor Accelerator ISA Definition Language with Auto-generation of Scalable Test Oracles",
+   "judge": {
+    "id": "doi:10.1145/3725843.3756075",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Tensor hardware accelerator ISA tooling (compute chips)"
+   }
+  },
+  {
+   "id": "doi:10.1103/8tnr-mtb7",
+   "title": "Learning post-Newtonian corrections from numerical relativity",
+   "judge": {
+    "id": "doi:10.1103/8tnr-mtb7",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Gravitational-wave numerical relativity, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.63556/ankad.v10i1.344",
+   "title": "Türkiye Yüzyılı Maarif Modeli Okul Öncesi Eğitim Programı Öğrenme Çıktıları ile 2024 Erken Çocukluk Eğitimi Programının Kazanım ve Göstergelerinin 21. Yüzyıl Becerilerine Yer Verme Durumu Açısından Karşılaştırılması",
+   "judge": {
+    "id": "doi:10.63556/ankad.v10i1.344",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Preschool education curriculum comparison; no accelerator or ML on a machine"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-3-032-01336-1_2",
+   "title": "Categories of Defect Prediction",
+   "judge": {
+    "id": "doi:10.1007/978-3-032-01336-1_2",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Software defect prediction, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-96-7614-9_2",
+   "title": "Machine-Learning Approach for Pulsed Electromagnetic Field Therapy Parameters Optimization for Enhanced Tissue Penetration",
+   "judge": {
+    "id": "doi:10.1007/978-981-96-7614-9_2",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Electromagnetic-field therapy parameter optimization, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.3139/9783446484382.005",
+   "title": "5 Künstliche Intelligenz, Machine Learning und Deep Learning in attributiven Prüfprozessen",
+   "judge": {
+    "id": "doi:10.3139/9783446484382.005",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "AI in manufacturing inspection processes, no accelerator"
+   }
+  },
+  {
+   "id": "arxiv:2606.23353",
+   "title": "Ultra-Peripheral Collisions as a Nuclear-Structure Interferometer with Interpretable Multitask Deep Learning",
+   "judge": {
+    "id": "arxiv:2606.23353",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "DL nuclear-structure inference from collision data, physics analysis"
+   }
+  },
+  {
+   "id": "doi:10.1007/s11669-026-01241-7",
+   "title": "Publisher Correction: Fine-Tuning Universal Machine-Learned Interatomic Potentials for Applications in the Science of Steels",
+   "judge": {
+    "id": "doi:10.1007/s11669-026-01241-7",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Correction on ML interatomic potentials for steels — materials science, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.3389/frai.2026.1833234",
+   "title": "Violation detection in power operation sites based on multi-scale detection and few-shot learning",
+   "judge": {
+    "id": "doi:10.3389/frai.2026.1833234",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Worker-safety violation detection at power sites, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1117/12.3079308",
+   "title": "Hybrid analytical-machine learning model for data-efficient prediction of ultrafast laser ablation",
+   "judge": {
+    "id": "doi:10.1117/12.3079308",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Laser ablation process modeling, no particle accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1016/j.eswa.2025.130550",
+   "title": "Temporal-frequency enhanced fourier neural operator and collaborative adversarial learning for multi-physics-coupled transient simulation of natural gas pipelines",
+   "judge": {
+    "id": "doi:10.1016/j.eswa.2025.130550",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Gas pipeline transient simulation, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.21203/rs.3.rs-10159095/v1",
+   "title": "Comparative Performance Analysis of Xenon, Krypton, and Argon Propellants for Hall Thrusters Using a Reproducible Machine-learning Framework",
+   "judge": {
+    "id": "doi:10.21203/rs.3.rs-10159095/v1",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Hall-effect plasma thrusters, different machine class"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-96-7576-0_1",
+   "title": "Artificial Intelligence and Machine Learning Based Predictive Modelling of Beam and 3D Bolt Through FEA",
+   "judge": {
+    "id": "doi:10.1007/978-981-96-7576-0_1",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "FEA of structural beams and bolts, lexical accident"
+   }
+  },
+  {
+   "id": "arxiv:2206.11048",
+   "title": "Automated GI tract segmentation using deep learning",
+   "judge": {
+    "id": "arxiv:2206.11048",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Patient GI-tract segmentation for radiotherapy, treatment planning/image analysis"
+   }
+  },
+  {
+   "id": "doi:10.1007/s40201-026-00978-0",
+   "title": "From satellite imagery to material outflows: master plan and deep learning-based quantification of demolition materials to support circular construction",
+   "judge": {
+    "id": "doi:10.1007/s40201-026-00978-0",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "demolition material quantification from satellite imagery"
+   }
+  },
+  {
+   "id": "arxiv:2509.25104",
+   "title": "Towards generalizable deep ptychography neural networks",
+   "judge": {
+    "id": "arxiv:2509.25104",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Ptychography image reconstruction, downstream sample data at light source"
+   }
+  },
+  {
+   "id": "arxiv:2503.21198",
+   "title": "Deep Learning Assisted Modeling for $χ^{(2)}$ Nonlinear Optics",
+   "judge": {
+    "id": "arxiv:2503.21198",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Surrogate for nonlinear-optics propagation, laser physics without accelerator/beam"
+   }
+  },
+  {
+   "id": "arxiv:1611.02704",
+   "title": "Accelerating the BSM interpretation of LHC data with machine learning",
+   "judge": {
+    "id": "arxiv:1611.02704",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "BSM physics interpretation of collider data, analysis ML"
+   }
+  },
+  {
+   "id": "arxiv:2512.23131",
+   "title": "SE-MLP Model for Predicting Prior Acceleration Features in Penetration Signals",
+   "judge": {
+    "id": "arxiv:2512.23131",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Projectile penetration acceleration signals, mechanical impact domain"
+   }
+  },
+  {
+   "id": "arxiv:2510.26340",
+   "title": "SABER: Symbolic Regression-based Angle of Arrival and Beam Pattern Estimator",
+   "judge": {
+    "id": "arxiv:2510.26340",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Wireless angle-of-arrival/beamforming estimation; RF beam is lexical accident"
+   }
+  },
+  {
+   "id": "doi:10.1002/mp.18081",
+   "title": "A generative adversarial network to improve integrated mode proton imaging resolution using paired proton-carbon data.",
+   "judge": {
+    "id": "doi:10.1002/mp.18081",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "GAN improves proton radiograph image quality, downstream patient imaging"
+   }
+  },
+  {
+   "id": "arxiv:2310.16186",
+   "title": "Image Segmentation using U-Net Architecture for Powder X-ray Diffraction Images",
+   "judge": {
+    "id": "arxiv:2310.16186",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Artifact segmentation in powder XRD images, downstream sample data"
+   }
+  },
+  {
+   "id": "arxiv:2511.08645",
+   "title": "Fluence Map Prediction with Deep Learning: A Transformer-based Approach",
+   "judge": {
+    "id": "arxiv:2511.08645",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "IMRT fluence-map prediction from patient anatomy — treatment planning, not machine/beam ML"
+   }
+  },
+  {
+   "id": "doi:10.1007/s13369-025-10763-0",
+   "title": "Enhancing Predictive Accuracy in Shear Strength of RC Deep Beams: A Comprehensive Analysis Using Ensemble Machine Learning Models",
+   "judge": {
+    "id": "doi:10.1007/s13369-025-10763-0",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Structural RC deep beams (lexical accident)"
+   }
+  },
+  {
+   "id": "doi:10.1201/9781003634409-3",
+   "title": "Reinforcement Learning Concepts",
+   "judge": {
+    "id": "doi:10.1201/9781003634409-3",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Generic RL textbook chapter, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1088/2632-2153/ae1563",
+   "title": "Human-in-the-loop reinforcement learning for data quality monitoring in particle physics experiments",
+   "judge": {
+    "id": "doi:10.1088/2632-2153/ae1563",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "detector data quality monitoring, not accelerator subsystem"
+   }
+  },
+  {
+   "id": "doi:10.1108/rpj-06-2025-0219",
+   "title": "Machine learning-driven optimization of energy absorption in PLA composites reinforced with carbon fibers through FFF additive manufacturing",
+   "judge": {
+    "id": "doi:10.1108/rpj-06-2025-0219",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "3D-printed composite energy absorption optimization, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1142/s1758825126500535",
+   "title": "Machine learning-driven inverse design of cosine beam honeycombs for zero Poisson's ratio and predetermined mechanical curves",
+   "judge": {
+    "id": "doi:10.1142/s1758825126500535",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Mechanical honeycomb beam design (lexical accident)"
+   }
+  },
+  {
+   "id": "doi:10.1007/s12206-025-1109-1",
+   "title": "Health state assessment of air compressor based on stacking ensemble learning",
+   "judge": {
+    "id": "doi:10.1007/s12206-025-1109-1",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Air compressor health assessment, industrial machinery"
+   }
+  },
+  {
+   "id": "doi:10.1201/9781003571223-4",
+   "title": "An Overview of Artificial Intelligence and Machine Learning",
+   "judge": {
+    "id": "doi:10.1201/9781003571223-4",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Generic AI/ML overview chapter for biofuel production; no accelerator"
+   }
+  },
+  {
+   "id": "arxiv:2603.08667",
+   "title": "Characterization and upgrade of a quantum graph neural network for charged particle tracking",
+   "judge": {
+    "id": "arxiv:2603.08667",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "quantum GNN for detector charged-particle tracking, analysis ML"
+   }
+  },
+  {
+   "id": "doi:10.1007/s12045-025-1864-4",
+   "title": "Innovative Approaches for Learning Electrical Concepts in Physics",
+   "judge": {
+    "id": "doi:10.1007/s12045-025-1864-4",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Physics education methods, no accelerator ML"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-3-032-29003-8_1",
+   "title": "Machine-Learning-Based Prediction of Magnetic Recovery of Fine SUS304 Particles Using Magnetic Susceptibility Differences with a Minimum Effective Flux Density Design",
+   "judge": {
+    "id": "doi:10.1007/978-3-032-29003-8_1",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Magnetic separation of steel particles, materials processing"
+   }
+  },
+  {
+   "id": "hash:b99ea1f05951",
+   "title": "Road map for the tuning of hadronic interaction models with accelerator-based and astroparticle data",
+   "judge": {
+    "id": "hash:b99ea1f05951",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Tuning hadronic-interaction event generators — physics analysis/simulation, not machine or beam ML"
+   }
+  },
+  {
+   "id": "doi:10.1088/1361-6560/ae36df",
+   "title": "Semi-supervised learning for dose prediction in targeted radionuclide therapy: a synthetic data study",
+   "judge": {
+    "id": "doi:10.1088/1361-6560/ae36df",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Dose prediction for radionuclide therapy — patient dosimetry, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.21105/jose.00302",
+   "title": "ReliaLearnR: Learning Modules for Reliability Analysis",
+   "judge": {
+    "id": "doi:10.21105/jose.00302",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "reliability-analysis teaching modules, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/s10894-025-00546-8",
+   "title": "Machine Learning Based Efficiency Calculator (MaLBEC) for Nuclear Fusion Diagnostics",
+   "judge": {
+    "id": "doi:10.1007/s10894-025-00546-8",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Fusion neutron-diagnostics efficiency calculator; fusion device, not accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-3-031-96732-0_12",
+   "title": "A “Bottom-Up” Approach for Constructing Underground Engineering Knowledge Graph",
+   "judge": {
+    "id": "doi:10.1007/978-3-031-96732-0_12",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Underground engineering knowledge graph, unrelated domain"
+   }
+  },
+  {
+   "id": "doi:10.1007/s11665-025-13120-2",
+   "title": "Machine Learning-Based Prediction of Weld Pool Features in Laser-Arc Hybrid Welding of Ultra-High-Strength Wear-Resistant Steels",
+   "judge": {
+    "id": "doi:10.1007/s11665-025-13120-2",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "laser-arc welding weld pool prediction, laser-beam lexical accident"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-95-3643-6_6",
+   "title": "PSVM-MR: A Parallel Support Vector Machine Algorithm Based on MapReduce",
+   "judge": {
+    "id": "doi:10.1007/978-981-95-3643-6_6",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Parallel SVM on MapReduce, generic ML systems"
+   }
+  },
+  {
+   "id": "arxiv:2012.04533",
+   "title": "Beyond 4D Tracking: Using Cluster Shapes for Track Seeding",
+   "judge": {
+    "id": "arxiv:2012.04533",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "LHC detector track seeding, analysis ML"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-3-032-09087-4_13",
+   "title": "Measurement and Evaluation of Intelligent Robots",
+   "judge": {
+    "id": "doi:10.1007/978-3-032-09087-4_13",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Intelligent-robot evaluation, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1007/s12206-026-0410-y",
+   "title": "Defect prediction for magnetorheological damper using a deep learning-based CLSTM classifier",
+   "judge": {
+    "id": "doi:10.1007/s12206-026-0410-y",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Magnetorheological damper defect classification, no accelerator"
+   }
+  },
+  {
+   "id": "doi:10.1051/0004-6361/202553821",
+   "title": "An advanced pulse-avalanche stochastic model of long gamma-ray burst light curves",
+   "judge": {
+    "id": "doi:10.1051/0004-6361/202553821",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Gamma-ray burst light-curve modeling, astrophysics"
+   }
+  },
+  {
+   "id": "doi:10.1007/s13349-025-01048-z",
+   "title": "Automatic detection of loose bolts in pipeline structures based on anti-noise mel cepstrum differential features and deep learning",
+   "judge": {
+    "id": "doi:10.1007/s13349-025-01048-z",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Pipeline bolt-loosening detection, structural monitoring"
+   }
+  },
+  {
+   "id": "doi:10.55277/researchhub.ipt33sx1",
+   "title": "CGMAXPRA19-CS3-1-ENG PDF Dumps – Trusted Learning Resource",
+   "judge": {
+    "id": "doi:10.55277/researchhub.ipt33sx1",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Exam-dump advertisement, not a research paper"
+   }
+  },
+  {
+   "id": "doi:10.1186/s13014-026-02829-6",
+   "title": "Machine learning approach to estimation of in vivo measured dose and treatment planning for total body irradiation",
+   "judge": {
+    "id": "doi:10.1186/s13014-026-02829-6",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "ML dose estimation and treatment planning for TBI — dose-in-patient, not machine QA"
+   }
+  },
+  {
+   "id": "doi:10.36227/techrxiv.176127198.84709317/v1",
+   "title": "Unsupervised Online Learning for AC Optimal Power Flow: A Gradient-Guided Physics-Informed Neural Network Approach",
+   "judge": {
+    "id": "doi:10.36227/techrxiv.176127198.84709317/v1",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Power-grid optimal power flow, electrical grid domain"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-3-032-07845-2_8",
+   "title": "RadiSimCLIP: A Radiology Vision-Language Model Pretrained on Simulated Radiologist Learning Dataset for Zero-Shot Medical Image Understanding",
+   "judge": {
+    "id": "doi:10.1007/978-3-032-07845-2_8",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "radiology vision-language model, downstream medical images"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-3-032-05610-8_4",
+   "title": "Prediction of Tensile Strength and Impact Strength in Fused Deposition Modeling Using a Machine Learning Pipeline",
+   "judge": {
+    "id": "doi:10.1007/978-3-032-05610-8_4",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "3D-printing tensile strength prediction, manufacturing domain"
+   }
+  },
+  {
+   "id": "doi:10.1007/978-981-96-9533-1_7",
+   "title": "Radial Pulse Pattern Recognition Using Deep Learning",
+   "judge": {
+    "id": "doi:10.1007/978-981-96-9533-1_7",
+    "verdict": "OUT",
+    "categories": [],
+    "reason": "Radial pulse (physiological) pattern recognition, no accelerator"
+   }
+  }
+ ]
+}

@@ -131,6 +131,40 @@ class TestMedicalAcceleratorMustNotReject:
         assert apply_gates(p).decision == GRAY
 
 
+class TestDetectorContext:
+    """Regression from the 2026-07 model benchmark: detector-analysis ML
+    (NLI scores 0.92-0.99) must route to pending, not to the adjudicator."""
+
+    def test_track_reconstruction_paper_routes_to_pending(self, make_paper):
+        p = make_paper(
+            title="Combined track finding with GNN & CKF",
+            abstract="Graph neural networks for track reconstruction on silicon "
+            "detector hits at the LHC, combined with a combinatorial Kalman filter.",
+        )
+        r = apply_gates(p)
+        assert r.decision == GRAY
+        assert r.rule == "detector_context"
+
+    def test_particle_identification_paper(self, make_paper):
+        p = make_paper(
+            title="Particle identification in the GlueX detector with machine learning",
+            abstract="We train classifiers on calorimeter and tracking detector data "
+            "for particle identification in physics analysis at GlueX.",
+        )
+        assert apply_gates(p).rule == "detector_context"
+
+    def test_machine_protection_crossover_not_caught(self, make_paper):
+        # Papers with genuine machine-subsystem content stay in the normal
+        # gray zone even if they mention detectors.
+        p = make_paper(
+            title="ML for beam loss monitor triggers in machine protection",
+            abstract="We use detector data from beam loss monitors for machine "
+            "protection and beam diagnostics at the synchrotron.",
+        )
+        r = apply_gates(p)
+        assert r.rule != "detector_context"
+
+
 class TestGrayZone:
     def test_empty_abstract_routes_to_pending_rule(self, make_paper):
         p = make_paper(abstract="", venue="Some Journal")

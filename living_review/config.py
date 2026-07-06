@@ -115,6 +115,37 @@ HARDWARE_CONTEXT_TERMS = [
 """Compute-hardware context. 'Accelerator' collocated only with these and
 zero ACCEL_SYSTEM_VOCAB hits means a DNN-hardware paper (auto-reject)."""
 
+MACHINE_SUBSYSTEM_VOCAB = [
+    r"\blinacs?\b", r"\bcyclotrons?\b", r"\bsynchrotrons?\b",
+    r"storage rings?", r"beam ?lines?", r"rf cavit(y|ies)", r"\bcavit(y|ies)\b",
+    r"\bcryomodules?\b", r"\bklystrons?\b", r"\bundulators?\b", r"\bwigglers?\b",
+    r"\bemittance\b", r"\bwakefields?\b", r"\bbetatron\b", r"\bquadrupoles?\b",
+    r"\bsextupoles?\b", r"\bdipole magnets?\b", r"\bseptum\b", r"\bkickers?\b",
+    r"\bcollimators?\b", r"\binjectors?\b", r"\bgantry\b", r"\bgantries\b",
+    r"\bdosimetry\b", r"proton therapy", r"\bBPMs?\b", r"beam position monitors?",
+    r"beam dynamics", r"beam loss", r"beam halo", r"beam diagnostics",
+    r"beam tuning", r"beam control", r"beam optics", r"machine protection",
+    r"\bSRF\b", r"orbit correction", r"\bmagnet (design|control|tuning)\b",
+]
+"""Machine-subsystem vocabulary: ACCEL_SYSTEM_VOCAB minus facility names and
+bare 'beam'. Used by the detector-context gate — a paper about ML on
+detector data at a facility mentions the facility but not the machine."""
+
+DETECTOR_ANALYSIS_TERMS = [
+    r"track (reconstruction|finding|fitting)", r"particle (identification|tracking)",
+    r"jet tagging", r"\bjet(s)? (classification|reconstruction)\b",
+    r"event (reconstruction|selection|classification)", r"\btriggers?\b",
+    r"\bcalorimeters?\b", r"detector (data|design|response|simulation|performance)",
+    r"tracking (system|detector)", r"\bPID\b", r"vertex reconstruction",
+    r"particle-?flow", r"neutrino (selection|identification|oscillation)",
+    r"\bhits?\b.*\btracks?\b", r"physics analysis",
+]
+"""HEP detector/analysis context. ML on detector products at a collider is
+out of scope (SCOPE.md) but scores 0.92-0.99 with the NLI — the 2026-07
+model benchmark found this to be the funnel's dominant false-positive
+class. Detector-context papers without machine-subsystem vocabulary route
+to the pending queue instead of the adjudicator."""
+
 FOREIGN_DOMAIN_TERMS = [
     r"\bearthquakes?\b", r"\btsunamis?\b", r"\bclassrooms?\b",
     r"\bcurricul(um|a)\b", r"\bstudents?\b", r"\bpedagog\w+\b",
@@ -134,6 +165,8 @@ FOREIGN_DOMAIN_TERMS = [
     # spam that has reached the DB (pirated-movie pages etc.)
     r"\baltadefinizione\b", r"\bcb01\b", r"s?tr?eaming[- ]ita\b",
     r"\bfilm completo\b", r"\bguardare? film\b",
+    # mining/blasting engineering ("particle velocity" lexical trap)
+    r"\bblasting\b", r"\bmining\b", r"\bexcavation\b", r"\bquarry\b",
 ]
 """Clear foreign-domain signals. Auto-reject requires one of these AND zero
 ACCEL_SYSTEM_VOCAB hits — a proton-therapy paper mentioning 'patients' and

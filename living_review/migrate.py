@@ -146,8 +146,8 @@ def migrate(
         elif result.decision == REJECT:
             set_review(p, "rejected", "migration:gate", result.rule)
             rejected.append(p)
-        elif result.rule == "empty_abstract":
-            set_review(p, "pending", "migration:gate", "empty_abstract")
+        elif result.rule in ("empty_abstract", "detector_context"):
+            set_review(p, "pending", "migration:gate", result.rule)
             pending.append(p)
         else:
             gray.append(p)

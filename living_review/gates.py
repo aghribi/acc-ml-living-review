@@ -35,8 +35,10 @@ from typing import List, Optional, Pattern
 
 from .config import (
     ACCEL_SYSTEM_VOCAB,
+    DETECTOR_ANALYSIS_TERMS,
     FOREIGN_DOMAIN_TERMS,
     HARDWARE_CONTEXT_TERMS,
+    MACHINE_SUBSYSTEM_VOCAB,
     ML_KEYWORDS,
     VENUE_WHITELIST_PATTERNS,
 )
@@ -59,6 +61,8 @@ def _compile(patterns: List[str]) -> List[Pattern]:
 
 _VENUE_RE = _compile(VENUE_WHITELIST_PATTERNS)
 _ACCEL_RE = _compile(ACCEL_SYSTEM_VOCAB)
+_MACHINE_RE = _compile(MACHINE_SUBSYSTEM_VOCAB)
+_DETECTOR_RE = _compile(DETECTOR_ANALYSIS_TERMS)
 _HARDWARE_RE = _compile(HARDWARE_CONTEXT_TERMS)
 _FOREIGN_RE = _compile(FOREIGN_DOMAIN_TERMS)
 # ML keywords as word-boundary patterns, plural-tolerant ("RL"/"GAN" as
@@ -112,6 +116,14 @@ def apply_gates(paper: Paper) -> GateResult:
     # ---- AUTO-REJECT: clearly foreign domain, no beam/machine vocabulary ----
     if accel_vocab_hits == 0 and _any(_FOREIGN_RE, text):
         return GateResult(REJECT, "auto_reject:foreign_domain")
+
+    # ---- Detector-analysis context: route to pending, not the NLI ----
+    # ML on detector products at a collider (tracking, PID, triggers) is out
+    # of scope but scores 0.92-0.99 with the NLI (the dominant false-positive
+    # class in the 2026-07 model benchmark). Facility names alone don't make
+    # it machine ML; genuine crossover papers carry machine-subsystem terms.
+    if _any(_DETECTOR_RE, text) and not _any(_MACHINE_RE, text):
+        return GateResult(GRAY, "detector_context")
 
     # ---- GRAY ----
     if not (paper.abstract or "").strip():

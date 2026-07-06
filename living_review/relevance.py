@@ -97,9 +97,10 @@ def run_funnel(db: DB, adjudicator: Adjudicator) -> Dict[str, int]:
         elif result.decision == REJECT:
             set_review(p, "rejected", "gate", result.rule)
             counts["gate_rejected"] += 1
-        elif result.rule == "empty_abstract":
-            # Title-only adjudication is not trusted (SCOPE.md); human queue.
-            set_review(p, "pending", "gate", "empty_abstract")
+        elif result.rule in ("empty_abstract", "detector_context"):
+            # Not trusted to the NLI (title-only papers, and detector-analysis
+            # papers the NLI systematically over-scores); human queue.
+            set_review(p, "pending", "gate", result.rule)
             counts["pending_empty_abstract"] += 1
         else:
             gray.append(p)
