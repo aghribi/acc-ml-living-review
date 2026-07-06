@@ -1,0 +1,2784 @@
+[
+  {
+    "id": "doi:10.23730/cyrsp-2024-003.2131",
+    "title": "Machine learning",
+    "year": 2024,
+    "venue": "CERN Yellow Rep.School Proc.",
+    "abstract": "Machine learning (ML) is a powerful new mathematical toolbox that allows for new possibilities in a broad variety of research areas. It enables machines to fulfill tasks without being explicitly programmed. There is no reason to believe why machine learning cannot&nbsp;be applied to particle accelerators. After a short introduction to machine learning, in this chapter the existing applications to particle accelerators are reviewed with examples on the PSI accelerator complex.",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3807,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2902007",
+      "doi": "https://doi.org/10.23730/CYRSP-2024-003.2131"
+    }
+  },
+  {
+    "id": "doi:10.1093/acrefore/9780190871994.013.138",
+    "title": "Machine Learning for Particle Accelerators",
+    "year": 2025,
+    "venue": "Unknown Venue",
+    "abstract": "Machine Learning (ML) as a research field incorporates a broad variety of techniques ranging from traditional statistical methods to deep neural networks. Although the concepts that build the foundation of ML were developed in the middle of the 20th century, the success of its practical application became possible only in the 2010s, thanks to advances in both software implementation of ML algorithms and computing hardware. ML is well known for surpassing human performance in some tasks, such as fraud detection, forecasting of market trends and risks, online recommendations, recognition of voic",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.7752,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W4412418589"
+    }
+  },
+  {
+    "id": "hash:682092f81eef",
+    "title": "Developing Machine Learning Models for Proton Computed Tomography and LHCb Particle Tracking",
+    "year": 2025,
+    "venue": "Thesis",
+    "abstract": "&lt;p&gt;This thesis describes novel, proof-of-concept machine learning models for particle tracking in fundamental research and medicine. Proton computed tomography is a medical imaging technology with the potential to improve on current medical proton therapy treatment planning, but hampered by the computationally costly need to reconstruct individual proton tracks. With this in mind, we developed the Proton Path Neural Network, a neural network model capable of matching, and in some situations exceeding, the performance of the standard reconstruction method, with a significantly shorter exe",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.6362,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/3063781"
+    }
+  },
+  {
+    "id": "doi:10.1117/12.3058379",
+    "title": "Laser wakefield electron acceleration simulation using physics-informed diffusion probabilistic models",
+    "year": 2025,
+    "venue": "Proc.SPIE Int.Soc.Opt.Eng.",
+    "abstract": "The paper addresses laser wakefield electron acceleration simulation using a physics-informed generative machine learning technique. The proposed methodology allows to model a highly complex non-linear nature of the experiments. Even though laser wakefield electron acceleration has a developed approximation theory, it falls short in the edge cases. Additionally, as the methodology leverages physical laws known a priori, the model is able to capture manifold constraints outside of the training data, which is generally uncommon for machine learning models. Applying a physics-informed denoising d",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.854,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2942583",
+      "doi": "https://doi.org/10.1117/12.3058379"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-96-7576-0_1",
+    "title": "Artificial Intelligence and Machine Learning Based Predictive Modelling of Beam and 3D Bolt Through FEA",
+    "year": 2025,
+    "venue": "Lecture Notes in Mechanical Engineering",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-96-7576-0_1",
+      "crossref": "https://doi.org/10.1007/978-981-96-7576-0_1"
+    }
+  },
+  {
+    "id": "arxiv:1611.02704",
+    "title": "Accelerating the BSM interpretation of LHC data with machine learning",
+    "year": 2016,
+    "venue": "arXiv",
+    "abstract": "The interpretation of Large Hadron Collider (LHC) data in the framework of\nBeyond the Standard Model (BSM) theories is hampered by the need to run\ncomputationally expensive event generators and detector simulators. Performing\nstatistically convergent scans of high-dimensional BSM theories is consequently\nchallenging, and in practice unfeasible for very high-dimensional BSM theories.\nWe present here a new machine learning method that accelerates the\ninterpretation of LHC data, by learning the relationship between BSM theory\nparameters and data. As a proof-of-concept, we demonstrate that this te",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.4554,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/1611.02704v1"
+    }
+  },
+  {
+    "id": "doi:10.1063/5.0333133",
+    "title": "Machine learning for mapping multipactor susceptibility in RF systems: Capabilities and generalization constraints",
+    "year": 2026,
+    "venue": "APL Machine Learning",
+    "abstract": "Multipactor is a surface-driven electron avalanche phenomenon that degrades the performance and reliability of radio frequency (RF) systems in particle accelerator and vacuum electronics applications. Multipactor behavior in a given device structure is conventionally assessed through susceptibility charts, which provide a parameter-space characterization of the instability. In this work, we assess the capabilities of machine-learning (ML) models to learn and predict such susceptibility charts and analyze the constraints governing their generalization across materials. Using a simulation-derive",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.6015,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W7159631672"
+    }
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2021-thpab201",
+    "title": "A Machine Learning Technique for Dynamic Aperture Computation",
+    "year": 2021,
+    "venue": "12th International Particle Accelerator Conference",
+    "abstract": "Currently, dynamic aperture calculations of high-energy hadron colliders are performed through computer simulations, which are both a resource-heavy and time-costly processes. The aim of this study is to use a reservoir computing machine learning model in order to achieve a faster extrapolation of dynamic aperture values. A recurrent echo-state network (ESN) architecture is used as a basis for this work. Recurrent networks are better fitted to extrapolation tasks while the reservoir echo-state structure is computationally effective. Model training and validation is conducted on a set of &quot;",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8967,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "hal": "https://hal.archives-ouvertes.fr/hal-03560009",
+      "doi": "https://doi.org/10.18429/JACoW-IPAC2021-THPAB201"
+    }
+  },
+  {
+    "id": "doi:10.1393/ncc/i2025-25149-3",
+    "title": "Graph Neural Networks for particle tracking in NA62 Experiment",
+    "year": 2025,
+    "venue": "Nuovo Cim.C",
+    "abstract": "The NA62 experiment at the Super Proton Synchrotron at CERN\nis designed to measure the branching ratio of the ultra-rare channel K+ → π+ν¯ν\nwith BR = (8.6 ± 0.42) × 10\n−11. The spectrometer that measures the momentum\nand direction of the incoming hadron beam particles at a rate of 750 MHz is a\nsilicon pixel detector, the GigaTracker. Managing pile-up, temporal matching and\nvertex reconstruction between beam kaons and pions produced in the decays is\ncrucial for the success of the experiment’s analyses, but the problem is complex\ndue to the combinatorial way in which the tracks are built in the ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8858,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2921759",
+      "doi": "https://doi.org/10.1393/ncc/i2025-25149-3"
+    }
+  },
+  {
+    "id": "arxiv:2104.01725",
+    "title": "Graph Generative Models for Fast Detector Simulations in High Energy Physics",
+    "year": 2021,
+    "venue": "arXiv",
+    "abstract": "Accurate and fast simulation of particle physics processes is crucial for the\nhigh-energy physics community. Simulating particle interactions with detectors\nis both time consuming and computationally expensive. With the proton-proton\ncollision energy of 13 TeV, the Large Hadron Collider is uniquely positioned to\ndetect and measure the rare phenomena that can shape our knowledge of new\ninteractions. The High-Luminosity Large Hadron Collider (HL-LHC) upgrade will\nput a significant strain on the computing infrastructure due to increased event\nrate and levels of pile-up. Simulation of high-energy ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2414,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2104.01725v2"
+    }
+  },
+  {
+    "id": "doi:10.3390/instruments8040050",
+    "title": "Assessing the Performance of Deep Learning Predictions for Dynamic Aperture of a Hadron Circular Particle Accelerator",
+    "year": 2024,
+    "venue": "Instruments",
+    "abstract": "Understanding the concept of dynamic aperture provides essential insights into nonlinear beam dynamics, beam losses, and the beam lifetime in circular particle accelerators. This comprehension is crucial for the functioning of modern hadron synchrotrons like the CERN Large Hadron Collider and the planning of future ones such as the Future Circular Collider. The dynamic aperture defines the extent of the region in phase space where the trajectories of charged particles are bounded over numerous revolutions, the actual number being defined by the physical application. Traditional methods for cal",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.682,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2870868",
+      "doi": "https://doi.org/10.3390/instruments8040050"
+    }
+  },
+  {
+    "id": "arxiv:2106.00432",
+    "title": "Invertible Surrogate Models: Joint surrogate modelling and reconstruction of Laser-Wakefield Acceleration by invertible neural networks",
+    "year": 2021,
+    "venue": "arXiv",
+    "abstract": "Invertible neural networks are a recent technique in machine learning\npromising neural network architectures that can be run in forward and reverse\nmode. In this paper, we will be introducing invertible surrogate models that\napproximate complex forward simulation of the physics involved in laser plasma\naccelerators: iLWFA. The bijective design of the surrogate model also provides\nall means for reconstruction of experimentally acquired diagnostics. The\nquality of our invertible laser wakefield acceleration network will be verified\non a large set of numerical LWFA simulations.",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.6277,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2106.00432v1"
+    }
+  },
+  {
+    "id": "doi:10.1088/2632-2153/ae1563",
+    "title": "Human-in-the-loop reinforcement learning for data quality monitoring in particle physics experiments",
+    "year": 2025,
+    "venue": "Machine Learning: Science and Technology",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Ensuring data integrity via data quality monitoring (DQM) is critical in large-scale particle physics experiments. This traditionally relies on labor-intensive manual inspection or static machine learning models, which are adequate for stable operating conditions. However, the current era of major detector upgrades at the large hadron collider (LHC) challenges this paradigm. These upgrades are followed by prolonged commissioning periods with frequent and unpredictable changes in detector conditions, a regime for which static models ar",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8958,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1088/2632-2153/ae1563",
+      "crossref": "https://doi.org/10.1088/2632-2153/ae1563"
+    }
+  },
+  {
+    "id": "hash:1a83a30d76ce",
+    "title": "Machine Learning for superconducting magnets application",
+    "year": 2025,
+    "venue": "Thesis",
+    "abstract": "This report documents the work I conducted during my internship as part of the Italian Summer Students program at the Fermilab National Accelerator Laboratory (FNAL). Throughout my internship, I was stationed in the Technical Division within the Fermilab laboratory, where I was under the guidance of Emanuela Barzi and co-supervised by Reed Teyber from the Lawrence Berkeley National Laboratory (LBNL). The aim of the project is the study and characterization of quench antenna signals in order gain understanding on the mechanical and electromagnetic phenomena happening inside superconductive magn",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.4158,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2973791"
+    }
+  },
+  {
+    "id": "arxiv:2107.06207",
+    "title": "Adaptive Machine Learning for Time-Varying Systems: Low Dimensional Latent Space Tuning",
+    "year": 2021,
+    "venue": "arXiv",
+    "abstract": "Machine learning (ML) tools such as encoder-decoder convolutional neural\nnetworks (CNN) can represent incredibly complex nonlinear functions which map\nbetween combinations of images and scalars. For example, CNNs can be used to\nmap combinations of accelerator parameters and images which are 2D projections\nof the 6D phase space distributions of charged particle beams as they are\ntransported between various particle accelerator locations. Despite their\nstrengths, applying ML to time-varying systems, or systems with shifting\ndistributions, is an open problem, especially for large systems for whic",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2421,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2107.06207v1"
+    }
+  },
+  {
+    "id": "hash:cf7ca79503aa",
+    "title": "An AI-ready, Polarized Electron-Positron Collision Dataset",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "We present a modernized, AI-ready release of reconstructed data from the SLD experiment at the SLAC Linear Collider (SLC). The dataset comprises approximately 660,000 reconstructed events collected at $\\sqrt{s}\\approx 91.2$~GeV with a highly polarized electron beam from 1996--1998. The data have been translated from legacy formats into modern, widely-used file formats with the help of AI agents. The release also includes a corpus of newly digitized SLD internal documentation. We describe the contents of both components and provide physics validation demonstrations along with illustrations of t",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.815,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/3164215",
+      "arxiv": "https://arxiv.org/abs/2606.00224"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-95-4109-6_6",
+    "title": "Robust Training to Secure Automated AI Accelerator Generation Against Malicious Platforms",
+    "year": 2025,
+    "venue": "Communications in Computer and Information Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-95-4109-6_6",
+      "crossref": "https://doi.org/10.1007/978-981-95-4109-6_6"
+    }
+  },
+  {
+    "id": "arxiv:2603.08667",
+    "title": "Characterization and upgrade of a quantum graph neural network for charged particle tracking",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "In the forthcoming years the LHC experiments are going to be upgraded to benefit from the substantial increase of the LHC instantaneous luminosity, which will lead to larger, denser events, and, consequently, greater complexity in reconstructing charged particle tracks, motivating frontier research in new technologies. Quantum machine learning models are being investigated as potential new approaches to high energy physics (HEP) tasks. We characterize and upgrade a quantum graph neural network (QGNN) architecture for charged particle track reconstruction on a simulated high luminosity dataset.",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.854,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2603.08667v1"
+    }
+  },
+  {
+    "id": "arxiv:2212.00026",
+    "title": "Data-driven Science and Machine Learning Methods in Laser-Plasma Physics",
+    "year": 2023,
+    "venue": "arXiv",
+    "abstract": "Laser-plasma physics has developed rapidly over the past few decades as\nhigh-power lasers have become both increasingly powerful and more widely\navailable. Early experimental and numerical research in this field was\nrestricted to single-shot experiments with limited parameter exploration.\nHowever, recent technological improvements make it possible to gather an\nincreasing amount of data, both in experiments and simulations. This has\nsparked interest in using advanced techniques from mathematics, statistics and\ncomputer science to deal with, and benefit from, big data. At the same time,\nsophisti",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3832,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2212.00026v2"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-04645-1_20",
+    "title": "Optimized Supervised Machine Learning for Accurate Estimation of Reinforcement in RC Beams and Columns",
+    "year": 2025,
+    "venue": "Lecture Notes in Civil Engineering",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-04645-1_20",
+      "crossref": "https://doi.org/10.1007/978-3-032-04645-1_20"
+    }
+  },
+  {
+    "id": "arxiv:2412.09500",
+    "title": "Loss function to optimise signal significance in particle physics",
+    "year": 2024,
+    "venue": "arXiv",
+    "abstract": "We construct a surrogate loss to directly optimise the significance metric\nused in particle physics. We evaluate our loss function for a simple event\nclassification task using a linear model and show that it produces decision\nboundaries that change according to the cross sections of the processes\ninvolved. We find that the models trained with the new loss have higher signal\nefficiency for similar values of estimated signal significance compared to ones\ntrained with a cross-entropy loss, showing promise to improve sensitivity of\nparticle physics searches at colliders.",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8776,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2412.09500v1"
+    }
+  },
+  {
+    "id": "doi:10.1016/j.radphyschem.2026.113775",
+    "title": "Method for reconstruction the energy spectrum of a linear electron accelerator using neural networks",
+    "year": 2026,
+    "venue": "Radiation Physics and Chemistry",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W7134116814"
+    }
+  },
+  {
+    "id": "arxiv:1905.11825",
+    "title": "Fast Data-Driven Simulation of Cherenkov Detectors Using Generative Adversarial Networks",
+    "year": 2019,
+    "venue": "arXiv",
+    "abstract": "The increasing luminosities of future Large Hadron Collider runs and next\ngeneration of collider experiments will require an unprecedented amount of\nsimulated events to be produced. Such large scale productions are extremely\ndemanding in terms of computing resources. Thus new approaches to event\ngeneration and simulation of detector responses are needed. In LHCb, the\naccurate simulation of Cherenkov detectors takes a sizeable fraction of CPU\ntime. An alternative approach is described here, when one generates high-level\nreconstructed observables using a generative neural network to bypass low l",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8719,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/1905.11825v2"
+    }
+  },
+  {
+    "id": "arxiv:2210.02539",
+    "title": "Applications of object detection networks at high-power laser systems and experiments",
+    "year": 2022,
+    "venue": "arXiv",
+    "abstract": "The recent advent of deep artificial neural networks has resulted in a\ndramatic increase in performance for object classification and detection. While\npre-trained with everyday objects, we find that a state-of-the-art object\ndetection architecture can very efficiently be fine-tuned to work on a variety\nof object detection tasks in a high-power laser laboratory. In this manuscript,\nthree exemplary applications are presented. We show that the plasma waves in a\nlaser-plasma accelerator can be detected and located on the optical\nshadowgrams. The plasma wavelength and plasma density are estimated\na",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.1927,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2210.02539v1"
+    }
+  },
+  {
+    "id": "arxiv:2507.16227",
+    "title": "Predictive Hydrodynamic Simulations for Laser Direct-drive Implosion Experiments via Artificial Intelligence",
+    "year": 2025,
+    "venue": "arXiv",
+    "abstract": "This work presents predictive hydrodynamic simulations empowered by\nartificial intelligence (AI) for laser driven implosion experiments, taking the\ndouble-cone ignition (DCI) scheme as an example. A Transformer-based deep\nlearning model MULTI-Net is established to predict implosion features according\nto laser waveforms and target radius. A Physics-Informed Decoder (PID) is\nproposed for high-dimensional sampling, significantly reducing the prediction\nerrors compared to Latin hypercube sampling. Applied to DCI experiments\nconducted on the SG-II Upgrade facility, the MULTI-Net model is able to pr",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8045,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2507.16227v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-01336-1_2",
+    "title": "Categories of Defect Prediction",
+    "year": 2025,
+    "venue": "Machine-Learning-Assisted Software Defect Prediction",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-01336-1_2",
+      "crossref": "https://doi.org/10.1007/978-3-032-01336-1_2"
+    }
+  },
+  {
+    "id": "arxiv:2512.15230",
+    "title": "ColliderML: The First Release of an OpenDataDetector High-Luminosity Physics Benchmark Dataset",
+    "year": 2025,
+    "venue": "arXiv",
+    "abstract": "We introduce ColliderML - a large, open, experiment-agnostic dataset of fully simulated and digitised proton-proton collisions in High-Luminosity Large Hadron Collider conditions ($\\sqrt{s}=14$ TeV, mean pile-up $μ= 200$). ColliderML provides one million events across ten Standard Model and Beyond Standard Model processes, plus extensive single-particle samples, all produced with modern next-to-leading order matrix element calculation and showering, realistic per-event pile-up overlay, a validated OpenDataDetector geometry, and standard reconstructions. The release fills a major gap for machin",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3796,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2512.15230v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30524-4_38",
+    "title": "The Intersection of Finite Element Limit Analysis and Physics-Informed Machine Learning for Structural Vulnerability Assessment",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30524-4_38",
+      "crossref": "https://doi.org/10.1007/978-3-032-30524-4_38"
+    }
+  },
+  {
+    "id": "doi:10.1117/12.3096466",
+    "title": "Research on the application of machine learning algorithms in aeromagnetic survey",
+    "year": 2026,
+    "venue": "Seventh International Conference on Geoscience and Remote Sensing Mapping (GRSM 2025)",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1117/12.3096466",
+      "crossref": "https://doi.org/10.1117/12.3096466"
+    }
+  },
+  {
+    "id": "doi:10.1051/epjconf/202533701016",
+    "title": "Online Electron Reconstruction at CLAS12",
+    "year": 2025,
+    "venue": "EPJ Web Conf.",
+    "abstract": "Online reconstruction plays a crucial role in monitoring and in real-time analysis of high energy and nuclear physics experiments. A vital aspect of reconstruction algorithms is particle identification, which combines information from various detector components to determine the type of particle. Electron identification is particularly significant in electro-production nuclear physics experiments like the CLAS12 spectrometer at Jefferson Laboratory as it is essential in data recording. A machine learning approach has been developed for CLAS12 experiments to reconstruct and identify electrons b",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.341,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2943413",
+      "doi": "https://doi.org/10.1051/epjconf/202533701016",
+      "arxiv": "https://arxiv.org/abs/2507.05274"
+    }
+  },
+  {
+    "id": "arxiv:1907.13324",
+    "title": "Generative Adversarial Networks (GAN) for compact beam source modelling in Monte Carlo simulations",
+    "year": 2019,
+    "venue": "arXiv",
+    "abstract": "A method is proposed and evaluated to model large and inconvenient phase\nspace files used in Monte Carlo simulations by a compact Generative Adversarial\nNetwork (GAN). The GAN is trained based on a phase space dataset to create a\nneural network, called Generator (G), allowing G to mimic the multidimensional\ndata distribution of the phase space. At the end of the training process, G is\nstored with about 0.5 million weights, around 10 MB, instead of few GB of the\ninitial file. Particles are then generated with G to replace the phase space\ndataset.\n  This concept is applied to beam models from li",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8587,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/1907.13324v2"
+    }
+  },
+  {
+    "id": "doi:10.1088/1402-4896/ae5c44",
+    "title": "Leveraging reinforcement learning, genetic algorithms and transformers for background determination in particle physics",
+    "year": 2026,
+    "venue": "Physica Scripta",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Experimental studies of beauty hadron decays face significant challenges due to a wide range of backgrounds arising from the numerous possible decay channels with similar final states. For a particular signal decay, the process for ascertaining the most relevant background processes necessitates a detailed analysis of final state particles, potential misidentifications, and kinematic overlaps, which, due to computational limitations, is restricted to the simulation of only the most relevant backgrounds. Moreover, this process typicall",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8679,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1088/1402-4896/ae5c44",
+      "crossref": "https://doi.org/10.1088/1402-4896/ae5c44"
+    }
+  },
+  {
+    "id": "doi:10.1016/j.mtphys.2025.101971",
+    "title": "A physics-informed machine learning framework for unified prediction of superconducting transition temperatures",
+    "year": 2026,
+    "venue": "Materials Today Physics",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1016/j.mtphys.2025.101971",
+      "crossref": "https://doi.org/10.1016/j.mtphys.2025.101971"
+    }
+  },
+  {
+    "id": "doi:10.1007/s12145-026-02133-7",
+    "title": "Comparative efficacy of supervised and semi-supervised machine learning classifiers for energy-based discrimination of near-fault pulse-type ground motion",
+    "year": 2026,
+    "venue": "Earth Science Informatics",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s12145-026-02133-7",
+      "crossref": "https://doi.org/10.1007/s12145-026-02133-7"
+    }
+  },
+  {
+    "id": "doi:10.21203/rs.3.rs-10159095/v1",
+    "title": "Comparative Performance Analysis of Xenon, Krypton, and Argon Propellants for Hall Thrusters Using a Reproducible Machine-learning Framework",
+    "year": 2026,
+    "venue": "Springer Science and Business Media LLC",
+    "abstract": "<title>Abstract</title>\n                <p>Hall-effect thrusters (HETs) are widely used for orbit raising, station keeping, and deep-space electric propulsion. Xenon remains the reference propellant because of its high atomic mass and relatively low first ionization energy, but cost and supply concerns motivate the evaluation of krypton and argon. This paper presents a literature-based, machine-learning-assisted comparison of xenon, krypton, and argon HET operation using a harmonized 600-operating-point dataset. Random Forest, Gradient Boosting, XGBoost, Multi-Layer Perceptron, and Gaussian Pr",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3438,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.21203/rs.3.rs-10159095/v1",
+      "crossref": "https://doi.org/10.21203/rs.3.rs-10159095/v1"
+    }
+  },
+  {
+    "id": "hash:b99ea1f05951",
+    "title": "Road map for the tuning of hadronic interaction models with accelerator-based and astroparticle data",
+    "year": 2025,
+    "venue": "arXiv",
+    "abstract": "In high-energy and astroparticle physics, event generators play an essential role, even in the simplest data analyses. As analysis techniques become more sophisticated, e.g. based on deep neural networks, their correct description of the observed event characteristics becomes even more important. Physical processes occurring in hadronic collisions are simulated within a Monte Carlo framework. A major challenge is the modeling of hadron dynamics at low momentum transfer, which includes the initial and final phases of every hadronic collision. QCD-inspired phenomenological models used for these ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.1979,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2964993",
+      "arxiv": "https://arxiv.org/abs/2508.21796"
+    }
+  },
+  {
+    "id": "arxiv:1610.03378",
+    "title": "Machine learning applied to single-shot x-ray diagnostics in an XFEL",
+    "year": 2016,
+    "venue": "arXiv",
+    "abstract": "X-ray free-electron lasers (XFELs) are the only sources currently able to\nproduce bright few-fs pulses with tunable photon energies from 100 eV to more\nthan 10 keV. Due to the stochastic SASE operating principles and other\ntechnical issues the output pulses are subject to large fluctuations, making it\nnecessary to characterize the x-ray pulses on every shot for data sorting\npurposes. We present a technique that applies machine learning tools to predict\nx-ray pulse properties using simple electron beam and x-ray parameters as\ninput. Using this technique at the Linac Coherent Light Source (LCLS)",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8293,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/1610.03378v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s12045-025-1864-4",
+    "title": "Innovative Approaches for Learning Electrical Concepts in Physics",
+    "year": 2025,
+    "venue": "Resonance",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s12045-025-1864-4",
+      "crossref": "https://doi.org/10.1007/s12045-025-1864-4"
+    }
+  },
+  {
+    "id": "doi:10.1201/9781003610281-8",
+    "title": "Support Vector Machines",
+    "year": 2026,
+    "venue": "Machine Learning for Microbiome Statistics",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1201/9781003610281-8",
+      "crossref": "https://doi.org/10.1201/9781003610281-8"
+    }
+  },
+  {
+    "id": "doi:10.3130/aijt.31.1391",
+    "title": "DEEP LEARNING-BASED CLASSIFICATION OF SEISMIC DAMAGE ON PARTITION WALL AND ARTIFICIAL CRACKING PATTERN",
+    "year": 2025,
+    "venue": "AIJ Journal of Technology and Design",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.3130/aijt.31.1391",
+      "crossref": "https://doi.org/10.3130/aijt.31.1391"
+    }
+  },
+  {
+    "id": "arxiv:2412.01754",
+    "title": "Efficient Compression of Sparse Accelerator Data Using Implicit Neural Representations and Importance Sampling",
+    "year": 2024,
+    "venue": "arXiv",
+    "abstract": "High-energy, large-scale particle colliders in nuclear and high-energy\nphysics generate data at extraordinary rates, reaching up to $1$ terabyte and\nseveral petabytes per second, respectively. The development of real-time,\nhigh-throughput data compression algorithms capable of reducing this data to\nmanageable sizes for permanent storage is of paramount importance. A unique\ncharacteristic of the tracking detector data is the extreme sparsity of\nparticle trajectories in space, with an occupancy rate ranging from\napproximately $10^{-6}$ to $10\\%$. Furthermore, for downstream tasks, a\ncontinuous r",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.7921,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2412.01754v1"
+    }
+  },
+  {
+    "id": "hash:a9ace0354e17",
+    "title": "Machine Learning Methods for Tau Lepton Identification and Search for the Supersymmetric Partner of the Tau Lepton Using CMS Run 2 Data",
+    "year": 2025,
+    "venue": "Thesis",
+    "abstract": "Gauge-mediated supersymmetry breaking models provide a compelling framework for the search for a supersymmetric partner of the tau lepton (stau) with a macroscopic lifetime. In such scenarios, stau can decay to tau lepton displaced from the primary proton-proton interaction vertex. Standard tau reconstruction and identification techniques at the Compact Muon Solenoid (CMS) experiment are not designed for these displaced signatures, motivating the development of specialised approaches.This thesis begins by improving the existing CMS tau identification algorithms for prompt taus using modern mac",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8578,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2965188"
+    }
+  },
+  {
+    "id": "doi:10.1016/j.eswa.2026.132149",
+    "title": "RSE-PINN: A physics-informed deep learning framework for peak particle velocity prediction in open-pit blasting",
+    "year": 2026,
+    "venue": "Expert Systems with Applications",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1016/j.eswa.2026.132149",
+      "crossref": "https://doi.org/10.1016/j.eswa.2026.132149"
+    }
+  },
+  {
+    "id": "doi:10.1051/epjconf/202533810017/pdf",
+    "title": "Reconstruction of Neutron Spectra Using Silicon Carbide Detectors in Monoenergetic Fields with Machine Learning Approach",
+    "year": 2025,
+    "venue": "Springer Link (Chiba Institute of Technology)",
+    "abstract": "Recent advancements in machine learning have shown significant promise in nuclear applications, particularly in optimizing reactor operations, core design, and improving neutron spectroscopy techniques. This study introduces a novel approach that leverages a non-parametric and probabilistic Bayesian learning method to predict neutron spectra based on data obtained from solid-state detectors, with a specific focus on the performance of 4H-polytype Silicon Carbide detectors under various monoenergetic neutron fields. The experimental measurements were conducted at the Van de Graaff accelerator f",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.7348,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W7110911771"
+    }
+  },
+  {
+    "id": "doi:10.3139/9783446484382.005",
+    "title": "5 Künstliche Intelligenz, Machine Learning und Deep Learning in attributiven Prüfprozessen",
+    "year": 2026,
+    "venue": "Attributive Prüfprozesse in der Produktion",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.3139/9783446484382.005",
+      "crossref": "https://doi.org/10.3139/9783446484382.005"
+    }
+  },
+  {
+    "id": "doi:10.1016/j.eswa.2025.130550",
+    "title": "Temporal-frequency enhanced fourier neural operator and collaborative adversarial learning for multi-physics-coupled transient simulation of natural gas pipelines",
+    "year": 2026,
+    "venue": "Expert Systems with Applications",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1016/j.eswa.2025.130550",
+      "crossref": "https://doi.org/10.1016/j.eswa.2025.130550"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-319-99740-7_7",
+    "title": "Field-Reliability Predictions Based on Statistical System Lifecycle Models",
+    "year": 2018,
+    "venue": "2nd International Cross-Domain Conference for Machine Learning and Knowledge Extraction (CD-MAKE)",
+    "abstract": "Reliability measures the ability of a system to provide its intended level of service. It is influenced by many factors throughout a system lifecycle. A detailed understanding of their impact often remains elusive since these factors cannot be studied independently. Formulating reliability studies as a Bayesian regression problem allows to simultaneously assess their impact and to identify a predictive model of reliability metrics.The proposed method is applied to currently operational particle accelerator equipment at CERN. Relevant metrics were gathered by combining data from various organiz",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2126,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "hal": "https://hal.archives-ouvertes.fr/hal-02060048",
+      "doi": "https://doi.org/10.1007/978-3-319-99740-7_7"
+    }
+  },
+  {
+    "id": "doi:10.1007/s12206-026-0410-y",
+    "title": "Defect prediction for magnetorheological damper using a deep learning-based CLSTM classifier",
+    "year": 2026,
+    "venue": "Journal of Mechanical Science and Technology",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s12206-026-0410-y",
+      "crossref": "https://doi.org/10.1007/s12206-026-0410-y"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-96-8058-0_15",
+    "title": "Preventive Maintenance of Mining Excavators Using Machine Learning: Enhancing Operational Efficiency and Cost-Effectiveness",
+    "year": 2025,
+    "venue": "Lecture Notes on Multidisciplinary Industrial Engineering",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-96-8058-0_15",
+      "crossref": "https://doi.org/10.1007/978-981-96-8058-0_15"
+    }
+  },
+  {
+    "id": "doi:10.4028/p-a6ba7w",
+    "title": "Sintering Process Analysis of Aluminum Matrix Composites Using Machine Learning",
+    "year": 2026,
+    "venue": "Defect and Diffusion Forum",
+    "abstract": "<jats:p>The sintering behavior of spark plasma sintering was analyzed by extracting features from process data obtained during the fabrication of aluminum matrix composites and machine learning using the obtained features were performed to predict relative density of composites. Seventy-five samples were sintered with different types of reinforcement, and different temperature and pressure conditions. Regression methods include linear regression such as Ridge, Lasso and Elastic Net, and nonlinear regression such as random forest, gradient boosting and XGBoost were tested. XGBoost had the highe",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2265,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.4028/p-a6ba7w",
+      "crossref": "https://doi.org/10.4028/p-a6ba7w"
+    }
+  },
+  {
+    "id": "doi:10.1515/mt-2025-0389",
+    "title": "Comparative evaluation of machine learning models for thrust force estimation in aluminum 5083 H111",
+    "year": 2026,
+    "venue": "Materials Testing",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    This study investigates the comparative performance of four different supervised machine learning algorithms for the prediction of maximum thrust force\n                    <jats:italic>F</jats:italic>\n                    <jats:sub>\n                      <jats:italic>z</jats:italic>\n                      max\n                    </jats:sub>\n                    during the drilling process of aluminum 5083 H111 alloy. Accurate prediction of the forces generated during drilling operations is of great importance for ext",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.6631,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1515/mt-2025-0389",
+      "crossref": "https://doi.org/10.1515/mt-2025-0389"
+    }
+  },
+  {
+    "id": "doi:10.26083/tuprints-00029370",
+    "title": "Deep Lie Map Networks:A novel Approach to Infer Nonlinear Synchrotron Optics from Beam Oscillations",
+    "year": 2025,
+    "venue": "Thesis",
+    "abstract": "This thesis introduces the Deep Lie Map Network (DLMN), a novel machine-learning-based approach for identifying and correcting nonlinear magnetic field errors in synchrotrons. The DLMN leverages Hamiltonian dynamics and Lie map techniques to model synchrotron optics based on the beam's centroid motion observed using beam position monitors. From the beam centroid's oscillatory motion observed in experiments, the DLMN accurately recovers both quadrupole and sextupole field errors without requiring prior detailed knowledge of the accelerator’s linear optics. The newly developed DLMN is applied in",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8986,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2898152",
+      "doi": "https://doi.org/10.26083/tuprints-00029370"
+    }
+  },
+  {
+    "id": "doi:10.1109/tasc.2026.3660099",
+    "title": "Development of an Experimental Test Stand and Machine Learning Surrogate Models for Capturing Complex Responses in Pulsed Septa",
+    "year": 2026,
+    "venue": "IEEE Trans.Appl.Supercond.",
+    "abstract": "The complex electromagnetic and structural response of pulsed septum electromagnets is currently being studied, aiming to reveal insights into the prediction of their life cycles. The fault prediction remains a key challenge, requiring efforts in modelling and onsite instrumentation. Recently, a high-fidelity numerical model was developed, which allowed us to deepen our understanding of the system’s behavior. The insight on critical stress/strain conditions are now allowing to better understand early fatigue observations in the coil conductor and required peripheral equipment. As a next step, ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.4691,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/3121212",
+      "doi": "https://doi.org/10.1109/tasc.2026.3660099"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-95-4409-7_11",
+    "title": "Predictive Modeling of ICU Mortality Using Supervised Machine Learning Algorithms",
+    "year": 2025,
+    "venue": "Communications in Computer and Information Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-95-4409-7_11",
+      "crossref": "https://doi.org/10.1007/978-981-95-4409-7_11"
+    }
+  },
+  {
+    "id": "arxiv:2502.17505",
+    "title": "Inverse Surrogate Model of a Soft X-Ray Spectrometer using Domain Adaptation",
+    "year": 2025,
+    "venue": "arXiv",
+    "abstract": "In this study, we present a method to create a robust inverse surrogate model\nfor a soft X-ray spectrometer. During a beamtime at an electron storage ring,\nsuch as BESSY II, instrumentation and beamlines are required to be correctly\naligned and calibrated for optimal experimental conditions. In order to\nautomate these processes, machine learning methods can be developed and\nimplemented, but in many cases these methods require the use of an inverse\nmodel which maps the output of the experiment, such as a detector image, to the\nparameters of the device. Due to limited experimental data, such mod",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3258,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2502.17505v1"
+    }
+  },
+  {
+    "id": "doi:10.1145/3731599.3767408",
+    "title": "ChatEED: An agentic retrieval assistant for accelerator operators",
+    "year": 2025,
+    "venue": "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis",
+    "abstract": "Scientists and operators at SLAC National Accelerator Laboratory rely on electronic logbooks (ELOGs) to record and share critical information surrounding accelerator operations. However, since creating log entries is time-consuming and complex, they are often brief, incomplete, filled with jargon, and inconsistently structured. With thousands of records spanning decades, this makes it difficult for operators to search for and interpret information. Through interviews with operators, we identified two critical gaps: the lack of automated shift summarization and the difficulty of real-time ELOG ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8539,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1145/3731599.3767408",
+      "crossref": "https://doi.org/10.1145/3731599.3767408"
+    }
+  },
+  {
+    "id": "doi:10.53941/jmem.2026.100022",
+    "title": "Machine Learning for Process Optimization and Defect Detection in Metal Additive Manufacturing: A Critical Review of Algorithms, In-Situ Monitoring Strategies, and Quality Assurance Frameworks",
+    "year": 2026,
+    "venue": "Journal of Mechanical Engineering and Manufacturing",
+    "abstract": "<jats:p>Among the many manufacturing technologies to emerge in the last three decades, metal additive manufacturing (AM)—spanning laser powder bed fusion (LPBF), directed energy deposition (DED), and electron beam melting (EBM)—stands out for the speed and breadth of its industrial adoption. Once confined to producing plastic concept models, it now fabricates flight-critical aerospace structures, load-bearing skeletal implants, and thermally demanding heat management components. Yet persistent process-induced defects—among them gas porosity, lack-of-fusion voids, hot cracking, and inter-layer ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2363,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.53941/jmem.2026.100022",
+      "crossref": "https://doi.org/10.53941/jmem.2026.100022"
+    }
+  },
+  {
+    "id": "doi:10.1201/9781003634409-3",
+    "title": "Reinforcement Learning Concepts",
+    "year": 2026,
+    "venue": "Reinforcement Learning Explained",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1201/9781003634409-3",
+      "crossref": "https://doi.org/10.1201/9781003634409-3"
+    }
+  },
+  {
+    "id": "doi:10.1051/epjconf/202533701223",
+    "title": "Machine Learning for Optimized Polarization at Jefferson Lab",
+    "year": 2025,
+    "venue": "EPJ Web Conf.",
+    "abstract": "Polarized cryo-targets and polarized photon beams are widely used in experiments at Jefferson Lab. Traditional methods for maintaining the optimal polarization involve manual adjustments throughout data taking by human shift takers. This may introduce some level of inconsistency simply due to the wide variety of experience and expertise of the shift takers themselves. Implementing machine learning-based control systems can improve the stability of the polarization without relying on human intervention. The cryo-target polarization is influenced by temperature, microwave energy, the distributio",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.4209,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/3065397",
+      "doi": "https://doi.org/10.1051/epjconf/202533701223"
+    }
+  },
+  {
+    "id": "arxiv:2411.10308",
+    "title": "A Realistic Collimated X-Ray Image Simulation Pipeline",
+    "year": 2024,
+    "venue": "arXiv",
+    "abstract": "Collimator detection remains a challenging task in X-ray systems with\nunreliable or non-available information about the detectors position relative\nto the source. This paper presents a physically motivated image processing\npipeline for simulating the characteristics of collimator shadows in X-ray\nimages. By generating randomized labels for collimator shapes and locations,\nincorporating scattered radiation simulation, and including Poisson noise, the\npipeline enables the expansion of limited datasets for training deep neural\nnetworks. We validate the proposed pipeline by a qualitative and quant",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.4223,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2411.10308v1"
+    }
+  },
+  {
+    "id": "arxiv:2307.06434",
+    "title": "Improved selective background Monte Carlo simulation at Belle II with graph attention networks and weighted events",
+    "year": 2023,
+    "venue": "arXiv",
+    "abstract": "When measuring rare processes at Belle II, a huge luminosity is required,\nwhich means a large number of simulations are necessary to determine signal\nefficiencies and background contributions. However, this process demands high\ncomputation costs while most of the simulated data, in particular in case of\nbackground, are discarded by the event selection. Thus, filters using graph\nneural networks are introduced at an early stage to save the resources for the\ndetector simulation and reconstruction of events discarded at analysis level.\nIn our work, we improved the performance of the filters using ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.7873,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2307.06434v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s10894-025-00546-8",
+    "title": "Machine Learning Based Efficiency Calculator (MaLBEC) for Nuclear Fusion Diagnostics",
+    "year": 2026,
+    "venue": "Journal of Fusion Energy",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Diagnostics are critical for commercial and research fusion machines, since measuring and understanding plasma features is important to sustaining fusion reactions. The neutron flux (and therefore fusion power) can be indirectly calculated using neutron activation analyses, where potentially large numbers of activation foils are placed in the neutron flux, and delayed gammas from key reactions are measured via gamma spectrometry. In gamma spectrometry, absolute efficiency forms part of the activity calculation, and equals to the ratio",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.1585,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s10894-025-00546-8",
+      "crossref": "https://doi.org/10.1007/s10894-025-00546-8"
+    }
+  },
+  {
+    "id": "doi:10.1088/2632-2153/ae68d4",
+    "title": "Machine learning time propagators for time-dependent density functional theory simulations",
+    "year": 2026,
+    "venue": "Machine Learning: Science and Technology",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Time-dependent density functional theory (TDDFT) is a widely used method to investigate electron dynamics under external time-dependent perturbations such as laser fields. In this work, we present a machine learning approach to accelerate electron dynamics simulations based on real time TDDFT using autoregressive neural operators as time-propagators for the electron density. By leveraging physics-informed constraints and featurization, and high-resolution training data, our model achieves superior accuracy and computational speed comp",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.4142,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1088/2632-2153/ae68d4",
+      "crossref": "https://doi.org/10.1088/2632-2153/ae68d4"
+    }
+  },
+  {
+    "id": "doi:10.1007/s40964-025-01514-6",
+    "title": "Advanced quality assessment and damage monitoring in 3D-printed plastic and composite beams using machine learning",
+    "year": 2026,
+    "venue": "Progress in Additive Manufacturing",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s40964-025-01514-6",
+      "crossref": "https://doi.org/10.1007/s40964-025-01514-6"
+    }
+  },
+  {
+    "id": "doi:10.36227/techrxiv.176127198.84709317/v1",
+    "title": "Unsupervised Online Learning for AC Optimal Power Flow: A Gradient-Guided Physics-Informed Neural Network Approach",
+    "year": 2025,
+    "venue": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "abstract": "The alternating current optimal power flow (ACOPF) problem can be solved efficiently and reliably using physics-informed neural network (PINN)-based solvers. However, load fluctuations and increases driven by economic development often cause significant distribution shifts, leading to degraded PINN performance. Therefore, timely updates of PINN parameters are essential to maintain accuracy in real-time applications. Conventional PINNbased supervised or unsupervised approaches, which rely heavily on labeled data or incur high costs due to gradient estimation, are often expensive and suffer from",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3737,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.36227/techrxiv.176127198.84709317/v1",
+      "crossref": "https://doi.org/10.36227/techrxiv.176127198.84709317/v1"
+    }
+  },
+  {
+    "id": "doi:10.1088/1361-6560/ae36df",
+    "title": "Semi-supervised learning for dose prediction in targeted radionuclide therapy: a synthetic data study",
+    "year": 2026,
+    "venue": "Physics in Medicine &amp; Biology",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    <jats:italic>Objective.</jats:italic>\n                    Accurate and personalized radiation dose estimation is crucial for effective targeted radionuclide therapy (TRT). Deep learning (DL) holds promise for this purpose. However, current DL-based dosimetry methods require large-scale supervised data, which is scarce in clinical practice.\n                    <jats:italic>Approach.</jats:italic>\n                    To address this challenge, we propose exploring semi-supervised learning (SSL) framework that levera",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.165,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1088/1361-6560/ae36df",
+      "crossref": "https://doi.org/10.1088/1361-6560/ae36df"
+    }
+  },
+  {
+    "id": "doi:10.1201/9781003571223-4",
+    "title": "An Overview of Artificial Intelligence and Machine Learning",
+    "year": 2025,
+    "venue": "Artificial Intelligence for Biomass-based Biofuel Production",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1201/9781003571223-4",
+      "crossref": "https://doi.org/10.1201/9781003571223-4"
+    }
+  },
+  {
+    "id": "doi:10.1007/s40201-026-00978-0",
+    "title": "From satellite imagery to material outflows: master plan and deep learning-based quantification of demolition materials to support circular construction",
+    "year": 2026,
+    "venue": "Journal of Environmental Health Science and Engineering",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s40201-026-00978-0",
+      "crossref": "https://doi.org/10.1007/s40201-026-00978-0"
+    }
+  },
+  {
+    "id": "doi:10.1142/s0218488526500248",
+    "title": "Reflective Learning-Based Particle Swarm Optimization for Feature Selection",
+    "year": 2026,
+    "venue": "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems",
+    "abstract": "<jats:p>Swarm intelligence (SI) algorithms are widely used in feature selection (FS) problems. Yet, they often get trapped in local optima and have limited search capability. To address these issues, this paper proposes a reflective learning-based particle swarm optimization (PSO) algorithm named RPSO for FS problems. The main goal is to develop an efficient FS method by using domain knowledge and historical update information. Initially, a novel hybrid initialization is designed, incorporating the maximal information coefficient (MIC), ReliefF, and random initialization to generate a high-qua",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3482,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1142/s0218488526500248",
+      "crossref": "https://doi.org/10.1142/s0218488526500248"
+    }
+  },
+  {
+    "id": "doi:10.1007/s13369-025-10763-0",
+    "title": "Enhancing Predictive Accuracy in Shear Strength of RC Deep Beams: A Comprehensive Analysis Using Ensemble Machine Learning Models",
+    "year": 2025,
+    "venue": "Arabian Journal for Science and Engineering",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s13369-025-10763-0",
+      "crossref": "https://doi.org/10.1007/s13369-025-10763-0"
+    }
+  },
+  {
+    "id": "arxiv:2302.06895",
+    "title": "SpeckleNN: A unified embedding for real-time speckle pattern classification in X-ray single-particle imaging with limited labeled examples",
+    "year": 2023,
+    "venue": "arXiv",
+    "abstract": "With X-ray free-electron lasers (XFELs), it is possible to determine the\nthree-dimensional structure of noncrystalline nanoscale particles using X-ray\nsingle-particle imaging (SPI) techniques at room temperature. Classifying SPI\nscattering patterns, or \"speckles\", to extract single hits that are needed for\nreal-time vetoing and three-dimensional reconstruction poses a challenge for\nhigh data rate facilities like European XFEL and LCLS-II-HE. Here, we introduce\nSpeckleNN, a unified embedding model for real-time speckle pattern\nclassification with limited labeled examples that can scale linearly",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.4557,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2302.06895v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s13349-025-01048-z",
+    "title": "Automatic detection of loose bolts in pipeline structures based on anti-noise mel cepstrum differential features and deep learning",
+    "year": 2026,
+    "venue": "Journal of Civil Structural Health Monitoring",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s13349-025-01048-z",
+      "crossref": "https://doi.org/10.1007/s13349-025-01048-z"
+    }
+  },
+  {
+    "id": "arxiv:2307.02367",
+    "title": "Distance Preserving Machine Learning for Uncertainty Aware Accelerator Capacitance Predictions",
+    "year": 2023,
+    "venue": "arXiv",
+    "abstract": "Providing accurate uncertainty estimations is essential for producing\nreliable machine learning models, especially in safety-critical applications\nsuch as accelerator systems. Gaussian process models are generally regarded as\nthe gold standard method for this task, but they can struggle with large,\nhigh-dimensional datasets. Combining deep neural networks with Gaussian process\napproximation techniques have shown promising results, but dimensionality\nreduction through standard deep neural network layers is not guaranteed to\nmaintain the distance information necessary for Gaussian process models",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.7049,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2307.02367v1"
+    }
+  },
+  {
+    "id": "arxiv:2501.04305",
+    "title": "Physics-Informed Super-Resolution Diffusion for 6D Phase Space Diagnostics",
+    "year": 2025,
+    "venue": "arXiv",
+    "abstract": "Adaptive physics-informed super-resolution diffusion is developed for\nnon-invasive virtual diagnostics of the 6D phase space density of charged\nparticle beams. An adaptive variational autoencoder (VAE) embeds initial beam\ncondition images and scalar measurements to a low-dimensional latent space from\nwhich a 326 pixel 6D tensor representation of the beam's 6D phase space density\nis generated. Projecting from a 6D tensor generates physically consistent 2D\nprojections. Physics-guided super-resolution diffusion transforms\nlow-resolution images of the 6D density to high resolution 256x256 pixel\nim",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.7159,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2501.04305v2"
+    }
+  },
+  {
+    "id": "doi:10.1088/1741-4326/ae4b51",
+    "title": "Noise reduction for self-emission x-ray images in ICF using a physics-informed deep learning framework",
+    "year": 2026,
+    "venue": "Nuclear Fusion",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Self-emission x-ray imaging is a key diagnostic in inertial confinement fusion (ICF), yet the recorded images are heavily degraded by shot noise arising from photon-counting statistics and scintillator blur, as well as impulsive noise induced by neutron interactions with silicon-based detectors. The complexity of these noise sources, together with the limited availability of experimental data, poses significant challenges for both physical interpretation and data-driven denoising. To address this problem, we propose a hybrid physics-i",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.4139,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1088/1741-4326/ae4b51",
+      "crossref": "https://doi.org/10.1088/1741-4326/ae4b51"
+    }
+  },
+  {
+    "id": "doi:10.1145/3725843.3756075",
+    "title": "TAIDL: Tensor Accelerator ISA Definition Language with Auto-generation of Scalable Test Oracles",
+    "year": 2025,
+    "venue": "Proceedings of the 2025 58th IEEE/ACM International Symposium on Microarchitecture",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1145/3725843.3756075",
+      "crossref": "https://doi.org/10.1145/3725843.3756075"
+    }
+  },
+  {
+    "id": "arxiv:2511.08645",
+    "title": "Fluence Map Prediction with Deep Learning: A Transformer-based Approach",
+    "year": 2025,
+    "venue": "arXiv",
+    "abstract": "Accurate fluence map prediction is essential in intensity-modulated radiation therapy (IMRT) to maximize tumor coverage while minimizing dose to healthy tissues. Conventional optimization is time-consuming and dependent on planner expertise. This study presents a deep learning framework that accelerates fluence map generation while maintaining clinical quality. An end-to-end 3D Swin-UNETR network was trained to predict nine-beam fluence maps directly from volumetric CT images and anatomical contours using 99 prostate IMRT cases (79 for training and 20 for testing). The transformer-based model ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.7334,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2511.08645v1"
+    }
+  },
+  {
+    "id": "doi:10.1364/oe.562798",
+    "title": "femto-PIXAR: a self-supervised neural network method for reconstructing femtosecond X-ray free electron laser pulses",
+    "year": 2025,
+    "venue": "Opt.Express",
+    "abstract": "X-ray free electron lasers (X-FELs) produce ultrafast pulses in a wide range of lasing configurations, supporting a wide variety of scientific applications, including structural biology, materials science, and atomic and molecular physics. Shot-by-shot characterization of the X-FEL pulses is crucial for the analysis of experiments as well as for tuning the X-FEL performance. However, for the weak pulses found in advanced configurations, e.g., those needed for monochromatic, two-pulse studies of quantum materials, there is no current method for reliably resolving pulse profiles. Here, we show t",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2294,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2893951",
+      "doi": "https://doi.org/10.1364/OE.562798",
+      "arxiv": "https://arxiv.org/abs/2502.16392"
+    }
+  },
+  {
+    "id": "doi:10.1007/s00128-025-04179-7",
+    "title": "Using Machine Learning to Predict First-Order Reaction Rate Constants of PFAS Degradation",
+    "year": 2026,
+    "venue": "Bulletin of Environmental Contamination and Toxicology",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s00128-025-04179-7",
+      "crossref": "https://doi.org/10.1007/s00128-025-04179-7"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-05610-8_4",
+    "title": "Prediction of Tensile Strength and Impact Strength in Fused Deposition Modeling Using a Machine Learning Pipeline",
+    "year": 2025,
+    "venue": "Lecture Notes in Mechanical Engineering",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-05610-8_4",
+      "crossref": "https://doi.org/10.1007/978-3-032-05610-8_4"
+    }
+  },
+  {
+    "id": "doi:10.55277/researchhub.ipt33sx1",
+    "title": "CGMAXPRA19-CS3-1-ENG PDF Dumps – Trusted Learning Resource",
+    "year": 2026,
+    "venue": "ResearchHub Technologies, Inc.",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.55277/researchhub.ipt33sx1",
+      "crossref": "https://doi.org/10.55277/researchhub.ipt33sx1"
+    }
+  },
+  {
+    "id": "arxiv:2512.23131",
+    "title": "SE-MLP Model for Predicting Prior Acceleration Features in Penetration Signals",
+    "year": 2025,
+    "venue": "arXiv",
+    "abstract": "Accurate identification of the penetration process relies heavily on prior feature values of penetration acceleration. However, these feature values are typically obtained through long simulation cycles and expensive computations. To overcome this limitation, this paper proposes a multi-layer Perceptron architecture, termed squeeze and excitation multi-layer perceptron (SE-MLP), which integrates a channel attention mechanism with residual connections to enable rapid prediction of acceleration feature values. Using physical parameters under different working conditions as inputs, the model outp",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.5394,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2512.23131v1"
+    }
+  },
+  {
+    "id": "doi:10.1109/jsen.2025.3639432",
+    "title": "Robust Leakage Localization in Radioactive Material Transport via Multitask Learning",
+    "year": 2026,
+    "venue": "IEEE Sensors Journal",
+    "abstract": "The transportation of nuclear radioactive materials is critical to the nuclear industry, yet any leakage during transit is unacceptable due to its severe consequences. To enable rapid localization and identification of a leaking container during transportation, we propose a deep learning (DL)-based method utilizing a sensor array system. A major challenge in deploying DL for real-world nuclear radiation monitoring during the transportation is the distribution shift between training and deployment environments, which often leads to overfitting and undermines model effectiveness. To simulate thi",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.165,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1109/jsen.2025.3639432",
+      "crossref": "https://doi.org/10.1109/jsen.2025.3639432"
+    }
+  },
+  {
+    "id": "doi:10.1051/0004-6361/202553821",
+    "title": "An advanced pulse-avalanche stochastic model of long gamma-ray burst light curves",
+    "year": 2025,
+    "venue": "Astron.Astrophys.",
+    "abstract": "Context. A unified explanation of the variety of long-duration gamma-ray burst (GRB) light curves (LCs) is essential for identifying the dissipation mechanism and possibly the nature of their central engines. In the past, a model was proposed to describe GRB LCs as the outcome of a stochastic pulse avalanche process, possibly originating from a turbulent regime, and it was tested by comparing average temporal properties of simulated and real LCs. Recently, we revived this model and optimised its parameters using a genetic algorithm (GA), a machine-learning-based approach. Our findings suggeste",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2729,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/2907382",
+      "doi": "https://doi.org/10.1051/0004-6361/202553821",
+      "arxiv": "https://arxiv.org/abs/2504.01569"
+    }
+  },
+  {
+    "id": "doi:10.54914/jit.v12i1.2694",
+    "title": "Analisis Sentimen Kontaminasi Radioaktif di Kawasan Industri Cikande Menggunakan Algoritma Support Vector Machine",
+    "year": 2026,
+    "venue": "Jurnal Informatika Terpadu",
+    "abstract": "<jats:p>Dugaan ada kontaminasi radioaktif yang mencemari kawasan industri Cikande membuat masyarakat bereaksi keras, yang terlihat dari banyaknya komentar di TikTok. Penelitian ini bertujuan untuk menganalisis sentimen publik terhadap isu tersebut serta mengevaluasi kinerja algoritma Support Vector Machine (SVM) dalam mengklasifikasikan opini secara otomatis. Data yang digunakan berasal dari 3.160 komentar yang dikumpulkan dengan cara web scraping, lalu diproses melalui beberapa langkah seperti membersihkan teks, normalisasi, pemisahan kata, menghapus kata umum, dan merangkum kata sebelum digu",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.7996,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.54914/jit.v12i1.2694",
+      "crossref": "https://doi.org/10.54914/jit.v12i1.2694"
+    }
+  },
+  {
+    "id": "doi:10.14488/enegep2025_tn_wpg_424_2075_48651",
+    "title": "ESTIMATIVA DE VIDA ÚTIL REMANESCENTE DE PLACAS CERÂMICAS UTILIZADAS EM FILTRAGEM DE MINÉRIO DE FERRO ATRAVÉS DE MODELO DE CONFIABILIDADE E MÉTODOS DE MACHINE LEARNING APLICADOS A VARIÁVEIS DE PROCESSO INDUSTRIAL DE UM SISTEMA PIMS",
+    "year": 2025,
+    "venue": "Anais do Encontro Nacional de Engenharia de Produção",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.14488/enegep2025_tn_wpg_424_2075_48651",
+      "crossref": "https://doi.org/10.14488/enegep2025_tn_wpg_424_2075_48651"
+    }
+  },
+  {
+    "id": "doi:10.1107/s1600577522006816",
+    "title": "3D deep convolutional neural network segmentation model for precipitate and porosity identification in synchrotron X-ray tomograms",
+    "year": 2022,
+    "venue": "Journal of Synchrotron Radiation",
+    "abstract": "New developments at synchrotron beamlines and the ongoing upgrades of synchrotron facilities allow the possibility to study complex structures with a much better spatial and temporal resolution than ever before. However, the downside is that the data collected are also significantly larger (more than several terabytes) than ever before, and post-processing and analyzing these data is very challenging to perform manually. This issue can be solved by employing automated methods such as machine learning, which show significantly improved performance in data processing and image segmentation than ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8313,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "hal": "https://hal.archives-ouvertes.fr/hal-04305535",
+      "doi": "https://doi.org/10.1107/S1600577522006816"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-29003-8_1",
+    "title": "Machine-Learning-Based Prediction of Magnetic Recovery of Fine SUS304 Particles Using Magnetic Susceptibility Differences with a Minimum Effective Flux Density Design",
+    "year": 2026,
+    "venue": "Communications in Computer and Information Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-29003-8_1",
+      "crossref": "https://doi.org/10.1007/978-3-032-29003-8_1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s12194-026-01043-z",
+    "title": "Fast 3D whole-body occupational dose estimation in interventional radiology using physics-informed deep learning",
+    "year": 2026,
+    "venue": "Radiological Physics and Technology",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s12194-026-01043-z",
+      "crossref": "https://doi.org/10.1007/s12194-026-01043-z"
+    }
+  },
+  {
+    "id": "doi:10.1007/s42250-025-01560-1",
+    "title": "Optimization of the Claus Process Using Machine Learning and Real Operational Data: A Case Study in an SRU",
+    "year": 2026,
+    "venue": "Chemistry Africa",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s42250-025-01560-1",
+      "crossref": "https://doi.org/10.1007/s42250-025-01560-1"
+    }
+  },
+  {
+    "id": "doi:10.1016/j.matlet.2026.140102",
+    "title": "X-ray CT analysis of internal defects in 3D-printed continuous carbon fiber composites using deep learning",
+    "year": 2026,
+    "venue": "Materials Letters",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1016/j.matlet.2026.140102",
+      "crossref": "https://doi.org/10.1016/j.matlet.2026.140102"
+    }
+  },
+  {
+    "id": "arxiv:2510.26340",
+    "title": "SABER: Symbolic Regression-based Angle of Arrival and Beam Pattern Estimator",
+    "year": 2025,
+    "venue": "arXiv",
+    "abstract": "Accurate Angle-of-arrival (AoA) estimation is essential for next-generation wireless communication systems to enable reliable beamforming, high-precision localization, and integrated sensing. Unfortunately, classical high-resolution techniques require multi-element arrays and extensive snapshot collection, while generic Machine Learning (ML) approaches often yield black-box models that lack physical interpretability. To address these limitations, we propose a Symbolic Regression (SR)-based ML framework. Namely, Symbolic Regression-based Angle of Arrival and Beam Pattern Estimator (SABER), a co",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.6647,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2510.26340v1"
+    }
+  },
+  {
+    "id": "arxiv:2206.11048",
+    "title": "Automated GI tract segmentation using deep learning",
+    "year": 2023,
+    "venue": "arXiv",
+    "abstract": "The job of Radiation oncologists is to deliver x-ray beams pointed toward the\ntumor and at the same time avoid the stomach and intestines. With MR-Linacs\n(magnetic resonance imaging and linear accelerator systems), oncologists can\nvisualize the position of the tumor and allow for precise dose according to\ntumor cell presence which can vary from day to day. The current job of\noutlining the position of the stomach and intestines to adjust the X-ray beams\ndirection for the dose delivery to the tumor while avoiding the organs. This is\na time-consuming and labor-intensive process that can easily pr",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2059,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2206.11048v5"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-031-96732-0_12",
+    "title": "A “Bottom-Up” Approach for Constructing Underground Engineering Knowledge Graph",
+    "year": 2025,
+    "venue": "Mechanisms and Machine Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-031-96732-0_12",
+      "crossref": "https://doi.org/10.1007/978-3-031-96732-0_12"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-07845-2_8",
+    "title": "RadiSimCLIP: A Radiology Vision-Language Model Pretrained on Simulated Radiologist Learning Dataset for Zero-Shot Medical Image Understanding",
+    "year": 2025,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-07845-2_8",
+      "crossref": "https://doi.org/10.1007/978-3-032-07845-2_8"
+    }
+  },
+  {
+    "id": "arxiv:2012.04533",
+    "title": "Beyond 4D Tracking: Using Cluster Shapes for Track Seeding",
+    "year": 2021,
+    "venue": "arXiv",
+    "abstract": "Tracking is one of the most time consuming aspects of event reconstruction at\nthe Large Hadron Collider (LHC) and its high-luminosity upgrade (HL-LHC).\nInnovative detector technologies extend tracking to four-dimensions by\nincluding timing in the pattern recognition and parameter estimation. However,\npresent and future hardware already have additional information that is largely\nunused by existing track seeding algorithms. The shape of clusters provides an\nadditional dimension for track seeding that can significantly reduce the\ncombinatorial challenge of track finding. We use neural networks t",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.8431,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2012.04533v2"
+    }
+  },
+  {
+    "id": "doi:10.4337/9781035330676.00026",
+    "title": "Navigating learning analytics: challenges, opportunities, and recommendations",
+    "year": 2026,
+    "venue": "Handbook of Learning Analytics and Adaptive Learning in Schools",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.4337/9781035330676.00026",
+      "crossref": "https://doi.org/10.4337/9781035330676.00026"
+    }
+  },
+  {
+    "id": "doi:10.1107/s1600576724003704",
+    "title": "Neural networks for rapid phase quantification of cultural heritage X-ray powder diffraction data",
+    "year": 2024,
+    "venue": "Journal of Applied Crystallography",
+    "abstract": "Recent developments in synchrotron radiation facilities have increased the amount of data generated during acquisitions considerably, requiring fast and efficient data processing techniques. Here, the application of dense neural networks (DNNs) to data treatment of X-ray diffraction computed tomography (XRD-CT) experiments is presented. Processing involves mapping the phases in a tomographic slice by predicting the phase fraction in each individual pixel. DNNs were trained on sets of calculated XRD patterns generated using a Python algorithm developed in-house. An initial Rietveld refinement o",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3569,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "hal": "https://hal.archives-ouvertes.fr/hal-04788667",
+      "doi": "https://doi.org/10.1107/s1600576724003704"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-96-7614-9_2",
+    "title": "Machine-Learning Approach for Pulsed Electromagnetic Field Therapy Parameters Optimization for Enhanced Tissue Penetration",
+    "year": 2025,
+    "venue": "Lecture Notes in Networks and Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-96-7614-9_2",
+      "crossref": "https://doi.org/10.1007/978-981-96-7614-9_2"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-06671-8_2",
+    "title": "Deep Learning-Based Classification of Spine X-Ray Images Using Attention Mechanisms",
+    "year": 2025,
+    "venue": "Lecture Notes in Networks and Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-06671-8_2",
+      "crossref": "https://doi.org/10.1007/978-3-032-06671-8_2"
+    }
+  },
+  {
+    "id": "arxiv:2503.21198",
+    "title": "Deep Learning Assisted Modeling for $χ^{(2)}$ Nonlinear Optics",
+    "year": 2025,
+    "venue": "arXiv",
+    "abstract": "Modeling second-order ($χ^{(2)}$) nonlinear optical processes remains computationally expensive due to the need to resolve fast field oscillations and simulate wave propagation using methods like the split-step Fourier method (SSFM). This can become a bottleneck in real-time applications, such as high-repetition-rate laser systems requiring rapid feedback and control. We present an LSTM-based surrogate model trained on SSFM simulations generated from a start-to-end model of the photocathode drive laser at SLAC National Accelerator Laboratory's Linac Coherent Light Source II. The model achieves",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.1639,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2503.21198v2"
+    }
+  },
+  {
+    "id": "doi:10.1117/12.3079308",
+    "title": "Hybrid analytical-machine learning model for data-efficient prediction of ultrafast laser ablation",
+    "year": 2026,
+    "venue": "Laser-based Micro- and Nanoprocessing XX",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1117/12.3079308",
+      "crossref": "https://doi.org/10.1117/12.3079308"
+    }
+  },
+  {
+    "id": "doi:10.1007/s12065-025-01109-8",
+    "title": "Hybrid deep semantic query expansion using multi-objective fireworks-transformer optimization: a reinforcement learning approach",
+    "year": 2025,
+    "venue": "Evolutionary Intelligence",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s12065-025-01109-8",
+      "crossref": "https://doi.org/10.1007/s12065-025-01109-8"
+    }
+  },
+  {
+    "id": "doi:10.18494/sam6155",
+    "title": "Dual-stage Multi-attention Deep Learning Framework for X-ray-based Classification of Rotator Cuff Tears",
+    "year": 2026,
+    "venue": "Sensors and Materials",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.18494/sam6155",
+      "crossref": "https://doi.org/10.18494/sam6155"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11704-025-50448-3",
+    "title": "MiMu: mitigating multiple shortcut learning behavior of transformers",
+    "year": 2025,
+    "venue": "Frontiers of Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11704-025-50448-3",
+      "crossref": "https://doi.org/10.1007/s11704-025-50448-3"
+    }
+  },
+  {
+    "id": "arxiv:2310.16186",
+    "title": "Image Segmentation using U-Net Architecture for Powder X-ray Diffraction Images",
+    "year": 2023,
+    "venue": "arXiv",
+    "abstract": "Scientific researchers frequently use the in situ synchrotron high-energy\npowder X-ray diffraction (XRD) technique to examine the crystallographic\nstructures of materials in functional devices such as rechargeable battery\nmaterials. We propose a method for identifying artifacts in experimental XRD\nimages. The proposed method uses deep learning convolutional neural network\narchitectures, such as tunable U-Nets to identify the artifacts. In particular,\nthe predicted artifacts are evaluated against the corresponding ground truth\n(manually implemented) using the overall true positive rate or recal",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3744,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2310.16186v1"
+    }
+  },
+  {
+    "id": "doi:10.1142/s1758825126500535",
+    "title": "Machine learning-driven inverse design of cosine beam honeycombs for zero Poisson's ratio and predetermined mechanical curves",
+    "year": 2026,
+    "venue": "International Journal of Applied Mechanics",
+    "abstract": "<jats:p>This study employs the NSGA-Ⅱ algorithm integrated with neural network models for the inverse design of a cosine beam honeycomb (CBH), aiming to achieve the coordinated control of zero Poisson's ratio (ZPR) characteristic and predetermined force-displacement curves. Structural sensitivity to various parameters is evaluated via univariate parameter analysis, followed by the utilization of Optimal Latin Hypercube Sampling (OLHS) to acquire uniformly distributed samples within the design space. 2500 corresponding models are generated using parametric modeling. Pythonbased scripts are empl",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3137,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1142/s1758825126500535",
+      "crossref": "https://doi.org/10.1142/s1758825126500535"
+    }
+  },
+  {
+    "id": "arxiv:2412.17508",
+    "title": "An efficient search-and-score algorithm for ancestral graphs using multivariate information scores",
+    "year": 2024,
+    "venue": "arXiv",
+    "abstract": "We propose a greedy search-and-score algorithm for ancestral graphs, which\ninclude directed as well as bidirected edges, originating from unobserved\nlatent variables. The normalized likelihood score of ancestral graphs is\nestimated in terms of multivariate information over relevant ``ac-connected\nsubsets'' of vertices, C, that are connected through collider paths confined to\nthe ancestor set of C. For computational efficiency, the proposed two-step\nalgorithm relies on local information scores limited to the close surrounding\nvertices of each node (step 1) and edge (step 2). This computational ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.327,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2412.17508v1"
+    }
+  },
+  {
+    "id": "arxiv:2509.25104",
+    "title": "Towards generalizable deep ptychography neural networks",
+    "year": 2025,
+    "venue": "arXiv",
+    "abstract": "X-ray ptychography is a data-intensive imaging technique expected to become\nubiquitous at next-generation light sources delivering many-fold increases in\ncoherent flux. The need for real-time feedback under accelerated acquisition\nrates motivates surrogate reconstruction models like deep neural networks,\nwhich offer orders-of-magnitude speedup over conventional methods. However,\nexisting deep learning approaches lack robustness across diverse experimental\nconditions. We propose an unsupervised training workflow emphasizing probe\nlearning by combining experimentally-measured probes with synthet",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2612,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2509.25104v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s12206-025-1109-1",
+    "title": "Health state assessment of air compressor based on stacking ensemble learning",
+    "year": 2025,
+    "venue": "Journal of Mechanical Science and Technology",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s12206-025-1109-1",
+      "crossref": "https://doi.org/10.1007/s12206-025-1109-1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11665-025-13120-2",
+    "title": "Machine Learning-Based Prediction of Weld Pool Features in Laser-Arc Hybrid Welding of Ultra-High-Strength Wear-Resistant Steels",
+    "year": 2026,
+    "venue": "Journal of Materials Engineering and Performance",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11665-025-13120-2",
+      "crossref": "https://doi.org/10.1007/s11665-025-13120-2"
+    }
+  },
+  {
+    "id": "arxiv:2207.14804",
+    "title": "Artifact Identification in X-ray Diffraction Data using Machine Learning Methods",
+    "year": 2022,
+    "venue": "arXiv",
+    "abstract": "The in situ synchrotron high-energy X-ray powder diffraction (XRD) technique\nis highly utilized by researchers to analyze the crystallographic structures of\nmaterials in functional devices (e.g., battery materials) or in complex sample\nenvironments (e.g., diamond anvil cells or syntheses reactors). An atomic\nstructure of a material can be identified by its diffraction pattern, along\nwith detailed analysis such as Rietveld refinement which indicates how the\nmeasured structure deviates from the ideal structure (e.g., internal stresses\nor defects). For in situ experiments, a series of XRD images ",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3064,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2207.14804v1"
+    }
+  },
+  {
+    "id": "doi:10.3389/frai.2026.1833234",
+    "title": "Violation detection in power operation sites based on multi-scale detection and few-shot learning",
+    "year": 2026,
+    "venue": "Frontiers in Artificial Intelligence",
+    "abstract": "<jats:sec>\n                    <jats:title>Introduction</jats:title>\n                    <jats:p>Safety supervision at power operation sites is critical for ensuring worker safety and maintaining a reliable electricity supply. However, existing safety violation detection methods are constrained by limited labeled data, poor performance on small-object detection tasks, and interference from complex backgrounds.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>To overcome these challenges, this st",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.1935,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.3389/frai.2026.1833234",
+      "crossref": "https://doi.org/10.3389/frai.2026.1833234"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-96-8058-0_8",
+    "title": "Steel Surface Defects Recognition Based on Multi-Type Statistical Features and Multiclass Support Vector Machine",
+    "year": 2025,
+    "venue": "Lecture Notes on Multidisciplinary Industrial Engineering",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-96-8058-0_8",
+      "crossref": "https://doi.org/10.1007/978-981-96-8058-0_8"
+    }
+  },
+  {
+    "id": "arxiv:2606.23353",
+    "title": "Ultra-Peripheral Collisions as a Nuclear-Structure Interferometer with Interpretable Multitask Deep Learning",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Precise knowledge of nuclear structure is essential across fundamental physics, yet probing these structures is notoriously difficult. To address this challenge, ultra-peripheral collisions (UPCs) provide a femtoscopic tomography for imaging the atomic nucleus. UPCs offer a pristine electromagnetic pathway: coherent vector-meson photoproduction generates patterns of diffraction and two-source interference that directly encode the nuclear spatial density. Turning these patterns into quantitative constraints is, however, a challenging inverse problem, complicated by correlated sensitivities to d",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2819,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.23353v1"
+    }
+  },
+  {
+    "id": "doi:10.63556/ankad.v10i1.344",
+    "title": "Türkiye Yüzyılı Maarif Modeli Okul Öncesi Eğitim Programı Öğrenme Çıktıları ile 2024 Erken Çocukluk Eğitimi Programının Kazanım ve Göstergelerinin 21. Yüzyıl Becerilerine Yer Verme Durumu Açısından Karşılaştırılması",
+    "year": 2026,
+    "venue": "Anadolu Kültürel Araştırmalar Dergisi",
+    "abstract": "<jats:p>Bu araştırma, Türkiye Yüzyılı Maarif Modeli Okul Öncesi Eğitim Programı Öğrenme Çıktıları ile 2024 Erken Çocukluk Eğitimi Programının Kazanım ve Göstergelerinin 21. Yüzyıl Becerilerine yer verme durumu açısından karşılaştırılması amacıyla gerçekleştirilen nitel bir çalışmadır. Bu çalışmada doküman olarak “Türkiye Yüzyılı Maarif Modeli Okul Öncesi Eğitim Programı ile 2024 Erken Çocukluk Eğitimi Programı” analiz edilmiştir. Analizde kullanılan 21. yüzyıl becerileri; P21 sınıflandırmasına göre 3 ana tema, 11 alt tema ve alt temaları içeren kodlardan oluşturulmuş. Temalar; öğrenme ve yenil",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3623,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.63556/ankad.v10i1.344",
+      "crossref": "https://doi.org/10.63556/ankad.v10i1.344"
+    }
+  },
+  {
+    "id": "doi:10.1007/s40194-026-02476-1",
+    "title": "Integrated image processing and machine learning framework for defect detection and prediction in selective laser melting of Hastelloy X",
+    "year": 2026,
+    "venue": "Welding in the World",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s40194-026-02476-1",
+      "crossref": "https://doi.org/10.1007/s40194-026-02476-1"
+    }
+  },
+  {
+    "id": "doi:10.1103/8tnr-mtb7",
+    "title": "Learning post-Newtonian corrections from numerical relativity",
+    "year": 2026,
+    "venue": "Physical Review D",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1103/8tnr-mtb7",
+      "crossref": "https://doi.org/10.1103/8tnr-mtb7"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-96-8508-0_21",
+    "title": "A Machine Learning Approach to Li-Ion Battery Module",
+    "year": 2025,
+    "venue": "Lecture Notes in Mechanical Engineering",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-96-8508-0_21",
+      "crossref": "https://doi.org/10.1007/978-981-96-8508-0_21"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11282-025-00888-1",
+    "title": "Evaluation of the accuracy of detecting C-shaped canals in mandibular second molars identified by cone-beam computed tomography on panoramic radiographs using artificial intelligence algorithms developed with deep learning methods",
+    "year": 2026,
+    "venue": "Oral Radiology",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11282-025-00888-1",
+      "crossref": "https://doi.org/10.1007/s11282-025-00888-1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11669-026-01241-7",
+    "title": "Publisher Correction: Fine-Tuning Universal Machine-Learned Interatomic Potentials for Applications in the Science of Steels",
+    "year": 2026,
+    "venue": "Journal of Phase Equilibria and Diffusion",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11669-026-01241-7",
+      "crossref": "https://doi.org/10.1007/s11669-026-01241-7"
+    }
+  },
+  {
+    "id": "doi:10.1145/3725843.3756044",
+    "title": "BitL: A Hybrid Bit-Serial and Parallel Deep Learning Accelerator for Critical Path Reduction",
+    "year": 2025,
+    "venue": "Proceedings of the 2025 58th IEEE/ACM International Symposium on Microarchitecture",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1145/3725843.3756044",
+      "crossref": "https://doi.org/10.1145/3725843.3756044"
+    }
+  },
+  {
+    "id": "doi:10.1103/33q9-76qp",
+    "title": "Efficient learning method to connect observables",
+    "year": 2026,
+    "venue": "Physical Review Letters",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1103/33q9-76qp",
+      "crossref": "https://doi.org/10.1103/33q9-76qp"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-96-9533-1_7",
+    "title": "Radial Pulse Pattern Recognition Using Deep Learning",
+    "year": 2025,
+    "venue": "Lecture Notes in Networks and Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-96-9533-1_7",
+      "crossref": "https://doi.org/10.1007/978-981-96-9533-1_7"
+    }
+  },
+  {
+    "id": "arxiv:2603.06492",
+    "title": "NOBLE: Accelerating Transformers with Nonlinear Low-Rank Branches",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "We introduce NOBLE (Nonlinear lOw-rank Branch for Linear Enhancement), an architectural augmentation that adds nonlinear low-rank branches to transformer linear layers. Unlike LoRA and other parameter-efficient fine-tuning (PEFT) methods, NOBLE is designed for pretraining from scratch. The branch is a permanent part of the architecture as opposed to an adapter for finetuning on top of frozen weights. The branch computes σ(xWdown)Wup where σ is a learnable nonlinearity. We evaluate several activation functions and find that CosNet, a two-layer cosine nonlinearity with learnable frequency and ph",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2711,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2603.06492v1"
+    }
+  },
+  {
+    "id": "doi:10.18494/sam5934",
+    "title": "Deep-learning-based Ultrasonic Guided Wave Detection of Turnout Switch Rail Cracks",
+    "year": 2026,
+    "venue": "Sensors and Materials",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.18494/sam5934",
+      "crossref": "https://doi.org/10.18494/sam5934"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-96-7614-9_33",
+    "title": "Saffron Adulteration Prediction Based on Fine-Grained Deep Features",
+    "year": 2025,
+    "venue": "Lecture Notes in Networks and Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-96-7614-9_33",
+      "crossref": "https://doi.org/10.1007/978-981-96-7614-9_33"
+    }
+  },
+  {
+    "id": "doi:10.1186/s13014-026-02829-6",
+    "title": "Machine learning approach to estimation of in vivo measured dose and treatment planning for total body irradiation",
+    "year": 2026,
+    "venue": "Radiation Oncology",
+    "abstract": "PURPOSE: This study aims to enhance the conventional Total Body Irradiation (TBI) dose calculation method which relies on manual calculation using tissue maximum ratio, off axis ratio, and scatter factors, by incorporating machine learning (ML) to predict in vivo measured doses and optimize the number of compensators needed, thereby improving the accuracy and efficacy of TBI treatments. MATERIALS AND METHODS: A retrospective analysis was performed on patient data between 2018 and 2022, involving 96 patients. The data included demographics, treatment specifics, and in vivo dose measurements. We",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2305,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1186/s13014-026-02829-6",
+      "crossref": "https://doi.org/10.1186/s13014-026-02829-6"
+    }
+  },
+  {
+    "id": "doi:10.1007/s10921-025-01318-2",
+    "title": "Acoustic Emission-Guided Damage Delineation and Machine Learning Prediction of Flexural Strength in Lightweight Mortar under Thermal Exposure",
+    "year": 2025,
+    "venue": "Journal of Nondestructive Evaluation",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s10921-025-01318-2",
+      "crossref": "https://doi.org/10.1007/s10921-025-01318-2"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-95-3643-6_6",
+    "title": "PSVM-MR: A Parallel Support Vector Machine Algorithm Based on MapReduce",
+    "year": 2025,
+    "venue": "Communications in Computer and Information Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-95-3643-6_6",
+      "crossref": "https://doi.org/10.1007/978-981-95-3643-6_6"
+    }
+  },
+  {
+    "id": "doi:10.3278/bb2504w016",
+    "title": "bb-Magazin international. Frames of Learning and Integration",
+    "year": 2025,
+    "venue": "Berufsbildung",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.3278/bb2504w016",
+      "crossref": "https://doi.org/10.3278/bb2504w016"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-09087-4_13",
+    "title": "Measurement and Evaluation of Intelligent Robots",
+    "year": 2025,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-09087-4_13",
+      "crossref": "https://doi.org/10.1007/978-3-032-09087-4_13"
+    }
+  },
+  {
+    "id": "arxiv:2304.12187",
+    "title": "TempoRL: laser pulse temporal shape optimization with Deep Reinforcement Learning",
+    "year": 2023,
+    "venue": "arXiv",
+    "abstract": "High Power Laser's (HPL) optimal performance is essential for the success of\na wide variety of experimental tasks related to light-matter interactions.\nTraditionally, HPL parameters are optimised in an automated fashion relying on\nblack-box numerical methods. However, these can be demanding in terms of\ncomputational resources and usually disregard transient and complex dynamics.\nModel-free Deep Reinforcement Learning (DRL) offers a promising alternative\nframework for optimising HPL performance since it allows to tune the control\nparameters as a function of system states subject to nonlinear te",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3134,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2304.12187v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-95-0684-2_14",
+    "title": "SQL Query Optimization Using Reinforcement Learning for Low-Power Computing Systems",
+    "year": 2025,
+    "venue": "Lecture Notes in Networks and Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-95-0684-2_14",
+      "crossref": "https://doi.org/10.1007/978-981-95-0684-2_14"
+    }
+  },
+  {
+    "id": "doi:10.1002/mp.18081",
+    "title": "A generative adversarial network to improve integrated mode proton imaging resolution using paired proton-carbon data.",
+    "year": 2025,
+    "venue": "Med Phys",
+    "abstract": "Background Integrated mode proton imaging is a clinically accessible method for proton radiographs (pRads), but its spatial resolution is limited by multiple Coulomb scattering (MCS). As the amplitude of MCS decreases with increasing particle charge, heavier ions such as carbon ions produce radiographs with better resolution (cRads). Improving image resolution of pRads may thus be achieved by transferring individual proton pencil beam images to the equivalent carbon ion data using a trained image translation network. The approach can be interpreted as applying a data‐driven deconvolution opera",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.4745,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "europepmc": "https://europepmc.org/article/MED/40926569"
+    }
+  },
+  {
+    "id": "doi:10.1117/12.3081638",
+    "title": "Solid-state laser design process empowered by machine learning and deep neural networks",
+    "year": 2026,
+    "venue": "Solid State Lasers XXXV: Technology and Devices",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1117/12.3081638",
+      "crossref": "https://doi.org/10.1117/12.3081638"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-07904-6_17",
+    "title": "Physics-Informed Deep Learning for Improved Input Function Estimation in Motion-Blurred Dynamic [$$^{18}$$F]FDG PET Images",
+    "year": 2025,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-07904-6_17",
+      "crossref": "https://doi.org/10.1007/978-3-032-07904-6_17"
+    }
+  },
+  {
+    "id": "doi:10.21105/jose.00302",
+    "title": "ReliaLearnR: Learning Modules for Reliability Analysis",
+    "year": 2026,
+    "venue": "Journal of Open Source Education",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.21105/jose.00302",
+      "crossref": "https://doi.org/10.21105/jose.00302"
+    }
+  },
+  {
+    "id": "doi:10.1021/acsomega.5c06755",
+    "title": "A New Pulsed Neutron-Gamma Density Logging Method Based on Gamma-Ray Spectra and Machine Learning",
+    "year": 2025,
+    "venue": "ACS Omega",
+    "abstract": "High Resolution Image Download MS PowerPoint Slide Formation bulk density is vital for reservoir evaluation in oil and gas geophysical exploration. The pulsed neutron-gamma density (NGD) logging method, utilizing a pulsed neutron source, provides a safer and eco-friendlier option for formation density measurement compared to conventional gamma–gamma density (GGD) logging, which employs a 137 Cs chemical gamma-ray source. However, the accuracy of NGD is compromised by complex interferences like pair production and fast neutron transport, with borehole conditions further influencing its performa",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2271,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1021/acsomega.5c06755",
+      "crossref": "https://doi.org/10.1021/acsomega.5c06755"
+    }
+  },
+  {
+    "id": "doi:10.1108/rpj-06-2025-0219",
+    "title": "Machine learning-driven optimization of energy absorption in PLA composites reinforced with carbon fibers through FFF additive manufacturing",
+    "year": 2025,
+    "venue": "Rapid Prototyping Journal",
+    "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>This study aims to optimize the energy absorption capacity (EAC) of polylactic acid (PLA) composite materials reinforced with short micro carbon fibers, fabricated via fused filament fabrication (FFF) 3D printing. The objective is to understand how key process parameters influence mechanical performance and to explore the potential of machine learning in enhancing material property prediction and optimization.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.1613,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1108/rpj-06-2025-0219",
+      "crossref": "https://doi.org/10.1108/rpj-06-2025-0219"
+    }
+  },
+  {
+    "id": "doi:10.1145/3744255.3811718",
+    "title": "Unsupervised Learning for AC Optimal Power Flow with Fast Physics-Aware Layer",
+    "year": 2026,
+    "venue": "Proceedings of the 17th ACM International Conference on Future and Sustainable Energy Systems",
+    "abstract": "Learning to solve the Alternating Current Optimal Power Flow (AC-OPF) problem by neural networks (NNs) is a promising approach in real-time applications. Existing methods to ensure the physical feasibility of NN outputs embed a power flow (PF) solver within networks. However, the gradient through the PF solver, namely, implicit differentiation, needs manual Jacobian derivation and the solution of linear systems, which is computationally prohibitive and hinders integration with modern automatic differentiation (AD) frameworks. To address these challenges, we propose FPL-OPF, a novel unsupervise",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.1717,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1145/3744255.3811718",
+      "crossref": "https://doi.org/10.1145/3744255.3811718"
+    }
+  }
+]

@@ -33,7 +33,7 @@ import argparse
 import datetime as dt
 import sys
 
-COMMANDS = ("run", "review", "migrate")
+COMMANDS = ("run", "review", "migrate", "backfill-history")
 
 
 def _add_run_parser(sub):
@@ -72,6 +72,9 @@ def _add_migrate_parser(sub):
     p.add_argument("--eval-dir", type=str, default="data/eval")
     p.add_argument("--dry-run", action="store_true",
                    help="Write nothing; print the would-be outcome summary")
+    p.add_argument("--gates-only", action="store_true",
+                   help="Stop after Stage B gates (emit eval sets, no DB); "
+                        "used to calibrate NLI thresholds before deciding")
     return p
 
 
@@ -112,6 +115,31 @@ def cmd_review(args):
         print(f"- [{rule}{score_s}] {p.title} ({p.year}, {p.venue})")
 
 
+def _add_history_parser(sub):
+    p = sub.add_parser("backfill-history",
+                       help="One-off: sweep 1990+ historical windows through the funnel")
+    p.add_argument("--from-year", type=int, default=1990)
+    p.add_argument("--to-year", type=int, default=None)
+    p.add_argument("--db-path", type=str, default="data/db.json")
+    p.add_argument("--output", type=str, default=".")
+    p.add_argument("--chunk-years", type=int, default=2)
+    p.add_argument("--dry-run", action="store_true")
+    return p
+
+
+def cmd_history(args):
+    from .history import backfill_history
+
+    backfill_history(
+        from_year=args.from_year,
+        to_year=args.to_year,
+        db_path=args.db_path,
+        output_dir=args.output,
+        chunk_years=args.chunk_years,
+        dry_run=args.dry_run,
+    )
+
+
 def cmd_migrate(args):
     from .migrate import migrate
 
@@ -121,6 +149,7 @@ def cmd_migrate(args):
         report_path=args.report,
         eval_dir=args.eval_dir,
         dry_run=args.dry_run,
+        gates_only=args.gates_only,
     )
 
 
