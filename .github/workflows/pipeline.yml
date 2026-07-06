@@ -2,7 +2,7 @@ name: Update Living Review Data
 
 env:
   SPRINGER_API_KEY: ${{ secrets.SPRINGER_API_KEY }}
-  
+
 on:
   workflow_dispatch:
   schedule:
@@ -17,32 +17,44 @@ jobs:
     env:
       UPDATE_INTERVAL_HOURS: 24   # hours between updates
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install -e .   # optional, if you want your package available
+          pip install -e ".[dev]"
 
-      - name: Cache HuggingFace model
-        uses: actions/cache@v3
+      - name: Cache HuggingFace models
+        uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
-          key: hf-minilm-l6-v2-${{ runner.os }}
+          key: hf-minilm+deberta-zeroshot-${{ runner.os }}
+
+      - name: Fast tests
+        run: python -m pytest -m "not slow" -q
+
+      - name: Snapshot current published data
+        run: git show HEAD:site/data/livingreview.json > /tmp/livingreview_old.json
 
       - name: Run pipeline
-        run: python -m living_review.cli --days 30 --sources all
+        run: python -m living_review.cli run --days 30 --sources all --promote-manual
+
+      - name: Sanity gate on published data
+        run: |
+          python scripts/sanity_check.py \
+            --old /tmp/livingreview_old.json \
+            --new site/data/livingreview.json
 
       - name: Commit updated data
         run: |
           git config user.name "livingreview-bot"
           git config user.email "bot@example.com"
-          git add site/data/*.json site/static/downloads/* || true
+          git add data/db.json data/pending_review.json site/data/*.json site/static/downloads/* || true
           if ! git diff --cached --quiet; then
             git commit -m "Update living review data"
             git push
