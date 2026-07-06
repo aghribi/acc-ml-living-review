@@ -169,7 +169,12 @@ def fetch_inspire(start: dt.date, end: dt.date, rows: int = 50, max_pages: int =
     Fetch papers from InspireHEP API (AI/ML applied to accelerators).
     """
     url = "https://inspirehep.net/api/literature"
-    q = '(accelerator OR "beam dynamics" OR "synchrotron") AND ("machine learning" OR "deep learning" OR "reinforcement learning")'
+    q = ('(accelerator OR "beam dynamics" OR "synchrotron") AND '
+         '("machine learning" OR "deep learning" OR "reinforcement learning" '
+         'OR "neural network" OR "neural networks")')
+    # Bound the query server-side (year granularity); the exact date window
+    # is still enforced client-side below.
+    q += f" and de {start.year}->{end.year}"
     params = {"q": q, "size": rows, "sort": "mostrecent", "page": 1}
 
     papers = []
@@ -276,6 +281,7 @@ def fetch_inspire(start: dt.date, end: dt.date, rows: int = 50, max_pages: int =
             links = {"inspire": f"https://inspirehep.net/literature/{h.get('id', '')}"}
             if doi:
                 links["doi"] = f"https://doi.org/{doi}"
+            arx = None
             if arxiv_info:
                 arx = arxiv_info[0].get("value")
                 links["arxiv"] = f"https://arxiv.org/abs/{arx}"
@@ -288,6 +294,8 @@ def fetch_inspire(start: dt.date, end: dt.date, rows: int = 50, max_pages: int =
                 "date": date.isoformat(),
                 "year": date.year,
                 "doi": doi,
+                "arxiv_id": arx,
+                "inspire_id": str(h.get("id") or "") or None,
                 "venue": venue,
                 "status": status,
                 "links": links,
