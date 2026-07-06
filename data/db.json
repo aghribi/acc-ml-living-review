@@ -87,16 +87,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.4745,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "europepmc": "https://europepmc.org/article/MED/40926569"
@@ -385,12 +385,12 @@
       "status": "preprint",
       "categories": [
         {
-          "label": "Statistics & Trends",
-          "score": 0.39795246720314026
+          "label": "Data Management",
+          "score": 0.8
         },
         {
-          "label": "Tools & Libraries",
-          "score": 0.3838862478733063
+          "label": "Novel Applications",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -399,16 +399,16 @@
         "cs.AI",
         "physics.acc-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "rejected",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.0532,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2509.02227v1"
@@ -458,16 +458,16 @@
         "physics.plasm-ph",
         "cs.AI"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8045,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2507.16227v1"
@@ -569,16 +569,16 @@
       "arxiv_categories": [
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2612,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2509.25104v1"
@@ -791,30 +791,22 @@
       "status": "internship",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.3959466218948364
-        },
-        {
-          "label": "RF Systems",
-          "score": 0.3401949107646942
-        },
-        {
-          "label": "Tools & Libraries",
-          "score": 1.0
+          "label": "Others",
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.4158,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2973791"
@@ -854,16 +846,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.6362,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/3063781"
@@ -1013,16 +1005,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.1979,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2964993",
@@ -1239,26 +1231,22 @@
       "status": "published",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.6375529766082764
-        },
-        {
-          "label": "Statistics & Trends",
-          "score": 0.5897582173347473
+          "label": "Reviews",
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.7752,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "openalex": "https://openalex.org/W4412418589"
@@ -1642,11 +1630,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.36275386810302734
+          "score": 0.8
         },
         {
-          "label": "Beam Dynamics",
-          "score": 0.3054090738296509
+          "label": "Surrogate Models",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -1655,16 +1643,16 @@
         "math.DS",
         "physics.acc-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.7159,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2501.04305v2"
@@ -3073,12 +3061,12 @@
       "status": "preprint",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.34754014015197754
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.8
         },
         {
-          "label": "Statistics & Trends",
-          "score": 0.3282427191734314
+          "label": "Surrogate Models",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -3086,16 +3074,16 @@
         "cs.LG",
         "physics.acc-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.7049,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2307.02367v1"
@@ -3137,11 +3125,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.5790522694587708
+          "score": 0.8
         },
         {
           "label": "Optimization & Control",
-          "score": 0.4638979434967041
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -3150,16 +3138,16 @@
         "cs.AI",
         "physics.acc-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "rejected",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.0357,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2306.03739v1"
@@ -3417,12 +3405,8 @@
       "status": "preprint",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.42515575885772705
-        },
-        {
-          "label": "Statistics & Trends",
-          "score": 0.3750574290752411
+          "label": "Reviews",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -3432,16 +3416,16 @@
         "physics.optics",
         "physics.plasm-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3832,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2212.00026v2"
@@ -4690,12 +4674,12 @@
       "status": "preprint",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.39803820848464966
+          "label": "Beam Diagnostics",
+          "score": 0.8
         },
         {
-          "label": "Tools & Libraries",
-          "score": 1.0
+          "label": "Surrogate Models",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -4704,16 +4688,16 @@
         "cs.LG",
         "physics.acc-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "rejected",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.0644,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2105.03584v4"
@@ -5311,12 +5295,12 @@
       "status": "preprint",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.379629909992218
+          "label": "Beam Diagnostics",
+          "score": 0.8
         },
         {
-          "label": "Tools & Libraries",
-          "score": 1.0
+          "label": "Novel Applications",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -5326,16 +5310,16 @@
         "physics.data-an",
         "physics.optics"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.1927,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2210.02539v1"
@@ -5551,12 +5535,12 @@
       "status": "preprint",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.47914204001426697
+          "label": "Beam Diagnostics",
+          "score": 0.8
         },
         {
-          "label": "Tools & Libraries",
-          "score": 1.0
+          "label": "Surrogate Models",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -5565,16 +5549,16 @@
         "physics.acc-ph",
         "stat.ML"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2421,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2107.06207v1"
@@ -5663,11 +5647,11 @@
       "categories": [
         {
           "label": "Surrogate Models",
-          "score": 1.0
+          "score": 0.8
         },
         {
-          "label": "Novel Applications",
-          "score": 0.4243842661380768
+          "label": "Beam Diagnostics",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -5676,16 +5660,16 @@
         "cs.LG",
         "physics.acc-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.6277,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2106.00432v1"
@@ -7109,16 +7093,16 @@
         "cs.CV",
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2059,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2206.11048v5"
@@ -7259,12 +7243,12 @@
       "status": "preprint",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.35912656784057617
+          "label": "Surrogate Models",
+          "score": 0.8
         },
         {
-          "label": "Statistics & Trends",
-          "score": 0.31545722484588623
+          "label": "Novel Applications",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -7272,16 +7256,16 @@
         "physics.med-ph",
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8587,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/1907.13324v2"
@@ -7352,16 +7336,8 @@
       "status": "preprint",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.30319780111312866
-        },
-        {
-          "label": "By Facility Type",
-          "score": 0.29679739475250244
-        },
-        {
-          "label": "Tools & Libraries",
-          "score": 1.0
+          "label": "Beam Diagnostics",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -7370,16 +7346,16 @@
         "physics.acc-ph",
         "stat.ML"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8293,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/1610.03378v1"
@@ -7483,16 +7459,16 @@
         "cs.LG",
         "hep-ex"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3744,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2310.16186v1"
@@ -7549,16 +7525,16 @@
         "cs.LG",
         "physics.app-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9706,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2306.11899v1",
@@ -7613,16 +7589,16 @@
         "cs.CV",
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3064,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2207.14804v1"
@@ -7664,16 +7640,16 @@
         "stat.ME",
         "stat.ML"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.327,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2412.17508v1"
@@ -7720,16 +7696,16 @@
         "cs.LG",
         "hep-ex"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8776,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2412.09500v1"
@@ -7776,16 +7752,16 @@
       "arxiv_categories": [
         "cs.AI"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.7921,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2412.01754v1"
@@ -7841,16 +7817,16 @@
         "hep-ex",
         "nucl-ex"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9189,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2411.11942v1"
@@ -7885,16 +7861,12 @@
       "status": "preprint",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.3443361520767212
-        },
-        {
-          "label": "Data Management",
-          "score": 0.296400249004364
-        },
-        {
           "label": "Surrogate Models",
-          "score": 1.0
+          "score": 0.8
+        },
+        {
+          "label": "Beamline Design & Simulation",
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -7903,16 +7875,16 @@
         "cs.AI",
         "physics.data-an"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3258,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2502.17505v1"
@@ -8124,11 +8096,7 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4214935004711151
-        },
-        {
-          "label": "Novel Applications",
-          "score": 0.3455667197704315
+          "score": 0.8
         }
       ],
       "keywords": [],
@@ -8136,16 +8104,16 @@
         "physics.data-an",
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "rejected",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.0869,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2308.00718v1"
@@ -8242,16 +8210,16 @@
       "arxiv_categories": [
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.4557,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2302.06895v1"
@@ -8485,16 +8453,16 @@
         "hep-ex",
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9834,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2401.16016v1"
@@ -8540,16 +8508,16 @@
         "hep-ex",
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.7873,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2307.06434v1"
@@ -8598,16 +8566,16 @@
         "cs.LG",
         "hep-ex"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9566,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2204.09947v1"
@@ -8658,16 +8626,16 @@
         "quant-ph",
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9384,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2109.12636v1"
@@ -8712,16 +8680,16 @@
         "hep-ex",
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2414,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2104.01725v2"
@@ -8771,16 +8739,16 @@
         "physics.data-an",
         "stat.ML"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8431,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2012.04533v2"
@@ -8829,16 +8797,16 @@
         "cs.LG",
         "hep-ex"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8719,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/1905.11825v2"
@@ -8890,16 +8858,16 @@
         "hep-ph",
         "stat.ML"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.4554,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/1611.02704v1"
@@ -9728,16 +9696,16 @@
         "nucl-ex",
         "physics.comp-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9378,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2205.09185v2"
@@ -9791,16 +9759,16 @@
         "cs.AI",
         "physics.med-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.4223,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2411.10308v1"
@@ -9841,16 +9809,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.341,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2943413",
@@ -9991,26 +9959,26 @@
       "status": "published",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.5018218159675598
+          "label": "Surrogate Models",
+          "score": 0.8
         },
         {
-          "label": "Statistics & Trends",
-          "score": 0.44352155923843384
+          "label": "Beam Dynamics",
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.854,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2942583",
@@ -10106,16 +10074,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9708,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2923414",
@@ -10206,16 +10174,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8858,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2921759",
@@ -10375,16 +10343,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2729,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2907382",
@@ -10479,26 +10447,22 @@
       "status": "published",
       "categories": [
         {
-          "label": "By Facility Type",
-          "score": 0.2881440222263336
-        },
-        {
-          "label": "Surrogate Models",
-          "score": 0.26418864727020264
+          "label": "Beam Diagnostics",
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2294,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2893951",
@@ -10530,30 +10494,22 @@
       "status": "phd",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.38250210881233215
-        },
-        {
           "label": "Beam Dynamics",
-          "score": 0.36622583866119385
-        },
-        {
-          "label": "Tools & Libraries",
-          "score": 1.0
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8986,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2898152",
@@ -10650,16 +10606,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9606,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2866380",
@@ -10700,16 +10656,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8578,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2965188"
@@ -10808,16 +10764,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9736,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/3064004"
@@ -10857,16 +10813,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9134,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/3065305",
@@ -10907,30 +10863,26 @@
       "status": "published",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.351195752620697
+          "label": "Operations & Control",
+          "score": 0.8
         },
         {
-          "label": "Statistics & Trends",
-          "score": 0.2969985604286194
-        },
-        {
-          "label": "Surrogate Models",
-          "score": 1.0
+          "label": "Optimization & Control",
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.4209,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/3065397",
@@ -11124,30 +11076,26 @@
       "status": "published",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.49357932806015015
-        },
-        {
-          "label": "Tools & Libraries",
-          "score": 1.0
+          "label": "Beam Dynamics",
+          "score": 0.8
         },
         {
           "label": "Surrogate Models",
-          "score": 1.0
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.682,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2870868",
@@ -11178,30 +11126,22 @@
       "status": "published",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.7028100490570068
-        },
-        {
-          "label": "Tools & Libraries",
-          "score": 1.0
-        },
-        {
           "label": "Reviews",
-          "score": 1.0
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3807,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/2902007",
@@ -12359,26 +12299,26 @@
       "status": "submitted",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.45230889320373535
+          "label": "Beam Dynamics",
+          "score": 0.8
         },
         {
-          "label": "Statistics & Trends",
-          "score": 0.39967793226242065
+          "label": "Surrogate Models",
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8967,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "hal": "https://hal.archives-ouvertes.fr/hal-03560009",
@@ -12667,16 +12607,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8313,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "hal": "https://hal.archives-ouvertes.fr/hal-04305535",
@@ -12781,16 +12721,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3569,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "hal": "https://hal.archives-ouvertes.fr/hal-04788667",
@@ -13124,16 +13064,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-3-032-07845-2_8",
@@ -13285,16 +13225,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-96-8058-0_15",
@@ -13333,16 +13273,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-96-8058-0_8",
@@ -13382,16 +13322,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-3-032-05610-8_4",
@@ -13438,16 +13378,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1145/3725843.3756075",
@@ -13493,16 +13433,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1145/3725843.3756044",
@@ -13599,16 +13539,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-95-3643-6_6",
@@ -13646,16 +13586,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.3130/aijt.31.1391",
@@ -13815,16 +13755,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-3-031-96732-0_12",
@@ -13933,16 +13873,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3737,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.36227/techrxiv.176127198.84709317/v1",
@@ -13992,16 +13932,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s13369-025-10763-0",
@@ -14087,16 +14027,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-96-7614-9_33",
@@ -14136,16 +14076,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-96-7614-9_2",
@@ -14190,16 +14130,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-96-7576-0_1",
@@ -14299,16 +14239,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s11704-025-50448-3",
@@ -14531,16 +14471,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-3-032-06671-8_2",
@@ -14694,16 +14634,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8958,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1088/2632-2153/ae1563",
@@ -14741,16 +14681,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.14488/enegep2025_tn_wpg_424_2075_48651",
@@ -14795,16 +14735,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-96-8508-0_21",
@@ -14847,16 +14787,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1201/9781003571223-4",
@@ -15006,16 +14946,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-95-4409-7_11",
@@ -15068,16 +15008,16 @@
         "eess.SP",
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.6647,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2510.26340v1"
@@ -15113,16 +15053,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.1613,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1108/rpj-06-2025-0219",
@@ -15527,16 +15467,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-3-032-07904-6_17",
@@ -15681,16 +15621,16 @@
         "cs.AI",
         "cs.CV"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.7334,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2511.08645v1"
@@ -15734,16 +15674,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9616,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/3083159",
@@ -15778,26 +15718,26 @@
       "status": "published",
       "categories": [
         {
-          "label": "Data Management",
-          "score": 0.5299906730651855
+          "label": "Operations & Control",
+          "score": 0.8
         },
         {
-          "label": "Tools & Libraries",
-          "score": 0.5265928506851196
+          "label": "Data Management",
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8539,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1145/3731599.3767408",
@@ -16015,16 +15955,16 @@
         "physics.optics",
         "physics.acc-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.1639,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2503.21198v2"
@@ -16065,16 +16005,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-95-4109-6_6",
@@ -16163,16 +16103,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-3-032-01336-1_2",
@@ -16216,16 +16156,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-3-032-04645-1_20",
@@ -16265,16 +16205,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-96-9533-1_7",
@@ -16315,16 +16255,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-3-032-09087-4_13",
@@ -16556,16 +16496,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s12065-025-01109-8",
@@ -16662,16 +16602,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2271,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1021/acsomega.5c06755",
@@ -16776,16 +16716,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s12045-025-1864-4",
@@ -17296,16 +17236,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s12206-025-1109-1",
@@ -17350,16 +17290,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9822,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/3091596",
@@ -17409,16 +17349,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.7348,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "openalex": "https://openalex.org/W7110911771"
@@ -17782,16 +17722,16 @@
         "physics.data-an",
         "physics.ins-det"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3796,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2512.15230v1"
@@ -17827,16 +17767,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.3278/bb2504w016",
@@ -18364,16 +18304,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-981-95-0684-2_14",
@@ -18416,16 +18356,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s10921-025-01318-2",
@@ -18469,16 +18409,16 @@
       "arxiv_categories": [
         "cs.LG"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.5394,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2512.23131v1"
@@ -18624,16 +18564,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1016/j.mtphys.2025.101971",
@@ -18730,16 +18670,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s11665-025-13120-2",
@@ -18843,16 +18783,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.1585,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s10894-025-00546-8",
@@ -18999,16 +18939,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s11282-025-00888-1",
@@ -19231,16 +19171,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.6631,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1515/mt-2025-0389",
@@ -19328,16 +19268,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2265,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.4028/p-a6ba7w",
@@ -19384,16 +19324,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1117/12.3096466",
@@ -19494,16 +19434,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.165,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1109/jsen.2025.3639432",
@@ -19778,16 +19718,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1201/9781003610281-8",
@@ -19888,16 +19828,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s00128-025-04179-7",
@@ -20111,16 +20051,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.165,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1088/1361-6560/ae36df",
@@ -20219,16 +20159,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.21105/jose.00302",
@@ -20329,16 +20269,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9252,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/3111003",
@@ -20483,16 +20423,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s13349-025-01048-z",
@@ -20814,16 +20754,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s42250-025-01560-1",
@@ -20977,30 +20917,26 @@
       "status": "published",
       "categories": [
         {
+          "label": "Surrogate Models",
+          "score": 0.8
+        },
+        {
           "label": "Novel Applications",
-          "score": 0.3015403151512146
-        },
-        {
-          "label": "Statistics & Trends",
-          "score": 0.26752257347106934
-        },
-        {
-          "label": "Tools & Libraries",
-          "score": 1.0
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "rejected",
-        "stage": "migration:gate",
-        "rule": "auto_reject:foreign_domain",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "openalex": "https://openalex.org/W7127050434"
@@ -21201,16 +21137,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s40964-025-01514-6",
@@ -21409,16 +21345,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.18494/sam5934",
@@ -22166,16 +22102,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.55277/researchhub.ipt33sx1",
@@ -22207,21 +22143,25 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4605731964111328
+          "score": 0.8
+        },
+        {
+          "label": "RF Systems",
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "rejected",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.1058,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "openalex": "https://openalex.org/W7129631903"
@@ -22485,16 +22425,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3623,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.63556/ankad.v10i1.344",
@@ -22948,16 +22888,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1016/j.eswa.2025.130550",
@@ -23053,16 +22993,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1016/j.matlet.2026.140102",
@@ -23209,16 +23149,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.7996,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.54914/jit.v12i1.2694",
@@ -23317,16 +23257,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1117/12.3079308",
@@ -23423,16 +23363,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1117/12.3081638",
@@ -23622,16 +23562,16 @@
         "cs.CL",
         "cs.NE"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2711,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2603.06492v1"
@@ -23677,16 +23617,16 @@
         "cs.LG",
         "hep-ex"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9464,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2603.06675v1"
@@ -23732,16 +23672,16 @@
         "cs.LG",
         "hep-ex"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.854,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2603.08667v1"
@@ -23776,26 +23716,22 @@
       "status": "published",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.5271793603897095
-        },
-        {
-          "label": "Beamline Design & Simulation",
-          "score": 0.5167219638824463
+          "label": "Beam Diagnostics",
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "openalex": "https://openalex.org/W7134116814"
@@ -23833,16 +23769,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.3139/9783446484382.005",
@@ -23994,16 +23930,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1103/8tnr-mtb7",
@@ -24153,16 +24089,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.4139,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1088/1741-4326/ae4b51",
@@ -24660,16 +24596,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s12194-026-01043-z",
@@ -25016,16 +24952,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s11669-026-01241-7",
@@ -25217,26 +25153,26 @@
       "status": "published",
       "categories": [
         {
-          "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4608989953994751
+          "label": "Optimization & Control",
+          "score": 0.8
         },
         {
-          "label": "Novel Applications",
-          "score": 0.4390748143196106
+          "label": "Beam Diagnostics",
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "rejected",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.0417,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "openalex": "https://openalex.org/W7152393492"
@@ -25288,16 +25224,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2305,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1186/s13014-026-02829-6",
@@ -25775,16 +25711,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9287,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1038/s41598-026-48622-z",
@@ -26423,30 +26359,26 @@
       "status": "published",
       "categories": [
         {
-          "label": "Novel Applications",
-          "score": 0.3606300354003906
-        },
-        {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.36058783531188965
+          "score": 0.8
         },
         {
           "label": "Surrogate Models",
-          "score": 1.0
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.4691,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/3121212",
@@ -26479,26 +26411,22 @@
       "status": "published",
       "categories": [
         {
-          "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.3343411087989807
-        },
-        {
           "label": "RF Systems",
-          "score": 0.2884838283061981
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.6015,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "openalex": "https://openalex.org/W7159631672"
@@ -26598,16 +26526,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.4142,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1088/2632-2153/ae68d4",
@@ -26645,16 +26573,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3137,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1142/s1758825126500535",
@@ -26694,16 +26622,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s12145-026-02133-7",
@@ -26742,16 +26670,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s12206-026-0410-y",
@@ -26788,16 +26716,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.4337/9781035330676.00026",
@@ -26839,16 +26767,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1201/9781003634409-3",
@@ -26899,16 +26827,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.8679,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1088/1402-4896/ae5c44",
@@ -27014,16 +26942,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s40194-026-02476-1",
@@ -27969,16 +27897,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.815,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/3164215",
@@ -28027,16 +27955,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2363,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.53941/jmem.2026.100022",
@@ -28134,16 +28062,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/s40201-026-00978-0",
@@ -28338,16 +28266,16 @@
         "cs.AI",
         "hep-ex"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9214,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2606.07564v1"
@@ -28599,16 +28527,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-3-032-29003-8_1",
@@ -28700,16 +28628,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.1935,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.3389/frai.2026.1833234",
@@ -28910,16 +28838,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.18494/sam6155",
@@ -28951,30 +28879,26 @@
       "status": "published",
       "categories": [
         {
+          "label": "Surrogate Models",
+          "score": 0.8
+        },
+        {
           "label": "Novel Applications",
-          "score": 0.39109283685684204
-        },
-        {
-          "label": "Beamline Design & Simulation",
-          "score": 0.3604336977005005
-        },
-        {
-          "label": "Tools & Libraries",
-          "score": 1.0
+          "score": 0.8
         }
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "rejected",
-        "stage": "migration:gate",
-        "rule": "auto_reject:foreign_domain",
+        "decision": "accepted",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "openalex": "https://openalex.org/W7165017176"
@@ -29302,16 +29226,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.1717,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1145/3744255.3811718",
@@ -29363,16 +29287,16 @@
         "physics.optics",
         "quant-ph"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.2819,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2606.23353v1"
@@ -29525,16 +29449,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3482,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1142/s0218488526500248",
@@ -29588,16 +29512,16 @@
         "cs.AI",
         "hep-ex"
       ],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "accepted",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.9883,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2606.23993v3",
@@ -29827,16 +29751,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:nli",
-        "rule": null,
-        "score": 0.3438,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
+        "score": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:19:04Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.21203/rs.3.rs-10159095/v1",
@@ -29875,16 +29799,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1016/j.eswa.2026.132149",
@@ -29927,16 +29851,16 @@
       ],
       "keywords": [],
       "arxiv_categories": [],
-      "curated": false,
+      "curated": true,
       "notes": null,
       "review": {
-        "decision": "pending",
-        "stage": "migration:gate",
-        "rule": "empty_abstract",
+        "decision": "rejected",
+        "stage": "human",
+        "rule": "model-benchmark-2026-07-user-approved",
         "score": null,
-        "model": null,
+        "model": "claude-fable-5",
         "model_revision": null,
-        "timestamp": "2026-07-05T22:18:26Z"
+        "timestamp": "2026-07-06T00:00:00Z"
       },
       "links": {
         "doi": "https://doi.org/10.1007/978-3-032-30524-4_38",

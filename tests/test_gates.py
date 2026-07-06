@@ -181,6 +181,58 @@ class TestGrayZone:
         assert apply_gates(p).decision == GRAY
 
 
+class TestMachineVocabGuard:
+    """False-negative guard from the 2026-07 benchmark: papers naming
+    accelerator machinery are never NLI-auto-rejected (funnel downgrades a
+    reject to pending)."""
+
+    def test_explicit_accelerator_paper_has_machine_vocab(self):
+        from living_review.gates import has_machine_vocab
+
+        assert has_machine_vocab(
+            "Extremum seeking in latent space with particle accelerator applications"
+        )
+        assert has_machine_vocab("RL and Bayesian optimisation for online accelerator tuning")
+        assert not has_machine_vocab("Customer churn prediction with gradient boosting")
+
+    def test_funnel_downgrades_nli_reject_to_pending(self, make_paper):
+        from living_review.adjudicator import AdjudicationResult
+        from living_review.db import DB
+        from living_review.relevance import run_funnel
+
+        class RejectAll:
+            def adjudicate(self, papers):
+                return [
+                    AdjudicationResult(decision="rejected", score=0.05, model="fake", revision=None)
+                    for _ in papers
+                ]
+
+        p = make_paper(
+            title="Adaptive latent space tuning for particle accelerators",
+            abstract="Encoder-decoder diagnostics for time-varying charged particle beams "
+            "with adaptive machine learning tuning of the accelerator.",
+            venue="ML Journal",
+        )
+        db = DB()
+        db.merge_from_list([p])
+        counts = run_funnel(db, RejectAll())
+        merged = next(iter(db))
+        assert merged.review["decision"] == "pending"
+        assert merged.review["rule"] == "nli_reject_machine_vocab"
+        assert counts["nli_pending"] == 1
+
+    def test_shielding_paper_no_longer_foreign_rejected(self, make_paper):
+        # "concrete" used to trip the foreign gate because generic
+        # "proton accelerator" was not in the accelerator vocabulary.
+        p = make_paper(
+            title="Hybrid Monte Carlo-ML framework for neutron dose attenuation in layered iron-concrete shields",
+            abstract="We model neutron shielding for a 1 GeV proton accelerator facility "
+            "using Monte Carlo simulations and machine learning surrogates.",
+        )
+        r = apply_gates(p)
+        assert r.decision == GRAY
+
+
 class TestVenueWhitelist:
     def test_variants(self):
         assert venue_is_whitelisted("Phys. Rev. Accel. Beams")

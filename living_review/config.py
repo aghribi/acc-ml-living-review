@@ -79,7 +79,8 @@ VENUE_WHITELIST_PATTERNS = [
 auto-accepts (Stage B). Matching is case-insensitive regex on the venue string."""
 
 ACCEL_SYSTEM_VOCAB = [
-    r"particle accelerator", r"\blinacs?\b", r"\bcyclotrons?\b",
+    r"particle accelerators?", r"(proton|electron|ion|linear) accelerators?",
+    r"accelerator facilit(y|ies)", r"\blinacs?\b", r"\bcyclotrons?\b",
     r"\bsynchrotrons?\b", r"storage rings?", r"\bcolliders?\b",
     r"beam ?lines?", r"\bbeam\b", r"\bbeams\b",
     r"rf cavit(y|ies)", r"\bcavit(y|ies)\b", r"\bcryomodules?\b",
@@ -126,6 +127,8 @@ MACHINE_SUBSYSTEM_VOCAB = [
     r"beam dynamics", r"beam loss", r"beam halo", r"beam diagnostics",
     r"beam tuning", r"beam control", r"beam optics", r"machine protection",
     r"\bSRF\b", r"orbit correction", r"\bmagnet (design|control|tuning)\b",
+    r"particle accelerators?", r"(proton|electron|ion|linear) accelerators?",
+    r"accelerator (tuning|control|operation|physics|facilit(y|ies))",
 ]
 """Machine-subsystem vocabulary: ACCEL_SYSTEM_VOCAB minus facility names and
 bare 'beam'. Used by the detector-context gate — a paper about ML on

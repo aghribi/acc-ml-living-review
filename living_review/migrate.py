@@ -175,11 +175,16 @@ def migrate(
         return
 
     # --- Stage C: NLI over the gray zone ---
+    from .gates import has_machine_vocab
+
     adjudicator = adjudicator or NLIAdjudicator()
     for p, r in zip(gray, adjudicator.adjudicate(gray)):
-        set_review(p, r.decision, "migration:nli",
-                   rule=r.rule, score=r.score, model=r.model, revision=r.revision)
-        {"accepted": accepted, "rejected": rejected, "pending": pending}[r.decision].append(p)
+        decision, rule = r.decision, r.rule
+        if decision == "rejected" and has_machine_vocab(f"{p.title or ''} {p.abstract or ''}"):
+            decision, rule = "pending", "nli_reject_machine_vocab"
+        set_review(p, decision, "migration:nli",
+                   rule=rule, score=r.score, model=r.model, revision=r.revision)
+        {"accepted": accepted, "rejected": rejected, "pending": pending}[decision].append(p)
     print(
         f"[info] Final: {len(accepted)} accepted, {len(rejected)} rejected, "
         f"{len(pending)} pending"

@@ -39,8 +39,20 @@ def load_titles(path):
     return {p.get("title", "") for p in papers.values()}
 
 
+DOMAIN_WORDS = re.compile(
+    r"accelerat|beam|linac|synchrotron|cyclotron|cavit|neural|learning|machine",
+    re.IGNORECASE,
+)
+
+
 def spam_heuristic(title):
-    if len(title) > 25 and sum(c.isupper() for c in title) / max(len(title), 1) > 0.6:
+    # All-caps alone is weak evidence: legitimate proceedings titles are
+    # sometimes upper-cased. Only flag when no domain vocabulary is present.
+    if (
+        len(title) > 25
+        and sum(c.isupper() for c in title) / max(len(title), 1) > 0.6
+        and not DOMAIN_WORDS.search(title)
+    ):
         return "excessive uppercase"
     for pat in SPAM_PATTERNS:
         if pat.search(title):

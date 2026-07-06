@@ -39,6 +39,7 @@ The canonical adjudicator hypothesis:
 | ML-based virtual diagnostics of bunch length / beam phase space | Beam diagnostics |
 | Surrogate models for laser/plasma wakefield acceleration | Beam physics (advanced accelerator concepts) |
 | 1990s neural-network orbit correction at storage rings | Founding literature of this field |
+| ML surrogate for neutron-shielding / radiation-safety design of an accelerator facility | Machine-tied facility infrastructure (decided 2026-07 during the model benchmark) |
 
 ### Out of scope
 

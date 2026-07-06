@@ -85,6 +85,20 @@ def venue_is_whitelisted(venue: Optional[str]) -> bool:
     return bool(venue) and _any(_VENUE_RE, venue)
 
 
+def has_machine_vocab(text: str) -> bool:
+    """
+    True if the text carries explicit machine-subsystem vocabulary
+    ("particle accelerator", "emittance", "RF cavity", ...).
+
+    Used by the funnel's false-negative guard: the 2026-07 model benchmark
+    found the NLI under-scores genuine accelerator papers with ML-venue
+    phrasing (scores 0.03-0.10 on e.g. latent-space accelerator tuning).
+    A paper that explicitly names accelerator machinery is never
+    auto-rejected on an NLI score alone — it goes to the pending queue.
+    """
+    return _any(_MACHINE_RE, text)
+
+
 def apply_gates(paper: Paper) -> GateResult:
     """
     Apply Stage B deterministic rules to one paper.

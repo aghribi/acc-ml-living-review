@@ -27,7 +27,7 @@ from .adjudicator import Adjudicator
 from .data_model import Paper
 from .db import DB
 from .enrich import backfill_abstracts
-from .gates import ACCEPT, GRAY, REJECT, apply_gates
+from .gates import ACCEPT, GRAY, REJECT, apply_gates, has_machine_vocab
 
 TERMINAL = ("accepted", "rejected")
 
@@ -107,11 +107,16 @@ def run_funnel(db: DB, adjudicator: Adjudicator) -> Dict[str, int]:
 
     counts["adjudicated"] = len(gray)
     for p, r in zip(gray, adjudicator.adjudicate(gray)):
+        decision, rule = r.decision, r.rule
+        # False-negative guard (2026-07 benchmark): never auto-reject a paper
+        # that explicitly names accelerator machinery on an NLI score alone.
+        if decision == "rejected" and has_machine_vocab(f"{p.title or ''} {p.abstract or ''}"):
+            decision, rule = "pending", "nli_reject_machine_vocab"
         set_review(
-            p, r.decision, "nli",
-            rule=r.rule, score=r.score, model=r.model, revision=r.revision,
+            p, decision, "nli",
+            rule=rule, score=r.score, model=r.model, revision=r.revision,
         )
-        counts[f"nli_{r.decision}"] += 1
+        counts[f"nli_{decision}"] += 1
     return counts
 
 
