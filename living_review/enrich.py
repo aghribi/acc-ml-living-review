@@ -71,9 +71,16 @@ def _openalex_abstract(doi: str, session) -> str:
         return ""
 
 
-def _arxiv_abstracts(ids: List[str]) -> Dict[str, str]:
-    """Fetch abstracts for a list of arXiv ids (batched, best-effort)."""
-    out: Dict[str, str] = {}
+def fetch_arxiv_metadata(ids: List[str]) -> Dict[str, Dict]:
+    """
+    Fetch abstract + subject categories for arXiv ids (batched, best-effort).
+
+    Returns
+    -------
+    dict
+        arxiv_id -> {"abstract": str, "arxiv_categories": [primary, ...]}.
+    """
+    out: Dict[str, Dict] = {}
     if not ids:
         return out
     try:
@@ -88,13 +95,25 @@ def _arxiv_abstracts(ids: List[str]) -> Dict[str, str]:
                 search = arxiv.Search(id_list=chunk)
                 for r in client.results(search):
                     ax = norm_arxiv_id(r.get_short_id())
-                    if ax and r.summary:
-                        out[ax] = re.sub(r"\s+", " ", r.summary).strip()
+                    if not ax:
+                        continue
+                    primary = getattr(r, "primary_category", None)
+                    cats = [c for c in getattr(r, "categories", []) if c and c != primary]
+                    out[ax] = {
+                        "abstract": re.sub(r"\s+", " ", r.summary or "").strip(),
+                        "arxiv_categories": ([primary] if primary else []) + cats,
+                    }
             except Exception as e:
-                print(f"[warn] arXiv batch abstract lookup failed: {e}")
+                print(f"[warn] arXiv batch metadata lookup failed: {e}")
     except Exception as e:
-        print(f"[warn] arXiv abstract lookup unavailable: {e}")
+        print(f"[warn] arXiv metadata lookup unavailable: {e}")
     return out
+
+
+def _arxiv_abstracts(ids: List[str]) -> Dict[str, str]:
+    """Fetch abstracts for a list of arXiv ids (batched, best-effort)."""
+    meta = fetch_arxiv_metadata(ids)
+    return {k: v["abstract"] for k, v in meta.items() if v.get("abstract")}
 
 
 def backfill_abstracts(
