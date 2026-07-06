@@ -168,9 +168,15 @@ def main(argv=None):
     _add_run_parser(sub)
     _add_review_parser(sub)
     _add_migrate_parser(sub)
+    _add_history_parser(sub)
 
     args = ap.parse_args(argv)
-    {"run": cmd_run, "review": cmd_review, "migrate": cmd_migrate}[args.command](args)
+    {
+        "run": cmd_run,
+        "review": cmd_review,
+        "migrate": cmd_migrate,
+        "backfill-history": cmd_history,
+    }[args.command](args)
 
 
 if __name__ == "__main__":
