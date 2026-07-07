@@ -1,0 +1,1138 @@
+[
+  {
+    "id": "arxiv:2507.17881",
+    "title": "A Supervised Machine Learning Framework for Multipactor Breakdown Prediction in High-Power Radio Frequency Devices and Accelerator Components: A Case Study in Planar Geometry",
+    "abstract": "Multipactor is a nonlinear electron avalanche phenomenon that can severely\nimpair the performance of high-power radio frequency (RF) devices and\naccelerator systems. Accurate prediction of multipactor susceptibility across\ndifferent materials and operational regimes remains a critical yet\ncomputationally intensive challenge in accelerator component design and RF\nengineering. This study presents the first application of supervised machine\nlearning (ML) for predicting multipactor susceptibility in two-surface planar\ngeometries. A simulation-derived dataset spanning six distinct secondary\nelectron yield (SEY) material profiles is used to train regression models -\nincluding Random Forest (RF), Extra Trees (ET), Extreme Gradient Boosting\n(XGBoost), and funnel-structured Multilayer Perceptrons (MLPs) - to predict the\ntime-averaged electron growth rate, ${\\delta}_{avg}$. Performance is evaluated\nusing Intersection over Union (IoU), Structural Similarity Index (SSIM), and\nPearson correlation coefficient. Tree-based models consistently outperform MLPs\nin generalizing across disjoint material domains. MLPs trained using a\nscalarized objective function that combines IoU and SSIM during Bayesian\nhyperparameter optimization with 5-fold cross-validation outperform those\ntrained with single-objective loss functions. Principal Component Analysis\nreveals that performance degradation for certain materials stems from disjoint\nfeature-space distributions, underscoring the need for broader dataset\ncoverage. This study demonstrates both the promise and limitations of ML-based\nmultipactor prediction and lays the groundwork for accelerated, data-driven\nmodeling in advanced RF and accelerator system design.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.1016/j.softx.2025.102335",
+    "title": "Geoff: The Generic Optimization Framework & Frontend for Particle Accelerator Controls",
+    "abstract": "Geoff is a collection of Python packages that form a framework for automation of particle accelerator controls. With particle accelerator laboratories around the world researching machine learning techniques to improve accelerator performance and uptime, a multitude of approaches and algorithms have emerged. The purpose of Geoff is to harmonize these approaches and to minimize friction when comparing or migrating between them. It provides standardized interfaces for optimization problems, utility functions to speed up development, and a reference GUI application that ties everything together. Geoff is an open-source library developed at CERN and maintained and updated in collaboration between CERN and GSI as part of the EURO-LABS project. This paper gives an overview over Geoff's design, features, and current usage.",
+    "venue": "SoftwareX",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2509.12030",
+    "title": "Acceleration of Multi-Scale LTS Magnet Simulations with Neural Network Surrogate Models",
+    "abstract": "While the prediction of AC losses during transients is critical for designing\nlarge-scale low-temperature superconducting (LTS) magnets, brute-force\nfinite-element (FE) simulation of their detailed geometry down to the length\nscale of the conductors is a computational challenge. Multi-scale methods,\nbalancing between a coarse approximation of the fields at the scale of the\nmagnet and a detailed description at the scale of the conductors, are promising\napproaches to reduce the computational load while keeping a sufficient\naccuracy. In this work, we introduce a neural network approach to accelerate\nmulti-scale magneto-thermal simulations of LTS magnets by replacing costly\nsingle-turn FE models with neural network surrogates. The neural network\narchitecture is presented and discussed, together with an automated procedure\nfor generating simulation data for its training. The resulting accelerated\nmulti-scale model is used to simulate current ramp-up procedures for the IBA\nS2C2 magnet. The surrogate-based multi-scale model is compared with a\nconventional multi-scale model based on a composite wire-in-channel FE model.\nThe surrogate model is shown to reproduce single-turn filament hysteresis,\ninter-filament coupling, and eddy losses, while the computational time of the\nmulti-scale method is reduced by a factor of 800.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.1103/g9wr-197z",
+    "title": "Batch spacing optimization by reinforcement learning",
+    "abstract": "Beams designated for the LHC are injected into the SPS in multiple batches. Given the tight spacing of 200 ns between these batches, the injection kickers have to be precisely synchronized with the injected beam to minimize injection oscillations. Due to machine drift, the optimal settings for the kickers vary. This paper presents an active controller trained by reinforcement learning that counteracts the machine drifts by adjusting the settings. The agent was exclusively trained in a simulation environment and directly transferred to the accelerator. Although its results are slightly worse than those obtained by an explicit numerical optimizer, the BOBYQA algorithm, the agent attains these results much faster since it requires far less computation.",
+    "venue": "Phys.Rev.Accel.Beams",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "arxiv:2503.09665",
+    "title": "Optimisation of the Accelerator Control by Reinforcement Learning: A Simulation-Based Approach",
+    "abstract": "Optimizing accelerator control is a critical challenge in experimental\nparticle physics, requiring significant manual effort and resource expenditure.\nTraditional tuning methods are often time-consuming and reliant on expert\ninput, highlighting the need for more efficient approaches. This study aims to\ncreate a simulation-based framework integrated with Reinforcement Learning (RL)\nto address these challenges. Using \\texttt{Elegant} as the simulation backend,\nwe developed a Python wrapper that simplifies the interaction between RL\nalgorithms and accelerator simulations, enabling seamless input management,\nsimulation execution, and output analysis.\n  The proposed RL framework acts as a co-pilot for physicists, offering\nintelligent suggestions to enhance beamline performance, reduce tuning time,\nand improve operational efficiency. As a proof of concept, we demonstrate the\napplication of our RL approach to an accelerator control problem and highlight\nthe improvements in efficiency and performance achieved through our\nmethodology. We discuss how the integration of simulation tools with a\nPython-based RL framework provides a powerful resource for the accelerator\nphysics community, showcasing the potential of machine learning in optimizing\ncomplex physical systems.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2412.07038",
+    "title": "Optimizing Beam-Plasma Interactions Through Jitter Analysis Using Start-to-End Simulations",
+    "abstract": "Traditional accelerators, while effective, suffer from extensive spatial and financial demands, necessitating the exploration of compact alternatives like PWFA, which significantly reduces the necessary accelerator length by utilizing the wake generated by a high-speed pulse traveling through plasma. Our research focuses on mitigating instabilities, particularly timing jitter, which critically impacts the quality of accelerated beams. Through the deployment of Impact-T, Bmad, and Tao simulation tools at the FACET-II facility, we examined how timing jitter influences key beam parameters, including peak currents and emittance, over various simulation scenarios. The findings reveal that even minute variations in accelerator settings can significantly influence beam characteristics, underscoring the importance of precise control in beam dynamics. The outcomes contribute to enhancing the reliability and precision of PWFA systems, promising improved applications in both scientific research and medical therapies. Future research directions include integrating machine learning techniques to refine control strategies further and reduce experimental redundancies, highlighting the evolving synergy between accelerator physics and computational data science.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2411.17644",
+    "title": "Virtual Pulse Reconstruction Diagnostic for Single-Shot Measurement of Free Electron Laser Radiation Power",
+    "abstract": "Accurate characterization of radiation pulse profiles is crucial for\noptimizing beam quality and enhancing experimental outcomes in Free Electron\nLaser (FEL) research. In this paper, we present a novel approach that employs\nmachine learning techniques for real-time virtual diagnostics of FEL radiation\npulses. Our advanced artificial intelligence (AI)-based diagnostic tool\nutilizes longitudinal phase space data obtained from the X-band transverse\ndeflecting structure to reconstruct the temporal profile of FEL pulses in real\ntime. Unlike traditional single-shot methods, this AI-driven solution provides\na non-invasive, highly efficient alternative for pulse characterization. By\nleveraging state-of-the-art machine learning models, our method facilitates\nprecise single-shot measurements of FEL pulse power, offering significant\nadvantages for FEL science research. This work outlines the conceptual\nframework, methodology, and validation results of our virtual diagnostic tool,\ndemonstrating its potential to significantly impact FEL research.",
+    "venue": "Phys.Rev.Accel.Beams",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.1103/physrevaccelbeams.28.044603",
+    "title": "Data-driven gradient optimization for field emission management in a superconducting radio-frequency linac",
+    "abstract": "Field emission can cause significant problems in superconducting radio-frequency linear accelerators (linacs). When cavity gradients are pushed higher, radiation levels within the linacs may rise exponentially, causing degradation of many nearby systems. This research aims to utilize machine learning with uncertainty quantification to predict radiation levels at multiple locations throughout the linacs and ultimately optimize cavity gradients to reduce field emission-induced radiation while maintaining the total linac energy gain necessary for the experimental physics program. The optimized solutions show over 40% reductions for both neutron and gamma radiation from the standard operational settings.",
+    "venue": "Phys.Rev.Accel.Beams",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2410.14019",
+    "title": "Data-Driven Discovery of Beam Centroid Dynamics",
+    "abstract": "Understanding and predicting complex dynamics in accelerators is necessary for their successful operation. A grand challenge in accelerator physics is to develop predictive virtual accelerators that mitigate design cost and schedule risk. Data-driven techniques greatly appeal to generating virtual accelerators due to their limited dimensionality compared with first-principle simulation, yet require significant up-front investment and lack interpretability in the context of governing equations. This paper uses an alternative, interpretable, data-driven technique called Sparse Identification of Nonlinear Dynamics (SINDy) developed by University of Washington researchers to study nonlinear beam centroid dynamics excited by realistic beam injection. We propose evolution equations based solely on data analysis and intuition of the underlying lattice structure, without recourse to an underlying first-principles centroid model nor the actual lattice forcing functions. We do this to mimic an application environment where analytic models are inadequate or where detailed lattice forcing functions are unknown. In the context of the accurate centroid model, we report and interpret SINDy's beam evolution equations learned from the training data and show favorable prediction results. We compare with an alternative machine learning model used on the same training data and contrast its prediction ability, computational expense, and interpretability with SINDy's results.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2409.13415",
+    "title": "Design and development of advanced Al-Ti-V alloys for beampipe applications in particle accelerators",
+    "abstract": "The present investigation reports the design and development of an advanced\nmaterial with a high figure of merit (FoM) for beampipe applications in\nparticle accelerators by bringing synergy between computational and\nexperimental approaches. Machine learning algorithms have been used to predict\nthe phase(s), low density, and high radiation length of the designed Al-Ti-V\nalloys. Al-Ti-V alloys with various compositions for single-phase and\ndual-phase mixtures, liquidus temperature, and density values are obtained\nusing the Latin hypercube sampling method in TC Python Thermo-Calc software.\nThe obtained dataset is utilized to train the machine-learning algorithms.\nClassification algorithms such as XGBoost and regression models such as Linear\nRegression and Random Forest regressor have been used to compute the number of\nphases, radiation length, and density respectively. The XGBoost algorithms show\nan accuracy of $98\\%$, the Linear regression model shows an accuracy of $94\\%$,\nand the Random Forest regressor model is accurate up to $99\\%$. The developed\nAl-Ti-V alloys exhibit high radiation length as well as a good combination of\nhigh elastic modulus and toughness due to the synergistic effect of the\npresence of hard $Al_3Ti$ phase along with a minor volume fraction of FCC\n$(Al)_{ss}$ solid solution phase mixture. The comparison of our alloys, alloy-1\n($Al_{75.2}Ti_{22.8}V_{2}$) and alloy-2 ($Al_{89}Ti_{10}V_{1}$) shows an\nincrease in the radiation length by seven-times and a decrease in the density\nby two to three times as compared to stainless steel 304, the preferred\nmaterial for constructing beampipes in low-energy particle accelerators.\nFurther, we experimentally verify the elastic modulus of the alloy-1 and\ncompute the FoM equal to 0.416, which is better than other existing materials\nfor beampipes in low-energy experiments.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2409.03931",
+    "title": "Machine Learning for Reducing Noise in RF Control Signals at Industrial Accelerators",
+    "abstract": "Industrial particle accelerators typically operate in dirtier environments\nthan research accelerators, leading to increased noise in RF and electronic\nsystems. Furthermore, given that industrial accelerators are mass produced,\nless attention is given to optimizing the performance of individual systems. As\na result, industrial accelerators tend to underperform their own hardware\ncapabilities. Improving signal processing for these machines will improve cost\nand time margins for deployment, helping to meet the growing demand for\naccelerators for medical sterilization, food irradiation, cancer treatment, and\nimaging. Our work focuses on using machine learning techniques to reduce noise\nin RF signals used for pulse-to-pulse feedback in industrial accelerators. Here\nwe review our algorithms and observed results for simulated RF systems, and\ndiscuss next steps with the ultimate goal of deployment on industrial systems.",
+    "venue": "JINST",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2408.13657",
+    "title": "Beamline Steering Using Deep Learning Models",
+    "abstract": "Beam steering involves the calibration of the angle and position at which a particle accelerator's electron beam is incident upon the x-ray target with respect to the rotation axis of the collimator. Beam Steering is an essential task for light sources. The Linac To Undulator is very difficult to steer and aim due to the changes of each use of the accelerator there must be re-calibration of magnets. However with each use of the Beamline its current method of steering runs into issues when faced with calibrating angles and positions. Human operators spend a substantial amount of time and resources on the task. We developed multiple different feed-forward-neural networks with varying hyper-parameters, inputs, and outputs, seeking to compare their performance. Specifically, our smaller models with 33 inputs and 13 outputs outperformed the larger models with 73 inputs and 50 outputs. We propose the following explanations for this lack of performance in larger models. First, a lack of training time and computational power limited the ability of our models to mature. Given more time, our models would outperform SVD. Second, when the input size of the model increases the noise increases as well. In this case more inputs corresponded to a greater length upon the LINAC accelerator. Less specific and larger models that seek to make more predictions will inherently perform worse than SVD.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2408.11677",
+    "title": "Beam-based Identification of Magnetic Field Errors in a Synchrotron using Deep Lie Map Networks",
+    "abstract": "We present the first experimental validation of the Deep Lie Map Network\n(DLMN) approach for recovering both linear and non-linear optics in a\nsynchrotron. The DLMN facilitates the construction of a detailed accelerator\nmodel by integrating charged particle dynamics with machine learning\nmethodology in a data-driven framework. The primary observable is the centroid\nmotion over a limited number of turns, captured by beam position monitors. The\nDLMN produces an updated description of the accelerator in terms of magnetic\nmultipole components, which can be directly utilized in established accelerator\nphysics tools and tracking codes for further analysis. In this study, we apply\nthe DLMN to the SIS18 hadron synchrotron at GSI for the first time.\n  We discuss the validity of the recovered linear and non-linear optics,\nincluding quadrupole and sextupole errors, and compare our results with\nalternative methods, such as the LOCO fit of a measured orbit response matrix\nand the evaluation of resonance driving terms. The small number of required\ntrajectory measurements, one for linear and three for non-linear optics\nreconstruction, demonstrates the method's time efficiency. Our findings\nindicate that the DLMN is well-suited for identifying linear optics, and the\nrecovery of non-linear optics is achievable within the capabilities of the\ncurrent beam position monitor system. We demonstrate the application of DLMN\nresults through simulated resonance diagrams in tune space and their comparison\nwith measurements. The DLMN provides a novel tool for analyzing the causal\norigins of resonances and exploring potential compensation schemes.",
+    "venue": "Phys.Rev.Accel.Beams",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2406.16630",
+    "title": "Linac_Gen: integrating machine learning and particle-in-cell methods for enhanced beam dynamics at Fermilab",
+    "abstract": "Here, we introduce Linac_Gen, a tool developed at Fermilab, which combines\nmachine learning algorithms with Particle-in-Cell methods to advance beam\ndynamics in linacs. Linac_Gen employs techniques such as Random Forest, Genetic\nAlgorithms, Support Vector Machines, and Neural Networks, achieving a tenfold\nincrease in speed for phase-space matching in linacs over traditional methods\nthrough the use of genetic algorithms. Crucially, Linac_Gen's adept handling of\n3D field maps elevates the precision and realism in simulating beam\ninstabilities and resonances, marking a key advancement in the field.\nBenchmarked against established codes, Linac_Gen demonstrates not only improved\nefficiency and precision in beam dynamics studies but also in the design and\noptimization of linac systems, as evidenced in its application to Fermilab's\nPIP-II linac project. This work represents a notable advancement in accelerator\nphysics, marrying ML with PIC methods to set new standards for efficiency and\naccuracy in accelerator design and research. Linac_Gen exemplifies a novel\napproach in accelerator technology, offering substantial improvements in both\ntheoretical and practical aspects of beam dynamics.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2405.12391",
+    "title": "Automated Anomaly Detection on European XFEL Klystrons",
+    "abstract": "High-power multi-beam klystrons represent a key component to amplify RF to\ngenerate the accelerating field of the superconducting radio frequency (SRF)\ncavities at European XFEL. Exchanging these high-power components takes time\nand effort, thus it is necessary to minimize maintenance and downtime and at\nthe same time maximize the device's operation. In an attempt to explore the\nbehavior of klystrons using machine learning, we completed a series of\nexperiments on our klystrons to determine various operational modes and conduct\nfeature extraction and dimensionality reduction to extract the most valuable\ninformation about a normal operation. To analyze recorded data we used\nstate-of-the-art data-driven learning techniques and recognized the most\npromising components that might help us better understand klystron operational\nstates and identify early on possible faults or anomalies.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2405.10028",
+    "title": "Accelerator beam phase space tomography using machine learning to account for variations in beamline components",
+    "abstract": "We describe a technique for reconstruction of the four-dimensional transverse\nphase space of a beam in an accelerator beamline, taking into account the\npresence of unknown errors on the strengths of magnets used in the data\ncollection. Use of machine learning allows rapid reconstruction of the\nphase-space distribution while at the same time providing estimates of the\nmagnet errors. The technique is demonstrated using experimental data from\nCLARA, an accelerator test facility at Daresbury Laboratory.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2404.15829",
+    "title": "Accelerating Cavity Fault Prediction Using Deep Learning at Jefferson Laboratory",
+    "abstract": "Accelerating cavities are an integral part of the Continuous Electron Beam\nAccelerator Facility (CEBAF) at Jefferson Laboratory. When any of the over 400\ncavities in CEBAF experiences a fault, it disrupts beam delivery to\nexperimental user halls. In this study, we propose the use of a deep learning\nmodel to predict slowly developing cavity faults. By utilizing pre-fault\nsignals, we train a LSTM-CNN binary classifier to distinguish between\nradio-frequency (RF) signals during normal operation and RF signals indicative\nof impending faults. We optimize the model by adjusting the fault confidence\nthreshold and implementing a multiple consecutive window criterion to identify\nfault events, ensuring a low false positive rate. Results obtained from\nanalysis of a real dataset collected from the accelerating cavities simulating\na deployed scenario demonstrate the model's ability to identify normal signals\nwith 99.99% accuracy and correctly predict 80% of slowly developing faults.\nNotably, these achievements were achieved in the context of a highly imbalanced\ndataset, and fault predictions were made several hundred milliseconds before\nthe onset of the fault. Anticipating faults enables preemptive measures to\nimprove operational efficiency by preventing or mitigating their occurrence.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2401.14739",
+    "title": "Machine-learning approach for operating electron beam at KEK $e^-/e^+$ injector Linac",
+    "abstract": "In current accelerators, numerous parameters and monitored values are to be\nadjusted and evaluated, respectively. In addition, fine adjustments are\nrequired to achieve the target performance. Therefore, the conventional\naccelerator-operation method, in which experts manually adjust the parameters,\nis reaching its limits. We are currently investigating the use of machine\nlearning for accelerator tuning as an alternative to expert-based tuning. In\nrecent years, machine-learning algorithms have progressed significantly in\nterms of speed, sensitivity, and application range. In addition, various\nlibraries are available from different vendors and are relatively easy to use.\nHerein, we report the results of electron-beam tuning experiments using\nBayesian optimization, a tree-structured Parzen estimator, and a covariance\nmatrix-adaptation evolution strategy. Beam-tuning experiments are performed at\nthe KEK $e^-$/$e^+$ injector Linac to maximize the electron-beam charge and\nreduce the energy-dispersion function. In each case, the performance achieved\nis comparable to that of a skilled expert.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2401.05815",
+    "title": "Cheetah: Bridging the Gap Between Machine Learning and Particle Accelerator Physics with High-Speed, Differentiable Simulations",
+    "abstract": "Machine learning has emerged as a powerful solution to the modern challenges\nin accelerator physics. However, the limited availability of beam time, the\ncomputational cost of simulations, and the high-dimensionality of optimisation\nproblems pose significant challenges in generating the required data for\ntraining state-of-the-art machine learning models. In this work, we introduce\nCheetah, a PyTorch-based high-speed differentiable linear-beam dynamics code.\nCheetah enables the fast collection of large data sets by reducing computation\ntimes by multiple orders of magnitude and facilitates efficient gradient-based\noptimisation for accelerator tuning and system identification. This positions\nCheetah as a user-friendly, readily extensible tool that integrates seamlessly\nwith widely adopted machine learning tools. We showcase the utility of Cheetah\nthrough five examples, including reinforcement learning training,\ngradient-based beamline tuning, gradient-based system identification,\nphysics-informed Bayesian optimisation priors, and modular neural network\nsurrogate modelling of space charge effects. The use of such a high-speed\ndifferentiable simulation code will simplify the development of machine\nlearning-based methods for particle accelerators and fast-track their\nintegration into everyday operations of accelerator facilities.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2312.10040",
+    "title": "Robust Errant Beam Prognostics with Conditional Modeling for Particle Accelerators",
+    "abstract": "Particle accelerators are complex and comprise thousands of components, with\nmany pieces of equipment running at their peak power. Consequently, particle\naccelerators can fault and abort operations for numerous reasons. These faults\nimpact the availability of particle accelerators during scheduled run-time and\nhamper the efficiency and the overall science output. To avoid these faults, we\napply anomaly detection techniques to predict any unusual behavior and perform\npreemptive actions to improve the total availability of particle accelerators.\nSemi-supervised Machine Learning (ML) based anomaly detection approaches such\nas autoencoders and variational autoencoders are often used for such tasks.\nHowever, supervised ML techniques such as Siamese Neural Network (SNN) models\ncan outperform unsupervised or semi-supervised approaches for anomaly detection\nby leveraging the label information. One of the challenges specific to anomaly\ndetection for particle accelerators is the data's variability due to system\nconfiguration changes. To address this challenge, we employ Conditional Siamese\nNeural Network (CSNN) models and Conditional Variational Auto Encoder (CVAE)\nmodels to predict errant beam pulses at the Spallation Neutron Source (SNS)\nunder different system configuration conditions and compare their performance.\nWe demonstrate that CSNN outperforms CVAE in our application.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2311.07519",
+    "title": "Machine Learning For Beamline Steering",
+    "abstract": "Beam steering is the process involving the calibration of the angle and\nposition at which a particle accelerator's electron beam is incident upon the\nx-ray target with respect to the rotation axis of the collimator. Beam Steering\nis an essential task for light sources. In the case under study, the LINAC To\nUndulator (LTU) section of the beamline is difficult to aim. Each use of the\naccelerator requires re-calibration of the magnets in this section. This\ninvolves a substantial amount of time and effort from human operators, while\nreducing scientific throughput of the light source. We investigate the use of\ndeep neural networks to assist in this task. The deep learning models are\ntrained on archival data and then validated on simulation data. The performance\nof the deep learning model is contrasted against that of trained human\noperators.",
+    "venue": "arXiv",
+    "year": 2023,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2311.02096",
+    "title": "Variational Autoencoders for Noise Reduction in Industrial LLRF Systems",
+    "abstract": "Industrial particle accelerators inherently operate in much dirtier\nenvironments than typical research accelerators. This leads to an increase in\nnoise both in the RF system and in other electronic systems. Combined with the\nfact that industrial accelerators are mass produced, there is less attention\ngiven to optimizing the performance of an individual system. As a result,\nindustrial systems tend to under perform considering their hardware hardware\ncapabilities. With the growing demand for accelerators for medical\nsterilization, food irradiation, cancer treatment, and imaging, improving the\nsignal processing of these machines will increase the margin for the deployment\nof these systems. Our work is focusing on using machine learning techniques to\nreduce the noise of RF signals used for pulse-to-pulse feedback in industrial\naccelerators. We will review our algorithms, simulation results, and results\nworking with measured data. We will then discuss next steps for deployment and\ntesting on an industrial system.",
+    "venue": "arXiv",
+    "year": 2023,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2309.02333",
+    "title": "Resilient VAE: Unsupervised Anomaly Detection at the SLAC Linac Coherent Light Source",
+    "abstract": "Significant advances in utilizing deep learning for anomaly detection have\nbeen made in recent years. However, these methods largely assume the existence\nof a normal training set (i.e., uncontaminated by anomalies) or even a\ncompletely labeled training set. In many complex engineering systems, such as\nparticle accelerators, labels are sparse and expensive; in order to perform\nanomaly detection in these cases, we must drop these assumptions and utilize a\ncompletely unsupervised method. This paper introduces the Resilient Variational\nAutoencoder (ResVAE), a deep generative model specifically designed for anomaly\ndetection. ResVAE exhibits resilience to anomalies present in the training data\nand provides feature-level anomaly attribution. During the training process,\nResVAE learns the anomaly probability for each sample as well as each\nindividual feature, utilizing these probabilities to effectively disregard\nanomalous examples in the training data. We apply our proposed method to detect\nanomalies in the accelerator status at the SLAC Linac Coherent Light Source\n(LCLS). By utilizing shot-to-shot data from the beam position monitoring\nsystem, we demonstrate the exceptional capability of ResVAE in identifying\nvarious types of anomalies that are visible in the accelerator.",
+    "venue": "arXiv",
+    "year": 2023,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2307.04544",
+    "title": "Time-drift Aware RF Optimization with Machine Learning Techniques",
+    "abstract": "The Fermilab Linac delivers 400 MeV H- beam to the rest of the accelerator\nchain. Providing stable intensity, energy, and emittance is key since it\ndirectly affects downstream machines. To operate high current beam,\naccelerators must minimize uncontrolled particle loss; this can be accomplished\nby minimizing beam longitudinal emittance via RF parameter optimization.\nHowever, RF tuning is required daily since the resonance frequency of the\naccelerating cavities is affected by ambient temperature and humidity\nvariations and thus drifts with time. In addition, the energy and phase space\ndistribution of particles emerging from the ion source are subject to\nfluctuations. Such drift is not unique to Fermilab, but rather affects most\nlaboratories. We are exploring machine learning (ML) algorithms for automated\nRF tuning for 2 objectives: optimization of Linac output energy and phase\noscillation correction, with an emphasis on time-drift aware modeling that can\naccount for conditions changing over time.",
+    "venue": "arXiv",
+    "year": 2023,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2303.08984",
+    "title": "Forecasting Particle Accelerator Interruptions Using Logistic LASSO Regression",
+    "abstract": "Unforeseen particle accelerator interruptions, also known as interlocks, lead\nto abrupt operational changes despite being necessary safety measures. These\nmay result in substantial loss of beam time and perhaps even equipment damage.\nWe propose a simple yet powerful binary classification model aiming to forecast\nsuch interruptions, in the case of the High Intensity Proton Accelerator\ncomplex at the Paul Scherrer Institut. The model is formulated as logistic\nregression penalized by least absolute shrinkage and selection operator, based\non a statistical two sample test to distinguish between unstable and stable\nstates of the accelerator.\n  The primary objective for receiving alarms prior to interlocks is to allow\nfor countermeasures and reduce beam time loss. Hence, a continuous evaluation\nmetric is developed to measure the saved beam time in any period, given the\nassumption that interlocks could be circumvented by reducing the beam current.\nThe best-performing interlock-to-stable classifier can potentially increase the\nbeam time by around 5 min in a day. Possible instrumentation for fast\nadjustment of the beam current is also listed and discussed.",
+    "venue": "arXiv",
+    "year": 2023,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2303.00657",
+    "title": "Learning Electron Bunch Distribution along a FEL Beamline by Normalising Flows",
+    "abstract": "Understanding and control of Laser-driven Free Electron Lasers remain to be\ndifficult problems that require highly intensive experimental and theoretical\nresearch. The gap between simulated and experimentally collected data might\ncomplicate studies and interpretation of obtained results. In this work we\ndeveloped a deep learning based surrogate that could help to fill in this gap.\nWe introduce a surrogate model based on normalising flows for conditional\nphase-space representation of electron clouds in a FEL beamline. Achieved\nresults let us discuss further benefits and limitations in exploitability of\nthe models to gain deeper understanding of fundamental processes within a\nbeamline.",
+    "venue": "arXiv",
+    "year": 2023,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2301.13715",
+    "title": "Physics-constrained 3D Convolutional Neural Networks for Electrodynamics",
+    "abstract": "We present a physics-constrained neural network (PCNN) approach to solving\nMaxwell's equations for the electromagnetic fields of intense relativistic\ncharged particle beams. We create a 3D convolutional PCNN to map time-varying\ncurrent and charge densities J(r,t) and p(r,t) to vector and scalar potentials\nA(r,t) and V(r,t) from which we generate electromagnetic fields according to\nMaxwell's equations: B=curl(A), E=-div(V)-dA/dt. Our PCNNs satisfy hard\nconstraints, such as div(B)=0, by construction. Soft constraints push A and V\ntowards satisfying the Lorenz gauge.",
+    "venue": "arXiv",
+    "year": 2023,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2301.04914",
+    "title": "Identification of Magnetic Field Errors in Synchrotrons based on Deep Lie Map Networks",
+    "abstract": "Magnetic field errors pose a limitation in the performance of synchrotrons,\nas they excite non-systematic resonances, reduce dynamic aperture and may\nresult in beam loss. Their effect can be compensated assuming knowledge of\ntheir location and strength. Established identification procedures are based on\norbit response matrices or resonance driving terms. While they sequentially\nbuild a field error model for subsequent accelerator sections, a method\ndetecting field errors in parallel could save valuable beam time. We introduce\ndeep Lie map networks, which enable construction of an accelerator model\nincluding multipole components for the magnetic field errors by linking charged\nparticle dynamics with machine learning methodology in a data-driven approach.\nBased on simulated beam-position-monitor readings for the example case of SIS18\nat GSI, we demonstrate inference of location and strengths of gradient and\nsextupole errors for all accelerator sections in parallel. The obtained refined\naccelerator model may support setup of corrector magnets in operation to allow\nmore precise control over tunes, chromaticities and resonance compensation.",
+    "venue": "arXiv",
+    "year": 2023,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2211.09077",
+    "title": "Applications of Differentiable Physics Simulations in Particle Accelerator Modeling",
+    "abstract": "Current physics models used to interpret experimental measurements of\nparticle beams require either simplifying assumptions to be made in order to\nensure analytical tractability, or black box optimization methods to perform\nmodel based inference. This reduces the quantity and quality of information\ngained from experimental measurements, in a system where measurements have a\nlimited availability. However differentiable physics modeling, combined with\nmachine learning techniques, can overcome these analysis limitations, enabling\naccurate, detailed model creation of physical accelerators. Here we examine two\napplications of differentiable modeling, first to characterize beam responses\nto accelerator elements exhibiting hysteretic behavior, and second to\ncharacterize beam distributions in high dimensional phase spaces.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2211.06400",
+    "title": "Prior-mean-assisted Bayesian optimization application on FRIB Front-End tunning",
+    "abstract": "Bayesian optimization~(BO) is often used for accelerator tuning due to its\nhigh sample efficiency. However, the computational scalability of training over\nlarge data-set can be problematic and the adoption of historical data in a\ncomputationally efficient way is not trivial. Here, we exploit a neural network\nmodel trained over historical data as a prior mean of BO for FRIB Front-End\ntuning.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2209.15570",
+    "title": "Fault Prognosis in Particle Accelerator Power Electronics Using Ensemble Learning",
+    "abstract": "Early fault detection and fault prognosis are crucial to ensure efficient and\nsafe operations of complex engineering systems such as the Spallation Neutron\nSource (SNS) and its power electronics (high voltage converter modulators).\nFollowing an advanced experimental facility setup that mimics SNS operating\nconditions, the authors successfully conducted 21 fault prognosis experiments,\nwhere fault precursors are introduced in the system to a degree enough to cause\ndegradation in the waveform signals, but not enough to reach a real fault. Nine\ndifferent machine learning techniques based on ensemble trees, convolutional\nneural networks, support vector machines, and hierarchical voting ensembles are\nproposed to detect the fault precursors. Although all 9 models have shown a\nperfect and identical performance during the training and testing phase, the\nperformance of most models has decreased in the prognosis phase once they got\nexposed to real-world data from the 21 experiments. The hierarchical voting\nensemble, which features multiple layers of diverse models, maintains a\ndistinguished performance in early detection of the fault precursors with 95%\nsuccess rate (20/21 tests), followed by adaboost and extremely randomized trees\nwith 52% and 48% success rates, respectively. The support vector machine models\nwere the worst with only 24% success rate (5/21 tests). The study concluded\nthat a successful implementation of machine learning in the SNS or particle\naccelerator power systems would require a major upgrade in the controller and\nthe data acquisition system to facilitate streaming and handling big data for\nthe machine learning models. In addition, this study shows that the best\nperforming models were diverse and based on the ensemble concept to reduce the\nbias and hyperparameter sensitivity of individual models.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2209.12119",
+    "title": "Machine learning-based analysis of experimental electron beams and gamma energy distributions",
+    "abstract": "The photon flux resulting from high-energy electron beam interactions with\nhigh field systems, such as in the upcoming FACET-II experiments at SLAC\nNational Accelerator Laboratory, may give deep insight into the electron beam's\nunderlying dynamics at the interaction point. Extraction of this information is\nan intricate process, however. To demonstrate how to approach this challenge\nwith modern methods, this paper utilizes data from simulated plasma wakefield\nacceleration-derived betatron radiation experiments and high-field\nlaser-electron-based radiation production to determine reliable methods of\nreconstructing key beam and interaction properties. For these measurements,\nrecovering the emitted 200 keV to 10 GeV photon energy spectra from two\nadvanced spectrometers now being commissioned requires testing multiple methods\nto finalize a pipeline from their responses to incident electron beam\ninformation. In each case, we compare the performance of: neural networks,\nwhich detect patterns between data sets through repeated training; maximum\nlikelihood estimation (MLE), a statistical technique used to determine unknown\nparameters from the distribution of observed data; and a hybrid approach\ncombining the two. Further, in the case of photons with energies above 30 MeV,\nwe also examine the efficacy of QR decomposition, a matrix decomposition\nmethod. The betatron radiation and the high-energy photon cases demonstrate the\neffectiveness of a hybrid ML-MLE approach, while the high-field electrodynamics\ninteraction and the low-energy photon cases showcased the machine learning (ML)\nmodel's efficiency in the presence of noise. As such, while there is utility in\nall the methods, the ML-MLE hybrid approach proves to be the most\ngeneralizable.",
+    "venue": "arXiv",
+    "year": 2023,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2209.10705",
+    "title": "Review of Time Series Forecasting Methods and Their Applications to Particle Accelerators",
+    "abstract": "Particle accelerators are complex facilities that produce large amounts of\nstructured data and have clear optimization goals as well as precisely defined\ncontrol requirements. As such they are naturally amenable to data-driven\nresearch methodologies. The data from sensors and monitors inside the\naccelerator form multivariate time series. With fast pre-emptive approaches\nbeing highly preferred in accelerator control and diagnostics, the application\nof data-driven time series forecasting methods is particularly promising.\n  This review formulates the time series forecasting problem and summarizes\nexisting models with applications in various scientific areas. Several current\nand future attempts in the field of particle accelerators are introduced. The\napplication of time series forecasting to particle accelerators has shown\nencouraging results and the promise for broader use, and existing problems such\nas data consistency and compatibility have started to be addressed.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2209.03183",
+    "title": "Automatic setup of 18 MeV electron beamline using machine learning",
+    "abstract": "To improve the performance-critical stability and brightness of the electron\nbunch at injection into the proton-driven plasma wakefield at the AWAKE CERN\nexperiment, automation approaches based on unsupervised Machine Learning (ML)\nwere developed and deployed. Numerical optimisers were tested together with\ndifferent model-free reinforcement learning agents. In order to avoid any bias,\nreinforcement learning agents have been trained also using a completely\nunsupervised state encoding using auto-encoders. To aid hyper-parameter\nselection, a full synthetic model of the beamline was constructed using a\nvariational auto-encoder trained to generate surrogate data from equipment\nsettings. This paper describes the novel approaches based on deep learning and\nreinforcement learning to aid the automatic setup of a low energy line, as the\none used to deliver beam to the AWAKE facility. The results obtained with the\ndifferent ML approaches, including automatic unsupervised feature extraction\nfrom images using computer vision are presented. The prospects for operational\ndeployment and wider applicability are discussed.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2209.02526",
+    "title": "Diagnostics for Linac Optimization With Machine Learning",
+    "abstract": "The Fermilab Linac delivers 400 MeV H- beam to the rest of the accelerator\nchain. Providing stable intensity, energy, and emittance is key since it\ndirectly affects downstream machines. To counter fluctuations of Linac output\ndue to various effects to be described below we are working on implementing\ndynamic longitudinal parameter optimization based on Machine Learning (ML). As\ninputs for the ML model, signals from beam diagnostics have to be well\nunderstood and reliable. In this paper we discuss the status and plans for\nML-based optimization as well as preliminary results of diagnostics studies.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2209.00814",
+    "title": "Transverse phase space tomography in the CLARA accelerator test facility using image compression and machine learning",
+    "abstract": "We describe a novel technique, based on image compression and machine\nlearning, for transverse phase space tomography in two degrees of freedom in an\naccelerator beamline. The technique has been used in the CLARA accelerator test\nfacility at Daresbury Laboratory: results from the machine learning method are\ncompared with those from a conventional tomography algorithm (algebraic\nreconstruction), applied to the same data. The use of machine learning allows\nreconstruction of the 4D phase space distribution of the beam to be carried out\nmuch more rapidly than using conventional tomography algorithms, and also\nenables the use of image compression to reduce significantly the size of the\ndata sets involved in the analysis. Results from the machine learning technique\nare at least as good as those from the algebraic reconstruction tomography in\ncharacterising the beam behaviour, in terms of the variation of the beam size\nin response to variation of the quadrupole strengths.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2204.04275",
+    "title": "Using Kernel-Based Statistical Distance to Study the Dynamics of Charged Particle Beams in Particle-Based Simulation Codes",
+    "abstract": "Measures of discrepancy between probability distributions (statistical\ndistance) are widely used in the fields of artificial intelligence and machine\nlearning. We describe how certain measures of statistical distance can be\nimplemented as numerical diagnostics for simulations involving charged-particle\nbeams. Related measures of statistical dependence are also described. The\nresulting diagnostics provide sensitive measures of dynamical processes\nimportant for beams in nonlinear or high-intensity systems, which are otherwise\ndifficult to characterize. The focus is on kernel-based methods such as Maximum\nMean Discrepancy, which have a well-developed mathematical foundation and\nreasonable computational complexity. Several benchmark problems and examples\ninvolving intense beams are discussed. While the focus is on charged-particle\nbeams, these methods may also be applied to other many-body systems such as\nplasmas or gravitational systems.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2203.07542",
+    "title": "Neural Network Solver for Coherent Synchrotron Radiation Wakefield Calculations in Accelerator-based Charged Particle Beams",
+    "abstract": "Particle accelerators support a wide array of scientific, industrial, and\nmedical applications. To meet the needs of these applications, accelerator\nphysicists rely heavily on detailed simulations of the complicated particle\nbeam dynamics through the accelerator. One of the most computationally\nexpensive and difficult-to-model effects is the impact of Coherent Synchrotron\nRadiation (CSR). As a beam travels through a curved trajectory (e.g. due to a\nbending magnet), it emits radiation that in turn interacts with the rest of the\nbeam. At each step through the trajectory, the electromagnetic field introduced\nby CSR (called the CSR wakefield) needs to computed and used when calculating\nthe updates to the positions and momenta of every particle in the beam. CSR is\none of the major drivers of growth in the beam emittance, which is a key metric\nof beam quality that is critical in many applications. The CSR wakefield is\nvery computationally intensive to compute with traditional electromagnetic\nsolvers, and this is a major limitation in accurately simulating accelerators.\nHere, we demonstrate a new approach for the CSR wakefield computation using a\nneural network solver structured in a way that is readily generalizable to new\nsetups. We validate its performance by adding it to a standard beam tracking\ntest problem and show a ten-fold speedup along with high accuracy.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2203.04391",
+    "title": "Adaptive Machine Learning for Time-Varying Systems: Towards 6D Phase Space Diagnostics of Short Intense Charged Particle Beams",
+    "abstract": "As charged particle bunches become shorter and more intense, the effects of\nnonlinear intra-bunch collective interactions such as space charge forces and\nbunch-to-bunch influences such as wakefields and coherent synchrotron radiation\nalso increase. Shorter more intense bunches are also more difficult to\naccurately image because their dimensions are beyond the resolution of existing\ndiagnostics and they may be destructive to intercepting diagnostics. The\nlimited availability of detailed diagnostics for intense high energy beams is a\nfundamental challenge for the accelerator community because both beams and\naccelerators are time-varying systems that change in unpredictable ways. The\ndetailed 6D (x,y,z,px,py,pz) distributions of beams emerging from sources vary\nwith time due to factors such as evolving photocathode laser intensity profiles\nand the quantum efficiency of photocathodes. Accelerator magnets, RF\namplifiers, and control systems are perturbed by external disturbances,\nbeam-loading effects, temperature variations, and misalignments. Although\nmachine learning (ML) methods have grown in popularity in the accelerator\ncommunity in recently years, they are fundamentally limited when it comes to\ntime-varying systems for which most current approaches are to simply collect\nlarge new data sets and perform re-training, something which is not feasible\nfor busy accelerator user facilities because detailed beam measurements usually\ninterrupt operations. New adaptive machine learning (AML) methods designed for\ntime-varying systems are needed to aid in the diagnostics and control of\nhigh-intensity, ultrashort beams by combining deep learning tools such as\nconvolutional neural network-based encoder-decoder architectures,\nmodel-independent feedback, physics constraints, and online models with real\ntime non-invasive beam data, to provide a detailed virtual view of intense\nbunch dynamics.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2202.07747",
+    "title": "Differentiable Preisach Modeling for Characterization and Optimization of Accelerator Systems with Hysteresis",
+    "abstract": "Future improvements in particle accelerator performance is predicated on\nincreasingly accurate online modeling of accelerators. Hysteresis effects in\nmagnetic, mechanical, and material components of accelerators are often\nneglected in online accelerator models used to inform control algorithms, even\nthough reproducibility errors from systems exhibiting hysteresis are not\nnegligible in high precision accelerators. In this work, we combine the\nclassical Preisach model of hysteresis with machine learning techniques to\nefficiently create non-parametric, high-fidelity models of arbitrary systems\nexhibiting hysteresis. We demonstrate that our technique accurately predicts\nhysteresis effects in physical accelerator magnets. We also experimentally\ndemonstrate how these methods can be used in-situ, where the hysteresis model\nis combined with a Bayesian statistical model of the beam response, allowing\ncharacterization of hysteresis in accelerator magnets solely from measurements\nof the beam. Furthermore, we explore how using these joint hysteresis-beam\nmodels allows us to overcome optimization performance limitations when\nhysteresis effects are ignored.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2201.05769",
+    "title": "Mixed Diagnostics for Longitudinal Properties of Electron Bunches in a Free-Electron Laser",
+    "abstract": "Longitudinal properties of electron bunches are critical for the performance\nof a wide range of scientific facilities. In a free-electron laser, for\nexample, the existing diagnostics only provide very limited longitudinal\ninformation of the electron bunch during online tuning and optimization. We\nleverage the power of artificial intelligence to build a neural network model\nusing experimental data, in order to bring the destructive longitudinal phase\nspace (LPS) diagnostics online virtually and improve the existing current\nprofile online diagnostics which uses a coherent transition radiation (CTR)\nspectrometer. The model can also serve as a digital twin of the real machine on\nwhich algorithms can be tested efficiently and effectively. We demonstrate at\nthe FLASH facility that the encoder-decoder model with more than one decoder\ncan make highly accurate predictions of megapixel LPS images and coherent\ntransition radiation spectra concurrently for electron bunches in a bunch train\nwith broad ranges of LPS shapes and peak currents, which are obtained by\nscanning all the major control knobs for LPS manipulation. Furthermore, we\npropose a way to significantly improve the CTR spectrometer online measurement\nby combining the predicted and measured spectra. Our work showcases how to\ncombine virtual and real diagnostics in order to provide heterogeneous and\nreliable mixed diagnostics for scientific facilities.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2201.05755",
+    "title": "A Neural Network Model of a Quasi-Periodic Elliptically Polarizing Undulator in Universal Mode",
+    "abstract": "Machine learning has recently been applied and deployed at several light\nsource facilities in the domain of Accelerator Physics. We introduce an\napproach based on machine learning to produce a fast-executing model that\npredicts the polarization and energy of the radiated light produced at an\ninsertion device. This paper demonstrates how a machine learning model can be\ntrained on simulated data and later calibrated to a smaller, limited measured\ndata set, a technique referred to as transfer learning. This result will enable\nusers to efficiently determine the insertion device settings for achieving\narbitrary beam characteristics.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2112.11323",
+    "title": "Physics-informed neural network method for modelling beam-wall interactions",
+    "abstract": "A mesh-free approach for modelling beam-wall interactions in particle\naccelerators is proposed. The key idea of our method is to use a deep neural\nnetwork as a surrogate for the solution to a set of partial differential\nequations involving the particle beam, and the surface impedance concept. The\nproposed approach is applied to the coupling impedance of an accelerator vacuum\nchamber with thin conductive coating, and also verified in comparison with the\nexisting analytical formula.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2112.07793",
+    "title": "Anomaly Detection in Particle Accelerators using Autoencoders",
+    "abstract": "The application of machine learning techniques for anomaly detection in\nparticle accelerators has gained popularity in recent years. These efforts have\nranged from the analysis of quenches in radio frequency cavities and\nsuperconducting magnets to anomalous beam position monitors, and even losses in\nrings. Using machine learning for anomaly detection can be challenging owing to\nthe inherent imbalance in the amount of data collected during normal operations\nas compared to during faults. Additionally, the data are not always labeled and\ntherefore supervised learning is not possible. Autoencoders, neural networks\nthat form a compressed representation and reconstruction of the input data, are\na useful tool for such situations. Here we explore the use of autoencoder\nreconstruction analysis for the prediction of magnet faults in the Advanced\nPhoton Source (APS) storage ring at Argonne National Laboratory.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2112.02579",
+    "title": "Input Beam Matching and Beam Dynamics Design Optimization of the IsoDAR RFQ using Statistical and Machine Learning Techniques",
+    "abstract": "We present a novel machine learning-based approach to generate fast-executing\nvirtual radiofrequency quadrupole (RFQ) particle accelerators using surrogate\nmodelling. These could potentially be used as on-line feedback tools during\nbeam commissioning and operation, and to optimize the RFQ beam dynamics design\nprior to construction. Since surrogate models execute orders of magnitude\nfaster than corresponding physics beam dynamics simulations using standard\ntools like PARMTEQM and RFQGen, the computational complexity of the\nmulti-objective optimization problem reduces significantly. Ultimately, this\npresents a computationally inexpensive and time efficient method to perform\nsensitivity studies and an optimization of the crucial RFQ beam output\nparameters like transmission and emittances. Two different methods of surrogate\nmodel creation (polynomial chaos expansion and neural networks) are discussed\nand the achieved model accuracy is evaluated for different study cases with\ngradually increasing complexity, ranging from a simple FODO cell example to the\nfull RFQ optimization. We find that variations of the beam input Twiss\nparameters can be reproduced well. The prediction of the beam with respect to\nhardware changes, e.g. of the electrode modulation, are challenging on the\nother hand. We discuss possible reasons.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2406.17494",
+    "title": "Neural Networks for ID Gap Orbit Distortion Compensation in PETRA III",
+    "abstract": "Undulators are used in storage rings to produce extremely brilliant\nsynchrotron radiation. In the ideal case, a perfectly tuned undulator always\nhas a first and second field integrals equal to zero. But, in practice, field\nintegral changes during gap movements can never be avoided for real-life\ndevices. As they significantly impact the circulating electron beam, there is\nthe need to routinely compensate such effects. Deep Neural Networks can be used\nto predict the distortion in the closed orbit induced by the undulator gap\nvariations on the circulating electron beam. In this contribution several\ncurrent state-of-the-art deep learning algorithms were trained on measurements\nfrom PETRA~III. The different architecture performances are then compared to\nidentify the best model for the gap-induced distortion compensation.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2401.11031",
+    "title": "Time-Delayed Koopman Network-Based Model Predictive Control for the FRIB RFQ",
+    "abstract": "The radio-frequency quadrupole (RFQ) at the Facility for Rare Isotope Beams\n(FRIB) is a critical device to accelerate heavy ion beams from 12 keV/u to 0.5\nMeV/u for state-of-the-art nuclear physics experiments. Efficient control of\nthe RFQ resonance frequency detuning still remains a challenge because the\ntemperature-sensitive frequency is solely control by a cooling water system,\nexhibiting complicated transport delay and nonlinearity in the heat transfer\nprocesses. In this work, we propose a long-short term memory (LSTM)-based\nKoopman network model that can simultaneously learn the time-delayed and\nnon-delayed correlations hidden in the historical operating data. It is proven\nthat the model can effectively predict the behavior of the RFQ resonance\nfrequency using historical data as inputs. With this model, a model predictive\ncontrol (MPC) framework based on the Newton-Raphson method is proposed and\ntested. We demonstrate that the MPC framework utilizing deep learning model is\nable to provide precise and rapid control for the RFQ frequency detuning,\nreducing the control time by half compared to the\nproportional-integral-derivative (PID) controller.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2209.07458",
+    "title": "Uncertainty Aware ML-based surrogate models for particle accelerators: A Study at the Fermilab Booster Accelerator Complex",
+    "abstract": "Standard deep learning methods, such as Ensemble Models, Bayesian Neural\nNetworks and Quantile Regression Models provide estimates to prediction\nuncertainties for data-driven deep learning models. However, they can be\nlimited in their applications due to their heavy memory, inference cost, and\nability to properly capture out-of-distribution uncertainties. Additionally,\nsome of these models require post-training calibration which limits their\nability to be used for continuous learning applications. In this paper, we\npresent a new approach to provide prediction with calibrated uncertainties that\nincludes out-of-distribution contributions and compare it to standard methods\non the Fermi National Accelerator Laboratory (FNAL) Booster accelerator\ncomplex.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2107.14261",
+    "title": "Quantifying Uncertainty for Machine Learning Based Diagnostic",
+    "abstract": "Virtual Diagnostic (VD) is a deep learning tool that can be used to predict a\ndiagnostic output. VDs are especially useful in systems where measuring the\noutput is invasive, limited, costly or runs the risk of damaging the output.\nGiven a prediction, it is necessary to relay how reliable that prediction is.\nThis is known as 'uncertainty quantification' of a prediction. In this paper,\nwe use ensemble methods and quantile regression neural networks to explore\ndifferent ways of creating and analyzing prediction's uncertainty on\nexperimental data from the Linac Coherent Light Source at SLAC. We aim to\naccurately and confidently predict the current profile or longitudinal phase\nspace images of the electron beam. The ability to make informed decisions under\nuncertainty is crucial for reliable deployment of deep learning tools on\nsafety-critical systems as particle accelerators.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2105.04654",
+    "title": "Uncertainty Quantification for Virtual Diagnostic of Particle Accelerators",
+    "abstract": "Virtual Diagnostic (VD) is a computational tool based on deep learning that\ncan be used to predict a diagnostic output. VDs are especially useful in\nsystems where measuring the output is invasive, limited, costly or runs the\nrisk of altering the output. Given a prediction, it is necessary to relay how\nreliable that prediction is, i.e. quantify the uncertainty of the prediction.\nIn this paper, we use ensemble methods and quantile regression neural networks\nto explore different ways of creating and analyzing prediction's uncertainty on\nexperimental data from the Linac Coherent Light Source at SLAC National Lab. We\naim to accurately and confidently predict the current profile or longitudinal\nphase space images of the electron beam. The ability to make informed decisions\nunder uncertainty is crucial for reliable deployment of deep learning tools on\nsafety-critical systems as particle accelerators.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2102.10510",
+    "title": "Adaptive deep learning for time-varying systems with hidden parameters: Predicting changing input beam distributions of compact particle accelerators",
+    "abstract": "Machine learning (ML) tools such as encoder-decoder deep convolutional neural\nnetworks (CNN) are able to extract relationships between inputs and outputs of\nlarge complex systems directly from raw data. For time-varying systems the\npredictive capabilities of ML tools degrade as the systems are no longer\naccurately represented by the data sets with which the ML models were trained.\nRe-training is possible, but only if the changes are slow and if new\ninput-output training data measurements can be made online non-invasively. In\nthis work we present an approach to deep learning for time-varying systems in\nwhich adaptive feedback based only on available system output measurements is\napplied to encoded low-dimensional dense layers of encoder-decoder type CNNs.\nWe demonstrate our method in developing an inverse model of a complex charged\nparticle accelerator system, mapping output beam measurements to input beam\ndistributions while both the accelerator components and the unknown input beam\ndistribution quickly vary with time. We demonstrate our results using\nexperimental measurements of the input and output beam distributions of the\nHiRES ultra-fast electron diffraction (UED) microscopy beam line at Lawrence\nBerkeley National Laboratory. We show how our method can be used to aid both\nphysics and ML-based surrogate online models to provide non-invasive beam\ndiagnostics and we also demonstrate how our method can be used to automatically\ntrack the time varying quantum efficiency map of a particle accelerator's\nphotocathode.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2505.16052",
+    "title": "Coincident Learning for Beam-based RF Station Fault Identification Using Phase Information at the SLAC Linac Coherent Light Source",
+    "abstract": "Anomalies in radio-frequency (RF) stations can result in unplanned downtime\nand performance degradation in linear accelerators such as SLAC's Linac\nCoherent Light Source (LCLS). Detecting these anomalies is challenging due to\nthe complexity of accelerator systems, high data volume, and scarcity of\nlabeled fault data. Prior work identified faults using beam-based detection,\ncombining RF amplitude and beam-position monitor data. Due to the simplicity of\nthe RF amplitude data, classical methods are sufficient to identify faults, but\nthe recall is constrained by the low-frequency and asynchronous characteristics\nof the data. In this work, we leverage high-frequency, time-synchronous RF\nphase data to enhance anomaly detection in the LCLS accelerator. Due to the\ncomplexity of phase data, classical methods fail, and we instead train deep\nneural networks within the Coincident Anomaly Detection (CoAD) framework. We\nfind that applying CoAD to phase data detects nearly three times as many\nanomalies as when applied to amplitude data, while achieving broader coverage\nacross RF stations. Furthermore, the rich structure of phase data enables us to\ncluster anomalies into distinct physical categories. Through the integration of\nauxiliary system status bits, we link clusters to specific fault signatures,\nproviding additional granularity for uncovering the root cause of faults. We\nalso investigate interpretability via Shapley values, confirming that the\nlearned models focus on the most informative regions of the data and providing\ninsight for cases where the model makes mistakes. This work demonstrates that\nphase-based anomaly detection for RF stations improves both diagnostic coverage\nand root cause analysis in accelerator systems and that deep neural networks\nare essential for effective analysis.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2503.09551",
+    "title": "Using Convolutional Neural Networks to Accelerate 3D Coherent Synchrotron Radiation Computations",
+    "abstract": "Calculating the effects of Coherent Synchrotron Radiation (CSR) is one of the\nmost computationally expensive tasks in accelerator physics. Here, we use\nconvolutional neural networks (CNN's), along with a latent conditional\ndiffusion (LCD) model, trained on physics-based simulations to speed up\ncalculations. Specifically, we produce the 3D CSR wakefields generated by\nelectron bunches in circular orbit in the steady-state condition. Two datasets\nare used for training and testing the models: wakefields generated by\nthree-dimensional Gaussian electron distributions and wakefields from a sum of\nup to 25 three-dimensional Gaussian distributions. The CNN's are able to\naccurately produce the 3D wakefields $\\sim 250-1000$ times faster than the\nnumerical calculations, while the LCD has a gain of a factor of $\\sim 34$. We\nalso test the extrapolation and out-of-distribution generalization ability of\nthe models. They generalize well on distributions with larger spreads than what\nthey were trained on, but struggle with smaller spreads.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2502.20247",
+    "title": "Explainable physics-based constraints on reinforcement learning for accelerator controls",
+    "abstract": "We present a reinforcement learning (RL) framework for controlling particle accelerator experiments that builds explainable physics-based constraints on agent behavior. The goal is to increase transparency and trust by letting users verify that the agent's decision-making process incorporates suitable physics. Our algorithm uses a learnable surrogate function for physical observables, such as energy, and uses them to fine-tune how actions are chosen. This surrogate can be represented by a neural network or by an interpretable sparse dictionary model. We test our algorithm on a range of particle accelerator controls environments designed to emulate the Continuous Electron Beam Accelerator Facility (CEBAF) at Jefferson Lab. By examining the mathematical form of the learned constraint function, we are able to confirm the agent has learned to use the established physics of each environment. In addition, we find that the introduction of a physics-based surrogate enables our reinforcement learning algorithms to reliably converge for difficult high-dimensional accelerator controls environments.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2406.01532",
+    "title": "Accelerator system parameter estimation using variational autoencoded latent regression",
+    "abstract": "Particle accelerators are time-varying systems whose components are perturbed\nby external disturbances. Tuning accelerators can be a time-consuming process\ninvolving manual adjustment of multiple components, such as RF cavities, to\nminimize beam loss due to time-varying drifts. The high dimensionality of the\nsystem ($\\sim$100 amplitude and phase RF settings in the LANSCE accelerator)\nmakes it difficult to achieve optimal operation. The time-varying drifts and\nthe dimensionality make system parameter estimation a challenging optimization\nproblem. In this work, we propose a Variational Autoencoded Latent Regression\n(VALeR) model for robust estimation of system parameters using 2D unique\nprojections of a charged particle beam's 6D phase space. In VALeR, VAE projects\nthe phase space projections into a lower-dimensional latent space, and a dense\nneural network maps the latent space onto the space of system parameters. The\ntrained network can predict system parameters for unseen phase space\nprojections. Furthermore, VALeR can generate new projections by randomly\nsampling the latent space of VAE and also estimate the corresponding system\nparameters.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2405.18321",
+    "title": "Long Short-Term Memory Networks for Anomaly Detection in Magnet Power Supplies of Particle Accelerators",
+    "abstract": "This research introduces a novel anomaly detection method designed to enhance\nthe operational reliability of particle accelerators - complex machines that\naccelerate elementary particles to high speeds for various scientific\napplications. Our approach utilizes a Long Short-Term Memory (LSTM) neural\nnetwork to predict the temperature of key components within the magnet power\nsupplies (PSs) of these accelerators, such as heatsinks, capacitors, and\nresistors, based on the electrical current flowing through the PS. Anomalies\nare declared when there is a significant discrepancy between the LSTM-predicted\ntemperatures and actual observations. Leveraging a custom-built test stand, we\nconducted comprehensive performance comparisons with a less sophisticated\nmethod, while also fine-tuning hyperparameters of both methods. This process\nnot only optimized the LSTM model but also unequivocally demonstrated the\nsuperior efficacy of this new proposed method. The dedicated test stand also\nfacilitated exploratory work on more advanced strategies for monitoring\ninterior PS temperatures using infrared cameras. A proof-of-concept example is\nprovided.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2403.03225",
+    "title": "Leveraging Prior Mean Models for Faster Bayesian Optimization of Particle Accelerators",
+    "abstract": "Tuning particle accelerators is a challenging and time-consuming task that\ncan be automated and carried out efficiently using suitable optimization\nalgorithms, such as model-based Bayesian optimization techniques. One of the\nmajor advantages of Bayesian algorithms is the ability to incorporate prior\ninformation about beam physics and historical behavior into the model used to\nmake control decisions. In this work, we examine incorporating prior\naccelerator physics information into Bayesian optimization algorithms by\nutilizing fast executing, neural network models trained on simulated or\nhistorical datasets as prior mean functions in Gaussian process models. We show\nthat in ideal cases, this technique substantially increases convergence speed\nto optimal solutions in high-dimensional tuning parameter spaces. Additionally,\nwe demonstrate that even in non-ideal cases, where prior models of beam\ndynamics do not exactly match experimental conditions, the use of this\ntechnique can still enhance convergence speed. Finally, we demonstrate how\nthese methods can be used to improve optimization in practical applications,\nsuch as transferring information gained from beam dynamics simulations to\nonline control of the LCLS injector, and transferring knowledge gained from\nexperimental measurements across different operating modes, such as\naccelerating different ion species at the ATLAS heavy ion accelerator.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2402.11077",
+    "title": "Optimizing Dynamic Aperture Studies with Active Learning",
+    "abstract": "Dynamic aperture is an important concept for the study of non-linear beam\ndynamics in circular accelerators. It describes the extent of the phase-space\nregion where a particle's motion remains bounded over a given number of turns.\nUnderstanding the features of dynamic aperture is crucial for the design and\noperation of such accelerators, as it provides insights into nonlinear effects\nand the possibility of optimising beam lifetime. The standard approach to\ncalculate the dynamic aperture requires numerical simulations of several\ninitial conditions densely distributed in phase space for a sufficient number\nof turns to probe the time scale corresponding to machine operations. This\nprocess is very computationally intensive and practically outside the range of\ntoday's computers. In our study, we introduced a novel method to estimate\ndynamic aperture rapidly and accurately by utilising a Deep Neural Network\nmodel. This model was trained with simulated tracking data from the CERN Large\nHadron Collider and takes into account variations in accelerator parameters\nsuch as betatron tune, chromaticity, and the strength of the Landau octupoles.\nTo enhance its performance, we integrate the model into an innovative Active\nLearning framework. This framework not only enables retraining and updating of\nthe computed model, but also facilitates efficient data generation through\nsmart sampling. Since chaotic motion cannot be predicted, traditional tracking\nsimulations are incorporated into the Active Learning framework to deal with\nthe chaotic nature of some initial conditions. The results demonstrate that the\nuse of the Active Learning framework allows faster scanning of the\nconfiguration parameters without compromising the accuracy of the dynamic\naperture estimates.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2211.09028",
+    "title": "Neural Network Prior Mean for Particle Accelerator Injector Tuning",
+    "abstract": "Bayesian optimization has been shown to be a powerful tool for solving black\nbox problems during online accelerator optimization. The major advantage of\nBayesian based optimization techniques is the ability to include prior\ninformation about the problem to speed up optimization, even if that\ninformation is not perfectly correlated with experimental measurements. In\nparallel, neural network surrogate system models of accelerator facilities are\nincreasingly being made available, but at present they are not widely used in\nonline optimization. In this work, we demonstrate the use of an approximate\nneural network surrogate model as a prior mean for Gaussian processes used in\nBayesian optimization in a realistic setting. We show that the initial\nperformance of Bayesian optimization is improved by using neural network\nsurrogate models, even when surrogate models make erroneous predictions.\nFinally, we quantify requirements on surrogate prediction accuracy to achieve\noptimization performance when solving problems in high dimensional input\nspaces.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2206.11709",
+    "title": "A Neural Network approach to reconstructing SuperKEKB beam parameters from beamstrahlung",
+    "abstract": "This work shows how it is possible to reconstruct SuperKEKB's beam parameters\nusing a Neural Network with beamstrahlung signal from the Large Angle\nBeamstrahlung Monitor (LABM) as input. We describe the device, the model, and\ndiscuss the results.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2203.09935",
+    "title": "Optimizing a Superconducting Radiofrequency Gun Using Deep Reinforcement Learning",
+    "abstract": "Superconducting photoelectron injectors are a promising technique for\ngenerating high brilliant pulsed electron beams with high repetition rates and\nlow emittances. Experiments such as ultra-fast electron diffraction,\nexperiments at the Terahertz scale, and energy recovery linac applications\nrequire such properties. However, optimization of the beam properties is\nchallenging due to the high amount of possible machine parameter combinations.\nIn this article, we show the successful automated optimization of beam\nproperties utilizing an already existing simulation model. To reduce the amount\nof required computation time, we replace the costly simulation by a faster\napproximation with a neural network. For optimization, we propose a\nreinforcement learning approach leveraging the simple computation of the\nderivative of the approximation. We prove that our approach outperforms common\noptimization methods for the required function evaluations given a defined\nminimum accuracy.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2110.12006",
+    "title": "Uncertainty aware anomaly detection to predict errant beam pulses in the SNS accelerator",
+    "abstract": "High-power particle accelerators are complex machines with thousands of\npieces of equipmentthat are frequently running at the cutting edge of\ntechnology. In order to improve the day-to-dayoperations and maximize the\ndelivery of the science, new analytical techniques are being exploredfor\nanomaly detection, classification, and prognostications. As such, we describe\nthe applicationof an uncertainty aware Machine Learning method, the Siamese\nneural network model, to predictupcoming errant beam pulses using the data from\na single monitoring device. By predicting theupcoming failure, we can stop the\naccelerator before damage occurs. We describe the acceleratoroperation, related\nMachine Learning research, the prediction performance required to abort\nbeamwhile maintaining operations, the monitoring device and its data, and the\nSiamese method andits results. These results show that the researched method\ncan be applied to improve acceleratoroperations.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2107.00060",
+    "title": "Fast, efficient and flexible particle accelerator optimisation using densely connected and invertible neural networks",
+    "abstract": "Particle accelerators are enabling tools for scientific exploration and\ndiscovery in various disciplines. Finding optimized operation points for these\ncomplex machines is a challenging task, however, due to the large number of\nparameters involved and the underlying non-linear dynamics. Here, we introduce\ntwo families of data-driven surrogate models, based on deep and invertible\nneural networks, that can replace the expensive physics computer models. These\nmodels are employed in multi-objective optimisations to find Pareto optimal\noperation points for two fundamentally different types of particle\naccelerators. Our approach reduces the time-to-solution for a multi-objective\naccelerator optimisation up to a factor of 640 and the computational cost up to\n98%. The framework established here should pave the way for future on-line and\nreal-time multi-objective optimisation of particle accelerators.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2103.07540",
+    "title": "Improving Surrogate Model Accuracy for the LCLS-II Injector Frontend Using Convolutional Neural Networks and Transfer Learning",
+    "abstract": "Machine learning models of accelerator systems (`surrogate models') are able\nto provide fast, accurate predictions of accelerator physics phenomena.\nHowever, approaches to date typically do not include measured input\ndiagnostics, such as the initial beam distributions, which are critical for\naccurately representing the beam evolution through the system. In addition,\nthese inputs often vary over time, and models that can account for these\nchanging conditions are needed. Simulations are in some cases needed to provide\nsufficient training data. These typically represent the designed machine before\nconstruction; however, the behavior of the installed components may be quite\ndifferent due to changes over time or static differences that were not modeled.\nTherefore, surrogate models that can leverage both simulation and measured data\nsuccessfully are needed. We introduce an approach based on convolutional neural\nnetworks that uses the drive laser distribution and scalar settings as inputs\nfor the Linac Coherent Light Source II injector frontend. The model is able to\npredict scalar beam parameters and the transverse beam distribution downstream,\ntaking into account the impact of time-varying non-uniformities in the initial\ntransverse laser distribution. We also introduce and evaluate a transfer\nlearning procedure for adapting the surrogate model from the simulation domain\nto the measurement domain, to account for differences between the two. Applying\nthis approach to our test case results in a model that can predict test sample\noutputs within a mean absolute percent error of 7.6%. This is a substantial\nimprovement over the model trained only on simulations, which has an error of\n112.7% when applied to measured data. While we focus on the LCLS-II Injector\nfrontend, these approaches for improving ML-based online modeling of injector\nsystems could be easily adapted to other accelerator facilities.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2102.00786",
+    "title": "A Novel Approach for Classification and Forecasting of Time Series in Particle Accelerators",
+    "abstract": "The beam interruptions (interlocks) of particle accelerators, despite being\nnecessary safety measures, lead to abrupt operational changes and a substantial\nloss of beam time. A novel time series classification approach is applied to\ndecrease beam time loss in the High Intensity Proton Accelerator complex by\nforecasting interlock events. The forecasting is performed through binary\nclassification of windows of multivariate time series. The time series are\ntransformed into Recurrence Plots which are then classified by a Convolutional\nNeural Network, which not only captures the inner structure of the time series\nbut also utilizes the advances of image classification techniques. Our best\nperforming interlock-to-stable classifier reaches an Area under the ROC Curve\nvalue of $0.71 \\pm 0.01$ compared to $0.65 \\pm 0.01$ of a Random Forest model,\nand it can potentially reduce the beam time loss by $0.5 \\pm 0.2$ seconds per\ninterlock.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2011.07371",
+    "title": "Real-time Artificial Intelligence for Accelerator Control: A Study at the Fermilab Booster",
+    "abstract": "We describe a method for precisely regulating the gradient magnet power\nsupply at the Fermilab Booster accelerator complex using a neural network\ntrained via reinforcement learning. We demonstrate preliminary results by\ntraining a surrogate machine-learning model on real accelerator data to emulate\nthe Booster environment, and using this surrogate model in turn to train the\nneural network for its regulation task. We additionally show how the neural\nnetworks to be deployed for control purposes may be compiled to execute on\nfield-programmable gate arrays. This capability is important for operational\nstability in complicated environments such as an accelerator facility.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2009.06454",
+    "title": "Surrogate Modeling of the CLIC Final-Focus System using Artificial Neural Networks",
+    "abstract": "Artificial neural networks can be used for creating surrogate models that can\nreplace computationally expensive simulations. In this paper, a surrogate model\nwas created for a subset of the Compact Linear Collider (CLIC) final-focus\nsystem. By training on simulation data, we created a model that maps sextupole\noffsets to luminosity and beam sizes, thus replacing computationally intensive\ntracking and beam-beam simulations. This model was then used for optimizing the\nparameters of a random walk procedure for sextupole alignment.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2006.09913",
+    "title": "Introduction to Machine Learning for Accelerator Physics",
+    "abstract": "This pair of CAS lectures gives an introduction for accelerator physics\nstudents to the framework and terminology of machine learning (ML). We start by\nintroducing the language of ML through a simple example of linear regression,\nincluding a probabilistic perspective to introduce the concepts of maximum\nlikelihood estimation (MLE) and maximum a priori (MAP) estimation. We then\napply the concepts to examples of neural networks and logistic regression. Next\nwe introduce non-parametric models and the kernel method and give a brief\nintroduction to two other machine learning paradigms, unsupervised and\nreinforcement learning. Finally we close with example applications of ML at a\nfree-electron laser.",
+    "venue": "arXiv",
+    "year": 2020,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:1910.14220",
+    "title": "Machine learning for design optimization of storage ring nonlinear dynamics",
+    "abstract": "A novel approach to expedite design optimization of nonlinear beam dynamics\nin storage rings is proposed and demonstrated in this study. At each iteration,\na neural network surrogate model is used to suggest new trial solutions in a\nmulti-objective optimization task. The surrogate model is then updated with the\nnew solutions, and this process is repeated until the final optimized solution\nis obtained. We apply this approach to optimize the nonlinear beam dynamics of\nthe SPEAR3 storage ring, where sextupole knobs are adjusted to simultaneously\nimprove the dynamic aperture and the momentum aperture. The approach is shown\nto converge to the Pareto front considerably faster than the genetic and\nparticle swarm algorithms.",
+    "venue": "arXiv",
+    "year": 2019,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:1910.07648",
+    "title": "Studies in Applying Machine Learning to LLRF and Resonance Control in Superconducting RF Cavities",
+    "abstract": "Superconducting Radio-Frequency (SRF) cavities operating in continuous wave\n(CW) mode and with low beam loading are devices characterized by a high loaded\nquality factor, in the order of 10^7, and narrow bandwidth, in the order of 10\nHz. The Low Level RF (LLRF) and resonance control systems of SRF cavities\nbecome a fundamental component of the entire system operation and in general\nhas very tight stability requirements on the amplitude, phase and resonance\nfrequency of the cavity. Microphonics plays an important role in cavity\ndetuning, which results in more power needed to achieve the desired gradient.\nActive control approaches to reduce detuning in SRF cavities using\npiezoelectric actuators have shown promising results. Furthermore, Machine\nLearning (ML) techniques have also shown important capabilities to improve\nexisting PID controllers. Specifically, Neural Networks (NN) can be used to\nfind optimal PID gains and improve performance of traditional control systems.\nIn this research, we develop new approaches to improve existing LLRF and\nresonance control systems with ML as a tool to find the optimal gains. We\ninvestigate these approaches using the LLRF control system intended for\nLCLS-II.",
+    "venue": "arXiv",
+    "year": 2019,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:1709.02109",
+    "title": "Machine learning for analysis of plasma driven Ion source",
+    "abstract": "Recently, neural networks have found many applications in different fields\nincluding Genetics, Pharmacy, Astrophysics and High Energy Physics [1-3]. In\nthe field of accelerator physics it has been used for control systems [4]. In\nthis paper we present the results based on machine learning techniques\nmotivated to predict the behaviour of ion source in terms of composition of the\nion beam while using hydrogen gas to produce $H^+$ ions. In the framework of\nthe stellarator type Figure-8 Storage Ring (F8SR) project, a volume type ion\nsource was designed for the low energy ion beam transport experiments. In a\nfirst step the functioning of this ion source was studied and the results were\npublished, but only small number of measurements were analysed as the main\nrequirement for the on going experiment was fulfilled. Though at a later stage,\nmore number of measurements were recorded with larger parameter space to\ninvestigate the properties of extracted ion beams from this source further.\nWith recent interests and improved techniques in the applications of machine\nlearning algorithms data analysis using neural network has been applied to\nstudy the ion beams from this ion source.",
+    "venue": "arXiv",
+    "year": 2018,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:1612.05662",
+    "title": "First Steps Toward Incorporating Image Based Diagnostics Into Particle Accelerator Control Systems Using Convolutional Neural Networks",
+    "abstract": "At present, a variety of image-based diagnostics are used in particle\naccelerator systems. Often times, these are viewed by a human operator who then\nmakes appropriate adjustments to the machine. Given recent advances in using\nconvolutional neural networks (CNNs) for image processing, it should be\npossible to use image diagnostics directly in control routines (NN-based or\notherwise). This is especially appealing for non-intercepting diagnostics that\ncould run continuously during beam operation. Here, we show results of a first\nstep toward implementing such a controller: our trained CNN can predict\nmultiple simulated downstream beam parameters at the Fermilab Accelerator\nScience and Technology (FAST) facility's low energy beamline using simulated\nvirtual cathode laser images, gun phases, and solenoid strengths.",
+    "venue": "arXiv",
+    "year": 2016,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:1610.06151",
+    "title": "Neural Networks for Modeling and Control of Particle Accelerators",
+    "abstract": "We describe some of the challenges of particle accelerator control, highlight\nrecent advances in neural network techniques, discuss some promising avenues\nfor incorporating neural networks into particle accelerator control systems,\nand describe a neural network-based control system that is being developed for\nresonance control of an RF electron gun at the Fermilab Accelerator Science and\nTechnology (FAST) facility, including initial experimental results from a\nbenchmark controller.",
+    "venue": "arXiv",
+    "year": 2016,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.1088/2632-2153/adc221",
+    "title": "Harnessing the power of gradient-based simulations for multi-objective optimization in particle accelerators",
+    "abstract": "Particle accelerator operation requires simultaneous optimization of multiple objectives. Multi-objective optimization (MOO) is particularly challenging due to trade-offs between the objectives. Evolutionary algorithms, such as genetic algorithms (GAs), have been leveraged for many optimization problems, however, they do not apply to complex control problems by design. This paper demonstrates the power of differentiability for solving MOO problems in particle accelerators using a deep differentiable reinforcement learning (DDRL) algorithm. We compare the DDRL algorithm with model-free reinforcement learning (MFRL), GA, and Bayesian optimization (BO) for simultaneous optimization of heat load and trip rates in the continuous electron beam accelerator facility. The underlying problem enforces strict constraints on both individual states and actions as well as cumulative (global) constraints on energy requirements of the beam. Using historical accelerator data, we develop a physics-based surrogate model which is differentiable and allows for back-propagation of gradients. The results are evaluated in the form of a Pareto-front with two objectives. We show that the DDRL outperforms MFRL, BO, and GA on high dimensional problems.",
+    "venue": "Mach.Learn.Sci.Tech.",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2101.08359",
+    "title": "BOOSTR: A Dataset for Accelerator Control Systems",
+    "abstract": "The Booster Operation Optimization Sequential Time-series for Regression\n(BOOSTR) dataset was created to provide a cycle-by-cycle time series of\nreadings and settings from instruments and controllable devices of the Booster,\nFermilab's Rapid-Cycling Synchrotron (RCS) operating at 15~Hz. BOOSTR provides\na time series from 55 device readings and settings that pertain most directly\nto the high-precision regulation of the Booster's gradient magnet power supply\n(GMPS). To our knowledge, this is one of the first well-documented datasets of\naccelerator device parameters made publicly available. We are releasing it in\nthe hopes that it can be used to demonstrate aspects of artificial intelligence\nfor advanced control systems, such as reinforcement learning and autonomous\nanomaly detection.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2504.06469",
+    "title": "AI-Assisted Transport of Radioactive Ion Beams",
+    "abstract": "Beams of radioactive heavy ions allow researchers to study rare and unstable\natomic nuclei, shedding light into the internal structure of exotic nuclei and\non how chemical elements are formed in stars. However, the extraction and\ntransport of radioactive beams rely on time-consuming expert-driven tuning\nmethods, where hundreds of parameters are manually optimized. Here, we\nintroduce a system that employs Artificial Intelligence (AI), specifically\nutilizing Bayesian Optimization, to assist in the transport process of\nradioactive beams. We apply our methodology to real-life scenarios showing\nadvantages when compared with standard tuning methods. This AI-assisted\napproach can be extended to other radioactive beam facilities around the world\nto improve operational efficiency and enhance scientific output.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2312.05667",
+    "title": "Bayesian Optimization Algorithms for Accelerator Physics",
+    "abstract": "Accelerator physics relies on numerical algorithms to solve optimization\nproblems in online accelerator control and tasks such as experimental design\nand model calibration in simulations. The effectiveness of optimization\nalgorithms in discovering ideal solutions for complex challenges with limited\nresources often determines the problem complexity these methods can address.\nThe accelerator physics community has recognized the advantages of Bayesian\noptimization algorithms, which leverage statistical surrogate models of\nobjective functions to effectively address complex optimization challenges,\nespecially in the presence of noise during accelerator operation and in\nresource-intensive physics simulations. In this review article, we offer a\nconceptual overview of applying Bayesian optimization techniques towards\nsolving optimization problems in accelerator physics. We begin by providing a\nstraightforward explanation of the essential components that make up Bayesian\noptimization techniques. We then give an overview of current and previous work\napplying and modifying these techniques to solve accelerator physics\nchallenges. Finally, we explore practical implementation strategies for\nBayesian optimization algorithms to maximize their performance, enabling users\nto effectively address complex optimization challenges in real-time beam\ncontrol and accelerator design.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2103.10299",
+    "title": "SPIRAL2 Cryomodules Models: a Gateway to Process Control and Machine Learning",
+    "abstract": "From simple physical systems to full production lines, numerical models could\nbe used to minimize downtime and to optimize performances. In this article, the\nsystem of interest is the SPIRAL2 (Syst\\`eme de Production d'Ions RAdioactifs\nen Ligne de 2e g\\'en\\'eration) particles accelerator cryogenic system. This\npaper illustrates three totally different applications based on a SPIRAL2\ncryostat model: optimal controller synthesis, virtual sensor synthesis and\nanomaly detection. The tow firsts applications have been deployed on the\nsystem. Experimental results are used to illustrate the benefits of such\napplications.",
+    "venue": "arXiv",
+    "year": 2021,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2208.07267",
+    "title": "Predicting Beam Transmission Using 2-Dimensional Phase Space Projections Of Hadron Accelerators",
+    "abstract": "We present a method to compressed the 2D transverse phase space projections\nfrom a hadron accelerator and use that information to predict the beam\ntransmission. This method assumes that it is possible to obtain at least three\nprojections of the 4D transverse phase space and that an accurate simulation\nmodel is available for the beamline. Using a simulated model we show that, a\nprocedure using a convolutional autoencoder can be trained to reduce\nphase-space information which can later be used to predict the beam\ntransmission. Finally, we argue that although using projections from a\nrealistic non-linear distribution produces less accurate results, the method\nstill generalizes well.",
+    "venue": "arXiv",
+    "year": 2022,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:1903.07759",
+    "title": "Machine Learning for Orders of Magnitude Speedup in Multi-Objective Optimization of Particle Accelerator Systems",
+    "abstract": "High-fidelity physics simulations are powerful tools in the design and\noptimization of charged particle accelerators. However, the computational\nburden of these simulations often limits their use in practice for design\noptimization and experiment planning. It also precludes their use as online\nmodels tied directly to accelerator operation. We introduce an approach based\non machine learning to create nonlinear, fast-executing surrogate models that\nare informed by a sparse sampling of the physics simulation. The models are\n10^6 to 10^7 times more efficient to execute.We also demonstrate that these\nmodels can be reliably used with multi-objective optimization to obtain\norders-of-magnitude speedup in initial design studies and experiment planning.\nFor example, we required 132 times fewer simulation evaluations to obtain an\nequivalent solution for our main test case, and initial studies suggest that\nbetween 330 to 550 times fewer simulation evaluations are needed when using an\niterative retraining process. Our approach enables new ways for high-fidelity\nparticle accelerator simulations to be used, at comparatively little\ncomputational cost.",
+    "venue": "arXiv",
+    "year": 2020,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2006.06562",
+    "title": "Superconducting radio-frequency cavity fault classification using machine learning at Jefferson Laboratory",
+    "abstract": "We report on the development of machine learning models for classifying C100\nsuperconducting radio-frequency (SRF) cavity faults in the Continuous Electron\nBeam Accelerator Facility (CEBAF) at Jefferson Lab. CEBAF is a continuous-wave\nrecirculating linac utilizing 418 SRF cavities to accelerate electrons up to 12\nGeV through 5-passes. Of these, 96 cavities (12 cryomodules) are designed with\na digital low-level RF system configured such that a cavity fault triggers\nwaveform recordings of 17 RF signals for each of the 8 cavities in the\ncryomodule. Subject matter experts (SME) are able to analyze the collected\ntime-series data and identify which of the eight cavities faulted first and\nclassify the type of fault. This information is used to find trends and\nstrategically deploy mitigations to problematic cryomodules. However manually\nlabeling the data is laborious and time-consuming. By leveraging machine\nlearning, near real-time (rather than post-mortem) identification of the\noffending cavity and classification of the fault type has been implemented. We\ndiscuss performance of the ML models during a recent physics run. Results show\nthe cavity identification and fault classification models have accuracies of\n84.9% and 78.2%, respectively.",
+    "venue": "arXiv",
+    "year": 2020,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:1911.01538",
+    "title": "Online tuning and light source control using a physics-informed Gaussian process Adi",
+    "abstract": "Operating large-scale scientific facilities often requires fast tuning and\nrobust control in a high dimensional space. In this paper we introduce a new\nphysics-informed optimization algorithm based on Gaussian process regression.\nOur method takes advantage of the existing domain knowledge in the form of\nrealizations of a physics model of the observed system. We have applied a\nphysics-informed Gaussian Process method experimentally at the SPEAR3 storage\nring to demonstrate online accelerator optimization. This method outperforms\nGaussian Process trained on data as well as the standard approach routinely\nused for operation, in terms of convergence speed and optimal point. The\nproposed method could be applicable to automatic tuning and control of other\ncomplex systems, without a prerequisite for any observed data.",
+    "venue": "arXiv",
+    "year": 2019,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2009.12835",
+    "title": "Accurate and confident prediction of electron beam longitudinal properties using spectral virtual diagnostics",
+    "abstract": "Longitudinal phase space (LPS) provides a critical information about electron\nbeam dynamics for various scientific applications. For example, it can give\ninsight into the high-brightness X-ray radiation from a free electron laser.\nExisting diagnostics are invasive, and often times cannot operate at the\nrequired resolution. In this work we present a machine learning-based Virtual\nDiagnostic (VD) tool to accurately predict the LPS for every shot using\nspectral information collected non-destructively from the radiation of\nrelativistic electron beam. We demonstrate the tool's accuracy for three\ndifferent case studies with experimental or simulated data. For each case, we\nintroduce a method to increase the confidence in the VD tool. We anticipate\nthat spectral VD would improve the setup and understanding of experimental\nconfigurations at DOE's user facilities as well as data sorting and analysis.\nThe spectral VD can provide confident knowledge of the longitudinal bunch\nproperties at the next generation of high-repetition rate linear accelerators\nwhile reducing the load on data storage, readout and streaming requirements.",
+    "venue": "arXiv",
+    "year": 2020,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.1103/bhpv-bcqk",
+    "title": "Symplectic machine learning model for fast simulation of space-charge effects",
+    "abstract": "Symplectic simulation of space-charge effects is crucial for the design and operation of high-intensity particle accelerators. Traditional methods for simulating these effects are often computationally expensive, resulting in significant overhead. In this work, we introduce a generative model based on a U-Net architecture within a generative adversarial network framework to efficiently simulate space-charge effects. The model is trained to predict the transverse multiparticle space-charge Hamiltonian, which can be physically computed using a gridless spectral method. The one-step symplectic transverse transfer map for the particles is then obtained by differentiating the predicted Hamiltonian. Benchmarking results demonstrate that this generative model achieves an order of magnitude higher computational efficiency compared to the spectral method, providing a highly efficient alternative for simulating space-charge effects with a large number of particles. By maintaining symplecticity, the model effectively preserves the phase-space structure and mitigates nonphysical errors in long-term simulations. This model has been integrated into jutrack, a novel autodifferentiable accelerator modeling code developed in the julia programming language.",
+    "venue": "Phys.Rev.Accel.Beams",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.1103/physrevaccelbeams.28.042801",
+    "title": "Application of ensemble machine learning algorithms and filtering techniques in slow orbit feedback systems of electron storage rings",
+    "abstract": "Orbit stability is a critical performance metric for modern synchrotron radiation facilities and colliders, necessitating effective orbit correction and slow orbit feedback systems. In recent years, innovative orbit feedback methods leveraging neural networks have been progressively implemented, demonstrating improved performance. BEPCII has also attempted to implement an orbit feedback system based on neural networks. Furthermore, we have noted that orbit stability is significantly affected by noises. To address the impact of noises, we introduced the Kalman filtering method into the orbit feedback system and combined it with the existing neural network framework, creating a dual neural network orbit feedback system. This innovative approach has led to further improvements in overall orbit stability.",
+    "venue": "Phys.Rev.Accel.Beams",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.1103/csvm-858f",
+    "title": "Reconstructing time-of-flight detector values of angular streaking using machine learning",
+    "abstract": "Angular streaking experiments enable for experimentation in the attosecond regions. However, the deployed time-of-flight (TOF) detectors are susceptible to noise and failure. These shortcomings make the outputs of the TOF detectors hard to understand for humans and further processing, such as, for example, the extraction of beam properties. In this article, we present an approach to remove high noise levels and reconstruct up to three failed TOF detectors from an arrangement of 16 TOF detectors. Due to its fast evaluation time, the presented method is applicable online during a running experiment. It is trained with simulation data, and we show the results of denoising and reconstruction of our method on real-world experiment data.",
+    "venue": "Phys.Rev.Accel.Beams",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ibic2024-wep47",
+    "title": "Deep learning framework for fault detection in accelerators",
+    "abstract": "The main goal of NSRC SOLARIS is to provide the scientific community with high-quality synchrotron light. To achieve this, it is necessary to constantly monitor many subsystems responsible for beam stability and to analyze data about the beam itself from various diagnostic beamlines. This work presents an in-depth analysis of multi-modal, deep learning-based frameworks for fault detection within big research infrastructures, with a specific focus on accelerator facilities. The study explores diverse approaches and architectures for identifying anomalies indicating potential faults in operation. At the present stage, a binary classification is performed: stable beam operation or unstable beam operation / no beam with the accuracy of 90%. The models and the results obtained so far are discussed, along with plans for future development.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-linac2024-tupb006",
+    "title": "Machine learning-based non-destructive measurement of bunch length at FRIB",
+    "abstract": "A machine learning-based virtual diagnostic method for measuring the longitudinal phase space is proposed. Utilizing multiple measurements of bunch length from the Facility for Rare Isotope Beams (FRIB) accelerator, beam parameters are fitted with a concrete simulation model. A neural network model is trained to learn the correlations between the signals from beam position monitors (BPMs) and the bunch length. This model enables the rapid prediction of bunch length at BPM locations without compromising beam quality.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-linac2024-tuaa005",
+    "title": "Beam emittance and Twiss parameters from pepper-pot images using physically informed neural nets",
+    "abstract": "In the field of accelerator physics, the quality of a particle beam is a multifaceted concept, encompassing characteristics like energy, current, profile, and pulse duration. Among these, the emittance and Twiss parameters—defining the size, shape, and orientation of the beam in phase space—serve as important indicators of beam quality. Prior studies have shown that carefully calibrated statistical methods can extract emittance and Twiss parameters from pepper-pot emittance meter images. Our research aimed to retrieve these parameters with machine learning (ML) from a transverse image of the beam after its propagation through a pepper-pot grid and subsequent contact with a scintillating plate. We applied a Convolutional Neural Network (CNN) to extract the x and y emittances and Twiss parameters (α and β), producing a six-dimensional output by simply looking at the image without calibration information. The extraction of divergence-dependent parameters, such as α and emittance, from a single image presented a challenge, resulting in a large Symmetric Mean Absolute Percentage Error (SMAPE) of 30%. To mitigate this issue, our novel method that incorporated image data from two points along the particles' propagation path yielded promising results. β prediction achieved a low SMAPE of 3%, while α and emittance predictions were realized with a 15% SMAPE. Our findings suggest the potential for improvement in ML beam quality assessment through multi-point image data analysis.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-linac2024-thpb068",
+    "title": "Advancements in backwards differentiable beam dynamics simulations for accelerator design, model calibration, and machine learning",
+    "abstract": "Many accelerator physics problems such as beamline design, beam dynamics model calibration or interpreting experimental measurements rely on solving an optimization problem that use a simulation of beam dynamics. However, it is difficult to solve high dimensional optimization problems using current beam dynamics simulations because calculating gradients of simulated objectives with respect to input parameters is computationally expensive in high dimensions. To address this problem, backwards differentiable beam dynamics simulations have been developed that enable computationally inexpensive calculations of objective gradients that are independent of the number of input parameters. In this work, we highlight current and future applications of differentiable beam dynamics simulations in accelerator physics, such as improving accelerator design, model calibration, and machine learning. We also describe current collaborative efforts between SLAC, DESY, KIT, and LBNL to implement fast, backwards differentiable beam dynamics simulations in Python. These tools will enable unprecedented improvements in optimization efficiency and speed when using beam dynamics simulations, leading to enhanced control and detailed understanding of physical accelerator systems.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-linac2024-tupb075",
+    "title": "Advanced algorithms for linear accelerator design and operation",
+    "abstract": "In this paper, we investigate the usage of advanced algorithms adapted for optimizing the design and operation of different linear accelerators (LINACs), notably the superconducting linac ALPI at INFN-LNL and the ANTHEM BNCT facility to be constructed at Caserta, Italy. Utilizing various intelligent algorithms and machine learning techniques such as Bayesian optimization, genetic algorithms, particle swarm optimization, and surrogate modeling with artificial neural networks, we aim to enhance the design efficiency, operational reliability and adaptability of linear accelerators. Through simulations and case studies, we demonstrate the effectiveness and practical implications of these algorithms for optimizing LINAC performances across diverse applications.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-linac2024-wexa005",
+    "title": "Adaptive machine learning with hard physics constraints and generative diffusion for 6D phase space diagnostics",
+    "abstract": "Machine learning (ML) tools have been growing in popularity for accelerator applications, but still struggle with time varying systems, for which they require lengthy brute-force re-training. LANL has developed generative machine learning (ML)-based tools, that utilize adaptive model independent feedback control theory together with hard physics constraints, to make the tools much more robust to distribution shift. These adaptive ML tools are able to extrapolate much further beyond the span of the training data and are thus much more robust for time-varying systems. This talk will give a broad overview of the challenges of various time-varying accelerator systems at various accelerator facilities (known as systems with distribution shift in the ML community) and will present adaptive ML tools for 6D phase space diagnostics of intense charged particle beams. The talk will give a general overview of diffusion-based generative models and also adaptive latent space tuning, which is the novel method we have developed for adaptive ML, and how we are strictly enforcing hard physics constraints in our ML tools, which traditional ML tools lack. We demonstrate our general methods for various accelerators: the 5-meter long ultra-fast electron diffraction (UED) HiRES compact accelerator at LBNL, the ~kilometer long plasma wakefield accelerator FACET-II at SLAC, and the LANL ion accelerator LANSCE.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "arxiv:2409.06336",
+    "title": "Towards Agentic AI on Particle Accelerators",
+    "abstract": "As particle accelerators grow in complexity, traditional control methods face\nincreasing challenges in achieving optimal performance. This paper envisions a\nparadigm shift: a decentralized multi-agent framework for accelerator control,\npowered by Large Language Models (LLMs) and distributed among autonomous\nagents. We present a proposition of a self-improving decentralized system where\nintelligent agents handle high-level tasks and communication and each agent is\nspecialized to control individual accelerator components.\n  This approach raises some questions: What are the future applications of AI\nin particle accelerators? How can we implement an autonomous complex system\nsuch as a particle accelerator where agents gradually improve through\nexperience and human feedback? What are the implications of integrating a\nhuman-in-the-loop component for labeling operational data and providing expert\nguidance? We show three examples, where we demonstrate the viability of such\narchitecture.",
+    "venue": "Journal",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.18429/jacow-ecris2024-mop11",
+    "title": "Continuous data-driven control of the GTS-LHC ion source at CERN",
+    "abstract": "Recent advances with the CERN infrastructure for machine learning allows to deploy state-of-the-art data-driven control algorithms for stabilising and optimising particle accelerator systems. This contribution summarises the results of the first tests with different continuous control algorithms to optimise the intensity out of the CERN LINAC3 source. The task is particularly challenging due to the different latencies for control parameters that range from instantaneous response, to full response after only ~30 minutes. The next steps and a vision towards full deployment and autonomous source control will also be discussed.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2024-tups56",
+    "title": "Machine learning-based extraction of longitudinal beam parameters in the LHC",
+    "abstract": "Accurate knowledge of beam parameters is essential for optimizing the performance of particle accelerators like the Large Hadron Collider (LHC). An initial machine-learning (ML) model for the reconstruction of the longitudinal distribution has been extended to extract the main parameters of multiple bunches at LHC injection. The extended model utilizes an encoder-decoder architecture to analyze sets of longitudinal profile measurements. Its development was partially driven by the need of a real-time beam energy error estimate, which was not directly available in the past. The derived beam parameters moreover include injection phase error, bunch length and intensity in the LHC, as well as the RF voltages at extraction from the Super Proton Synchrotron (SPS) and at capture in the LHC. In this paper, we compare the results of the ML model with conventional measurements of bunch length and energy error, from the beam quality monitor (BQM) and the orbit acquisition system, respectively. These benchmarks demonstrate the potential of applying the ML model for operational exploitation in LHC.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2024-thpr29",
+    "title": "High fidelity numerical modelling and condition monitoring applied to septum magnets at CERN",
+    "abstract": "The CERN Accelerator Beam Transfer group has recently launched a study to investigate the life cycles of pulsed septum magnets. The development is aiming to enhance the prediction of anomalies, leading to reduced life cycles of these beam transfer equipment. For this reason, the standard vacuum operated, direct drive septa magnet has been chosen to investigate critical design features. In the initial project phase, a so called High-Fidelity (HF) numerical simulation has been carried out, providing insight on critical components, like brazed joints, reducing the fatigue life. In parallel a dedicated test setup with state-of-the-art instrumentation has been developed, allowing to confirm the predicted system response. The novel approach for the beam transfer equipment will allow to review presently established design criteria. In a further iteration, the project is now aiming to demonstrate an anomaly detection and their prediction based on novel machine learning techniques. This paper presents the initial phase of developing the HF model, as well as the results of the instrumented magnet tests which will be compared to results from the numerical simulations.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2024-thpg85",
+    "title": "Updates to Xopt for online accelerator optimization and control",
+    "abstract": "The recent development of advanced black box optimization algorithms has promised order of magnitude improvements in optimization speed when solving accelerator physics problems. These algorithms have been implemented in the python package Xopt, which has been used to solve online and offline accelerator optimization problems at a wide number of facilities, including at SLAC, Argonne, BNL, DESY, ESRF, and others. In this work, we describe updates to the Xopt framework that expand its capabilities and improves optimization performance in solving online optimization problems. We also discuss how Xopt has been incorporated into the Badger graphical user interface that allows easy access to these advanced control algorithms in the accelerator control room. Finally, we describe how to integrate machine learning based surrogate models provided by the LUME-model package into online optimization via Xopt.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2024-tups74",
+    "title": "Breaking new ground in data-intensive science: first insights from the LIV.INNO center for doctoral training",
+    "abstract": "LIV.INNO is a new initiative which will train around 40 PhD students over three cohorts. It fosters innovation in data-intensive science, serves as a dynamic platform for collaboration between leading research organizations and the next generation of scientists. Within this context, several projects focus on research that intersects between data science and particle accelerator research.This contribution showcases the early results from studies into optical transition radiation diagnostics for low energy ion beams, tailored Monte Carlo simulations for reactor ap-plications, and the reconstruction of the transverse beam distribution using machine learning. These early insights highlight the many benefits from collaborative R&D in data-rich accelerator environments. A summary of the training events offered by the center is also given.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2024-tups62",
+    "title": "The reinforcement learning for autonomous accelerators collaboration",
+    "abstract": "Reinforcement Learning (RL) is a unique learning paradigm that is particularly well-suited to tackle complex control tasks, can deal with delayed consequences, and can learn from experience without an explicit model of the dynamics of the problem. These properties make RL methods extremely promising for applications in particle accelerators, where the dynamically evolving conditions of both the particle beam and the accelerator systems must be constantly considered. While the time to work on RL is now particularly favorable thanks to the availability of high-level programming libraries and resources, its implementation in particle accelerators is not trivial and requires further consideration. In this context, the Reinforcement Learning for Autonomous Accelerators (RL4AA) international collaboration was established to consolidate existing knowledge, share experiences and ideas, and collaborate on accelerator-specific solutions that leverage recent advances in RL. Here we report on two collaboration workshops, RL4AA'23 and RL4AA'24, which took place in February 2023 at the Karlsruhe Institute of Technology and in February 2024 at the Paris-Lodron Universität Salzburg.",
+    "venue": "JACoW",
+    "year": 2024,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2023-thpl039",
+    "title": "Surrogate Model for Linear Accelerator: A fast Neural Network approximation of ThomX's simulator",
+    "abstract": "Accelerator physics simulators accurately predict the propagation of a beam in a particle accelerator, taking into account the particle interactions (a.k.a. space charge) inside the beam. A precise estimation of the space charge is required to understand the potential errors causing the difference between simulations and reality. Unfortunately, the space charge is computationally expensive, needing the simulation of a few dozen thousand particles to obtain an accurate prediction. This paper presents a Machine Learning-based approximation of the simulator output, a.k.a. surrogate model. Such an inexpensive surrogate model can support multiple experiments in parallel, allowing the wide exploration of the simulator control parameters. While the state of the art is limited to considering a few such parameters with a restricted range, the proposed approach, LinacNet, scales up to one hundred parameters with wide domains. LinacNet uses a large-size particle cloud to represent the beam and estimates the particle behavior using a dedicated neural network architecture reflecting the architecture of a Linac and its different physical regimes.",
+    "venue": "IPAC 2023 - 14th International Particle Accelerator Conference",
+    "year": 2023,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "arxiv:2303.12873",
+    "title": "From Compact Plasma Particle Sources to Advanced Accelerators with Modeling at Exascale",
+    "abstract": "Developing complex, reliable advanced accelerators requires a coordinated,\nextensible, and comprehensive approach in modeling, from source to the end of\nbeam lifetime. We present highlights in Exascale Computing to scale accelerator\nmodeling software to the requirements set for contemporary science drivers. In\nparticular, we present the first laser-plasma modeling on an exaflop\nsupercomputer using the US DOE Exascale Computing Project WarpX. Leveraging\ndevelopments for Exascale, the new DOE SCIDAC-5 Consortium for Advanced\nModeling of Particle Accelerators (CAMPA) will advance numerical algorithms and\naccelerate community modeling codes in a cohesive manner: from beam source,\nover energy boost, transport, injection, storage, to application or\ninteraction. Such start-to-end modeling will enable the exploration of hybrid\naccelerators, with conventional and advanced elements, as the next step for\nadvanced accelerator modeling. Following open community standards, we seed an\nopen ecosystem of codes that can be readily combined with each other and\nmachine learning frameworks. These will cover ultrafast to ultraprecise\nmodeling for future hybrid accelerator design, even enabling virtual test\nstands and twins of accelerators that can be used in operations.",
+    "venue": "20th Advanced Accelerator Concepts Workshop (AAC’22)",
+    "year": 2023,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:physics/0008030",
+    "title": "RBF neural net based classifier for the AIRIX accelerator fault diagnosis",
+    "abstract": "The AIRIX facility is a high current linear accelerator (2-3.5kA) used for\nflash-radiography at the CEA of Moronvilliers France. The general background of\nthis study is the diagnosis and the predictive maintenance of AIRIX. We will\npresent a tool for fault diagnosis and monitoring based on pattern recognition\nusing artificial neural network. Parameters extracted from the signals recorded\non each shot are used to define a vector to be classified. The principal\ncomponent analysis permits us to select the most pertinent information and\nreduce the redundancy. A three layer Radial Basis Function (RBF) neural network\nis used to classify the states of the accelerator. We initialize the network by\napplying an unsupervised fuzzy technique to the training base. This allows us\nto determine the number of clusters and real classes, which define the number\nof cells on the hidden and output layers of the network. The weights between\nthe hidden and the output layers, realising the non-convex union of the\nclusters, are determined by a least square method. Membership and ambiguity\nrejection enable the network to learn unknown failures, and to monitor\naccelerator operations to predict future failures. We will present the first\nresults obtained on the injector.",
+    "venue": "arXiv",
+    "year": 2000,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2510.09376",
+    "title": "A Living Review Pipeline for AI/ML Applications in Accelerator Physics",
+    "abstract": "We present an open-source pipeline for generating a \\emph{living review} of\nartificial intelligence (AI) and machine learning (ML) applications in\naccelerator physics and technologies. Traditional review articles provide\nstatic snapshots that are quickly outdated by the rapid pace of research. The\npresented system automatically harvests publications from multiple\nbibliographic sources (arXiv, InspireHEP, HAL, OpenAlex, Crossref, and\nSpringer), deduplicates entries, applies semantic filtering to ensure\naccelerator and ML relevance, and classifies papers into thematic categories.\nThe resulting curated dataset was exported in JSON, HTML, PDF, and Bib\\TeX\nformats, enabling continuous updates and integration with web frameworks. We\ndescribe the methodology, including semantic similarity filtering using\nsentence-transformer embeddings, threshold calibration, and expert-informed\nclassification. The results demonstrate the robust filtering of $\\sim$12000 raw\npapers/month into a focused corpus of $\\sim$2\\% relevant works. The pipeline\nprovides the basis for an evolving community-driven review of AI/ML in\naccelerator science.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2510.26805",
+    "title": "Reinforcement Learning for Accelerator Beamline Control: a simulation-based approach",
+    "abstract": "Particle accelerators play a pivotal role in advancing scientific research,\nyet optimizing beamline configurations to maximize particle transmission\nremains a labor-intensive task requiring expert intervention. In this work, we\nintroduce RLABC (Reinforcement Learning for Accelerator Beamline Control), a\nPython-based library that reframes beamline optimization as a reinforcement\nlearning (RL) problem. Leveraging the Elegant simulation framework, RLABC\nautomates the creation of an RL environment from standard lattice and element\ninput files, enabling sequential tuning of magnets to minimize particle losses.\nWe define a comprehensive state representation capturing beam statistics,\nactions for adjusting magnet parameters, and a reward function focused on\ntransmission efficiency. Employing the Deep Deterministic Policy Gradient\n(DDPG) algorithm, we demonstrate RLABC's efficacy on two beamlines, achieving\ntransmission rates of 94% and 91%, comparable to expert manual optimizations.\nThis approach bridges accelerator physics and machine learning, offering a\nversatile tool for physicists and RL researchers alike to streamline beamline\ntuning.",
+    "venue": "arXiv (Cornell University)",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.18429/jacow-hiat2025-tux02",
+    "title": "Automated beam tuning of the TRIUMF ISAC facility",
+    "abstract": "Modern heavy ion accelerators have become more complex, with greater variability in energy, isotope selection, and A/q ratios. In response, TRIUMF has launched a program focused on automating beam tuning and delivery across its accelerator complex. This initiative includes high-level applications, model-based tuning of the accelerator, and the integration of machine learning tools. For example, Bayesian optimization is used to correct beam orbits within the TRIUMF accelerators. This presentation will provide an overview of the program's progress and highlight some exciting new results achieved over the past two years.",
+    "venue": "JACoW",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2025-thpm031",
+    "title": "Beam Energy Forecasting using Machine Learning at the CLEAR accelerator",
+    "abstract": "In particle accelerators, accurate and stable beam parameters are crucial for experimental success. Traditional methods for measuring parameters like beam energy often rely on invasive techniques that disrupt experiments. This paper presents a novel, non-invasive machine learning-based approach to predict beam energy using parasitic measurements, enabling real-time estimation without interference. The method employs a predictive model optimized for one-step-ahead forecasting and uses time-series data decomposition to handle complex beam energy dynamics. Recursive prediction strategies allow the model to anticipate future variations autonomously. Preliminary results from experiments at the CLEAR accelerator demonstrate the model’s ability to capture both slow trends and rapid energy shifts, adapting to diverse experimental needs. These findings showcase the potential of machine learning to measure beam energy, offering a real-time, non-destructive alternative to conventional methods. This approach promises significant advancements in accelerator-based applications, especially where destructive techniques are impractical.",
+    "venue": "JACOW",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2025-thps110",
+    "title": "Advancing accelerator science through data-intensive research and training",
+    "abstract": "The Liverpool Centre for Doctoral Training in Innovation in Data Intensive Science (LIV.INNO) has made significant progress in applying data-intensive methods to accelerator research. This contribution presents research outcomes from the center with a focus on two key projects. The first focuses on optimizing 3D imaging for medical and industrial applications, integrating Monte Carlo simulations and advanced collimation techniques to enhance low-dose, portable X-ray systems, with implications for wider accelerator diagnostics. The second lever-ages deep learning models to reconstruct transverse beam distributions at CERN, addressing challenges in image distortion from multimode optical fibers under high-radiation conditions. The results are connected with wider progress made in machine learning and artificial intelligence for particle accelerators. Furthermore, the paper summarizes the outcomes of several key LIV.INNO events: the STFC Summer School on Data Intensive Science, the LIV.INNO 2024 Industry Showcase and the 2025 AI for Innovation Summit.",
+    "venue": "JACOW",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2025-mopm092",
+    "title": "Machine learning approach to MDI optimization for 3 TeV c.o.m. Muon Collider",
+    "abstract": "The Muon Collider is a proposed future accelerator for very high energy muon collision. Since muons are heavier than electrons, the synchrotron radiation is negligible at this high energy, allowing to build a compact machine able to deliver Multi-TeV c.o.m. energy collisions, enabling precision measurements of the Standard Model quantities and search for new physics. A challenge of a muon beam is the Beam-Induced Background (BIB), a flux of particles in the detector generated by secondary interaction of muon decay products with the accelerator components. To deliver the required physics performance, the Machine Detector Interface design needs to include a shielding for the BIB. The proposed solution consists of cone-shaped tungsten shields inside the detector area. The nozzles reduce the BIB to a manageable level at the cost of reducing the detector acceptance. A careful optimization of the geometry is necessary to further mitigate the BIB and improving the detector acceptance to maximize the physics potential. This contribution aims at discussing the optimization achieved with machine learning algorithms in combination with FLUKA simulations for a 3 TeV c.o.m. Muon Collider.",
+    "venue": "JACOW",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2025-wepm062",
+    "title": "Advances in machine learning inference of dynamic aperture evaluation for the LHC",
+    "abstract": "Dynamic aperture (DA) is a crucial metric for understanding nonlinear beam dynamics and particle stability in circular accelerators like the Large Hadron Collider (LHC) and its future High-Luminosity LHC (HL-LHC) upgrade. Traditional methods for DA evaluation are computationally intensive, requiring extensive tracking of large particle ensembles over many turns. Recent advances in machine learning (ML) have shown that models, particularly architectures like Bidirectional Encoder Representations from Transformers (BERT), can significantly accelerate DA predictions while achieving accuracies comparable to traditional simulations. Enhanced uncertainty quantification techniques further improve model reliability, providing a foundation for robust active learning frameworks. This work presents the latest progress in DA inference, focusing on architectural advances, data preparation, and optimised training techniques. Applied to LHC tracking data, these improvements highlight the importance of high-quality data generation and customised training strategies for enhancing model performance and uncertainty management, paving the way for future HL-LHC studies.",
+    "venue": "JACOW",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2025-thps135",
+    "title": "Machine learning for calibration drift forecasting in superconducting RF cavities",
+    "abstract": "Superconducting radio frequency (SRF) cavities in particle accelerators rely on accurately calibrated RF signals to assess cavity bandwidth and detuning, ensuring optimal performance. In practice, however, calibration drift due to humidity and temperature fluctuations over time poses a significant challenge, potentially resulting in suboptimal operation and reduced efficiency. This study explores how environmental variables such as humidity and temperature affect this phenomenon. Relative humidity, in particular, is difficult to control and has been shown to impact calibration drift strongly. Building on these insights, we introduce machine learning-based approaches to forecast both relative humidity and calibration drift in SRF cavities. By leveraging advanced algorithms and historical data on cavity operation and performance, we develop predictive models that identify patterns and trends indicative of relative humidity and calibration drift. Two approaches are presented in this work, including a polynomial NARMAX model and an attention-based deep neural network. These models enable real-time compensation and automated recalibration, improving system stability and efficiency.",
+    "venue": "JACOW",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ipac2025-thpm017",
+    "title": "Uncertainty-Quantified Machine Model Construction Using Physics-Informed Gaussian Processes and Bayesian Optimization",
+    "abstract": "To construct a closed orbit model for an accelerator ring with intrinsic uncertainty quantification from orbit measurements, a physics-informed Gaussian Process model is proposed based on a stochastic ensemble of MAD-X lattices. Key advantages compared to LOCO (Linear Optics from Closed Orbits) include (1.) uncertainty-enabled orbit prediction in between BPMs (beam position monitors), (2.) fitting of a parameter distribution (dipole-like field errors) which inherently models uncertainty, (3.) incorporation of measurement uncertainty from BPM noise, and (4.) an active learning approach which can be more sample efficient than measuring an orbit response matrix. A case study is presented for the GSI heavy ion synchrotron SIS18 with various simulated applications, in particular constructing an effective machine model with minimal orbit uncertainty around the ring, and orbit correction to achieve minimal deviation at a specific location such as, e.g., the septum to control beam loss during slow extraction. This physics-inspired Gaussian Process regression approach shows potential to be applied to optics correction and further applications beyond closed orbit correction.",
+    "venue": "JACOW",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop011",
+    "title": "Automated RF Phase Adjustment for Beam Stabilization in the Fermilab Linac",
+    "abstract": "The Fermilab Linac experiences longitudinal beam phase drift, leading to increased particle loss, conventionally corrected through labor-intensive manual RF adjustments. This project explores machine learning-based automation for drift correction, employing a prototype-based classification approach. Our model utilizes a 34-dimensional feature set (RF settings and BPM readings) and leverages a 7x27 response matrix for system modeling. To overcome limited real-world data, we generate synthetic data, enhancing model training and generalizability. Custom loss functions, including a surrogate energy-consistent loss and a temporal smoothness constraint, ensure physically plausible drift predictions. The goal is a robust system for autonomous phase adjustments, ensuring stable beam acceleration and reduced manual intervention.",
+    "venue": "Journal",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop039",
+    "title": "Fast Adaptive Neural Control of Resonant Extraction at Fermilab",
+    "abstract": "We present progress on the development of a machine learning (ML) regulation system for third-order resonant extraction of the beam delivered to the Mu2e experiment at Fermilab. We consider classical and ML-based controllers optimized on semi-analytic simulations and provide performance comparisons for several models. Additionally, we discuss the efficiency of each model in training, which has implications for future work on adaptive control. We also discuss progress on developing optimized implementations of ML models for edge-based inference.",
+    "venue": "Journal",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2512.03829",
+    "title": "First Experimental Demonstration of Machine Learning-Based Tuning on the PSI Injector 2 Cyclotron",
+    "abstract": "Reliable operation of high-power proton cyclotrons is a critical requirement for Accelerator Driven Systems (ADS) and other large-scale applications. Beam tuning in such machines is traditionally performed manually, a process that can be slow, non-optimal, and difficult to execute in the presence of faults or changing conditions. To address this, we developed and deployed a machine learning (ML) based tuning framework on the Injector 2 cyclotron at PSI, chosen as an ideal testbed for high-power operation. The system combined a tailored reinforcement learning algorithm with real-time diagnostics and control, and incorporated accelerator-physics inspired adaptations such as an overshoot strategy that reduced magnetic field settling times by nearly a factor of six. Over an extensive 12-day operational test campaign, relatively long in the context of real-time ML experiments, the ML agent successfully tuned the machine across multiple operating points, achieving convergence within hours and maintaining stable beam extraction with reduced losses. Beyond initial tuning, the system was also operated in evaluation mode overnight, where it autonomously monitored and corrected the machine to compensate for drifts, demonstrating robustness and long-term stability. Crucially, the learned policy generalized reliably from low-current training to higher-current operation, underscoring its scalability. These results constitute the first demonstration of ML-assisted tuning on a high-power cyclotron, with direct relevance to ADS-class drivers.",
+    "venue": "arXiv (Cornell University)",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.18429/jacow-icalepcs2025-wesv001",
+    "title": "Xopt and Badger: a machine learning ecosystem for real-time accelerator control and optimization",
+    "abstract": "Machine learning (ML)-based black-box optimization algorithms have demonstrated significant improvements in accelerator optimization speed, often by orders of magnitude. However, deploying these algorithms in real-time facility control remains challenging due to the specialized expertise and infrastructure required. To bridge this gap, we introduce the Xopt ecosystem, a versatile suite of tools designed to make advanced ML-based optimization accessible to the broader accelerator community. This ecosystem includes Xopt, a modular Python framework that facilitates the integration of ML-based optimization algorithms with arbitrary control problems, and Badger, a graphical user interface built on top of Xopt, which enables seamless deployment of ML algorithms in real-time control systems. The Xopt ecosystem has been successfully applied towards solving challenging real-time control problems at leading international accelerator facilities, including SLAC, LBNL, Argonne, Fermilab, BNL, DESY, and ESRF, demonstrating its effectiveness in real-world optimization tasks. In this presentation, we provide an overview of Xopt’s capabilities and illustrate its impact through case studies from SLAC accelerator facilities including LCLS, LCLS-II, and FACET-II.",
+    "venue": "JACOW",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-icalepcs2025-wepd077",
+    "title": "Long short-term memory of recurrent neural network to the analysis of temperature rise on the production target in Hadron Experimental Facility of J-PARC",
+    "abstract": "Hadron Experimental Facility (HEF) is designed to handle intense slow-extraction proton beam from 30-GeV Main Ring (MR) of Japan Proton Accelerator Research Complex (J-PARC). The production target in HEF is operated under severe conditions in which its temperatures periodically vary from 30 to over 300 °C by heat deposit of irradiated beams. In a long term, a careful evaluation of damage to the target and its lifetime is quite important. If the target temperatures are accurately predicted from the existing data, including beam intensity, duration of beam extraction and beam position, it could be possible to verify the cumulative damage by comparing the predicted temperature rise with the measured one. The predicted temperature rise was calculated from the existing data using linear regression with a machine learning library, scikit-learn. However, the predictions of temperature rise by linear regression were not fully satisfactory due to changes of beam optical and accelerator conditions. Therefore, an enhanced prediction method for the temperature rise on the proton target has been developed using Long Short-Term Memory (LSTM), a type of Recurrent Neural Network (RNN) architecture. A systematic study was also conducted to investigate the effects of hyperparameters, including a sequence length and hidden layer. The present paper reports the status of the prediction system of the temperature rise on the production target using the LSTM analysis in detail.",
+    "venue": "JACOW",
+    "year": 2025,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "arxiv:2512.15521",
+    "title": "Autonomous Pressure Control in MuVacAS via Deep Reinforcement Learning and Deep Learning Surrogate Models",
+    "abstract": "The development of nuclear fusion requires materials that can withstand extreme conditions. The IFMIF-DONES facility, a high-power particle accelerator, is being designed to qualify these materials. A critical testbed for its development is the MuVacAS prototype, which replicates the final segment of the accelerator beamline. Precise regulation of argon gas pressure within its ultra-high vacuum chamber is vital for this task. This work presents a fully data-driven approach for autonomous pressure control. A Deep Learning Surrogate Model, trained on real operational data, emulates the dynamics of the argon injection system. This high-fidelity digital twin then serves as a fast-simulation environment to train a Deep Reinforcement Learning agent. The results demonstrate that the agent successfully learns a control policy that maintains gas pressure within strict operational limits despite dynamic disturbances. This approach marks a significant step toward the intelligent, autonomous control systems required for the demanding next-generation particle accelerator facilities.",
+    "venue": "Journal",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2512.15022",
+    "title": "Machine learning-based prediction of magnet errors in storage ring light sources",
+    "abstract": "Magnet errors in storage rings significantly degrade beam performance, impacting the brightness and stability of the light source. Therefore, beam-based correction is crucial for the safe operation of machines and the stability of radiated photons. Unlike traditional correction methods such as linear optics from closed orbit, this paper proposes a machine learning (ML) framework to directly predict quadrupole/sextupole gradient errors and misalignment from beam position monitor-measured optics functions and closed-orbit distortion data. Based on a four-bend achromat storage ring lattice, we generate training datasets through ELEGANT numerical simulations and compare regression performance of Linear Regression, Support Vector Machine, Radial Basis Function Neural Network and Densely Connected Convolutional Network. Results demonstrate that ML models can effectively predict magnet errors and reconstruct ideal optics. This approach offers a novel strategy for accelerating storage ring commissioning and optimization, online diagnostics, and dynamic compensation for next-generation diffraction-limited rings.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2601.10898",
+    "title": "U-Net-based surrogate modeling for attosecond X-ray free-electron lasers",
+    "abstract": "Attosecond X-ray pulse generation in modern X-ray free-electron lasers relies on strongly compressed, precisely tailored electron bunches, making accurate diagnostics and control of the longitudinal phase space (LPS) essential. In the self-chirping scheme, collective effects in the linac generate a strong energy chirp that is converted into high peak current through pre-undulator compression, enabling isolated attosecond pulse generation. Reliable operation of this scheme depends on precise LPS control and fast diagnostics. In this work, we present a U-Net-based neural network surrogate that predicts two-dimensional LPS distributions directly from accelerator settings. The model exhibits excellent agreement with start-to-end simulation results. These results demonstrate the potential of neural network surrogates to facilitate real-time tuning and control in attosecond X-ray pulse generation.",
+    "venue": "arXiv",
+    "year": 2026,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.18429/jacow-ibic2025-tuai02",
+    "title": "Towards continual machine learning for particle accelerators",
+    "abstract": "This talk covers our work on errant beam prognostics at the Spallation Neutron Source (SNS), focusing on the end-to-end process from data collection to the development and deployment of predictive models in specific. A short overview of AIML work done for accelerators and current trends will be presented. We will walk through key steps involved in creating robust Machine Learning (ML) models, including model training, validation, and deployment in an operational setting. In addition to presenting our technical approach, we will share valuable lessons learned, emphasizing the importance of infrastructure to support the continuous adaptation of models to evolving data and system behaviors. This talk will provide insights into the challenges and solutions involved in applying ML to real-world operational environments, with a particular focus on managing data drift and changes in accelerator setup while ensuring model resilience over time.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-tup056",
+    "title": "JuTrack, a Julia-based auto-differentiable accelerator simulation code for advanced dynamics, scientific machine learning and optimization",
+    "abstract": "JuTrack is a high-performance accelerator modeling and particle tracking package developed in the Julia programming language. With compiler-level automatic differentiation (AD), JuTrack enables fast and precise derivative computations for arbitrary differentiable simulation functions. It supports efficient modeling of complex collective effects such as space-charge forces, wakefields, and beam-beam interactions. Beyond conventional tracking simulations, JuTrack also incorporates a machine learning–based module for self-field modeling and convenience interface that brings data-driven and physics-driven model together. In this paper, we demonstrate the capability and performance of JuTrack through a broad set of beam dynamics applications and optimization across various accelerator types, including a synchrotron light source, a heavy-ion linear accelerator, and the colliders. Built on Julia’s high-performance architecture and user-friendly syntax, JuTrack provides a powerful tool for beam dynamics studies and accelerator design optimization.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "arxiv:2603.06689",
+    "title": "High-Resolution Image Reconstruction with Unsupervised Learning and Noisy Data Applied to Ion-Beam Dynamics for Particle Accelerators",
+    "abstract": "Image reconstruction in the presence of severe degradation remains a challenging inverse problem, particularly in beam diagnostics for high-energy physics accelerators. As modern facilities demand precise detection of beam halo structures to control losses, traditional analysis tools have reached their performance limits. This work reviews existing image-processing techniques for data cleaning, contour extraction, and emittance reconstruction, and introduces a novel approach based on convolutional filtering and neural networks with optimized early-stopping strategies in order to control overfitting. Despite the absence of training datasets, the proposed unsupervised framework achieves robust denoising and high-fidelity reconstruction of beam emittance images under low signal-to-noise conditions. The method extends measurable amplitudes beyond seven standard deviations, enabling unprecedented halo resolution.",
+    "venue": "Journal of Instrumentation",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop059",
+    "title": "Machine learning-enhanced infrared imaging for temperature anomaly detection in power supplies",
+    "abstract": "The performance of particle accelerators is critically dependent on the reliability of their power supplies, which can number in the thousands in many facilities. In this work, we present a method for monitoring temperature anomalies in power supplies using infrared (IR) imaging. By applying various machine learning algorithms to the IR imaging data, we develop a reliable anomaly detection system that can improve the uptime of accelerator facilities. This approach enables early detection of potential issues, facilitating predictive maintenance and enhancing overall operational efficiency.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop007",
+    "title": "Anomaly detection of slow-moving variables at LANSCE for improved beam quality",
+    "abstract": "Modern accelerator facilities operate with a large number of variables, many of which can influence beam quality. While most of these variables are constrained within predefined boundary conditions, slow fluctuations over extended periods—from tens of minutes to a full day—can still significantly degrade beam performance. Due to their gradual nature and the difficulty in distinguishing meaningful trends from background noise, such variables often go unnoticed and remain unoptimized by operators for days.This study investigates the use of machine learning algorithms to identify and analyze these slow-moving variables. By applying advanced time-series analysis and feature importance ranking, the proposed approach reveals hidden correlations between slow variable drifts and a key beam quality metric: the ring loss at the Los Alamos Neutron Science Center (LANSCE). The results demonstrate the potential of machine learning to detect subtle anomalies and offer actionable insights to mitigate persistent beam quality issues that can disrupt operations for weeks at a time.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop103",
+    "title": "Online optimizations of NSLS-II Linac and Linac-to-Booster beam lines using machine learning methods",
+    "abstract": "The NSLS-II is a cutting-edge 3 GeV storage ring light source around the world. The electron beam is initially accelerated in a linear accelerator to an energy of 170 MeV and subsequently accelerated in a booster synchrotron to a beam energy of 3 GeV. Therefore, the performance of the Linac and the Linac-to-Booster beam lines is imperative for beam injection to the booster. Online optimization is an effective solution to improve accelerator performance when there is degradation. This paper presents the results of online optimization employing a machine learning method.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop097",
+    "title": "Machine learning-driven computations of 3D Coherent Synchrotron Radiation",
+    "abstract": "Calculating the effects of Coherent Synchrotron Radiation (CSR) is one of the most computationally expensive tasks in accelerator physics. Here, we use convolutional neural networks (CNN's), along with a latent conditional diffusion (LCD) model, trained on physics-based simulations to speed up calculations. Specifically, we produce the 3D CSR wakefields generated by electron bunches in circular orbit in the steady-state condition. Two datasets are used for training and testing the models: wakefields generated by three-dimensional Gaussian electron distributions and wakefields from a sum of up to 25 three-dimensional Gaussian distributions. The CNN's are able to accurately produce the 3D wakefields ~250-1000 times faster than the numerical calculations, while the LCD has a gain of a factor of ~34. We also test the extrapolation and out-of-distribution generalization ability of the models. They generalize well on distributions with larger spreads than what they were trained on, but struggle with smaller spreads.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-weyn02",
+    "title": "Safe extremum seeking for real-time adaptive accelerator control",
+    "abstract": "This talk presents Safe Extremum Seeking (Safe ES), a robust n-dimensional adaptive control method, applied to automatic tuning and optimization tasks of accelerators while guaranteeing that the system remains within safe operating conditions. A key strength of Safe ES is its ability to handle safety measures that are analytically unknown. For instance, the algorithm can adaptively tune quadrupole magnets to achieve a desired beam profile while maintaining safety by keeping beam losses below a user-defined threshold.The presentation provides a comprehensive technical overview of this optimization technique, highlighting its theoretical foundations and practical applications. It includes simulation studies demonstrating its effectiveness for accelerator systems, as well as results from an in-hardware demonstration conducted on the LANSCE accelerator at LANL. Also, the talk explores how Safe ES can be integrated with generative machine learning models to enable adaptive machine learning.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop056",
+    "title": "Machine learning assisted Bayesian calibration of accelerator digital twin from orbit response data",
+    "abstract": "Digital twins of particle accelerators are used to plan and control operations and design data collection campaigns. However, a digital twin relies on parameters that are hard to measure directly, e.g., magnet alignments, power supply transfer functions, magnet nonlinearities, and stray fields. These parameters can be constrained by beam position and profile measurements. We use Bayesian statistical inference to estimate the parameters, and their uncertainties, probabilistically by calibrating the Bmad digital twin to beam measurements. The inference is computationally accelerated using a machine learning emulator of the physical accelerator digital twin trained to a perturbed-parameter ensemble of Bmad simulations. The result is a joint posterior distribution over parameters (control currents, individual magnet transfer function coefficients, and beam monitor errors) which is propagated to uncertainties in predicted beam positions and profiles, which we validate against beam responses measured at the AGS booster at Brookhaven National Laboratory.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop065",
+    "title": "Integrating simulation and machine learning for Proton Storage Ring beam analysis",
+    "abstract": "The Proton Storage Ring (PSR) at the Los Alamos Neutron Science Center (LANSCE) accumulates a 625-μs-long beam and compresses it into a 290-ns-long (base-to-base) short pulse for delivery to the Lujan Center. Due to its high-intensity operation, the PSR also functions as a highly-sensitive mass spectrometer for the entire accelerator complex. Changes in PSR beam losses are more responsive to linac drifts than any other diagnostic system, making continuous monitoring and characterization of the PSR critical to overall performance.Currently, PSR operation is primarily guided by beam loss signals, while key physics parameters—such as the betatron tune, closed orbit, and injection offsets—are typically measured only once per day. Furthermore, Beam Position Monitors (BPMs) can only provide meaningful data a single 290-ns-long injection, requiring dedicated machine time and resulting in operational downtime.However, recent upgrades to both the data acquisition and chopper systems now enable continuous measurements during standard operation. In this work, we employ a Convolutional Neural Network (CNN) trained on simulated data to infer critical beam parameters in real-time. This approach will be tested and implemented during the 2025 run cycle to enable online monitoring and improved control of PSR beam dynamics.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-tup101",
+    "title": "Towards differentiable beam dynamics modeling in BLAST/ImpactX",
+    "abstract": "Differentiable simulations are in demand in accelerator physics, demonstrating order-of-magnitude improvements for complex tasks such as many-parameter optimization for accelerator working points and reconstruction of hard-to-measure quantities. At its core, a differentiable simulation does not only solve a forward problem, but additionally provides gradients of output parameters (e.g. beam parameters) with respect to input parameters (e.g. beamline or source parameters).How to effectively program large dynamic simulations differentiably is still an open question, but there is general consensus that a “single-source” approach aided by automatic differentiation (AD) is desirable. Addressing this, there are a) emerging domain-specific languages in machine learning that are intrinsically differentiable, and b) highly-performing & scalable, general-purpose languages like ISO C++ of existing codes. The challenge of approach a) is syntax specialization, which can limit ease of implementation & performance for physics algorithms, while b) requires additional work for AD.Performance is important for modeling high-order beam dynamics and collective effects in accelerators. We compare the fast, modern codes ImpactX (C++/Python) and Cheetah (PyTorch) using traditional, gradient-free modeling. We then show progress in introducing single-source differentiability in ImpactX using modern compiler techniques, producing performant executables for gradient-based and gradient-free modeling.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop006",
+    "title": "A self-supervised transformer for RF cavity signal denoising",
+    "abstract": "A frequent occurrence within industrial particle accelerator systems is electromagnetic noise accumulating within RF Cavity Sensor readings, attributed to their electromagnetically dirtier operating environments and production, with less of an emphasis on their performance optimization. This phenomenon prevents signals from accurately relaying information to beam operators and specialists. Additionally, noisy signals inhibit the ability for feedback loops to meet their regulation requirements, making machine control much more difficult. Previous work has shown machine learning-based techniques as promising solutions for denoising that maintains signal quality and features. In this paper, we design, implement, and benchmark a self-supervised transformer-based machine learning algorithm that denoises In-Phase and Quadrature (I/Q) RF Cavity Signals without a need for referencing a clean ground-truth.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ibic2025-mopco04",
+    "title": "Machine learning using beam loss monitors for DIAMOND-II",
+    "abstract": "The slow losses measured by Beam Loss Monitors (BLMs) at synchrotron light source facilities offer useful but indirect insight into the state of the beam. Patterns arise across the set of BLMs depending on the movement of insertion devices, beam current, temperature, humidity, and other contributors. A variety of neural network models were designed and evaluated to model this behaviour under user beam operation to enable anomaly detection and aid fault investigations.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-ibic2025-tubc02",
+    "title": "Beam diagnostics, data acquisition system, and applications of machine learning at the KEK e-/e+ Linac",
+    "abstract": "The KEK e⁺/e⁻ Linac supplies electron beams to SuperKEKB HER, PF, and PF-AR, and positron beams to SuperKEKB LER. We utilize machine learning for both online beam tuning and offline data analysis. Machine learning based on Bayesian optimization has been employed to improve and maintain beam quality, contributing to the enhancement and stabilization of beam injection efficiency into SuperKEKB HER and LER. In this report, we present monitors and beam tuning methods that incorporate machine learning. Identifying parameters that affect beam quality and stability is important, but finding them among the vast number of parameters is not easy. In machine learning-based beam tuning, selecting the appropriate parameters for tuning is crucial, and another important issue is identifying factors that lead to beam instability. To address this, we have applied explainable AI techniques to analyze archived data and attempted to extract parameters that have a significant impact on the beam. This report also covers our data archiving system and analysis efforts using explainable AI.",
+    "venue": "JACoW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop002",
+    "title": "Advancing accelerator virtual beam diagnostics through latent evolution modeling: an integrated solution to forward, inverse, tuning, and UQ problems",
+    "abstract": "Virtual beam diagnostics relies on computationally intensive beam dynamics simulations where high-dimensional charged particle beams evolve through the accelerator. We propose Latent Evolution Model (LEM), a hybrid machine learning framework with an autoencoder that projects high-dimensional phase spaces into lower-dimensional representations, coupled with transformers to learn temporal dynamics in the latent space. This approach provides a common foundational framework addressing multiple interconnected challenges in beam diagnostics. For \\textit{forward modeling}, a Conditional Variational Autoencoder (CVAE) encodes 15 unique projections of the 6D phase space into a latent representation, while a transformer predicts downstream latent states from upstream inputs. For \\textit{inverse problems}, we address two distinct challenges: (a) predicting upstream phase spaces from downstream observations by utilizing the same CVAE architecture with transformers trained on reversed temporal sequences along with aleatoric uncertainty quantification, and (b) estimating RF settings from the latent space of the trained LEM using a dedicated dense neural network that maps latent representations to RF parameters. For \\textit{tuning problems}, we leverage the trained LEM and RF estimator within a Bayesian optimization framework to determine optimal RF settings that minimize beam loss. This paper summarizes our recent efforts and demonstrates how this unified approach effectively addresses these traditionally separate challenges.",
+    "venue": "arXiv",
+    "year": 2026,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-mop057",
+    "title": "Machine learning at the Spallation Neutron Source accelerator and target",
+    "abstract": "We describe the ongoing efforts to apply Machine Learning techniques to improve the performance of our accelerator and target. Specially, we are looking to minimize halo beam losses in the absence of a proper physics model, automatically detect and log anomalies in the target support systems such as cooling, and detect and prevent errant beam pulses in the linac. We also describe the infrastructure we use to acquire and stream data to the GPU cluster for training, our code development cycle, and edge computing for model inference. To minimize halo beam losses, we use a Reinforcement Learning technique tested on a virtual accelerator. The target anomaly detection is trained on archived data using incomplete physics models and is made part of the existing target reporting system. The errant beam prevention analyzes beam current and beam phase waveforms as well as accelerator configuration data to predict errant pulses. We also develop continual learning to adapt to changes in the accelerator.",
+    "venue": "JACOW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "doi:10.18429/jacow-napac2025-weyn01",
+    "title": "Machine learning-enhanced deterministic controls in lasers and accelerators",
+    "abstract": "Modern laser and accelerator systems demand fast, precise, and scalable multi-input multi-output (MIMO) feedback control. As requirements extend into high-repetition-rate and nonlinear regimes, traditional strategies increasingly struggle to deliver the necessary speed and adaptability. This talk presents two cases where machine learning (ML) enhances deterministic feedback control. In both, ML models—trained on experimental or simulated data—provide rapid predictions to guide real-time decisions. Integrated into conventional feedback loops, they substantially improve response speed and robustness across diverse operating conditions. At Lawrence Berkeley National Laboratory, ML feedback enabled the first preemptive pointing stabilization at the BELLA Petawatt beamline, achieving a ~60% reduction in jitter and reduced response time in a coherent beam combining system by nearly an order of magnitude. These results show that ML can increase speed, stability, and adaptability without compromising determinism, opening new opportunities for intelligent control in next-generation facilities.",
+    "venue": "JACOW",
+    "year": 2026,
+    "rule": "auto_accept:venue_whitelist"
+  },
+  {
+    "id": "arxiv:2603.19507",
+    "title": "AI-Ready Control System for the Fermilab Accelerator Complex",
+    "abstract": "Reliable, high-intensity operation of the Fermilab Accelerator Complex is critical to the success of the Long-Baseline Neutrino Facility and Deep Underground Neutrino Experiment. We describe the requirements and infrastructure necessary to support routine use of artificial intelligence and machine learning (AI/ML) in the accelerator control system. Three capabilities are identified: a machine learning operations (MLOps) framework standardizing the lifecycle of AI/ML automation from data management through deployment and monitoring; a data quality framework defining and enforcing standards required to build trustworthy AI/ML applications; and workflow integration with large language models to assist physicists, engineers, and operators with information retrieval, code development, and routine analysis. Use cases spanning beam diagnostics, beam control, and support system automation illustrate the technical requirements across the complex.",
+    "venue": "arXiv",
+    "year": 2026,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2603.28549",
+    "title": "Machine learning-based virtual diagnostics of dielectric laser acceleration",
+    "abstract": "We present the development of a digital twin-based reconstruction framework for dielectric laser acceleration (DLA) based on machine-learning-assisted inversion of single-shot electron energy spectra. DLA as a promising candidate for compact electron accelerator designs using optical nearfields in dielectric nanostructures lacks on direct diagnostics on the laser-electron interaction. Thus, the outgoing electron energy distribution is one of the few experimentally accessible observables. To exploit this information, DLA interaction and mapping on the downstream spectrometer are treated as nonlinear measurement device whose response is described by the symplectic sixdimensional tracking code DLAtrack6D. This forward simulation model serves as a digital twin mapping laser-electron interaction parameters onto resulting energy spectra. For diagnostics, we are interested in the inverse mapping represented by a neural network trained by synthetic datasets generated with the forward simulation model. The reconstruction performance and parameter identifiability of the inverse model are evaluated for parameter ranges relevant to planned experiments at the ARES linac in the SINBAD facility at DESY. Simulation studies demonstrate that the method can recover pulse front tilt angles with an accuracy of about 1 deg and phase offsets with an RMSE of about 0.36 rad corresponding to a difference of 0.4 fs in arrival time. Training with noisy spectra further improves robustness against spectrometer noise. The trained surrogate model evaluates in the millisecond range, enabling shot-to-shot parameter estimation compatible with the 50 Hz repetition rate of ARES. The approach effectively transforms the DLA interaction region into a virtual in situ diagnostics for otherwise inaccessible laser parameters during experiment and provides a foundation for real-time monitoring and control of future DLA experiments.",
+    "venue": "arXiv (Cornell University)",
+    "year": 2026,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2603.29740",
+    "title": "Data-Driven Optimisation of Superconducting Magnets at CEA Paris-Saclay",
+    "abstract": "Superconducting magnets for particle accelerators are particularly challenging to design because they involve a large number of coupled physical phenomena and the management of complex datasets. Artificial Intelligence (AI), including machine learning and advanced optimisation techniques, offers promising approaches to address these challenges and accelerate the design process. This paper presents a new AI-based optimisation and data management platform, and highlights several ongoing applications of AI methods carried out at CEA Paris-Saclay, including multiphysics optimisation using active learning, topology optimisation, holistic modelling of an Electron Cyclotron Resonance (ERC) ion source, and anomaly detection in quench events.",
+    "venue": "arXiv",
+    "year": 2026,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2604.05914",
+    "title": "Machine-State Embeddings as an Operational Coordinate System for Accelerator Operation",
+    "abstract": "We demonstrate that graph neural network (GNN) embeddings of injector configurations provide a practical operational coordinate system for the Continuous Electron Beam Accelerator Facility (CEBAF) injector at Jefferson Lab. Using 137,389 snapshots spanning January 2022 through March 2023, we show that injector operation occupies a small number of persistent, well-separated neighborhoods in a 16-dimensional learned state space rather than a featureless continuum. Density-based clustering identifies ten recurring operating regimes with strong operational run alignment, and regime persistence statistics confirm that these regimes are stable over timescales of hours to weeks. Large relocations between neighborhoods are rare and episodic; 99.6% of one-hour operating windows fall within an empirically derived jitter baseline. Geometric outlier screening narrows a year-long dataset to a small set of intervals warranting operational review, and nearest-neighbor retrieval enables case-based reasoning over the historical archive. A controlled beam study validates that deliberate injector reconfiguration traces coherent, interpretable trajectories in embedding space. Together these capabilities demonstrate that machine-state embeddings support holistic operational monitoring in ways that single-channel inspection cannot.",
+    "venue": "arXiv",
+    "year": 2026,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2604.19101",
+    "title": "Closing the Loop: Deploying Auto-Generating Digital Twins for Particle Accelerators",
+    "abstract": "The simulation of a physical system in a virtual replica, known as a digital twin, is a useful way to interrogate the system non-invasively, providing the ability to perform predictive maintenance and surveillance, and to investigate potential novel configurations without perturbing the system. This article presents the implementation of an auto-generating digital twin architecture for particle accelerators: a virtual control system is generated to mirror the physical accelerator hardware, and used to update a simulation model which then feeds back the results into virtual diagnostics. All of the information about the accelerator lattice is cascaded down from a ground source of truth, removing any ambiguity about the naming of parameters between the simulation model and the virtual hardware. This design is modular and extensible, allowing researchers from different institutions to use their own models (for example, a machine learning model) and accelerator lattices while maintaining the overall structural coherence of the digital twin. This architecture has been tested for three accelerator facilities \\textendash~CLARA, the ISIS injector, and the proposed UK XFEL \\textendash~and aims to provide the foundation for a collaborative community effort in the development of shared technology towards a generic digital twin solution.",
+    "venue": "arXiv",
+    "year": 2026,
+    "rule": "auto_accept:acc-ph"
+  },
+  {
+    "id": "arxiv:2606.06883",
+    "title": "Learning Dynamic Aperture from One-turn Maps",
+    "abstract": "Dynamic aperture evaluation relies on long-term tracking, while existing machine-learning surrogates remain difficult to generalize across machines. We demonstrate that coarse-grained dynamic aperture can be learned directly from suitably encoded one-turn maps. By reformulating dynamic-aperture prediction as an image segmentation problem, a deep surrogate model captures the long-term stability topology and transfers to realistic multidimensional Electron-Ion Collider Electron Storage Ring tracking. Failure analysis identifies a challenging resonant regime in which invariant tori are strongly deformed yet remain unbroken. These results establish a proof-of-principle that practical surrogate models can be constructed from one-turn transport information.",
+    "venue": "arXiv",
+    "year": 2026,
+    "rule": "auto_accept:acc-ph"
+  }
+]

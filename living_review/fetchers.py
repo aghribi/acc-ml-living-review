@@ -33,6 +33,7 @@ import arxiv
 from .utils import within_range, SESSION
 from .data_model import Paper
 from .config import ACCEL_KEYWORDS, ML_KEYWORDS, ARXIV_PAGE_SIZE
+from .enrich import reconstruct_openalex_abstract
 
 import xml.etree.ElementTree as ET
 # ---------------------------
@@ -66,26 +67,39 @@ SESSION = make_session()
 # arXiv fetcher
 # ---------------------------
 
-def arxiv_query_for_window() -> List[str]:
+def arxiv_query_for_window(start: dt.date = None, end: dt.date = None) -> List[str]:
     """
     Build arXiv queries targeting accelerator physics and ML categories.
+
+    Parameters
+    ----------
+    start, end : datetime.date, optional
+        If given, a `submittedDate:[... TO ...]` range is appended so the
+        API bounds the result set (otherwise each query is truncated at
+        `max_results` with no guarantee of covering the window).
 
     Returns
     -------
     list of str
         Query strings to be passed to the `arxiv` client.
     """
+    date_q = ""
+    if start and end:
+        date_q = (
+            f" AND submittedDate:[{start.strftime('%Y%m%d')}0000"
+            f" TO {end.strftime('%Y%m%d')}2359]"
+        )
     queries = []
     for ml_kw in ML_KEYWORDS:
         ml_q = f'all:"{ml_kw}"' if " " in ml_kw else f"all:{ml_kw}"
-        q = f'(cat:physics.acc-ph) AND ({ml_q})'
+        q = f'(cat:physics.acc-ph) AND ({ml_q}){date_q}'
         queries.append(q)
     sec = " OR ".join([f"cat:{c}" for c in ["cs.AI", "cs.LG", "stat.ML"]])
     for acc_kw in ACCEL_KEYWORDS:
         acc_q = f'all:"{acc_kw}"' if " " in acc_kw else f"all:{acc_kw}"
-        q = f'({sec}) AND ({acc_q})'
+        q = f'({sec}) AND ({acc_q}){date_q}'
         queries.append(q)
-    queries.append(f'(cat:physics.acc-ph) AND (cat:cs.AI OR cat:cs.LG OR cat:stat.ML)')
+    queries.append(f'(cat:physics.acc-ph) AND (cat:cs.AI OR cat:cs.LG OR cat:stat.ML){date_q}')
     return queries
 
 
@@ -107,19 +121,23 @@ def fetch_arxiv(start: dt.date, end: dt.date) -> List[Paper]:
     """
     client = arxiv.Client(page_size=ARXIV_PAGE_SIZE, delay_seconds=3, num_retries=2)
     papers: List[Paper] = []
-    queries = arxiv_query_for_window()
+    # With the submittedDate bound in the query the result set is finite,
+    # so a higher max_results just lets the client paginate the window.
+    queries = arxiv_query_for_window(start, end)
     for q in queries:
         search = arxiv.Search(
             query=q,
             sort_by=arxiv.SortCriterion.SubmittedDate,
             sort_order=arxiv.SortOrder.Descending,
-            max_results=ARXIV_PAGE_SIZE,
+            max_results=2000,
         )
         try:
             for r in client.results(search):
                 d = (r.updated or r.published).date()
                 if not (start <= d <= end):
                     continue
+                primary = getattr(r, "primary_category", None)
+                cats = [c for c in getattr(r, "categories", []) if c and c != primary]
                 raw = {
                     "title": (r.title or "").strip(),
                     "authors": [a.name for a in getattr(r, "authors", [])],
@@ -131,6 +149,7 @@ def fetch_arxiv(start: dt.date, end: dt.date) -> List[Paper]:
                     "doi": None,
                     "venue": "arXiv",
                     "status": "preprint",
+                    "arxiv_categories": ([primary] if primary else []) + cats,
                     "links": {"arxiv": r.entry_id or ""},
                     "source": "arxiv",
                 }
@@ -150,7 +169,12 @@ def fetch_inspire(start: dt.date, end: dt.date, rows: int = 50, max_pages: int =
     Fetch papers from InspireHEP API (AI/ML applied to accelerators).
     """
     url = "https://inspirehep.net/api/literature"
-    q = '(accelerator OR "beam dynamics" OR "synchrotron") AND ("machine learning" OR "deep learning" OR "reinforcement learning")'
+    q = ('(accelerator OR "beam dynamics" OR "synchrotron") AND '
+         '("machine learning" OR "deep learning" OR "reinforcement learning" '
+         'OR "neural network" OR "neural networks")')
+    # Bound the query server-side (year granularity); the exact date window
+    # is still enforced client-side below.
+    q += f" and de {start.year}->{end.year}"
     params = {"q": q, "size": rows, "sort": "mostrecent", "page": 1}
 
     papers = []
@@ -257,6 +281,7 @@ def fetch_inspire(start: dt.date, end: dt.date, rows: int = 50, max_pages: int =
             links = {"inspire": f"https://inspirehep.net/literature/{h.get('id', '')}"}
             if doi:
                 links["doi"] = f"https://doi.org/{doi}"
+            arx = None
             if arxiv_info:
                 arx = arxiv_info[0].get("value")
                 links["arxiv"] = f"https://arxiv.org/abs/{arx}"
@@ -269,6 +294,8 @@ def fetch_inspire(start: dt.date, end: dt.date, rows: int = 50, max_pages: int =
                 "date": date.isoformat(),
                 "year": date.year,
                 "doi": doi,
+                "arxiv_id": arx,
+                "inspire_id": str(h.get("id") or "") or None,
                 "venue": venue,
                 "status": status,
                 "links": links,
@@ -438,10 +465,11 @@ def fetch_openalex(start: dt.date, end: dt.date) -> List[Paper]:
         doi = item.get("doi")
         venue = _get_openalex_venue(item)
 
+        # OpenAlex has no `abstract` field; it ships an inverted index.
         raw = {
             "title": item.get("title", "") or "",
             "authors": authors,
-            "abstract": item.get("abstract", "") or "",
+            "abstract": reconstruct_openalex_abstract(item.get("abstract_inverted_index")),
             "date": d.isoformat(),
             "year": d.year,
             "doi": doi,

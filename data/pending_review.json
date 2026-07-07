@@ -1,0 +1,61 @@
+[
+  {
+    "id": "doi:10.1007/978-3-319-99740-7_7",
+    "title": "Field-Reliability Predictions Based on Statistical System Lifecycle Models",
+    "year": 2018,
+    "venue": "2nd International Cross-Domain Conference for Machine Learning and Knowledge Extraction (CD-MAKE)",
+    "abstract": "Reliability measures the ability of a system to provide its intended level of service. It is influenced by many factors throughout a system lifecycle. A detailed understanding of their impact often remains elusive since these factors cannot be studied independently. Formulating reliability studies as a Bayesian regression problem allows to simultaneously assess their impact and to identify a predictive model of reliability metrics.The proposed method is applied to currently operational particle accelerator equipment at CERN. Relevant metrics were gathered by combining data from various organiz",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.2126,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "hal": "https://hal.archives-ouvertes.fr/hal-02060048",
+      "doi": "https://doi.org/10.1007/978-3-319-99740-7_7"
+    }
+  },
+  {
+    "id": "doi:10.1103/33q9-76qp",
+    "title": "Efficient learning method to connect observables",
+    "year": 2026,
+    "venue": "Physical Review Letters",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:18:26Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1103/33q9-76qp",
+      "crossref": "https://doi.org/10.1103/33q9-76qp"
+    }
+  },
+  {
+    "id": "arxiv:2304.12187",
+    "title": "TempoRL: laser pulse temporal shape optimization with Deep Reinforcement Learning",
+    "year": 2023,
+    "venue": "arXiv",
+    "abstract": "High Power Laser's (HPL) optimal performance is essential for the success of\na wide variety of experimental tasks related to light-matter interactions.\nTraditionally, HPL parameters are optimised in an automated fashion relying on\nblack-box numerical methods. However, these can be demanding in terms of\ncomputational resources and usually disregard transient and complex dynamics.\nModel-free Deep Reinforcement Learning (DRL) offers a promising alternative\nframework for optimising HPL performance since it allows to tune the control\nparameters as a function of system states subject to nonlinear te",
+    "review": {
+      "decision": "pending",
+      "stage": "migration:nli",
+      "rule": null,
+      "score": 0.3134,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-05T22:19:04Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2304.12187v1"
+    }
+  }
+]

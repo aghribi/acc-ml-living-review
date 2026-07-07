@@ -247,6 +247,26 @@ After updating the database:
 4. **Email notifications**: Alert submitters of acceptance/rejection
 5. **Metrics dashboard**: Track submission rates, approval rates
 
+## The relevance funnel and the pending queue (2026-07 methodology)
+
+Since the methodology overhaul, curation targets the **canonical DB**
+(`data/db.json`), not `site/data/livingreview.json` — the latter is
+regenerated on every pipeline run and any hand edits to it are lost.
+
+- **Scope criterion**: apply `SCOPE.md` (repo root) — "does the ML touch
+  the machine or the beam?" Worked examples included; contested calls are
+  resolved by amending SCOPE.md first.
+- **Pending queue**: `data/pending_review.json` (ranked most-relevant
+  first), or `python -m living_review.cli review`. These are papers the
+  automated funnel could not decide (mid-band NLI score, or empty
+  abstract).
+- **To accept or reject a pending paper**: edit its entry in
+  `data/db.json` — set `review.decision` to `accepted`/`rejected`,
+  `review.stage` to `human`, and `curated` to `true`. Human decisions are
+  terminal; the pipeline never overrides them.
+- **Approved submissions** (`site/data/submissions/approved/`) are
+  promoted into the DB by the nightly run and go through the same funnel.
+
 ## Contact
 
 For questions about the review process, open an issue or contact the maintainers.

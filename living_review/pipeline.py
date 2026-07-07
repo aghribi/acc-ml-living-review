@@ -5,43 +5,58 @@ pipeline.py
 Main orchestration pipeline for the **Living Review** project.
 
 The `LivingReviewPipeline` class coordinates the entire workflow:
-1. Load existing DB (if present).
+1. Load the canonical DB (`data/db.json`; falls back to the legacy
+   published file on first run).
 2. Fetch papers from multiple bibliographic sources (arXiv, InspireHEP,
-   HAL, OpenAlex, Crossref).
-3. Deduplicate & merge into canonical DB (preprint → journal, DOI, etc.).
-4. Optionally ingest CMS-approved manual submissions.
-5. Filter papers for semantic relevance (accelerators ∧ ML).
-6. Classify papers into categories.
-7. Compute statistics.
-8. Export results to Hugo site in multiple formats.
+   HAL, OpenAlex, Crossref) and merge/deduplicate them into the DB.
+3. Optionally ingest CMS-approved manual submissions.
+4. Run the relevance funnel over *undecided* papers only
+   (enrich → gates → NLI adjudicator, see relevance.py / SCOPE.md).
+   Accepted/rejected decisions are terminal.
+5. Classify accepted papers into categories; Others-only strays are
+   demoted to the pending queue.
+6. Compute statistics and export.
 
-Canonical DB location
----------------------
-The canonical JSON database is stored in the Hugo site’s `/data/` folder:
-
-    site/data/livingreview.json
-
-This file is:
-- Updated by this pipeline when merging new papers,
-- Exported again at the end of the run (papers + stats),
-- Read by Hugo templates (`.Site.Data.livingreview`),
-- Editable via Decap CMS.
-
-Other outputs
--------------
+Data files
+----------
+- `data/db.json`               : canonical DB — every paper ever seen,
+                                 with decision provenance. Committed.
+- `data/pending_review.json`   : ranked human-review queue (regenerated).
+- `site/data/livingreview.json`: published, accepted-only, derived — what
+                                 Hugo renders. Never hand-edited.
 - BibTeX → `site/static/downloads/livingreview.bib`
 - PDF    → `site/static/downloads/livingreview.pdf`
-
-(Note: HTML export has been removed — Hugo now builds pages directly from the JSON DB.)
 """
 
-import os, time
-from .fetchers import fetch_arxiv, fetch_inspire, fetch_hal, fetch_openalex, fetch_crossref, fetch_semanticscholar, fetch_springer, fetch_pubmed
-from .classifier import filter_relevant_papers, classify_papers
-from .stats import compute_stats
-from .exporters import export_json, export_bibtex, export_pdf
-from .config import DEFAULT_THRESHOLDS
+import os
+import time
+from pathlib import Path
+
+from .adjudicator import NLIAdjudicator
+from .classifier import classify_papers
 from .db import DB, promote_manual_submissions
+from .exporters import export_bibtex, export_json, export_pdf
+from .fetchers import (
+    fetch_arxiv,
+    fetch_crossref,
+    fetch_hal,
+    fetch_inspire,
+    fetch_openalex,
+    fetch_pubmed,
+    fetch_semanticscholar,
+    fetch_springer,
+)
+from .relevance import (
+    accepted_papers,
+    demote_others_only,
+    export_pending_queue,
+    run_funnel,
+)
+from .stats import compute_stats
+
+DEFAULT_DB_PATH = "data/db.json"
+LEGACY_DB_PATH = "site/data/livingreview.json"
+PENDING_QUEUE_PATH = "data/pending_review.json"
 
 
 class LivingReviewPipeline:
@@ -49,10 +64,11 @@ class LivingReviewPipeline:
     Orchestrates the end-to-end Living Review workflow.
     """
 
-    def __init__(self, start, end, sources=None, thresholds=None,
+    def __init__(self, start, end, sources=None,
                  output_dir=".", chunking=None,
-                 db_path="site/data/livingreview.json",
-                 promote_manual=False):
+                 db_path=DEFAULT_DB_PATH,
+                 promote_manual=False,
+                 adjudicator=None):
         """
         Parameters
         ----------
@@ -60,27 +76,28 @@ class LivingReviewPipeline:
             Date window for fetching new papers.
         sources : list of str
             Bibliographic sources to query (default: all).
-        thresholds : dict
-            Relevance thresholds for accelerator/ML filtering.
         output_dir : str
             Base directory of the Hugo project (default ".").
         chunking : dict, optional
             If set, export results in chunks (batches of papers).
         db_path : str
-            Path to canonical JSON DB (default: site/data/livingreview.json).
+            Path to the canonical JSON DB (default: data/db.json).
         promote_manual : bool
             If True, promote CMS-approved submissions into the DB.
+        adjudicator : Adjudicator, optional
+            Stage C adjudicator; defaults to the NLI one (injectable
+            for tests).
         """
         self.start = start
         self.end = end
         self.sources = sources or ["arxiv", "inspire", "hal", "openalex", "crossref"]
-        self.thresholds = thresholds or DEFAULT_THRESHOLDS
         self.output_dir = output_dir
         self.chunking = chunking
         self.db_path = db_path
         self.promote_manual = promote_manual
+        self.adjudicator = adjudicator
 
-        self.papers = []   # working list after DB load + ingest
+        self.papers = []   # publishable list after funnel + classification
         self.stats = {}
         self.start_time = None
 
@@ -90,11 +107,18 @@ class LivingReviewPipeline:
 
         # --- Print config summary ---
         print("[config] Sources:", ", ".join(self.sources))
-        print("[config] Thresholds:", self.thresholds)
         print("[config] Output dir:", self.output_dir)
         print("[config] DB path:", self.db_path)
         if self.chunking:
             print(f"[config] Chunking enabled: {self.chunking['size']} papers per chunk")
+
+    def _load_db(self) -> DB:
+        db_file = Path(self.db_path)
+        legacy = Path(self.output_dir) / LEGACY_DB_PATH
+        if not db_file.exists() and legacy.exists():
+            print(f"[info] {self.db_path} absent; bootstrapping from {legacy}")
+            return DB.load(legacy)
+        return DB.load(db_file)
 
     def run(self):
         """Execute the pipeline end-to-end."""
@@ -102,56 +126,53 @@ class LivingReviewPipeline:
         print(f"[info] Fetching papers {self.start} → {self.end}")
 
         # --- Load DB ---
-        db = DB.load(self.db_path)
+        db = self._load_db()
         print(f"[info] Loaded DB with {len(db)} existing entries")
 
         # --- Fetch & merge ---
-        if "arxiv" in self.sources:
-            print("[info] Ingesting arXiv:", db.merge_from_list(fetch_arxiv(self.start, self.end)))
-        if "inspire" in self.sources:
-            print("[info] Ingesting Inspire:", db.merge_from_list(fetch_inspire(self.start, self.end)))
-        if "hal" in self.sources:
-            print("[info] Ingesting HAL:", db.merge_from_list(fetch_hal(self.start, self.end)))
-        if "openalex" in self.sources:
-            print("[info] Ingesting OpenAlex:", db.merge_from_list(fetch_openalex(self.start, self.end)))
-        if "crossref" in self.sources:
-            print("[info] Ingesting CrossRef:", db.merge_from_list(fetch_crossref(self.start, self.end)))
-        if "semanticscholar" in self.sources:
-            print("[info] Ingesting Semantic Scholar:", db.merge_from_list(fetch_semanticscholar(self.start, self.end)))
-        if "springer" in self.sources:
-            print("[info] Ingesting Springer:", db.merge_from_list(fetch_springer(self.start, self.end)))
-        if "pubmed" in self.sources:
-            print("[info] Ingesting PubMed:", db.merge_from_list(fetch_pubmed(self.start, self.end)))
+        fetchers = {
+            "arxiv": fetch_arxiv,
+            "inspire": fetch_inspire,
+            "hal": fetch_hal,
+            "openalex": fetch_openalex,
+            "crossref": fetch_crossref,
+            "semanticscholar": fetch_semanticscholar,
+            "springer": fetch_springer,
+            "pubmed": fetch_pubmed,
+        }
+        for name in self.sources:
+            fetch = fetchers.get(name)
+            if fetch is None:
+                print(f"[warn] Unknown source '{name}', skipping")
+                continue
+            print(f"[info] Ingesting {name}:", db.merge_from_list(fetch(self.start, self.end)))
 
         # --- Manual submissions (from CMS) ---
         if self.promote_manual:
             promoted = promote_manual_submissions(db)
             print("[info] Promoting manual submissions:", promoted)
 
-        # --- Save merged DB ---
+        # --- Relevance funnel over undecided papers only ---
+        adjudicator = self.adjudicator or NLIAdjudicator()
+        counts = run_funnel(db, adjudicator)
+        print(f"[info] Funnel: {counts}")
+
+        # --- Classification of accepted papers ---
+        accepted = accepted_papers(db)
+        print(f"[info] Classifying {len(accepted)} accepted papers")
+        classify_papers(accepted)
+        self.papers = demote_others_only(accepted)
+        demoted = len(accepted) - len(self.papers)
+        if demoted:
+            print(f"[info] {demoted} Others-only papers demoted to pending queue")
+
+        # --- Persist canonical DB (all papers + decisions) ---
         db.save(self.db_path)
-        print(f"[info] DB saved with {len(db)} entries → {self.db_path}")
+        print(f"[info] Canonical DB saved with {len(db)} entries → {self.db_path}")
+        n_pending = export_pending_queue(db, Path(self.output_dir) / PENDING_QUEUE_PATH)
+        print(f"[info] Pending queue: {n_pending} papers → {PENDING_QUEUE_PATH}")
 
-        # --- Prepare working list ---
-        self.papers = list(db.entries.values())
-        print(f"[info] {len(self.papers)} unique papers in working set")
-
-        # --- Semantic filtering (accelerator + ML relevance) ---
-        accel_th = self.thresholds.get("accel", 0.13)
-        ml_th = self.thresholds.get("ml", 0.18)
-        print(f"[info] Filtering papers with thresholds accel≥{accel_th}, ml≥{ml_th}")
-        self.papers = filter_relevant_papers(
-            self.papers,
-            accel_threshold=accel_th,
-            ml_threshold=ml_th
-        )
-        print(f"[info] {len(self.papers)} papers kept after semantic filtering")
-
-        # --- Classification ---
-        print("[info] Classifying papers")
-        classify_papers(self.papers)
-
-        # --- Export ---
+        # --- Export published artifacts (accepted only) ---
         os.makedirs(self.output_dir, exist_ok=True)
 
         if self.chunking:
@@ -170,14 +191,13 @@ class LivingReviewPipeline:
         else:
             print("[info] Computing stats")
             self.stats = compute_stats(self.papers)
-            msg = "[info] Exporting JSON (DB)"
+            msg = "[info] Exporting JSON (published)"
             if self.export_bibtex:
                 msg += " + BibTeX"
             if self.export_pdf:
                 msg += " + PDF"
             print(msg)
 
-            # JSON export overwrites canonical DB with latest stats + papers
             export_json(self.papers, self.stats, self.output_dir)
             if self.export_bibtex:
                 export_bibtex(self.papers, self.output_dir)
@@ -186,7 +206,6 @@ class LivingReviewPipeline:
 
         # --- Summary ---
         elapsed = time.time() - self.start_time
-        total_papers = len(self.papers)
         print(f"[ok] Export completed → Hugo site directories")
-        print(f"[summary] {total_papers} papers processed")
+        print(f"[summary] {len(self.papers)} papers published, {n_pending} pending")
         print(f"[summary] Runtime: {elapsed:.2f} seconds")

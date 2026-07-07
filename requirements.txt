@@ -5,8 +5,9 @@ requests>=2.31.0
 # Progress bar for fetchers
 tqdm>=4.66.0
 
-# NLP model for semantic classification
+# NLP models: MiniLM (dedup/ranking) + zero-shot NLI (relevance adjudicator)
 sentence-transformers>=2.6.1
+transformers>=4.40.0
 torch>=2.0.0
 
 # Exporting (templating, data handling)

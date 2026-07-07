@@ -1,0 +1,786 @@
+[
+  {
+    "id": "hash:8edf6ef7298b",
+    "title": "A Time-Series Approach for Machine Learning-Based Patient-Specific Quality Assurance of Radiosurgery Plans",
+    "abstract": "",
+    "venue": "Bioengineering (Basel)",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "arxiv:2509.12945",
+    "title": "FusionMAE: large-scale pretrained model to optimize and simplify diagnostic and control of fusion plasma",
+    "abstract": "In magnetically confined fusion device, the complex, multiscale, and\nnonlinear dynamics of plasmas necessitate the integration of extensive\ndiagnostic systems to effectively monitor and control plasma behaviour. The\ncomplexity and uncertainty arising from these extensive systems and their\ntangled interrelations has long posed a significant obstacle to the\nacceleration of fusion energy development. In this work, a large-scale model,\nfusion masked auto-encoder (FusionMAE) is pre-trained to compress the\ninformation from 88 diagnostic signals into a concrete embedding, to provide a\nunified interface between diagnostic systems and control actuators. Two\nmechanisms are proposed to ensure a meaningful embedding: compression-reduction\nand missing-signal reconstruction. Upon completion of pre-training, the model\nacquires the capability for 'virtual backup diagnosis', enabling the inference\nof missing diagnostic data with 96.7% reliability. Furthermore, the model\ndemonstrates three emergent capabilities: automatic data analysis, universal\ncontrol-diagnosis interface, and enhancement of control performance on multiple\ntasks. This work pioneers large-scale AI model integration in fusion energy,\ndemonstrating how pre-trained embeddings can simplify the system interface,\nreducing necessary diagnostic systems and optimize operation performance for\nfuture fusion reactors.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1145/3758094",
+    "title": "FORT-GCN: A Fault-tolerant and Adaptive Accelerator Design for Efficient Graph Convolutional Network Inference",
+    "abstract": "Hardware reliability has emerged as a paramount concern for machine learning accelerators, as transient errors and permanent failures occurring during inference can severely compromise accuracy, performance, and service availability. Although fault resilience in traditional machine learning, such as Deep Neural Networks (DNNs), has been extensively studied, graph convolutional networks (GCNs) present unique reliability challenges due to their irregular computation patterns and dynamic data dependencies. Traditional fault mitigation approaches, including hardware redundancy, recomputation, and Hamming code protection, suffer from prohibitive latency and power overheads when applied to GCN accelerators. This article presents FORT-GCN, a holistic hardware architecture co-optimized for GCN-specific fault resilience. Our solution integrates three key innovations, namely permanent fault tolerance through a novel robust processing element design with runtime reconfiguration and defect-adaptive interconnects, transient error resilience via lightweight selective error correction unit design, and a fault-aware adaptive controller design that dynamically adjusts fault protection strategies based on operational faults and graph characteristics. Experimental evaluation demonstrates 35.4% improvement in fault robustness compared to conventional error-correction and redundancy-based approaches, with minimal timing, area, and power overheads.",
+    "venue": "ACM Transactions on Embedded Computing Systems",
+    "year": 2025,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1149/ma2025-01311590mtgabs",
+    "title": "(<i>Invited</i>) Analog Signal Processing Technologies for Power-Efficient Neural Network Inference and Training",
+    "abstract": "Artificial Intelligence (AI) is now widely available in society and business operations. To enhance the performance and functionality, the neural network architectures behind AI are exponentially increasing in size and have reached a trillion parameters [1]. This puts enormous pressure on the hardware applied to train and infer such networks with respect to the compute, energy and cost. This challenge is addressed by scaling AI datacenter systems, i.e. the compute performance, memory capacity, connectivity bandwidth at all levels and the size [2]. Power-efficiency enhancements are obtained through minimizing device dimensions and separation between processing and memory. The emergence of High Bandwidth Memory (HBM) is an important aspect herein [3], as well novel packaging and interconnect solutions [4]. Dedicated accelerators such as the GPU or IBM’s AIU [5] are realized for efficiently performing AI compute operations. The need for more intra-system bandwidth pushes the interest in co-packaged optics [6,7]. While all these aspects improve system performance and efficiency, it does build on the well-know Von Neumann architecture based on a separation of memory and compute. Alternative compute architectures, such in-memory computing, go a step further. By mapping the hardware to the neural network architecture [8], a data pipelining approach can be obtained. This minimizes memory access operations and hence enhances AI inference performance and efficiency [9]. In this approach the weights of the neural network are implemented as memristive devices in the back end of line of CMOS technology. The arrangement thereof in a crossbar architecture enables an analog vector matrix calculation, i.e. the computation of the synaptic interconnect between two layers of the neural network. We extend this concept to neural network training, by establishing a memristive device technology exhibiting a controlled change of the resistance. The resistance is modified by applying voltage pulses of appr. 1.5V but remains unchanged upon reading out the device state at voltages below 0.5V. Essential for efficient learning is a continues change of the resistance for a defined voltage pulse amplitude and duration, where the direction is defined by the signal polarity. The technology and applications thereof are described in [10-12]. Scaling AI systems is a broad and versatile effort, comprising hardware, software and algorithm aspects. While continuous scaling of proven architectural concepts and technologies is key, novel computing paradigms can help to overcome fundamental limitations in today’s systems. [1] Villalobos, Pablo, et al. \"Machine learning model sizes and the parameter gap.\" arXiv preprint arXiv:2207.02852 (2022). [2] Salahuddin, Sayeef, Kai Ni, and Suman Datta. \"The era of hyper-scaling in electronics.\" Nature electronics 1.8 (2018): 442-450. [3] Jun, Hongshin, et al. \"Hbm (high bandwidth memory) dram technology and architecture.\" 2017 IEEE International Memory Workshop (IMW) . IEEE, 2017. [4] Kumar, Arvind, and Mukta Farooq. \"Enabling AI with heterogeneous integration.\" Jan. 2022. [5] Joshi, Rajiv, et al. \"6th IBM IEEE CAS/EDS AI Compute Symposium (AICS’23)[CASS Conference Highlights].\" IEEE Circuits and Systems Magazine 24.3 (2024): 49-53. [6] Dangel, Roger, et al. \"Polymer waveguides enabling scalable low-loss adiabatic optical coupling for silicon photonics.\" IEEE Journal of selected topics in quantum electronics 24.4 (2018): 1-11. [7] T. Barwicz, et al., “Advances in Interfacing Optical Fibers to Nanophotonic Waveguides Via Mechanically Compliant Polymer Waveguides,” IEEE Journal of Selected Topics in Quantum Electronics, vol. 26, no. 2, pp. 1–12, Mar. 2020, doi: 10.1109/JSTQE.2020.2964383. [8] Sebastian, Abu, et al. \"Memory devices and applications for in-memory computing.\" Nature nanotechnology 15.7 (2020): 529-544. [9] Jain, Shubham, et al. \"A heterogeneous and programmable compute-in-memory accelerator architecture for analog-ai using dense 2-d mesh.\" IEEE Transactions on Very Large Scale Integration (VLSI) Systems 31.1 (2022): 114-127. [10] Gong, Nanbo, et al. \"Deep learning acceleration in 14nm CMOS compatible ReRAM array: device, material and algorithm co-optimization.\" 2022 International Electron Devices Meeting (IEDM). IEEE, 2022. [11] Stecconi, Tommaso, et al. \"Analog Resistive Switching Devices for Training Deep Neural Networks with the Novel Tiki-Taka Algorithm.\" Nano Letters 24.3 (2024): 866-872. [12] Falcone, Donato Francesco, et al. \"Analytical modelling of the transport in analog filamentary conductive-metal-oxide/HfO x ReRAM devices.\" Nanoscale Horizons 9.5 (2024): 775-784.",
+    "venue": "Meeting abstracts/Meeting abstracts (Electrochemical Society. CD-ROM)",
+    "year": 2025,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "arxiv:2503.13476",
+    "title": "Radar Pulse Deinterleaving with Transformer Based Deep Metric Learning",
+    "abstract": "When receiving radar pulses it is common for a recorded pulse train to\ncontain pulses from many different emitters. The radar pulse deinterleaving\nproblem is the task of separating out these pulses by the emitter from which\nthey originated. Notably, the number of emitters in any particular recorded\npulse train is considered unknown. In this paper, we define the problem and\npresent metrics that can be used to measure model performance. We propose a\nmetric learning approach to this problem using a transformer trained with the\ntriplet loss on synthetic data. This model achieves strong results in\ncomparison with other deep learning models with an adjusted mutual information\nscore of 0.882.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "arxiv:1911.07683",
+    "title": "Radar Emitter Classification with Attribute-specific Recurrent Neural Networks",
+    "abstract": "Radar pulse streams exhibit increasingly complex temporal patterns and can no\nlonger rely on a purely value-based analysis of the pulse attributes for the\npurpose of emitter classification. In this paper, we employ Recurrent Neural\nNetworks (RNNs) to efficiently model and exploit the temporal dependencies\npresent inside pulse streams. With the purpose of enhancing the network\nprediction capability, we introduce two novel techniques: a per-sequence\nnormalization, able to mine the useful temporal patterns; and\nattribute-specific RNN processing, capable of processing the extracted\ninformation effectively. The new techniques are evaluated with an ablation\nstudy and the proposed solution is compared to previous Deep Learning (DL)\napproaches. Finally, a comparative study on the robustness of the same\napproaches is conducted and its results are presented.",
+    "venue": "arXiv",
+    "year": 2019,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "arxiv:2503.11703",
+    "title": "Physical knowledge improves prediction of EM Fields",
+    "abstract": "We propose a 3D U-Net model to predict the spatial distribution of\nelectromagnetic fields inside a radio-frequency (RF) coil with a subject\npresent, using the phase, amplitude, and position of the coils, along with the\ndensity, permittivity, and conductivity of the surrounding medium as inputs. To\nimprove accuracy, we introduce a physics-augmented variant, U-Net Phys, which\nincorporates Gauss's law of magnetism into the loss function using finite\ndifferences. We train our models on electromagnetic field simulations from CST\nStudio Suite for an eight-channel dipole array RF coil at 7T MRI. Experimental\nresults show that U-Net Phys significantly outperforms the standard U-Net,\nparticularly in predicting fields within the subject, demonstrating the\nadvantage of integrating physical constraints into deep learning-based field\nprediction.",
+    "venue": "arXiv",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "arxiv:2311.05967",
+    "title": "Plasma Surrogate Modelling using Fourier Neural Operators",
+    "abstract": "Predicting plasma evolution within a Tokamak reactor is crucial to realizing\nthe goal of sustainable fusion. Capabilities in forecasting the spatio-temporal\nevolution of plasma rapidly and accurately allow us to quickly iterate over\ndesign and control strategies on current Tokamak devices and future reactors.\nModelling plasma evolution using numerical solvers is often expensive,\nconsuming many hours on supercomputers, and hence, we need alternative\ninexpensive surrogate models. We demonstrate accurate predictions of plasma\nevolution both in simulation and experimental domains using deep learning-based\nsurrogate modelling tools, viz., Fourier Neural Operators (FNO). We show that\nFNO has a speedup of six orders of magnitude over traditional solvers in\npredicting the plasma dynamics simulated from magnetohydrodynamic models, while\nmaintaining a high accuracy (MSE in the normalised domain $\\approx$ $10^{-5}$).\nOur modified version of the FNO is capable of solving multi-variable Partial\nDifferential Equations (PDE), and can capture the dependence among the\ndifferent variables in a single model. FNOs can also predict plasma evolution\non real-world experimental data observed by the cameras positioned within the\nMAST Tokamak, i.e., cameras looking across the central solenoid and the\ndivertor in the Tokamak. We show that FNOs are able to accurately forecast the\nevolution of plasma and have the potential to be deployed for real-time\nmonitoring. We also illustrate their capability in forecasting the plasma\nshape, the locations of interactions of the plasma with the central solenoid\nand the divertor for the full (available) duration of the plasma shot within\nMAST. The FNO offers a viable alternative for surrogate modelling as it is\nquick to train and infer, and requires fewer data points, while being able to\ndo zero-shot super-resolution and getting high-fidelity solutions.",
+    "venue": "arXiv",
+    "year": 2024,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1007/978-3-030-05677-3_21",
+    "title": "Leveraging Subgraph Extraction for Performance Portable Programming Frameworks on DL Accelerators",
+    "abstract": "Deep learning framework plays an important role in connecting hardware platform and algorithm. In recent years, some domain-specific deep learning accelerators with better performance and energy efficiency were proposed by researchers. However, current frameworks lack enough considerations about how to better support the possible new features brought by accelerators. In this paper, we propose to build a performance portable programming framework with subgraph extraction. The intuition is that increasing ratio of optimizations are taken from the top-level framework to the low-level software stack of accelerator. In response to this development trend, framework needs to pay more attention to the splitting strategy of computation graph for the heterogeneous computation.",
+    "venue": "15th IFIP International Conference on Network and Parallel Computing (NPC)",
+    "year": 2018,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1016/j.ijrobp.2022.07.954",
+    "title": "Leveraging Serial MRI Radiomics and Machine Learning to Predict Risk of Radiation Necrosis in Patients with Brain Metastases Managed with Stereotactic Radiation and Immunotherapy",
+    "abstract": "",
+    "venue": "64th ASTRO Annual Meeting",
+    "year": 2022,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1145/3126908.3126964",
+    "title": "Understanding error propagation in deep learning neural network (DNN) accelerators and applications",
+    "abstract": "Deep learning neural networks (DNNs) have been successful in solving a wide range of machine learning problems. Specialized hardware accelerators have been proposed to accelerate the execution of DNN algorithms for high-performance and energy efficiency. Recently, they have been deployed in datacenters (potentially for business-critical or industrial applications) and safety-critical systems such as self-driving cars. Soft errors caused by high-energy particles have been increasing in hardware systems, and these can lead to catastrophic failures in DNN systems. Traditional methods for building resilient systems, e.g., Triple Modular Redundancy (TMR), are agnostic of the DNN algorithm and the DNN accelerator's architecture. Hence, these traditional resilience approaches incur high overheads, which makes them challenging to deploy. In this paper, we experimentally evaluate the resilience characteristics of DNN systems (i.e., DNN software running on specialized accelerators). We find that the error resilience of a DNN system depends on the data types, values, data reuses, and types of layers in the design. Based on our observations, we propose two efficient protection techniques for DNN systems.",
+    "venue": "Unknown Venue",
+    "year": 2017,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1109/hpec.2019.8916327",
+    "title": "Survey and Benchmarking of Machine Learning Accelerators",
+    "abstract": "Advances in multicore processors and accelerators have opened the flood gates to greater exploration and application of machine learning techniques to a variety of applications. These advances, along with breakdowns of several trends including Moore's Law, have prompted an explosion of processors and accelerators that promise even greater computational and machine learning capabilities. These processors and accelerators are coming in many forms, from CPUs and GPUs to ASICs, FPGAs, and dataflow accelerators. This paper surveys the current state of these processors and accelerators that have been publicly announced with performance and power consumption numbers. The performance and power values are plotted on a scatter graph and a number of dimensions and observations from the trends on this plot are discussed and analyzed. For instance, there are interesting trends in the plot regarding power consumption, numerical precision, and inference versus training. We then select and benchmark two commercially available low size, weight, and power (SWaP) accelerators as these processors are the most interesting for embedded and mobile machine learning inference applications that are most applicable to the DoD and other SWaP constrained users. We determine how they actually perform with real-world images and neural network models, compare those results to the reported performance and power consumption values and evaluate them against an Intel CPU that is used in some embedded applications.",
+    "venue": "Unknown Venue",
+    "year": 2019,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1016/j.eng.2020.01.007",
+    "title": "A Survey of Accelerator Architectures for Deep Neural Networks",
+    "abstract": "Recently, due to the availability of big data and the rapid growth of computing power, artificial intelligence (AI) has regained tremendous attention and investment. Machine learning (ML) approaches have been successfully applied to solve many problems in academia and in industry. Although the explosion of big data applications is driving the development of ML, it also imposes severe challenges of data processing speed and scalability on conventional computer systems. Computing platforms that are dedicatedly designed for AI applications have been considered, ranging from a complement to von Neumann platforms to a “must-have” and stand-alone technical solution. These platforms, which belong to a larger category named “domain-specific computing,” focus on specific customization for AI. In this article, we focus on summarizing the recent advances in accelerator designs for deep neural networks (DNNs)—that is, DNN accelerators. We discuss various architectures that support DNN executions in terms of computing units, dataflow optimization, targeted network topologies, architectures on emerging technologies, and accelerators for emerging applications. We also provide our visions on the future trend of AI chip designs.",
+    "venue": "Engineering",
+    "year": 2020,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1007/978-3-031-90095-2_20",
+    "title": "Railway Wheel Impact Force and Alert Prediction Using Machine Learning Models",
+    "abstract": "",
+    "venue": "AIRO Springer Series",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1007/978-3-031-97709-1_27",
+    "title": "Machine Learning for Precision Dental Diagnosis: Real-Time X-Ray Detection and Patient Record Integration—SmiloScope",
+    "abstract": "",
+    "venue": "Information Systems Engineering and Management",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.3390/s25206431",
+    "title": "Bolt Anchorage Defect Identification Based on Ultrasonic Guided Wave and Deep Learning",
+    "abstract": "<jats:p>As a critical supporting component in geotechnical engineering structures such as bridges, tunnels, and highways, the anchorage quality of bolts directly impacts their structural safety. The ultrasonic guided wave method is a popular method for the non-destructive testing of anchorage quality. However, noise from complex field environments, modal mixing caused by anchoring interface reflections, and dispersion effects make it challenging to directly extract defect features from guided wave signals in the time or frequency domains. To address these challenges, this study proposes a solution based on the combination of the guided wave time–frequency spectrum and the gated attention residual network (GA-ResNet). The GA-ResNet introduces a gating mechanism to balance spatial attention and channel attention, and it is used for anchoring model type recognition. Experiments were conducted on four types of anchorage models, and the time–frequency spectrum was selected to be the input feature. The results demonstrate that the GA-ResNet can effectively predict the anchorage bolt defect type and prevent potential safety accidents.</jats:p>",
+    "venue": "Sensors",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1145/3728486.3759209",
+    "title": "Two-Step Deep Learning Approach for Fine-Grained Railway Catenary Segmentation",
+    "abstract": "",
+    "venue": "Proceedings of the International Workshop on Application-driven Point Cloud Processing and 3D Vision",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.54254/2755-2721/2025.28592",
+    "title": "Fault Prediction of 5G Base Station RF Module Based on Machine Learning Algorithms",
+    "abstract": "<jats:p>This article proposes a framework based on differential evolution algorithm and bidirectional long short-term memory network to optimize Transformer, providing an intelligent solution for 5G base station RF module fault prediction. Through variable correlation analysis, it can be concluded that the modulation efficiency (0.19) has the strongest positive correlation with fault_type, while the operation time (-0.08) has the strongest negative correlation with fault_type. After comparing the framework with models such as decision tree, random forest, CatBoost, XGBoost, LightGBM, and ExtraTrees, it was found that DE BiLSTM Transformer had significantly better comprehensive performance in 5G base station RF module fault classification prediction: its accuracy reached 0.956, higher than XGBoost and LightGBM's 0.925, ExtraTrees' 0.921, random forest's 0.904, decision tree's 0.864, and CatBoost's 0.798, indicating a significant lead in overall classification accuracy; The recall rate is 0.956, which can more comprehensively identify actual fault samples; The accuracy rate is 0.958, only slightly lower than the 0.919 of random forest, far higher than the 0.9 of XGBoost and 0.86 of LightGBM, demonstrating outstanding ability to accurately identify fault types; The F1 value of 0.941 and AUC value of 0.979 are also the highest, showing better performance in balancing accuracy and recall, distinguishing between faulty and non faulty samples. This advantage stems from the synergistic effect of optimizing model parameters with differential evolution algorithm, capturing bidirectional temporal features with BiLSTM, and focusing on key features with Transformer self attention mechanism, making it more suitable for complex feature correlation scenarios in RF module fault prediction.</jats:p>",
+    "venue": "Applied and Computational Engineering",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1161/circ.152.suppl_3.4345868",
+    "title": "Abstract 4345868: Machine learning prediction of myocardial ischemia using quantitative assessment of coronary calcifications in non-contrast CT calcium scoring scans",
+    "abstract": "<jats:p>\n                    <jats:bold>Introduction:</jats:bold>\n                    Non-contrast computed tomography calcium scoring (CTCS) provides a direct, noninvasive measure of atherosclerotic plaque burden by detecting calcified lesions in the coronary arteries. While its role in risk stratification is well-established, its utility in predicting functional myocardial ischemia remains underexplored. This study aimed to develop a novel machine learning model that predicts ischemia based solely on the quantitative analysis of coronary calcifications in CTCS scans.\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Methods:</jats:bold>\n                    We retrospectively analyzed 987 patients who underwent both non-contrast CTCS and regadenoson stress cardiac positron emission tomography (PET) myocardial perfusion imaging with an NH\n                    <jats:sub>3</jats:sub>\n                    tracer within one year at the University Hospitals of Cleveland. A total of 75 features were extracted, including 4 clinical variables, the total Agatston score, and 70 calcium-omics features. Calcium-omics encompassed metrics from individual calcifications (e.g., mass score), arterial territories (e.g., lesion count), and whole-heart regions (e.g., histogram-based Hounsfield unit statistics). Feature selection was performed using CatBoost with SHapley Additive exPlanations (SHAP) to identify the most predictive subset. A CatBoost classifier was then trained and evaluated using 5-fold cross-validation, repeated 1,000 times to ensure robust performance estimates.\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Results:</jats:bold>\n                    Among the 987 patients, 89 (9.0%) had PET-confirmed ischemia. From the 75 original features, the top 9 predictors were selected using CatBoost and SHAP, including the total Agatston score and 8 calcium-omics features. The final model achieved excellent predictive performance, with a precision of 88.7±8.1%, sensitivity of 78.8±8.6%, specificity of 97.9±1.0%, F1 score of 82.9±5.4%, and an area under the curve of 91.1±4.1%. Compared to models using only clinical features (precision 13.2±3.7% and F1 score 21.3±5.3%) or clinical features plus the Agatston score (precision 74.7±9.5% and F1 score 76.4±6.7%), the inclusion of calcium-omics features significantly improved predictive performance (\n                    <jats:italic toggle=\"yes\">p</jats:italic>\n                    &lt;0.05), particularly by reducing false positives.\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Conclusion:</jats:bold>\n                    We developed a novel machine learning approach for predicting myocardial ischemia using non-contrast CTCS imaging. Our findings suggest that calcium-omics features provide additional predictive value beyond traditional Agatston scoring and may support more cost-effective patient triage by reducing unnecessary downstream testing, especially in low-risk populations.\n                  </jats:p>",
+    "venue": "Circulation",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1145/3769994.3770061",
+    "title": "A Teachable Machine for Transformers",
+    "abstract": "Large language models (LLMs) are widely used in education, yet most initiatives use LLM-powered tools as black boxes. This demo introduces a browser-based tool that lets students use their own data to train tiny transformer models directly on their own devices, without any servers or installation required. By making training visible in real time, the tool enables hands-on experimentation with datasets, model sizes, pre-training, fine-tuning, and prompting, while ensuring accessibility and privacy. It reframes language models from tools to use into systems to build, probe, and critique—supporting AI literacy and critical reflection in K–12 education.",
+    "venue": "Proceedings of the 25th Koli Calling International Conference on Computing Education Research",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.3389/fonc.2025.1681029",
+    "title": "Fusion model combining ultrasound-based radiomics and deep transfer learning with clinical parameters for preoperative prediction of pelvic lymph node metastasis in cervical cancer",
+    "abstract": "<jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>To develop and validate a multimodal fusion model integrating ultrasound-based radiomics, deep transfer learning (DTL), and clinical parameters for preoperative pelvic lymph node metastasis (PLNM) prediction in cervical cancer.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A retrospective cohort of 421 patients with surgically confirmed cervical cancer was divided into the training (70%, n = 294) and testing (30%, n = 127) sets. Ultrasound-based radiomics (1,561 handcrafted features) and 3 DTL architectures (DenseNet121, ResNet50, AlexNet) were employed for feature extraction. After redundancy reduction (Spearman correlation, least absolute shrinkage and selection operator regression) and principal component analysis, fused radiomics-DTL features were combined with clinical predictors. Eight machine learning classifiers were evaluated, and the optimal model was used to construct a nomogram. Performance was assessed using area under the curve (AUC), calibration curves, and decision curve analysis (DCA).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>The multilayer perceptron-based fusion model achieved a testing AUC of 0.753, outperforming standalone radiomics (AUC = 0.729) and DTL models (best AUC = 0.702; DenseNet121). Integration of clinical predictors (maximum tumor diameter and red blood cell count) further enhanced performance, yielding a nomogram with training/testing AUCs of 0.871 and 0.764, and a testing sensitivity and specificity of 58.1% and 84.4%,respectively. DCA demonstrated superior clinical utility for the nomogram across threshold probabilities (10%–50%).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>We developed a multimodal fusion model integrating ultrasound-based radiomics, DTL, and clinical parameters for preoperative PLNM prediction in cervical cancer. The proposed nomogram provides a clinically applicable, cost-effective tool for preoperative PLNM prediction, particularly valuable for optimizing treatment decisions in resource-limited settings.</jats:p>\n                  </jats:sec>",
+    "venue": "Frontiers in Oncology",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.21203/rs.3.rs-8089868/v1",
+    "title": "Hybrid Machine Learning based Optimization with Beamforming of 6G Mobile Radio Network for LEO Satellite base station in Urban Areas",
+    "abstract": "<title>Abstract</title>\n                <p>The rapid evolution of sixth-generation (6G) mobile communication networks  requires advanced optimization and intelligent deep learning models to meet the  demands of ultra-reliable, low-latency, and energy-efficient wireless systems. Low  Earth Orbit (LEO) satellites has a vital role in enabling non-terrestrial net works (NTN), particularly in dense urban environment areas. This paper presents  a comparative analysis of hybrid optimization approaches integrating Artificial  Bee Colony (ABC), Grey Wolf Optimizer (GWO), Ant Lion Optimizer (ALO),  Whale Optimization Algorithm (WOA), Salp Swarm Algorithm (SSA), and Par ticle Swarm Optimization (PSO) with Extreme Learning Machine (ELM) for  beamforming in 6G mobile radio networks. Integrated with beamforming for  6G NTN. The models are analysis using pathloss (PL),signal-to-interference plus-noise ratio (SINR), coverage area, capacity, spectral efficiency (SE), energy  efficiency (EE), bandwidth efficiency (BE), bit error rate (BER), and propaga tion delay. ABC-ELM has performed with result mean values of the PL (187.46  dB), SINR (22.62 dB), coverage area (68.03%), capacity (10.82 Gbps), SE (10.82  bits/Hz), EE (44.10%), BE (44.10%), BER (1.45−8 bps ) and propagation delay (48.65%) in urban areas. As a result, demonstrating of hybrid ELM-based opti mization integrated with beamforming is a promising approach for enabling 6G  LEO satellite networks.</p>",
+    "venue": "Springer Science and Business Media LLC",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1007/978-3-032-10466-3_23",
+    "title": "NNia-8: An 8-Core RISC-V Neural Network Inference Accelerator with Efficient Processing Elements and Memory Utilization",
+    "abstract": "",
+    "venue": "Lecture Notes in Computer Science",
+    "year": 2025,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1007/978-981-96-8796-1_15",
+    "title": "Railway Track Obstacle Detection and Alert System Using Deep Learning",
+    "abstract": "",
+    "venue": "Lecture Notes in Networks and Systems",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.33667/2078-5631-2025-27-30-38",
+    "title": "Machine learning with ultrasound examination for prediction of intraoperative hypotension during robot-assisted radical prostatectomy",
+    "abstract": "<jats:p>\n                    <jats:bold>Introduction.</jats:bold>\n                    Robot-assisted radical prostatectomy is one of the leading methods of prostate cancer treatment. A common complication of general anesthesia during this operation is intraoperative hypotension. In recent years, the use of preoperative ultrasound examinations to predict this condition and carry out personalized prevention has been gaining popularity. Machine learning methods trained with additional predictors\n                  </jats:p>\n                  <jats:p>can improve the accuracy of these predictions.</jats:p>\n                  <jats:p>\n                    <jats:bold>Objective.</jats:bold>\n                    To improve the treatment outcomes of patients with prostate cancer by optimizing their volemic status in the perioperative period before robot-assisted prostatectomy.\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Materials and methods.</jats:bold>\n                    The prospective study included 64 patients scheduled for robot-assisted radical prostatectomy. Before surgery, patients underwent bedside ultrasound examination to determine the diameters and collapsibility indices of the inferior vena cava and subclavian veins, corrected carotid flow time (cCFT), and respiratory variation of blood flow peak velocity (ΔV). These data were used in the training of machine learning predictive models to ameliorate intraoperative hypotension prediction efficacy.\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Results.</jats:bold>\n                    The respiratory variation of blood flow peak velocity had the highest predictive value (AUROC 0.843, accuracy 75 %). The indicator’s optimal threshold for intraoperative hypotension prediction was 8.33 %. The accuracy of the prediction has been increased using the machine learning model based on gradient boosting with additional predictors (AUROC 0.933, accuracy 95 %).\n                  </jats:p>\n                  <jats:p>\n                    <jats:bold>Conclusions.</jats:bold>\n                    Determining the respiratory variation of blood flow peak velocity is the most prognostically valuable indicator for intraoperative hypotension prediction during robot-assisted radical prostatectomy. The use of machine learning methods to predict intraoperative hypotension increases the accuracy of prediction.\n                  </jats:p>",
+    "venue": "Medical alphabet",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1680/jcoma.24.00099",
+    "title": "Study on estimation of internal cracks using electromagnetic waves and machine learning",
+    "abstract": "<jats:p>In recent years, the aging of reinforced concrete structures and a shortage and aging of engineers have become problems in Japan. There is a need for methods that allow inspection of reinforced concrete structures without the need for skilled engineers. The focus of this study was on electromagnetic radar which can relatively easily detect reinforcing bars and internal defects. Then, machine learning approaches, convolutional neural network (CNN) and convolutional auto encoder (CAE), were used to detect small cracks inside concrete caused by rebar corrosion from electromagnetic radar measurement data. In this study, output images from electromagnetic radar were learned and judged by machine learning. The results showed that both approaches were able to determine the presence or absence of internal cracks. The CNN determination showed the existence of cracks in the range of 0.04–1.0 mm in crack width, while the CAE determination showed the possibility of estimating crack growth.</jats:p>",
+    "venue": "Proceedings of the Institution of Civil Engineers - Construction Materials",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1158/1055-9965.30722790",
+    "title": "Figure S3 from Building Practical Risk Prediction Models for Nasopharyngeal Carcinoma Screening with Patient Graph Analysis and Machine Learning",
+    "abstract": "<jats:p>&lt;p&gt;Figure S3: Example topology of NPC patients resulting from searching 5 lab test factors. Blue nodes represent patients and yellow nodes represent lab test factors. This topology was generated using Cypher query #4 listed in Table S1. Each line connects a patient to a patient's factors. The topology shows how patients were distributed among a variety of lab factors.&lt;/p&gt;</jats:p>",
+    "venue": "American Association for Cancer Research (AACR)",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1016/j.apradiso.2025.112102",
+    "title": "Machine learning model for predicting the magnitude of tumor movement based on clinical information and CT-based radiomics features",
+    "abstract": "",
+    "venue": "Applied Radiation and Isotopes",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1016/j.ijpt.2025.100923",
+    "title": "PREDICTING SUSPECTED RADIATION NECROSIS IN BRAIN CANCER PATIENTS WITH A MACHINE LEARNING MODEL BASED ON THE PROTON LINEAL ENERGY SPECTRUM",
+    "abstract": "",
+    "venue": "International Journal of Particle Therapy",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.55041/ijsrem54800",
+    "title": "Machine Learning-Based Prediction of Mechanical Properties of Recycled Aggregate Concrete",
+    "abstract": "<jats:p>Abstract - Recycled Aggregate Concrete (RAC) has become an important material in sustainable construction due to its ability to utilize construction and demolition waste. However, its mechanical behavior is highly variable because recycled aggregates contain adhered mortar, impurities, and irregular surface textures. These inconsistencies make the prediction of compressive strength, splitting tensile strength, and flexural strength difficult using traditional empirical formulas.\nThis paper presents a machine-learning-based framework for predicting the mechanical properties of RAC using XGBoost. A curated dataset consisting of experimental and literature-based RAC mix proportions was preprocessed, analyzed, and trained to construct three predictive models. The results show that XGBoost captures nonlinear relationships effectively and delivers higher accuracy than baseline methods such as SVM and KNN. The model demonstrates strong generalization and low prediction error, proving its suitability for mix-design optimization and rapid decision-making in civil engineering.\n\nKey Words: Recycled Aggregate Concrete, XGBoost, Compressive Strength, Tensile Strength, Flexural Strength, and Machine Learning.</jats:p>",
+    "venue": "International Journal of Scientific Research in Engineering and Management",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1007/978-3-032-00679-0_6",
+    "title": "Signal increase ratio prediction with CNNs",
+    "abstract": "Cerebrospinal fluid (CSF) clearance plays a critical role in the brain’s waste removal system. In this chapter, we introduce a supervised deep learning pipeline designed to predict the signal increase ratio (SIR) in the CSF of the human brain 24 hours after the injection of an intrathecal contrast agent. The SIR quantifies the relative increase in magnetic resonance imaging (MRI) signal intensity compared to baseline measurements taken before the tracer injection, thereby providing a visualization of CSF dynamics over time. Our deep learning pipeline enables the prediction and visualization of these dynamics without the need for contrast agent administration, reducing the risk of side effects and lowering both costs and time requirements by relying solely on a baseline MRI scan. This chapter serves a dual purpose: it provides an introduction to deep learning–based image analysis and demonstrates the application of this technology using the nontrivial example of predicting the SIR in CSF.",
+    "venue": "Simula SpringerBriefs on Computing",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1002/cae.70128",
+    "title": "Enhancing Learning Outcomes in an Undergraduate Course of Smart Construction Major Through the Application of a Simulation Tool",
+    "abstract": "<jats:title>ABSTRACT</jats:title>\n                  <jats:p>With the development of digitalization and the advent of Industry 4.0, education in Smart Construction has undergone great revamping. Engineering System Analysis and Optimization (ESAO) is a cross‐disciplinary undergraduate course under the curricula of the Smart Construction Major. However, due to its difficulty and poor linkage to real project‐related problems, students lack interest in learning it. This study proposes developing a simulation program that is integrated into the course to improve learning effectiveness. The simulation program includes the following two models: (1) A subway station model that helps to understand the design and functions of a real subway station, the pedestrian flow in the subway station, and the evacuation pattern of pedestrians when a fire hazard occurs; (2) A road intersection model that was used to illustrate the functions of the intersection and explain how to select the optimal parameters to enhance the vehicle pass‐through rate. In order to assess the effects of the simulation program, the study used both quantitative and qualitative analyses. In the quantitative analysis, the participants were assigned to two groups: (1) the experimental group and (2) the control group by comparing their exam scores. Additionally, the qualitative analysis, including interviews and casual conversations, was adopted to attain students' opinions about the simulation program. Based on the analysis results, the simulation program has been demonstrated to increase the competence, confidence, and interest of students when compared to conventional teaching approaches.</jats:p>",
+    "venue": "Computer Applications in Engineering Education",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1038/s41598-025-27964-0",
+    "title": "Enhancing sustainable concrete using waste ceramic powder and natural pozzolan through experimental and machine learning approaches",
+    "abstract": "As global demand rises and natural aggregates become scarcer, using supplementary materials and industrial waste for concrete production offers a sustainable solution that conserves resources and reduces waste. Previous studies have demonstrated that pozzolanic additives, such as natural pozzolans and ceramic waste powders, can enhance concrete performance by refining the pore structure, reducing permeability, and improving long-term strength. However, limited research has explored the synergistic use of these materials, particularly in the context of predictive modeling and performance optimization. In the current study, an investigation was conducted to evaluate the effects of replacing cement with waste ceramic powder (at 10%, 20%, and 30%) and natural pozzolan (at 5%, 10%, 15%, and 20%) on the performance of concrete. The physical, mechanical, and durability properties of the resulting concrete mixes were comprehensively assessed, including compressive, tensile, and flexural strength, water absorption, and permeability. These properties were evaluated at various curing ages —7, 28, and 91 days—for compressive, tensile, and flexural strengths and water absorption, while permeability was measured at 91 days. Machine learning models—namely XGBoost, Random Forest, Gradient Boosting, and Elastic Net, were employed to predict compressive, tensile, and flexural strengths, with XGBoost yielding the highest accuracy for compressive and tensile strengths (RMSE = 0.8 and 0.08, respectively) and Gradient Boosting excelling for flexural strength (RMSE = 0.2). The results identified the Kh15C10 mix design (15% Natural pozzolan and 10% waste ceramic powder) as the optimal configuration, exhibiting enhanced compressive strength (8.12–11.49% increase), tensile strength (3.60–6.33% increase), flexural strength (2.99–12.45% increase), as well as reduced water absorption (35.74–77.33% decrease) and permeability (99.82% decrease) compared to the control sample. The integration of waste ceramic powder and natural pozzolan not only enhances mechanical and durability performance but also significantly contributes to environmental sustainability by lowering cement demand, reducing CO 2 emissions, and promoting circular economy principles through waste valorization. In predictive modeling, XGBoost excelled for compressive and tensile strengths with the lowest RMSE values (0.8 and 0.08, respectively), while Gradient Boosting outperformed for flexural strength with an RMSE of 0.2. These findings highlight the potential of these models in optimizing sustainable concrete designs.",
+    "venue": "Scientific Reports",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.61173/p3eb3n60",
+    "title": "Research and Analysis of Railway Obstacle Detection Technology Based on Deep Learning",
+    "abstract": "<jats:p>The advancement of intelligent detection technologies has made highly reliable obstacle identification a critical factor in enhancing the operational safety of railways. Nevertheless, traditional detection methods (such as railside infrared counters and vehicle-mounted millimeterwave radars) are limited by inherent defects such as strong environmental sensitivity, high detection rate of small targets and no classification ability, making it difficult to meet the safety needs in complex scenarios. In recent years, deep learning has promoted the transition of railway obstacle detection technology to intelligence with its multimodal feature autonomous extraction and dynamic scene modeling capabilities. This review offers a thorough analysis of the historical development and advancements in railway obstacle detection methods, highlighting the transformative advances brought about by deep learningbased models, comprehensively compares the application characteristics and scenarios of various technologies, and discusses the application and evolution of deep learning in the two core tasks of target recognition and semantic segmentation, covering representative models such as convolutional neural network and Transformer. This article also uses the analysis of public data sets to help the new generation of railway obstacle detection technology to provide a theoretical basis and also facilitate researchers to quickly carry out experimental verification.</jats:p>",
+    "venue": "Science and Technology of Engineering, Chemistry and Environmental Protection",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2512.05906",
+    "title": "EventQueues: Autodifferentiable spike event queues for brain simulation on AI accelerators",
+    "abstract": "Spiking neural networks (SNNs), central to computational neuroscience and neuromorphic machine learning (ML), require efficient simulation and gradient-based training. While AI accelerators offer promising speedups, gradient-based SNNs typically implement sparse spike events using dense, memory-heavy data-structures. Existing exact gradient methods lack generality, and current simulators often omit or inefficiently handle delayed spikes. We address this by deriving gradient computation through spike event queues, including delays, and implementing memory-efficient, gradient-enabled event queue structures. These are benchmarked across CPU, GPU, TPU, and LPU platforms. We find that queue design strongly shapes performance. CPUs, as expected, perform well with traditional tree-based or FIFO implementations, while GPUs excel with ring buffers for smaller simulations, yet under higher memory pressure prefer more sparse data-structures. TPUs seem to favor an implementation based on sorting intrinsics. Selective spike dropping provides a simple performance-accuracy trade-off, which could be enhanced by future autograd frameworks adapting diverging primal/tangent data-structures.",
+    "venue": "arXiv (Cornell University)",
+    "year": 2025,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.52058/2786-6165-2025-11(41)-2208-2222",
+    "title": "ВИКОРИСТАННЯ ІНСТРУМЕНТАЛЬНИХ ЗАСОБІВ E-LEARNING ДЛЯ ПІДТРИМКИ ЕКСПЕРИМЕНТАЛЬНИХ ДОСЛІДЖЕНЬ У STEAM-ОСВІТІ",
+    "abstract": "E-LEARNING STEAM-. e-learning STEAM-., ,",
+    "venue": "Вісник науки та освіти",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1080/23249935.2025.2605210",
+    "title": "Multi-task learning-based high-speed railway inflow and outflow prediction with large language models",
+    "abstract": "There exist complex passenger-flow dynamics in high-speed rail systems that challenge traditional forecasting methods, while large language models offer a promising solution. To this end, this study proposes a novel LLM-based model for the joint prediction of passenger inflow and outflow at high-speed railway stations for the first time, termed ST-Attn-LLM. The model comprises two key components: (1) A spatiotemporal attention-based feature extraction module, designed to dynamically capture temporal evolution patterns and spatial interactions across stations. (2) An LLM-based spatiotemporal feature enhancement module, which utilises Low-Rank Adaptation (LoRA) for efficient fine-tuning of the LLM to better model the intricate coupling between inflow and outflow. Extensive empirical evaluations are conducted on the Beijing-Shanghai high-speed railway dataset and two urban metro datasets. The results demonstrate that ST-Attn-LLM consistently outperforms existing baseline models across various prediction horizons, achieving average reductions of approximately 13.22%, 16.51%, and 5.9% in RMSE, MAE, and WMAPE, respectively.",
+    "venue": "Transportmetrica A: Transport Science",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1007/s00500-025-11106-9",
+    "title": "Retraction Note: Enhancing the college and university physical education teaching and learning experience using virtual reality and particle swarm optimization",
+    "abstract": "",
+    "venue": "Soft Computing",
+    "year": 2025,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.62713/aic.4250",
+    "title": "Development and Validation of a Machine Learning-Based Radiomics Model Using Ultrasound Image Features for Prostate Cancer Risk Stratification",
+    "abstract": "<jats:p>AIM: This study aimed to construct a risk stratification model for prostate cancer (PCa) ultrasound imaging data and machine learning algorithms, with the goal of providing an effective tool for early diagnosis, personalized treatment, and clinical decision-making. METHODS: A total of 211 histopathologically confirmed PCa patients were retrospectively enrolled and categorized into low-risk (n = 65), intermediate-risk (n = 55), and high-risk (n = 91) groups based on prostate-specific antigen levels, Gleason scores, and clinical T stage. From ultrasound images, 135 quantitative radiomic features—including morphological, texture, and edge descriptors—were extracted using the PyRadiomics toolkit. Feature dimensionality was reduced using the Pearson correlation coefficient (PCC), followed by recursive feature elimination (RFE) with 10-fold nested cross-validation to select the most informative features. Three machine learning algorithms—support vector machine (SVM), random forest (RF), and logistic regression (LR)—were trained and evaluated. Model performance was assessed using accuracy, sensitivity, specificity, and area under the curve (AUC). RESULTS: The RF model achieved the best performance in both training and test cohorts, with AUCs of 0.87 and 0.86, and accuracies of 90% and 88%, respectively. DeLong's test confirmed that RF significantly outperformed SVM (p = 0.016) and LR (p = 0.004) in AUC comparison. The RF model also demonstrated robust predictive ability across risk subgroups: in the high-risk group, it achieved an AUC of 0.89, accuracy of 89%, sensitivity of 88%, and specificity of 90%; in the intermediate- and low-risk groups, AUCs were 0.86 and 0.81, respectively. Feature importance analysis revealed that wavelet-transformed Gray Level Dependence Matrix (GLDM) texture features, particularly DependenceEntropy and DependenceVariance, were the most predictive, highlighting the value of intratumoral textural heterogeneity in risk classification. CONCLUSIONS: The RF-based ultrasound radiomics model enables accurate stratification of PCa risk, with remarkable performance in identifying high-risk patients.</jats:p>",
+    "venue": "Annali Italiani di Chirurgia",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.17148/ijarcce.2025.1412125",
+    "title": "A Machine Learning Framework for ICU and Medical-Surgical COVID-19 Admission Forecasting",
+    "abstract": "This study investigates machine learning approaches for predicting COVID-19 hospitalization rates in San Francisco, utilizing public datasets from DataSF encompassing testing metrics, deaths, and demographics from March 2020 to April 2024.The primary objective is to accurately predict daily patient counts in both Intensive Care Units and Medical-Surgical units through two distinct modeling tasks: point regression and long-horizon forecasting.For the point regression task, features were engineered from aggregated daily statistics, including lagged death counts and racedisaggregated testing data.A comparative analysis of five regressors models-K-Nearest Neighbors (KNN), Decision Tree, Linear Support Vector Machine, Non-linear Support Vector Machine, and Multi-layered Perceptron-was conducted using k-fold cross validation.Preliminary results indicate that the K-Nearest Neighbors regressor significantly outperformed other models, achieving high R scores of 0.97 for ICU and 0.98 for Med/Surg patient predictions, demonstrating its effectiveness in capturing complex, non-linear relationships within the temporal data.For multi-horizon forecasting, Long Short-Term Memory and Gated Recurrent Unit models were trained on 120 days of data to predict 120 days in the future.Though with some deviation from the true noise of the output, these models successfully capture broader trends, indicating that COVID-19 hospitalization rates are predictable, to a degree.Overall, this research demonstrates the high efficacy of KNN for pointin-time predictions and establishes a promising baseline for deep learning-based long-term forecasting of COVID-19. I.",
+    "venue": "IJARCCE",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.15294/jptm.v25i02.28845",
+    "title": "Application of MULTIMEDIA Powerpoint Assisted Learning to Improve Learning Outcomes of Knowledge of the function of Fracture Machine Parts",
+    "abstract": "<jats:p>The purpose of the research conducted to determine the effect of using PowerPoint multimedia on improving student learning outcomes in the subject of milling machine parts at SMK IPT Karangpanas. The background of this research is based on poor student learning outcomes, which are below the Graduation Threshold Value (KKM). Before conducting research, the feasibility of media and material was tested by experts with a percentage of 83% so that the material and media were suitable for use. The method used is quantitative experimental research with a two-group pre-test and post-test experimental model. Samples from two XI classes were taken randomly, with one experimental class and the other as a control class. Data were collected through questions in the form of pretest and posttest, and analysed using normality test, paired sample t-test, independent sample t-test, and N-Gain analysis. Results showed a significant improvement in learning outcomes in the experimental class compared to the control class, with a higher mean posttest score. The independent sample t-test showed significance &lt;0.001, and the mean N-Gain of 0.4713 was classified as moderate. Thus, the use of PowerPoint multimedia was proven effective in improving students' learning outcomes.</jats:p>",
+    "venue": "Jurnal Pendidikan Teknik Mesin",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1109/jiot.2025.3628900",
+    "title": "TTBO-FL: Joint Training, Trajectory, and Beamforming Optimization for Energy-Efficient Federated Learning in UAV Swarm",
+    "abstract": "Unmanned aerial vehicles (UAVs) can use the collected data to perform machine-learning tasks and enhance their intelligence level. The distributed framework of federated learning (FL) is suitable for resource-constrained UAV swarms. However, the dynamic channel conditions caused by the mobility of the UAVs impact the wireless FL performance. Additionally, data insufficiency and heterogeneity also affect the performance of the trained models. Thus, in this paper, we propose a joint training, trajectory, and beamforming optimization for an energy-efficient FL scheme that leverages the mobility of UAVs to enhance the model training efficiency, namely TTBO-FL. We adopt a two-level FL for the UAV network, where a high-level UAV (H-UAV) is for model aggregation and a set of low-level UAVs (L-UAVs) is for model training. Considering the dynamic channel conditions, we design a three-dimensional uniform linear array (3D ULA) and implement 3D analog beamforming to increase communication efficiency among UAVs. Moreover, we introduce transfer learning techniques and regularization constraints to mitigate the problem of data insufficiency and heterogeneity. Then, we formulate an optimization problem for UAV trajectory planning, local epoch adjustment, and beamforming, and adopt a soft actor-critic (SAC)-based algorithm to solve it. The simulation results show that, compared to the baseline schemes, the proposed schemes achieve higher model accuracy and lower energy consumption for the UAV swarm.",
+    "venue": "IEEE Internet of Things Journal",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.3390/electronics15020370",
+    "title": "Radar Signal Classification with Quantum Machine Learning: Ansatz Depth Impact on Expressibility",
+    "abstract": "<jats:p>Radar systems serve as foundational components in both civil and military aerospace infrastructures. Modern radar must not only distinguish between detection and non-detection but must also classify detected objects. Signal processing increasingly integrates machine learning models into complex systems, such as radar. Additionally, developments have fused signal processing with quantum computing, creating an emerging field of research. This paper examines the applicability of quantum machine learning models for radar signal classification, focusing on the impact of Ansatz depth on expressibility. Multiple challenges arise due to the immature state of noisy intermediate-scale quantum hardware and the computational complexity of quantum circuit simulation. Nonetheless, results indicate that shallow Ansätze with fewer than 70 gates are sufficient to achieve the maximum available performance per data-encoding operation.</jats:p>",
+    "venue": "Electronics",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1007/s41062-025-02476-y",
+    "title": "Predicting fire resistance of reinforced concrete (RC) and concrete-filled steel tubular (CFST) columns through machine learning",
+    "abstract": "",
+    "venue": "Innovative Infrastructure Solutions",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.3390/cancers18030377",
+    "title": "Machine Learning Radiomics in Computed Tomography for Prediction of Tumor and Nodal Stages in Colorectal Cancer",
+    "abstract": "<jats:p>Background/Objectives: Accurate preoperative TN staging is essential for guiding surgical and adjuvant treatment decisions in colorectal cancer (CRC), yet conventional imaging still faces limitations in reliably distinguishing early from advanced disease. This study aimed to evaluate whether CT-based radiomics combined with machine learning can noninvasively predict both tumor (T) and nodal (N) stages of CRC, and to identify which feature groups most contribute to each task. Methods: Fifty-three patients (55 tumors) with histologically confirmed CRC who underwent preoperative contrast-enhanced CT were retrospectively analyzed. A total of 107 radiomic features were extracted using PyRadiomics version 3.1.0, including shape, first-order, and texture features. Multiple preprocessing strategies—z-score normalization, PCA, and SMOTE—were tested across 11 machine learning classifiers. Results: For T staging, logistic regression using shape-based features achieved a mean sensitivity of 0.721, a specificity of 0.68, a balanced accuracy of 0.70, and an AUC of 0.751. For N staging, the AdaBoost model using texture-based features achieved a sensitivity of 0.742, a specificity of 0.622, a balanced accuracy of 0.682, and an AUC of 0.750. Shape features predominantly contributed to T prediction, while texture matrices drove N prediction, reflecting morphological and microstructural correlates of invasiveness and lymphatic dissemination. Conclusions: CT-based radiomics can quantitatively capture both morphological and textural patterns of tumor behavior, providing a noninvasive framework for preoperative TN staging in CRC.</jats:p>",
+    "venue": "Cancers",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.3390/make8020031",
+    "title": "Attention-Driven Feature Extraction for XAI in Histopathology Leveraging a Hybrid Xception Architecture for Multi-Cancer Diagnosis",
+    "abstract": "<jats:p>The automated and accurate results of classifying histopathology images are necessary in the early detection of cancer, especially the common cancers such as Colorectal Cancer (CRC) and Lung Cancer (LC). Nonetheless, classical deep learning frameworks often face challenges because the intra-class variations are large, the relations across classes are alike, and the quality of images is not stable. In order to eliminate these constraints, a multi-layer diagnostic framework is offered in detail. This process starts with a strong preprocessing pipeline, which involves gamma correction, bilateral filtering, and adaptive CLAHE, resulting in statistically significant changes in image quality quantitative measures. The hybrid attention architecture is presented and includes an Xception backbone, a Convolutional Block Attention Module (CBAM), a Transformer block, and an MLP classifier to successfully combine local features with global context. The proposed model achieved an outstanding performance with a classification of 99.98%, 99.58%, and 99.33% percent on LC25000, CRC-VAL-HE-7K, and NCT-CRC-HE-100K when tested on three publicly available datasets. In order to enhance transparency, very detailed explainability analyses are conducted with the help of layer-wise feature visualization and Grad-CAM. Finally, the real-world example of this framework is presented by its implementation in a web-based platform, which can be a useful and easy-to-use tool in helping to diagnose a pathology.</jats:p>",
+    "venue": "Machine Learning and Knowledge Extraction",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1061/jsendh.steng-14737",
+    "title": "Seismic Response Estimation and Performance Assessment of Large-Scale Structures Using Deep-Learning Methods",
+    "abstract": "Applications of machine learning (ML) in structural engineering and mechanics have increased substantially in recent years. Interest in ML stems from its potential to handle complex problems with increased accuracy and/or computational efficiency compared with traditional methods when a sufficient amount of data is available. This study explored the application of deep neural networks to seismic response and damage estimation for large-scale civil structures in the context of performance-based earthquake engineering. The objective was to experimentally validate the accuracy and efficiency of modified versions of the long short-term memory (LSTM) neural network and the physics-guided convolutional neural network (PhyCNN) in structures subjected to base excitations in linear and nonlinear response regimes. In particular, the robustness of the methods to predict the response and state of integrity of structures undergoing severe damage due to strong base motions when the methods are trained using limited low-amplitude linear input–output data was assessed. The performance and predicting capabilities of the methods were evaluated using experimental data from two full-scale case studies: a six-story building structure in San Bernardino, California, instrumented as part of the California Strong Motion Instrumentation Program (CSMIP), and a seven-story full-scale shear wall structure tested on the high-performance outdoor shake table at the University of California at San Diego. The results show that deep neural networks have limited robustness when applied to estimate response features outside the training domain, with a significant reduction in the prediction accuracy if the level of nonlinearity for prediction is higher than in the training data set.",
+    "venue": "Journal of Structural Engineering",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2601.22137",
+    "title": "PRISM: Distribution-free Adaptive Computation of Matrix Functions for Accelerating Neural Network Training",
+    "abstract": "Matrix functions such as square root, inverse roots, and orthogonalization play a central role in preconditioned gradient methods for neural network training. This has motivated the development of iterative algorithms that avoid explicit eigendecompositions and rely primarily on matrix multiplications, making them well suited for modern GPU accelerators. We present PRISM (Polynomial-fitting and Randomized Iterative Sketching for Matrix functions computation), a general framework for accelerating iterative algorithms for computing matrix functions. PRISM combines adaptive polynomial approximation with randomized sketching: at each iteration, it fits a polynomial surrogate to the current spectrum via a sketched least-squares problem, adapting to the instance at hand with minimal overhead. We apply PRISM to accelerate Newton-Schulz-like iterations for matrix square roots and orthogonalization, which are core primitives in machine learning. Unlike prior methods, PRISM requires no explicit spectral bounds or singular value estimates; and it adapts automatically to the evolving spectrum. Empirically, PRISM accelerates training when integrated into Shampoo and Muon optimizers.",
+    "venue": "arXiv (Cornell University)",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.22399/ijcesen.4827",
+    "title": "A Hybrid Monte Carlo–Machine Learning Framework for High-Energy Neutron Shielding Using Boron-Enhanced Concrete",
+    "abstract": "Secondary neutrons produced by proton-target interactions in high-energy proton accelerator facilities present a major shielding challenge due to their high penetrability and broad energy spectra. In this study, neutron dose attenuation in B₄C- and FeB-enhanced concretes containing 5%, 10%, and 15% additives was investigated at a proton energy of 1000 MeV using FLUKA-based Monte Carlo (MC) simulations coupled with Machine-learning (ML) surrogate models.MC-generated dose data were used to train log-linear Linear Regression (log-linear LR), K-Nearest Neighbors (KNN), Random Forest (RF), and Gradient Boosting Regressor (GBR) models to enable rapid dose prediction. The results show that RF and GBR achieve the highest predictive accuracy under all configurations, with test-set R² values of approximately 0.98-0.99 in tunnel air and 0.99-0.996 in concrete shielding. In contrast, the LR model performs poorly in shielding regions due to strong nonlinearity, while KNN also provides high predictive accuracy exceeding 90%, albeit with lower performance compared to RF and GBR. A comparative analysis reveals that FeB-enhanced concrete exhibits more complex attenuation behavior due to the combined effects of iron-induced scattering and boron absorption. Overall, the validated hybrid MC-ML framework demonstrates that RF- and GBR-based surrogate models provide a fast, reliable, and computationally efficient approach for neutron dose estimation and shielding optimization in high-energy proton accelerator facilities.",
+    "venue": "International Journal of Computational and Experimental Science and Engineering",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.18231/j.occ.70716.1770187942",
+    "title": "Current applications of artificial intelligence and machine learning in oncologic ICU management",
+    "abstract": "Critically ill cancer patients have challenges in management owing to their immuno compromised state, complex comorbidities, and heightened risk of multi-organ dysfunction. Recent advances in artificial intelligence and machine learning are revolutionizing oncologic intensive care through the facilitation of early complication prediction, precision risk stratification, and real-time decision support. These technologies can integrate large datasets, including clinical parameters, laboratory results, imaging findings, and genomics, for anticipating events such as sepsis, acute respiratory distress syndrome, and cytokine release syndrome. AI-driven algorithms will also facilitate optimization of ventilatory strategies, hemodynamic management, and renal support so that individualized support can be offered to each patient profile. While promising, implementation calls for careful validation, ethical oversight, and integration into multidisciplinary care pathways. This review elaborates on current applications, emerging innovations, and future perspectives of AI and ML in improving outcomes for critically ill patients with cancer.",
+    "venue": "Onco Critical Care",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "arxiv:2602.08792",
+    "title": "Multimodal Learning for Arcing Detection in Pantograph-Catenary Systems",
+    "abstract": "The pantograph-catenary interface is essential for ensuring uninterrupted and reliable power delivery in electrified rail systems. However, electrical arcing at this interface poses serious risks, including accelerated wear of contact components, degraded system performance, and potential service disruptions. Detecting arcing events at the pantograph-catenary interface is challenging due to their transient nature, noisy operating environment, data scarcity, and the difficulty of distinguishing arcs from other similar transient phenomena. To address these challenges, we propose a novel multimodal framework that combines high-resolution image data with force measurements to more accurately and robustly detect arcing events. First, we construct two arcing detection datasets comprising synchronized visual and force measurements. One dataset is built from data provided by the Swiss Federal Railways (SBB), and the other is derived from publicly available videos of arcing events in different railway systems and synthetic force data that mimic the characteristics observed in the real dataset. Leveraging these datasets, we propose MultiDeepSAD, an extension of the DeepSAD algorithm for multiple modalities with a new loss formulation. Additionally, we introduce tailored pseudo-anomaly generation techniques specific to each data type, such as synthetic arc-like artifacts in images and simulated force irregularities, to augment training data and improve the discriminative ability of the model. Through extensive experiments and ablation studies, we demonstrate that our framework significantly outperforms baseline approaches, exhibiting enhanced sensitivity to real arcing events even under domain shifts and limited availability of real arcing observations.",
+    "venue": "arXiv",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1109/jiot.2025.3635785",
+    "title": "Ultraefficient Compressed Phonocardiogram Classification on a Custom Embedded Neural Accelerator",
+    "abstract": "Real-time phonocardiogram analysis on embedded devices is a key enabler for scalable and accessible cardiovascular diagnostics, particularly considering portable systems designed for low-income countries. This work introduces a combination of compressive sensing and deep learning to build portable, efficient and effective diagnostic tools for widespread cardiac screenings. The proposed classification framework is tailored for deployment on ultra-low power STM32 microcontrollers equipped with the novel Neural-ART accelerator. Experimental evaluation on the CirCor Digiscope Phonocardiogram dataset demonstrates that even with a compression ratio exceeding 100×, a classification model can achieve up to 97.3% F1-score. A similar level of performance was obtained on the PhysioNet 2016 dataset, which was used to assess the robustness and generalization capability of the developed architectures. Compared to the state-of-the-art, our final edge solution achieves 94.3% accuracy, an inference time of 18.7 ms and an energy requirement of just 1.51 mJ per input window of 4,096 samples, confirming its suitability for real-time, energy-constrained medical applications.",
+    "venue": "IEEE Internet of Things Journal",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.36227/techrxiv.177102159.95058346/v1",
+    "title": "Architectural Taxonomy of AI Accelerators: A Memory and Interconnect Centric Perspective",
+    "abstract": "The explosive growth of artificial intelligence (AI) and machine learning (ML) workloads has driven the development of specialized hardware accelerators, including GPUs, TPUs, NPUs, and custom ASICs. Central to their performance and efficiency are memory and interconnect architectures specifically high bandwidth memory (HBM), on-chip networks (NoC), and 3D stacked compute. This paper presents a comprehensive survey of AI/ML hardware accelerators with a memory/interconnect-centric focus, analyzing technical evolution, state-of-the-art implementations, and performance-areapower trade-offs. Through a detailed case study of the Cerebras Wafer Scale Engine, we demonstrate how radical architectural approaches address scaling challenges. As our core contribution, we propose a novel three-dimensional taxonomy that classifies accelerators based on memory architecture, interconnect topology, and integration strategy. This taxonomy provides researchers and practitioners with a systematic framework for evaluating architectural choices, comparing designs, and guiding future innovations in emerging areas like chiplets and in-memory computing.",
+    "venue": "Unknown Venue",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1108/ci-08-2025-0377",
+    "title": "Real-world evaluation of automated defect detection in masonry bridges using 360° imagery with machine learning",
+    "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>The purpose of this study is to evaluate different deep learning approaches, Convolutional Neural Networks (CNN), transformer, hybrid and commercial models, for automated defect detection in UK masonry railway bridges, in both laboratory and real-world settings, using high-resolution 360° imagery.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design/methodology/approach</jats:title>\n                    <jats:p>Expert-annotated imagery was categorised into six defect types, with SMOTE oversampling applied to mitigate class imbalance. Four widely used architectures, EfficientNet, Swin Transformer, ConvNeXt and Azure CustomVision, were benchmarked using compact variants in a two-stage design: laboratory data and real-world evaluation, to assess feasibility and generalisability.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Findings</jats:title>\n                    <jats:p>All models achieved high performance on laboratory data (0.83–0.91 accuracy), demonstrating feasibility in controlled environments. However, when applied to real-world evaluation, accuracies declined to 0.76–0.86, with the Swin Transformer showing the greatest robustness (2% drop). This decline was largely attributable to extreme class imbalance (non-defect to defect ratio around 220:1), which caused models to favour the non-defect class. While Vegetation and Loss of Section showed moderate recall, crack detection was less reliable, likely affected by limited samples and textural similarity to other classes. Consequently, overall accuracy masked substantial class-level disparities, and ensemble modelling delivered only marginal improvements under these conditions.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Practical implications</jats:title>\n                    <jats:p>Automated detection can streamline inspections and enhance consistency, as compact models show feasibility. However, reliable deployment requires addressing imbalance, as some defect classes (e.g. cracks) remain unreliable.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Originality/value</jats:title>\n                    <jats:p>To the best of the authors’ knowledge, this study is the first comprehensive evaluation on masonry railway bridges with 360° imagery, which advances beyond prior laboratory environment by systematically testing generalisability in real-world sceneries, generating new insights into imbalance-driven errors and class-specific detection limits.</jats:p>\n                  </jats:sec>",
+    "venue": "Construction Innovation",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1007/s11701-025-03091-w",
+    "title": "Development and implementation of the IMRA multiplatform Foundations in Robotic Surgery online learning curriculum",
+    "abstract": "A major limitation to robotic training internationally is sufficient access to console and bedside operating time. It is important that trainees are “robot ready” when clinical opportunities arise. Delivering the didactic component of training in advance of hands-on training opportunities is needed to maximise the efficiency of console time. This study describes the development and implementation of a platform agnostic online curriculum (Foundations in Robotic Surgery -IMRA) that provides an overview of robotic surgery as didactic learning prior to hands-on experience. Curriculum development is reported using Kern’s model. A literature review was conducted in accordance with the PRISMA statement. A mixed-methods approach, incorporating surveys and semi-structured interviews, defined learning objectives and curriculum content. Curriculum outcomes were assessed via surgeon surveys, and modifications were made based on feedback from the Royal Australasian College of Surgeons. The literature review revealed a gap in vendor-neutral online curricula for robotic surgery. Six experts comprising of general surgeons and urologists, identified key learning objectives on safety, communication, and surgical technique. This gap was addressed by developing an online curriculum comprising of ten theory modules. In the development group ( n = 28; 16 responses), Kirkpatrick assessment showed a 60% increase in participants rating their knowledge as good or excellent. Confidence in bedside assistance and console training rose by 37.5%. In the rollout group ( n = 108; 88 responses), 89.8% rated the content quality as good or excellent. Development and implementation of the IMRA Foundations in Robotic Surgery Curriculum demonstrated improvements in learners’ self-rated knowledge and confidence in both bedside and console aspects of multi-platform robotic surgery.",
+    "venue": "Journal of Robotic Surgery",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.47116/apjcri.2026.02.09",
+    "title": "Educational Effects of an AI Mobility Accelerator Platform (aMAP)-Based Autonomous Driving Competition for High School Students",
+    "abstract": "",
+    "venue": "Asia-pacific Journal of Convergent Research Interchange",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1016/j.rineng.2026.108978",
+    "title": "Optimizing pulsed field ablation for cardiac arrhythmias integrating Taguchi method, machine learning and genetic algorithms",
+    "abstract": "• Novel PFA framework integrating FEM, Taguchi method, and machine learning. • Effect of critical factors on the efficacy of PFA is investigated. • Machine learning reduces simulation time by 99.9%, enabling seamless clinical use. • Developed framework advances personalized PFA treatment for cardiac arrhythmia. Pulse field ablation (PFA) is a promising irreversible electroporation-based treatment modality for cardiac arrhythmias. Yet, optimal pulse train parameters and electrode configurations remain undefined. This study presents a novel approach integrating finite-element modeling (FEM), the Taguchi method, machine learning (ML), and multi-objective optimization to enhance PFA outcomes. A comprehensive FEM model simulating electrical, thermal, and fluid dynamics in cardiac tissue evaluates critical factors, viz., pulse amplitude, inter-pulse delay, pulse number, blood flow velocity, and electrode contact depth. Taguchi’s L27 orthogonal array is utilized to quantify the effect of selected factors on PFA outcomes. Simulation data is used to train a range of ML models, such as support vector machines, decision trees, Gaussian processes, and neural networks, incorporating data-augmentation techniques. The Gaussian process model exhibited strong predictive performance for ablation volume and maximum tissue temperature, achieving mean absolute errors (MAE) of 0.2 mm³ and 0.1 °C during training, and 1.1 mm³ and 0.5 °C during testing, and is used for multi-objective optimization via the non-dominated sorting genetic algorithm (NSGA-II). Pulse amplitude emerged as the most statistically significant factor affecting both ablation volume and temperature rise. Electrode insertion depth positively correlated with the ablation volume, whereas blood flow velocity showed minimal impact. The ML-integrated framework allowed rapid prediction of treatment outcomes, reducing computation time from hours to milliseconds and enabling real-time optimization. The generalized framework presented in this study, integrating computational modeling, statistical design, ML, and genetic algorithms, paves the way forward for tailoring PFA protocols to patient-specific needs, thus advancing personalized treatment strategies for arrhythmia.",
+    "venue": "Results in Engineering",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1016/j.anucene.2026.112244",
+    "title": "High-energy neutron shielding analysis using curve fitting and machine learning: a Monte Carlo-based study in concrete and Ferro-Boron configurations",
+    "abstract": "",
+    "venue": "Annals of Nuclear Energy",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.3390/machines14030286",
+    "title": "Support Vector Machine and k-Means Clustering for Advanced Wheel Flat Identification: A Comparison of Supervised and Unsupervised Methods",
+    "abstract": "<jats:p>Artificial-intelligence-driven wayside monitoring has become a promising solution for early identification of railway wheel flats, enabling safer operations and more efficient maintenance planning. This study introduces a comparative investigation of supervised and unsupervised machine learning strategies for wheel flat identification, with particular emphasis on real-time applicability and sensor cost reduction. Support Vector Machines (SVMs) and k-means clustering are evaluated as representative supervised and unsupervised approaches using vibration data obtained from numerically simulated train–track interactions under realistic operating conditions, including train speeds of 120 km/h and 200 km/h and multiple wheel flat severities. A key contribution of this work is the proposal of a simplified supervised classification framework that directly exploits Auto-Regressive features extracted from rail-mounted accelerometers, eliminating the need for feature normalization and multi-sensor data fusion. This simplification significantly reduces computational effort, making the approach suitable for real-time deployment in operational railway environments. In parallel, a systematic sensitivity analysis is conducted to assess the influence of sensor placement and to identify the minimum sensor configuration required to achieve reliable damage classification. The outputs from the current study show that an SVM emerges with more accurate defect classification than the k-means clustering, allowing a wayside system with fewer sensors.</jats:p>",
+    "venue": "Machines",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.55277/researchhub.tvj62yy9",
+    "title": "“War Machine” 2026 Srteaming-Ita CB01 [Altadefinizione]",
+    "abstract": "",
+    "venue": "ResearchHub Technologies, Inc.",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.55277/researchhub.tjji9a6o",
+    "title": "[Altadefinizione] “War Machine” 2026 Streaming-Ita CB01",
+    "abstract": "",
+    "venue": "ResearchHub Technologies, Inc.",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1002/9781394336203.ch5",
+    "title": "Hardware Architectures and Optimization Techniques for Convolutional Neural Network Accelerators",
+    "abstract": "The rapid advancement in artificial intelligence (AI), particularly in convolutional neural networks (CNNs) for machine vision tasks, has been significantly propelled by the increasing availability of large-scale data generated by edge devices that monitor our daily activities. However, CNNs are inherently memory- and compute-intensive, posing significant challenges to their deployment on conventional hardware architectures. This mismatch results in inefficiencies in power consumption, latency, and overall performance, which hinder the scalability and real-time applicability of such systems. While traditional hardware solutions, including application-specific integrated circuits (ASICs), field-programmable gate arrays (FPGAs), and graphic processing units (GPUs), have demonstrated their potential in accelerating CNN-based computations, their adoption is often limited by high development costs, extended design and validation times, elevated power requirements, and constrained throughput. To address these limitations, a variety of deep learning hardware architectures and optimization algorithms have been proposed over recent years. These innovations aim to address critical concerns, including energy efficiency, computational speed, and the adaptability of hardware to evolving AI models. Furthermore, the emergence of techniques such as model compression has significantly contributed to optimizing the deployment of CNNs on resource-constrained devices, enabling them to perform complex computations while minimizing resource utilization. This chapter provides a comprehensive review of the progress made in the design and implementation of CNN accelerators and associated computing hardware. It systematically examines the unique features, benefits, and trade-offs of key hardware platforms, including ASICs, FPGAs, CPUs, and GPUs, in the context of CNN applications. Additionally, the chapter explores recent advancements in architectural and algorithmic optimization techniques, such as model compression and sparsity exploitation, which aim to enhance the efficiency of CNNs. The challenges currently faced in developing scalable, power-efficient, and high-performance AI systems are discussed, along with future directions to address these issues. This holistic analysis serves as a valuable resource for researchers and practitioners striving to bridge the gap between state-of-the-art AI algorithms and their practical implementation.",
+    "venue": "Unknown Venue",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1007/s00431-026-06849-y",
+    "title": "Learning curves and training thresholds for paediatricians performing neonatal hip ultrasound using the Graf method in a universal screening program",
+    "abstract": "",
+    "venue": "European Journal of Pediatrics",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.34726/hss.2026.102403",
+    "title": "Prediction of phase diagrams using machine learning backed nested sampling",
+    "abstract": "Predicting phase diagrams from first principles requires efficient and reliable access to free energies across broad regions of configuration space. Nested sampling (NS) provides a principled statistical-mechanical framework for this task, offering direct access to the configurational partition function and enabling the determination of thermodynamic observables and phase boundaries from a single simulation. When combined with modern machine-learning interatomic potentials (MLIPs), NS achieves near-first-principles accuracy at dramatically reduced computational cost. Nevertheless, the computational cost of NS for larger systems remains prohibitive, and further advances in the underlying Monte Carlo machinery will be indispensable. Its overall efficiency, however, depends critically on robust exploration of rugged potential-energy landscapes and on the availability of representative, high-quality training data. A central methodological contribution of this work is the development of replica-exchange nested sampling (RENS). By introducing occasional configuration swaps between parallel NS replicas, RENS substantially enhances ergodicity and facilitates barrier crossing, enabling reliable sampling of multimodal and highly anisotropic energy landscapes. The resulting exploration naturally yields diverse and physically relevant configurations suitable for training MLIPs. To harness the computational capabilities of modern hardware accelerators, we develop JAXNEST, a fully JAX-based NS implementation that executes large RENS simulations concurrently on single or multiple GPUs. These performance gains allowed RENS to be embedded directly into a fully automated active learning (AL) workflow. Our AL strategy combines uncertainty quantification with the thermodynamically representative sampling of NS to identify and label only the most informative configurations with ab initio calculations, thereby maintaining MLIP accuracy while minimizing computational cost. In this thesis, we therefore carefully rederive the constant-pressure NS formalism within the language of Monte Carlo statistical methods. Building on this foundation, we compare NS to other common free-energy techniques, highlighting its unique advantages, and reformulate our RENS approach in terms of Markov kernels. Finally, we discuss some of the computational challenges we faced with machine learning (ML)-backed NS and describe how they were addressed in practice.",
+    "venue": "reposiTUm (TU Wien)",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.56578/ataiml050107",
+    "title": "Mesh-Free Modeling of Heat Transfer Dynamics for Rapid Assessment of Necrosis Zones in Hepatic Tumor Radiofrequency Ablation Using Physics-Informed Neural Networks",
+    "abstract": "Accurate prediction of the thermal ablation zone in hepatic radiofrequency ablation (RFA) is critical for preventing the recurrence of local tumor, yet it is complicated by the convective heat sink effect of blood perfusion.Traditional numerical solvers, such as the finite difference method (FDM), are inherently limited by time-step constraints which require greater computational cost and impede real-time clinical applications.This study proposed a mesh-free Physics-Informed Neural Network (PINN) framework to simulate the spatiotemporal dynamics of Pennes bioheat equation.By embedding the governing partial differential equation (PDE) directly into the loss function of the neural network, the model learnt the continuous temperature field without spatial discretization or labeled training data.A comparative analysis against an explicit FDM baseline yielded a relative L2 error norm of 1.9%.Although PINN's continuous functional approximation slightly dampened the theoretical singularity at the tip of the electrode, it accurately resolved the critical 50 C isotherm that defined the boundary of irreversible coagulative necrosis.Furthermore, the framework effectively decoupled computational cost from the time of physical simulation.While offline training required approximately 6 minutes, the optimized network executed online inference in milliseconds.This capability to provide physically consistent and near-instantaneous thermal predictions demonstrates the potential of the PINN framework for intraoperative decision support systems.",
+    "venue": "Acadlore Transactions on AI and Machine Learning",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.21105/jose.00306",
+    "title": "Reinforcement Learning: A Comprehensive Open-Source Course",
+    "abstract": "We present an open-source repository of an extensive course on reinforcement learning.It is specifically designed for master students in engineering and computer science.The course aims to introduce beginners to the fundamentals of reinforcement learning and progress towards advanced algorithms.This is done using examples spanning many different classic control engineering tasks.It is structured to be accessible to students with limited prior programming experience by introducing the basics of Python.",
+    "venue": "Journal of Open Source Education",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1016/j.engstruct.2026.122262",
+    "title": "Reduced dataset-based machine learning model for blast damage assessment of reinforced concrete columns",
+    "abstract": "",
+    "venue": "Engineering Structures",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.20295/2223-9987-2026-1-142-153",
+    "title": "Multiple-Class Classification of a Diesel Locomotive Engine’s Mechanical Condition Based on Wavelet Properties of Vibration Signals via Machine-Learning Techniques",
+    "abstract": "<jats:p>Objective: to develop and experimentally validate a multiclass classification algorithm for assessing the technical condition of a diesel locomotive engine based on wavelet properties derived from vibration signals, employing machine learning methods to ensure the reliability and safety of railway transport. Methods: experimental measurements were performed on a D50 diesel engine at the Diesel Locomotive Laboratory named after Professor Ya. M. Gakkel, Emperor Alexander I St. Petersburg State Transport University. A total of 491 triaxial vibration recordings were obtained across seven diagnostic states (one of which represented normal operation and six of which simulated fuel supply faults by cutting off fuel delivery to specific cylinders). Wavelet packet decomposition to the eleventh level, using a fourth-order Daubechies wavelet, yielded 45,984 diagnostic features from the decomposition nodes. Principal Component Analysis (PCA) was employed to minimize the dimensionality of the extracted features, retaining components that together explained 95 % of the variation. Stratified 5-fold cross-validation was used to compare eight machine-learning algorithms in order to ensure an unbiased evaluation of the models’ generalization capabilities. Results: the highest classification performance of 99.32 % was obtained using logistic regression with L1 regularization (Accuracy = 0.9932, F1-macro = 0.9921). The stratified cross-validation confirmed the stability and reproducibility of this outcome, yielding an F1-macro score of 99.56 % ± 0.55 %. This method demonstrated the lowest variability across all tested algorithms, indicating strong robustness to data variability. Practical significance: the experimental findings have confirmed the feasibility of automatic classification of diesel engines into diagnostic categories based on wavelet properties of vibration signals. Logistic regression has been selected as the optimal method because it provides a favorable balance of predictive accuracy, stability of results, and model interpretability. The developed algorithm can serve as a foundation for real-time on- board diagnostic systems for diesel locomotives.</jats:p>",
+    "venue": "Bulletin of scientific research results",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1038/s41598-026-46758-6",
+    "title": "Deep learning-based high-speed railway communication systems",
+    "abstract": "High-speed railway wireless communication systems are characterized by severe Doppler shifts and fast time-varying multipath, which challenge reliable connectivity in Long-Term Evolution for Railways (LTE-R). This paper studies the two data-driven frameworks to enhance the communication quality so as to reduce the error probability under such highly dynamic propagation conditions. The first framework investigates a deep neural network (DNN) trained to learn the channel behavior and avoid the restrictive assumptions and predefined interpolation models used in conventional time-domain channel estimation (TDCE) schemes (Nearest, Linear, Cubic Hermite, and Cubic Spline). Besides, the second framework utilizes an autoencoder/decoder architecture to replace the traditional processing units and gain prior information from the dataset. Numerical results show that the proposed DNN-based frameworks more effectively track rapid channel fluctuations and mitigate Doppler-induced distortions, thereby improving detection performance in high-mobility LTE-R scenarios. These findings highlight the potential of learning-based signal processing to enhance the reliability and efficiency of high-speed railway communications.",
+    "venue": "Scientific Reports",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.64388/irev9i9-1715277",
+    "title": "Impact of Problem-Based Learning On Interest and Achievement in Mechanics Among Senior Secondary Physics Students in Fct, Abuja",
+    "abstract": "This work focused on the impact of Problem Based Learning on students’ interest and achievement in mechanics in Federal Capital Territory, Abuja. Two research questions were raised, and two null hypotheses were formulated with the adoption of the Quasi-experimental pretest posttest research design. The study was carried out in two purposively selected coeducational secondary schools in the Federal Capital Territory, Abuja. A sample size of 150 physics students from two randomly selected intact classes in the sample was used. The instruments for data collection were the Physics Achievement Test (PAT) and the Physics Interest Questionnaire (PIQ) with the reliability coefficient of 0.72 and 0.70 respectively. Descriptive statistics were used to answer the research questions while the Analysis of Covariance (ANCOVA) and the Mann Whitney U test were used to test the null hypotheses. The results showed that there was significant difference between the mean achievement scores of experimental group and control group. There was also a significant difference between the mean interest scores of the experimental group and the control group. The research concluded that using Problem-based Learning strategy makes students learn better about Physics and it makes them active in the classroom to achieve stated objectives due to its learner centered attribute. Therefore, the strategy has positive impact on students’ achievement as well as their interest in mechanics.",
+    "venue": "Iconic Research and Engineering Journals",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1007/s11517-026-03569-1",
+    "title": "Deep learning for carotid Doppler spectra classification",
+    "abstract": "Cardiovascular disease (CVD) remains a global health challenge, with limited specialist access in low- and middle-income countries hindering early detection. Carotid Doppler ultrasound offers promise for screening in non-specialist settings. However, spectral Doppler lacks the anatomical context provided by duplex ultrasound, making it challenging to determine which carotid vessel is being assessed. This study focuses on accurately identifying signals from the common, internal, and external carotid arteries (CCA, ICA, and ECA) based solely on Doppler spectra. This forms a critical step for subsequent disease classification. A clinical study enrolled 398 participants who underwent bilateral carotid Doppler examination (198 healthy controls, 200 with CVD). Several classifiers were evaluated including i) five deep convolutional neural networks (CNN) utilizing transfer learning on spectral images, and ii) conventional machine learning classifiers applied to the maximum frequency envelope and extracted features. The best performing classifier was a CNN (GoogLeNet) which achieved a mean area under the curve (AUC) of 0.929, effectively distinguishing between carotid artery segments. It exhibited f1-scores of 0.830, 0.803 and 0.764 for the ICA, ECA and CCA, respectively. Explainable AI tools (GradCAM and LIME) provide intuitive visual insights into these predictions. This study addresses a previously unsolved problem of automated carotid artery segment identification using spectral Doppler waveforms alone. When incorporated into automated screening tools, this approach provides a low-cost, specialist-independent pathway for earlier CVD detection, particularly suited to resource-constrained environments.",
+    "venue": "Medical &amp; Biological Engineering &amp; Computing",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.55041/ijsrem60093",
+    "title": "SkillSync: An AI-Based Skill Gap Analyzer Using Machine Learning",
+    "abstract": "<jats:p>Abstract:\n\n   This paper presents SkillSync, an AI-based skill gap analyzer designed to identify the difference between a student's existing skills and industry-required skills. The system uses machine learning techniques to extract skills from resumes and compare them with predefined industry skill sets. A recommendation system suggests relevant courses and resources to improve employability. The model is implemented using Python and achieves efficient skill matching with improved accuracy. The proposed system helps students understand their skill gaps and enhances career readiness.\n\nKeywords:\n\n   Machine Learning, Skill Gap Analysis, Resume Parsing, Recommendation System, Python, Artificial Intelligence</jats:p>",
+    "venue": "INTERNATIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1002/jum.70268",
+    "title": "Ultrasound‐ <scp>MRI</scp> Fusion Deep Learning Radiomics Nomogram: Refining Prognostic Stratification for Triple‐Negative Breast Cancer Treated With Neoadjuvant Chemotherapy",
+    "abstract": "We read with great interest the original article by Cheng et al1 published in this journal, which evaluated the prognostic performance of a deep learning radiomics nomogram (DLRN) integrating ultrasound and multi-sequence magnetic resonance imaging (MRI) for triple-negative breast cancer (TNBC) patients undergoing neoadjuvant chemotherapy (NAC).1 This work is highly innovative and clinically meaningful, as it addresses the long-standing limitations of traditional prognostic tools for TNBC—including the low accuracy of clinical-pathological indicators, the invasiveness and high cost of molecular tests, and the insufficient information utilization of single-modality imaging models.1 The authors' achievement of a high concordance index (C-index) of 0.859–0.887 for disease-free survival (DFS) prediction and effective risk stratification for postoperative recurrence provides a novel non-invasive prognostic approach for TNBC, a subtype with the most unfavorable prognosis among breast cancers.1, 2 Cheng et al's1 study has several notable strengths that set it apart from previous research. First, the integration of ultrasound and multi-sequence MRI combines the real-time functional information of ultrasound (e.g., blood flow dynamics) with the high-resolution morphological and soft tissue contrast of MRI, fully capturing the multidimensional features of TNBC's high heterogeneity.1 Second, the combination of handcrafted radiomics features and automatically extracted deep learning features leverages the interpretability of radiomics and the ability of deep learning to capture fine-grained imaging patterns, which is a valuable exploration of multimodal and multi-method integration in oncologic imaging.1, 3 Third, the multicenter study design and rigorous external validation improve the generalizability of the model, and the clear risk stratification threshold (0.545) provides a straightforward reference for clinical preoperative risk assessment.1 Despite these significant contributions, we believe several aspects of this study warrant further discussion and exploration to enhance the model's clinical utility and generalizability. First, the sample size of the validation cohort (n = 31) is relatively small, with a statistical power of only 0.68 for detecting a medium effect.1 Although the authors acknowledged this limitation, larger multi-center prospective cohorts with extended follow-up (exceeding 5 years) are still needed to verify the model's long-term predictive performance and adjust the risk stratification threshold. Second, the model only integrated clinical N stage as a clinical parameter, while previous studies have shown that molecular indicators such as Ki-67 index and BRCA gene mutation status, as well as pathological indicators such as tumor regression grade, are also independent prognostic factors for TNBC.4, 5 The inclusion of these indicators may further improve the model's predictive accuracy for overall survival (OS), whose C-index (0.800–0.811) was slightly lower than that of the combined MRI + US radiomics model.1 Third, the “black box” problem of deep learning remains unresolved: the ResNet152-based deep learning component extracted abstract features, but the biological correlation between these features and TNBC's recurrence and metastasis mechanisms was not elaborated.1, 6 Combining deep learning features with pathological findings to explore their biological significance will help improve the model's interpretability and clinical acceptance. Fourth, although the authors unified the imaging parameters of the validation centers, residual inter-center variability in MRI protocols (e.g., vendor-specific sequences) and ultrasound operation standards may still affect feature reproducibility.1 Establishing a standardized imaging acquisition and post-processing pipeline is a key step for the clinical translation of this model. In addition, the study found that the radiomics model outperformed the deep learning model in OS prediction, and the DLRN model's OS performance was slightly lower than the radiomics model alone.1 This finding highlights that the predictive efficacy of radiomics and deep learning is affected by multiple factors such as sample size, task complexity, and feature characteristics.1, 7 For TNBC prognosis prediction with relatively limited sample size, high-precision handcrafted radiomics features may have more stable performance, while deep learning models may require larger datasets to exert their advantages in capturing complex patterns.8, 9 Future research can explore the optimal integration strategy of radiomics and deep learning features to maximize their complementary advantages. In conclusion, Cheng et al's1 study is a pioneering work in applying multimodal deep learning radiomics to the long-term prognosis prediction of TNBC after NAC, and the developed DLRN model has great potential for clinical application.1 We believe that addressing the above issues through large-sample prospective studies, multi-indicator integration, and standardized clinical translation will further enhance the model's reliability and practical value, providing more accurate individualized prognostic assessment for TNBC patients and guiding clinical decision-making of NAC and postoperative surveillance. We look forward to the authors' follow-up research to validate and optimize this promising prognostic tool. Data sharing is not applicable to this article as no datasets were generated or analyzed during the current study.",
+    "venue": "Journal of Ultrasound in Medicine",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1038/s41598-026-49119-5",
+    "title": "A physics-guided temporal convolutional learning with XGBoost integration for degradation-aware and robust electric vehicle range prediction",
+    "abstract": "Accurate prediction of electric vehicle (EV) driving range is fundamental for alleviating range anxiety, improving route planning, and enabling reliable battery and energy management under real-world operating conditions. However, prevailing range prediction frameworks typically depend on instantaneous state-of-charge (SoC) and nominal battery capacity, implicitly assuming ideal battery behavior and neglecting the irreversible degradation induced by cycling, thermal stress, and heterogeneous charging practices. Conventional machine learning and deep learning methods often fail to represent these degradation dynamics, either because they ignore temporal dependencies or function as non-interpretable black-box models, thereby limiting their applicability in safety-critical battery management systems. This work introduces a Physics-Guided Temporal Convolutional Network integrated with XGBoost (PG-TCN-XGB)—a unified, degradation-aware predictive architecture designed to overcome these limitations. A key contribution of this study is the formulation of a Degradation Memory Index (DMI), a physics-derived cumulative descriptor that encodes long-term battery stress by jointly considering energy throughput, temperature deviation, and charging intensity. By embedding DMI directly into temporal feature learning, the model differentiates between identical SoC states arising from distinct degradation histories, thereby enabling physically consistent range estimates. The PG-TCN component leverages causal and dilated convolutions to model both short-horizon driving fluctuations and long-horizon behavioral and degradation patterns with high computational efficiency. These learned temporal embeddings are subsequently refined by an XGBoost regressor, which captures residual nonlinearities and mitigates noise sensitivity typical of real-world telemetry. Comprehensive evaluation using a large-scale real EV dataset containing battery characteristics, driving behavior, environmental variables, and charging-infrastructure indicators demonstrates that the proposed hybrid method significantly outperforms ensemble learning (Extra Trees, XGBoost) and deep learning baselines (LSTM, BiLSTM-Attention, CNN-LSTM). The PG-TCN-XGB model achieves superior performance with an RMSE of 0.037 and an R² of 0.978, with stability further confirmed through cross-validation. These results establish that combining physics-based degradation modeling with temporal deep learning and robust boosting strategies yields a substantial improvement in predictive accuracy, generalization across operating conditions, and interpretability. Overall, this study provides one of the first end-to-end physics-guided, degradation-aware temporal learning frameworks for EV range prediction, addressing critical gaps in current modeling approaches and offering a scalable, interpretable solution for next-generation EV energy management systems.",
+    "venue": "Scientific Reports",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.21203/rs.3.rs-9201001/v1",
+    "title": "Research on mechanical properties prediction of regenerative ultra-high performance Concrete based on machine learning 1",
+    "abstract": "<title>Abstract</title>\n                <p>Based on the recycling technology of waste concrete, the preparation of regenerated aggregate and regenerated fine powder, and the use of them to replace quartz sand and cement, and the preparation of regenerated ultra-high performance concrete (R-UHPC) is a research hotspot in recent years. In this paper, a new machine learning method is proposed to predict the compressive strength performance of R-UHPC by using XGBoost algorithm. The compression performance of R-UHPC is predicted by using cement substitute material and aggregate substitute material index. More than 200 groups of literature data at home and abroad are trained, and the good fit is above 0.93, and the error between the predicted value of the model and the literature value is within 5%. The error between the model prediction value and the literature value is within 5%, indicating that the established XGBoost model has good prediction effect. By establishing the Python program of improved MMA matching, 21 groups of specimens were made, and the mechanical test study was carried out. The error between the predicted value of the model and the actual value of the test was within 5%. The results show that the established XGBoost model has good prediction effect</p>",
+    "venue": "Springer Science and Business Media LLC",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1007/s13369-026-11302-1",
+    "title": "Experimental and Machine Learning-Based Investigation of Mechanical Properties of Basalt Fiber Composite Mortars Containing Plastic Waste and Recycled Concrete Aggregate",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>This study investigated the compressive strength (CS) and flexural strength (FS) of basalt fiber (BF)-reinforced composite mortars containing plastic waste aggregate (PA) and recycled concrete aggregate (RCA) using experimental and machine learning (ML)-based methods. Within this scope, a total of 64 mortar mixtures containing different ratios of PA, RCA and BF were prepared, and unit weight, CS and FS tests were performed on samples cured for 28 days. Datasets consisting of 64 data points each for CS and FS were created using the obtained experimental results. These datasets were trained using six different ML algorithms, and their performances were compared. Additionally, an analytical prediction equation was obtained using the multiple linear regression (MLR) method for CS prediction. The experimental results showed a general decreasing trend in CS with increasing PA and BF ratios. In contrast, increasing the BF ratio increased FS, and specimens containing 15% PA reached the highest FS values. The most successful results in CS and FS estimation were obtained with the extreme gradient boosting regressor (XGR) model, with average absolute errors (MAE) of 2.218 and 0.523 MPa, respectively. However, the MLR model produced an equation with an MAE of 2.069 MPa for CS prediction. This study demonstrates that the effects of PA and BF ratios on CS and FS can be reliably predicted using ML-based regression models with limited experimental datasets.</jats:p>",
+    "venue": "Arabian Journal for Science and Engineering",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2605.08996",
+    "title": "Machine Learning-Based Graph Simplification for Symbolic Accelerators",
+    "abstract": "Graph-based accelerators have been widely adopted in symbolic data processing applications such as genomics, cybersecurity, and artificial intelligence. However, these systems often suffer from excessive memory usage and inefficiencies stemming from redundant graph structures. We present AutoSlim, a machine learning-based framework that leverages data-driven methods to prune automata graphs for hardware accelerators. Using features extracted from prior graph executions and a Random Forest classifier, AutoSlim identifies and removes low-impact nodes and edges. When applied to a Non-deterministic Finite Automata overlay architecture (NAPOLY+), AutoSlim reduces FPGA resource usage by up to 40%, with corresponding improvements in throughput and power efficiency. The framework includes a verification step to ensure functional equivalence after pruning and suggests promising directions for both hardware optimization and security.",
+    "venue": "arXiv (Cornell University)",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1108/rs-12-2025-0057",
+    "title": "A machine-learning-based approach for railway excitation force prediction",
+    "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>Vibrations induced by external loads play a critical role in the performance and safety of high-speed train bogies. Accurate knowledge of the dynamic forces acting on bogie frames is essential for predicting structural responses, enhancing numerical modelling and planning maintenance more effectively. This study aims to develop and evaluate a comprehensive model-based framework for predicting excitation forces on railway bogies, addressing the challenges posed by forces that are difficult or impossible to measure directly.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design/methodology/approach</jats:title>\n                    <jats:p>The proposed framework integrates multi-body dynamics (MBD) simulations, structural finite element (FE) modelling and machine learning (ML) to estimate the forces acting on the bogie frame of a high-speed train. Firstly, an MBD model of a Chinese high-speed train was established and validated against in-service measurement data, from which realistic time-domain loads acting on the bogie frame can be obtained. Separately, modal dynamic simulations of the bogie frame's FE model were performed with stochastic loading to extract corresponding accelerations over a broad range of dynamic behaviour. These were employed to train an ML model to learn the inverse mapping from structural response to applied forces. For validation, the MBD-derived forces were applied to the FE model to obtain corresponding accelerations, which were then used to assess the ML model’s ability to reconstruct the original forces.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Findings</jats:title>\n                    <jats:p>The approach can successfully predict nonlinear excitation forces acting on the bogie frame. Based on modal system responses to randomized force inputs, the entire parameter space can be represented, and the trained ML model demonstrates a strong capability to estimate dynamic loads from validated MBD simulations. Through appropriate training, the method exhibits robustness against noise and sensor placement and opens new opportunities for improving the analysis of track–vehicle interaction and the dynamic modelling of bogies.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Research limitations/implications</jats:title>\n                    <jats:p>The approach depends on the accuracy of the validated MBD and FE models, meaning modelling assumptions and simplifications may introduce errors in the predicted forces. High-fidelity in-service measurements are required for model validation but are not always available. Purely simulation-based models enable the prediction of forces and load distributions at the bogie, but the results are strongly model-dependent. Even if the models are validated against reference data, they only reflect an idealized operating condition, and uncertainties in measurement parameters, model parameters, damping behaviour or contact models can significantly affect the accuracy of force predictions.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Originality/value</jats:title>\n                    <jats:p>This research introduces a novel, integrated framework for indirect bogie force estimation that enhances both modelling accuracy and practical diagnostic capability in railway engineering. By integrating numerical simulations, in-service measurements and ML, the study advances current methodologies for analysing high-speed railway vehicles. The approach offers valuable potential for refining vehicle models, guiding maintenance strategies and informing future research on data-driven structural force prediction.</jats:p>\n                  </jats:sec>",
+    "venue": "Railway Sciences",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1109/jiot.2026.3667989",
+    "title": "Koopman-Operator-Based Control of Hypersonic Flight Vehicles With Few-Shot Learning for Internet of Aerospace Things",
+    "abstract": "As an important long-range transportation carrier in the future Internet of Aerospace Things (IoAT), hypersonic flight vehicles (HFVs) will play a significant role in intelligent transportation systems (ITS). In IoAT architectures, HFVs function as intelligent edge nodes that must operate autonomously under severe uncertainties with limited onboard computational resources. However, strong coupling effects and unmodeled dynamics pose considerable challenges for the precise modeling and efficient control of HFVs. This paper proposes a novel framework for designing high-precision modeling strategies and efficient control algorithms for HFVs. The framework is named the Online-Enhanced Koopman (OE Koopman) Model Predictive Static Programming (MPSP) framework and is developed utilizing autoencoder neural networks. By leveraging the Koopman operator to lift nonlinear systems into high-dimensional linear spaces, the precise modeling associated with HFVs can be significantly simplified. Both the offline pre-training and online correction mechanisms are integrated into the OE Koopman-MPSP framework, which overcomes the issues of low precision in analytical modeling methods and insufficient data in deep learning methods. In the offline phase, autoencoder neural networks are utilized to construct the basic Koopman operator model. In the online phase, a few-shot-based Extended Dynamic Mode Decomposition (EDMD) method is employed to build compensatory operators for adapting to environmental changes. The proposed framework is specifically designed for resource-constrained IoAT edge devices, where computational efficiency and autonomous adaptation are critical. Experimental results demonstrate the effectiveness of the developed framework and specific algorithms.",
+    "venue": "IEEE Internet of Things Journal",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1093/dmfr/twag021",
+    "title": "A Multi-Task Deep Learning Model for Quality Control of Periapical Radiographs: Simultaneous Technical Error Classification and Quality Grading",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Objectives</jats:title>\n                    <jats:p>To develop a multi-task deep learning model for the automated quality control of periapical radiographs, integrating identification of technical errors with standardized quality grading.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A dataset of 3510 periapical radiographs was curated from two centers for model development and external validation. We developed a multi-task deep learning model to simultaneously perform: (1) multi-label classification of six common technical errors (positioning, processing, exposure, and angulation issues); and (2) hierarchical quality grading according to two established standards: the National Radiological Protection Board (NRPB: Grades 1-3) and the College of General Dentistry (CGDent: Ranks A-B). Model performance was evaluated using ROC-AUC, sensitivity, specificity, precision, accuracy, and F1-score on both internal and external test sets. Furthermore, the model’s efficiency gain in daily quality control workflows was quantified.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>Among five widely-adopted Convolutional Neural Networks (CNNs) and transformer architectures evaluated, EfficientNet was selected as the optimal backbone. The final model identified technical errors with high performance on the external test set (sensitivity: 0.690-0.905; specificity: 0.965-0.995; AUC: 0.842-0.978). For quality grading, it achieved strong results for both trichotomous NRPB grading (sensitivity: 0.835-0.920; specificity: 0.881-0.989; AUC: 0.940-0.960) and binary ranking (sensitivity: 0.835-0.989; specificity: 0.835-0.989; AUC: 0.959).The system demonstrated superior computational efficiency, reducing the cumulative assessment time for a typical daily workload from over 32 minutes (manual review) to approximately 1.1 seconds. Grad-CAM visualizations confirmed the model’s focus was aligned with technical errors, supporting clinical interpretability.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>This multi-task model efficiently automates radiographic quality control by identifying technical errors and assigning quality grades. It offers significant potential to standardize quality assurance and streamline dental workflows.</jats:p>\n                  </jats:sec>",
+    "venue": "Dentomaxillofacial Radiology",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2605.19405",
+    "title": "A complete discussion on fully reconfigurable, digital, scalable, graph and sparsity-aware near-memory accelerator for graph neural networks",
+    "abstract": "Graph neural networks (GNNs) have gained significant interest for applications such as citation network analysis and drug discovery due to their ability to apply machine learning techniques on graph-structured data. GNNs typically employ a two-stage execution pipeline consisting of combination and aggregation kernels. The combination stage performs data-intensive convolution operations with relatively regular memory access patterns, whereas the aggregation stage operates on sparse graph data with highly irregular accesses. These heterogeneous memory behaviors make conventional CPU- and GPU-based execution energy inefficient due to substantial data movement overheads. Existing accelerators attempt to mitigate these challenges using specialized architectures and processing-in-memory (PIM) techniques. However, prior approaches often suffer from scalability limitations, area overheads, restricted parallelism, and energy inefficiencies associated with analog compute and dedicated accelerator structures. This paper presents NEM-GNN, a scalable DAC/ADC-less processing-in-memory architecture for graph neural network acceleration. The proposed design introduces early compute termination mechanisms, pre-computation using reconfigurable system-on-chip components, and graph- and sparsity-aware near-memory aggregation using a compute-as-soon-as-ready (CAR) and broadcast-based execution model. Experimental results demonstrate that NEM-GNN achieves approximately 80--230x higher performance, 80--300x higher throughput, 850--1134x better energy efficiency, and 7--8x higher compute density compared to prior state-of-the-art approaches.",
+    "venue": "arXiv (Cornell University)",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1038/s41598-026-54114-x",
+    "title": "Automated orbital wall fracture detection and severity classification of ocular injuries using deep learning",
+    "abstract": "Orbital fractures are frequently encountered in maxillofacial trauma and can be associated with severe globe injuries (SGI). Accurate and timely diagnosis is critical to prevent long-term complications, yet subtle fractures and soft tissue injuries may be overlooked. Recent advances in artificial intelligence offer promising tools to support clinical decision-making in acute settings. We collected CT images from 250 eyes with orbital wall fractures treated at a single center between May 2020 and May 2023. From CT scans of included subjects, a dataset of 18,000 annotated orbital CT scan slices was used, with segmentation preprocessing based on a U-Net framework. Two supervised convolutional neural network (CNN) classifiers were trained on axial and coronal CT images of the orbit. The first model (FxDetectCNN) was trained to detect orbital fractures, while the second model (SGIDetectCNN) was trained to classify injury severity as non-severe or severe. The models' performance was compared with annotations by two experienced ophthalmologists. The fracture detection model achieved an overall accuracy of 81%, with 86% sensitivity and 76% specificity. The SGI estimation model achieved 64% accuracy, with a sensitivity of 80% and a specificity of 48%, compared with expert annotation, which reached a maximum accuracy of 59.5% for SGI estimation. Our study demonstrates the feasibility of CNN models in detecting fractures and classifying the severity of ocular injuries from CT scans. These tools can assist emergency physicians in triaging patients and may serve as valuable decision-support systems in emergency settings.",
+    "venue": "Scientific Reports",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1186/s40560-026-00889-0",
+    "title": "Development of a deep-learning model for classification of intensivists' extubation decisions using ventilator graphic monitor images: a prospective observational study",
+    "abstract": "BACKGROUND: Timely extubation requires advanced expertise and extensive clinical experience; however, intensive care specialists are scarce globally, and interpreting ventilator graphic monitor waveforms can be challenging for less experienced healthcare providers. Given these challenges, we aimed to develop a deep-learning model to classify extubation decisions by intensivists based on ventilator graphic monitor images obtained at the time of the spontaneous breathing trial (SBT) outcome determination. METHODS: 980 ventilator were included. Ventilator graphic monitor images were acquired at the time of SBT outcome determination using the screen capture function. Four convolutional neural network architectures pretrained on ImageNet (DenseNet121, EfficientNet-B0, MobileNetV3-Large, and ResNet18) were evaluated using transfer learning. This study was divided into four periods, with a threefold cross-validation performed on the first three periods and the fourth period used as an independent test set. Gradient-weighted class activation mapping (Grad-CAM) was performed to visualize the basis for the model decisions. RESULTS: A total of 191 patients were included in the final analysis: 160 (83.8%) in the extubated group and 31 (16.2%) in the non-extubated group. MobileNetV3-Large demonstrated the highest performance, with an area under the curve (AUC) of 0.900 (95% confidence interval 0.807-0.993), sensitivity of 0.900, specificity of 0.727, and accuracy of 0.759. All four architectures exhibited consistently high performance (AUC: 0.827-0.900). The Grad-CAM analysis suggested that the model tended to focus on the entire waveform, including pressure, flow, and volume, in the extubated group while focusing primarily on the flow waveform in the non-extubated group. CONCLUSIONS: This study developed a deep-learning model capable of classifying intensivists' extubation decisions from ventilator graphic monitor images with good classification performance (AUC 0.900). As a proof of concept, this approach suggests that waveform-based components of intensivists' decision-making may be approximated from image data, although further validation with larger multicenter datasets is required. TRIAL REGISTRATION: The study was registered in the UMIN Clinical Trials Registry (UMIN000051938).",
+    "venue": "Journal of Intensive Care",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1016/j.bea.2026.100206",
+    "title": "Classification of PSQA outcomes in prostate VMAT treatments: a comparative study of machine learning models",
+    "abstract": "• Machine learning models were developed to classify PSQA outcomes in prostate VMAT treatments. • Random Forest and Gradient Boosting achieved the highest accuracy and AUC values • The models effectively minimized false negatives, improving as the most predictive features. • Overlapping_rectum, MCS and monitor Units were identified as the most predictive features. • The approach offers potential for real-time QA integration, reducing clinical workload and verification time. The present study aimed to construct and compare machine learning (ML) models for classifying patient-specific quality assurance (PSQA) outcomes in prostate volumetric modulated arc therapy (VMAT) treatment. A total of 1247 prostate VMAT plans were retrospectively analyzed and several metrics and anatomical information extracted from the RT-plans files and contours were used as predictive variables. The following machine learning (ML) models: Logistic Regression (LR), Decision Trees (DT), Random Forest (RF), Gradient Boosting (GB), AdaBoost (AB), k-Nearest Neighbors (KNN), Naïve Bayes (NB) and Neural Network (NN) were developed to classify the PSQA outcomes, and their performances compared with different metrics. The results demonstrated that Random Forest and Gradient Boosting achieved the highest classification accuracy with area under the curve (AUC) values of 0.95 and 0.96, respectively and Accuracy of 0.91 for both classifiers. These models effectively balanced precision and accuracy while minimizing false negative and false positives rates which is critical for identifying potentially unsafe treatment plans. ML-based PSQA classification (Random Forest and Gradient Boosting) demonstrates strong potential for optimizing quality assurance in prostate VMAT treatments. By integrating predictive analytics into clinical workflows, radiation oncology departments can improve efficiency, reduce resource demands, and enhance patient safety, paving the way for more adaptive and automated QA protocols.",
+    "venue": "Biomedical Engineering Advances",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1287/inte.2025.0292",
+    "title": "Geiger Uses Machine Learning to Reduce Customer Churn in the Promotional Products Industry",
+    "abstract": "<jats:p>To reduce customer churn in its drop-shipment business, Geiger GmbH implemented a machine-learning-based prediction system that helps sales representatives identify customers at risk of leaving. Integrated into a Power BI dashboard, the solution supports proactive retention management and prioritizes intervention efforts. The deployed model identifies more than twice as many future churners as random targeting.</jats:p>",
+    "venue": "INFORMS Journal on Applied Analytics",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1108/ijius-06-2025-0202",
+    "title": "Integration of aerial photogrammetry and machine learning in the railway tracks infrastructure monitoring problem",
+    "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>The purpose of the research was to implement a proper algorithm and identify which one would be the most efficient in data analysis for railway infrastructure monitoring.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Design/methodology/approach</jats:title>\n                    <jats:p>A couple of algorithms were applied and tested based on the data gathered by the UAV along the railway tracks. The standard methods for assessment were used, and finally, the app was made to show the defined elements of the railway on the map using geolocation.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Findings</jats:title>\n                    <jats:p>The YOLO algorithm had the best results (ver 8), and finally it was applied in the system.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Research limitations/implications</jats:title>\n                    <jats:p>The algorithm may be used for a wider purpose if the proper learning methods and tagging of photos and key elements are done. If the UAV delivers an efficient photos (proper speed and distance required) the YOLO algorithm would be an efficient for the track elements identification.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Practical implications</jats:title>\n                    <jats:p>The railway tracks are currently monitored manually by technicians who have to walk along the tracks. Not only is this not a safe solution, but the reliability and efficiency of this approach are poor. Implementing UAV and AI algorithms for elements identification and preventing the track's faults is a promising solution. The main company PKP wants to implement the solution and scale it up for longer distances.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Originality/value</jats:title>\n                    <jats:p>Although the AI methods exist, the biggest challenge is to fit them and tag the photos properly so that the process is done efficiently. Applying UAV and AI together to increase the autonomy level is an original approach.</jats:p>\n                  </jats:sec>",
+    "venue": "International Journal of Intelligent Unmanned Systems",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1186/s12909-026-09597-7",
+    "title": "Exploring the use of AI-generated counterfactual chest X-rays to enhance diagnostic learning in medical education",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Accurate interpretation of chest X-rays is a critical clinical skill, yet radiology training in medical education remains limited and often fails to provide broad exposure to a wide variety of conditions, including those that are rare, subtle, or easily confused with one another. Although artificial intelligence (AI) has shown impressive performance in medical image classification, its potential to actively improve clinical education has not been fully realised. In this study, we introduce AI-generated\n                    <jats:italic>counterfactual</jats:italic>\n                    chest X-rays—real patient images digitally altered to show a different but still realistic condition, while keeping the same patient’s anatomy. These counterfactuals create ‘what if’ scenarios within the same patient and offer a novel tool to enhance diagnostic learning, support decision-making, and improve confidence calibration in medical trainees and professionals.\n                  </jats:p>\n                  <jats:p>Forty-two participants, including medical students and doctors, completed a four-part online study involving diagnostic classification, comparison of counterfactual image pairs, image authenticity judgements, and clinical treatment planning. All image comparisons focused on three clinical conditions: healthy lungs, pneumonia, and pleural effusion. Statistical analyses included t-tests, ANOVAs, Pearson correlations, and linear regression.</jats:p>\n                  <jats:p>Results showed that counterfactual images meaningfully supported diagnostic learning. Participants demonstrated improved accuracy and confidence over time, particularly when distinguishing pleural effusion from healthy lungs. Confidence became more closely aligned with accuracy, and participants were better able to recognise condition-specific differences. These comparisons also revealed areas of diagnostic weakness that would be difficult to detect through conventional instruction alone. While real images led to higher raw diagnostic accuracy, counterfactuals proved highly effective in promoting learning and reflective reasoning. Image authenticity influenced clinical decision-making, and initial confidence was a stronger predictor of final treatment confidence than diagnostic correctness.</jats:p>\n                  <jats:p>These findings highlight the strong potential of counterfactual imaging to enhance radiology education. By enabling learners to engage with rare, complex, or demographically underrepresented cases in a controlled and consistent way, AI-generated counterfactuals offer a powerful and scalable tool to improve diagnostic preparedness and clinical confidence in future healthcare professionals.</jats:p>",
+    "venue": "BMC Medical Education",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.29303/ijcse.v4i2.1654",
+    "title": "A Correlational Study of Activity and Physics Learning Outcomes in the Implementation of Problem Based Learning among Grade XI Science Students at MAN 1 Mataram",
+    "abstract": "<jats:p>This study aims to (1) describe the level of student learning activity, (2) describe the level of student physics learning outcomes, and (3) analyze the relationship between learning activity and physics learning outcomes in the implementation of Problem-Based Learning (PBL). This research employed a correlational design with a quantitative approach. The population consisted of all 168 students in the eleventh-grade science classes, and a saturated sampling technique was used so that the entire population become the sample. Descriptive analysis was used to determine the levels of student learning activity and physics learning outcomes. For hypothesis testing, non-parametric statistics (Spearman correlation) were used because the data were not normally distributed. The results showed that (1) the level of student learning activity was 20,8% high, 49,4% medium, and 29,8% low; (2) the level of student physics learning outcomes was 1,2% high, 83,9% medium, and 14,9% low; (3) the Spearman correlation test revealed a significant positive correlation between the two variables (sig. 2-tailed = 0,003 &lt; 0,05) with a low correlation level (correlation coefficient = 0,226). Based on the coefficient of determination, the contribution of learning activity to physics learning outcomes was only 5,1%. Thus, it can be concluded that there is a significant positive relationship between learning activity and physics learning outcomes, although this relationship is low and contributes only slightly.</jats:p>",
+    "venue": "International Journal of Contextual Science Education",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1109/jiot.2026.3675665",
+    "title": "Attention-Driven Deep Reinforcement Learning for Energy-Efficient Trajectory and Beamforming Design in UAV-RIS Systems",
+    "abstract": "",
+    "venue": "IEEE Internet of Things Journal",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1007/s42421-026-00165-5",
+    "title": "Prioritizing Railway Level Crossing Safety Equipment Using Stabilized and Explainable Machine Learning: A Large-Scale Study of the French Railway Network",
+    "abstract": "",
+    "venue": "Data Science for Transportation",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.3390/en19122880",
+    "title": "Correction: Bhushan et al. Dynamic K-Decay Learning Rate Optimization for Deep Convolutional Neural Network to Estimate the State of Charge for Electric Vehicle Batteries. Energies 2024, 17, 3884",
+    "abstract": "<jats:p>In the original publication [...]</jats:p>",
+    "venue": "Energies",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1016/j.anucene.2026.112572",
+    "title": "A hybrid monte Carlo-machine learning framework for neutron dose attenuation modeling in layered iron-concrete shields of a 1000 MeV proton accelerator",
+    "abstract": "",
+    "venue": "Annals of Nuclear Energy",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1145/3812836.3814790",
+    "title": "Hardware-Software co-design of FETA: a Flexible Low Power AI accelerator for Time-series signals",
+    "abstract": "We present a quantization-driven hardware-software co-design methodology for FETA, a flexible low power accelerator for time-series signals and its implementation in FDSOI 22 nm hardware. The architecture combines a reconfigurable ETSI-compliant MFCC front-end with a programmable RNN engine and an activity detection unit. The accelerator is tested on speech (Keyword Spotting) and biomedical signals (PPG-based Sleep Staging). FETA reaches 94.07% accuracy on GSCv2 at 10.01 μW, matching state-of-the-art power while retaining full programmability of both MFCC and RNN.",
+    "venue": "Proceedings of the 24th Annual International Conference on Mobile Systems, Applications and Services Workshops",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1145/3773077.3812179",
+    "title": "STEM Learning in TTRPGs: What Is Being Assessed? How Hair Math Uses Storytelling and Play to Reimagine STEM Assessment",
+    "abstract": "Hair Math is a fantasy tabletop role-playing game (TTRPG) in which players explore mathematical concepts, particularly braid theory and knot theory, through culturally grounded collaborative storytelling. This Work in Progress presents the theoretical framework and design methodology underlying Hair Math, situating the game within Freirean pedagogy and play theory to argue for narrative-based STEM learning as an alternative to assessment-driven instruction. We examine a central tension in this work: if mathematical understanding is meant to emerge through story, play, and cultural meaning-making, what is being assessed and how? Drawing on design-based research, we present an observational methodology for tracking engagement, mathematical reasoning, and affective experience during gameplay. We report on a preliminary informal pilot session with adults and describe plans for expanded testing with middle and high school students in informal learning environments.",
+    "venue": "Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+    "year": 2026,
+    "rule": "auto_reject:foreign_domain"
+  },
+  {
+    "id": "doi:10.1145/3787109.3815248",
+    "title": "SpiKint: Native Full-Integer Spiking Neural Networks Training with an Efficient CIM-based Accelerator",
+    "abstract": "Spiking neural networks (SNNs) are commonly regarded as more energy-efficient than artificial neural networks (ANNs) due to their event-driven and sparse computations. However, the training overhead of SNNs with backpropagation through time (BPTT) is significantly higher than ANNs, while prior studies mainly focus on accelerating SNN inference rather than training. This work proposes SpiKint, an algorithm-hardware co-design to enable efficient BPTT-based SNN training. At the algorithm level, for the first time, we propose a native full-integer SNN training framework without introducing any quantization scheme. At the architecture level, we design the dedicated computing-in-memory-based (CIM) training hardware that introduces the efficient CIM macro to achieve high utilization via interference-free weight mapping and in-situ weight transpose computations in the backward pass. At the system level, we introduce a novel incremental weight update strategy for SNN training to reduce off-chip memory access while ensuring accurate backpropagation. Experiments show that SpiKint training framework achieves negligible accuracy drop compared to floating-point SNN training. SpiKint accelerator achieves an average 22.06 × energy-delay-product reduction and 50.88 × energy efficiency compared to Nvidia A100 GPU and systolic-based SATA, respectively. The code for SpiKint is available at https://github.com/peilin-chen/SpiKint/.",
+    "venue": "Proceedings of the Great Lakes Symposium on VLSI 2026",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1145/3787109.3815267",
+    "title": "STING: A Stochastic In-DRAM Accelerator for Graph Neural Networks",
+    "abstract": "Graph neural networks (GNNs) are powerful for learning from graph-structured data, but their efficient execution remains a challenge due to high memory demands, irregular data access, and diverse computations. Traditional processors are often memory-bound, making them poorly suited for handling GNNs’ unique demands. We present STING, a stochastic in-DRAM accelerator that performs all GNN operations directly inside DRAM tiles with minimal modification. STING introduces reconfigurable in-memory dataflows and lightweight stochastic logic to alleviate memory bottlenecks and enable highly parallel execution. STING demonstrates improvements of at least 3.3× in throughput and 1.3× in energy efficiency over state-of-the-art GNN accelerators.",
+    "venue": "Proceedings of the Great Lakes Symposium on VLSI 2026",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.1201/9781003743774-137",
+    "title": "AI-Based Acoustic Rail Defect Detection System",
+    "abstract": "To provide security and dependability of the railway transportation, it is necessary to monitor and identify structural flaws in the rails in time. This project suggests an acoustic rail defect detection system based on AI which incorporates a multi-sensor architecture and sophisticated data analytics. In the system, acoustic emission sensor, ultrasonic sensor, vibration sensor (accelerator), temperature sensor and sound sensors are used to measures the stress waves, vibration and environmental situation of rail defects including cracks, fractures and wear. Data acquisition and communication is performed in real-time with the help of an ESP32 microcontroller, and the location of detected faults is accurately mapped with the help of GPS modules. Machine learning and deep learning algorithms in Python are applied to the collected data and allow classifying the types of defects and predicting the development of rail degradation. The system also has IoT-based applications in remote monitoring and predictive maintenance scheduling with the alerts being shown on an LCD locally. Among the suggested system, non-destructive evaluation (NDE) techniques fused with artificial intelligence will enable to achieve more safety of railways, less cost of maintenance, and efficiency in the management of railway infrastructure.",
+    "venue": "Unknown Venue",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  },
+  {
+    "id": "doi:10.48550/arxiv.2606.20869",
+    "title": "A3C3: AI Algorithm and Accelerator Co-design, Co-search, and Co-generation",
+    "abstract": "We present a holistic methodology for artificial intelligence algorithm and accelerator co-design, co-search, and co-generation (A3C3), which jointly optimizes neural network architectures and their hardware implementations to address the inefficiencies of traditional top-down AI system design flows. Conventional AI deployment often treats model design and hardware mapping as separate stages: an algorithm is first developed for accuracy, and only afterward adapted to meet latency, throughput, energy, or resource constraints. This separation can lead to suboptimal systems, particularly as modern AI workloads become increasingly heterogeneous, memory-intensive, and platform-dependent. A3C3 instead parameterizes both algorithmic and accelerator design spaces and searches them jointly, enabling the automatic generation of model-accelerator pairs that better balance accuracy, latency, throughput, energy efficiency, and hardware utilization. This article is a book chapter of the Handbook of Embedded Machine Learning, edited by Sudeep Pasricha and Muhammad Shafique, Springer Nature.",
+    "venue": "arXiv (Cornell University)",
+    "year": 2026,
+    "rule": "auto_reject:hw_accelerator_context"
+  }
+]

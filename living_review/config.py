@@ -49,8 +49,131 @@ NEGATIVE_KEYWORDS = [
     "beam search", "electron beam lithography", "laser beam welding",
     "calorimeter", "jet", "particle detectors", "higgs", "dark matter",
     "cross-section", "jet tagging", "spectroscopy", "beta decay",
-    "fine structure", "atomic levels"
+    "fine structure", "atomic levels", "earthquake", "tsunami", "climate",
+    "weather", "natural disaster", "hardware acceleration", "gpu acceleration",
+    "cuda", "fpga", "embedded device", "structural assessment",
+    "hardware accelerator", "cnn accelerator", "vlsi", "asic",
+    "embedded system", "chip", "processor", "microcontroller",
+    "on-chip", "edge computing", "internet of things", "iot",
+    "soc", "gpu", "hardware trojan", "secure hardware", "neural engine"
 ]
+
+# ---------------------------
+# Stage B gate vocabularies (see gates.py)
+# All matched as word-boundary regexes, never bare substrings.
+# ---------------------------
+
+VENUE_WHITELIST_PATTERNS = [
+    r"phys\w*\.?\s*rev\w*\.?\s*accel\w*\.?\s*(and|&)?\s*beams",
+    r"special\s*topics\W*accelerators\s*(and|&)\s*beams",
+    r"\bPRAB\b",
+    r"\bPR-?STAB\b",
+    r"\bIPAC\b", r"\bLINAC\s*\d*\b", r"\bICALEPCS\b", r"\bNAPAC\b",
+    r"\bHB\s?20\d\d\b", r"\bIBIC\b", r"\bFEL\s?20\d\d\b", r"\bJACoW\b",
+    r"\bEPAC\b", r"\bPAC\s?[' ]?\d\d\b", r"\bCOOL\b", r"\bDIPAC\b",
+    r"nucl(ear|\.?)\s*instrum(ents|\.?)\s*(and|&)?\s*methods.*\bA\b",
+    r"\bNIM[- ]?A\b",
+    r"journal of instrumentation", r"\bJINST\b",
+]
+"""Venues that publish accelerator work; whitelist-venue AND any ML keyword
+auto-accepts (Stage B). Matching is case-insensitive regex on the venue string."""
+
+ACCEL_SYSTEM_VOCAB = [
+    r"particle accelerators?", r"(proton|electron|ion|linear) accelerators?",
+    r"accelerator facilit(y|ies)", r"\blinacs?\b", r"\bcyclotrons?\b",
+    r"\bsynchrotrons?\b", r"storage rings?", r"\bcolliders?\b",
+    r"beam ?lines?", r"\bbeam\b", r"\bbeams\b",
+    r"rf cavit(y|ies)", r"\bcavit(y|ies)\b", r"\bcryomodules?\b",
+    r"\bklystrons?\b", r"\bundulators?\b", r"\bwigglers?\b",
+    r"\bemittance\b", r"\bwakefields?\b", r"\bbetatron\b",
+    r"\bquadrupoles?\b", r"\bsextupoles?\b", r"\bdipole magnets?\b",
+    r"\bmagnets?\b", r"\bseptum\b", r"\bkickers?\b", r"\bcollimators?\b",
+    r"\binjectors?\b", r"\bgantry\b", r"\bgantries\b",
+    r"\bdosimetry\b", r"\bdosimetric\b", r"proton therapy", r"ion therapy",
+    r"\bradiotherapy\b", r"\bBPMs?\b", r"beam position monitors?",
+    r"free[- ]electron lasers?", r"\bFEL\b", r"light sources?",
+    r"synchrotron radiation", r"\bSRF\b", r"\bLHC\b", r"\bCERN\b",
+    r"\bFermilab\b", r"\bDESY\b", r"\bXFEL\b", r"\bSLAC\b", r"\bLCLS\b",
+    r"\bGANIL\b", r"\bFRIB\b", r"\bCEBAF\b", r"\bJ-PARC\b", r"\bBNL\b",
+    r"\bluminosity\b", r"beam dynamics", r"beam loss", r"beam halo",
+    r"\bbunch(es)?\b", r"charged particles?",
+]
+"""Word-boundary patterns whose presence indicates the paper talks about an
+accelerator/beam system at all. Zero hits is a necessary condition for
+auto-rejection (never sufficient alone)."""
+
+HARDWARE_CONTEXT_TERMS = [
+    r"\bDNNs?\b", r"\bCNNs?\b", r"\binference engines?\b",
+    r"\bFPGAs?\b", r"\bASICs?\b", r"\bVLSI\b", r"\bTPUs?\b", r"\bGPUs?\b",
+    r"\bsystolic arrays?\b", r"\bquantization\b", r"\bRISC-V\b",
+    r"edge (computing|devices?|AI)", r"\bin-memory computing\b",
+    r"\bDRAM\b", r"\bSRAM\b", r"compute-in-memory", r"\bCIM\b",
+    r"energy[- ]efficien(t|cy)", r"\bthroughput\b", r"\blow[- ]power\b",
+    r"hardware[- ](accelerat\w+|architectures?|design)",
+    r"neural network accelerat\w+", r"\bchip\b", r"\bSoCs?\b",
+    r"\bmicrocontrollers?\b", r"\bembedded systems?\b",
+]
+"""Compute-hardware context. 'Accelerator' collocated only with these and
+zero ACCEL_SYSTEM_VOCAB hits means a DNN-hardware paper (auto-reject)."""
+
+MACHINE_SUBSYSTEM_VOCAB = [
+    r"\blinacs?\b", r"\bcyclotrons?\b", r"\bsynchrotrons?\b",
+    r"storage rings?", r"beam ?lines?", r"rf cavit(y|ies)", r"\bcavit(y|ies)\b",
+    r"\bcryomodules?\b", r"\bklystrons?\b", r"\bundulators?\b", r"\bwigglers?\b",
+    r"\bemittance\b", r"\bwakefields?\b", r"\bbetatron\b", r"\bquadrupoles?\b",
+    r"\bsextupoles?\b", r"\bdipole magnets?\b", r"\bseptum\b", r"\bkickers?\b",
+    r"\bcollimators?\b", r"\binjectors?\b", r"\bgantry\b", r"\bgantries\b",
+    r"\bdosimetry\b", r"proton therapy", r"\bBPMs?\b", r"beam position monitors?",
+    r"beam dynamics", r"beam loss", r"beam halo", r"beam diagnostics",
+    r"beam tuning", r"beam control", r"beam optics", r"machine protection",
+    r"\bSRF\b", r"orbit correction", r"\bmagnet (design|control|tuning)\b",
+    r"particle accelerators?", r"(proton|electron|ion|linear) accelerators?",
+    r"accelerator (tuning|control|operation|physics|facilit(y|ies))",
+]
+"""Machine-subsystem vocabulary: ACCEL_SYSTEM_VOCAB minus facility names and
+bare 'beam'. Used by the detector-context gate — a paper about ML on
+detector data at a facility mentions the facility but not the machine."""
+
+DETECTOR_ANALYSIS_TERMS = [
+    r"track (reconstruction|finding|fitting)", r"particle (identification|tracking)",
+    r"jet tagging", r"\bjet(s)? (classification|reconstruction)\b",
+    r"event (reconstruction|selection|classification)", r"\btriggers?\b",
+    r"\bcalorimeters?\b", r"detector (data|design|response|simulation|performance)",
+    r"tracking (system|detector)", r"\bPID\b", r"vertex reconstruction",
+    r"particle-?flow", r"neutrino (selection|identification|oscillation)",
+    r"\bhits?\b.*\btracks?\b", r"physics analysis",
+]
+"""HEP detector/analysis context. ML on detector products at a collider is
+out of scope (SCOPE.md) but scores 0.92-0.99 with the NLI — the 2026-07
+model benchmark found this to be the funnel's dominant false-positive
+class. Detector-context papers without machine-subsystem vocabulary route
+to the pending queue instead of the adjudicator."""
+
+FOREIGN_DOMAIN_TERMS = [
+    r"\bearthquakes?\b", r"\btsunamis?\b", r"\bclassrooms?\b",
+    r"\bcurricul(um|a)\b", r"\bstudents?\b", r"\bpedagog\w+\b",
+    r"\be-?learning\b", r"learning outcomes?", r"\bteaching\b",
+    r"\bcustomer churn\b", r"\bmarketing\b", r"\be-?commerce\b",
+    r"\bblockchain\b", r"\bcryptocurrenc\w+\b",
+    r"\bgenomes?\b", r"\bgenomic\w*\b", r"\bprotein\w*\b",
+    r"\bcrops?\b", r"\bagricultur\w+\b", r"\blivestock\b",
+    r"\bconcrete\b", r"\bmasonry\b", r"\bpavements?\b", r"\bgeotechnical\b",
+    r"\brailways?\b", r"\btraffic\b", r"\bvehicles?\b", r"\bdrones?\b",
+    r"\bUAVs?\b", r"\bwireless networks?\b", r"\bbeamforming\b",
+    r"\bantennas?\b", r"\bradar\b", r"\b5G\b", r"\b6G\b",
+    r"\btumou?rs?\b", r"\bcancer\b", r"\bpatients?\b", r"\bclinical\b",
+    r"\bradiograph\w+\b", r"\bMRI\b", r"\bultrasound\b", r"\bdental\b",
+    r"\bstock market\b", r"\bfinancial\b", r"\bsentiment analysis\b",
+    r"\btokamaks?\b", r"\bstellarators?\b",
+    # spam that has reached the DB (pirated-movie pages etc.)
+    r"\baltadefinizione\b", r"\bcb01\b", r"s?tr?eaming[- ]ita\b",
+    r"\bfilm completo\b", r"\bguardare? film\b",
+    # mining/blasting engineering ("particle velocity" lexical trap)
+    r"\bblasting\b", r"\bmining\b", r"\bexcavation\b", r"\bquarry\b",
+]
+"""Clear foreign-domain signals. Auto-reject requires one of these AND zero
+ACCEL_SYSTEM_VOCAB hits — a proton-therapy paper mentioning 'patients' and
+'gantry' is protected by its accelerator vocabulary."""
 
 # ---------------------------
 # Semantic reference queries
@@ -111,11 +234,34 @@ CATEGORY_DESCRIPTIONS = {
 DATE_WINDOW_DAYS = 7
 """int: Default sliding window (in days) for fetching new papers."""
 
+FUZZY_TITLE_THRESHOLD = 0.93
+"""float: similar_title score at or above which two id-disjoint records
+are considered the same work (see dedup.py)."""
+
 ARXIV_PAGE_SIZE = 100
 """int: Maximum number of results per page in arXiv API queries."""
 
-DEFAULT_THRESHOLDS = {
-    "accel": 0.13,
-    "ml": 0.18
+NLI_MODEL = "MoritzLaurer/deberta-v3-base-zeroshot-v2.0"
+"""str: Zero-shot NLI cross-encoder used by the Stage C adjudicator."""
+
+NLI_MODEL_REVISION = None
+"""str or None: Pinned HF revision hash for reproducibility (set after
+first calibration; None = latest)."""
+
+NLI_HYPOTHESIS = (
+    "This paper applies machine learning or artificial intelligence "
+    "to a particle accelerator, beamline, or particle beam."
+)
+"""str: Scope hypothesis, derived from SCOPE.md."""
+
+NLI_THRESHOLDS = {
+    "accept": 0.90,
+    "reject": 0.15,
 }
-"""dict: Default semantic similarity thresholds for relevance filtering."""
+"""dict: Entailment-score cutoffs. score >= accept -> accepted;
+score <= reject -> rejected; in between -> pending (human queue).
+Calibrated 2026-07 on the gate-derived easy slices (142 positives /
+96 negatives): accept=0.90 admits 2/96 junk (both genuinely borderline
+accelerator-shielding papers), reject=0.15 loses 8/142 easy positives —
+all of which auto-accept at the gates in production and never reach the
+NLI. Re-run scripts/calibrate_thresholds.py after any model change."""

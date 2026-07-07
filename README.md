@@ -21,18 +21,36 @@ It is maintained by the accelerator physics and AI-for-science community, and ai
 
 ```
 acc-ml-living-review/
+├── SCOPE.md             # Editorial criterion: what belongs in the review
+├── data/
+│   ├── db.json          # Canonical DB: every paper + decision provenance
+│   ├── pending_review.json  # Human-review queue (regenerated nightly)
+│   └── eval/            # Relevance-funnel evaluation slices
 ├── site/                # Hugo site source
 │   ├── content/         # Pages (Markdown)
 │   ├── layouts/         # Templates and partials
 │   ├── static/          # Static assets (figures, CSS, downloads)
-│   └── data/            # Living review database (JSON, CSV, etc.)
-├── living_review/       # Python pipeline to fetch, classify, export papers
+│   └── data/            # Published data (accepted papers only, derived)
+├── living_review/       # Python pipeline
 │   ├── fetchers.py      # Sources: arXiv, INSPIRE, HAL, OpenAlex, Crossref
-│   ├── classifiers.py   # ML-based categorization
+│   ├── enrich.py        # Abstract backfill (Crossref/OpenAlex/arXiv)
+│   ├── dedup.py         # Identifier-graph + fuzzy-title deduplication
+│   ├── gates.py         # Stage B: deterministic accept/reject rules
+│   ├── adjudicator.py   # Stage C: zero-shot NLI relevance adjudication
+│   ├── relevance.py     # Funnel orchestration, terminal decisions
+│   ├── classifier.py    # Category classification
 │   ├── exporters.py     # Export JSON/BibTeX/PDF for the site
 │   └── pipeline.py      # End-to-end pipeline
+├── scripts/             # CI sanity gate, NLI threshold calibration
+├── tests/               # Pytest suite incl. funnel eval benchmark
 └── README.md            # This file
 ```
+
+**How papers get in** (see `SCOPE.md` and the methodology page of the
+docs): fetch → enrich → dedup → deterministic gates → NLI adjudicator →
+human pending queue. Accepted/rejected decisions are terminal and carry
+full provenance; `site/data/livingreview.json` is derived build output
+containing accepted papers only.
 
 ---
 
@@ -53,10 +71,22 @@ hugo server
 Then visit [http://localhost:1313](http://localhost:1313).
 
 ### 3. Update the Living Review database
-The pipeline fetches papers and updates the JSON/exports:
+The pipeline fetches papers, runs the relevance funnel, and updates the exports:
+
 ```bash
-cd living_review
-python -m living_review.pipeline
+pip install -e ".[dev]"
+python -m living_review.cli run --days 30 --sources all
+```
+
+Inspect the human-review queue:
+```bash
+python -m living_review.cli review
+```
+
+Run the test suite (fast tests only; add `-m slow` for the model-based
+eval benchmark):
+```bash
+pytest -m "not slow"
 ```
 
 ---

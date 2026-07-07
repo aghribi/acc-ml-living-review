@@ -4,107 +4,179 @@ cli.py
 
 Command-line interface (CLI) for the Living Review pipeline.
 
-This script allows users to run the **Living Review: ML/AI for Accelerator Physics**
-pipeline directly from the terminal. It provides options to configure the scan
-window, data sources, classification thresholds, and output location.
+Subcommands
+-----------
+- ``run``     : nightly pipeline (fetch → dedup → funnel → classify → export)
+- ``review``  : print the pending human-review queue
+- ``migrate`` : one-off migration of the legacy published DB into the
+                canonical data/db.json (see migrate.py)
 
-Main Features
--------------
-- Configure the date range (number of days back from today).
-- Select which data sources to query (arXiv, Inspire, HAL, OpenAlex, Crossref).
-- Override default accelerator/ML relevance thresholds.
-- Control output directory and chunk size for large runs.
-- Optionally enable incremental mode (not yet fully implemented).
-- Enable/disable PDF and BibTeX exports.
+Backward compatibility: invoking without a subcommand behaves like ``run``
+(the CI workflow predates subcommands).
 
 Typical Usage
 -------------
-Run a full scan of the last 30 days from all sources with default thresholds:
+Run a full scan of the last 30 days from all sources:
 
-    $ python -m living_review.cli
-
-Run a 60-day scan only from arXiv and Inspire with custom thresholds:
-
-    $ python -m living_review.cli --days 60 --sources arxiv,inspire \\
-           --accel-threshold 0.15 --ml-threshold 0.20 --output results
+    $ python -m living_review.cli run --days 30 --sources all
 
 Disable PDF export but keep BibTeX:
 
-    $ python -m living_review.cli --no-pdf
+    $ python -m living_review.cli run --no-pdf
+
+Show the pending queue:
+
+    $ python -m living_review.cli review
 """
 
 import argparse
 import datetime as dt
-from .pipeline import LivingReviewPipeline
-from .config import DEFAULT_THRESHOLDS
+import sys
+
+COMMANDS = ("run", "review", "migrate", "backfill-history")
 
 
-def main():
-    """
-    Entry point for the Living Review CLI.
+def _add_run_parser(sub):
+    p = sub.add_parser("run", help="Run the nightly pipeline")
+    p.add_argument("--days", type=int, default=30,
+                   help="Number of days back to scan (default: 30)")
+    p.add_argument("--sources", type=str, default="all",
+                   help="Comma-separated list: arxiv,inspire,hal,openalex,"
+                        "crossref,semanticscholar,springer,pubmed,all (default: all)")
+    p.add_argument("--output", type=str, default=".",
+                   help="Base directory of the repo (default: current dir)")
+    p.add_argument("--db-path", type=str, default="data/db.json",
+                   help="Canonical DB path (default: data/db.json)")
+    p.add_argument("--chunk-size", type=int, default=None,
+                   help="Number of papers per export chunk (optional)")
+    p.add_argument("--promote-manual", action="store_true",
+                   help="Promote CMS-approved submissions into the DB")
+    p.add_argument("--no-pdf", action="store_true", help="Disable PDF export")
+    p.add_argument("--no-bibtex", action="store_true", help="Disable BibTeX export")
+    return p
 
-    Parses command-line arguments, builds the date range and configuration,
-    initializes the `LivingReviewPipeline`, and runs it.
-    """
-    ap = argparse.ArgumentParser(
-        description="Living Review: ML/AI for Accelerator Physics"
-    )
-    ap.add_argument("--days", type=int, default=30,
-                    help="Number of days back to scan (default: 30)")
-    ap.add_argument("--sources", type=str, default="all",
-                    help="Comma-separated list: arxiv,inspire,hal,openalex,crossref,all (default: all)")
-    ap.add_argument("--accel-threshold", type=float, default=None,
-                    help=f"Threshold for accelerator relevance (default: {DEFAULT_THRESHOLDS['accel']})")
-    ap.add_argument("--ml-threshold", type=float, default=None,
-                    help=f"Threshold for ML/AI relevance (default: {DEFAULT_THRESHOLDS['ml']})")
-    ap.add_argument("--output", type=str, default=".",
-                help="Base directory of the repo (default: current dir, outputs into ./site/)")
 
-    ap.add_argument("--chunk-size", type=int, default=None,
-                    help="Number of papers per chunk (optional)")
-    ap.add_argument("--incremental", action="store_true",
-                    help="Run incrementally, skipping already scanned periods")
+def _add_review_parser(sub):
+    p = sub.add_parser("review", help="Print the pending human-review queue")
+    p.add_argument("--db-path", type=str, default="data/db.json")
+    p.add_argument("--limit", type=int, default=30)
+    return p
 
-    # --- New flags for export control ---
-    ap.add_argument("--no-pdf", action="store_true",
-                    help="Disable PDF export")
-    ap.add_argument("--no-bibtex", action="store_true",
-                    help="Disable BibTeX export")
 
-    args = ap.parse_args()
+def _add_migrate_parser(sub):
+    p = sub.add_parser("migrate",
+                       help="One-off: migrate the legacy published DB into data/db.json")
+    p.add_argument("--source", type=str, default="site/data/livingreview.json")
+    p.add_argument("--db-path", type=str, default="data/db.json")
+    p.add_argument("--report", type=str, default="data/migration_dropped.md")
+    p.add_argument("--eval-dir", type=str, default="data/eval")
+    p.add_argument("--dry-run", action="store_true",
+                   help="Write nothing; print the would-be outcome summary")
+    p.add_argument("--gates-only", action="store_true",
+                   help="Stop after Stage B gates (emit eval sets, no DB); "
+                        "used to calibrate NLI thresholds before deciding")
+    return p
 
-    # --- Date range ---
+
+def cmd_run(args):
+    from .pipeline import LivingReviewPipeline
+
     end = dt.date.today()
     start = end - dt.timedelta(days=args.days)
 
-    # --- Sources ---
     sources = args.sources.split(",")
     if "all" in sources:
         sources = ["arxiv", "inspire", "hal", "openalex", "crossref"]
 
-    # --- Thresholds (override defaults only if user provided values) ---
-    thresholds = {
-        "accel": args.accel_threshold if args.accel_threshold is not None else DEFAULT_THRESHOLDS["accel"],
-        "ml": args.ml_threshold if args.ml_threshold is not None else DEFAULT_THRESHOLDS["ml"],
-    }
-
-    # --- Pipeline ---
     pipe = LivingReviewPipeline(
         start, end,
         sources=sources,
-        thresholds=thresholds,
         output_dir=args.output,
-        chunking={"size": args.chunk_size} if args.chunk_size else None
+        db_path=args.db_path,
+        promote_manual=args.promote_manual,
+        chunking={"size": args.chunk_size} if args.chunk_size else None,
     )
-
-    # Attach export control flags
     pipe.export_pdf = not args.no_pdf
     pipe.export_bibtex = not args.no_bibtex
-
-    if args.incremental:
-        print("[warn] Incremental mode not fully implemented yet, running full scan.")
-
     pipe.run()
+
+
+def cmd_review(args):
+    from .db import DB
+    from .relevance import pending_papers, rank_pending
+
+    db = DB.load(args.db_path)
+    queue = rank_pending(pending_papers(db))
+    print(f"{len(queue)} papers pending review (showing up to {args.limit})\n")
+    for p in queue[: args.limit]:
+        rule = p.review.get("rule") or p.review.get("stage")
+        score = p.review.get("score")
+        score_s = f" score={score}" if score is not None else ""
+        print(f"- [{rule}{score_s}] {p.title} ({p.year}, {p.venue})")
+
+
+def _add_history_parser(sub):
+    p = sub.add_parser("backfill-history",
+                       help="One-off: sweep 1990+ historical windows through the funnel")
+    p.add_argument("--from-year", type=int, default=1990)
+    p.add_argument("--to-year", type=int, default=None)
+    p.add_argument("--db-path", type=str, default="data/db.json")
+    p.add_argument("--output", type=str, default=".")
+    p.add_argument("--chunk-years", type=int, default=2)
+    p.add_argument("--dry-run", action="store_true")
+    return p
+
+
+def cmd_history(args):
+    from .history import backfill_history
+
+    backfill_history(
+        from_year=args.from_year,
+        to_year=args.to_year,
+        db_path=args.db_path,
+        output_dir=args.output,
+        chunk_years=args.chunk_years,
+        dry_run=args.dry_run,
+    )
+
+
+def cmd_migrate(args):
+    from .migrate import migrate
+
+    migrate(
+        source=args.source,
+        db_path=args.db_path,
+        report_path=args.report,
+        eval_dir=args.eval_dir,
+        dry_run=args.dry_run,
+        gates_only=args.gates_only,
+    )
+
+
+def main(argv=None):
+    """Entry point for the Living Review CLI."""
+    argv = list(sys.argv[1:] if argv is None else argv)
+    # Backward compatibility: no subcommand -> "run"
+    if not argv or argv[0] not in COMMANDS and argv[0] not in ("-h", "--help"):
+        argv.insert(0, "run")
+
+    ap = argparse.ArgumentParser(
+        prog="living-review",
+        description="Living Review: ML/AI for Accelerator Physics",
+    )
+    sub = ap.add_subparsers(dest="command", required=True)
+    _add_run_parser(sub)
+    _add_review_parser(sub)
+    _add_migrate_parser(sub)
+    _add_history_parser(sub)
+
+    args = ap.parse_args(argv)
+    {
+        "run": cmd_run,
+        "review": cmd_review,
+        "migrate": cmd_migrate,
+        "backfill-history": cmd_history,
+    }[args.command](args)
 
 
 if __name__ == "__main__":

@@ -34,10 +34,13 @@ Helper functions are provided to:
 
 import json
 import glob
+from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 
-from .data_model import Paper, status_rank
+from .config import FUZZY_TITLE_THRESHOLD
+from .data_model import Paper
+from .utils import canonical_ids, similar_title
 
 
 class DB:
@@ -47,18 +50,26 @@ class DB:
     Attributes
     ----------
     entries : dict
-        Dictionary mapping deduplication keys (as str) → Paper objects.
+        Dictionary mapping canonical paper ids (``doi:...``, ``arxiv:...``,
+        ``hash:...``) → Paper objects. An auxiliary identifier index maps
+        every known normalized identifier of an entry to its key, so an
+        incoming record merges with an existing one when they share *any*
+        identifier; records without shared identifiers fall back to fuzzy
+        title matching within the same publication year (± 1).
     """
 
     def __init__(self, entries: Dict[str, Paper] = None):
-        self.entries: Dict[str, Paper] = entries or {}
+        self.entries: Dict[str, Paper] = {}
+        self._id_index: Dict[str, str] = {}
+        for p in (entries or {}).values():
+            self._merge_one(p)
 
     # ------------------------
     # Core methods
     # ------------------------
     @classmethod
     def load(cls, path: str | Path) -> "DB":
-        """Load the canonical DB from JSON."""
+        """Load the canonical DB from JSON (re-keyed by canonical paper id)."""
         path = Path(path)
         if not path.exists():
             return cls()
@@ -88,45 +99,61 @@ class DB:
             )
 
     def add_or_update(self, paper: Paper) -> None:
-        """Add a new paper or update an existing one."""
-        key = str(paper.key_for_dedup())
-        self.entries[key] = paper
+        """Add a new paper or merge it into an existing entry."""
+        self._merge_one(paper)
 
     def merge(self, other: "DB") -> int:
         """Merge another DB into this one with deduplication + status promotion."""
-        updates = 0
-        for key, paper in other.entries.items():
-            if self._merge_one(key, paper):
-                updates += 1
-        return updates
+        return self.merge_from_list(list(other.entries.values()))
 
     def merge_from_list(self, papers: List[Paper]) -> int:
         """Merge a list of Paper objects into this DB."""
         updates = 0
         for paper in papers:
-            key = str(paper.key_for_dedup())
-            if self._merge_one(key, paper):
+            if self._merge_one(paper):
                 updates += 1
         return updates
 
-    def _merge_one(self, key: str, paper: Paper) -> bool:
-        """Merge a single Paper into DB under dedup key."""
-        if key not in self.entries:
-            self.entries[key] = paper
+    def _find_existing(self, paper: Paper) -> Optional[str]:
+        """Key of the entry this paper duplicates, or None."""
+        for cid in canonical_ids(paper):
+            if cid in self._id_index:
+                return self._id_index[cid]
+        if paper.id in self.entries:
+            return paper.id
+        # Fuzzy fallback: same title within year ± 1, no shared identifier.
+        for key, cur in self.entries.items():
+            if cur.year and paper.year and abs(cur.year - paper.year) > 1:
+                continue
+            if similar_title(cur.title, paper.title) >= FUZZY_TITLE_THRESHOLD:
+                return key
+        return None
+
+    def _index(self, key: str, paper: Paper) -> None:
+        for cid in canonical_ids(paper):
+            self._id_index[cid] = key
+
+    def _merge_one(self, paper: Paper) -> bool:
+        """Merge a single Paper into the DB (insert or field-wise merge)."""
+        key = self._find_existing(paper)
+        if key is None:
+            self.entries[paper.id] = paper
+            self._index(paper.id, paper)
             return True
-        else:
-            current = self.entries[key]
-            if status_rank(paper.status) > status_rank(current.status):
-                self.entries[key] = paper
-                return True
-            elif paper.status == current.status:
-                # Heuristic: prefer richer metadata
-                score_new = len(paper.abstract or "") + len(paper.links or {})
-                score_old = len(current.abstract or "") + len(current.links or {})
-                if score_new > score_old:
-                    self.entries[key] = paper
-                    return True
-        return False
+        current = self.entries[key]
+        # Field-wise merge honoring `curated` and terminal `review` decisions
+        # (a whole-record replacement would clobber both).
+        changed = current.merge_with(paper)
+        # The merge may have upgraded the canonical id (hash: -> doi:/arxiv:)
+        # or contributed new identifiers; keep key and index in step.
+        if current.id != key:
+            del self.entries[key]
+            self.entries[current.id] = current
+            for cid, k in list(self._id_index.items()):
+                if k == key:
+                    self._id_index[cid] = current.id
+        self._index(current.id, current)
+        return changed
 
     def __len__(self) -> int:
         return len(self.entries)
