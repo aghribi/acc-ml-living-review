@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Methodology: the relevance funnel &mdash; AI for particle accelerators living review 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=01f34227"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="living_review package" href="living_review.html" />
+    <link rel="prev" title="Living Review Documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            AI for particle accelerators living review
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Methodology</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Methodology: the relevance funnel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stage-a-fetch-enrich-deduplicate">Stage A — Fetch, enrich, deduplicate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stage-b-deterministic-gates">Stage B — Deterministic gates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stage-c-zero-shot-nli-adjudication">Stage C — Zero-shot NLI adjudication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#terminal-decisions-and-provenance">Terminal decisions and provenance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#human-curation">Human curation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quality-gates-in-ci">Quality gates in CI</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="living_review.html">living_review package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">AI for particle accelerators living review</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Methodology: the relevance funnel</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/methodology.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="methodology-the-relevance-funnel">
+<h1>Methodology: the relevance funnel<a class="headerlink" href="#methodology-the-relevance-funnel" title="Link to this heading"></a></h1>
+<p>How papers enter the published review. The editorial criterion — <em>does the
+ML touch the machine or the beam?</em> — is written in <code class="docutils literal notranslate"><span class="pre">SCOPE.md</span></code> at the
+repository root; this page describes the machinery that applies it.</p>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>fetchers ─→ enrich (abstract backfill) ─→ dedup ─→ canonical DB (data/db.json)
+                                                       │ undecided papers only
+                                                       ▼
+                                   Stage B: deterministic gates (gates.py)
+                                                       │ gray zone
+                                                       ▼
+                                   Stage C: zero-shot NLI (adjudicator.py)
+                                                       │
+                     accepted ─→ classify ─→ export ─→ site/data/livingreview.json
+                     rejected ─→ kept in db.json with provenance, never re-scored
+                     pending  ─→ db.json + data/pending_review.json (human queue)
+</pre></div>
+</div>
+<p>Two files, two roles:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">data/db.json</span></code> — the <strong>canonical DB</strong>: every paper ever seen, with its
+decision and provenance. Committed to git.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">site/data/livingreview.json</span></code> — the <strong>published artifact</strong>: accepted
+papers only, regenerated on every run, rendered by Hugo. Never
+hand-edited.</p></li>
+</ul>
+</section>
+<section id="stage-a-fetch-enrich-deduplicate">
+<h2>Stage A — Fetch, enrich, deduplicate<a class="headerlink" href="#stage-a-fetch-enrich-deduplicate" title="Link to this heading"></a></h2>
+<p>Sources: arXiv (per-keyword queries over <code class="docutils literal notranslate"><span class="pre">physics.acc-ph</span></code> and
+<code class="docutils literal notranslate"><span class="pre">cs.AI/cs.LG/stat.ML</span></code>, date-bounded via <code class="docutils literal notranslate"><span class="pre">submittedDate</span></code> ranges),
+InspireHEP, HAL, OpenAlex, Crossref (plus optional Semantic Scholar,
+Springer, PubMed).</p>
+<p>Papers with empty abstracts are backfilled from Crossref (JATS stripped),
+OpenAlex (inverted index reconstructed), and arXiv (batched <code class="docutils literal notranslate"><span class="pre">id_list</span></code>)
+before any scoring — a third of the historical corpus lacked abstracts,
+which systematically corrupted similarity scores.</p>
+<p>Deduplication is two-pass: a union-find over normalized identifiers (DOI,
+arXiv id incl. DataCite <code class="docutils literal notranslate"><span class="pre">10.48550/arXiv.*</span></code> DOIs, INSPIRE id) merges
+records sharing <em>any</em> identifier; the remainder is fuzzy-matched on
+simplified titles (ratio ≥ 0.93) within publication year ± 1.</p>
+</section>
+<section id="stage-b-deterministic-gates">
+<h2>Stage B — Deterministic gates<a class="headerlink" href="#stage-b-deterministic-gates" title="Link to this heading"></a></h2>
+<p>Cheap, auditable rules decide the unambiguous ends
+(<code class="docutils literal notranslate"><span class="pre">living_review/gates.py</span></code>):</p>
+<p><strong>Auto-accept</strong></p>
+<ul class="simple">
+<li><p>primary arXiv category <code class="docutils literal notranslate"><span class="pre">physics.acc-ph</span></code>; or</p></li>
+<li><p>venue matches the accelerator-venue whitelist (PRAB, JACoW conferences,
+NIM-A, JINST, …) <em>and</em> an ML keyword appears in title+abstract.</p></li>
+</ul>
+<p><strong>Auto-reject</strong> — conjunctions only, never venue or domain alone (medical
+accelerator papers are in scope, see <code class="docutils literal notranslate"><span class="pre">SCOPE.md</span></code>):</p>
+<ul class="simple">
+<li><p>“accelerator” appears only in compute-hardware context (DNN, FPGA,
+ASIC, …) <em>and</em> the text has <strong>zero</strong> accelerator-system vocabulary; or</p></li>
+<li><p><strong>zero</strong> accelerator-system vocabulary <em>and</em> a clear foreign-domain
+signal (education, civil engineering, medical imaging, finance, …).</p></li>
+</ul>
+<p>All vocabularies are word-boundary regexes in <code class="docutils literal notranslate"><span class="pre">living_review/config.py</span></code>.</p>
+</section>
+<section id="stage-c-zero-shot-nli-adjudication">
+<h2>Stage C — Zero-shot NLI adjudication<a class="headerlink" href="#stage-c-zero-shot-nli-adjudication" title="Link to this heading"></a></h2>
+<p>The gray zone is scored by a zero-shot NLI cross-encoder
+(<code class="docutils literal notranslate"><span class="pre">MoritzLaurer/deberta-v3-base-zeroshot-v2.0</span></code>) against the hypothesis:</p>
+<blockquote>
+<div><p>“This paper applies machine learning or artificial intelligence to a
+particle accelerator, beamline, or particle beam.”</p>
+</div></blockquote>
+<p>Three-way outcome with thresholds from <code class="docutils literal notranslate"><span class="pre">config.NLI_THRESHOLDS</span></code>
+(calibrated 2026-07 on the gate-derived easy slices — 142 positives / 96
+negatives):</p>
+<ul class="simple">
+<li><p>score ≥ <strong>0.90</strong> → accepted (2/96 easy negatives clear this bar, both
+genuinely borderline accelerator-shielding papers),</p></li>
+<li><p>score ≤ <strong>0.15</strong> → rejected (8/142 easy positives fall below it — all of
+them auto-accept at the gates in production and never reach the NLI),</p></li>
+<li><p>otherwise → <strong>pending</strong>: the human review queue
+(<code class="docutils literal notranslate"><span class="pre">data/pending_review.json</span></code>, ranked most-relevant-first).</p></li>
+</ul>
+<p>Papers with empty abstracts that do not auto-accept go straight to
+pending — title-only adjudication is not trusted.</p>
+<p><em>Calibration caveat:</em> the easy slices are gate-derived, so they bound the
+NLI only on unambiguous cases. The genuinely contested boundary (medical
+beam delivery, light-source science) is pinned only once the hand-labeled
+gold slices exist — see <code class="docutils literal notranslate"><span class="pre">data/eval/gold/README.md</span></code>. Re-run
+<code class="docutils literal notranslate"><span class="pre">scripts/calibrate_thresholds.py</span></code> after any model or vocabulary change.</p>
+</section>
+<section id="terminal-decisions-and-provenance">
+<h2>Terminal decisions and provenance<a class="headerlink" href="#terminal-decisions-and-provenance" title="Link to this heading"></a></h2>
+<p>Every decision is recorded on the paper as <code class="docutils literal notranslate"><span class="pre">review</span> <span class="pre">=</span> <span class="pre">{decision,</span> <span class="pre">stage,</span>
+<span class="pre">rule,</span> <span class="pre">score,</span> <span class="pre">model,</span> <span class="pre">model_revision,</span> <span class="pre">timestamp}</span></code>. Accepted/rejected
+decisions are <strong>terminal</strong>: nightly runs only funnel <em>undecided</em> papers,
+so a model or threshold change can never silently rewrite the archive.
+Reversing a decision is a human act: edit <code class="docutils literal notranslate"><span class="pre">data/db.json</span></code>, set
+<code class="docutils literal notranslate"><span class="pre">review.stage:</span> <span class="pre">human</span></code> and <code class="docutils literal notranslate"><span class="pre">curated:</span> <span class="pre">true</span></code> (curated fields survive all
+merges).</p>
+</section>
+<section id="human-curation">
+<h2>Human curation<a class="headerlink" href="#human-curation" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>The pending queue (<code class="docutils literal notranslate"><span class="pre">data/pending_review.json</span></code>, or
+<code class="docutils literal notranslate"><span class="pre">living-review</span> <span class="pre">review</span></code> on the command line) is the triage inbox.</p></li>
+<li><p>New papers are contributed via the site’s submission form; approved
+submissions land in <code class="docutils literal notranslate"><span class="pre">site/data/submissions/approved/</span></code> and are promoted
+by the nightly run (<code class="docutils literal notranslate"><span class="pre">--promote-manual</span></code>).</p></li>
+<li><p>The published JSON is read-only build output; all human edits belong in
+the canonical DB or the submissions folder.</p></li>
+</ul>
+</section>
+<section id="quality-gates-in-ci">
+<h2>Quality gates in CI<a class="headerlink" href="#quality-gates-in-ci" title="Link to this heading"></a></h2>
+<p>The nightly workflow refuses to commit if the published set shrinks, grows
+more than 10 % in one run, or a new title trips a spam heuristic
+(<code class="docutils literal notranslate"><span class="pre">scripts/sanity_check.py</span></code>). The eval benchmark
+(<code class="docutils literal notranslate"><span class="pre">tests/eval/test_eval_benchmark.py</span></code>, <code class="docutils literal notranslate"><span class="pre">pytest</span> <span class="pre">-m</span> <span class="pre">slow</span></code>) fails when
+funnel precision/recall on the eval slices degrade.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Living Review Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="living_review.html" class="btn btn-neutral float-right" title="living_review package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Adnan GHRIBI.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

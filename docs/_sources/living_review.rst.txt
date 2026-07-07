@@ -12,6 +12,54 @@ living\_review.classifier module
    :show-inheritance:
    :undoc-members:
 
+living\_review.gates module
+---------------------------
+
+.. automodule:: living_review.gates
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+living\_review.adjudicator module
+---------------------------------
+
+.. automodule:: living_review.adjudicator
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+living\_review.relevance module
+-------------------------------
+
+.. automodule:: living_review.relevance
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+living\_review.dedup module
+---------------------------
+
+.. automodule:: living_review.dedup
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+living\_review.enrich module
+----------------------------
+
+.. automodule:: living_review.enrich
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+living\_review.migrate module
+-----------------------------
+
+.. automodule:: living_review.migrate
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 living\_review.cli module
 -------------------------
 
