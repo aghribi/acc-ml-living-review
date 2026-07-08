@@ -1,5 +1,63 @@
 [
   {
+    "id": "arxiv:2606.14373",
+    "title": "Machine-learned particle flow as a foundation model for collider physics",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The workflow from particle collision to physics analysis passes through a series of reconstruction steps that are traditionally modular and disconnected, with no shared representation linking low-level detector data to high-level analysis tasks. We show that casting event reconstruction as a machine learning problem naturally produces such a shared representation. We repurpose a machine learning model trained for particle-flow reconstruction (MLPF) to perform three distinct analysis tasks: jet flavor identification, jet energy regression, and missing momentum regression. By appending the per-p",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:37Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.14373v1",
+      "inspire": "https://inspirehep.net/literature/3168392"
+    }
+  },
+  {
+    "id": "arxiv:2606.14813",
+    "title": "JetParticle-JEPA: An Efficient Self-Supervised Representation Learning method for Jet Tagging in High-Energy Physics",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Jet tagging at the Large Hadron Collider increasingly relies on deep learning models trained on massive simulated datasets, leading to high computational costs and limited robustness to detector mismodeling. We introduce JetParticle-JEPA (JP-JEPA), a self-supervised Joint-Embedding Predictive Architecture that learns physically meaningful jet representations directly from continuous particle clouds without tokenization or reconstruction of raw inputs. Built on a Particle Transformer backbone, JP-JEPA predicts latent representations of masked particles while preserving fine-grained kinematic co",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:37Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.14813v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.13535",
+    "title": "AgentRivet: an automated system for producing Rivet routines from journal publications",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Particle physics collider experiments provide Rivet routines as part of the analysis preservation strategy for model-independent measurements. Rivet is a C++ toolkit that allow new theoretical models to be compared to the measurements, thus aiding the development and tuning of Monte Carlo event generators as well as searches for physics beyond the Standard Model. However, analysis coverage is known to be incomplete, with only 39% of measurements having documented and publicly available Rivet routines. In this article, we design and implement an automated workflow based on Large Language Models",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:37Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.13535v3"
+    }
+  },
+  {
     "id": "doi:10.1007/978-3-319-99740-7_7",
     "title": "Field-Reliability Predictions Based on Statistical System Lifecycle Models",
     "year": 2018,
@@ -7,16 +65,361 @@
     "abstract": "Reliability measures the ability of a system to provide its intended level of service. It is influenced by many factors throughout a system lifecycle. A detailed understanding of their impact often remains elusive since these factors cannot be studied independently. Formulating reliability studies as a Bayesian regression problem allows to simultaneously assess their impact and to identify a predictive model of reliability metrics.The proposed method is applied to currently operational particle accelerator equipment at CERN. Relevant metrics were gathered by combining data from various organiz",
     "review": {
       "decision": "pending",
-      "stage": "migration:nli",
+      "stage": "nli",
       "rule": null,
-      "score": 0.2126,
+      "score": 0.2119,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-05T22:19:04Z"
+      "timestamp": "2026-07-08T07:48:14Z"
     },
     "links": {
       "hal": "https://hal.archives-ouvertes.fr/hal-02060048",
       "doi": "https://doi.org/10.1007/978-3-319-99740-7_7"
+    }
+  },
+  {
+    "id": "arxiv:2606.26089",
+    "title": "Parnassus: A GPU-enabled, Python-based Package for Fast Particle Detector Simulation and Reconstruction",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "We present the public software release of Parnassus, a Python/PyTorch, GPU-compatible framework for fast detector simulation and reconstruction in particle and nuclear physics. Parnassus provides a user-friendly framework with interchangeable detector models: neural models can emulate computationally expensive Geant4-based detector simulation and reconstruction chains, while parametric models provide PyTorch implementations of selected Delphes-style detector responses. This initial release includes two models of the CMS detector: one based on a flow-matching neural network architecture and one",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/3172540",
+      "arxiv": "https://arxiv.org/abs/2606.26089"
+    }
+  },
+  {
+    "id": "arxiv:2606.19378",
+    "title": "A Hybrid GNN-FEM Framework for Phase-Field Fracture Simulation. Physics-Preserving Hybridization for Generalizable Surrogate Modeling",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Scientific machine learning (SciML) has emerged as a promising approach for accelerating simulations of complex physical systems, yet achieving physically consistent and generalizable predictions for nonlinear, history-dependent problems remains a central challenge. In this study, we propose a hybrid GNN--FEM framework for efficient and generalizable phase-field fracture modeling. While phase-field approaches provide a robust variational framework for simulating complex crack evolution, their high computational cost limits practical applications because they require solving coupled, nonlinear,",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1615,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.19378v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.09037",
+    "title": "A Multi-Agent System for IPMSM Design Optimization via an FEA-AI Hybrid Approach",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Interior permanent magnet synchronous motor (IPMSM) design requires balancing conflicting objectives and multi-physics constraints, while modern optimization workflows face three bottlenecks: manual problem setup, high finite element analysis (FEA) cost, and unreliable surrogate-based search in sparse or out-of-distribution regions. To address these limitations, we propose an end-to-end automated IPMSM design optimization framework that integrates retrieval-augmented generation (RAG) for structured problem definition with an uncertainty-aware FEA-AI hybrid optimization pipeline. A Design agent",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1902,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.09037v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.20437",
+    "title": "HEPTv2: End-to-End Efficient Point Transformer for Charged Particle Reconstruction",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Charged-particle tracking -- reconstructing trajectories from sparse detector measurements -- is a fundamental high-energy-physics inference problem and a canonical example of learning under extreme combinatorial ambiguity. At the High-Luminosity Large Hadron Collider (HL-LHC), tracking must remain accurate and efficient despite unprecedented collision densities. Graph neural networks perform strongly, but incur substantial costs from graph construction and processing, while transformer-based approaches rely on auxiliary stages that prevent end-to-end optimization. To address this, we present ",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:37Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.20437v1"
+    }
+  },
+  {
+    "id": "doi:10.1093/ce/zkag029",
+    "title": "DP-EVA: Data-Efficient Fine-Tuning Framework via Maximizing Pre-Trained Knowledge of Large Atomistic Models for Developing Domain-Specific Machine Learning Interatomic Potentials",
+    "year": 2026,
+    "venue": "Clean Energy",
+    "abstract": "Abstract Machine learning interatomic potentials (MLIPs) have greatly extended the temporal and spatial scales of atomistic simulations, enabling the theoretical study of complex processes at affordable computational cost compared with conventional density functional theory (DFT). Recently, large atomistic models (LAMs) have drawn intense interest, as their unified encoders embed extensive chemical knowledge and support fine-tuning methodologies for efficiently adapting models to domain-specific downstream tasks. While many active learning frameworks exist for building MLIP datasets from scrat",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.0673,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W7164333333"
+    }
+  },
+  {
+    "id": "arxiv:2606.29823",
+    "title": "Experience Graphs: The Data Foundation for Self-Improving Agents",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The database community has repeatedly advanced the state of the art by recognizing that new workloads demand new system architectures. We argue that long-horizon agentic tasks -- code generation, scientific discovery, hardware design -- are such a workload. These agents explore: they generate artifacts, execute tools, observe failures, branch, and repair over hundreds of steps. This search produces a structured object we call an experience graph: executable artifacts, tool outputs, rewards, sibling comparisons, and causal lineage. Yet existing agent frameworks treat this experience as disposab",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.0708,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.29823v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.10381",
+    "title": "Agentic Hybrid RAG for Evidence-Grounded Muon Collider Analysis",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Muon collider research spans accelerator physics, detector instrumentation, and high-energy phenomenology, with relevant evidence scattered across a rapidly expanding and heterogeneous body of scientific literature. As high-energy physics (HEP) increasingly explores agent-assisted analysis workflows, efficiently locating, integrating, and verifying scientific evidence becomes an essential capability. While retrieval-augmented generation (RAG) offers a promising framework for scientific question answering, integrating agentic reasoning without compromising retrieval precision remains a key chal",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.7489,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.10381v1"
+    }
+  },
+  {
+    "id": "doi:10.6084/m9.figshare.32903861.v1",
+    "title": "Using a Convolutional Neural Network to Reconstruct Neutrino Events in ANITA",
+    "year": 2026,
+    "venue": "Figshare",
+    "abstract": "Neutrinos are neutral elementary particles produced in high-energy astrophysical environments, ranging from sources within our galaxy to the most distant and energetic objects in the Universe. Due to their weakly interacting nature, neutrinos are especially valuable messengers at ultra-high energies (UHE, &gt;10 PeV) as they travel vast distances without significant attenuation or deflection, preserving information about their sources. This makes them unique probes of distant and dense high-energy particle accelerators. Although the existence of such accelerators at the highest energies is str",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1853,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W7167410259"
+    }
+  },
+  {
+    "id": "arxiv:2606.31309",
+    "title": "CSO-LLM: Class Subspace Orthogonalization for Post-Training Backdoor Detection and Trigger Inversion in LLMs",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "While post-training backdoor detection and trigger inversion schemes have been developed for AIs used e.g. for images, there is a paucity of such methods for LLMs. First, the LLM input space is discrete, with up to 150,000^k k-tuples to consider with k the token-length of a putative trigger. Second, one must blacklist tokens typical of the putative target response (class) of an attack, as such tokens may give false detection signals. However, a comprehensive blacklist is not available, in general, for a given domain. We develop a highly effective detection and inversion framework for LLMs trea",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:38Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.31309v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30110-9_29",
+    "title": "NAWI Verifications Data Analysis with Machine Learning Tools for Metrological Supervision",
+    "year": 2026,
+    "venue": "Lecture Notes in Networks and Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:42Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30110-9_29",
+      "crossref": "https://doi.org/10.1007/978-3-032-30110-9_29"
+    }
+  },
+  {
+    "id": "doi:10.1002/acm2.70667",
+    "title": "Explainable machine learning for patient‐specific quality assurance in intensity‐modulated radiotherapy based on anatomical structures",
+    "year": 2026,
+    "venue": "Journal of Applied Clinical Medical Physics",
+    "abstract": "BACKGROUND: Patient-specific quality assurance (PSQA) plays a pivotal role in intensity-modulated radiotherapy (IMRT) to ensure accurate dose delivery. However, conventional measurement-based PSQA approaches are labor-intensive and provide limited insight into the underlying factors contributing to variations in gamma passing rates (GPRs). Anatomical characteristics of the planning target volume (PTV) and organs at risk (OARs) may contain predictive information relevant to GPR performance, yet their potential has not been fully explored within interpretable machine learning frameworks. PURPOSE",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.0531,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W7165763423"
+    }
+  },
+  {
+    "id": "arxiv:2606.21045",
+    "title": "OVIG: Optimistic Verification of AI Training Integrity via Gradient Signals",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The rapid growth of AI has increased the demand for domain-specific post-training, while the cost and specialization of accelerator infrastructure push many model owners to outsource this process. Outsourced training lowers operational barriers, but creates a training-integrity gap: the owner receives a checkpoint, logs, and aggregate metrics without direct evidence that the declared training trajectory was faithfully executed. An untrusted provider may have incentives to deviate from that trajectory, either to save computation or to introduce targeted security risks. Auditing such deviations ",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2839,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.21045v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.23548",
+    "title": "SuperCond-GNN: Scalable Graph Neural Network Surrogate for Superconducting Circuit Simulations",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "This paper presents SuperCond-GNN, a graph neural network-based surrogate model for predicting the voltage distribution in high-temperature superconducting (HTS) magnets. HTS magnets are modeled as lumped-element equivalent circuits and mapped onto graph representations, enabling message passing GNNs to learn the electrical response as a function of circuit topology, material properties, and operating current. As a proof of concept, tape stacks of up to 10 tapes are considered across a range of circuit topologies and operating conditions. The surrogate is trained on data generated from circuit",
+    "review": {
+      "decision": "pending",
+      "stage": "classifier",
+      "rule": "others_only",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:25Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.23548v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.14999",
+    "title": "Unlocking Latent Dimensions: Exploring Representations of Large-Scale X-ray Scattering Data using Variational Autoencoders",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Scientific user facilities generate X-ray scattering data faster than traditional workflows can process them. We address this challenge across two settings, offline dataset exploration and live on-the-fly analysis. We train a domain-specific attention-based Convolutional Variational Autoencoder (C-VAE) on 1.5 million X-ray scattering images to learn low-dimensional representations capturing structural variation across diverse experimental conditions. The learned latent space reveals well-organized clusters and smooth trajectories reflecting experimental progression. It further supports control",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.3559,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.14999v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.01145",
+    "title": "A Lightweight Self-Supervised Learning Framework for Multivariate Time Series using Hierarchical-JEPA on ECG Data",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Data analysis in the medical domain often encounters scenarios involving a limited target dataset and a large, unannotated dataset with a general distribution. Under such circumstances, self-supervised learning (SSL) methods are highly effective for utilizing large datasets, making them a popular choice for electrocardiogram (ECG) analysis. This work presents the Event Reconstruction Joint-Embedding Predictive Architecture (ER-JEPA), a lightweight SSL framework for multivariate time series, whose name and two-fold hierarchical structure are inspired by the diagnostic approach of cardiologists.",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:38Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.01145v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.23361",
+    "title": "Rethinking Molecular Graph Backdoors under Chemistry-aware Admission",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Backdoor attacks on molecular graph neural networks (GNNs) are typically evaluated as abstract graph edits, but real molecular learning pipelines do not train on arbitrary graphs. Molecular records must first survive parsing, sanitization, canonicalization, and graph-string consistency checks. We formalize this overlooked admission stage as ChemGuard, an operational protocol for testing whether a submitted molecular record can enter a realistic learning pipeline, while complementing existing defenses. ChemGuard admits a record only when its molecular string is sanitizable and the graph reconst",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:39Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.23361v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30813-9_74",
+    "title": "Contextualized Interpretation of Machine-Learning Predictions in Rare Disease Omics: Integrating SHAP, Biomedical Knowledge, and Language Models",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30813-9_74",
+      "crossref": "https://doi.org/10.1007/978-3-032-30813-9_74"
+    }
+  },
+  {
+    "id": "arxiv:2607.01729",
+    "title": "DRL-CLBA: A Clean Label Backdoor Attack for Speech Classification via DDPG Reinforcement Learning",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Deep learning models for speech classification are vulnerable to backdoor attacks, where malicious triggers cause misclassification at inference time. While sample-specific attacks can bypass many defenses, they often rely on poisoned label attack, making them detectable via manual data defense. In this paper, we propose DRL-CLBA, a novel clean label backdoor attack for speech classification that leverages Deep Deterministic Policy Gradient (DDPG) reinforcement learning. We also utilize deep audio steganography to embed sample-specific triggers into source audio, creating feature-space anchors",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:38Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.01729v1"
     }
   },
   {
@@ -27,16 +430,75 @@
     "abstract": "",
     "review": {
       "decision": "pending",
-      "stage": "migration:gate",
+      "stage": "gate",
       "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-05T22:18:26Z"
+      "timestamp": "2026-07-08T06:04:36Z"
     },
     "links": {
       "doi": "https://doi.org/10.1103/33q9-76qp",
       "crossref": "https://doi.org/10.1103/33q9-76qp"
+    }
+  },
+  {
+    "id": "doi:10.1007/s44443-026-01000-1",
+    "title": "Privacy-preserving explainable AI framework for SME decision support using federated CNN-LSTM learning",
+    "year": 2026,
+    "venue": "Journal of King Saud University Computer and Information Sciences",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s44443-026-01000-1",
+      "crossref": "https://doi.org/10.1007/s44443-026-01000-1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s42452-026-09123-w",
+    "title": "A deep learning based dual-verification framework for ensuring construction workers safety",
+    "year": 2026,
+    "venue": "Discover Applied Sciences",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s42452-026-09123-w",
+      "crossref": "https://doi.org/10.1007/s42452-026-09123-w"
+    }
+  },
+  {
+    "id": "doi:10.1016/j.anucene.2026.112537",
+    "title": "Multidirectional neutron shielding analysis and surrogate-based optimization of multilayer ferroboron for a 1000 MeV proton accelerator",
+    "year": 2026,
+    "venue": "Annals of Nuclear Energy",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W7165901691"
     }
   },
   {
@@ -47,15 +509,1812 @@
     "abstract": "High Power Laser's (HPL) optimal performance is essential for the success of\na wide variety of experimental tasks related to light-matter interactions.\nTraditionally, HPL parameters are optimised in an automated fashion relying on\nblack-box numerical methods. However, these can be demanding in terms of\ncomputational resources and usually disregard transient and complex dynamics.\nModel-free Deep Reinforcement Learning (DRL) offers a promising alternative\nframework for optimising HPL performance since it allows to tune the control\nparameters as a function of system states subject to nonlinear te",
     "review": {
       "decision": "pending",
-      "stage": "migration:nli",
+      "stage": "nli",
       "rule": null,
-      "score": 0.3134,
+      "score": 0.3118,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-05T22:19:04Z"
+      "timestamp": "2026-07-08T07:48:14Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2304.12187v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.05516",
+    "title": "Statistical Adversaries: Natural Backdoor-like Features in Vision Datasets",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Model-specific adversarial attacks have been extensively studied. We study a different failure mode: naturally occurring statistical signals in vision data that can behave like backdoor-like triggers without being maliciously inserted. We call these signals statistical adversaries. We analyse Imagenet to find patterns that are strongly linked to certain labels. We then use statistical controls to remove random correlations from our candidate signals. Finally, we demonstrate that these signals directly and predictably alter model predictions. These statistical adversaries are more targeted than",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:37Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.05516v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.10698",
+    "title": "Efficient AI-Inspired Reduction of Feynman Integrals via Tube Seeding",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "In this paper, we use machine learning to discover a new seeding strategy for integration-by-parts reduction of Feynman integrals, which is a frequent bottleneck in state-of-the-art calculations in theoretical particle and gravitational-wave physics. Our strategy allows us to reduce multi-loop integrals with large numerator powers via essentially the standard Laporta algorithm but with a sparse selection of seed integrals that grows only linearly with the numerator power, whereas existing strategies lead to growth with a polynomial power that increases with the complexity of the integral being",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.4243,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.10698v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.28953",
+    "title": "Clustering Unsupervised Representations as Defense against Poisoning Attacks on Speech Commands Classification System",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Poisoning attacks entail attackers intentionally tampering with training data. In this paper, we consider a dirty-label poisoning attack scenario on a speech commands classification system. The threat model assumes that certain utterances from one of the classes (source class) are poisoned by superimposing a trigger on it, and its label is changed to another class selected by the attacker (target class). We propose a filtering defense against such an attack. First, we use DIstillation with NO labels (DINO) to learn unsupervised representations for all the training examples. Next, we use K-mean",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:39Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.28953v1"
+    }
+  },
+  {
+    "id": "doi:10.48550/arxiv.2606.16809",
+    "title": "DataGuard: Guaranteeing Private Training in Systolic-array Based Accelerators",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "abstract": "Differential privacy (DP) and federated learning (FL) have emerged as important privacy-preserving approaches when using sensitive data to train machine learning (ML) models. FL ensures that raw sensitive data does not leave the users' devices by training the model locally on the device. DP ensures that the model does not leak any information about an individual by clipping and adding noise to the gradients before updating the model. It provides formalism to constrain privacy loss during training to a privacy budget determined a priori by the owner of sensitive data. However, real-life deploym",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.8071,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W7164914111"
+    }
+  },
+  {
+    "id": "arxiv:2607.06458",
+    "title": "Exact 1D Nonlinear Solutions for Proton-Driven Plasma Wakefields: Benchmarking Against AWAKE Data Envelopes",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The analytical modeling of a plasma wakefield driven by a relativistic proton beam is an element in optimizing advanced plasma-based acceleration schemes. In this work, we present a 1D nonlinear fluid framework under the quasi-static approximation to describe the wake potential excited by a positively charged proton driver. We examine our model using a two-bunch pump-probe configuration, demonstrating close agreement between the analytical invariants and adaptive numerical integrations. The distinct geometric curvature changes observed at the micro-bunch boundaries are shown to be physical con",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.0058,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.06458v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.02919",
+    "title": "Harmonic-Aware Transformer for Real-Time Catheter Localization in Interventional Procedures of Magnetic Particle Imaging",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Magnetic particle imaging (MPI) enables real-time, radiation-free tracking of magnetic nanoparticle-coated instruments, making it highly suitable for interventional procedures. This study proposes a harmonic-aware transformer framework that directly predicts catheter tip positions from raw MPI voltage signals, eliminating the need for image reconstruction and reducing computational latency. The framework incorporates frequency-domain preprocessing to isolate the 2nd to 8th drive-field harmonics, enhancing the signal-to-noise ratio while preserving motion-relevant features. A transformer archit",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2021,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.02919v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.22700",
+    "title": "SCRUB-FL: Sanitizing and Cleansing Representations via Unlearning of Backdoors",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Federated Learning (FL) enables collaborative model training without sharing raw data, making it a promising paradigm for privacy-sensitive applications. However, its decentralized nature makes it inherently vulnerable to backdoor attacks, where malicious clients embed hidden triggers into local training data to manipulate model predictions. Existing defenses mainly operate during before and during aggregation cannot fully eliminate backdoor behaviors that persist in the converged global model. Moreover, the effectiveness of post-training sanitization is often limited by the server's lack of k",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:39Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.22700v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.11266",
+    "title": "Seeing Before Colliding: Anticipatory Safe RL with Frozen Vision-Language Models",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The cost signal that constrained-RL algorithms optimize against is almost always reactive: the simulator emits a non-zero cost only after a collision has begun, and the Lagrange multiplier of PPO-Lagrangian grows only after the episode budget has been exceeded. At race speeds, where collisions are instantaneous and irreversible, any safety mechanism that waits for cost to accumulate is structurally too late. We present VLM-Safe-RL, a framework that integrates a frozen vision-language model into the CMDP Lagrangian update as an anticipatory cost term. The framework comprises four contributions:",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.3124,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.11266v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.04526",
+    "title": "Training-Free Model Selection and Domain-Aware Score Calibration for First-Shot Anomalous Sound Detection",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "First-shot anomalous sound detection in DCASE Challenge Task 2 must flag anomalies of unseen machine types with a single threshold, without knowing whether a test clip comes from the data-rich source domain (990 normal training clips) or the data-scarce target domain (10). Two organizer-reported problems remain open: source- and target-domain AUC are negatively correlated across systems, and development-set performance does not predict evaluation-set performance. We address both with a training-free post-hoc layer over frozen audio embeddings: (i) per-domain quantile calibration shrunk toward ",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1508,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.04526v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.01702",
+    "title": "Pmeta-TLA: Backdoor Attacks for Speech Classification Models via Meta-Learning with Timbre Leakage Attack",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Recently, speech classification methods have gained widespread adoption in intelligent gadgets. Current study indicates that backdoor attacks provide a substantial security concern to these models, underscoring the pressing necessity to investigate additional potential attack techniques to expose and prevent such risks. This work discusses the vulnerability of current speech triggers to detection by deep neural network defenders and introduces the Timbre Leakage Attack (TLA). The suggested trigger disseminates timbre information at the frame level within the deep self-supervised features, prod",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:38Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.01702v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.30899",
+    "title": "Curvature-Guided Module Localization for Low-Rank Detoxification of Backdoored Large Language Models",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Backdoor attacks pose a serious threat to large language models (LLMs) by causing otherwise benign systems to produce attacker-specified malicious behavior when a hidden trigger is present. In this work, we study post hoc detoxification of backdoored LLMs in a practical setting where the defender has access to the poisoned model but does not wish to retrain the full network from scratch. We propose a mechanistically guided weight-space repair framework that first localizes modules involved in propagating trigger-induced behavior using activation patching and Fisher/K-FAC curvature analysis, an",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:38Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.30899v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.21395",
+    "title": "Atomistic Language Models Understand and Generate Materials",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Atomistic structure and natural language have long been modeled separately, with language models either calling atomistic models as tools or being fine-tuned on lossy textual encodings that discard atomistic information. We introduce Atomistic Language Models (ALMs) to pursue native multimodality, in which a single language backbone understands atomistic structures, generates materials from natural language, and optimizes crystal structures as instructed by text. By unifying a pretrained atomistic encoder, large language model, and denoising diffusion model through purely continuous projectors",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1691,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.21395v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30710-1_31",
+    "title": "Predicting Fibromyalgia Pain From Self-reported Health Data Using Time-Series and Deep Learning Models",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30710-1_31",
+      "crossref": "https://doi.org/10.1007/978-3-032-30710-1_31"
+    }
+  },
+  {
+    "id": "doi:10.1021/acs.jchemed.6c00520",
+    "title": "An Industry-Engaged Project-Based Learning Module for Undergraduates: Polyimide Films as a Case Study in Scientific and Engineering Thinking",
+    "year": 2026,
+    "venue": "Journal of Chemical Education",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:42Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1021/acs.jchemed.6c00520",
+      "crossref": "https://doi.org/10.1021/acs.jchemed.6c00520"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30710-1_29",
+    "title": "Missing-Aware Evolving Fuzzy Learning for MASLD Risk Prediction from Irregular Time Series",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30710-1_29",
+      "crossref": "https://doi.org/10.1007/978-3-032-30710-1_29"
+    }
+  },
+  {
+    "id": "doi:10.1140/epjs/s11734-026-02511-8",
+    "title": "Integrated experimental and machine learning-based chemico-mineralogical characterization of agro-industrial waste-modified lateritic soil",
+    "year": 2026,
+    "venue": "The European Physical Journal Special Topics",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1140/epjs/s11734-026-02511-8",
+      "crossref": "https://doi.org/10.1140/epjs/s11734-026-02511-8"
+    }
+  },
+  {
+    "id": "arxiv:2606.12372",
+    "title": "UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Human-in-the-loop reinforcement learning (HiL-RL) has emerged as an effective paradigm for real-world robotic manipulation, enabling online policy improvement with human guidance. However, current HiL-RL frameworks remain intervention-intensive, relying on frequent human corrections to redirect the policy out of unproductive exploration, which incurs high labor cost and limits real-world scalability. To address this, we propose UniIntervene, an agentic intervention model that detects unproductive exploration and autonomously recovers the policy toward high-value states, taking over the bulk of",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.12372v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.13802",
+    "title": "A Benchmark and Framework for Evaluating Next Action Predictions in Spreadsheets",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Predictive code completion greatly accelerates how quickly developers work. In spreadsheets, despite being much more common, such auto-completion features are virtually non-existent. To address this gap, we introduce a benchmark for systems that observe a sequence of user actions in a spreadsheet and predict future actions. Two challenges are (1) the absence of edit histories in public spreadsheet corpora and (2) the complex space of spreadsheet actions (spatial, temporal, composite). To address (1), we manually curate 52 sequences of 12K actions that recreate spreadsheets from public corpora,",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:37Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.13802v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30110-9_36",
+    "title": "Analysis of Water Quality in Swimming Pools: Application of Statistics and Machine Learning",
+    "year": 2026,
+    "venue": "Lecture Notes in Networks and Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30110-9_36",
+      "crossref": "https://doi.org/10.1007/978-3-032-30110-9_36"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30110-9_35",
+    "title": "A Machine Learning Framework for Predicting Human Pubic Bone Morphometric Parameters",
+    "year": 2026,
+    "venue": "Lecture Notes in Networks and Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30110-9_35",
+      "crossref": "https://doi.org/10.1007/978-3-032-30110-9_35"
+    }
+  },
+  {
+    "id": "arxiv:2606.18235",
+    "title": "EvolveNav: Proactive Preflection and Self-Evolving Memory for Zero-Shot Object Goal Navigation",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Zero-Shot Object-Goal Navigation (ZS-OGN) requires embodied agents to explore and locate target objects without any prior training. To this end, recent methods leverage foundation models. But they typically rely on static priors and lack adaptation, which leads to repeated errors and costly trial and error. In this paper, we propose a self-evolving ZS-OGN framework that enables continuous test-time improvement. Specifically, we build an agentic rule memory by extracting actionable knowledge from past trajectories. Then, we propose a retrieval strategy based on upper confidence bound, selecting",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2009,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.18235v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.02289",
+    "title": "Neural-Network Inverse Design of SRF Cavities and Transmons for Bosonic Quantum Computation",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Three-dimensional superconducting radio-frequency (SRF) cavities provide exceptionally long-lived electromagnetic modes and, when coupled to nonlinear elements such as transmon qubits, become promising architectures for bosonic quantum information processing. The inverse design of such systems, i.e., recovering device geometries that produce specified electromagnetic and coupling targets, is generally a one-to-many problem. The qubit-cavity coupling strength depends sensitively on both the transmon geometry and its position within the cavity's electromagnetic field. As these systems scale up a",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1809,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.02289v2",
+      "inspire": "https://inspirehep.net/literature/3176665"
+    }
+  },
+  {
+    "id": "arxiv:2607.03154",
+    "title": "Conditional Diffusion Guided Knowledge Transfer for Multi-Domain Knowledge Graph Completion",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Multi-domain knowledge graph completion (MKGC) aims to improve missing triple prediction in a target KG by transferring knowledge from other support KGs. Existing methods typically enforce consistency constraints on equivalent entities across KGs to transfer knowledge, which risks suppressing domain-specific contextual information of entities. This design can also compromise entity representation information from all KG domains, impeding performance improvements, especially in low-resource data scenarios. To address this, we pioneer a generation-based paradigm for MKGC and propose DMKGC, a con",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2784,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.03154v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.29841",
+    "title": "Theory of Continual Learning Against Data Poisoning Attacks",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Continual learning (CL), where a model is trained on a sequence of data tasks, is increasingly being adopted across key fields such as large language models and image recognition, yet it remains highly vulnerable to data poisoning that triggers learning divergence or severe excess risk. Despite these threats, a principled theoretical foundation in CL for understanding attack and defense remains lacking. In this paper, we develop a theoretical framework to analyze strategic attacks and defenses in regularization-based CL, a cornerstone of recent CL theory. By framing the adversary-defender inte",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:36Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.29841v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.11474",
+    "title": "Mahalanobis-Guided Latent OOD Detection for Hybrid ES-DRL Control in Time-Varying Systems",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "In this paper, we study Mahalanobis-guided latent out-of-distribution (OOD) detection for test-time RL controller switching in nonlinear time-varying systems. RL controllers can quickly control high-dimensional systems within the training distribution, but their performance can degrade when time-varying dynamics produce unseen observations. We consider a combined ES--DRL controller, where RL provides fast in-distribution actions and bounded extremum seeking (ES) provides robust model-independent control under OOD operation. The key challenge is deciding when to switch. We train a variational a",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1991,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.11474v2"
+    }
+  },
+  {
+    "id": "arxiv:2606.14854",
+    "title": "Event Generation with Parallel Langevin Sampling and Learned Stein Diagnostics",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Efficient event generation is a major computational challenge for precision collider phenomenology, especially for high-multiplicity final states where matrix-element evaluations are expensive and rejection-sampling efficiencies are low. We study an alternative approach based on many parallel underdamped Langevin chains, retaining one terminal state from each chain to obtain unweighted events while avoiding within-chain autocorrelation. A learned Stein discrepancy is used as a convergence diagnostic, providing a data-driven estimate of the relaxation time. We apply the method to tree-level $u\\",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.7738,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.14854v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.11698",
+    "title": "T2S: A Rehearsal-Based Approach for Extraction-Resistant Model Watermarking",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Model watermarking safeguards AI model intellectual property by embedding distinctive knowledge that induces unique behavioral signatures. The primary technical challenge lies in ensuring watermark robustness against various post-processing attacks on the watermarked model. Model extraction attacks emerge as the most severe threat, where adversaries exploit prediction outputs to train surrogate models that illegally replicate the original model's functionality. In this work, we propose a rehearsal-based watermark embedding framework to enhance the robustness of model watermarks against model e",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.11698v1"
+    }
+  },
+  {
+    "id": "doi:10.3389/fdata.2026.1842233",
+    "title": "Evolutionary multi-agent reinforcement learning for crisis-aware demographic policy optimization",
+    "year": 2026,
+    "venue": "Frontiers in Big Data",
+    "abstract": "<jats:p>\n                    Demographic systems face unprecedented challenges from simultaneous crises. Conventional statistical demography techniques and agent–based models often struggle to capture nonlinear inter–regional interactions during periods of severe socio–economic disruption. To address this, we propose\n                    <jats:italic>MADDPG–EVO–DGM</jats:italic>\n                    , a hybrid algorithm that integrates multi–agent deep reinforcement learning with evolutionary optimisation and meta–learning principles to model regional demographic processes under multiple crisis ",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.3389/fdata.2026.1842233",
+      "crossref": "https://doi.org/10.3389/fdata.2026.1842233"
+    }
+  },
+  {
+    "id": "arxiv:2606.18322",
+    "title": "SAE Interventions are Unreliable: Post-Intervention Recovery of Suppressed Behavior",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Sparse Autoencoders (SAEs) decompose residual-stream activations into interpretable features. Recent latent-space defenses increasingly rely on these decompositions, assuming that identified \"unsafe\" SAE features serve as actionable handles for monitoring and intervention. In this paradigm, clamping a specific harmful feature is expected to reliably prevent model misbehavior. However, we show that this success may hide a recoverable failure mode: the clamp may block one visible route to a behavior without eliminating the behavior itself. We formulate this vulnerability as post-intervention rec",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2542,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.18322v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30710-1_27",
+    "title": "Machine Learning-Based Survival Prediction of Outcomes in Myelodysplastic Syndromes",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30710-1_27",
+      "crossref": "https://doi.org/10.1007/978-3-032-30710-1_27"
+    }
+  },
+  {
+    "id": "doi:10.48550/arxiv.2606.11158",
+    "title": "Defeat the Heap: Zero-Copy Data Movement in AXI4MLIR",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "abstract": "As custom hardware accelerators become increasingly central to machine learning workloads, efficient data transfer is critical for maximizing accelerator performance on linear algebra kernels. AXI4MLIR, an extension of the Multi-Level Intermediate Representation (MLIR) compiler framework for automated generation of host-accelerator driver code, incurs significant runtime overhead due to non-zero-copy CPU-accelerator data movement. During transfers from the host to the accelerator, data is copied from heap-allocated memory buffers into contiguous Direct Memory Access (DMA)-mapped buffers. This ",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.0217,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W7164164393"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30710-1_10",
+    "title": "FC-CL: Contrastive Learning-Based Sleep Stage Classification Considering Surrounding Epochs in EEG Signals",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30710-1_10",
+      "crossref": "https://doi.org/10.1007/978-3-032-30710-1_10"
+    }
+  },
+  {
+    "id": "doi:10.1007/s00170-026-18574-9",
+    "title": "Learning-adaptive scheduling for three-machine assembly flowshops with step-learning effects",
+    "year": 2026,
+    "venue": "The International Journal of Advanced Manufacturing Technology",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s00170-026-18574-9",
+      "crossref": "https://doi.org/10.1007/s00170-026-18574-9"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30110-9_26",
+    "title": "Predicting University Success: Validating Machine Learning Models for Social Media User Engagement",
+    "year": 2026,
+    "venue": "Lecture Notes in Networks and Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30110-9_26",
+      "crossref": "https://doi.org/10.1007/978-3-032-30110-9_26"
+    }
+  },
+  {
+    "id": "arxiv:2606.26383",
+    "title": "SOLAR: AI-Powered Speed-of-Light Performance Analysis",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "How fast could a deep-learning model run on target hardware, and how far is today's implementation from that limit? These questions are central to software, hardware, and algorithm optimizations. Speed-of-Light (SOL) analysis answers them by computing a workload's theoretical minimum execution time on a given architecture. Yet deriving SOL bounds remains manual, error-prone, and disconnected from rapid model development. To close this gap, we introduce SOLAR, a framework that automatically derives validated SOL bounds from PyTorch and JAX source code. SOLAR leverages both generative and determ",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.4943,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.26383v1"
+    }
+  },
+  {
+    "id": "doi:10.5256/f1000research.197294.r495130",
+    "title": "Peer Review Report For: RxPairEvid: an auditable, machine-learning-ready dataset of drug–drug pairs with pharmacovigilance signal features and MedDRA PT-code rationales [version 1; peer review: 2 not approved]",
+    "year": 2026,
+    "venue": "F1000 Research Ltd",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.5256/f1000research.197294.r495130",
+      "crossref": "https://doi.org/10.5256/f1000research.197294.r495130"
+    }
+  },
+  {
+    "id": "arxiv:2606.16242",
+    "title": "Rapid Poison: Practical Poisoning Attacks Against the Rapid Response Framework",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The Rapid Response (RR) framework, deployed in production systems, including Anthropic's ASL-3 safeguards, continuously improves jailbreak-detection classifiers. When new jailbreaks emerge that bypass these classifiers, Rapid Response generates synthetic variants for training, helping the model generalize from the new attacks and quickly adapt. We reveal that prompt injection can infiltrate this pipeline to deliver poisoned samples into the classifier's training set, enabling two attack objectives: (I) targeted poisoning attacks that create false positives on harmless samples by categorizing t",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:40Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.16242v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.27806",
+    "title": "Agent vs. Parametric World Models: Hybrid Planning for Reliable Language Agents",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Language agents plan by generating not only actions but also implicit predictions of how the world will change. These imagined state updates make agents flexible, but they also create a distinct failure mode: hallucinated state claims can be written into context and propagated across subsequent decisions. In contrast, parametric world models provide measurable transition errors but are often weaker semantic planners. We study this tradeoff in graph-structured planning environments and introduce metrics for agent-world-model error, including hallucinated-state rate, propagation depth, and long-",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:39Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.27806v3"
+    }
+  },
+  {
+    "id": "arxiv:2606.18385",
+    "title": "CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Vision-Language Models (VLMs) remain prone to hallucinations, producing fluent but visually unfaithful outputs. Existing chain-of-thought and retrieval-augmented methods only partially address this, as they neither enforce step-level citation grounding nor route verification failures back to retrieval for correction. We present CaVe-VLM-CoT, a modular reflection-based agentic-RAG framework that enforces evidence-grounded reasoning through a five-stage closed-loop pipeline: Extractor, Retriever, Solver, Citation Injector, and Verifier, in which detected ungrounded claims trigger structured feed",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.023,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.18385v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.25265",
+    "title": "Variational Inference via Entropic Transport Descent",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Particle-based variational inference (ParVI) methods approximate an intractable target distribution by evolving an ensemble of interacting samples. Existing approaches rely predominantly on kernel-based repulsion (e.g., SVGD), which suffers from variance collapse in high dimensions and mode collapse on multimodal targets -- pathologies caused by the absence of global transport structure. We introduce entropic transport descent (ETD), a ParVI family that frames each particle update as an entropy-regularized optimal transport problem. Derived from the JKO proximal scheme by lifting to the space ",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.3244,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.25265v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.24884",
+    "title": "InSight: Self-Guided Skill Acquisition via Steerable VLAs",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Vision-language-action (VLA) models can learn manipulation skills from demonstrations, but their capabilities are bounded by the skills in the training data. We present InSight, a framework that unlocks autonomous skill acquisition by rendering VLAs steerable at the primitive-action level (e.g., \"move gripper to the bowl\", \"lift upward\", \"pour the bottle\"). InSight consists of two primary stages: (1) an automated segmentation pipeline that partitions demonstrations into labeled primitives via VLM plan decomposition and end-effector poses to enable VLA primitive steerability, and (2) a VLM-guid",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2027,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.24884v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.30696",
+    "title": "ViTL: Temporal Logic-Guided Zero-Shot Natural Language Navigation via Vision-Language Models",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Enabling robots to follow natural language commands to complete zero-shot long-horizon tasks remains challenging. It requires extracting implicit temporal and logical constraints from natural language commands and executing multiple sub-tasks accordingly. Recent zero-shot object navigation methods use vision-language models (VLMs) to guide frontier-based exploration in unknown environments, but they are limited to single-target tasks. Real-world commands such as \"Clean either the chair or the couch, then turn on the tv.\" require navigating to multiple targets in a temporally constrained order,",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:38Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.30696v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.13709",
+    "title": "LoMC: Localized Multidirectional Correction for Refusal Suppression in Routed Foundation Models",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "We study controlled post-training refusal suppression in routed MoE and hybrid-MoE foundation models, aiming to increase non-refusal target-response behavior while preserving general capability under a compact intervention footprint. Existing broad direction-based edits can perturb general-purpose computation, whereas support-only expert edits often lack sufficient capacity to correct heterogeneous refusal representations. To address this limitation, we introduce Localized Multidirectional Correction (LoMC), a support-gated intervention framework that follows a support-then-correction executio",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1808,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.13709v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.26793",
+    "title": "MIRROR: Novelty-Constrained Memory-Guided MCTS Red-Teaming for Agentic RAG",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Multimodal agentic retrieval-augmented generation (RAG) systems expand the attack surface beyond prompt injection to include text poisoning, image injection, direct-query attacks, and orchestrator-level tool manipulation. Existing red-teaming approaches are typically surface-specific and often recycle known attack templates; on text-poisoning benchmarks we measure 73-84% exact duplication. We present MIRROR, a unified cross-surface framework that performs memory-guided Monte Carlo tree search while conditioning candidate generation on retrieved context under an explicit novelty constraint. A d",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2534,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.26793v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.15730",
+    "title": "InstantForget: Update-Free Backdoor Unlearning with Inference-Time Feature Reset",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Backdoor unlearning aims to remove a malicious trigger behavior from a deployed model while preserving clean utility. We study the update-free inference-time setting, where model parameters remain frozen. First, we audit a common projection assumption under oracle paired clean and triggered features. Projection succeeds mainly on BadNets and leaves WaNet, Blended, and SIG at 0.683, 0.888, and 0.941 ASR on CIFAR-10 ResNet-18. This failure is not explained by spectral compactness, spatial locality, or subspace misalignment. It is predicted by a logit-triplet gap involving the target margin, targ",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:40Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.15730v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.20475",
+    "title": "Marginal Advantage Accumulation for Memory-Driven Agent Self-Evolution",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "In batch-style trace distillation, the same memory operation may receive contradictory feedback across different batches. Existing methods lack a cross-batch, operation-level evidence accumulation mechanism, making it impossible to distinguish stably effective operations from accidental hits. This paper formalizes the requirement as two structural conditions, alignability and comparability, and proposes Marginal Advantage Accumulation (MAA). MAA constructs differential signals to make them comparable across batches, accumulates signed evidence per operation via EMA, and ensures cross-batch tra",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.156,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.20475v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.15625",
+    "title": "Conflict-Aware Federated Fine-Tuning of Large Language Models with Mixture-of-Experts",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The continuous scaling of large language models (LLMs) incurs prohibitive computational costs, making Mixture-of-Experts (MoE) a scalable alternative for efficient fine-tuning via sparse activation. While federated learning (FL) emerges as the paradigm for privacy-preserving collaborative optimization, integrating MoE into FL under data heterogeneity may trigger conflicting expert optimizations. Client-specific data distributions force same-indexed experts to optimize under inconsistent or even conflicting feature-label correlations. This mismatch induces destructive interference during aggreg",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:37Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.15625v1"
+    }
+  },
+  {
+    "id": "doi:10.1038/s41598-026-61055-y",
+    "title": "An optimized ensemble learning model for interpretable and efficient obesity classification",
+    "year": 2026,
+    "venue": "Scientific Reports",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1038/s41598-026-61055-y",
+      "crossref": "https://doi.org/10.1038/s41598-026-61055-y"
+    }
+  },
+  {
+    "id": "doi:10.1007/s12221-026-01500-x",
+    "title": "Experimental and Machine Learning-Based Optimization of Load Resistance in an MFC Vibration Energy Harvesting System",
+    "year": 2026,
+    "venue": "Fibers and Polymers",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s12221-026-01500-x",
+      "crossref": "https://doi.org/10.1007/s12221-026-01500-x"
+    }
+  },
+  {
+    "id": "arxiv:2607.00535",
+    "title": "Flow-Map GRPO: Reinforcement Learning for Few-Step Flow-Map Generators via Anchored Stochastic Composition",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Few-step flow-map generators, such as consistency models and MeanFlow, accelerate sampling by directly learning long-range transport maps between noise and data. However, these models are typically deterministic, which makes them difficult to optimize with reinforcement learning (RL) post-training methods that require stochastic trajectories and well-defined likelihood ratios. Existing SDE-based stochasticization techniques are designed for velocity-based samplers with infinitesimal or finely discretized transitions, and therefore do not directly apply to long-range flow maps. In this work, we",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1975,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.00535v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30813-9_36",
+    "title": "When More Data is Not Better: Physiological Drift Explains Transfer Learning Failure in Rare ICU Populations",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:42Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30813-9_36",
+      "crossref": "https://doi.org/10.1007/978-3-032-30813-9_36"
+    }
+  },
+  {
+    "id": "arxiv:2606.27180",
+    "title": "Automating Potential-based Reward Shaping with Vision Language Model Guidance",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Sparse rewards are inherently challenging for reinforcement learning agents as they lack intermediate feedback to guide exploration and to correctly attribute the sparse success rewards to relevant parts of the trajectory. Naive reward shaping can induce reward hacking, yielding policies that exploit auxiliary signals instead of solving the intended task. Potential-based reward shaping (PBRS) guarantees preservation of the optimal policy set, but requires the definition of a heuristic potential function over the state space. In this work, we introduce the VLM-guided PBRS framework VLM-PBRS tha",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1584,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.27180v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.15308",
+    "title": "Forced Deferral: Manipulating Routing Decisions in Multimodal LLM Cascades",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "While multimodal large language models (MLLMs) have shown strong visual reasoning abilities, serving a large model for every query is computationally expensive. MLLM cascades mitigate this cost by first querying a weak but cheaper model and deferring to a strong model when the weak model's output is unconfident. However, since the weak model's confidence directly controls compute allocation, these systems expose a new attack surface: an adversary can manipulate confidence so that their queries are consistently deferred to the strong model. Motivated by this vulnerability, we introduce the Forc",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:40Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.15308v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.01144",
+    "title": "Sequentially-Controlled Interactive Multi-Particle Flow-Maps for Online Feedback-Driven Search",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "While generative models have enabled training-free reward alignment, current methods typically excel in local exploration within narrow regions of the underlying distribution. These approaches struggle when preferences are unknown a priori and only revealed through sequential feedback-a scenario demanding broad exploration to uncover high-utility regions. To address this, we propose Sequentially-Controlled Interactive Multi-Particle Flow-Maps (IMPFM), a framework for sample-efficient online feedback-driven search. IMPFM progressively transports a group of interactive particles toward the targe",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.4096,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.01144v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.29565",
+    "title": "Speculative Pre-Positioning: Decoding Stateful Sessions to the Next Decision Point Off the Critical Path",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "A stateless inference server (vLLM, SGLang, TensorRT-LLM) idles between requests while the accelerator waits; a stateful session reclaims that idle time. Speculative pre-positioning decodes the session forward to its next decision point with the target model's own forward pass and no draft model, moving the cross-request prefill and entry-decode off the critical path: the next request resumes from a pre-paid entry on its delta, or, when a confidence gate fires, is answered from a cached distribution in one near-constant vocabulary scan with no decode, at a cost only of energy and a rare, bound",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.44,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.29565v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.17409",
+    "title": "Discrete Autoregressive Transformer for Generative Mechanism Synthesis",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Planar path synthesis requires mechanisms whose coupler curves match a prescribed trajectory; the mapping from curve to linkage is inherently one-to-many across four-, six-, and eight-bar topologies. We address this design problem with simulation-grounded evaluation on a curated corpus of over one million mechanisms, reporting Chamfer distance and dynamic time warping after forward kinematics and geometric alignment. We formulate synthesis as conditional autoregressive sequence modeling: joint coordinates are uniformly quantized to tokens and generated by a decoder-only transformer with a vari",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2516,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.17409v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.25858",
+    "title": "Color Matters: Trigger Color Affects Success in Federated Backdoor Attacks",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Federated learning is vulnerable to backdoor attacks in which malicious clients inject poisoned updates while preserving benign-task performance. In this paper, we study a semantics-driven backdoor mechanism in which attackers use natural visual accessories as triggers and manipulate only the trigger color while keeping the attack pipeline fixed. Our framework considers semantic trigger objects such as masks and sunglasses, instantiated in black and white variants, and evaluates their effect in a controlled federated learning setting. Malicious clients construct poisoned samples by applying a ",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:39Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.25858v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.27188",
+    "title": "A Process Harness for Uplifting Legacy Workflows to Agentic BPM: Design and Realization in CUGA FLO",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "We introduce the process harness, a new mechanism for uplifting legacy workflows into Agentic Business Process Management (Agentic BPM) without replacing the underlying workflow engine. A process harness places a policy-governed agentic layer around a deterministic workflow engine, intercepting designated control points to contribute reasoning, adaptation, and oversight while the engine retains structural authority over the process. To define the process harness rigorously, we develop the Task-Decision-Flow (TDF) model, specifying both its data schema and its execution semantics. TDF decompose",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.0094,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.27188v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.28226",
+    "title": "Exposure Bias Can Alleviate Itself via Directional and Frequency Rectification in Flow Matching",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Flow Matching (FM) has achieved remarkable generative performance, yet it suffers from exposure bias due to discrepancies between training and inference. Existing mitigation strategies typically rely on static constraints or external heuristics. In this work, we propose that exposure bias itself inherently contains dynamic signals that can guide its own rectification. To leverage this, we introduce DEFAR (DirEctional-Frequency Adaptive Rectification). This framework simulates the single-step inference process during training to identify exposure bias. It utilizes directional and frequency-adap",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.4969,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.28226v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.19251",
+    "title": "Acceleration of an algebraic multigrid pressure solver using graph neural networks",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Solving the pressure-Poisson equation remains the primary computational bottleneck in incompressible unstructured flow solvers primarily due to the inherent sensitivity of traditional linear solvers to mesh irregularities. This work introduces a data-driven algebraic multigrid (AMG) smoother that uses a modified graph convolutional isomorphism network (GCIN). The graph neural network predicts optimal polynomial coefficients to construct a sparse pseudo-inverse operator across diverse grid topologies. The coefficients are optimized to reduce the residual after each V-cycle iteration. By directl",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.4059,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.19251v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.18730",
+    "title": "Two-Phase Bilevel Search for the Moving-Target Traveling Salesman Problem with Moving Obstacles",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The Moving-Target Traveling Salesman Problem (MT-TSP) seeks a minimum cost trajectory for an agent that departs from a static depot, visits a set of moving targets, each within one of their assigned time windows, and returns to the depot. In this article, we study the Moving-Target Traveling Salesman Problem with Moving Obstacles (MT-TSP-MO), a generalization of the MT-TSP where the agent trajectory must avoid moving obstacles. We present a Mixed-Integer Conic Programming (MICP) formulation that can be solved using off-the-shelf solvers, as well as a fast and scalable Two-Phase Bilevel Search ",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1734,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.18730v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.03824",
+    "title": "Targeted Highly Adaptive Lasso Minimum Loss Estimation of Target Functions",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "We propose a Targeted Highly Adaptive Lasso for estimation of non-pathwise differentiable functional parameters such as the dose-response curve (DRC) for continuous exposure. We assume the target function lies in the $k$-th order smoothness class used to define the $k$-th order Highly Adaptive Lasso (HAL), which can be well approximated by linear spans of $k$-th order spline basis functions. We construct a projection of the true target function onto a large finite dimensional working model spanned by an initial set of $k$-th order spline basis functions, which defines a pathwise differentiable",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2891,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.03824v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30710-1_25",
+    "title": "C2W-Tune: Cavity-to-Wall Transfer Learning for Thin Atrial Wall Segmentation in 3D LGE-MRI",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30710-1_25",
+      "crossref": "https://doi.org/10.1007/978-3-032-30710-1_25"
+    }
+  },
+  {
+    "id": "arxiv:2606.29020",
+    "title": "Semantic-Aware, Physics-Informed, Geometry-Grounded Weather Video Synthesis",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Weather synthesis aims to add weather effects to input videos while preserving scene identity, structure, and motion. The key limitation of existing methods is the lack of diversity in weather appearance and effective control over weather dynamics (e.g., temporal evolution and particle motion). Most approaches rely on text prompts, which are inherently underspecified and often fail to produce detailed weather characteristics. Additionally, general-purpose video editors optimized for clean and aesthetic outputs tend to suppress heavy weather phenomena, making dense particle effects difficult to",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1702,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.29020v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.28833",
+    "title": "Active Quantum Kernel Acquisition for Gaussian Process Regression",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Quantum kernel estimation on near-term hardware is shot-budgeted: every entry of the kernel Gram matrix is a Bernoulli expectation that must be sampled with a finite number of circuit executions. Recent work on quantum kernel classification has shown that allocating shots non-uniformly across kernel entries, weighted by their downstream task sensitivity, can reduce the shot budget required to reach a target accuracy. We extend this idea to Gaussian process (GP) regression, a setting whose downstream quantities (full-spectrum posterior variance, log-determinant, marginal likelihood) couple to k",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1903,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.28833v3"
+    }
+  },
+  {
+    "id": "arxiv:2606.26778",
+    "title": "LearniBridge: Learnable Calibration of Feature Caching for Diffusion Models Acceleration",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Diffusion Transformers (DiTs) have driven substantial progress in image and video generation but suffer from prohibitive computational costs. Feature caching accelerates inference by reusing intermediate representations. Existing methods rely on historical features for implementation simplicity, yet suffer from severe error accumulation at high acceleration ratios. To address this limitation, we investigate the nature of the requisite feature correction. We demonstrate that the optimal calibration update is characterized by a shared low-rank subspace across diverse prompts. Guided by this stru",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2851,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.26778v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.29085",
+    "title": "Complete virtual unwrapping and reading of a rolled Herculaneum papyrus",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The carbonized papyri from Herculaneum preserve the only large-scale library to survive from classical antiquity, but many unopened rolls remain unread because physical opening risks irreversible damage. X-ray computed microtomography ($μ$CT) and virtual unwrapping offer a non-invasive route to their texts, yet previous work on sealed Herculaneum scrolls has recovered only localized readings or limited surface regions. Here, using high-resolution phase-contrast $μ$CT acquired on the BM18 beamline at the European Synchrotron Radiation Facility (ESRF), together with improved computational unroll",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.0542,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.29085v1",
+      "inspire": "https://inspirehep.net/literature/3174703"
+    }
+  },
+  {
+    "id": "doi:10.1007/s10639-026-14063-4",
+    "title": "Research on the application of interactive social robot in english vocabulary learning in primary school",
+    "year": 2026,
+    "venue": "Education and Information Technologies",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s10639-026-14063-4",
+      "crossref": "https://doi.org/10.1007/s10639-026-14063-4"
+    }
+  },
+  {
+    "id": "arxiv:2607.02734",
+    "title": "Echoes of Unrest: A Multimodal NLP Framework for Early Warning of Fake News and Violence-Driven Mob Activity",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Rapid growth in social media has transformed global communication by enabling fast information exchange, but it has also accelerated the spread of misinformation. Fake news, manipulated content, and provocative narratives are increasingly linked to social unrest, political instability, and mob violence. Incidents in South Asia and elsewhere demonstrate how false information disseminated via platforms such as Facebook and WhatsApp can trigger real-world harm, often spreading faster than fact-checking efforts can respond. To address this challenge, this chapter presents a multilingual, multimoda",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:36Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.02734v1"
+    }
+  },
+  {
+    "id": "doi:10.5607/en26019",
+    "title": "Distinct Temporal Windows for Ventral Tegmental Area Dopamine Neurons are Required for Active Avoidance Learning",
+    "year": 2026,
+    "venue": "Experimental Neurobiology",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.5607/en26019",
+      "crossref": "https://doi.org/10.5607/en26019"
+    }
+  },
+  {
+    "id": "arxiv:2606.09643",
+    "title": "FMplex: Model Virtualization for Serving Extensible Foundation Models",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Foundation models (FMs) are increasingly used as backbones for downstream tasks across language, vision, time-series, and multimodal applications. Yet existing model-serving systems deploy each customized task as an independent model instance, thereby replicating heavyweight backbones, wasting accelerator memory, and losing opportunities to amortize batching and loading costs. This paper presents FMplex, a serving system that treats FM backbones as a virtualization substrate for deployment sharing. FMplex presents each task with a virtual foundation model (vFM), a logically private FM instance",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1631,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.09643v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11694-026-04700-4",
+    "title": "WA-YOLO: a lightweight deep learning network model for real-time measurement and characterization of fruit quality",
+    "year": 2026,
+    "venue": "Journal of Food Measurement and Characterization",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11694-026-04700-4",
+      "crossref": "https://doi.org/10.1007/s11694-026-04700-4"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30813-9_41",
+    "title": "A Deep Learning Framework for Vision-Based Intraocular Pressure Monitoring Using Microfluidic Contact Lenses",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:42Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30813-9_41",
+      "crossref": "https://doi.org/10.1007/978-3-032-30813-9_41"
+    }
+  },
+  {
+    "id": "arxiv:2606.10349",
+    "title": "Magnetic HIP-NN for spin dynamics in disordered itinerant magnets",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "We present a magnetic extension of the Hierarchically Interacting Particle Neural Network (HIP-NN) that enables large-scale simulations of electron-mediated spin dynamics in disordered itinerant magnets. The resulting magnetic HIP-NN (mHIP-NN) incorporates rotationally invariant spin correlations directly into hierarchical message-passing layers, enabling the network to learn emergent magnetic energy landscapes and effective local fields from coupled geometric-spin environments while preserving spin-rotation symmetry. As a benchmark application, we consider structurally disordered itinerant $s",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.3399,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.10349v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.28094",
+    "title": "OSOR: One-Step Diffusion Inpainting for Effect-Aware Object Removal",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Real-world object removal is challenging due to two key difficulties: the target object's non-local effects, such as shadows and reflections, which are difficult to model, and the fact that user-provided masks are often inaccurate or incomplete. With billions of parameters and tens of denoising steps, diffusion-based models achieve strong removal performance at the expense of substantial computational cost, limiting their use in interactive applications and on edge devices. To address these challenges, we present OSOR (One-Step Object Removal), which simultaneously achieves efficient, effect-a",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2845,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.28094v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.09944",
+    "title": "GAGI: A Gini-Adjusted GDP-per-Capita Index for Distribution-Aware Macroeconomic Welfare Monitoring",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "GDP per capita is the default lens through which governibng bodies track the economic prosperity and consequences of economic events , yet it is blind to two first-order determinants of lived prosperity: income/wealth distribution and inflation impact. Inequality-adjusted income measures are themselves not new but What is missing from the macroeconomic monitoring toolkit specifically is not a welfare concept but an operational monitoring trigger: a statistic minimal enough to compute annually from public data, transparent enough to audit without modelling assumptions, and normalised so that ye",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:37Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.09944v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.00259",
+    "title": "Multi-Hypothesis Test-Time Adaptation to Mitigate Underspecification",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Test-Time Adaptation (TTA) seeks to improve model robustness under distribution shifts by adapting parameters using unlabeled target data. However, in the absence of supervision, entropy-based adaptation is fundamentally underconstrained: multiple distinct parameter updates can achieve similarly low entropy while inducing drastically different decision boundaries. This phenomenon, known as underspecification, renders standard TTA brittle and prone to collapse into spurious modes. In this work, we reinterpret TTA through a posterior-inspired lens induced by entropy minimization, where low-entro",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.3548,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.00259v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.01395",
+    "title": "Rethinking Generic Object Tracking Toward Human-Level Perceptual Intelligence",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "At the heart of human visual perception lies the ability to maintain a continuous and coherent understanding of the external world. By integrating observations with accumulated experience, the human visual system can continuously adapt to variations in both the target and its surrounding environment, while preserving robust visual continuity as scene dynamics evolve. Human vision can therefore integrate prior knowledge, spatial geometry, and semantic context to understand complex scenes and their changes. As a core problem in computer vision, visual object tracking aims to bring machine percep",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:38Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.01395v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.19108",
+    "title": "JourneyFormer: Encoding Airbnb Guest Journey with Sequence Modeling",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Sequence modeling has become increasingly popular in recommendation and ranking algorithms, owing to its capacity to model users' historical behaviors and infer user intentions. Despite its theoretical simplicity, the practical deployment of a sequence model in production is non-trivial due to complexity of the sequence and sparse labels. For example, in Airbnb, guest sequences are often long, exploratory and complex, and we focus on booking labels, which are sparse. As such, we are often required to make various design decisions regarding data and modeling to strike a balance between effectiv",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:37Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.19108v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30710-1_2",
+    "title": "Learning to Segment Using Summary Statistics and Weak Supervision",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30710-1_2",
+      "crossref": "https://doi.org/10.1007/978-3-032-30710-1_2"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30710-1_39",
+    "title": "ExpertoRhythm: Morphology-Aware Learning for Waveform Reconstruction and Cuffless Blood Pressure Estimation from Single-Channel PPG",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30710-1_39",
+      "crossref": "https://doi.org/10.1007/978-3-032-30710-1_39"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11483-026-10182-0",
+    "title": "Analyze the Sequence–Function Relationship of Umami Peptides in Shrimp Paste through Machine Learning",
+    "year": 2026,
+    "venue": "Food Biophysics",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11483-026-10182-0",
+      "crossref": "https://doi.org/10.1007/s11483-026-10182-0"
+    }
+  },
+  {
+    "id": "arxiv:2606.24976",
+    "title": "Diagnosing and Mitigating Compounding Failures in Agentic Persuasion via Taxonomic Strategy Retrieval",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Foundation-model agents in multi-step, open-ended environments frequently suffer from compounding errors, where early mistakes contaminate long-horizon trajectories. While Multi-Agent Debate (MAD) succeeds in deterministic domains, agents in subjective tasks like persuasion experience severe problem drift and sycophantic conformity. We identify semantic leakage in standard Retrieval-Augmented Generation (RAG) as a reproducible trigger for these failures, as standard RAG prioritizes vocabulary overlap over logical necessity.\n  To eliminate this leakage, we introduce Taxonomic Strategy RAG (TS-R",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:36Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.24976v3"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30710-1_34",
+    "title": "Vessel-Aware Bilateral Learning for Retina-Based Subclinical Atherosclerosis Screening",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30710-1_34",
+      "crossref": "https://doi.org/10.1007/978-3-032-30710-1_34"
+    }
+  },
+  {
+    "id": "arxiv:2606.11590",
+    "title": "A High-Precision Clock Synchronization System for the CEPC Accelerator",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The Circular Electron Positron Collider (CEPC) distributes a reference clock distributed to 192 control nodes along its 100~km underground tunnel. The required synchronization precision is 30~ps (standard deviation). We present an enhanced White Rabbit (WR)-based clock synchronization system designed to meet this requirement. A noise-budget analysis of the standard WR slave loop identifies the analog actuation chain (DAC + VCXO + multiplier PLL) and restart-induced timing uncertainty as the dominant limitations. In our redesigned node, the DAC+VCXO chain is replaced by a Si5345A DSPLL clock ge",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/3167515",
+      "arxiv": "https://arxiv.org/abs/2606.11590"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-29127-1_3",
+    "title": "Factors Influencing Immersion in Desktop-Based Human–Robot Collaboration Simulations",
+    "year": 2026,
+    "venue": "Mechanisms and Machine Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:42Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-29127-1_3",
+      "crossref": "https://doi.org/10.1007/978-3-032-29127-1_3"
+    }
+  },
+  {
+    "id": "arxiv:2607.01048",
+    "title": "Foreground Characterization and Mitigation in the Observations of the CD/EoR with the SKA",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The Square Kilometre Array (SKA), with its unprecedented sensitivity, frequency coverage, and large collecting area, is poised to revolutionize our understanding of the Cosmic Dawn (CD) and Epoch of Reionization (EoR) epochs marking the formation of the first luminous sources and the subsequent reionization of the intergalactic medium (IGM). However, detecting the faint redshifted 21-cm signal from neutral hydrogen remains one of the foremost challenges in observational cosmology, as it is buried beneath bright foregrounds from Galactic synchrotron radiation, free-free emission, and extragalac",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.0131,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/3176393",
+      "arxiv": "https://arxiv.org/abs/2607.01048"
+    }
+  },
+  {
+    "id": "arxiv:2606.22493",
+    "title": "An LLM-Orchestrated Agent for Directional-Coupler Design with Self-Consistent Eigenmode and FDTD Validation",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "We present a design agent which is a Large Language Model (LLM) that orchestrates, but does not perform, the numerical simulations to design a silicon-on-insulator (SOI) $2\\times2$ directional coupler. We choose a symmetric phase-matched coupler where a lot of analytical results are available that help the design strategy. The LLM proposes candidate gap values (a geometrical dimension size) and judges convergence, while all physics is owned by deterministic solvers: a frequency-domain eigenmode solver estimates the coupling coefficient~$κ$ for the current design, and an independent Finite-Diff",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1759,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:15Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.22493v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.27481",
+    "title": "Sampling the Schwinger Model with Gauge-Equivariant Diffusion",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "We present a first study of a diffusion-based approach to accelerated sampling of the $N_f = 2$ lattice Schwinger model. Our work is inspired by recent and growing successes in developing such generative models for ensemble generation in LFT to overcome the well-known critical slowing down problem. We train a U(1)-equivariant score-based generative model to sample gauge link configurations from the marginal Schwinger model. By computing model likelihoods, we obtain unbiased estimates for observables that closely match those produced by MCMC simulations. We also demonstrate improvement over HMC",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.1794,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.27481v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.02484",
+    "title": "Combating Textual Noise and Redundancy: Entropy-Aware Dense Visual Token Pruning",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Visual token pruning is a crucial strategy for accelerating VLMs by compressing redundant image patches, yet existing methods often fail to preserve critical cues under dense instructions and fine-grained queries. In this paper, we investigate this failure and identify two underlying bottlenecks: the widespread dispersion of textual noise that corrupts dense cross-modal scoring, and the feature fragmentation inherent to standard token selection. To address these issues, we propose Entropy-Aware Dense Pruning (EADP), a framework that reformulates pruning as a structured compression problem. EAD",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": null,
+      "score": 0.3271,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2607.02484v1"
+    }
+  },
+  {
+    "id": "arxiv:2606.12378",
+    "title": "Illumination-Robust Camera-Based Heart-Rate Estimation for Physiological Sensing in Robots",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Physiological awareness is important for service, social, and assistive robots that interact with humans in everyday environments. Remote photoplethysmography (rPPG) enables non-contact heart-rate (HR) estimation from an RGB camera, making it a promising sensing modality for robot-mounted vision systems. However, illumination variation remains a major barrier to robust deployment. This paper presents an end-to-end spatial-temporal transformer framework for remote HR estimation on a new dataset with varied illumination. Our estimator integrates PRNet-based 3D face alignment, clip-level illumina",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.0155,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-08T07:48:14Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.12378v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11581-026-07361-x",
+    "title": "A Gaussian filtering enhanced TCN-Transformer hybrid network for robust state of charge estimation of lithium-ion batteries under complex operating conditions",
+    "year": 2026,
+    "venue": "Ionics",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11581-026-07361-x",
+      "crossref": "https://doi.org/10.1007/s11581-026-07361-x"
+    }
+  },
+  {
+    "id": "doi:10.1016/j.rser.2026.117231",
+    "title": "Bridging adsorption and absorption mechanisms for room-temperature solid-state hydrogen storage: A critical review",
+    "year": 2026,
+    "venue": "Renewable and Sustainable Energy Reviews",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-08T06:04:41Z"
+    },
+    "links": {
+      "openalex": "https://openalex.org/W7166046164"
     }
   }
 ]
