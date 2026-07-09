@@ -172,8 +172,8 @@
       "2026-06": 7,
       "2026-07": 2
     },
-    "last_updated": "2026-07-08T07:48:30.861073+00:00",
-    "next_update": "2026-07-09T07:48:30.861073+00:00"
+    "last_updated": "2026-07-09T20:57:53.198230+00:00",
+    "next_update": "2026-07-10T20:57:53.198230+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -12726,15 +12726,23 @@
         {
           "source": "openalex",
           "seen_at": "2026-07-08T06:03:18Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-07-09T20:45:06Z"
         }
       ],
       "history": [
         {
           "event": "merge",
           "at": "2026-07-08T06:03:29Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:45:12Z"
         }
       ],
-      "last_updated": "2026-07-08T06:03:29Z"
+      "last_updated": "2026-07-09T20:45:12Z"
     },
     "arxiv:2607.03895": {
       "id": "arxiv:2607.03895",
@@ -12793,6 +12801,18 @@
         {
           "source": "arxiv",
           "seen_at": "2026-07-08T05:51:58Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-09T20:40:46Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-09T20:41:12Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-09T20:41:22Z"
         }
       ],
       "history": [
@@ -12803,9 +12823,21 @@
         {
           "event": "merge",
           "at": "2026-07-08T05:55:11Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:44:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:44:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:44:35Z"
         }
       ],
-      "last_updated": "2026-07-08T05:55:11Z"
+      "last_updated": "2026-07-09T20:44:35Z"
     },
     "arxiv:2606.23366": {
       "id": "arxiv:2606.23366",
@@ -12854,10 +12886,19 @@
         {
           "source": "arxiv",
           "seen_at": "2026-07-08T05:51:42Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-09T20:41:06Z"
         }
       ],
-      "history": [],
-      "last_updated": "2026-07-08T05:51:42Z"
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:44:35Z"
+        }
+      ],
+      "last_updated": "2026-07-09T20:44:35Z"
     },
     "arxiv:2606.15864": {
       "id": "arxiv:2606.15864",
@@ -12907,10 +12948,19 @@
         {
           "source": "arxiv",
           "seen_at": "2026-07-08T05:51:42Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-09T20:41:06Z"
         }
       ],
-      "history": [],
-      "last_updated": "2026-07-08T05:51:42Z"
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:44:35Z"
+        }
+      ],
+      "last_updated": "2026-07-09T20:44:35Z"
     },
     "arxiv:2606.13013": {
       "id": "arxiv:2606.13013",
@@ -12967,10 +13017,19 @@
         {
           "source": "arxiv",
           "seen_at": "2026-07-08T05:51:42Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-09T20:41:06Z"
         }
       ],
-      "history": [],
-      "last_updated": "2026-07-08T05:51:42Z"
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:44:35Z"
+        }
+      ],
+      "last_updated": "2026-07-09T20:44:35Z"
     },
     "arxiv:2607.06114": {
       "id": "arxiv:2607.06114",
@@ -13020,10 +13079,19 @@
         {
           "source": "arxiv",
           "seen_at": "2026-07-08T05:52:20Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-09T20:41:45Z"
         }
       ],
-      "history": [],
-      "last_updated": "2026-07-08T05:52:20Z"
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:44:38Z"
+        }
+      ],
+      "last_updated": "2026-07-09T20:44:38Z"
     },
     "arxiv:2606.16035": {
       "id": "arxiv:2606.16035",
@@ -13083,15 +13151,31 @@
         {
           "source": "arxiv",
           "seen_at": "2026-07-08T05:53:08Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-09T20:41:52Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-09T20:42:31Z"
         }
       ],
       "history": [
         {
           "event": "merge",
           "at": "2026-07-08T05:55:50Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:44:39Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:44:39Z"
         }
       ],
-      "last_updated": "2026-07-08T05:55:50Z"
+      "last_updated": "2026-07-09T20:44:39Z"
     },
     "doi:10.3390/instruments10020033": {
       "id": "doi:10.3390/instruments10020033",
@@ -13147,10 +13231,19 @@
         {
           "source": "openalex",
           "seen_at": "2026-07-08T06:03:18Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-07-09T20:45:06Z"
         }
       ],
-      "history": [],
-      "last_updated": "2026-07-08T06:03:18Z"
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-07-09T20:45:07Z"
+        }
+      ],
+      "last_updated": "2026-07-09T20:45:07Z"
     }
   }
 }
