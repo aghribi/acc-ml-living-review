@@ -35,7 +35,10 @@ ACCEL_KEYWORDS = [
     "BPM", "SRF", "injector", "beam loss", "emittance", "quench",
     "beam dynamics", "magnet", "dipole", "quadrupole", "sextupole",
     "octupole", "solenoid", "corrector", "chicane", "dogleg", "scraper",
-    "collimator", "septum", "kicker", "booster", "decelerator", "target", "beam dump"
+    "collimator", "septum", "kicker", "booster", "decelerator", "beam dump"
+    # NOTE: "target" removed 2026-07 — as an arXiv query term over
+    # cs.AI/cs.LG/stat.ML it matched half of ML arXiv ("target variable",
+    # "target distribution"), ingesting ~1500 papers per 30-day window.
 ]
 
 ML_KEYWORDS = [
