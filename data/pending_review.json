@@ -12,7 +12,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7167726915"
@@ -31,7 +31,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.14373v1",
@@ -51,7 +51,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.14813v1"
@@ -70,7 +70,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.13535v3"
@@ -89,7 +89,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.4018/979-8-2600-2701-1",
@@ -106,10 +106,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.2127,
+      "score": 0.2119,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "hal": "https://hal.archives-ouvertes.fr/hal-02060048",
@@ -129,7 +129,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "inspire": "https://inspirehep.net/literature/3172540",
@@ -146,10 +146,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1609,
+      "score": 0.1615,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.19378v1"
@@ -168,7 +168,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "inspire": "https://inspirehep.net/literature/3178722",
@@ -188,7 +188,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7167590090"
@@ -204,10 +204,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.19,
+      "score": 0.1902,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.09037v1"
@@ -226,10 +226,30 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.20437v1"
+    }
+  },
+  {
+    "id": "doi:10.1190/int-2025-0050",
+    "title": "A deep learning identification method for the core of fracture–cavity bodies based on angle-domain data",
+    "year": 2026,
+    "venue": "Interpretation",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Deep carbonate fracture–cavity reservoirs represent a class of hydrocarbon-rich reservoirs and are currently a focal area in exploration. Due to their considerable burial depth, seismic reflection structures are often coupled with sedimentary strata, making accurate identification challenging using conventional methods. Furthermore, fracture–cavity reservoirs differ from horizontally layered sedimentary reservoirs, being primarily characterized by vertical strike-slip faults and dissolution features. In seismic exploration, signals ac",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.063,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-11T06:02:50Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1190/int-2025-0050",
+      "crossref": "https://doi.org/10.1190/int-2025-0050"
     }
   },
   {
@@ -242,10 +262,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": "nli_reject_machine_vocab",
-      "score": 0.0671,
+      "score": 0.0673,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7164333333"
@@ -261,13 +281,33 @@
       "decision": "pending",
       "stage": "nli",
       "rule": "nli_reject_machine_vocab",
-      "score": 0.071,
+      "score": 0.0708,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.29823v1"
+    }
+  },
+  {
+    "id": "doi:10.1201/9781042001767-21",
+    "title": "AI-Powered Cyber Threat Detection: Leveraging Event Profiling and Deep Learning Techniques",
+    "year": 2026,
+    "venue": "Next-Generation Smart Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1201/9781042001767-21",
+      "crossref": "https://doi.org/10.1201/9781042001767-21"
     }
   },
   {
@@ -280,10 +320,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.749,
+      "score": 0.7489,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.10381v1"
@@ -299,10 +339,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1856,
+      "score": 0.1853,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7167410259"
@@ -321,7 +361,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.31309v1"
@@ -340,11 +380,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30110-9_29",
       "crossref": "https://doi.org/10.1007/978-3-032-30110-9_29"
+    }
+  },
+  {
+    "id": "doi:10.3390/ma19142987",
+    "title": "Enhancing Constitutive Description of 5A06 Aluminum Alloy During Warm Deformation Using Machine Learning-Assisted Johnson–Cook Model",
+    "year": 2026,
+    "venue": "Materials",
+    "abstract": "<jats:p>To accurately characterize the warm deformation behavior and workability of the 5A06 aluminum alloy, this study presents an innovative workflow that develops and systematically validates machine learning-assisted Johnson–Cook (ML-JC) frameworks based on artificial neural network (ANN) surrogate models. Two predictive frameworks—the parallel-decoupled PD-ANN-JC and the multi-objective integrated MOI-ANN-JC—were constructed. Quantitatively, both developed ML-JC frameworks achieve significantly higher stress prediction accuracy and superior generalization capability compared with the conv",
+    "review": {
+      "decision": "pending",
+      "stage": "nli",
+      "rule": "nli_reject_machine_vocab",
+      "score": 0.0487,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "model_revision": null,
+      "timestamp": "2026-07-11T06:02:50Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.3390/ma19142987",
+      "crossref": "https://doi.org/10.3390/ma19142987"
     }
   },
   {
@@ -357,10 +417,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": "nli_reject_machine_vocab",
-      "score": 0.0532,
+      "score": 0.0531,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7165763423"
@@ -379,7 +439,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_17",
@@ -396,10 +456,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.2848,
+      "score": 0.2835,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.21045v1"
@@ -418,7 +478,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1038/s44401-026-00136-6",
@@ -438,7 +498,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:42Z"
+      "timestamp": "2026-07-11T06:02:59Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.23548v1"
@@ -454,10 +514,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.3553,
+      "score": 0.3559,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.14999v1"
@@ -476,10 +536,30 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.01145v1"
+    }
+  },
+  {
+    "id": "arxiv:2607.02078",
+    "title": "WavePID: Low-energy flavor identification using single-PMT time series in IceCube",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "The IceCube Neutrino Observatory, a cubic-kilometer detector at the South Pole, identifies neutrino flavor through event morphology. Sparse photon detection makes this classification particularly challenging in the 5--100~GeV regime, the energy range relevant for oscillation measurements and searches for physics beyond the Standard Model. We introduce WavePID, a template-based log-likelihood-ratio classifier that exploits nanosecond-scale timing on individual detector modules through three observables: the distance to the reconstructed vertex, the early-charge fraction, and the module-to-modul",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "inspire": "https://inspirehep.net/literature/3176506",
+      "arxiv": "https://arxiv.org/abs/2607.02078"
     }
   },
   {
@@ -495,7 +575,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.23361v1"
@@ -514,7 +594,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30813-9_74",
@@ -534,7 +614,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.01729v1"
@@ -553,7 +633,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:41Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "doi": "https://doi.org/10.1103/33q9-76qp",
@@ -573,11 +653,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_8",
       "crossref": "https://doi.org/10.1007/978-3-032-30573-2_8"
+    }
+  },
+  {
+    "id": "doi:10.1117/12.3117488",
+    "title": "Algorithm optimization of machine learning in multimodal data analysis under cross-platform application framework",
+    "year": 2026,
+    "venue": "International Conference on Optical Communication and Intelligent Algorithms (OCIA 2026)",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1117/12.3117488",
+      "crossref": "https://doi.org/10.1117/12.3117488"
     }
   },
   {
@@ -593,7 +693,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s10463-026-00991-y",
@@ -613,7 +713,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7165901691"
@@ -629,10 +729,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.3121,
+      "score": 0.3118,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2304.12187v1"
@@ -651,7 +751,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.05516v1"
@@ -667,10 +767,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.4257,
+      "score": 0.4243,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.10698v1"
@@ -689,7 +789,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.28953v1"
@@ -708,7 +808,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_7",
@@ -725,10 +825,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.8064,
+      "score": 0.8071,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7164914111"
@@ -747,7 +847,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_29",
@@ -764,10 +864,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": "nli_reject_machine_vocab",
-      "score": 0.0057,
+      "score": 0.0058,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.06458v1"
@@ -786,7 +886,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_10",
@@ -803,10 +903,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.2021,
+      "score": 0.2019,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.02919v1"
@@ -822,10 +922,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": "nli_reject_machine_vocab",
-      "score": 0.02,
+      "score": 0.0201,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7167749178"
@@ -844,7 +944,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_27",
@@ -864,7 +964,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.22700v1"
@@ -883,7 +983,7 @@
       "score": 0.3124,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.11266v1"
@@ -899,10 +999,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1505,
+      "score": 0.1508,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.04526v1"
@@ -921,11 +1021,51 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_11",
       "crossref": "https://doi.org/10.1007/978-981-92-2369-5_11"
+    }
+  },
+  {
+    "id": "doi:10.1145/3795095.3805056",
+    "title": "Benchmarking Evolutionary and Machine Learning Algorithms: The SIREN Challenge of Emergency Medical Services",
+    "year": 2026,
+    "venue": "Proceedings of the Genetic and Evolutionary Computation Conference",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1145/3795095.3805056",
+      "crossref": "https://doi.org/10.1145/3795095.3805056"
+    }
+  },
+  {
+    "id": "doi:10.1007/s44196-026-01405-w",
+    "title": "Deep Learning Integrated Multi-Cloud Healthcare System for Intelligent Heart Disease Risk Prediction",
+    "year": 2026,
+    "venue": "International Journal of Computational Intelligence Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s44196-026-01405-w",
+      "crossref": "https://doi.org/10.1007/s44196-026-01405-w"
     }
   },
   {
@@ -941,10 +1081,30 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.01702v1"
+    }
+  },
+  {
+    "id": "doi:10.1038/s41746-026-02986-8",
+    "title": "Applications of traditional machine learning and deep learning algorithms in obesity prediction or classification: a systematic review of comparative performance",
+    "year": 2026,
+    "venue": "npj Digital Medicine",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1038/s41746-026-02986-8",
+      "crossref": "https://doi.org/10.1038/s41746-026-02986-8"
     }
   },
   {
@@ -960,7 +1120,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1201/9781003611110-1",
@@ -980,7 +1140,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.30899v1"
@@ -996,10 +1156,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1689,
+      "score": 0.1691,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.21395v1"
@@ -1018,31 +1178,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_31",
       "crossref": "https://doi.org/10.1007/978-3-032-30710-1_31"
-    }
-  },
-  {
-    "id": "doi:10.56726/irjmets98303",
-    "title": "CAMPUS PLACEMENT PREDICTOR USING MACHINE LEARNING",
-    "year": 2026,
-    "venue": "International Research Journal of Modernization in Engineering Technology &amp; Science",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.56726/irjmets98303",
-      "crossref": "https://doi.org/10.56726/irjmets98303"
     }
   },
   {
@@ -1058,7 +1198,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1201/9781003611110-4",
@@ -1078,7 +1218,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_29",
@@ -1098,7 +1238,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1140/epjs/s11734-026-02511-8",
@@ -1118,7 +1258,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1201/9781003611110-9",
@@ -1138,7 +1278,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.12372v1"
@@ -1157,7 +1297,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.13802v1"
@@ -1176,11 +1316,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30110-9_36",
       "crossref": "https://doi.org/10.1007/978-3-032-30110-9_36"
+    }
+  },
+  {
+    "id": "doi:10.1007/s44163-026-01693-3",
+    "title": "Federated learning based personalized cross domain martial arts action recognition model",
+    "year": 2026,
+    "venue": "Discover Artificial Intelligence",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s44163-026-01693-3",
+      "crossref": "https://doi.org/10.1007/s44163-026-01693-3"
     }
   },
   {
@@ -1196,7 +1356,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30110-9_35",
@@ -1216,7 +1376,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30699-9_3",
@@ -1233,13 +1393,33 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.201,
+      "score": 0.2009,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.18235v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11227-026-08530-5",
+    "title": "Enhanced adversarial learning for image quality restoration in low-dose PET/CT imaging",
+    "year": 2026,
+    "venue": "The Journal of Supercomputing",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11227-026-08530-5",
+      "crossref": "https://doi.org/10.1007/s11227-026-08530-5"
     }
   },
   {
@@ -1255,7 +1435,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1021/acsaenm.6c00545",
@@ -1275,7 +1455,7 @@
       "score": 0.0009,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "doi": "https://doi.org/10.3389/fneur.2026.1818594",
@@ -1292,10 +1472,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1813,
+      "score": 0.1809,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.02289v2",
@@ -1315,7 +1495,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30795-8_21",
@@ -1335,7 +1515,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_15",
@@ -1352,10 +1532,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.2792,
+      "score": 0.2788,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.03154v1"
@@ -1374,7 +1554,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_29",
@@ -1394,7 +1574,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.29841v1"
@@ -1410,10 +1590,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1985,
+      "score": 0.1991,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.11474v2"
@@ -1429,13 +1609,33 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.7732,
+      "score": 0.7738,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.14854v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s44163-026-01388-9",
+    "title": "Applications of deep learning in the identification and classification of mental health status",
+    "year": 2026,
+    "venue": "Discover Artificial Intelligence",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s44163-026-01388-9",
+      "crossref": "https://doi.org/10.1007/s44163-026-01388-9"
     }
   },
   {
@@ -1451,7 +1651,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.11698v1"
@@ -1470,7 +1670,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.3389/fdata.2026.1842233",
@@ -1490,7 +1690,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_18",
@@ -1507,10 +1707,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.2535,
+      "score": 0.2542,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.18322v1"
@@ -1529,7 +1729,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1038/s41598-026-51664-y",
@@ -1549,7 +1749,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s40300-026-00316-2",
@@ -1566,10 +1766,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": "nli_reject_machine_vocab",
-      "score": 0.0549,
+      "score": 0.0546,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "doi": "https://doi.org/10.1088/2057-1976/ae6d02",
@@ -1589,11 +1789,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_27",
       "crossref": "https://doi.org/10.1007/978-3-032-30710-1_27"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11517-026-03619-8",
+    "title": "A coarse-to-fine machine-learning framework for identifying functional connectivity markers of cognitive impairment in Parkinson’s disease",
+    "year": 2026,
+    "venue": "Medical &amp; Biological Engineering &amp; Computing",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11517-026-03619-8",
+      "crossref": "https://doi.org/10.1007/s11517-026-03619-8"
     }
   },
   {
@@ -1606,13 +1826,33 @@
       "decision": "pending",
       "stage": "nli",
       "rule": "nli_reject_machine_vocab",
-      "score": 0.0218,
+      "score": 0.0217,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7164164393"
+    }
+  },
+  {
+    "id": "doi:10.1007/s12008-026-02629-y",
+    "title": "Machine learning, digital twin, and AR/VR in manufacturing facility layout planning: a review",
+    "year": 2026,
+    "venue": "International Journal on Interactive Design and Manufacturing (IJIDeM)",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s12008-026-02629-y",
+      "crossref": "https://doi.org/10.1007/s12008-026-02629-y"
     }
   },
   {
@@ -1628,7 +1868,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.21275/sr26706164720",
@@ -1648,7 +1888,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_10",
@@ -1668,11 +1908,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s00170-026-18574-9",
       "crossref": "https://doi.org/10.1007/s00170-026-18574-9"
+    }
+  },
+  {
+    "id": "doi:10.1007/s00426-026-02347-w",
+    "title": "From exemplars to categories: generalization of action-effect learning in a free-choice task",
+    "year": 2026,
+    "venue": "Psychological Research",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s00426-026-02347-w",
+      "crossref": "https://doi.org/10.1007/s00426-026-02347-w"
     }
   },
   {
@@ -1688,7 +1948,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.21203/rs.3.rs-10268632/v1",
@@ -1708,7 +1968,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_21",
@@ -1728,7 +1988,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30110-9_26",
@@ -1745,10 +2005,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.495,
+      "score": 0.4943,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.26383v1"
@@ -1767,7 +2027,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.16242v1"
@@ -1786,7 +2046,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.27806v3"
@@ -1805,7 +2065,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1201/9781003611110-5",
@@ -1825,7 +2085,7 @@
       "score": 0.023,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.18385v1"
@@ -1844,7 +2104,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_5",
@@ -1861,13 +2121,33 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.3262,
+      "score": 0.3244,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.25265v1"
+    }
+  },
+  {
+    "id": "doi:10.5256/f1000research.201441.r494610",
+    "title": "Peer Review Report For: Towards a New Learning Ecology: The Mediator Role of Teachers Facing Generative AI in the University Context of Peru, Chile, and Colombia [version 1; peer review: 2 not approved]",
+    "year": 2026,
+    "venue": "F1000 Research Ltd",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.5256/f1000research.201441.r494610",
+      "crossref": "https://doi.org/10.5256/f1000research.201441.r494610"
     }
   },
   {
@@ -1883,7 +2163,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_16",
@@ -1903,7 +2183,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_12",
@@ -1923,7 +2203,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.2175/193864718825160278",
@@ -1940,10 +2220,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.2024,
+      "score": 0.2027,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.24884v1"
@@ -1962,7 +2242,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.30696v1"
@@ -1978,10 +2258,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.181,
+      "score": 0.1808,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.13709v1"
@@ -1997,13 +2277,33 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.2527,
+      "score": 0.2534,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.26793v1"
+    }
+  },
+  {
+    "id": "doi:10.7554/elife.105774.4.sa0",
+    "title": "eLife Assessment: Anterior cingulate cortex monitors action state and action content in complex associative learning",
+    "year": 2026,
+    "venue": "eLife Sciences Publications, Ltd",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.7554/elife.105774.4.sa0",
+      "crossref": "https://doi.org/10.7554/elife.105774.4.sa0"
     }
   },
   {
@@ -2019,7 +2319,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_25",
@@ -2039,7 +2339,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.15730v1"
@@ -2058,7 +2358,7 @@
       "score": 0.156,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.20475v1"
@@ -2077,10 +2377,50 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.15625v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s10472-026-10016-2",
+    "title": "Geometry machine revisited",
+    "year": 2026,
+    "venue": "Annals of Mathematics and Artificial Intelligence",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s10472-026-10016-2",
+      "crossref": "https://doi.org/10.1007/s10472-026-10016-2"
+    }
+  },
+  {
+    "id": "doi:10.1117/12.3117771",
+    "title": "Dynamic pricing optimization in logistics based on reinforcement learning algorithms",
+    "year": 2026,
+    "venue": "International Conference on Optical Communication and Intelligent Algorithms (OCIA 2026)",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1117/12.3117771",
+      "crossref": "https://doi.org/10.1117/12.3117771"
     }
   },
   {
@@ -2096,7 +2436,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s12221-026-01500-x",
@@ -2116,7 +2456,7 @@
       "score": 0.1975,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.00535v1"
@@ -2135,7 +2475,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30813-9_36",
@@ -2152,10 +2492,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1586,
+      "score": 0.1588,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.27180v1"
@@ -2174,7 +2514,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.15308v1"
@@ -2193,7 +2533,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s00024-026-04044-6",
@@ -2210,10 +2550,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.4099,
+      "score": 0.4096,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.01144v1"
@@ -2232,7 +2572,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s12065-026-01228-w",
@@ -2252,7 +2592,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1021/acs.est.6c02845",
@@ -2269,13 +2609,33 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.4376,
+      "score": 0.44,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.29565v1"
+    }
+  },
+  {
+    "id": "doi:10.7554/elife.105774.4.sa1",
+    "title": "Reviewer #1 (Public review): Anterior cingulate cortex monitors action state and action content in complex associative learning",
+    "year": 2026,
+    "venue": "eLife Sciences Publications, Ltd",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.7554/elife.105774.4.sa1",
+      "crossref": "https://doi.org/10.7554/elife.105774.4.sa1"
     }
   },
   {
@@ -2288,10 +2648,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.2523,
+      "score": 0.2516,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.17409v1"
@@ -2310,7 +2670,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.25858v1"
@@ -2329,10 +2689,30 @@
       "score": 0.0094,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.27188v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/s12541-026-01585-7",
+    "title": "Spatial-Temporal Graph Learning for Action Detection in Manual Assembly Operations",
+    "year": 2026,
+    "venue": "International Journal of Precision Engineering and Manufacturing",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s12541-026-01585-7",
+      "crossref": "https://doi.org/10.1007/s12541-026-01585-7"
     }
   },
   {
@@ -2345,10 +2725,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.4976,
+      "score": 0.4969,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.28226v1"
@@ -2364,10 +2744,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.4062,
+      "score": 0.4059,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.19251v1"
@@ -2383,10 +2763,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1736,
+      "score": 0.1734,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.18730v1"
@@ -2405,7 +2785,7 @@
       "score": 0.0242,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.08073v1"
@@ -2421,10 +2801,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.2895,
+      "score": 0.2891,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.03824v1"
@@ -2443,7 +2823,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_25",
@@ -2463,7 +2843,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_2",
@@ -2480,13 +2860,53 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1701,
+      "score": 0.1702,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.29020v1"
+    }
+  },
+  {
+    "id": "doi:10.1117/12.3117605",
+    "title": "Design and performance comparison of cross-language semantic modeling algorithms for language transfer learning",
+    "year": 2026,
+    "venue": "International Conference on Optical Communication and Intelligent Algorithms (OCIA 2026)",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1117/12.3117605",
+      "crossref": "https://doi.org/10.1117/12.3117605"
+    }
+  },
+  {
+    "id": "doi:10.7554/elife.105774.4.sa4",
+    "title": "Author response: Anterior cingulate cortex monitors action state and action content in complex associative learning",
+    "year": 2026,
+    "venue": "eLife Sciences Publications, Ltd",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.7554/elife.105774.4.sa4",
+      "crossref": "https://doi.org/10.7554/elife.105774.4.sa4"
     }
   },
   {
@@ -2502,7 +2922,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1038/s41598-026-60192-8",
@@ -2522,7 +2942,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_2",
@@ -2539,10 +2959,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1762,
+      "score": 0.1771,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.06976v1"
@@ -2558,10 +2978,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1906,
+      "score": 0.1898,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.28833v3"
@@ -2580,7 +3000,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_23",
@@ -2597,10 +3017,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.2858,
+      "score": 0.2851,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.26778v1"
@@ -2619,7 +3039,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s40998-026-01158-4",
@@ -2639,7 +3059,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_26",
@@ -2656,14 +3076,54 @@
       "decision": "pending",
       "stage": "nli",
       "rule": "nli_reject_machine_vocab",
-      "score": 0.0545,
+      "score": 0.0542,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.29085v1",
       "inspire": "https://inspirehep.net/literature/3174703"
+    }
+  },
+  {
+    "id": "doi:10.1007/s13369-026-11492-8",
+    "title": "A Cascaded DWT-MVMD-Based Decomposition Framework for Short-Term Photovoltaic Power Forecasting with Deep Learning and Chaotic Optimization",
+    "year": 2026,
+    "venue": "Arabian Journal for Science and Engineering",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s13369-026-11492-8",
+      "crossref": "https://doi.org/10.1007/s13369-026-11492-8"
+    }
+  },
+  {
+    "id": "doi:10.1007/s43926-026-00417-4",
+    "title": "Deep learning-based image recognition for visual management and intelligent decision support in hotel operations",
+    "year": 2026,
+    "venue": "Discover Internet of Things",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s43926-026-00417-4",
+      "crossref": "https://doi.org/10.1007/s43926-026-00417-4"
     }
   },
   {
@@ -2679,7 +3139,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s10639-026-14063-4",
@@ -2699,7 +3159,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:41Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.02734v1"
@@ -2715,10 +3175,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.163,
+      "score": 0.1631,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.09643v1"
@@ -2737,7 +3197,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_19",
@@ -2757,7 +3217,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s11694-026-04700-4",
@@ -2777,7 +3237,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30813-9_41",
@@ -2797,7 +3257,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1201/9781003611110-2",
@@ -2814,10 +3274,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.3391,
+      "score": 0.3399,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.10349v1"
@@ -2833,10 +3293,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.285,
+      "score": 0.2845,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.28094v1"
@@ -2855,11 +3315,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_10",
       "crossref": "https://doi.org/10.1007/978-981-92-2497-5_10"
+    }
+  },
+  {
+    "id": "doi:10.1201/9781042001767-7",
+    "title": "Rupee or Replica? A Deep Learning Approach to Indian Currency Authentication Using VGG19",
+    "year": 2026,
+    "venue": "Next-Generation Smart Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1201/9781042001767-7",
+      "crossref": "https://doi.org/10.1201/9781042001767-7"
     }
   },
   {
@@ -2875,7 +3355,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_30",
@@ -2895,7 +3375,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30795-8_2",
@@ -2915,7 +3395,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1103/9wbw-h87d",
@@ -2935,7 +3415,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.09944v1"
@@ -2954,7 +3434,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1201/9781003611110-3",
@@ -2971,13 +3451,33 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.3543,
+      "score": 0.3548,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.00259v1"
+    }
+  },
+  {
+    "id": "doi:10.1080/13573322.2026.2697321",
+    "title": "Learning under constraint: how organisational structures shape what can be learned in high-performance sport",
+    "year": 2026,
+    "venue": "Sport, Education and Society",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1080/13573322.2026.2697321",
+      "crossref": "https://doi.org/10.1080/13573322.2026.2697321"
     }
   },
   {
@@ -2993,7 +3493,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1108/ils-07-2026-0226",
@@ -3013,7 +3513,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_14",
@@ -3033,7 +3533,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_36",
@@ -3053,7 +3553,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_31",
@@ -3073,7 +3573,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.01395v1"
@@ -3092,7 +3592,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_28",
@@ -3112,31 +3612,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2494-4_14",
       "crossref": "https://doi.org/10.1007/978-981-92-2494-4_14"
-    }
-  },
-  {
-    "id": "doi:10.1201/9781003783077-23",
-    "title": "Consciousness in Education: Learning with Synthetic Minds",
-    "year": 2026,
-    "venue": "The Conscious Code",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1201/9781003783077-23",
-      "crossref": "https://doi.org/10.1201/9781003783077-23"
     }
   },
   {
@@ -3152,7 +3632,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_7",
@@ -3172,7 +3652,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.19108v1"
@@ -3191,7 +3671,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_2",
@@ -3211,11 +3691,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_39",
       "crossref": "https://doi.org/10.1007/978-3-032-30710-1_39"
+    }
+  },
+  {
+    "id": "doi:10.5194/egusphere-2026-3618-supplement",
+    "title": "Supplementary material to \"Translating climate research into children's books: science communication learning in an undergraduate geoscience course\"",
+    "year": 2026,
+    "venue": "Copernicus GmbH",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.5194/egusphere-2026-3618-supplement",
+      "crossref": "https://doi.org/10.5194/egusphere-2026-3618-supplement"
     }
   },
   {
@@ -3231,7 +3731,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_34",
@@ -3251,7 +3751,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_33",
@@ -3271,7 +3771,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s11483-026-10182-0",
@@ -3291,7 +3791,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:10Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.24976v3"
@@ -3310,7 +3810,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_34",
@@ -3330,7 +3830,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "inspire": "https://inspirehep.net/literature/3167515",
@@ -3350,7 +3850,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-29127-1_3",
@@ -3370,11 +3870,31 @@
       "score": 0.0131,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "inspire": "https://inspirehep.net/literature/3176393",
       "arxiv": "https://arxiv.org/abs/2607.01048"
+    }
+  },
+  {
+    "id": "doi:10.1007/s00138-026-01830-z",
+    "title": "Imstrack: infrared maritime small target tracking with adaptive scaling field view",
+    "year": 2026,
+    "venue": "Machine Vision and Applications",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s00138-026-01830-z",
+      "crossref": "https://doi.org/10.1007/s00138-026-01830-z"
     }
   },
   {
@@ -3390,7 +3910,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1201/9781003611110-11",
@@ -3407,13 +3927,33 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1768,
+      "score": 0.1772,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.22493v1"
+    }
+  },
+  {
+    "id": "doi:10.1080/2372966x.2026.2692334",
+    "title": "Anticolonial Learning Spaces: Moving from Critical Consciousness to Advocacy",
+    "year": 2026,
+    "venue": "School Psychology Review",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1080/2372966x.2026.2692334",
+      "crossref": "https://doi.org/10.1080/2372966x.2026.2692334"
     }
   },
   {
@@ -3426,13 +3966,33 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.1802,
+      "score": 0.1794,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.27481v1"
+    }
+  },
+  {
+    "id": "doi:10.1080/10447318.2026.2695941",
+    "title": "When More Is Not Better: Effects of Multimodal Motor Imagery Guidance on EEG Discriminability in MI-BCI",
+    "year": 2026,
+    "venue": "International Journal of Human–Computer Interaction",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1080/10447318.2026.2695941",
+      "crossref": "https://doi.org/10.1080/10447318.2026.2695941"
     }
   },
   {
@@ -3448,7 +4008,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_34",
@@ -3468,7 +4028,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_31",
@@ -3485,10 +4045,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": null,
-      "score": 0.3269,
+      "score": 0.3271,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.02484v1"
@@ -3507,7 +4067,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_7",
@@ -3527,11 +4087,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30384-4_2",
       "crossref": "https://doi.org/10.1007/978-3-032-30384-4_2"
+    }
+  },
+  {
+    "id": "doi:10.38124/ijisrt/26jun908",
+    "title": "Development of an Industrial PID Regulation Solution for the Thermal Safety of a Multi-Wire Drawing Machine",
+    "year": 2026,
+    "venue": "International Journal of Innovative Science and Research Technology",
+    "abstract": "<jats:p>Thermal control of multi-wire drawing processes is a strategic requirement in the automotive wiring industry,\ndue to its direct influence on conductor quality, tool durability and operational continuity.[1, 2]This study, carried out as\npart of an industrial project at COFICAB MED, introduces an automated solution based on PID regulation to control the\ntemperature of the lubricating emulsion used in the cooling of the wire drawing machine. The proposed architecture is based\non a Siemens S7-1200 PLC programmed under TIA Portal, using PT100 sensors connected to a 4–20 mA transmitter and\nc",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.38124/ijisrt/26jun908",
+      "crossref": "https://doi.org/10.38124/ijisrt/26jun908"
     }
   },
   {
@@ -3544,10 +4124,10 @@
       "decision": "pending",
       "stage": "nli",
       "rule": "nli_reject_machine_vocab",
-      "score": 0.0156,
+      "score": 0.0155,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-10T06:59:36Z"
+      "timestamp": "2026-07-11T06:02:50Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.12378v1"
@@ -3566,11 +4146,51 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s11581-026-07361-x",
       "crossref": "https://doi.org/10.1007/s11581-026-07361-x"
+    }
+  },
+  {
+    "id": "doi:10.1038/s41598-026-60067-y",
+    "title": "Clinically grounded retinal representation learning from minimal supervision",
+    "year": 2026,
+    "venue": "Scientific Reports",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1038/s41598-026-60067-y",
+      "crossref": "https://doi.org/10.1038/s41598-026-60067-y"
+    }
+  },
+  {
+    "id": "doi:10.1186/s12909-026-09855-8",
+    "title": "Comparing between face-to-face and mobile learning for improving nurses’ performance in premature infant positioning: a quasi-experimental study",
+    "year": 2026,
+    "venue": "BMC Medical Education",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1186/s12909-026-09855-8",
+      "crossref": "https://doi.org/10.1186/s12909-026-09855-8"
     }
   },
   {
@@ -3586,7 +4206,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1201/9781003611110-10",
@@ -3606,7 +4226,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s13042-026-03193-3",
@@ -3626,11 +4246,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1037/stl0000489",
       "crossref": "https://doi.org/10.1037/stl0000489"
+    }
+  },
+  {
+    "id": "doi:10.1080/0960085x.2026.2693695",
+    "title": "Social comparison and coping under pressure: technostress in gamified digital learning environments",
+    "year": 2026,
+    "venue": "European Journal of Information Systems",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T05:55:11Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1080/0960085x.2026.2693695",
+      "crossref": "https://doi.org/10.1080/0960085x.2026.2693695"
     }
   },
   {
@@ -3646,7 +4286,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "doi": "https://doi.org/10.1038/s41539-026-00437-3",
@@ -3666,7 +4306,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-10T06:58:42Z"
+      "timestamp": "2026-07-11T05:55:11Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7166046164"
