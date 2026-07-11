@@ -156,6 +156,25 @@
     }
   },
   {
+    "id": "arxiv:2606.16035",
+    "title": "GPT-Based Fast Simulation of CLAS12 Detector Hits via Conditional Autoregressive Generation",
+    "year": 2026,
+    "venue": "arXiv",
+    "abstract": "Modern particles physics experiments have demonstrated an increasing need for fast, high-fidelity detector simulation as detector components have improved and subsequent computational requirements approach the limits of available resources. Recently, deep generative models have emerged as a promising alternative to traditional Monte-Carlo methods, with recent works drawing inspiration from large language models (LLMs) and self-supervised next-token prediction methods. In this work, we present an application of a GPT-style autoregressive transformer as a fast surrogate model for the calorimeter",
+    "review": {
+      "decision": "pending",
+      "stage": "human",
+      "rule": "detector_context",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-11T00:00:00Z"
+    },
+    "links": {
+      "arxiv": "http://arxiv.org/abs/2606.16035v1"
+    }
+  },
+  {
     "id": "arxiv:2607.08175",
     "title": "Transformer-based machine learning using low-level calorimeter signals for collimated photon identification at collider experiments",
     "year": 2026,

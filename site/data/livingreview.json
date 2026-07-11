@@ -12,28 +12,28 @@
       "2018": 1,
       "2016": 4,
       "2000": 1,
-      "2026": 47
+      "2026": 42
     },
     "per_category": {
-      "Tools & Libraries": 47,
-      "Novel Applications": 185,
+      "Tools & Libraries": 45,
+      "Novel Applications": 184,
       "Statistics & Trends": 51,
-      "Surrogate Models": 24,
+      "Surrogate Models": 23,
       "By Facility Type": 6,
-      "RF Systems": 8,
+      "RF Systems": 6,
       "Reinforcement Learning & Autonomous Systems": 29,
       "Operations & Control": 6,
       "Reviews": 3,
-      "Beamline Design & Simulation": 32,
+      "Beamline Design & Simulation": 31,
       "Beam Diagnostics": 13,
-      "Beam Dynamics": 9,
+      "Beam Dynamics": 8,
       "Anomaly Detection & Fault Prediction": 21,
       "Data Management": 17,
       "Optimization & Control": 7
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 125,
+      "arXiv": 120,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 7,
@@ -80,21 +80,21 @@
     },
     "per_keyword": {
       "optimization": 60,
-      "surrogate model": 19,
-      "beam": 134,
+      "surrogate model": 18,
+      "beam": 133,
       "reinforcement learning": 30,
       "diagnostics": 30,
-      "control": 67,
+      "control": 66,
       "uncertainty quantification": 6,
       "deep learning": 23,
       "anomaly detection": 22,
       "time series": 5,
       "GAN": 1,
       "cloud": 4,
-      "transformer": 4,
-      "RF cavity": 2,
+      "transformer": 3,
+      "RF cavity": 1,
       "federated learning": 1,
-      "GPU": 2,
+      "GPU": 1,
       "data management": 2
     },
     "monthly_trends": {
@@ -169,11 +169,11 @@
       "2026-03": 4,
       "2026-04": 7,
       "2026-05": 3,
-      "2026-06": 7,
-      "2026-07": 2
+      "2026-06": 3,
+      "2026-07": 1
     },
-    "last_updated": "2026-07-11T06:03:05.240636+00:00",
-    "next_update": "2026-07-12T06:03:05.240636+00:00"
+    "last_updated": "2026-07-11T20:44:20.599428+00:00",
+    "next_update": "2026-07-12T20:44:20.599428+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -12891,440 +12891,6 @@
         {
           "event": "merge",
           "at": "2026-07-11T05:53:54Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-11T05:53:54Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-11T05:53:54Z"
-        }
-      ],
-      "last_updated": "2026-07-11T05:53:54Z"
-    },
-    "arxiv:2606.23366": {
-      "id": "arxiv:2606.23366",
-      "doi": null,
-      "arxiv_id": "2606.23366",
-      "inspire_id": null,
-      "title": "Monte Carlo_Based Beam Dynamics Study of a Compact Linear Accelerator for Localized X_ray Generation",
-      "authors": [
-        "Hossein Emami",
-        "Hossein Afarideh"
-      ],
-      "abstract": "Compact electron linear accelerators are being increasingly investigated as enabling platforms for localized X-ray generation and energy-controlled irradiation, due to the demand for a reduced footprint and improved beam control. In this work, a conceptual compact LINAC architecture with a fixed total length of 0.5 m is investigated through comprehensive Monte Carlo beam dynamics simulations, focusing on the comparative performance of two operating modes delivering electron beams at 60 keV and 300 keV, respectively. The study aims to isolate energy-dependent beam transport effects within an identical lattice configuration, emphasizing transverse and longitudinal phase-space evolution, emittance growth, beam envelope stability, and target spot formation. Particle tracking is performed using a statistical Monte Carlo framework incorporating RF cavity acceleration, simplified quadrupole focusing, and space-charge-induced diffusion effects. Transverse and longitudinal phase spaces are analyzed at multiple locations along the accelerator, and key beam quality metrics are extracted at the exit. The results demonstrate that low-energy operation at 60 keV is strongly influenced by collective effects, leading to pronounced emittance growth and halo formation, whereas the 300 keV mode exhibits significantly enhanced beam rigidity, improved phase space preservation, and a compact beam spot at the target.",
-      "date": "2026-06-22",
-      "year": 2026,
-      "venue": "arXiv",
-      "status": "preprint",
-      "categories": [
-        {
-          "label": "Beamline Design & Simulation",
-          "score": 0.518936276435852
-        },
-        {
-          "label": "Beam Dynamics",
-          "score": 0.45505082607269287
-        }
-      ],
-      "keywords": [],
-      "arxiv_categories": [
-        "physics.acc-ph"
-      ],
-      "curated": false,
-      "notes": null,
-      "review": {
-        "decision": "accepted",
-        "stage": "gate",
-        "rule": "auto_accept:acc-ph",
-        "score": null,
-        "model": null,
-        "model_revision": null,
-        "timestamp": "2026-07-08T06:04:36Z"
-      },
-      "links": {
-        "arxiv": "http://arxiv.org/abs/2606.23366v1"
-      },
-      "sources": [
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-08T05:51:42Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-09T20:41:06Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-10T06:53:30Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-11T05:51:11Z"
-        }
-      ],
-      "history": [
-        {
-          "event": "merge",
-          "at": "2026-07-09T20:44:35Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-10T06:56:59Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-11T05:53:54Z"
-        }
-      ],
-      "last_updated": "2026-07-11T05:53:54Z"
-    },
-    "arxiv:2606.15864": {
-      "id": "arxiv:2606.15864",
-      "doi": null,
-      "arxiv_id": "2606.15864",
-      "inspire_id": null,
-      "title": "Study of Nb Surface Under Ultra High Vacuum After Heat Treatments For SRF Cavities",
-      "authors": [
-        "C. Boutelaa",
-        "C. Craig",
-        "R. Laxdal",
-        "P. Kolb",
-        "B. Mercier",
-        "G. Sattonnay",
-        "D. Longuevergne"
-      ],
-      "abstract": "Specific heat treatments applied to superconducting radiofrequency (SRF) cavities, such as nitrogen infusion or Mid T baking, aim to improve the quality factor (Q0) at medium accelerating fields (10 to 20 MV/m). These treatments reduce the BCS surface resistance by tuning the mean free path of niobium over a few hundred nanometers, either by diffusing oxygen from the native oxide layer or by diffusing nitrogen after the dissolution of the oxide layer. However, these treatments preclude the usual chemical polishing, as it would reverse the beneficial effects of the heat treatments, making the cavities highly sensitive to surface contamination. In particular, the formation of niobium carbides, which can mask the expected benefits, strongly depends on the annealing conditions, surface preparation, and the materials history. Several hypotheses are considered regard-ing the origin of carbon: vacuum contamination, surface pollution, or internal migration from the niobium itself, potentially enriched with carbon during previous chemi-cal treatments (BCP, EP). This work aims to identify the primary source of carbon responsible for niobium carbide growth, using techniques such as X Ray photoelectron spectroscopy (XPS), scanning electron microscopy (SEM), and secondary ion mass spectrometry (SIMS). The study will also help pinpoint the key influencing parameters, thereby contributing to a better understanding of and potential mitigation strategies for their impact on SRF cavity performance.",
-      "date": "2026-06-14",
-      "year": 2026,
-      "venue": "arXiv",
-      "status": "preprint",
-      "categories": [
-        {
-          "label": "RF Systems",
-          "score": 0.3197339177131653
-        }
-      ],
-      "keywords": [],
-      "arxiv_categories": [
-        "physics.acc-ph"
-      ],
-      "curated": false,
-      "notes": null,
-      "review": {
-        "decision": "accepted",
-        "stage": "gate",
-        "rule": "auto_accept:acc-ph",
-        "score": null,
-        "model": null,
-        "model_revision": null,
-        "timestamp": "2026-07-08T06:04:36Z"
-      },
-      "links": {
-        "arxiv": "http://arxiv.org/abs/2606.15864v1"
-      },
-      "sources": [
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-08T05:51:42Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-09T20:41:06Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-10T06:53:30Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-11T05:51:11Z"
-        }
-      ],
-      "history": [
-        {
-          "event": "merge",
-          "at": "2026-07-09T20:44:35Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-10T06:56:59Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-11T05:53:54Z"
-        }
-      ],
-      "last_updated": "2026-07-11T05:53:54Z"
-    },
-    "arxiv:2606.13013": {
-      "id": "arxiv:2606.13013",
-      "doi": null,
-      "arxiv_id": "2606.13013",
-      "inspire_id": null,
-      "title": "Insitu X Ray Photoemission Study of Nb Surface Under Plasma Cleaning During MID T BAKING For SRF Cavities",
-      "authors": [
-        "C. Boutelaa",
-        "S. Gruszka",
-        "C. Cheney",
-        "J. Yemane",
-        "T. Gerardin",
-        "E. Mistretta",
-        "J. Demailly",
-        "R. Laxdal",
-        "P. Kolb",
-        "J. Keir",
-        "B. Mercier",
-        "N. Prud homme",
-        "G. Sattonnay",
-        "D. Longuevergne"
-      ],
-      "abstract": "Specific heat treatments applied to superconducting radiofrequency (SRF) cavities, such as nitrogen infusion or Mid T baking, aim to improve the quality factor (Qo) at medium accelerating fields (10 to 20 MV/m). These treatments reduce the BCS surface resistance by tuning the mean free path of niobium over a few hundred na-nometers, either by diffusing oxygen from the native oxide layer or by diffusing nitrogen after the dissolution of the oxide layer. However, these treatments preclude the usual chemical polishing, as it would reverse the beneficial effects of the heat treatments, making the cavities highly sensitive to surface contamination. In particular, the formation of niobium carbides, which can mask the expected benefits, strongly depends on the annealing conditions, surface preparation, and the materials history. To better understand these phenomena, niobium samples was annealed under ultrahigh vacuum (Mid T baking) with Ar/O2 plasma treatment to investi-gate surface contamination with insitu heat treatment at 500 C and XPS analysis.",
-      "date": "2026-06-11",
-      "year": 2026,
-      "venue": "arXiv",
-      "status": "preprint",
-      "categories": [
-        {
-          "label": "RF Systems",
-          "score": 0.2868375778198242
-        }
-      ],
-      "keywords": [],
-      "arxiv_categories": [
-        "physics.acc-ph"
-      ],
-      "curated": false,
-      "notes": null,
-      "review": {
-        "decision": "accepted",
-        "stage": "gate",
-        "rule": "auto_accept:acc-ph",
-        "score": null,
-        "model": null,
-        "model_revision": null,
-        "timestamp": "2026-07-08T06:04:36Z"
-      },
-      "links": {
-        "arxiv": "http://arxiv.org/abs/2606.13013v1"
-      },
-      "sources": [
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-08T05:51:42Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-09T20:41:06Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-10T06:53:30Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-11T05:51:11Z"
-        }
-      ],
-      "history": [
-        {
-          "event": "merge",
-          "at": "2026-07-09T20:44:35Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-10T06:56:59Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-11T05:53:54Z"
-        }
-      ],
-      "last_updated": "2026-07-11T05:53:54Z"
-    },
-    "arxiv:2607.06114": {
-      "id": "arxiv:2607.06114",
-      "doi": null,
-      "arxiv_id": "2607.06114",
-      "inspire_id": null,
-      "title": "x-Prediction Is All You Need:Training-Free Accelerated Generation via Endpoint Decodability",
-      "authors": [
-        "Xin Peng",
-        "Ang Gao"
-      ],
-      "abstract": "Diffusion and flow matching models generate high-quality samples, but their ODE samplers often need tens to hundreds of neural function evaluations (NFEs). This remains a practical challenge for released checkpoints, since many accelerators require additional design choices and training cost through retraining, distillation, or trajectory redesign. We investigate a different route based on $x$-prediction. During sampling, standard affine probability paths already expose $x_0$ information: an intermediate state and its path velocity determine a principled estimate of the clean sample. We formalize this property as \\textbf{endpoint decodability} and show that the decoder is the minimum-MSE estimator $\\mathbb{E}[x_0\\mid x_t]$ under the usual $\\ell_2$ objective. This yields \\textbf{Truncated Jump Sampling} (TJS): stop the ODE at an early-exit time $t^*$ and return the decoded $x_0$. TJS requires no retraining, distillation, or architecture change. Across SDXL, SD3.5M, Z-Image-Turbo, and three class-conditional benchmarks, it reduces NFEs by 20--70\\% with near-matched quality. The analysis also shows why endpoint prediction can work without straightening the trajectory, providing inference acceleration without trajectory redesign.",
-      "date": "2026-07-07",
-      "year": 2026,
-      "venue": "arXiv",
-      "status": "preprint",
-      "categories": [
-        {
-          "label": "Tools & Libraries",
-          "score": 0.32424819469451904
-        },
-        {
-          "label": "Surrogate Models",
-          "score": 0.3187691271305084
-        }
-      ],
-      "keywords": [],
-      "arxiv_categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "curated": false,
-      "notes": null,
-      "review": {
-        "decision": "accepted",
-        "stage": "nli",
-        "rule": null,
-        "score": 0.9514,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
-        "model_revision": null,
-        "timestamp": "2026-07-08T07:48:14Z"
-      },
-      "links": {
-        "arxiv": "http://arxiv.org/abs/2607.06114v1"
-      },
-      "sources": [
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-08T05:52:20Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-09T20:41:45Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-10T06:54:09Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-11T05:51:49Z"
-        }
-      ],
-      "history": [
-        {
-          "event": "merge",
-          "at": "2026-07-09T20:44:38Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-10T06:57:02Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-11T05:53:54Z"
-        }
-      ],
-      "last_updated": "2026-07-11T05:53:54Z"
-    },
-    "arxiv:2606.16035": {
-      "id": "arxiv:2606.16035",
-      "doi": null,
-      "arxiv_id": "2606.16035",
-      "inspire_id": null,
-      "title": "GPT-Based Fast Simulation of CLAS12 Detector Hits via Conditional Autoregressive Generation",
-      "authors": [
-        "Cole Granger",
-        "James Giroux",
-        "Richard Tyson",
-        "Maurizio Ungaro",
-        "Cristiano Fanelli"
-      ],
-      "abstract": "Modern particles physics experiments have demonstrated an increasing need for fast, high-fidelity detector simulation as detector components have improved and subsequent computational requirements approach the limits of available resources. Recently, deep generative models have emerged as a promising alternative to traditional Monte-Carlo methods, with recent works drawing inspiration from large language models (LLMs) and self-supervised next-token prediction methods. In this work, we present an application of a GPT-style autoregressive transformer as a fast surrogate model for the calorimeter inside the CLAS12 experiment at the Thomas Jefferson National Accelerator Facility. The model is conditioned on incident momentum and generates realistic detector hits autoregressively across all nine calorimeter layers as sequences of strip, ADC, and TDC tokens. We demonstrate that the model faithfully reproduces hit multiplicity, spatial distributions, energy deposits, and the energy-momentum response of the electromagnetic calorimeter. The generator achieves inference rates exceeding 700 events per second on a single GPU, providing a substantial speedup over traditional Geant4-based simulations while maintaining physics fidelity essential for high-luminosity experimental programs.",
-      "date": "2026-06-14",
-      "year": 2026,
-      "venue": "arXiv",
-      "status": "preprint",
-      "categories": [
-        {
-          "label": "Novel Applications",
-          "score": 0.3903374671936035
-        },
-        {
-          "label": "Tools & Libraries",
-          "score": 0.3763694763183594
-        }
-      ],
-      "keywords": [],
-      "arxiv_categories": [
-        "physics.ins-det",
-        "cs.LG",
-        "hep-ex",
-        "nucl-ex",
-        "physics.data-an"
-      ],
-      "curated": false,
-      "notes": null,
-      "review": {
-        "decision": "accepted",
-        "stage": "nli",
-        "rule": null,
-        "score": 0.9358,
-        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
-        "model_revision": null,
-        "timestamp": "2026-07-08T07:48:14Z"
-      },
-      "links": {
-        "arxiv": "http://arxiv.org/abs/2606.16035v1"
-      },
-      "sources": [
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-08T05:52:27Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-08T05:53:08Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-09T20:41:52Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-09T20:42:31Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-10T06:54:16Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-10T06:54:55Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-11T05:51:56Z"
-        },
-        {
-          "source": "arxiv",
-          "seen_at": "2026-07-11T05:52:34Z"
-        }
-      ],
-      "history": [
-        {
-          "event": "merge",
-          "at": "2026-07-08T05:55:50Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-09T20:44:39Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-09T20:44:39Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-10T06:57:02Z"
-        },
-        {
-          "event": "merge",
-          "at": "2026-07-10T06:57:02Z"
         },
         {
           "event": "merge",

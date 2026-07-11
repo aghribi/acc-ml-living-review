@@ -119,6 +119,27 @@ HARDWARE_CONTEXT_TERMS = [
 """Compute-hardware context. 'Accelerator' collocated only with these and
 zero ACCEL_SYSTEM_VOCAB hits means a DNN-hardware paper (auto-reject)."""
 
+ML_CONTENT_TERMS = [
+    # from ML_KEYWORDS, minus ambiguous bare terms: "diffusion" (thermal/
+    # particle diffusion!) and "policy" become their ML-specific phrases
+    "machine learning", "deep learning", "neural network", "reinforcement learning",
+    "bayesian optimization", "anomaly detection", "autoencoder", "GAN",
+    "diffusion model", "graph neural network", "surrogate model", "surrogate",
+    "physics-informed", "PINN", "transformer", "foundation model",
+    "agentic AI", "autonomous agent", "LLM", "policy gradient",
+    "policy learning", "policy optimization", "RL",
+    # gate-side extras
+    "artificial intelligence", "AI", "data-driven", "gaussian process",
+    "gaussian processes", "random forest", "gradient boosting",
+    "boosted trees", "generative model", "generative models",
+    "large language model", "convolutional", "LSTM", "classifier",
+    "deep generative", "GPT",
+]
+"""Gate-side ML vocabulary (word-boundary matched). A paper with NONE of
+these has no ML content and cannot belong in the review regardless of its
+arXiv category (auto-accept requires one; the NLI reject-guard only
+protects papers that have one). Distinct from the arXiv query keywords."""
+
 MACHINE_SUBSYSTEM_VOCAB = [
     r"\blinacs?\b", r"\bcyclotrons?\b", r"\bsynchrotrons?\b",
     r"storage rings?", r"beam ?lines?", r"rf cavit(y|ies)", r"\bcavit(y|ies)\b",
@@ -129,9 +150,13 @@ MACHINE_SUBSYSTEM_VOCAB = [
     r"\bdosimetry\b", r"proton therapy", r"\bBPMs?\b", r"beam position monitors?",
     r"beam dynamics", r"beam loss", r"beam halo", r"beam diagnostics",
     r"beam tuning", r"beam control", r"beam optics", r"machine protection",
+    r"beam intensit(y|ies)", r"superconducting magnets?", r"\bquench(es)?\b",
     r"\bSRF\b", r"orbit correction", r"\bmagnet (design|control|tuning)\b",
     r"particle accelerators?", r"(proton|electron|ion|linear) accelerators?",
-    r"accelerator (tuning|control|operation|physics|facilit(y|ies))",
+    # NOTE: no "accelerator facility" here — lab names ("Thomas Jefferson
+    # National Accelerator Facility") are not machine-ML evidence and were
+    # shielding detector papers from the detector-context gate.
+    r"accelerator (tuning|control|operation|physics)",
 ]
 """Machine-subsystem vocabulary: ACCEL_SYSTEM_VOCAB minus facility names and
 bare 'beam'. Used by the detector-context gate — a paper about ML on
@@ -140,11 +165,15 @@ detector data at a facility mentions the facility but not the machine."""
 DETECTOR_ANALYSIS_TERMS = [
     r"track (reconstruction|finding|fitting)", r"particle (identification|tracking)",
     r"jet tagging", r"\bjet(s)? (classification|reconstruction)\b",
-    r"event (reconstruction|selection|classification)", r"\btriggers?\b",
+    r"event (reconstruction|selection|classification)",
+    r"trigger (system|rate|menu|decision|algorithms?)", r"\bHLT\b",
     r"\bcalorimeters?\b", r"detector (data|design|response|simulation|performance)",
-    r"tracking (system|detector)", r"\bPID\b", r"vertex reconstruction",
+    r"tracking (system|detector)", r"vertex reconstruction",
     r"particle-?flow", r"neutrino (selection|identification|oscillation)",
     r"\bhits?\b.*\btracks?\b", r"physics analysis",
+    # NOTE: bare "PID" and "trigger" removed 2026-07-10 — PID is also the
+    # proportional-integral-derivative controller, and machine-protection
+    # systems have triggers; both flagged genuine machine-ML papers.
 ]
 """HEP detector/analysis context. ML on detector products at a collider is
 out of scope (SCOPE.md) but scores 0.92-0.99 with the NLI — the 2026-07

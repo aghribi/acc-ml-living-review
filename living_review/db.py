@@ -38,9 +38,11 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Optional
 
+import difflib
+
 from .config import FUZZY_TITLE_THRESHOLD
 from .data_model import Paper
-from .utils import canonical_ids, similar_title
+from .utils import canonical_ids, simplify_title
 
 
 class DB:
@@ -61,6 +63,7 @@ class DB:
     def __init__(self, entries: Dict[str, Paper] = None):
         self.entries: Dict[str, Paper] = {}
         self._id_index: Dict[str, str] = {}
+        self._year_index: Dict[int, list] = defaultdict(list)
         for p in (entries or {}).values():
             self._merge_one(p)
 
@@ -122,16 +125,34 @@ class DB:
         if paper.id in self.entries:
             return paper.id
         # Fuzzy fallback: same title within year ± 1, no shared identifier.
-        for key, cur in self.entries.items():
-            if cur.year and paper.year and abs(cur.year - paper.year) > 1:
-                continue
-            if similar_title(cur.title, paper.title) >= FUZZY_TITLE_THRESHOLD:
-                return key
+        # Year-bucketed over cached simplified titles, with difflib's cheap
+        # ratios as guards — an unbucketed scan re-simplifying both titles
+        # per pair is O(n^2) regex+difflib work on DB.load (minutes at ~2k).
+        simple = simplify_title(paper.title) or ""
+        if not simple:
+            return None
+        matcher = difflib.SequenceMatcher(None, "", simple)
+        years = [paper.year - 1, paper.year, paper.year + 1] if paper.year else [0]
+        for y in years:
+            for key, cur_simple in self._year_index.get(y or 0, []):
+                if abs(len(cur_simple) - len(simple)) > 0.3 * max(len(simple), 1):
+                    continue
+                matcher.set_seq1(cur_simple)
+                if matcher.real_quick_ratio() < FUZZY_TITLE_THRESHOLD:
+                    continue
+                if matcher.quick_ratio() < FUZZY_TITLE_THRESHOLD:
+                    continue
+                if matcher.ratio() >= FUZZY_TITLE_THRESHOLD and key in self.entries:
+                    return key
         return None
 
     def _index(self, key: str, paper: Paper) -> None:
         for cid in canonical_ids(paper):
             self._id_index[cid] = key
+        bucket = self._year_index[paper.year or 0]
+        simple = simplify_title(paper.title) or ""
+        if not any(k == key for k, _ in bucket):
+            bucket.append((key, simple))
 
     def _merge_one(self, paper: Paper) -> bool:
         """Merge a single Paper into the DB (insert or field-wise merge)."""
@@ -152,6 +173,10 @@ class DB:
             for cid, k in list(self._id_index.items()):
                 if k == key:
                     self._id_index[cid] = current.id
+            for bucket in self._year_index.values():
+                for i, (k, s) in enumerate(bucket):
+                    if k == key:
+                        bucket[i] = (current.id, s)
         self._index(current.id, current)
         return changed
 

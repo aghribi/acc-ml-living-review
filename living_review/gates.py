@@ -39,7 +39,7 @@ from .config import (
     FOREIGN_DOMAIN_TERMS,
     HARDWARE_CONTEXT_TERMS,
     MACHINE_SUBSYSTEM_VOCAB,
-    ML_KEYWORDS,
+    ML_CONTENT_TERMS,
     VENUE_WHITELIST_PATTERNS,
 )
 from .data_model import Paper
@@ -65,9 +65,9 @@ _MACHINE_RE = _compile(MACHINE_SUBSYSTEM_VOCAB)
 _DETECTOR_RE = _compile(DETECTOR_ANALYSIS_TERMS)
 _HARDWARE_RE = _compile(HARDWARE_CONTEXT_TERMS)
 _FOREIGN_RE = _compile(FOREIGN_DOMAIN_TERMS)
-# ML keywords as word-boundary patterns, plural-tolerant ("RL"/"GAN" as
+# ML vocabulary as word-boundary patterns, plural-tolerant ("RL"/"GAN" as
 # substrings are as dangerous as "jet" was).
-_ML_RE = _compile([r"\b" + re.escape(kw) + r"s?\b" for kw in ML_KEYWORDS])
+_ML_RE = _compile([r"\b" + re.escape(kw) + r"s?\b" for kw in ML_CONTENT_TERMS])
 
 _ACCELERATOR_WORD_RE = re.compile(r"\baccelerat(or|ors|ion|ing|e|ed|es)\b", re.IGNORECASE)
 
@@ -99,6 +99,13 @@ def has_machine_vocab(text: str) -> bool:
     return _any(_MACHINE_RE, text)
 
 
+def has_ml_vocab(text: str) -> bool:
+    """True if the text carries any ML/AI vocabulary (ML_CONTENT_TERMS).
+    A paper with none cannot belong in the review; the NLI reject-guard
+    only protects papers that have some."""
+    return _any(_ML_RE, text)
+
+
 def apply_gates(paper: Paper) -> GateResult:
     """
     Apply Stage B deterministic rules to one paper.
@@ -109,13 +116,15 @@ def apply_gates(paper: Paper) -> GateResult:
         decision in {"accept", "reject", "gray"} plus the rule that fired.
     """
     text = f"{paper.title or ''} {paper.abstract or ''}"
+    has_ml = _any(_ML_RE, text)
 
-    # ---- AUTO-ACCEPT ----
-    if paper.arxiv_categories and paper.arxiv_categories[0] == "physics.acc-ph":
+    # ---- AUTO-ACCEPT (both paths require actual ML content: an acc-ph
+    # surface-science paper fetched via an incidental keyword match, e.g.
+    # all:"diffusion", must not be published) ----
+    if has_ml and paper.arxiv_categories and paper.arxiv_categories[0] == "physics.acc-ph":
         return GateResult(ACCEPT, "auto_accept:acc-ph")
 
-    has_ml = _any(_ML_RE, text)
-    if venue_is_whitelisted(paper.venue) and has_ml:
+    if has_ml and venue_is_whitelisted(paper.venue):
         return GateResult(ACCEPT, "auto_accept:venue_whitelist")
 
     # ---- Signals for rejection rules ----

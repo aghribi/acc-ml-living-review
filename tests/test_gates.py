@@ -12,6 +12,25 @@ class TestAutoAccept:
         assert r.decision == ACCEPT
         assert r.rule == "auto_accept:acc-ph"
 
+    def test_acc_ph_without_ml_content_not_accepted(self, make_paper):
+        # Regression (2026-07-10): SRF surface-science paper, primary acc-ph,
+        # zero ML — fetched via an incidental all:"diffusion" match. Must not
+        # auto-accept (and, with no ML vocab, the funnel may reject it).
+        p = make_paper(
+            title="In-situ X-Ray Photoemission Study of Nb Surface Under Plasma "
+            "Cleaning During Mid-T Baking For SRF Cavities",
+            abstract="Heat treatments applied to superconducting radiofrequency "
+            "cavities such as nitrogen infusion or mid-T baking improve the "
+            "quality factor via oxygen diffusion in the niobium surface.",
+            arxiv_categories=["physics.acc-ph"],
+        )
+        r = apply_gates(p)
+        assert r.decision == GRAY
+
+        from living_review.gates import has_ml_vocab
+
+        assert not has_ml_vocab(f"{p.title} {p.abstract}")
+
     def test_acc_ph_secondary_does_not_auto_accept(self, make_paper):
         p = make_paper(arxiv_categories=["cs.LG", "physics.acc-ph"], venue="arXiv")
         assert apply_gates(p).decision == GRAY
@@ -152,6 +171,21 @@ class TestDetectorContext:
             "for particle identification in physics analysis at GlueX.",
         )
         assert apply_gates(p).rule == "detector_context"
+
+    def test_lab_name_does_not_shield_detector_paper(self, make_paper):
+        # Regression (2026-07-10): "Thomas Jefferson National Accelerator
+        # Facility" in the abstract must not count as machine-subsystem
+        # vocabulary — this detector-simulation paper was NLI-accepted at 0.94.
+        p = make_paper(
+            title="GPT-Based Fast Simulation of CLAS12 Detector Hits via "
+            "Conditional Autoregressive Generation",
+            abstract="Deep generative models as fast surrogates for detector "
+            "simulation of calorimeter hits at the Thomas Jefferson National "
+            "Accelerator Facility, using a GPT-style autoregressive transformer.",
+            arxiv_categories=["physics.ins-det", "cs.LG"],
+        )
+        r = apply_gates(p)
+        assert r.rule == "detector_context"
 
     def test_machine_protection_crossover_not_caught(self, make_paper):
         # Papers with genuine machine-subsystem content stay in the normal

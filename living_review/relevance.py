@@ -27,7 +27,7 @@ from .adjudicator import Adjudicator
 from .data_model import Paper
 from .db import DB
 from .enrich import backfill_abstracts
-from .gates import ACCEPT, GRAY, REJECT, apply_gates, has_machine_vocab
+from .gates import ACCEPT, GRAY, REJECT, apply_gates, has_machine_vocab, has_ml_vocab
 
 TERMINAL = ("accepted", "rejected")
 
@@ -109,8 +109,11 @@ def run_funnel(db: DB, adjudicator: Adjudicator) -> Dict[str, int]:
     for p, r in zip(gray, adjudicator.adjudicate(gray)):
         decision, rule = r.decision, r.rule
         # False-negative guard (2026-07 benchmark): never auto-reject a paper
-        # that explicitly names accelerator machinery on an NLI score alone.
-        if decision == "rejected" and has_machine_vocab(f"{p.title or ''} {p.abstract or ''}"):
+        # that explicitly names accelerator machinery on an NLI score alone —
+        # but only if it actually contains ML vocabulary; a non-ML accelerator
+        # paper (e.g. SRF surface science) is a correct rejection.
+        text = f"{p.title or ''} {p.abstract or ''}"
+        if decision == "rejected" and has_machine_vocab(text) and has_ml_vocab(text):
             decision, rule = "pending", "nli_reject_machine_vocab"
         set_review(
             p, decision, "nli",
