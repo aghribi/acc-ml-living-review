@@ -12,7 +12,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7167726915"
@@ -31,7 +31,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.14373v1",
@@ -51,7 +51,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.14813v1"
@@ -70,7 +70,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.13535v3"
@@ -89,7 +89,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.4018/979-8-2600-2701-1",
@@ -109,7 +109,7 @@
       "score": 0.2119,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "hal": "https://hal.archives-ouvertes.fr/hal-02060048",
@@ -129,7 +129,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "inspire": "https://inspirehep.net/literature/3172540",
@@ -149,7 +149,7 @@
       "score": 0.1615,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.19378v1"
@@ -163,12 +163,12 @@
     "abstract": "Modern particles physics experiments have demonstrated an increasing need for fast, high-fidelity detector simulation as detector components have improved and subsequent computational requirements approach the limits of available resources. Recently, deep generative models have emerged as a promising alternative to traditional Monte-Carlo methods, with recent works drawing inspiration from large language models (LLMs) and self-supervised next-token prediction methods. In this work, we present an application of a GPT-style autoregressive transformer as a fast surrogate model for the calorimeter",
     "review": {
       "decision": "pending",
-      "stage": "human",
+      "stage": "gate",
       "rule": "detector_context",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T00:00:00Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.16035v1"
@@ -187,7 +187,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "inspire": "https://inspirehep.net/literature/3178722",
@@ -207,7 +207,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7167590090"
@@ -226,7 +226,7 @@
       "score": 0.1902,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.09037v1"
@@ -245,7 +245,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.20437v1"
@@ -264,7 +264,7 @@
       "score": 0.063,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "doi": "https://doi.org/10.1190/int-2025-0050",
@@ -284,49 +284,10 @@
       "score": 0.0673,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7164333333"
-    }
-  },
-  {
-    "id": "arxiv:2606.29823",
-    "title": "Experience Graphs: The Data Foundation for Self-Improving Agents",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "The database community has repeatedly advanced the state of the art by recognizing that new workloads demand new system architectures. We argue that long-horizon agentic tasks -- code generation, scientific discovery, hardware design -- are such a workload. These agents explore: they generate artifacts, execute tools, observe failures, branch, and repair over hundreds of steps. This search produces a structured object we call an experience graph: executable artifacts, tool outputs, rewards, sibling comparisons, and causal lineage. Yet existing agent frameworks treat this experience as disposab",
-    "review": {
-      "decision": "pending",
-      "stage": "nli",
-      "rule": "nli_reject_machine_vocab",
-      "score": 0.0708,
-      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
-      "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.29823v1"
-    }
-  },
-  {
-    "id": "doi:10.1201/9781042001767-21",
-    "title": "AI-Powered Cyber Threat Detection: Leveraging Event Profiling and Deep Learning Techniques",
-    "year": 2026,
-    "venue": "Next-Generation Smart Systems",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1201/9781042001767-21",
-      "crossref": "https://doi.org/10.1201/9781042001767-21"
     }
   },
   {
@@ -342,7 +303,7 @@
       "score": 0.7489,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.10381v1"
@@ -361,29 +322,10 @@
       "score": 0.1853,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7167410259"
-    }
-  },
-  {
-    "id": "arxiv:2606.31309",
-    "title": "CSO-LLM: Class Subspace Orthogonalization for Post-Training Backdoor Detection and Trigger Inversion in LLMs",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "While post-training backdoor detection and trigger inversion schemes have been developed for AIs used e.g. for images, there is a paucity of such methods for LLMs. First, the LLM input space is discrete, with up to 150,000^k k-tuples to consider with k the token-length of a putative trigger. Second, one must blacklist tokens typical of the putative target response (class) of an attack, as such tokens may give false detection signals. However, a comprehensive blacklist is not available, in general, for a given domain. We develop a highly effective detection and inversion framework for LLMs trea",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.31309v1"
     }
   },
   {
@@ -399,7 +341,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30110-9_29",
@@ -419,7 +361,7 @@
       "score": 0.0487,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "doi": "https://doi.org/10.3390/ma19142987",
@@ -439,7 +381,7 @@
       "score": 0.0531,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7165763423"
@@ -458,11 +400,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_17",
       "crossref": "https://doi.org/10.1007/978-981-92-2497-5_17"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-1974-2_13",
+    "title": "Machine Learning Control in Power Electronics",
+    "year": 2026,
+    "venue": "Energy Systems in Electrical Engineering",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-1974-2_13",
+      "crossref": "https://doi.org/10.1007/978-981-92-1974-2_13"
     }
   },
   {
@@ -478,30 +440,10 @@
       "score": 0.2835,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.21045v1"
-    }
-  },
-  {
-    "id": "doi:10.1038/s44401-026-00136-6",
-    "title": "Author Correction: The bottleneck was never data or algorithms: building a learning utility for AI-enabled learning health systems",
-    "year": 2026,
-    "venue": "npj Health Systems",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1038/s44401-026-00136-6",
-      "crossref": "https://doi.org/10.1038/s44401-026-00136-6"
     }
   },
   {
@@ -517,7 +459,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:59Z"
+      "timestamp": "2026-07-12T06:12:00Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.23548v1"
@@ -536,10 +478,30 @@
       "score": 0.3559,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.14999v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-3554-4_27",
+    "title": "Transformer-HRN: A Sequence-Aware One-Class Learning Framework for Anomaly Detection in Ethereum",
+    "year": 2026,
+    "venue": "Communications in Computer and Information Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-3554-4_27",
+      "crossref": "https://doi.org/10.1007/978-981-92-3554-4_27"
     }
   },
   {
@@ -555,7 +517,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.01145v1"
@@ -574,7 +536,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "inspire": "https://inspirehep.net/literature/3176506",
@@ -582,22 +544,23 @@
     }
   },
   {
-    "id": "arxiv:2606.23361",
-    "title": "Rethinking Molecular Graph Backdoors under Chemistry-aware Admission",
+    "id": "doi:10.1007/978-981-92-2862-1_28",
+    "title": "AURORA-RE: Reinforcement Learning-Enhanced Document-Level Relation Extraction with Large Language Models",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Backdoor attacks on molecular graph neural networks (GNNs) are typically evaluated as abstract graph edits, but real molecular learning pipelines do not train on arbitrary graphs. Molecular records must first survive parsing, sanitization, canonicalization, and graph-string consistency checks. We formalize this overlooked admission stage as ChemGuard, an operational protocol for testing whether a submitted molecular record can enter a realistic learning pipeline, while complementing existing defenses. ChemGuard admits a record only when its molecular string is sanitizable and the graph reconst",
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
     "review": {
       "decision": "pending",
       "stage": "gate",
-      "rule": "detector_context",
+      "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2606.23361v1"
+      "doi": "https://doi.org/10.1007/978-981-92-2862-1_28",
+      "crossref": "https://doi.org/10.1007/978-981-92-2862-1_28"
     }
   },
   {
@@ -613,30 +576,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30813-9_74",
       "crossref": "https://doi.org/10.1007/978-3-032-30813-9_74"
-    }
-  },
-  {
-    "id": "arxiv:2607.01729",
-    "title": "DRL-CLBA: A Clean Label Backdoor Attack for Speech Classification via DDPG Reinforcement Learning",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Deep learning models for speech classification are vulnerable to backdoor attacks, where malicious triggers cause misclassification at inference time. While sample-specific attacks can bypass many defenses, they often rely on poisoned label attack, making them detectable via manual data defense. In this paper, we propose DRL-CLBA, a novel clean label backdoor attack for speech classification that leverages Deep Deterministic Policy Gradient (DDPG) reinforcement learning. We also utilize deep audio steganography to embed sample-specific triggers into source audio, creating feature-space anchors",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2607.01729v1"
     }
   },
   {
@@ -652,7 +596,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1103/33q9-76qp",
@@ -672,7 +616,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_8",
@@ -692,11 +636,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1117/12.3117488",
       "crossref": "https://doi.org/10.1117/12.3117488"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-3-032-30809-2_19",
+    "title": "Cross-Domain Self-supervised Representation Learning for Change-of-Direction Classification Using Wearable Sensors",
+    "year": 2026,
+    "venue": "IFIP Advances in Information and Communication Technology",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-032-30809-2_19",
+      "crossref": "https://doi.org/10.1007/978-3-032-30809-2_19"
     }
   },
   {
@@ -712,7 +676,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s10463-026-00991-y",
@@ -732,7 +696,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7165901691"
@@ -751,29 +715,10 @@
       "score": 0.3118,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2304.12187v1"
-    }
-  },
-  {
-    "id": "arxiv:2607.05516",
-    "title": "Statistical Adversaries: Natural Backdoor-like Features in Vision Datasets",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Model-specific adversarial attacks have been extensively studied. We study a different failure mode: naturally occurring statistical signals in vision data that can behave like backdoor-like triggers without being maliciously inserted. We call these signals statistical adversaries. We analyse Imagenet to find patterns that are strongly linked to certain labels. We then use statistical controls to remove random correlations from our candidate signals. Finally, we demonstrate that these signals directly and predictably alter model predictions. These statistical adversaries are more targeted than",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2607.05516v1"
     }
   },
   {
@@ -789,29 +734,30 @@
       "score": 0.4243,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.10698v1"
     }
   },
   {
-    "id": "arxiv:2606.28953",
-    "title": "Clustering Unsupervised Representations as Defense against Poisoning Attacks on Speech Commands Classification System",
+    "id": "doi:10.1007/978-981-92-2852-2_20",
+    "title": "RDMA-Aware gRPC for Scalable Distributed Reinforcement Learning on HPC Clusters",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Poisoning attacks entail attackers intentionally tampering with training data. In this paper, we consider a dirty-label poisoning attack scenario on a speech commands classification system. The threat model assumes that certain utterances from one of the classes (source class) are poisoned by superimposing a trigger on it, and its label is changed to another class selected by the attacker (target class). We propose a filtering defense against such an attack. First, we use DIstillation with NO labels (DINO) to learn unsupervised representations for all the training examples. Next, we use K-mean",
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
     "review": {
       "decision": "pending",
       "stage": "gate",
-      "rule": "detector_context",
+      "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2606.28953v1"
+      "doi": "https://doi.org/10.1007/978-981-92-2852-2_20",
+      "crossref": "https://doi.org/10.1007/978-981-92-2852-2_20"
     }
   },
   {
@@ -827,7 +773,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_7",
@@ -847,7 +793,7 @@
       "score": 0.8071,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7164914111"
@@ -866,7 +812,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_29",
@@ -886,7 +832,7 @@
       "score": 0.0058,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.06458v1"
@@ -905,7 +851,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_10",
@@ -925,7 +871,7 @@
       "score": 0.2019,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.02919v1"
@@ -944,7 +890,7 @@
       "score": 0.0201,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7167749178"
@@ -963,7 +909,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_27",
@@ -971,22 +917,83 @@
     }
   },
   {
-    "id": "arxiv:2606.22700",
-    "title": "SCRUB-FL: Sanitizing and Cleansing Representations via Unlearning of Backdoors",
+    "id": "doi:10.1007/978-3-032-30809-2_24",
+    "title": "Stress Detection in Human–Robot Interaction Using Machine Learning and Physiological Signals",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Federated Learning (FL) enables collaborative model training without sharing raw data, making it a promising paradigm for privacy-sensitive applications. However, its decentralized nature makes it inherently vulnerable to backdoor attacks, where malicious clients embed hidden triggers into local training data to manipulate model predictions. Existing defenses mainly operate during before and during aggregation cannot fully eliminate backdoor behaviors that persist in the converged global model. Moreover, the effectiveness of post-training sanitization is often limited by the server's lack of k",
+    "venue": "IFIP Advances in Information and Communication Technology",
+    "abstract": "",
     "review": {
       "decision": "pending",
       "stage": "gate",
-      "rule": "detector_context",
+      "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2606.22700v1"
+      "doi": "https://doi.org/10.1007/978-3-032-30809-2_24",
+      "crossref": "https://doi.org/10.1007/978-3-032-30809-2_24"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2852-2_18",
+    "title": "Towards Multi-zone HVAC Control: A Multi-preference Deep Reinforcement Learning Approach",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2852-2_18",
+      "crossref": "https://doi.org/10.1007/978-981-92-2852-2_18"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11030-026-11654-8",
+    "title": "Prediction and mechanistic insights into drug-induced reproductive toxicity through integrated machine learning, FAERS-based signal comparison, and network toxicology analyses",
+    "year": 2026,
+    "venue": "Molecular Diversity",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:29Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11030-026-11654-8",
+      "crossref": "https://doi.org/10.1007/s11030-026-11654-8"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11042-026-21780-y",
+    "title": "Cry-P3CNN: audio signal processing based neonatal cry classification using improved reinforcement learning",
+    "year": 2026,
+    "venue": "Multimedia Tools and Applications",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:29Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11042-026-21780-y",
+      "crossref": "https://doi.org/10.1007/s11042-026-21780-y"
     }
   },
   {
@@ -1002,7 +1009,7 @@
       "score": 0.3124,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.11266v1"
@@ -1021,7 +1028,7 @@
       "score": 0.1508,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.04526v1"
@@ -1040,7 +1047,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_11",
@@ -1060,7 +1067,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1145/3795095.3805056",
@@ -1080,7 +1087,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s44196-026-01405-w",
@@ -1088,22 +1095,23 @@
     }
   },
   {
-    "id": "arxiv:2607.01702",
-    "title": "Pmeta-TLA: Backdoor Attacks for Speech Classification Models via Meta-Learning with Timbre Leakage Attack",
+    "id": "doi:10.1007/s10479-026-07340-5",
+    "title": "Supplier disruption risk diagnosis in a machine-tool component supply network: a T2NN–ITARA–ALWAS decision-support framework",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Recently, speech classification methods have gained widespread adoption in intelligent gadgets. Current study indicates that backdoor attacks provide a substantial security concern to these models, underscoring the pressing necessity to investigate additional potential attack techniques to expose and prevent such risks. This work discusses the vulnerability of current speech triggers to detection by deep neural network defenders and introduces the Timbre Leakage Attack (TLA). The suggested trigger disseminates timbre information at the frame level within the deep self-supervised features, prod",
+    "venue": "Annals of Operations Research",
+    "abstract": "",
     "review": {
       "decision": "pending",
       "stage": "gate",
-      "rule": "detector_context",
+      "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:29Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2607.01702v1"
+      "doi": "https://doi.org/10.1007/s10479-026-07340-5",
+      "crossref": "https://doi.org/10.1007/s10479-026-07340-5"
     }
   },
   {
@@ -1119,50 +1127,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1038/s41746-026-02986-8",
       "crossref": "https://doi.org/10.1038/s41746-026-02986-8"
-    }
-  },
-  {
-    "id": "doi:10.1201/9781003611110-1",
-    "title": "The Role of Artificial Intelligence in Social Network Analysis",
-    "year": 2026,
-    "venue": "Social Network Analytics",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1201/9781003611110-1",
-      "crossref": "https://doi.org/10.1201/9781003611110-1"
-    }
-  },
-  {
-    "id": "arxiv:2606.30899",
-    "title": "Curvature-Guided Module Localization for Low-Rank Detoxification of Backdoored Large Language Models",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Backdoor attacks pose a serious threat to large language models (LLMs) by causing otherwise benign systems to produce attacker-specified malicious behavior when a hidden trigger is present. In this work, we study post hoc detoxification of backdoored LLMs in a practical setting where the defender has access to the poisoned model but does not wish to retrain the full network from scratch. We propose a mechanistically guided weight-space repair framework that first localizes modules involved in propagating trigger-induced behavior using activation patching and Fisher/K-FAC curvature analysis, an",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.30899v1"
     }
   },
   {
@@ -1178,10 +1147,30 @@
       "score": 0.1691,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.21395v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2859-1_32",
+    "title": "LLM-Defender: Leveraging Large Language Models for Data Poisoning Protection in Federated Learning",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2859-1_32",
+      "crossref": "https://doi.org/10.1007/978-981-92-2859-1_32"
     }
   },
   {
@@ -1197,7 +1186,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_31",
@@ -1205,10 +1194,10 @@
     }
   },
   {
-    "id": "doi:10.1201/9781003611110-4",
-    "title": "Understanding Deep Learning and LLMs for Detecting Depression in Social Media Posts",
+    "id": "doi:10.1007/978-981-92-2859-1_39",
+    "title": "FedAMM: Mitigating Shared Parameter Drift in Personalized Federated Learning via Momentum-Guided Server Aggregation",
     "year": 2026,
-    "venue": "Social Network Analytics",
+    "venue": "Lecture Notes in Computer Science",
     "abstract": "",
     "review": {
       "decision": "pending",
@@ -1217,11 +1206,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "doi": "https://doi.org/10.1201/9781003611110-4",
-      "crossref": "https://doi.org/10.1201/9781003611110-4"
+      "doi": "https://doi.org/10.1007/978-981-92-2859-1_39",
+      "crossref": "https://doi.org/10.1007/978-981-92-2859-1_39"
     }
   },
   {
@@ -1237,7 +1226,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_29",
@@ -1257,7 +1246,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1140/epjs/s11734-026-02511-8",
@@ -1265,10 +1254,10 @@
     }
   },
   {
-    "id": "doi:10.1201/9781003611110-9",
-    "title": "Explainable Transfer Learning Model for Disaster Damage Assessment from Social Media Images",
+    "id": "doi:10.1007/978-981-92-3554-4_33",
+    "title": "An Integrated Deep Reinforcement Learning Method for Batch Planning and Scheduling in Distributed Flow Shops",
     "year": 2026,
-    "venue": "Social Network Analytics",
+    "venue": "Communications in Computer and Information Science",
     "abstract": "",
     "review": {
       "decision": "pending",
@@ -1277,49 +1266,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "doi": "https://doi.org/10.1201/9781003611110-9",
-      "crossref": "https://doi.org/10.1201/9781003611110-9"
-    }
-  },
-  {
-    "id": "arxiv:2606.12372",
-    "title": "UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Human-in-the-loop reinforcement learning (HiL-RL) has emerged as an effective paradigm for real-world robotic manipulation, enabling online policy improvement with human guidance. However, current HiL-RL frameworks remain intervention-intensive, relying on frequent human corrections to redirect the policy out of unproductive exploration, which incurs high labor cost and limits real-world scalability. To address this, we propose UniIntervene, an agentic intervention model that detects unproductive exploration and autonomously recovers the policy toward high-value states, taking over the bulk of",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.12372v1"
-    }
-  },
-  {
-    "id": "arxiv:2606.13802",
-    "title": "A Benchmark and Framework for Evaluating Next Action Predictions in Spreadsheets",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Predictive code completion greatly accelerates how quickly developers work. In spreadsheets, despite being much more common, such auto-completion features are virtually non-existent. To address this gap, we introduce a benchmark for systems that observe a sequence of user actions in a spreadsheet and predict future actions. Two challenges are (1) the absence of edit histories in public spreadsheet corpora and (2) the complex space of spreadsheet actions (spatial, temporal, composite). To address (1), we manually curate 52 sequences of 12K actions that recreate spreadsheets from public corpora,",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.13802v1"
+      "doi": "https://doi.org/10.1007/978-981-92-3554-4_33",
+      "crossref": "https://doi.org/10.1007/978-981-92-3554-4_33"
     }
   },
   {
@@ -1335,11 +1286,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30110-9_36",
       "crossref": "https://doi.org/10.1007/978-3-032-30110-9_36"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2852-2_29",
+    "title": "CTTT: Learning to Adapt Consistency for Test-Time Training",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2852-2_29",
+      "crossref": "https://doi.org/10.1007/978-981-92-2852-2_29"
     }
   },
   {
@@ -1355,11 +1326,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s44163-026-01693-3",
       "crossref": "https://doi.org/10.1007/s44163-026-01693-3"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2862-1_19",
+    "title": "FedGIM: Dynamic Tier-Based Federated Learning Method for Resource-Constrained Environments",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2862-1_19",
+      "crossref": "https://doi.org/10.1007/978-981-92-2862-1_19"
     }
   },
   {
@@ -1375,11 +1366,51 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30110-9_35",
       "crossref": "https://doi.org/10.1007/978-3-032-30110-9_35"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-3554-4_21",
+    "title": "Chaoslinear: A Time Series Forecasting Method Integrating Sequence Uncertainty with Deep Learning",
+    "year": 2026,
+    "venue": "Communications in Computer and Information Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-3554-4_21",
+      "crossref": "https://doi.org/10.1007/978-981-92-3554-4_21"
+    }
+  },
+  {
+    "id": "doi:10.1186/s40644-026-01090-0",
+    "title": "Development and multicohort external validation of a preoperative [18F]PSMA-1007 PET-derived deep learning score and multimodal model for predicting biochemical recurrence-free survival after radical prostatectomy",
+    "year": 2026,
+    "venue": "Cancer Imaging",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1186/s40644-026-01090-0",
+      "crossref": "https://doi.org/10.1186/s40644-026-01090-0"
     }
   },
   {
@@ -1395,7 +1426,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30699-9_3",
@@ -1415,7 +1446,7 @@
       "score": 0.2009,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.18235v1"
@@ -1434,31 +1465,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s11227-026-08530-5",
       "crossref": "https://doi.org/10.1007/s11227-026-08530-5"
-    }
-  },
-  {
-    "id": "doi:10.1021/acsaenm.6c00545",
-    "title": "Bridging Phase-Field Model and Deep Learning for Predicting 2D and 3D Microstructure Evolution in Ternary Alloys",
-    "year": 2026,
-    "venue": "ACS Applied Engineering Materials",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1021/acsaenm.6c00545",
-      "crossref": "https://doi.org/10.1021/acsaenm.6c00545"
     }
   },
   {
@@ -1474,7 +1485,7 @@
       "score": 0.0009,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "doi": "https://doi.org/10.3389/fneur.2026.1818594",
@@ -1494,11 +1505,51 @@
       "score": 0.1809,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.02289v2",
       "inspire": "https://inspirehep.net/literature/3176665"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11571-026-10506-3",
+    "title": "Aperiodic EEG spectral features as consistent indicators of Parkinson’s disease: a machine learning approach utilizing fitting oscillations and one-over-F decomposition",
+    "year": 2026,
+    "venue": "Cognitive Neurodynamics",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:29Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11571-026-10506-3",
+      "crossref": "https://doi.org/10.1007/s11571-026-10506-3"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2856-0_7",
+    "title": "Personalized Federated Prompt Learning for Vision-Language Models: A Survey",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2856-0_7",
+      "crossref": "https://doi.org/10.1007/978-981-92-2856-0_7"
     }
   },
   {
@@ -1514,7 +1565,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30795-8_21",
@@ -1534,7 +1585,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_15",
@@ -1554,7 +1605,7 @@
       "score": 0.2788,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.03154v1"
@@ -1573,30 +1624,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_29",
       "crossref": "https://doi.org/10.1007/978-981-92-2487-6_29"
-    }
-  },
-  {
-    "id": "arxiv:2606.29841",
-    "title": "Theory of Continual Learning Against Data Poisoning Attacks",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Continual learning (CL), where a model is trained on a sequence of data tasks, is increasingly being adopted across key fields such as large language models and image recognition, yet it remains highly vulnerable to data poisoning that triggers learning divergence or severe excess risk. Despite these threats, a principled theoretical foundation in CL for understanding attack and defense remains lacking. In this paper, we develop a theoretical framework to analyze strategic attacks and defenses in regularization-based CL, a cornerstone of recent CL theory. By framing the adversary-defender inte",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.29841v1"
     }
   },
   {
@@ -1612,10 +1644,30 @@
       "score": 0.1991,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.11474v2"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2852-2_36",
+    "title": "A Two-Stage Hybrid Learning Framework for Precision Delivery of Fire-Extinguishing Projectiles in Wildland Fire Suppression",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2852-2_36",
+      "crossref": "https://doi.org/10.1007/978-981-92-2852-2_36"
     }
   },
   {
@@ -1631,10 +1683,30 @@
       "score": 0.7738,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.14854v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2862-1_15",
+    "title": "Block-Wise Rolling Training for Heterogeneous Federated Learning",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2862-1_15",
+      "crossref": "https://doi.org/10.1007/978-981-92-2862-1_15"
     }
   },
   {
@@ -1650,7 +1722,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s44163-026-01388-9",
@@ -1658,42 +1730,63 @@
     }
   },
   {
-    "id": "arxiv:2606.11698",
-    "title": "T2S: A Rehearsal-Based Approach for Extraction-Resistant Model Watermarking",
+    "id": "doi:10.1007/978-981-92-3554-4_7",
+    "title": "FMIML-TAG: Federated Multi-instance Multi-label Learning with Graph-Transformer Approach",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Model watermarking safeguards AI model intellectual property by embedding distinctive knowledge that induces unique behavioral signatures. The primary technical challenge lies in ensuring watermark robustness against various post-processing attacks on the watermarked model. Model extraction attacks emerge as the most severe threat, where adversaries exploit prediction outputs to train surrogate models that illegally replicate the original model's functionality. In this work, we propose a rehearsal-based watermark embedding framework to enhance the robustness of model watermarks against model e",
+    "venue": "Communications in Computer and Information Science",
+    "abstract": "",
     "review": {
       "decision": "pending",
       "stage": "gate",
-      "rule": "detector_context",
+      "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2606.11698v1"
+      "doi": "https://doi.org/10.1007/978-981-92-3554-4_7",
+      "crossref": "https://doi.org/10.1007/978-981-92-3554-4_7"
     }
   },
   {
-    "id": "doi:10.3389/fdata.2026.1842233",
-    "title": "Evolutionary multi-agent reinforcement learning for crisis-aware demographic policy optimization",
+    "id": "doi:10.1007/978-3-032-30809-2_8",
+    "title": "Satellite-Informed Machine Learning for River Contamination Prediction: A Time-Aware LSTM Approach",
     "year": 2026,
-    "venue": "Frontiers in Big Data",
-    "abstract": "<jats:p>\n                    Demographic systems face unprecedented challenges from simultaneous crises. Conventional statistical demography techniques and agent–based models often struggle to capture nonlinear inter–regional interactions during periods of severe socio–economic disruption. To address this, we propose\n                    <jats:italic>MADDPG–EVO–DGM</jats:italic>\n                    , a hybrid algorithm that integrates multi–agent deep reinforcement learning with evolutionary optimisation and meta–learning principles to model regional demographic processes under multiple crisis ",
+    "venue": "IFIP Advances in Information and Communication Technology",
+    "abstract": "",
     "review": {
       "decision": "pending",
       "stage": "gate",
-      "rule": "detector_context",
+      "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "doi": "https://doi.org/10.3389/fdata.2026.1842233",
-      "crossref": "https://doi.org/10.3389/fdata.2026.1842233"
+      "doi": "https://doi.org/10.1007/978-3-032-30809-2_8",
+      "crossref": "https://doi.org/10.1007/978-3-032-30809-2_8"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2852-2_19",
+    "title": "Scheduling Robotic Cellular Manufacturing Systems with Accelerated Reinforcement Learning on Place-Timed Petri Nets",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2852-2_19",
+      "crossref": "https://doi.org/10.1007/978-981-92-2852-2_19"
     }
   },
   {
@@ -1709,7 +1802,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_18",
@@ -1729,30 +1822,10 @@
       "score": 0.2542,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.18322v1"
-    }
-  },
-  {
-    "id": "doi:10.1038/s41598-026-51664-y",
-    "title": "Dynamic urban land surface monitoring in developing countries using remote sensing and machine learning: real-time investigational approach",
-    "year": 2026,
-    "venue": "Scientific Reports",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1038/s41598-026-51664-y",
-      "crossref": "https://doi.org/10.1038/s41598-026-51664-y"
     }
   },
   {
@@ -1768,7 +1841,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s40300-026-00316-2",
@@ -1788,7 +1861,7 @@
       "score": 0.0546,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "doi": "https://doi.org/10.1088/2057-1976/ae6d02",
@@ -1808,11 +1881,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_27",
       "crossref": "https://doi.org/10.1007/978-3-032-30710-1_27"
+    }
+  },
+  {
+    "id": "doi:10.1007/s11239-026-03295-3",
+    "title": "Evaluating the impact of frailty in older adults on functional outcomes post-mechanical thrombectomy: a multicentre study incorporating traditional and machine learning methods",
+    "year": 2026,
+    "venue": "Journal of Thrombosis and Thrombolysis",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:29Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/s11239-026-03295-3",
+      "crossref": "https://doi.org/10.1007/s11239-026-03295-3"
     }
   },
   {
@@ -1828,7 +1921,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s11517-026-03619-8",
@@ -1848,10 +1941,90 @@
       "score": 0.0217,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7164164393"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-3554-4_18",
+    "title": "ADL: Anti-forgetting Debiased Learning for Dynamic Generalized Category Discovery in SAR ATR",
+    "year": 2026,
+    "venue": "Communications in Computer and Information Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-3554-4_18",
+      "crossref": "https://doi.org/10.1007/978-981-92-3554-4_18"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2862-1_11",
+    "title": "Deep Learning Networks Based on Fusion Model for EEG-fNIRS Multimodal Learning Confusion in Online Class",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2862-1_11",
+      "crossref": "https://doi.org/10.1007/978-981-92-2862-1_11"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2852-2_41",
+    "title": "Hierarchical Reinforcement Learning Agent for Distributed Event-Driven Multi-asset LOBs Simulation",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2852-2_41",
+      "crossref": "https://doi.org/10.1007/978-981-92-2852-2_41"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2856-0_40",
+    "title": "Label Correlation Embedding Based Graph Attention Neural Network for Multi-instance Multi-label Learning",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2856-0_40",
+      "crossref": "https://doi.org/10.1007/978-981-92-2856-0_40"
     }
   },
   {
@@ -1867,31 +2040,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s12008-026-02629-y",
       "crossref": "https://doi.org/10.1007/s12008-026-02629-y"
-    }
-  },
-  {
-    "id": "doi:10.21275/sr26706164720",
-    "title": "Tri-Modal Molecular Representation Learning for ADMET Prediction Using a Multi-Task Framework",
-    "year": 2026,
-    "venue": "International Journal of Science and Research (IJSR)",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.21275/sr26706164720",
-      "crossref": "https://doi.org/10.21275/sr26706164720"
     }
   },
   {
@@ -1907,7 +2060,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_10",
@@ -1927,7 +2080,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s00170-026-18574-9",
@@ -1947,31 +2100,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s00426-026-02347-w",
       "crossref": "https://doi.org/10.1007/s00426-026-02347-w"
-    }
-  },
-  {
-    "id": "doi:10.21203/rs.3.rs-10268632/v1",
-    "title": "A Hybrid Machine Learning Approach Integrating Gradient Boosting and Attention Mechanisms to Predict VBNC Bacterial Resuscitation",
-    "year": 2026,
-    "venue": "Springer Science and Business Media LLC",
-    "abstract": "<title>Abstract</title>\n                <p>Bacterial persistence in the Viable But Non-Culturable (VBNC) state poses significant risks to global food safety and public health. Traditional culturing methods fail to detect these cells, making predictive modeling essential for risk assessment and resuscitation optimization. In this study, we propose a novel Hybrid Machine Learning framework that integrates the high-efficiency Gradient Boosting capabilities of LightGBM with the complex feature-dependency capturing of a PyTorch-based Attention Neural Network. Our model was trained on a multi-parame",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.21203/rs.3.rs-10268632/v1",
-      "crossref": "https://doi.org/10.21203/rs.3.rs-10268632/v1"
     }
   },
   {
@@ -1987,7 +2120,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_21",
@@ -2007,7 +2140,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30110-9_26",
@@ -2027,55 +2160,17 @@
       "score": 0.4943,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.26383v1"
     }
   },
   {
-    "id": "arxiv:2606.16242",
-    "title": "Rapid Poison: Practical Poisoning Attacks Against the Rapid Response Framework",
+    "id": "doi:10.1007/978-981-92-2852-2_21",
+    "title": "DVQA-FL: A Communication-Efficient Quantum Federated Learning Framework for Power System",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "The Rapid Response (RR) framework, deployed in production systems, including Anthropic's ASL-3 safeguards, continuously improves jailbreak-detection classifiers. When new jailbreaks emerge that bypass these classifiers, Rapid Response generates synthetic variants for training, helping the model generalize from the new attacks and quickly adapt. We reveal that prompt injection can infiltrate this pipeline to deliver poisoned samples into the classifier's training set, enabling two attack objectives: (I) targeted poisoning attacks that create false positives on harmless samples by categorizing t",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.16242v1"
-    }
-  },
-  {
-    "id": "arxiv:2606.27806",
-    "title": "Agent vs. Parametric World Models: Hybrid Planning for Reliable Language Agents",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Language agents plan by generating not only actions but also implicit predictions of how the world will change. These imagined state updates make agents flexible, but they also create a distinct failure mode: hallucinated state claims can be written into context and propagated across subsequent decisions. In contrast, parametric world models provide measurable transition errors but are often weaker semantic planners. We study this tradeoff in graph-structured planning environments and introduce metrics for agent-world-model error, including hallucinated-state rate, propagation depth, and long-",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.27806v3"
-    }
-  },
-  {
-    "id": "doi:10.1201/9781003611110-5",
-    "title": "Deep Learning and Large Language Models for Detecting Depression in Social Media Posts – An Indian Context",
-    "year": 2026,
-    "venue": "Social Network Analytics",
+    "venue": "Lecture Notes in Computer Science",
     "abstract": "",
     "review": {
       "decision": "pending",
@@ -2084,30 +2179,51 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "doi": "https://doi.org/10.1201/9781003611110-5",
-      "crossref": "https://doi.org/10.1201/9781003611110-5"
+      "doi": "https://doi.org/10.1007/978-981-92-2852-2_21",
+      "crossref": "https://doi.org/10.1007/978-981-92-2852-2_21"
     }
   },
   {
-    "id": "arxiv:2606.18385",
-    "title": "CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework",
+    "id": "doi:10.1007/978-981-92-2859-1_37",
+    "title": "FPBMamba: A Metro Passenger Flow Prediction Model Based on Multi-scale Temporal Representation Learning and Bidirectional Mamba Mechanism",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Vision-Language Models (VLMs) remain prone to hallucinations, producing fluent but visually unfaithful outputs. Existing chain-of-thought and retrieval-augmented methods only partially address this, as they neither enforce step-level citation grounding nor route verification failures back to retrieval for correction. We present CaVe-VLM-CoT, a modular reflection-based agentic-RAG framework that enforces evidence-grounded reasoning through a five-stage closed-loop pipeline: Extractor, Retriever, Solver, Citation Injector, and Verifier, in which detected ungrounded claims trigger structured feed",
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
     "review": {
       "decision": "pending",
-      "stage": "nli",
-      "rule": "nli_reject_machine_vocab",
-      "score": 0.023,
-      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2606.18385v1"
+      "doi": "https://doi.org/10.1007/978-981-92-2859-1_37",
+      "crossref": "https://doi.org/10.1007/978-981-92-2859-1_37"
+    }
+  },
+  {
+    "id": "doi:10.9734/iaarj/2026/v8i1122",
+    "title": "Predictive Modeling of Exoplanet Orbital Eccentricity with Interpretable Machine Learning Methods",
+    "year": 2026,
+    "venue": "International Astronomy and Astrophysics Research Journal",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:29Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.9734/iaarj/2026/v8i1122",
+      "crossref": "https://doi.org/10.9734/iaarj/2026/v8i1122"
     }
   },
   {
@@ -2123,7 +2239,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_5",
@@ -2143,10 +2259,50 @@
       "score": 0.3244,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.25265v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2859-1_21",
+    "title": "FedRPI: A Federated Retrieval-Augmented Meta-learning Framework for Cost-Efficient and Privacy-Preserving Knowledge Interaction",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2859-1_21",
+      "crossref": "https://doi.org/10.1007/978-981-92-2859-1_21"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2862-1_29",
+    "title": "GoalPilot: A Multi-agent Framework for Personalized Task Decomposition and Dynamic Schedule Optimization in Self-regulated Learning",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2862-1_29",
+      "crossref": "https://doi.org/10.1007/978-981-92-2862-1_29"
     }
   },
   {
@@ -2162,7 +2318,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.5256/f1000research.201441.r494610",
@@ -2182,7 +2338,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30573-2_16",
@@ -2202,7 +2358,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_12",
@@ -2222,7 +2378,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.2175/193864718825160278",
@@ -2242,29 +2398,10 @@
       "score": 0.2027,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.24884v1"
-    }
-  },
-  {
-    "id": "arxiv:2606.30696",
-    "title": "ViTL: Temporal Logic-Guided Zero-Shot Natural Language Navigation via Vision-Language Models",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Enabling robots to follow natural language commands to complete zero-shot long-horizon tasks remains challenging. It requires extracting implicit temporal and logical constraints from natural language commands and executing multiple sub-tasks accordingly. Recent zero-shot object navigation methods use vision-language models (VLMs) to guide frontier-based exploration in unknown environments, but they are limited to single-target tasks. Real-world commands such as \"Clean either the chair or the couch, then turn on the tv.\" require navigating to multiple targets in a temporally constrained order,",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.30696v1"
     }
   },
   {
@@ -2280,7 +2417,7 @@
       "score": 0.1808,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.13709v1"
@@ -2299,7 +2436,7 @@
       "score": 0.2534,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.26793v1"
@@ -2318,11 +2455,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.7554/elife.105774.4.sa0",
       "crossref": "https://doi.org/10.7554/elife.105774.4.sa0"
+    }
+  },
+  {
+    "id": "doi:10.1038/s41598-026-59539-y",
+    "title": "Machine learning model for the detection of autism spectrum disorder using electroretinogram signals",
+    "year": 2026,
+    "venue": "Scientific Reports",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:29Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1038/s41598-026-59539-y",
+      "crossref": "https://doi.org/10.1038/s41598-026-59539-y"
     }
   },
   {
@@ -2338,7 +2495,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_25",
@@ -2346,22 +2503,23 @@
     }
   },
   {
-    "id": "arxiv:2606.15730",
-    "title": "InstantForget: Update-Free Backdoor Unlearning with Inference-Time Feature Reset",
+    "id": "doi:10.1007/978-981-92-2856-0_19",
+    "title": "HAMLET: Heterogeneous Graph with Automated Meta-path Learning and Enhanced Transformer for List Recommendation",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Backdoor unlearning aims to remove a malicious trigger behavior from a deployed model while preserving clean utility. We study the update-free inference-time setting, where model parameters remain frozen. First, we audit a common projection assumption under oracle paired clean and triggered features. Projection succeeds mainly on BadNets and leaves WaNet, Blended, and SIG at 0.683, 0.888, and 0.941 ASR on CIFAR-10 ResNet-18. This failure is not explained by spectral compactness, spatial locality, or subspace misalignment. It is predicted by a logit-triplet gap involving the target margin, targ",
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
     "review": {
       "decision": "pending",
       "stage": "gate",
-      "rule": "detector_context",
+      "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2606.15730v1"
+      "doi": "https://doi.org/10.1007/978-981-92-2856-0_19",
+      "crossref": "https://doi.org/10.1007/978-981-92-2856-0_19"
     }
   },
   {
@@ -2377,29 +2535,70 @@
       "score": 0.156,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.20475v1"
     }
   },
   {
-    "id": "arxiv:2606.15625",
-    "title": "Conflict-Aware Federated Fine-Tuning of Large Language Models with Mixture-of-Experts",
+    "id": "doi:10.1007/s10479-026-07310-x",
+    "title": "Viable supply chain network design: machine learning-derived chance-constrained programming",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "The continuous scaling of large language models (LLMs) incurs prohibitive computational costs, making Mixture-of-Experts (MoE) a scalable alternative for efficient fine-tuning via sparse activation. While federated learning (FL) emerges as the paradigm for privacy-preserving collaborative optimization, integrating MoE into FL under data heterogeneity may trigger conflicting expert optimizations. Client-specific data distributions force same-indexed experts to optimize under inconsistent or even conflicting feature-label correlations. This mismatch induces destructive interference during aggreg",
+    "venue": "Annals of Operations Research",
+    "abstract": "",
     "review": {
       "decision": "pending",
       "stage": "gate",
-      "rule": "detector_context",
+      "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2606.15625v1"
+      "doi": "https://doi.org/10.1007/s10479-026-07310-x",
+      "crossref": "https://doi.org/10.1007/s10479-026-07310-x"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2856-0_24",
+    "title": "DV-HAT: Dual-View Hypergraph Attention Network for Graph Representation Learning",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2856-0_24",
+      "crossref": "https://doi.org/10.1007/978-981-92-2856-0_24"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2852-2_16",
+    "title": "TeSLIA: A Practical Label Inference Attack in Two-Party Split Learning for Text Classification",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2852-2_16",
+      "crossref": "https://doi.org/10.1007/978-981-92-2852-2_16"
     }
   },
   {
@@ -2415,7 +2614,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s10472-026-10016-2",
@@ -2435,7 +2634,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1117/12.3117771",
@@ -2455,7 +2654,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s12221-026-01500-x",
@@ -2475,7 +2674,7 @@
       "score": 0.1975,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.00535v1"
@@ -2494,11 +2693,51 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30813-9_36",
       "crossref": "https://doi.org/10.1007/978-3-032-30813-9_36"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2862-1_13",
+    "title": "FedRWA: A Robust Semi-asynchronous Federated Learning Framework via Dynamic Reputation-Weighted Aggregation",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2862-1_13",
+      "crossref": "https://doi.org/10.1007/978-981-92-2862-1_13"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2862-1_17",
+    "title": "NLPP: Two-Stage Label Quality Enhancement Framework for Noisy-Label Prompt Learning",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2862-1_17",
+      "crossref": "https://doi.org/10.1007/978-981-92-2862-1_17"
     }
   },
   {
@@ -2514,29 +2753,30 @@
       "score": 0.1588,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.27180v1"
     }
   },
   {
-    "id": "arxiv:2606.15308",
-    "title": "Forced Deferral: Manipulating Routing Decisions in Multimodal LLM Cascades",
+    "id": "doi:10.1007/978-981-92-2856-0_28",
+    "title": "FedAC: Selective High-Pass Sharing for Federated Graph Learning Under Dual Heterogeneity",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "While multimodal large language models (MLLMs) have shown strong visual reasoning abilities, serving a large model for every query is computationally expensive. MLLM cascades mitigate this cost by first querying a weak but cheaper model and deferring to a strong model when the weak model's output is unconfident. However, since the weak model's confidence directly controls compute allocation, these systems expose a new attack surface: an adversary can manipulate confidence so that their queries are consistently deferred to the strong model. Motivated by this vulnerability, we introduce the Forc",
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
     "review": {
       "decision": "pending",
       "stage": "gate",
-      "rule": "detector_context",
+      "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2606.15308v1"
+      "doi": "https://doi.org/10.1007/978-981-92-2856-0_28",
+      "crossref": "https://doi.org/10.1007/978-981-92-2856-0_28"
     }
   },
   {
@@ -2552,7 +2792,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s00024-026-04044-6",
@@ -2572,7 +2812,7 @@
       "score": 0.4096,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.01144v1"
@@ -2591,7 +2831,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s12065-026-01228-w",
@@ -2599,10 +2839,10 @@
     }
   },
   {
-    "id": "doi:10.1021/acs.est.6c02845",
-    "title": "Bridging the Gap between External and Internal Exposure: Challenges and a Machine Learning Approach Validated Using Benzene Ring-Containing Pollutants",
+    "id": "doi:10.1007/978-981-92-3554-4_23",
+    "title": "Few-Shot-Oriented Tail-Aware Multi-label Learning with Correlation Alignment and an RFF Head",
     "year": 2026,
-    "venue": "Environmental Science &amp; Technology",
+    "venue": "Communications in Computer and Information Science",
     "abstract": "",
     "review": {
       "decision": "pending",
@@ -2611,11 +2851,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "doi": "https://doi.org/10.1021/acs.est.6c02845",
-      "crossref": "https://doi.org/10.1021/acs.est.6c02845"
+      "doi": "https://doi.org/10.1007/978-981-92-3554-4_23",
+      "crossref": "https://doi.org/10.1007/978-981-92-3554-4_23"
     }
   },
   {
@@ -2631,7 +2871,7 @@
       "score": 0.44,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.29565v1"
@@ -2650,7 +2890,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.7554/elife.105774.4.sa1",
@@ -2670,29 +2910,10 @@
       "score": 0.2516,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.17409v1"
-    }
-  },
-  {
-    "id": "arxiv:2606.25858",
-    "title": "Color Matters: Trigger Color Affects Success in Federated Backdoor Attacks",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Federated learning is vulnerable to backdoor attacks in which malicious clients inject poisoned updates while preserving benign-task performance. In this paper, we study a semantics-driven backdoor mechanism in which attackers use natural visual accessories as triggers and manipulate only the trigger color while keeping the attack pipeline fixed. Our framework considers semantic trigger objects such as masks and sunglasses, instantiated in black and white variants, and evaluates their effect in a controlled federated learning setting. Malicious clients construct poisoned samples by applying a ",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.25858v1"
     }
   },
   {
@@ -2708,7 +2929,7 @@
       "score": 0.0094,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.27188v1"
@@ -2727,7 +2948,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s12541-026-01585-7",
@@ -2747,7 +2968,7 @@
       "score": 0.4969,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.28226v1"
@@ -2766,10 +2987,30 @@
       "score": 0.4059,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.19251v1"
+    }
+  },
+  {
+    "id": "doi:10.1140/epjs/s11734-026-02507-4",
+    "title": "LCVision: deep learning model for recognition of nematic and smectic phases in liquid crystals",
+    "year": 2026,
+    "venue": "The European Physical Journal Special Topics",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:29Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1140/epjs/s11734-026-02507-4",
+      "crossref": "https://doi.org/10.1140/epjs/s11734-026-02507-4"
     }
   },
   {
@@ -2785,29 +3026,30 @@
       "score": 0.1734,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.18730v1"
     }
   },
   {
-    "id": "arxiv:2607.08073",
-    "title": "Cross-Modal Generative Framework for Signal Translation from Fetal-Maternal Electrocardiograms to Fetal Doppler Waveforms",
+    "id": "doi:10.1007/s42452-026-09188-7",
+    "title": "LSCNN: a deep learning framework for enhanced kidney stone detection through axial CT image analysis",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Fetal electrocardiogram (fECG) and Doppler ultrasound provide complementary views of fetal cardiovascular function: fECG captures electrical activity while Doppler reflects mechanical hemodynamics shaped by factors such as placental resistance and vascular compliance. Understanding the recoverable and unrecoverable Doppler components through reconstruction from fECG offers insight into the relative contributions of electrical versus mechanical factors in fetal circulation, thereby informing clinical decisions. In addition, clinical evidence of maternal-fetal cardiac coupling suggests that mate",
+    "venue": "Discover Applied Sciences",
+    "abstract": "",
     "review": {
       "decision": "pending",
-      "stage": "nli",
-      "rule": "nli_reject_machine_vocab",
-      "score": 0.0242,
-      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:02:29Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2607.08073v1"
+      "doi": "https://doi.org/10.1007/s42452-026-09188-7",
+      "crossref": "https://doi.org/10.1007/s42452-026-09188-7"
     }
   },
   {
@@ -2823,7 +3065,7 @@
       "score": 0.2891,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.03824v1"
@@ -2842,7 +3084,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_25",
@@ -2862,11 +3104,51 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_2",
       "crossref": "https://doi.org/10.1007/978-981-92-2497-5_2"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-3554-4_10",
+    "title": "Every Segment Remembered: Reliability-Tokenized MoE Adapters for Mismatch-Robust and Better-Calibrated Audio-Visual Learning",
+    "year": 2026,
+    "venue": "Communications in Computer and Information Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-3554-4_10",
+      "crossref": "https://doi.org/10.1007/978-981-92-3554-4_10"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2856-0_17",
+    "title": "HeteroGuard: Hop-Disentangled Representation Learning on Heterogeneous Provenance Graphs for APT Detection",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2856-0_17",
+      "crossref": "https://doi.org/10.1007/978-981-92-2856-0_17"
     }
   },
   {
@@ -2882,7 +3164,7 @@
       "score": 0.1702,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.29020v1"
@@ -2901,7 +3183,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1117/12.3117605",
@@ -2921,31 +3203,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.7554/elife.105774.4.sa4",
       "crossref": "https://doi.org/10.7554/elife.105774.4.sa4"
-    }
-  },
-  {
-    "id": "doi:10.1038/s41598-026-60192-8",
-    "title": "Deep learning-based hybrid analysis for axonal regeneration and myelination in rat sciatic nerve",
-    "year": 2026,
-    "venue": "Scientific Reports",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1038/s41598-026-60192-8",
-      "crossref": "https://doi.org/10.1038/s41598-026-60192-8"
     }
   },
   {
@@ -2961,7 +3223,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_2",
@@ -2981,7 +3243,7 @@
       "score": 0.1771,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.06976v1"
@@ -3000,7 +3262,7 @@
       "score": 0.1898,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.28833v3"
@@ -3019,7 +3281,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_23",
@@ -3039,7 +3301,7 @@
       "score": 0.2851,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.26778v1"
@@ -3058,7 +3320,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s40998-026-01158-4",
@@ -3078,11 +3340,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_26",
       "crossref": "https://doi.org/10.1007/978-981-92-2480-7_26"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2856-0_3",
+    "title": "Image-Text Matching via Graph Counterfactual Learning and Trustworthy Alignment",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2856-0_3",
+      "crossref": "https://doi.org/10.1007/978-981-92-2856-0_3"
     }
   },
   {
@@ -3098,7 +3380,7 @@
       "score": 0.0542,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.29085v1",
@@ -3118,31 +3400,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s13369-026-11492-8",
       "crossref": "https://doi.org/10.1007/s13369-026-11492-8"
-    }
-  },
-  {
-    "id": "doi:10.1007/s43926-026-00417-4",
-    "title": "Deep learning-based image recognition for visual management and intelligent decision support in hotel operations",
-    "year": 2026,
-    "venue": "Discover Internet of Things",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1007/s43926-026-00417-4",
-      "crossref": "https://doi.org/10.1007/s43926-026-00417-4"
     }
   },
   {
@@ -3158,7 +3420,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s10639-026-14063-4",
@@ -3166,22 +3428,23 @@
     }
   },
   {
-    "id": "arxiv:2607.02734",
-    "title": "Echoes of Unrest: A Multimodal NLP Framework for Early Warning of Fake News and Violence-Driven Mob Activity",
+    "id": "doi:10.1007/978-981-92-2856-0_46",
+    "title": "Dynamic Elastic Weight Consolidation for Continual Learning in Spiking Neural Networks",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Rapid growth in social media has transformed global communication by enabling fast information exchange, but it has also accelerated the spread of misinformation. Fake news, manipulated content, and provocative narratives are increasingly linked to social unrest, political instability, and mob violence. Incidents in South Asia and elsewhere demonstrate how false information disseminated via platforms such as Facebook and WhatsApp can trigger real-world harm, often spreading faster than fact-checking efforts can respond. To address this challenge, this chapter presents a multilingual, multimoda",
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
     "review": {
       "decision": "pending",
       "stage": "gate",
-      "rule": "detector_context",
+      "rule": "empty_abstract",
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "arxiv": "http://arxiv.org/abs/2607.02734v1"
+      "doi": "https://doi.org/10.1007/978-981-92-2856-0_46",
+      "crossref": "https://doi.org/10.1007/978-981-92-2856-0_46"
     }
   },
   {
@@ -3197,10 +3460,30 @@
       "score": 0.1631,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.09643v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2862-1_24",
+    "title": "Edu-LTER: A Long-Term Value Enhanced Reinforcement Learning Framework for Educational Recommendation",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2862-1_24",
+      "crossref": "https://doi.org/10.1007/978-981-92-2862-1_24"
     }
   },
   {
@@ -3216,7 +3499,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_19",
@@ -3236,7 +3519,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s11694-026-04700-4",
@@ -3256,7 +3539,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30813-9_41",
@@ -3264,10 +3547,10 @@
     }
   },
   {
-    "id": "doi:10.1201/9781003611110-2",
-    "title": "Unraveling the Impact of Social Networks",
+    "id": "doi:10.1007/978-3-032-30809-2_15",
+    "title": "Timeframe-Aware Representation Learning for Multi-resolution Deep Q-Trading",
     "year": 2026,
-    "venue": "Social Network Analytics",
+    "venue": "IFIP Advances in Information and Communication Technology",
     "abstract": "",
     "review": {
       "decision": "pending",
@@ -3276,11 +3559,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "doi": "https://doi.org/10.1201/9781003611110-2",
-      "crossref": "https://doi.org/10.1201/9781003611110-2"
+      "doi": "https://doi.org/10.1007/978-3-032-30809-2_15",
+      "crossref": "https://doi.org/10.1007/978-3-032-30809-2_15"
     }
   },
   {
@@ -3296,7 +3579,7 @@
       "score": 0.3399,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.10349v1"
@@ -3315,7 +3598,7 @@
       "score": 0.2845,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.28094v1"
@@ -3334,31 +3617,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_10",
       "crossref": "https://doi.org/10.1007/978-981-92-2497-5_10"
-    }
-  },
-  {
-    "id": "doi:10.1201/9781042001767-7",
-    "title": "Rupee or Replica? A Deep Learning Approach to Indian Currency Authentication Using VGG19",
-    "year": 2026,
-    "venue": "Next-Generation Smart Systems",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1201/9781042001767-7",
-      "crossref": "https://doi.org/10.1201/9781042001767-7"
     }
   },
   {
@@ -3374,7 +3637,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_30",
@@ -3394,11 +3657,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30795-8_2",
       "crossref": "https://doi.org/10.1007/978-3-032-30795-8_2"
+    }
+  },
+  {
+    "id": "doi:10.3905/jod.2026.009",
+    "title": "Quality versus Quantity: Evidence from Machine Learning Option Pricing",
+    "year": 2026,
+    "venue": "The Journal of Derivatives",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:29Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.3905/jod.2026.009",
+      "crossref": "https://doi.org/10.3905/jod.2026.009"
     }
   },
   {
@@ -3414,7 +3697,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1103/9wbw-h87d",
@@ -3422,29 +3705,10 @@
     }
   },
   {
-    "id": "arxiv:2606.09944",
-    "title": "GAGI: A Gini-Adjusted GDP-per-Capita Index for Distribution-Aware Macroeconomic Welfare Monitoring",
+    "id": "doi:10.1007/978-981-92-3554-4_28",
+    "title": "Flexible Job Shop Machine and Worker Scheduling Based on Multi-strategy Improvement of the Grey Wolf Optimizer",
     "year": 2026,
-    "venue": "arXiv",
-    "abstract": "GDP per capita is the default lens through which governibng bodies track the economic prosperity and consequences of economic events , yet it is blind to two first-order determinants of lived prosperity: income/wealth distribution and inflation impact. Inequality-adjusted income measures are themselves not new but What is missing from the macroeconomic monitoring toolkit specifically is not a welfare concept but an operational monitoring trigger: a statistic minimal enough to compute annually from public data, transparent enough to audit without modelling assumptions, and normalised so that ye",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.09944v1"
-    }
-  },
-  {
-    "id": "doi:10.1201/9781003611110-3",
-    "title": "Understanding Factors Leading to Local and Global Spatial Spread in Social Media",
-    "year": 2026,
-    "venue": "Social Network Analytics",
+    "venue": "Communications in Computer and Information Science",
     "abstract": "",
     "review": {
       "decision": "pending",
@@ -3453,11 +3717,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "doi": "https://doi.org/10.1201/9781003611110-3",
-      "crossref": "https://doi.org/10.1201/9781003611110-3"
+      "doi": "https://doi.org/10.1007/978-981-92-3554-4_28",
+      "crossref": "https://doi.org/10.1007/978-981-92-3554-4_28"
+    }
+  },
+  {
+    "id": "doi:10.1038/s41598-026-61027-2",
+    "title": "Team-based versus individual learning for out-of-hospital cardiac arrest rhythm recognition in newly hired emergency medical service providers: cluster-randomized equivalence trial",
+    "year": 2026,
+    "venue": "Scientific Reports",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1038/s41598-026-61027-2",
+      "crossref": "https://doi.org/10.1038/s41598-026-61027-2"
     }
   },
   {
@@ -3473,30 +3757,10 @@
       "score": 0.3548,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.00259v1"
-    }
-  },
-  {
-    "id": "doi:10.1080/13573322.2026.2697321",
-    "title": "Learning under constraint: how organisational structures shape what can be learned in high-performance sport",
-    "year": 2026,
-    "venue": "Sport, Education and Society",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1080/13573322.2026.2697321",
-      "crossref": "https://doi.org/10.1080/13573322.2026.2697321"
     }
   },
   {
@@ -3512,7 +3776,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1108/ils-07-2026-0226",
@@ -3532,7 +3796,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_14",
@@ -3552,7 +3816,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_36",
@@ -3572,7 +3836,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_31",
@@ -3592,7 +3856,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.01395v1"
@@ -3611,7 +3875,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_28",
@@ -3631,7 +3895,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2494-4_14",
@@ -3651,7 +3915,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_7",
@@ -3671,7 +3935,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.19108v1"
@@ -3690,7 +3954,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_2",
@@ -3710,7 +3974,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_39",
@@ -3730,11 +3994,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.5194/egusphere-2026-3618-supplement",
       "crossref": "https://doi.org/10.5194/egusphere-2026-3618-supplement"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2852-2_35",
+    "title": "Clinically Consistent Ordinal Learning for Early Pneumoconiosis Diagnosis",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2852-2_35",
+      "crossref": "https://doi.org/10.1007/978-981-92-2852-2_35"
     }
   },
   {
@@ -3750,11 +4034,31 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_34",
       "crossref": "https://doi.org/10.1007/978-981-92-2480-7_34"
+    }
+  },
+  {
+    "id": "doi:10.1080/15538362.2026.2701727",
+    "title": "Enhancing Fig Fruit Shelf Life Through Biopolymer-Based Coatings: Predicting Postharvest Quality Preservation Using an Advanced XG-Boost Machine Learning Approach",
+    "year": 2026,
+    "venue": "International Journal of Fruit Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:29Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1080/15538362.2026.2701727",
+      "crossref": "https://doi.org/10.1080/15538362.2026.2701727"
     }
   },
   {
@@ -3770,7 +4074,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2480-7_33",
@@ -3790,30 +4094,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s11483-026-10182-0",
       "crossref": "https://doi.org/10.1007/s11483-026-10182-0"
-    }
-  },
-  {
-    "id": "arxiv:2606.24976",
-    "title": "Diagnosing and Mitigating Compounding Failures in Agentic Persuasion via Taxonomic Strategy Retrieval",
-    "year": 2026,
-    "venue": "arXiv",
-    "abstract": "Foundation-model agents in multi-step, open-ended environments frequently suffer from compounding errors, where early mistakes contaminate long-horizon trajectories. While Multi-Agent Debate (MAD) succeeds in deterministic domains, agents in subjective tasks like persuasion experience severe problem drift and sycophantic conformity. We identify semantic leakage in standard Retrieval-Augmented Generation (RAG) as a reproducible trigger for these failures, as standard RAG prioritizes vocabulary overlap over logical necessity.\n  To eliminate this leakage, we introduce Taxonomic Strategy RAG (TS-R",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:10Z"
-    },
-    "links": {
-      "arxiv": "http://arxiv.org/abs/2606.24976v3"
     }
   },
   {
@@ -3829,7 +4114,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30710-1_34",
@@ -3844,12 +4129,12 @@
     "abstract": "The Circular Electron Positron Collider (CEPC) distributes a reference clock distributed to 192 control nodes along its 100~km underground tunnel. The required synchronization precision is 30~ps (standard deviation). We present an enhanced White Rabbit (WR)-based clock synchronization system designed to meet this requirement. A noise-budget analysis of the standard WR slave loop identifies the analog actuation chain (DAC + VCXO + multiplier PLL) and restart-induced timing uncertainty as the dominant limitations. In our redesigned node, the DAC+VCXO chain is replaced by a Si5345A DSPLL clock ge",
     "review": {
       "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
+      "stage": "nli",
+      "rule": null,
+      "score": 0.2176,
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "inspire": "https://inspirehep.net/literature/3167515",
@@ -3869,7 +4154,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-29127-1_3",
@@ -3889,7 +4174,7 @@
       "score": 0.0131,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "inspire": "https://inspirehep.net/literature/3176393",
@@ -3909,7 +4194,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s00138-026-01830-z",
@@ -3917,10 +4202,10 @@
     }
   },
   {
-    "id": "doi:10.1201/9781003611110-11",
-    "title": "Sarcasm Detection in Code-Mixed Social Media Posts",
+    "id": "doi:10.1007/978-981-92-2862-1_22",
+    "title": "CADPNet: Learning Dual Priors with Cross-Attention for Single Image Deraining",
     "year": 2026,
-    "venue": "Social Network Analytics",
+    "venue": "Lecture Notes in Computer Science",
     "abstract": "",
     "review": {
       "decision": "pending",
@@ -3929,11 +4214,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
-      "doi": "https://doi.org/10.1201/9781003611110-11",
-      "crossref": "https://doi.org/10.1201/9781003611110-11"
+      "doi": "https://doi.org/10.1007/978-981-92-2862-1_22",
+      "crossref": "https://doi.org/10.1007/978-981-92-2862-1_22"
     }
   },
   {
@@ -3949,7 +4234,7 @@
       "score": 0.1772,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.22493v1"
@@ -3968,7 +4253,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1080/2372966x.2026.2692334",
@@ -3988,17 +4273,17 @@
       "score": 0.1794,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.27481v1"
     }
   },
   {
-    "id": "doi:10.1080/10447318.2026.2695941",
-    "title": "When More Is Not Better: Effects of Multimodal Motor Imagery Guidance on EEG Discriminability in MI-BCI",
+    "id": "doi:10.1038/s41598-026-61736-8",
+    "title": "Integrating morphophysiology, gene expression and machine learning to characterize salt and drought stress responses in dragon fruit",
     "year": 2026,
-    "venue": "International Journal of Human–Computer Interaction",
+    "venue": "Scientific Reports",
     "abstract": "",
     "review": {
       "decision": "pending",
@@ -4007,11 +4292,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:29Z"
     },
     "links": {
-      "doi": "https://doi.org/10.1080/10447318.2026.2695941",
-      "crossref": "https://doi.org/10.1080/10447318.2026.2695941"
+      "doi": "https://doi.org/10.1038/s41598-026-61736-8",
+      "crossref": "https://doi.org/10.1038/s41598-026-61736-8"
     }
   },
   {
@@ -4027,7 +4312,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2369-5_34",
@@ -4047,7 +4332,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2497-5_31",
@@ -4067,7 +4352,7 @@
       "score": 0.3271,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2607.02484v1"
@@ -4086,7 +4371,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-981-92-2487-6_7",
@@ -4106,31 +4391,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/978-3-032-30384-4_2",
       "crossref": "https://doi.org/10.1007/978-3-032-30384-4_2"
-    }
-  },
-  {
-    "id": "doi:10.38124/ijisrt/26jun908",
-    "title": "Development of an Industrial PID Regulation Solution for the Thermal Safety of a Multi-Wire Drawing Machine",
-    "year": 2026,
-    "venue": "International Journal of Innovative Science and Research Technology",
-    "abstract": "<jats:p>Thermal control of multi-wire drawing processes is a strategic requirement in the automotive wiring industry,\ndue to its direct influence on conductor quality, tool durability and operational continuity.[1, 2]This study, carried out as\npart of an industrial project at COFICAB MED, introduces an automated solution based on PID regulation to control the\ntemperature of the lubricating emulsion used in the cooling of the wire drawing machine. The proposed architecture is based\non a Siemens S7-1200 PLC programmed under TIA Portal, using PT100 sensors connected to a 4–20 mA transmitter and\nc",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "detector_context",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.38124/ijisrt/26jun908",
-      "crossref": "https://doi.org/10.38124/ijisrt/26jun908"
     }
   },
   {
@@ -4146,10 +4411,30 @@
       "score": 0.0155,
       "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
       "model_revision": null,
-      "timestamp": "2026-07-11T06:02:50Z"
+      "timestamp": "2026-07-12T06:11:49Z"
     },
     "links": {
       "arxiv": "http://arxiv.org/abs/2606.12378v1"
+    }
+  },
+  {
+    "id": "doi:10.1007/978-981-92-2852-2_25",
+    "title": "Spatio-Temporal Semantic-Enhanced Contrastive Learning for Friend Recommendation",
+    "year": 2026,
+    "venue": "Lecture Notes in Computer Science",
+    "abstract": "",
+    "review": {
+      "decision": "pending",
+      "stage": "gate",
+      "rule": "empty_abstract",
+      "score": null,
+      "model": null,
+      "model_revision": null,
+      "timestamp": "2026-07-12T06:02:28Z"
+    },
+    "links": {
+      "doi": "https://doi.org/10.1007/978-981-92-2852-2_25",
+      "crossref": "https://doi.org/10.1007/978-981-92-2852-2_25"
     }
   },
   {
@@ -4165,7 +4450,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s11581-026-07361-x",
@@ -4185,51 +4470,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1038/s41598-026-60067-y",
       "crossref": "https://doi.org/10.1038/s41598-026-60067-y"
-    }
-  },
-  {
-    "id": "doi:10.1186/s12909-026-09855-8",
-    "title": "Comparing between face-to-face and mobile learning for improving nurses’ performance in premature infant positioning: a quasi-experimental study",
-    "year": 2026,
-    "venue": "BMC Medical Education",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1186/s12909-026-09855-8",
-      "crossref": "https://doi.org/10.1186/s12909-026-09855-8"
-    }
-  },
-  {
-    "id": "doi:10.1201/9781003611110-10",
-    "title": "Understanding and Detecting Online Homophobia and Transphobia in Low-Resource Indian Languages",
-    "year": 2026,
-    "venue": "Social Network Analytics",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1201/9781003611110-10",
-      "crossref": "https://doi.org/10.1201/9781003611110-10"
     }
   },
   {
@@ -4245,7 +4490,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1007/s13042-026-03193-3",
@@ -4265,51 +4510,11 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "doi": "https://doi.org/10.1037/stl0000489",
       "crossref": "https://doi.org/10.1037/stl0000489"
-    }
-  },
-  {
-    "id": "doi:10.1080/0960085x.2026.2693695",
-    "title": "Social comparison and coping under pressure: technostress in gamified digital learning environments",
-    "year": 2026,
-    "venue": "European Journal of Information Systems",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1080/0960085x.2026.2693695",
-      "crossref": "https://doi.org/10.1080/0960085x.2026.2693695"
-    }
-  },
-  {
-    "id": "doi:10.1038/s41539-026-00437-3",
-    "title": "The Role of Eye Movement Consistency in Aging-Related Decline in Face Recognition",
-    "year": 2026,
-    "venue": "npj Science of Learning",
-    "abstract": "",
-    "review": {
-      "decision": "pending",
-      "stage": "gate",
-      "rule": "empty_abstract",
-      "score": null,
-      "model": null,
-      "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
-    },
-    "links": {
-      "doi": "https://doi.org/10.1038/s41539-026-00437-3",
-      "crossref": "https://doi.org/10.1038/s41539-026-00437-3"
     }
   },
   {
@@ -4325,7 +4530,7 @@
       "score": null,
       "model": null,
       "model_revision": null,
-      "timestamp": "2026-07-11T05:55:11Z"
+      "timestamp": "2026-07-12T06:02:28Z"
     },
     "links": {
       "openalex": "https://openalex.org/W7166046164"
