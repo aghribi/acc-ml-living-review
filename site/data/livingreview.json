@@ -12,19 +12,19 @@
       "2018": 1,
       "2016": 4,
       "2000": 1,
-      "2026": 42
+      "2026": 43
     },
     "per_category": {
       "Tools & Libraries": 45,
       "Novel Applications": 184,
       "Statistics & Trends": 51,
       "Surrogate Models": 23,
-      "By Facility Type": 6,
+      "By Facility Type": 7,
       "RF Systems": 6,
       "Reinforcement Learning & Autonomous Systems": 29,
       "Operations & Control": 6,
       "Reviews": 3,
-      "Beamline Design & Simulation": 31,
+      "Beamline Design & Simulation": 32,
       "Beam Diagnostics": 13,
       "Beam Dynamics": 8,
       "Anomaly Detection & Fault Prediction": 21,
@@ -33,7 +33,7 @@
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 120,
+      "arXiv": 121,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 7,
@@ -79,12 +79,12 @@
       "Annals of Nuclear Energy": 1
     },
     "per_keyword": {
-      "optimization": 60,
+      "optimization": 61,
       "surrogate model": 18,
-      "beam": 133,
+      "beam": 134,
       "reinforcement learning": 30,
       "diagnostics": 30,
-      "control": 66,
+      "control": 67,
       "uncertainty quantification": 6,
       "deep learning": 23,
       "anomaly detection": 22,
@@ -170,10 +170,10 @@
       "2026-04": 7,
       "2026-05": 3,
       "2026-06": 3,
-      "2026-07": 1
+      "2026-07": 2
     },
-    "last_updated": "2026-07-12T06:12:07.477060+00:00",
-    "next_update": "2026-07-13T06:12:07.477060+00:00"
+    "last_updated": "2026-07-13T06:31:07.010781+00:00",
+    "next_update": "2026-07-14T06:31:07.010781+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -6124,7 +6124,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.376841276884079
+          "score": 0.3768412470817566
         }
       ],
       "keywords": [],
@@ -7200,11 +7200,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5018219947814941
+          "score": 0.5018219351768494
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.44352149963378906
+          "score": 0.4435214698314667
         }
       ],
       "keywords": [],
@@ -12742,6 +12742,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-07-12T06:01:47Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-07-13T06:22:05Z"
         }
       ],
       "history": [
@@ -12764,9 +12768,13 @@
         {
           "event": "merge",
           "at": "2026-07-12T06:01:47Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-13T06:22:05Z"
         }
       ],
-      "last_updated": "2026-07-12T06:01:47Z"
+      "last_updated": "2026-07-13T06:22:05Z"
     },
     "arxiv:2607.03895": {
       "id": "arxiv:2607.03895",
@@ -12873,6 +12881,18 @@
         {
           "source": "arxiv",
           "seen_at": "2026-07-12T05:59:06Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-13T06:18:17Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-13T06:18:43Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-13T06:18:53Z"
         }
       ],
       "history": [
@@ -12931,9 +12951,21 @@
         {
           "event": "merge",
           "at": "2026-07-12T06:01:40Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-13T06:21:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-13T06:21:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-13T06:21:58Z"
         }
       ],
-      "last_updated": "2026-07-12T06:01:40Z"
+      "last_updated": "2026-07-13T06:21:58Z"
     },
     "doi:10.3390/instruments10020033": {
       "id": "doi:10.3390/instruments10020033",
@@ -13002,6 +13034,131 @@
         }
       ],
       "last_updated": "2026-07-09T20:45:07Z"
+    },
+    "arxiv:2607.09457": {
+      "id": "arxiv:2607.09457",
+      "doi": null,
+      "arxiv_id": "2607.09457",
+      "inspire_id": "3179695",
+      "title": "Report on the Advanced Linear Collider Study Group (ALEGRO) Workshop 2026",
+      "authors": [
+        "L. Verra",
+        "P. Muggli",
+        "B. Cross",
+        "E. Adli",
+        "R. Babjak",
+        "T. Barklow",
+        "F. Bencivenga",
+        "C. Benedetti",
+        "C. Benedetti",
+        "M. Buscher",
+        "S. S. Bulanov",
+        "A. Caldwell",
+        "G. Chen",
+        "O. Chubenko",
+        "R. D'Arcy",
+        "S. Diederichs",
+        "K. Downham",
+        "J. Farmer",
+        "M. Ferrario",
+        "A. Ferran Pousa",
+        "A. Formenti",
+        "M. Fuchs",
+        "S. Gessner",
+        "L. Giannessi",
+        "Z. Gong",
+        "J. Grames",
+        "T. Grismayer",
+        "H. Jaworska",
+        "L. Ji",
+        "V. Kain",
+        "S. Karkare",
+        "A. Knetsch",
+        "C. Lindstrom",
+        "N. Lopes",
+        "N. Lopes",
+        "F. Massimo",
+        "C. Masciovecchio",
+        "P. Oliveira",
+        "T. Opferkuch",
+        "J. Osterhoff",
+        "J. Osterhoff",
+        "S. Pagan Griso",
+        "G. Penco",
+        "J. Power",
+        "A. Pukhov",
+        "T. P. Rakitzis",
+        "A. Rastogi",
+        "L. Reichwein",
+        "C. B. Schroeder",
+        "L. O. Silva",
+        "A. Sinn",
+        "D. Sofikitis",
+        "D. Storey",
+        "M. Thévenet",
+        "M. Trovò",
+        "M. Turner",
+        "M. Vranic",
+        "F. Willeke",
+        "T. Wilson",
+        "M. Wing",
+        "W. Zhang",
+        "Chuan Zheng"
+      ],
+      "abstract": "The 7th ALEGRO workshop, hosted by INFN Frascati National Laboratories from 3rd to 5th March 2026, brought together the international Advanced Novel Accelerators (ANA) community to discuss the role of advanced wakefield accelerators (AWA) in particle and high-energy physics. Organized under the ICFA-ANA panel, the workshop highlighted recent progress in plasma- and structure-based wakefield acceleration and strengthened international collaboration toward future energy-frontier colliders.\n  A major focus was the ongoing 10 TeV linear collider design study, launched in 2025 following the US P5 recommendations. A dedicated session covered accelerator concepts, enabling technologies, and the associated physics case, while recognizing that future priorities will depend on the outcome of the European Strategy for Particle Physics Update.\n  The workshop also reviewed nearer-term applications of advanced accelerators, including fixed-target experiments, injectors for future colliders and light sources, plasma-based Higgs factory concepts, and proton-driven plasma wakefield acceleration. Beyond high-energy physics, sessions covered free-electron lasers, synchrotron light sources, and strong-field QED. Recent demonstrations of FEL lasing with plasma-accelerated electron beams highlighted significant progress in beam quality and accelerator performance.\n  Operational challenges for reliable user facilities, including high-availability laser and electron-beam systems, were discussed alongside the growing role of artificial intelligence and machine learning for accelerator optimization and control.\n  This report summarizes the workshop discussions and conclusions from the chairs, together with short contributions from the presenters, providing an overview of the current status and future prospects of advanced wakefield accelerators.",
+      "date": "2026-07-10",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "By Facility Type",
+          "score": 0.5315805673599243
+        },
+        {
+          "label": "Beamline Design & Simulation",
+          "score": 0.5045680999755859
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [
+        "physics.acc-ph",
+        "hep-ex",
+        "hep-th",
+        "physics.plasm-ph"
+      ],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "gate",
+        "rule": "auto_accept:acc-ph",
+        "score": null,
+        "model": null,
+        "model_revision": null,
+        "timestamp": "2026-07-13T06:22:26Z"
+      },
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2607.09457v1",
+        "inspire": "https://inspirehep.net/literature/3179695"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-13T06:18:11Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-07-13T06:22:01Z"
+        }
+      ],
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-07-13T06:22:03Z"
+        }
+      ],
+      "last_updated": "2026-07-13T06:22:03Z"
     }
   }
 }
