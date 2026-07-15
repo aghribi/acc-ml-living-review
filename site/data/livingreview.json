@@ -33,7 +33,7 @@
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 121,
+      "arXiv": 120,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 7,
@@ -60,7 +60,7 @@
       "IPAC 2023 - 14th International Particle Accelerator Conference": 1,
       "MLPS 2023 - Machine Learning and the Physical Sciences Workshop 23023 - At the 37th conference on Neural Information Processing Systems (NeurIPS)": 1,
       "20th Advanced Accelerator Concepts Workshop (AAC’22)": 1,
-      "arXiv (Cornell University)": 3,
+      "arXiv (Cornell University)": 4,
       "JACOW": 10,
       "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
       "Machine Learning: Science and Technology": 1,
@@ -172,8 +172,8 @@
       "2026-06": 3,
       "2026-07": 2
     },
-    "last_updated": "2026-07-14T05:44:27.729583+00:00",
-    "next_update": "2026-07-15T05:44:27.729583+00:00"
+    "last_updated": "2026-07-15T05:46:15.950510+00:00",
+    "next_update": "2026-07-16T05:46:15.950510+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -12750,6 +12750,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-07-14T05:34:07Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-07-15T05:34:53Z"
         }
       ],
       "history": [
@@ -12780,9 +12784,13 @@
         {
           "event": "merge",
           "at": "2026-07-14T05:34:07Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-15T05:34:53Z"
         }
       ],
-      "last_updated": "2026-07-14T05:34:07Z"
+      "last_updated": "2026-07-15T05:34:53Z"
     },
     "arxiv:2607.03895": {
       "id": "arxiv:2607.03895",
@@ -12913,6 +12921,18 @@
         {
           "source": "arxiv",
           "seen_at": "2026-07-14T05:31:01Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-15T05:31:37Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-15T05:32:03Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-15T05:32:13Z"
         }
       ],
       "history": [
@@ -12995,9 +13015,21 @@
         {
           "event": "merge",
           "at": "2026-07-14T05:34:01Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-15T05:34:44Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-15T05:34:44Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-15T05:34:44Z"
         }
       ],
-      "last_updated": "2026-07-14T05:34:01Z"
+      "last_updated": "2026-07-15T05:34:44Z"
     },
     "doi:10.3390/instruments10020033": {
       "id": "doi:10.3390/instruments10020033",
@@ -13069,7 +13101,7 @@
     },
     "arxiv:2607.09457": {
       "id": "arxiv:2607.09457",
-      "doi": null,
+      "doi": "10.48550/arxiv.2607.09457",
       "arxiv_id": "2607.09457",
       "inspire_id": "3179695",
       "title": "Report on the Advanced Linear Collider Study Group (ALEGRO) Workshop 2026",
@@ -13140,8 +13172,8 @@
       "abstract": "The 7th ALEGRO workshop, hosted by INFN Frascati National Laboratories from 3rd to 5th March 2026, brought together the international Advanced Novel Accelerators (ANA) community to discuss the role of advanced wakefield accelerators (AWA) in particle and high-energy physics. Organized under the ICFA-ANA panel, the workshop highlighted recent progress in plasma- and structure-based wakefield acceleration and strengthened international collaboration toward future energy-frontier colliders.\n  A major focus was the ongoing 10 TeV linear collider design study, launched in 2025 following the US P5 recommendations. A dedicated session covered accelerator concepts, enabling technologies, and the associated physics case, while recognizing that future priorities will depend on the outcome of the European Strategy for Particle Physics Update.\n  The workshop also reviewed nearer-term applications of advanced accelerators, including fixed-target experiments, injectors for future colliders and light sources, plasma-based Higgs factory concepts, and proton-driven plasma wakefield acceleration. Beyond high-energy physics, sessions covered free-electron lasers, synchrotron light sources, and strong-field QED. Recent demonstrations of FEL lasing with plasma-accelerated electron beams highlighted significant progress in beam quality and accelerator performance.\n  Operational challenges for reliable user facilities, including high-availability laser and electron-beam systems, were discussed alongside the growing role of artificial intelligence and machine learning for accelerator optimization and control.\n  This report summarizes the workshop discussions and conclusions from the chairs, together with short contributions from the presenters, providing an overview of the current status and future prospects of advanced wakefield accelerators.",
       "date": "2026-07-10",
       "year": 2026,
-      "venue": "arXiv",
-      "status": "preprint",
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
       "categories": [
         {
           "label": "By Facility Type",
@@ -13172,7 +13204,8 @@
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2607.09457v1",
-        "inspire": "https://inspirehep.net/literature/3179695"
+        "inspire": "https://inspirehep.net/literature/3179695",
+        "openalex": "https://openalex.org/W7168127193"
       },
       "sources": [
         {
@@ -13190,6 +13223,18 @@
         {
           "source": "inspire",
           "seen_at": "2026-07-14T05:34:03Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-07-15T05:31:31Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-07-15T05:34:48Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-07-15T05:34:53Z"
         }
       ],
       "history": [
@@ -13204,9 +13249,21 @@
         {
           "event": "merge",
           "at": "2026-07-14T05:34:05Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-15T05:34:44Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-15T05:34:50Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-07-15T05:34:53Z"
         }
       ],
-      "last_updated": "2026-07-14T05:34:05Z"
+      "last_updated": "2026-07-15T05:34:53Z"
     }
   }
 }
