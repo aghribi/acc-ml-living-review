@@ -12,11 +12,11 @@
       "2018": 1,
       "2016": 4,
       "2000": 1,
-      "2026": 49
+      "2026": 50
     },
     "per_category": {
       "Tools & Libraries": 48,
-      "Novel Applications": 188,
+      "Novel Applications": 189,
       "Statistics & Trends": 51,
       "Surrogate Models": 24,
       "By Facility Type": 7,
@@ -28,7 +28,7 @@
       "Beam Diagnostics": 14,
       "Beam Dynamics": 8,
       "Anomaly Detection & Fault Prediction": 21,
-      "Data Management": 19,
+      "Data Management": 20,
       "Optimization & Control": 7
     },
     "per_venue/journal": {
@@ -78,17 +78,18 @@
       "Süleyman Demirel Üniversitesi Fen Edebiyat Fakültesi Fen Dergisi": 1,
       "Annals of Nuclear Energy": 1,
       "Discover Artificial Intelligence": 1,
-      "Zenodo (CERN European Organization for Nuclear Research)": 1
+      "Zenodo (CERN European Organization for Nuclear Research)": 1,
+      "EPJ Research Infrastructures": 1
     },
     "per_keyword": {
       "optimization": 62,
       "surrogate model": 18,
-      "beam": 138,
+      "beam": 139,
       "reinforcement learning": 31,
-      "diagnostics": 32,
+      "diagnostics": 33,
       "control": 68,
       "uncertainty quantification": 6,
-      "deep learning": 24,
+      "deep learning": 25,
       "anomaly detection": 22,
       "time series": 5,
       "GAN": 1,
@@ -172,10 +173,10 @@
       "2026-04": 7,
       "2026-05": 3,
       "2026-06": 3,
-      "2026-07": 8
+      "2026-07": 9
     },
-    "last_updated": "2026-08-01T06:11:58.430352+00:00",
-    "next_update": "2026-08-02T06:11:58.430352+00:00"
+    "last_updated": "2026-08-02T06:16:22.492720+00:00",
+    "next_update": "2026-08-03T06:16:22.492720+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -7529,7 +7530,7 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.39245593547821045
+          "score": 0.3924559950828552
         },
         {
           "label": "Novel Applications",
@@ -8544,7 +8545,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.44734686613082886
+          "score": 0.4473468065261841
         },
         {
           "label": "Beamline Design & Simulation",
@@ -13073,6 +13074,18 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-01T05:56:25Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:58:26Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:58:51Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:59:01Z"
         }
       ],
       "history": [
@@ -13351,9 +13364,21 @@
         {
           "event": "merge",
           "at": "2026-08-01T05:58:54Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
         }
       ],
-      "last_updated": "2026-08-01T05:58:54Z"
+      "last_updated": "2026-08-02T06:02:14Z"
     },
     "doi:10.3390/instruments10020033": {
       "id": "doi:10.3390/instruments10020033",
@@ -13743,6 +13768,18 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-01T05:59:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:58:20Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-02T06:02:16Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-02T06:02:21Z"
         }
       ],
       "history": [
@@ -13953,9 +13990,21 @@
         {
           "event": "merge",
           "at": "2026-08-01T05:59:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:19Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:21Z"
         }
       ],
-      "last_updated": "2026-08-01T05:59:02Z"
+      "last_updated": "2026-08-02T06:02:21Z"
     },
     "arxiv:2607.13791": {
       "id": "arxiv:2607.13791",
@@ -14127,6 +14176,14 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-01T05:55:50Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:58:23Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:58:26Z"
         }
       ],
       "history": [
@@ -14249,9 +14306,17 @@
         {
           "event": "merge",
           "at": "2026-08-01T05:58:54Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
         }
       ],
-      "last_updated": "2026-08-01T05:58:54Z"
+      "last_updated": "2026-08-02T06:02:14Z"
     },
     "doi:10.1007/s44163-026-01817-9": {
       "id": "doi:10.1007/s44163-026-01817-9",
@@ -14323,6 +14388,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-01T05:59:02Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-02T06:02:21Z"
         }
       ],
       "history": [
@@ -14349,9 +14418,13 @@
         {
           "event": "merge",
           "at": "2026-08-01T05:59:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:21Z"
         }
       ],
-      "last_updated": "2026-08-01T05:59:02Z"
+      "last_updated": "2026-08-02T06:02:21Z"
     },
     "doi:10.1007/s41365-026-02016-y": {
       "id": "doi:10.1007/s41365-026-02016-y",
@@ -14429,6 +14502,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-01T05:59:02Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-02T06:02:21Z"
         }
       ],
       "history": [
@@ -14455,9 +14532,13 @@
         {
           "event": "merge",
           "at": "2026-08-01T05:59:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:21Z"
         }
       ],
-      "last_updated": "2026-08-01T05:59:02Z"
+      "last_updated": "2026-08-02T06:02:21Z"
     },
     "arxiv:2607.24663": {
       "id": "arxiv:2607.24663",
@@ -14570,6 +14651,18 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-01T05:58:54Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:59:14Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:59:24Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T06:02:14Z"
         }
       ],
       "history": [
@@ -14628,9 +14721,21 @@
         {
           "event": "merge",
           "at": "2026-08-01T05:58:54Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
         }
       ],
-      "last_updated": "2026-08-01T05:58:54Z"
+      "last_updated": "2026-08-02T06:02:14Z"
     },
     "arxiv:2607.23377": {
       "id": "arxiv:2607.23377",
@@ -14710,6 +14815,14 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-01T05:58:56Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:59:40Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-02T06:02:16Z"
         }
       ],
       "history": [
@@ -14740,9 +14853,17 @@
         {
           "event": "merge",
           "at": "2026-08-01T05:59:00Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:19Z"
         }
       ],
-      "last_updated": "2026-08-01T05:59:00Z"
+      "last_updated": "2026-08-02T06:02:19Z"
     },
     "arxiv:2607.26697": {
       "id": "arxiv:2607.26697",
@@ -14836,6 +14957,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-01T05:58:56Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:58:20Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:58:26Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-02T05:58:29Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-02T06:02:16Z"
         }
       ],
       "history": [
@@ -14882,9 +15019,25 @@
         {
           "event": "merge",
           "at": "2026-08-01T05:59:00Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:19Z"
         }
       ],
-      "last_updated": "2026-08-01T05:59:00Z"
+      "last_updated": "2026-08-02T06:02:19Z"
     },
     "doi:10.5281/zenodo.21644177": {
       "id": "doi:10.5281/zenodo.21644177",
@@ -14938,6 +15091,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-01T05:59:02Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-02T06:02:21Z"
         }
       ],
       "history": [
@@ -14948,9 +15105,64 @@
         {
           "event": "merge",
           "at": "2026-08-01T05:59:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-02T06:02:21Z"
         }
       ],
-      "last_updated": "2026-08-01T05:59:02Z"
+      "last_updated": "2026-08-02T06:02:21Z"
+    },
+    "doi:10.1007/s41781-026-00171-w": {
+      "id": "doi:10.1007/s41781-026-00171-w",
+      "doi": "10.1007/s41781-026-00171-w",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Deep-Learning-Enhanced Beam Diagnostics and High-Resolution Image Denoising for Next-Generation Particle Accelerators",
+      "authors": [
+        "Francis Osswald",
+        "M. Chahbaoui",
+        "X. Liang"
+      ],
+      "abstract": "Next-generation particle accelerators demand advanced beam-diagnostic capabilities to ensure high performance, operational reliability, and sustainable machine operation. Increasing beam intensities and stored energies make the precise characterization of transverse profiles, phase-space distributions, and halos often five orders of magnitude below the core but with significant environmental impact essential for loss mitigation and machine protection. Traditional analysis methods struggle with the heterogeneous, noisy, and non-Gaussian data produced under realistic operating conditions. This work presents a novel tool based on an unsupervised deep-convolutional neural-network framework that significantly enhances image denoising and restoration for emittance measurements. Despite very low signal-to-noise ratios and small, non-annotated datasets, the approach preserves fine structures and reveals halo features previously unobserved. Built on a U-Net architecture with tailored early-stopping strategies and physics-informed metrics, the framework operates entirely on CPUs and requires minimal computational resources. The results demonstrate the potential of unsupervised deep learning as an enabling technology for high-dynamic-range beam diagnostics and motivate further development of systematic benchmarking and physics-informed learning strategies.",
+      "date": "2026-07-31",
+      "year": 2026,
+      "venue": "EPJ Research Infrastructures",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.44449323415756226
+        },
+        {
+          "label": "Data Management",
+          "score": 0.38406431674957275
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "nli",
+        "rule": null,
+        "score": 0.9884,
+        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "model_revision": null,
+        "timestamp": "2026-08-02T06:16:04Z"
+      },
+      "links": {
+        "openalex": "https://openalex.org/W7171992514"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-02T06:02:21Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-08-02T06:02:21Z"
     }
   }
 }
