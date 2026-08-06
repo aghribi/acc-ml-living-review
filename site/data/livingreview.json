@@ -12,11 +12,11 @@
       "2018": 1,
       "2016": 4,
       "2000": 1,
-      "2026": 51
+      "2026": 52
     },
     "per_category": {
-      "Tools & Libraries": 48,
-      "Novel Applications": 190,
+      "Tools & Libraries": 49,
+      "Novel Applications": 191,
       "Statistics & Trends": 51,
       "Surrogate Models": 24,
       "By Facility Type": 7,
@@ -33,7 +33,7 @@
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 124,
+      "arXiv": 123,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 7,
@@ -60,7 +60,7 @@
       "IPAC 2023 - 14th International Particle Accelerator Conference": 1,
       "MLPS 2023 - Machine Learning and the Physical Sciences Workshop 23023 - At the 37th conference on Neural Information Processing Systems (NeurIPS)": 1,
       "20th Advanced Accelerator Concepts Workshop (AAC’22)": 1,
-      "arXiv (Cornell University)": 4,
+      "arXiv (Cornell University)": 5,
       "JACOW": 10,
       "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
       "Machine Learning: Science and Technology": 1,
@@ -79,15 +79,15 @@
       "Annals of Nuclear Energy": 1,
       "Discover Artificial Intelligence": 1,
       "Zenodo (CERN European Organization for Nuclear Research)": 1,
-      "EPJ Research Infrastructures": 1
+      "EPJ Research Infrastructures": 2
     },
     "per_keyword": {
-      "optimization": 63,
+      "optimization": 64,
       "surrogate model": 18,
-      "beam": 140,
-      "reinforcement learning": 31,
+      "beam": 141,
+      "reinforcement learning": 32,
       "diagnostics": 33,
-      "control": 68,
+      "control": 69,
       "uncertainty quantification": 6,
       "deep learning": 25,
       "anomaly detection": 22,
@@ -174,10 +174,10 @@
       "2026-05": 3,
       "2026-06": 3,
       "2026-07": 9,
-      "2026-08": 1
+      "2026-08": 2
     },
-    "last_updated": "2026-08-05T06:11:00.705725+00:00",
-    "next_update": "2026-08-06T06:11:00.705725+00:00"
+    "last_updated": "2026-08-06T06:09:00.753857+00:00",
+    "next_update": "2026-08-07T06:09:00.753857+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -5936,11 +5936,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4303100109100342
+          "score": 0.43031007051467896
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3919859826564789
+          "score": 0.3919859528541565
         }
       ],
       "keywords": [],
@@ -11373,11 +11373,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.45498377084732056
+          "score": 0.4549838602542877
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.43693700432777405
+          "score": 0.4369369149208069
         }
       ],
       "keywords": [],
@@ -13841,6 +13841,18 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-05T05:49:51Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:49:16Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-06T05:52:30Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-06T05:52:35Z"
         }
       ],
       "history": [
@@ -14099,9 +14111,21 @@
         {
           "event": "merge",
           "at": "2026-08-05T05:49:51Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:26Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:33Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:35Z"
         }
       ],
-      "last_updated": "2026-08-05T05:49:51Z"
+      "last_updated": "2026-08-06T05:52:35Z"
     },
     "arxiv:2607.13791": {
       "id": "arxiv:2607.13791",
@@ -14305,6 +14329,14 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-05T05:46:35Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:49:19Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:49:22Z"
         }
       ],
       "history": [
@@ -14459,9 +14491,17 @@
         {
           "event": "merge",
           "at": "2026-08-05T05:49:41Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:26Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:26Z"
         }
       ],
-      "last_updated": "2026-08-05T05:49:41Z"
+      "last_updated": "2026-08-06T05:52:26Z"
     },
     "doi:10.1007/s44163-026-01817-9": {
       "id": "doi:10.1007/s44163-026-01817-9",
@@ -14549,6 +14589,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-05T05:49:51Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-06T05:52:35Z"
         }
       ],
       "history": [
@@ -14591,9 +14635,13 @@
         {
           "event": "merge",
           "at": "2026-08-05T05:49:51Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:35Z"
         }
       ],
-      "last_updated": "2026-08-05T05:49:51Z"
+      "last_updated": "2026-08-06T05:52:35Z"
     },
     "doi:10.1007/s41365-026-02016-y": {
       "id": "doi:10.1007/s41365-026-02016-y",
@@ -14687,6 +14735,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-05T05:49:51Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-06T05:52:35Z"
         }
       ],
       "history": [
@@ -14729,9 +14781,13 @@
         {
           "event": "merge",
           "at": "2026-08-05T05:49:51Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:35Z"
         }
       ],
-      "last_updated": "2026-08-05T05:49:51Z"
+      "last_updated": "2026-08-06T05:52:35Z"
     },
     "arxiv:2607.24663": {
       "id": "arxiv:2607.24663",
@@ -14892,6 +14948,18 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-05T05:49:41Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:50:10Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:50:23Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:52:26Z"
         }
       ],
       "history": [
@@ -14998,9 +15066,21 @@
         {
           "event": "merge",
           "at": "2026-08-05T05:49:42Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:26Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:27Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:27Z"
         }
       ],
-      "last_updated": "2026-08-05T05:49:42Z"
+      "last_updated": "2026-08-06T05:52:27Z"
     },
     "arxiv:2607.23377": {
       "id": "arxiv:2607.23377",
@@ -15112,6 +15192,14 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-05T05:49:45Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:50:36Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-06T05:52:30Z"
         }
       ],
       "history": [
@@ -15174,9 +15262,17 @@
         {
           "event": "merge",
           "at": "2026-08-05T05:49:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:27Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:33Z"
         }
       ],
-      "last_updated": "2026-08-05T05:49:48Z"
+      "last_updated": "2026-08-06T05:52:33Z"
     },
     "arxiv:2607.26697": {
       "id": "arxiv:2607.26697",
@@ -15334,6 +15430,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-05T05:49:45Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:49:16Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:49:22Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:49:26Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-06T05:52:30Z"
         }
       ],
       "history": [
@@ -15444,9 +15556,25 @@
         {
           "event": "merge",
           "at": "2026-08-05T05:49:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:26Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:26Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:26Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:33Z"
         }
       ],
-      "last_updated": "2026-08-05T05:49:48Z"
+      "last_updated": "2026-08-06T05:52:33Z"
     },
     "doi:10.5281/zenodo.21644177": {
       "id": "doi:10.5281/zenodo.21644177",
@@ -15516,6 +15644,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-05T05:49:51Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-06T05:52:35Z"
         }
       ],
       "history": [
@@ -15542,9 +15674,13 @@
         {
           "event": "merge",
           "at": "2026-08-05T05:49:51Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:35Z"
         }
       ],
-      "last_updated": "2026-08-05T05:49:51Z"
+      "last_updated": "2026-08-06T05:52:35Z"
     },
     "doi:10.1007/s41781-026-00171-w": {
       "id": "doi:10.1007/s41781-026-00171-w",
@@ -15604,6 +15740,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-05T05:49:51Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-06T05:52:35Z"
         }
       ],
       "history": [
@@ -15618,13 +15758,17 @@
         {
           "event": "merge",
           "at": "2026-08-05T05:49:51Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:35Z"
         }
       ],
-      "last_updated": "2026-08-05T05:49:51Z"
+      "last_updated": "2026-08-06T05:52:35Z"
     },
     "arxiv:2608.01874": {
       "id": "arxiv:2608.01874",
-      "doi": null,
+      "doi": "10.48550/arxiv.2608.01874",
       "arxiv_id": "2608.01874",
       "inspire_id": "3186455",
       "title": "Machine Learning Optimization of E-Beam Transport for a Superradiant FEL",
@@ -15637,8 +15781,8 @@
       "abstract": "We present an optimization procedure using machine learning (ML) libraries for optimization of electron beam transport for maximal bunch compression and optimal operation of a bunched-beam Superradiant FEL. This is exemplified for the parameters of the 6MeV ORGAD Accelerator at Ariel University that is driving a THz Superradiant waveguide FEL. For superradiant emission (proportionally to the number of electrons squared), the bunch duration $σ_t$ at the undulator should be shorter than the optical period (2$π/ω$) of the radiation. Also, the beam transport optimization must confine the transverse dimensions of the beam to enter the undulator waveguide. The variables of the ML Bayesian optimization are the RF parameters and the currents of the coils and quads along the beamline. The beam dimensions and duration are provided from full 3D GPT simulations that are automatically driven by the ML exploration and exploitation algorithms. Twenty-five simulation iterations sufficed to arrive to an optimal beam transport design.",
       "date": "2026-08-03",
       "year": 2026,
-      "venue": "arXiv",
-      "status": "preprint",
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
       "categories": [
         {
           "label": "Beamline Design & Simulation",
@@ -15666,7 +15810,8 @@
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2608.01874v1",
-        "inspire": "https://inspirehep.net/literature/3186455"
+        "inspire": "https://inspirehep.net/literature/3186455",
+        "openalex": "https://openalex.org/W7172388750"
       },
       "sources": [
         {
@@ -15688,6 +15833,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-05T05:49:45Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:49:16Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-06T05:49:29Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-06T05:52:30Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-06T05:52:35Z"
         }
       ],
       "history": [
@@ -15706,9 +15867,96 @@
         {
           "event": "merge",
           "at": "2026-08-05T05:49:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:26Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:26Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:33Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-06T05:52:35Z"
         }
       ],
-      "last_updated": "2026-08-05T05:49:48Z"
+      "last_updated": "2026-08-06T05:52:35Z"
+    },
+    "doi:10.1007/s41781-026-00175-6": {
+      "id": "doi:10.1007/s41781-026-00175-6",
+      "doi": "10.1007/s41781-026-00175-6",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Automating Accelerator Tuning at GSI/FAIR",
+      "authors": [
+        "Sabrina Appel",
+        "Hendrik Alsmeier",
+        "M. Bajzek",
+        "Oliver Boine‐Frankenheim",
+        "Lisa Dingeldein",
+        "Rolf Findeisen",
+        "Benjamin Halilović",
+        "Simon Hirlaender",
+        "Sebastian Hirt",
+        "Daniel Kallendorf",
+        "E. Kazantseva",
+        "O. Kazinova",
+        "Maximilian Kraeft",
+        "Eric Lenz",
+        "N. Madysa",
+        "A. Obertelli",
+        "Maik Pfefferkorn",
+        "S. Piétri",
+        "Christoph Reinwald",
+        "M. Schlaich",
+        "Stefan Sorge",
+        "H. Weick",
+        "F. Wienholtz"
+      ],
+      "abstract": "Abstract Automated accelerator tuning at GSI and FAIR is achieved using the Geoff framework. Geoff provides real-time optimization of beam parameters and experimental setups, supporting fast deployment and control room integration. It significantly improves performance, reducing SIS18 synchrotron injection losses from 45% to 12% and speeding up fragment separator setup using a classification algorithm. Advanced optimization strategies, such as multi-objective and multi-fidelity Bayesian optimization, were applied to SIS18 injection tuning, while model-predictive control implemented via model-driven reinforcement learning allows fast, constraint-aware adaptation. Using dedicated ion-source setups of the PUMA experiment at TU Darmstadt, automated control and optimization algorithms were used to optimize a hot-cathode electron source and a multi-reflection time-of-flight mass spectrometer, demonstrating the feasibility of real-time tuning of ion sources and particle traps. Geoff’s modular design facilitates easy integration of classical and machine-learning-based algorithms, bridging traditional accelerator operations with modern data-driven optimization.",
+      "date": "2026-08-04",
+      "year": 2026,
+      "venue": "EPJ Research Infrastructures",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.5157090425491333
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.48050859570503235
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "nli",
+        "rule": null,
+        "score": 0.9915,
+        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "model_revision": null,
+        "timestamp": "2026-08-06T06:08:35Z"
+      },
+      "links": {
+        "openalex": "https://openalex.org/W7172403552"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-06T05:52:35Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-08-06T05:52:35Z"
     }
   }
 }
