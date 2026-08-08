@@ -176,8 +176,8 @@
       "2026-07": 9,
       "2026-08": 2
     },
-    "last_updated": "2026-08-07T05:14:36.087170+00:00",
-    "next_update": "2026-08-08T05:14:36.087170+00:00"
+    "last_updated": "2026-08-08T04:31:36.584534+00:00",
+    "next_update": "2026-08-09T04:31:36.584534+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -13865,6 +13865,18 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:11:43Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-08T04:14:54Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-08T04:14:59Z"
         }
       ],
       "history": [
@@ -14147,9 +14159,21 @@
         {
           "event": "merge",
           "at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:15:00Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:24Z"
+      "last_updated": "2026-08-08T04:15:00Z"
     },
     "arxiv:2607.13791": {
       "id": "arxiv:2607.13791",
@@ -14369,6 +14393,14 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-07T04:55:08Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:11:46Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:11:49Z"
         }
       ],
       "history": [
@@ -14539,9 +14571,17 @@
         {
           "event": "merge",
           "at": "2026-08-07T04:58:16Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:16Z"
+      "last_updated": "2026-08-08T04:14:52Z"
     },
     "doi:10.1007/s44163-026-01817-9": {
       "id": "doi:10.1007/s44163-026-01817-9",
@@ -14637,6 +14677,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-08T04:14:59Z"
         }
       ],
       "history": [
@@ -14687,9 +14731,13 @@
         {
           "event": "merge",
           "at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:15:00Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:24Z"
+      "last_updated": "2026-08-08T04:15:00Z"
     },
     "doi:10.1007/s41365-026-02016-y": {
       "id": "doi:10.1007/s41365-026-02016-y",
@@ -14791,6 +14839,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-08T04:14:59Z"
         }
       ],
       "history": [
@@ -14841,9 +14893,13 @@
         {
           "event": "merge",
           "at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:59Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:24Z"
+      "last_updated": "2026-08-08T04:14:59Z"
     },
     "arxiv:2607.24663": {
       "id": "arxiv:2607.24663",
@@ -15028,6 +15084,18 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-07T04:58:16Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:12:37Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:12:51Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:14:52Z"
         }
       ],
       "history": [
@@ -15158,9 +15226,21 @@
         {
           "event": "merge",
           "at": "2026-08-07T04:58:17Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:17Z"
+      "last_updated": "2026-08-08T04:14:52Z"
     },
     "arxiv:2607.23377": {
       "id": "arxiv:2607.23377",
@@ -15288,6 +15368,14 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-07T04:58:19Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:13:04Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-08T04:14:54Z"
         }
       ],
       "history": [
@@ -15366,9 +15454,17 @@
         {
           "event": "merge",
           "at": "2026-08-07T04:58:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:58Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:22Z"
+      "last_updated": "2026-08-08T04:14:58Z"
     },
     "arxiv:2607.26697": {
       "id": "arxiv:2607.26697",
@@ -15558,6 +15654,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-07T04:58:19Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:11:43Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:11:49Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:11:52Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-08T04:14:54Z"
         }
       ],
       "history": [
@@ -15700,9 +15812,25 @@
         {
           "event": "merge",
           "at": "2026-08-07T04:58:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:58Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:22Z"
+      "last_updated": "2026-08-08T04:14:58Z"
     },
     "doi:10.5281/zenodo.21644177": {
       "id": "doi:10.5281/zenodo.21644177",
@@ -15780,6 +15908,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-08T04:14:59Z"
         }
       ],
       "history": [
@@ -15814,9 +15946,13 @@
         {
           "event": "merge",
           "at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:15:00Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:24Z"
+      "last_updated": "2026-08-08T04:15:00Z"
     },
     "doi:10.1007/s41781-026-00171-w": {
       "id": "doi:10.1007/s41781-026-00171-w",
@@ -15884,6 +16020,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-08T04:14:59Z"
         }
       ],
       "history": [
@@ -15906,9 +16046,13 @@
         {
           "event": "merge",
           "at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:15:00Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:24Z"
+      "last_updated": "2026-08-08T04:15:00Z"
     },
     "arxiv:2608.01874": {
       "id": "arxiv:2608.01874",
@@ -16009,6 +16153,22 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:11:43Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-08T04:11:56Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-08T04:14:54Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-08T04:14:59Z"
         }
       ],
       "history": [
@@ -16059,15 +16219,31 @@
         {
           "event": "merge",
           "at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:15:00Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:24Z"
+      "last_updated": "2026-08-08T04:15:00Z"
     },
     "doi:10.1007/s41781-026-00175-6": {
       "id": "doi:10.1007/s41781-026-00175-6",
       "doi": "10.1007/s41781-026-00175-6",
       "arxiv_id": null,
-      "inspire_id": null,
+      "inspire_id": "3188428",
       "title": "Automating Accelerator Tuning at GSI/FAIR",
       "authors": [
         "Sabrina Appel",
@@ -16123,7 +16299,9 @@
         "timestamp": "2026-08-06T06:08:35Z"
       },
       "links": {
-        "openalex": "https://openalex.org/W7172403552"
+        "openalex": "https://openalex.org/W7172403552",
+        "inspire": "https://inspirehep.net/literature/3188428",
+        "doi": "https://doi.org/10.1007/s41781-026-00175-6"
       },
       "sources": [
         {
@@ -16133,15 +16311,31 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-08T04:14:54Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-08T04:14:59Z"
         }
       ],
       "history": [
         {
           "event": "merge",
           "at": "2026-08-07T04:58:24Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:14:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-08T04:15:00Z"
         }
       ],
-      "last_updated": "2026-08-07T04:58:24Z"
+      "last_updated": "2026-08-08T04:15:00Z"
     }
   }
 }
