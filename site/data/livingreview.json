@@ -12,11 +12,11 @@
       "2018": 1,
       "2016": 4,
       "2000": 1,
-      "2026": 52
+      "2026": 54
     },
     "per_category": {
-      "Tools & Libraries": 49,
-      "Novel Applications": 191,
+      "Tools & Libraries": 50,
+      "Novel Applications": 192,
       "Statistics & Trends": 51,
       "Surrogate Models": 24,
       "By Facility Type": 7,
@@ -27,13 +27,13 @@
       "Beamline Design & Simulation": 33,
       "Beam Diagnostics": 14,
       "Beam Dynamics": 8,
-      "Anomaly Detection & Fault Prediction": 21,
+      "Anomaly Detection & Fault Prediction": 22,
       "Data Management": 20,
       "Optimization & Control": 7
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 123,
+      "arXiv": 125,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 7,
@@ -89,8 +89,8 @@
       "diagnostics": 33,
       "control": 69,
       "uncertainty quantification": 6,
-      "deep learning": 25,
-      "anomaly detection": 22,
+      "deep learning": 26,
+      "anomaly detection": 23,
       "time series": 5,
       "GAN": 1,
       "cloud": 5,
@@ -174,10 +174,10 @@
       "2026-05": 3,
       "2026-06": 3,
       "2026-07": 9,
-      "2026-08": 2
+      "2026-08": 4
     },
-    "last_updated": "2026-08-16T04:15:30.230625+00:00",
-    "next_update": "2026-08-17T04:15:30.230625+00:00"
+    "last_updated": "2026-08-17T04:19:46.314943+00:00",
+    "next_update": "2026-08-18T04:19:46.314943+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -1917,11 +1917,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.539810061454773
+          "score": 0.5398100018501282
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.4896240830421448
+          "score": 0.48962411284446716
         }
       ],
       "keywords": [],
@@ -3075,11 +3075,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.44307178258895874
+          "score": 0.44307172298431396
         },
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4313000440597534
+          "score": 0.43130001425743103
         }
       ],
       "keywords": [],
@@ -5886,7 +5886,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.5227475166320801
+          "score": 0.5227476358413696
         }
       ],
       "keywords": [],
@@ -6233,11 +6233,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.44294989109039307
+          "score": 0.4429498314857483
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.3545875549316406
+          "score": 0.354587584733963
         }
       ],
       "keywords": [],
@@ -14833,6 +14833,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-17T03:54:03Z"
         }
       ],
       "history": [
@@ -14919,9 +14923,13 @@
         {
           "event": "merge",
           "at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:03Z"
         }
       ],
-      "last_updated": "2026-08-16T03:52:08Z"
+      "last_updated": "2026-08-17T03:54:03Z"
     },
     "doi:10.1007/s41365-026-02016-y": {
       "id": "doi:10.1007/s41365-026-02016-y",
@@ -15059,6 +15067,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-17T03:54:03Z"
         }
       ],
       "history": [
@@ -15145,9 +15157,13 @@
         {
           "event": "merge",
           "at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:03Z"
         }
       ],
-      "last_updated": "2026-08-16T03:52:08Z"
+      "last_updated": "2026-08-17T03:54:03Z"
     },
     "arxiv:2607.24663": {
       "id": "arxiv:2607.24663",
@@ -15440,6 +15456,18 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-16T03:51:57Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:51:35Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:51:48Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:53:52Z"
         }
       ],
       "history": [
@@ -15678,9 +15706,21 @@
         {
           "event": "merge",
           "at": "2026-08-16T03:51:57Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
         }
       ],
-      "last_updated": "2026-08-16T03:51:57Z"
+      "last_updated": "2026-08-17T03:53:52Z"
     },
     "arxiv:2607.23377": {
       "id": "arxiv:2607.23377",
@@ -15880,6 +15920,14 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-16T03:52:01Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:52:02Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-17T03:53:56Z"
         }
       ],
       "history": [
@@ -16030,9 +16078,17 @@
         {
           "event": "merge",
           "at": "2026-08-16T03:52:05Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:00Z"
         }
       ],
-      "last_updated": "2026-08-16T03:52:05Z"
+      "last_updated": "2026-08-17T03:54:00Z"
     },
     "arxiv:2607.26697": {
       "id": "arxiv:2607.26697",
@@ -16366,6 +16422,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-16T03:52:01Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:50:39Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:50:45Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:50:49Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-17T03:53:56Z"
         }
       ],
       "history": [
@@ -16652,9 +16724,25 @@
         {
           "event": "merge",
           "at": "2026-08-16T03:52:05Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:00Z"
         }
       ],
-      "last_updated": "2026-08-16T03:52:05Z"
+      "last_updated": "2026-08-17T03:54:00Z"
     },
     "doi:10.5281/zenodo.21644177": {
       "id": "doi:10.5281/zenodo.21644177",
@@ -16768,6 +16856,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-17T03:54:03Z"
         }
       ],
       "history": [
@@ -16838,9 +16930,13 @@
         {
           "event": "merge",
           "at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:03Z"
         }
       ],
-      "last_updated": "2026-08-16T03:52:08Z"
+      "last_updated": "2026-08-17T03:54:03Z"
     },
     "doi:10.1007/s41781-026-00171-w": {
       "id": "doi:10.1007/s41781-026-00171-w",
@@ -16944,6 +17040,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-17T03:54:03Z"
         }
       ],
       "history": [
@@ -17002,9 +17102,13 @@
         {
           "event": "merge",
           "at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:03Z"
         }
       ],
-      "last_updated": "2026-08-16T03:52:08Z"
+      "last_updated": "2026-08-17T03:54:03Z"
     },
     "arxiv:2608.01874": {
       "id": "arxiv:2608.01874",
@@ -17249,6 +17353,22 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:50:39Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:50:52Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-17T03:53:56Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-17T03:54:03Z"
         }
       ],
       "history": [
@@ -17443,9 +17563,25 @@
         {
           "event": "merge",
           "at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:00Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:03Z"
         }
       ],
-      "last_updated": "2026-08-16T03:52:08Z"
+      "last_updated": "2026-08-17T03:54:03Z"
     },
     "doi:10.1007/s41781-026-00175-6": {
       "id": "doi:10.1007/s41781-026-00175-6",
@@ -17591,6 +17727,14 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-17T03:53:56Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-17T03:54:03Z"
         }
       ],
       "history": [
@@ -17669,9 +17813,158 @@
         {
           "event": "merge",
           "at": "2026-08-16T03:52:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:00Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:03Z"
         }
       ],
-      "last_updated": "2026-08-16T03:52:08Z"
+      "last_updated": "2026-08-17T03:54:03Z"
+    },
+    "arxiv:2608.14247": {
+      "id": "arxiv:2608.14247",
+      "doi": null,
+      "arxiv_id": "2608.14247",
+      "inspire_id": "3191228",
+      "title": "Particle tracking with physics-informed deep learning methods",
+      "authors": [
+        "Matthias Remta",
+        "Anja Beck",
+        "Shanthalakshmi Kilambi",
+        "Thomas Zhang",
+        "Francesco Velotti"
+      ],
+      "abstract": "Simulating the motion of charged particles in electromagnetic fields is essential for designing and optimising particle accelerators. Conventional tools rely on symplectic integration schemes, which provide high accuracy but are computationally expensive. As a consequence, optimisation in moderate to high-dimensional parameter spaces as well as simulations of tens of thousands to millions of particles can be computationally prohibitive. This contribution explores the possibilities of employing modern machine-learning based tools, in particular SympNet and DeepONet, to enable fast particle simulations. A major novelty is the modification of the conventional SympNet architecture to enable learning of parametric Hamiltonian dynamics. The models are trained and tested on a toy setup of a circular accelerator comprising two different types of quadrupole magnets with varying field strengths. All models achieved faster inference than the symplectic integrator, at the expanse of significantly reduced accuracy. The SympNet implementation achieved the lowest mean squared error. Additionally, a DeepONet was employed to predict the evolution of particle densities, derived from the single-particle simulations.",
+      "date": "2026-08-14",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Novel Applications",
+          "score": 0.5130429863929749
+        },
+        {
+          "label": "Tools & Libraries",
+          "score": 0.4576239585876465
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [
+        "physics.acc-ph"
+      ],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "gate",
+        "rule": "auto_accept:acc-ph",
+        "score": null,
+        "model": null,
+        "model_revision": null,
+        "timestamp": "2026-08-17T03:58:33Z"
+      },
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2608.14247v1",
+        "inspire": "https://inspirehep.net/literature/3191228"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:50:39Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:50:42Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:51:15Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-17T03:53:56Z"
+        }
+      ],
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:54:00Z"
+        }
+      ],
+      "last_updated": "2026-08-17T03:54:00Z"
+    },
+    "arxiv:2608.13652": {
+      "id": "arxiv:2608.13652",
+      "doi": null,
+      "arxiv_id": "2608.13652",
+      "inspire_id": null,
+      "title": "Contrastive Learning for Interpretable Anomaly Detection at Collider Experiments",
+      "authors": [
+        "Haoyi Jia",
+        "Sagar Addepalli",
+        "Julia Gonski"
+      ],
+      "abstract": "Generic event-level anomaly detection for collider physics has two recurring problems: anomaly scores are hard to interpret, and they correlate strongly with energy scale and object multiplicity. We present Organized Representation via Contrastive learning for Anomaly detection (ORCA), a two-stage framework that first learns an embedding space via supervised contrastive learning across a diverse set of physics processes, then runs a standard autoencoder in that space to generate event-level anomaly scores. On a simulated dataset consistent with conditions at the High-Luminosity Large Hadron Collider, ORCA delivers significant gains in both breadth and depth of sensitivity to new physics signals with respect to a baseline autoencoder architecture. Beyond improved sensitivity, the contrastive embedding makes the anomalous sample interpretable: because known processes occupy distinct regions of the space, a maximum-likelihood template fit to the embedding distributions can attribute events in an anomalous sample to template physics processes with quantified uncertainties. We demonstrate that the fit accurately recovers injected signal yields, including for signals excluded from the training of the embedding, and characterizes signals absent from the template library through the known processes they most resemble. These results establish ORCA as a route to interpretable anomaly detection-based searches at colliders, where the embedding geometry carries higher dimensional physics information compared to standard one-dimensional output fits, enhancing downstream statistical analysis.",
+      "date": "2026-08-13",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Anomaly Detection & Fault Prediction",
+          "score": 0.31023961305618286
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [
+        "cs.LG",
+        "hep-ex",
+        "hep-ph"
+      ],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "nli",
+        "rule": null,
+        "score": 0.9775,
+        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "model_revision": null,
+        "timestamp": "2026-08-17T04:19:22Z"
+      },
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2608.13652v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:52:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-17T03:52:31Z"
+        }
+      ],
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-08-17T03:53:52Z"
+        }
+      ],
+      "last_updated": "2026-08-17T03:53:52Z"
     }
   }
 }
