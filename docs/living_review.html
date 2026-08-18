@@ -1048,7 +1048,7 @@ centralized ensures consistency between different modules
 <h4>Typical Usage<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review</span><span class="w"> </span><span class="kn">import</span> <span class="n">config</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">config</span><span class="o">.</span><span class="n">ACCEL_KEYWORDS</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
-<span class="go">[&#39;accelerator&#39;, &#39;linac&#39;, &#39;synchrotron&#39;, &#39;collider&#39;, &#39;storage ring&#39;]</span>
+<span class="go">['accelerator', 'linac', 'synchrotron', 'collider', 'storage ring']</span>
 </pre></div>
 </div>
 </section>
@@ -1232,14 +1232,14 @@ guaranteeing a stable round-trip between memory and storage.</p></li>
 <section id="id4">
 <h4>Typical Usage<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.data_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Paper</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">raw</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;AI for Beam Dynamics&quot;</span><span class="p">,</span> <span class="s2">&quot;authors&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A. Researcher&quot;</span><span class="p">],</span>
-<span class="gp">... </span>       <span class="s2">&quot;arxiv_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1234.5678&quot;</span><span class="p">,</span> <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;arxiv&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">raw</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"title"</span><span class="p">:</span> <span class="s2">"AI for Beam Dynamics"</span><span class="p">,</span> <span class="s2">"authors"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"A. Researcher"</span><span class="p">],</span>
+<span class="gp">... </span>       <span class="s2">"arxiv_id"</span><span class="p">:</span> <span class="s2">"1234.5678"</span><span class="p">,</span> <span class="s2">"source"</span><span class="p">:</span> <span class="s2">"arxiv"</span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Paper</span><span class="o">.</span><span class="n">from_source</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">key_for_dedup</span><span class="p">()</span>
-<span class="go">(&#39;1234.5678&#39;, &#39;&#39;, &#39;ai for beam dynamics&#39;)</span>
+<span class="go">('1234.5678', '', 'ai for beam dynamics')</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Paper</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">.</span><span class="n">id</span>
-<span class="go">&#39;arxiv:1234.5678&#39;</span>
+<span class="go">'arxiv:1234.5678'</span>
 </pre></div>
 </div>
 </section>
@@ -1742,9 +1742,9 @@ Used by Hugo templates, Decap CMS, and downstream visualisations.</p>
 <section id="id25">
 <h4>Typical Usage<a class="headerlink" href="#id25" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.exporters</span><span class="w"> </span><span class="kn">import</span> <span class="n">export_json</span><span class="p">,</span> <span class="n">export_bibtex</span><span class="p">,</span> <span class="n">export_pdf</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">export_json</span><span class="p">(</span><span class="n">papers</span><span class="p">,</span> <span class="n">stats</span><span class="p">,</span> <span class="n">outdir</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">export_bibtex</span><span class="p">(</span><span class="n">papers</span><span class="p">,</span> <span class="n">outdir</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">export_pdf</span><span class="p">(</span><span class="n">papers</span><span class="p">,</span> <span class="n">stats</span><span class="p">,</span> <span class="n">outdir</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">export_json</span><span class="p">(</span><span class="n">papers</span><span class="p">,</span> <span class="n">stats</span><span class="p">,</span> <span class="n">outdir</span><span class="o">=</span><span class="s2">"."</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">export_bibtex</span><span class="p">(</span><span class="n">papers</span><span class="p">,</span> <span class="n">outdir</span><span class="o">=</span><span class="s2">"."</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">export_pdf</span><span class="p">(</span><span class="n">papers</span><span class="p">,</span> <span class="n">stats</span><span class="p">,</span> <span class="n">outdir</span><span class="o">=</span><span class="s2">"."</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -2018,9 +2018,9 @@ exponential backoff.</p>
 <section id="id28">
 <h4>Typical Usage<a class="headerlink" href="#id28" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review</span><span class="w"> </span><span class="kn">import</span> <span class="n">logs</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">logs</span><span class="o">.</span><span class="n">append_scan_log</span><span class="p">(</span><span class="s2">&quot;logs&quot;</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">npapers</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">logs</span><span class="o">.</span><span class="n">log_error</span><span class="p">(</span><span class="s2">&quot;logs&quot;</span><span class="p">,</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Something went wrong&quot;</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">last</span> <span class="o">=</span> <span class="n">logs</span><span class="o">.</span><span class="n">get_last_scan</span><span class="p">(</span><span class="s2">&quot;logs&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">logs</span><span class="o">.</span><span class="n">append_scan_log</span><span class="p">(</span><span class="s2">"logs"</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">npapers</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">logs</span><span class="o">.</span><span class="n">log_error</span><span class="p">(</span><span class="s2">"logs"</span><span class="p">,</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">"Something went wrong"</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">last</span> <span class="o">=</span> <span class="n">logs</span><span class="o">.</span><span class="n">get_last_scan</span><span class="p">(</span><span class="s2">"logs"</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -2162,8 +2162,8 @@ in the exported JSON/HTML outputs.</p>
 <h4>Typical Usage<a class="headerlink" href="#id30" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">compute_stats</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">stats</span> <span class="o">=</span> <span class="n">compute_stats</span><span class="p">(</span><span class="n">papers</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">stats</span><span class="p">[</span><span class="s2">&quot;per_year&quot;</span><span class="p">]</span>
-<span class="go">{&#39;2024&#39;: 15, &#39;2025&#39;: 7}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stats</span><span class="p">[</span><span class="s2">"per_year"</span><span class="p">]</span>
+<span class="go">{'2024': 15, '2025': 7}</span>
 </pre></div>
 </div>
 </section>
@@ -2218,10 +2218,10 @@ in the exported JSON/HTML outputs.</p>
 <section id="id32">
 <h4>Typical Usage<a class="headerlink" href="#id32" title="Link to this heading"></a></h4>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">living_review.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">norm_doi</span><span class="p">,</span> <span class="n">simplify_title</span><span class="p">,</span> <span class="n">within_range</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">norm_doi</span><span class="p">(</span><span class="s2">&quot;https://doi.org/10.1103/PhysRevLett.123.456&quot;</span><span class="p">)</span>
-<span class="go">&#39;10.1103/physrevlett.123.456&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">simplify_title</span><span class="p">(</span><span class="s2">&quot;A </span><span class="si">{LaTeX}</span><span class="s2"> Example: On $</span><span class="se">\a</span><span class="s2">lpha$-decay&quot;</span><span class="p">)</span>
-<span class="go">&#39;a latex example on alpha decay&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">norm_doi</span><span class="p">(</span><span class="s2">"https://doi.org/10.1103/PhysRevLett.123.456"</span><span class="p">)</span>
+<span class="go">'10.1103/physrevlett.123.456'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">simplify_title</span><span class="p">(</span><span class="s2">"A </span><span class="si">{LaTeX}</span><span class="s2"> Example: On $</span><span class="se">\a</span><span class="s2">lpha$-decay"</span><span class="p">)</span>
+<span class="go">'a latex example on alpha decay'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">within_range</span><span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2025</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>
 <span class="go">True</span>
 </pre></div>
