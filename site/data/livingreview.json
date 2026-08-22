@@ -176,8 +176,8 @@
       "2026-07": 9,
       "2026-08": 6
     },
-    "last_updated": "2026-08-21T04:18:33.682130+00:00",
-    "next_update": "2026-08-22T04:18:33.682130+00:00"
+    "last_updated": "2026-08-22T04:12:36.441276+00:00",
+    "next_update": "2026-08-23T04:12:36.441276+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -11115,7 +11115,8 @@
       "links": {
         "inspire": "https://inspirehep.net/literature/3119552",
         "doi": "https://doi.org/10.18429/JACoW-NAPAC2025-MOP056",
-        "arxiv": "http://arxiv.org/abs/2608.17820v1"
+        "arxiv": "http://arxiv.org/abs/2608.17820v1",
+        "openalex": "https://openalex.org/W7203769833"
       },
       "sources": [
         {
@@ -11141,6 +11142,18 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-21T03:54:40Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:42:25Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-22T03:45:52Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-22T03:46:00Z"
         }
       ],
       "history": [
@@ -11163,9 +11176,21 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:43Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:57Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:46:00Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:43Z"
+      "last_updated": "2026-08-22T03:46:00Z"
     },
     "doi:10.18429/jacow-napac2025-mop065": {
       "id": "doi:10.18429/jacow-napac2025-mop065",
@@ -14897,6 +14922,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-22T03:46:00Z"
         }
       ],
       "history": [
@@ -15003,9 +15032,13 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:46:00Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:47Z"
+      "last_updated": "2026-08-22T03:46:00Z"
     },
     "doi:10.1007/s41365-026-02016-y": {
       "id": "doi:10.1007/s41365-026-02016-y",
@@ -15163,6 +15196,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-22T03:46:00Z"
         }
       ],
       "history": [
@@ -15269,9 +15306,13 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:46:00Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:47Z"
+      "last_updated": "2026-08-22T03:46:00Z"
     },
     "arxiv:2607.24663": {
       "id": "arxiv:2607.24663",
@@ -15624,6 +15665,18 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-21T03:54:37Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:43:21Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:43:38Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:45:48Z"
         }
       ],
       "history": [
@@ -15922,9 +15975,21 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:37Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:37Z"
+      "last_updated": "2026-08-22T03:45:48Z"
     },
     "arxiv:2607.23377": {
       "id": "arxiv:2607.23377",
@@ -16164,6 +16229,14 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-21T03:54:40Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:43:47Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-22T03:45:52Z"
         }
       ],
       "history": [
@@ -16354,9 +16427,17 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:43Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:57Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:43Z"
+      "last_updated": "2026-08-22T03:45:57Z"
     },
     "arxiv:2607.26697": {
       "id": "arxiv:2607.26697",
@@ -16770,6 +16851,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-21T03:54:40Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:42:25Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:42:32Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:42:35Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-22T03:45:52Z"
         }
       ],
       "history": [
@@ -17136,9 +17233,25 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:43Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:57Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:43Z"
+      "last_updated": "2026-08-22T03:45:57Z"
     },
     "doi:10.5281/zenodo.21644177": {
       "id": "doi:10.5281/zenodo.21644177",
@@ -17272,6 +17385,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-22T03:46:00Z"
         }
       ],
       "history": [
@@ -17362,9 +17479,13 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:46:00Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:47Z"
+      "last_updated": "2026-08-22T03:46:00Z"
     },
     "doi:10.1007/s41781-026-00171-w": {
       "id": "doi:10.1007/s41781-026-00171-w",
@@ -17488,6 +17609,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-22T03:46:00Z"
         }
       ],
       "history": [
@@ -17566,9 +17691,13 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:46:00Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:47Z"
+      "last_updated": "2026-08-22T03:46:00Z"
     },
     "arxiv:2608.01874": {
       "id": "arxiv:2608.01874",
@@ -17893,6 +18022,22 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:42:25Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:42:38Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-22T03:45:52Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-22T03:46:00Z"
         }
       ],
       "history": [
@@ -18167,9 +18312,25 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:57Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:46:00Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:47Z"
+      "last_updated": "2026-08-22T03:46:00Z"
     },
     "doi:10.1007/s41781-026-00175-6": {
       "id": "doi:10.1007/s41781-026-00175-6",
@@ -18355,6 +18516,14 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-22T03:45:52Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-22T03:46:00Z"
         }
       ],
       "history": [
@@ -18473,9 +18642,17 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:57Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:46:00Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:47Z"
+      "last_updated": "2026-08-22T03:46:00Z"
     },
     "arxiv:2608.14247": {
       "id": "arxiv:2608.14247",
@@ -18617,6 +18794,26 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:42:25Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:42:28Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:43:01Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-22T03:45:52Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-22T03:46:00Z"
         }
       ],
       "history": [
@@ -18707,9 +18904,29 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:47Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:57Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:46:00Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:47Z"
+      "last_updated": "2026-08-22T03:46:00Z"
     },
     "arxiv:2608.13652": {
       "id": "arxiv:2608.13652",
@@ -18793,6 +19010,14 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-21T03:53:18Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:43:47Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:44:17Z"
         }
       ],
       "history": [
@@ -18831,9 +19056,17 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:37Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:37Z"
+      "last_updated": "2026-08-22T03:45:48Z"
     },
     "arxiv:2608.15272": {
       "id": "arxiv:2608.15272",
@@ -18910,6 +19143,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-21T03:52:10Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:43:08Z"
         }
       ],
       "history": [
@@ -18924,9 +19161,13 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:37Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:37Z"
+      "last_updated": "2026-08-22T03:45:48Z"
     },
     "arxiv:2608.17119": {
       "id": "arxiv:2608.17119",
@@ -18988,6 +19229,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-21T03:51:42Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-22T03:42:38Z"
         }
       ],
       "history": [
@@ -18998,9 +19243,13 @@
         {
           "event": "merge",
           "at": "2026-08-21T03:54:37Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-22T03:45:48Z"
         }
       ],
-      "last_updated": "2026-08-21T03:54:37Z"
+      "last_updated": "2026-08-22T03:45:48Z"
     }
   }
 }
