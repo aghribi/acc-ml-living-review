@@ -12,11 +12,11 @@
       "2018": 1,
       "2016": 4,
       "2000": 1,
-      "2026": 59
+      "2026": 61
     },
     "per_category": {
       "Tools & Libraries": 52,
-      "Novel Applications": 194,
+      "Novel Applications": 196,
       "Statistics & Trends": 51,
       "Surrogate Models": 26,
       "By Facility Type": 8,
@@ -24,11 +24,11 @@
       "Reinforcement Learning & Autonomous Systems": 30,
       "Operations & Control": 6,
       "Reviews": 3,
-      "Beamline Design & Simulation": 34,
+      "Beamline Design & Simulation": 35,
       "Beam Diagnostics": 15,
       "Beam Dynamics": 8,
       "Anomaly Detection & Fault Prediction": 22,
-      "Data Management": 21,
+      "Data Management": 22,
       "Optimization & Control": 7
     },
     "per_venue/journal": {
@@ -52,7 +52,7 @@
       "JACoW": 26,
       "Instruments": 2,
       "CERN Yellow Rep.School Proc.": 1,
-      "InspireHEP": 2,
+      "InspireHEP": 3,
       "Sci.Rep.": 1,
       "Laboratoire Interdisciplinaire des Sciences du Numérique": 1,
       "10th International Particle Accelerator Conference": 1,
@@ -79,12 +79,13 @@
       "Annals of Nuclear Energy": 1,
       "Discover Artificial Intelligence": 1,
       "Zenodo (CERN European Organization for Nuclear Research)": 1,
-      "EPJ Research Infrastructures": 2
+      "EPJ Research Infrastructures": 2,
+      "KITopen": 1
     },
     "per_keyword": {
-      "optimization": 65,
+      "optimization": 66,
       "surrogate model": 18,
-      "beam": 144,
+      "beam": 146,
       "reinforcement learning": 32,
       "diagnostics": 33,
       "control": 69,
@@ -174,10 +175,10 @@
       "2026-05": 3,
       "2026-06": 3,
       "2026-07": 9,
-      "2026-08": 9
+      "2026-08": 11
     },
-    "last_updated": "2026-08-26T04:29:22.259610+00:00",
-    "next_update": "2026-08-27T04:29:22.259610+00:00"
+    "last_updated": "2026-08-27T14:23:08.820487+00:00",
+    "next_update": "2026-08-28T14:23:08.820487+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -7755,11 +7756,11 @@
       "categories": [
         {
           "label": "Beam Diagnostics",
-          "score": 0.4344249367713928
+          "score": 0.43442502617836
         },
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.41883790493011475
+          "score": 0.41883784532546997
         },
         {
           "label": "Tools & Libraries",
@@ -9915,11 +9916,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3761811852455139
+          "score": 0.3761812448501587
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.317889928817749
+          "score": 0.31788986921310425
         }
       ],
       "keywords": [],
@@ -10319,11 +10320,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.3197808563709259
+          "score": 0.3197808861732483
         },
         {
           "label": "Beam Dynamics",
-          "score": 0.2705666720867157
+          "score": 0.2705666124820709
         }
       ],
       "keywords": [],
@@ -11202,6 +11203,18 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:02Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-27T13:55:25Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-27T13:55:34Z"
         }
       ],
       "history": [
@@ -11284,9 +11297,21 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:32Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:34Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:34Z"
+      "last_updated": "2026-08-27T13:55:34Z"
     },
     "doi:10.18429/jacow-napac2025-mop065": {
       "id": "doi:10.18429/jacow-napac2025-mop065",
@@ -17179,6 +17204,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-26T03:58:25Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:08Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:12Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-27T13:55:25Z"
         }
       ],
       "history": [
@@ -17625,9 +17666,25 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:31Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:32Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:31Z"
+      "last_updated": "2026-08-27T13:55:32Z"
     },
     "doi:10.5281/zenodo.21644177": {
       "id": "doi:10.5281/zenodo.21644177",
@@ -17781,6 +17838,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-27T13:55:34Z"
         }
       ],
       "history": [
@@ -17891,9 +17952,13 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:34Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:34Z"
+      "last_updated": "2026-08-27T13:55:34Z"
     },
     "doi:10.1007/s41781-026-00171-w": {
       "id": "doi:10.1007/s41781-026-00171-w",
@@ -18037,6 +18102,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-27T13:55:34Z"
         }
       ],
       "history": [
@@ -18135,9 +18204,13 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:34Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:34Z"
+      "last_updated": "2026-08-27T13:55:34Z"
     },
     "arxiv:2608.01874": {
       "id": "arxiv:2608.01874",
@@ -18542,6 +18615,22 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:15Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-27T13:55:25Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-27T13:55:34Z"
         }
       ],
       "history": [
@@ -18896,9 +18985,25 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:32Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:34Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:34Z"
+      "last_updated": "2026-08-27T13:55:34Z"
     },
     "doi:10.1007/s41781-026-00175-6": {
       "id": "doi:10.1007/s41781-026-00175-6",
@@ -19124,6 +19229,14 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-27T13:55:25Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-27T13:55:34Z"
         }
       ],
       "history": [
@@ -19282,9 +19395,17 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:32Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:34Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:34Z"
+      "last_updated": "2026-08-27T13:55:34Z"
     },
     "arxiv:2608.14247": {
       "id": "arxiv:2608.14247",
@@ -19526,6 +19647,26 @@
         {
           "source": "openalex",
           "seen_at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:05Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:37Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-27T13:55:25Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-27T13:55:34Z"
         }
       ],
       "history": [
@@ -19716,9 +19857,29 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:34Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:32Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:34Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:34Z"
+      "last_updated": "2026-08-27T13:55:34Z"
     },
     "arxiv:2608.13652": {
       "id": "arxiv:2608.13652",
@@ -19842,6 +20003,14 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-26T03:56:59Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:53:30Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:54:00Z"
         }
       ],
       "history": [
@@ -19920,9 +20089,17 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:21Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:21Z"
+      "last_updated": "2026-08-27T13:55:22Z"
     },
     "arxiv:2608.15272": {
       "id": "arxiv:2608.15272",
@@ -20019,6 +20196,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-26T03:55:50Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:44Z"
         }
       ],
       "history": [
@@ -20053,9 +20234,13 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:20Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:20Z"
+      "last_updated": "2026-08-27T13:55:22Z"
     },
     "arxiv:2608.17119": {
       "id": "arxiv:2608.17119",
@@ -20137,6 +20322,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-26T03:55:21Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:15Z"
         }
       ],
       "history": [
@@ -20167,9 +20356,13 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:20Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:20Z"
+      "last_updated": "2026-08-27T13:55:22Z"
     },
     "arxiv:2608.21080": {
       "id": "arxiv:2608.21080",
@@ -20227,6 +20420,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-08-26T03:55:40Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-08-27T13:52:34Z"
         }
       ],
       "history": [
@@ -20237,9 +20434,13 @@
         {
           "event": "merge",
           "at": "2026-08-26T03:58:20Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:22Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:20Z"
+      "last_updated": "2026-08-27T13:55:22Z"
     },
     "arxiv:2608.21327": {
       "id": "arxiv:2608.21327",
@@ -20328,15 +20529,23 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-26T03:58:25Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-27T13:55:25Z"
         }
       ],
       "history": [
         {
           "event": "merge",
           "at": "2026-08-26T03:58:31Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:32Z"
         }
       ],
-      "last_updated": "2026-08-26T03:58:31Z"
+      "last_updated": "2026-08-27T13:55:32Z"
     },
     "hash:a800205ef13f": {
       "id": "hash:a800205ef13f",
@@ -20382,10 +20591,123 @@
         {
           "source": "inspire",
           "seen_at": "2026-08-26T03:58:25Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-27T13:55:25Z"
+        }
+      ],
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-08-27T13:55:32Z"
+        }
+      ],
+      "last_updated": "2026-08-27T13:55:32Z"
+    },
+    "hash:f4351ee11dfe": {
+      "id": "hash:f4351ee11dfe",
+      "doi": null,
+      "arxiv_id": null,
+      "inspire_id": "3195973",
+      "title": "Machine learning for slow-extraction uniformity at the Fermilab Delivery Ring",
+      "authors": [
+        "Prescott, Matthew J."
+      ],
+      "abstract": "The Muon-to-Electron Conversion Experiment (Mu2e) requires uniform slow extraction from the Fermilab Delivery Ring during each 43 ms spill. This project analyzed 13,737 spills from seven parquet files collected during March and June 2026 commissioning. Each spill contained 430 samples at 0.1 ms resolution and was summarized by the Spill Duty Factor. Null Action and active proportional-integral-derivative conditions established operational baselines. Fixed-ramp sessions were segmented to evaluate reproducibility, drift, and spill-to-spill spread, while a deliberate quadrupole-ramp step identified the beam-response peak and trough. Median profiles were reproducible within fixed conditions but drifted over multi-hour periods. The resulting baselines and response features support future physics-based and machine-learning approaches to real-time spill regulation.",
+      "date": "2026-08-26",
+      "year": 2026,
+      "venue": "InspireHEP",
+      "status": "unknown",
+      "categories": [
+        {
+          "label": "Data Management",
+          "score": 0.3210611343383789
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.31101348996162415
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "nli",
+        "rule": null,
+        "score": 0.9361,
+        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "model_revision": null,
+        "timestamp": "2026-08-27T14:22:43Z"
+      },
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3195973"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-08-27T13:55:25Z"
         }
       ],
       "history": [],
-      "last_updated": "2026-08-26T03:58:25Z"
+      "last_updated": "2026-08-27T13:55:25Z"
+    },
+    "doi:10.5445/ir/1000196455": {
+      "id": "doi:10.5445/ir/1000196455",
+      "doi": "10.5445/ir/1000196455",
+      "arxiv_id": null,
+      "inspire_id": null,
+      "title": "Gaussian Process Regression and Bayesian Optimization for a 40-90 MeV Laser-Plasma Injector for the cSTART Storage Ring",
+      "authors": [
+        "David Squires",
+        "Elias Sailer",
+        "Joseph Natal",
+        "Alexander Saw",
+        "Nathan Ray",
+        "M. Fuchs",
+        "Thiemo Schmelzer"
+      ],
+      "abstract": "Laser-plasma accelerators (LPAs) generate ultrashort high intensity electron bunches from a compact source size. At the Karlsruhe Institute of Technology (KIT), we will use an LPA as one of the injectors for the compact, high-momentum acceptance, non-equilibrium storage ring cSTART. The LPA injector with a length of only a few millimeters will be optimized to match the cSTART operation beam energy of 40– 90 MeV. It will be based on an ionization trapping scheme in combination with a tailored plasma den- sity profile to produce an electron beam with small energy spread that maximizes the spectral charge density at our tar- get energy, which is (for LPAs) comparably low. Moreover, the LPA injector must produce controlled electron beams with high shot-to-shot stability and avoid high-energy tails. These goals can be achieved largely by the detailed design of the plasma density profile and the laser pulse parameters. In an LPA, small changes across the high-dimensional pa- rameter space can have a disproportional influence on overall performance. To find parameters for stable high-quality LPA beams, we perform particle-in-cell (PIC) simulations and implement a machine-learning driven approach by using Bayesian Optimization (BO) based on Gaussian Process Re- gression (GPR). This procedure allows us to both optimize our gas target design and characterize the effects of the inter- action parameters, giving us a functional LPA with a simple tuning mechanism.",
+      "date": "2026-08-25",
+      "year": 2026,
+      "venue": "KITopen",
+      "status": "published",
+      "categories": [
+        {
+          "label": "Beamline Design & Simulation",
+          "score": 0.4303131103515625
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.37005841732025146
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "nli",
+        "rule": null,
+        "score": 0.9024,
+        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "model_revision": null,
+        "timestamp": "2026-08-27T14:22:43Z"
+      },
+      "links": {
+        "openalex": "https://openalex.org/W7204169262"
+      },
+      "sources": [
+        {
+          "source": "openalex",
+          "seen_at": "2026-08-27T13:55:34Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-08-27T13:55:34Z"
     }
   }
 }
