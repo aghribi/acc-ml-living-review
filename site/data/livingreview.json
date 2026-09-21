@@ -12,7 +12,7 @@
       "2018": 1,
       "2016": 4,
       "2000": 1,
-      "2026": 75
+      "2026": 76
     },
     "per_category": {
       "Tools & Libraries": 56,
@@ -20,11 +20,11 @@
       "Statistics & Trends": 52,
       "Surrogate Models": 28,
       "By Facility Type": 9,
-      "RF Systems": 6,
+      "RF Systems": 7,
       "Reinforcement Learning & Autonomous Systems": 30,
       "Operations & Control": 7,
       "Reviews": 3,
-      "Beamline Design & Simulation": 36,
+      "Beamline Design & Simulation": 37,
       "Beam Diagnostics": 18,
       "Beam Dynamics": 8,
       "Anomaly Detection & Fault Prediction": 23,
@@ -33,7 +33,7 @@
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 133,
+      "arXiv": 134,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 7,
@@ -178,10 +178,10 @@
       "2026-06": 3,
       "2026-07": 9,
       "2026-08": 16,
-      "2026-09": 9
+      "2026-09": 10
     },
-    "last_updated": "2026-09-20T08:58:27.803226+00:00",
-    "next_update": "2026-09-21T08:58:27.803226+00:00"
+    "last_updated": "2026-09-21T09:32:06.823145+00:00",
+    "next_update": "2026-09-22T09:32:06.823145+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -13427,7 +13427,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.33919477462768555
+          "score": 0.33919471502304077
         },
         {
           "label": "Surrogate Models",
@@ -22922,6 +22922,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-09-20T08:26:54Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-09-21T08:44:06Z"
         }
       ],
       "history": [
@@ -23020,9 +23024,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:00Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:14Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:00Z"
+      "last_updated": "2026-09-21T08:44:14Z"
     },
     "hash:f4351ee11dfe": {
       "id": "hash:f4351ee11dfe",
@@ -23160,6 +23168,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-09-20T08:26:54Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-09-21T08:44:06Z"
         }
       ],
       "history": [
@@ -23254,9 +23266,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:00Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:14Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:00Z"
+      "last_updated": "2026-09-21T08:44:14Z"
     },
     "doi:10.5445/ir/1000196455": {
       "id": "doi:10.5445/ir/1000196455",
@@ -23376,6 +23392,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-14T09:34:31Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-21T08:44:18Z"
         }
       ],
       "history": [
@@ -23446,9 +23466,13 @@
         {
           "event": "merge",
           "at": "2026-09-14T09:34:31Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:18Z"
         }
       ],
-      "last_updated": "2026-09-14T09:34:31Z"
+      "last_updated": "2026-09-21T08:44:18Z"
     },
     "arxiv:2608.26826": {
       "id": "arxiv:2608.26826",
@@ -23757,6 +23781,18 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:40:41Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-09-21T08:44:06Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-21T08:44:18Z"
         }
       ],
       "history": [
@@ -24015,9 +24051,21 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:01Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:18Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:02Z"
+      "last_updated": "2026-09-21T08:44:18Z"
     },
     "doi:10.21203/rs.3.rs-10486818/v1": {
       "id": "doi:10.21203/rs.3.rs-10486818/v1",
@@ -24159,6 +24207,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-21T08:44:18Z"
         }
       ],
       "history": [
@@ -24254,9 +24306,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:18Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:02Z"
+      "last_updated": "2026-09-21T08:44:18Z"
     },
     "doi:10.21203/rs.3.rs-10697074/v1": {
       "id": "doi:10.21203/rs.3.rs-10697074/v1",
@@ -24380,6 +24436,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-21T08:44:18Z"
         }
       ],
       "history": [
@@ -24463,9 +24523,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:18Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:02Z"
+      "last_updated": "2026-09-21T08:44:18Z"
     },
     "arxiv:2609.04421": {
       "id": "arxiv:2609.04421",
@@ -24605,6 +24669,14 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-20T08:23:12Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:40:41Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:41:17Z"
         }
       ],
       "history": [
@@ -24699,9 +24771,17 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:26:51Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:01Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:01Z"
         }
       ],
-      "last_updated": "2026-09-20T08:26:51Z"
+      "last_updated": "2026-09-21T08:44:01Z"
     },
     "doi:10.1088/1361-6560/ae9e7e": {
       "id": "doi:10.1088/1361-6560/ae9e7e",
@@ -25085,6 +25165,34 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:40:41Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:41:55Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:42:08Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:42:11Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:44:01Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-09-21T08:44:06Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-21T08:44:18Z"
         }
       ],
       "history": [
@@ -25359,9 +25467,37 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:01Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:18Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:02Z"
+      "last_updated": "2026-09-21T08:44:18Z"
     },
     "arxiv:2609.06686": {
       "id": "arxiv:2609.06686",
@@ -25448,6 +25584,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-20T08:24:34Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:42:08Z"
         }
       ],
       "history": [
@@ -25486,9 +25626,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:26:51Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:02Z"
         }
       ],
-      "last_updated": "2026-09-20T08:26:51Z"
+      "last_updated": "2026-09-21T08:44:02Z"
     },
     "doi:10.1088/1748-0221/21/09/p09009": {
       "id": "doi:10.1088/1748-0221/21/09/p09009",
@@ -25580,6 +25724,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-21T08:44:18Z"
         }
       ],
       "history": [
@@ -25622,9 +25770,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:18Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:02Z"
+      "last_updated": "2026-09-21T08:44:18Z"
     },
     "arxiv:2609.11874": {
       "id": "arxiv:2609.11874",
@@ -25704,6 +25856,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-20T08:23:15Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:41:20Z"
         }
       ],
       "history": [
@@ -25730,9 +25886,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:26:51Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:01Z"
         }
       ],
-      "last_updated": "2026-09-20T08:26:51Z"
+      "last_updated": "2026-09-21T08:44:01Z"
     },
     "doi:10.2172/3674510": {
       "id": "doi:10.2172/3674510",
@@ -25802,6 +25962,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-21T08:44:18Z"
         }
       ],
       "history": [
@@ -25828,9 +25992,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:18Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:02Z"
+      "last_updated": "2026-09-21T08:44:18Z"
     },
     "doi:10.1007/s41781-026-00182-7": {
       "id": "doi:10.1007/s41781-026-00182-7",
@@ -25918,6 +26086,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-21T08:44:18Z"
         }
       ],
       "history": [
@@ -25944,9 +26116,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:18Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:02Z"
+      "last_updated": "2026-09-21T08:44:18Z"
     },
     "doi:10.2172/3674520": {
       "id": "doi:10.2172/3674520",
@@ -26019,6 +26195,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-21T08:44:18Z"
         }
       ],
       "history": [
@@ -26045,9 +26225,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:18Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:02Z"
+      "last_updated": "2026-09-21T08:44:18Z"
     },
     "arxiv:2609.17738": {
       "id": "arxiv:2609.17738",
@@ -26109,6 +26293,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-20T08:24:34Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:42:08Z"
         }
       ],
       "history": [
@@ -26123,9 +26311,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:26:51Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:02Z"
         }
       ],
-      "last_updated": "2026-09-20T08:26:51Z"
+      "last_updated": "2026-09-21T08:44:02Z"
     },
     "arxiv:2609.17726": {
       "id": "arxiv:2609.17726",
@@ -26190,6 +26382,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-20T08:24:34Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:42:08Z"
         }
       ],
       "history": [
@@ -26204,9 +26400,66 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:26:51Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-21T08:44:02Z"
         }
       ],
-      "last_updated": "2026-09-20T08:26:51Z"
+      "last_updated": "2026-09-21T08:44:02Z"
+    },
+    "arxiv:2609.22036": {
+      "id": "arxiv:2609.22036",
+      "doi": null,
+      "arxiv_id": "2609.22036",
+      "inspire_id": null,
+      "title": "Moderator Modeling for High Intensity Slow Positron Sources",
+      "authors": [
+        "Sophie Crisp",
+        "Ryland Goldman",
+        "Spencer Gessner"
+      ],
+      "abstract": "Slow positron beams enable diverse applications, from surface-sensitive materials studies to positronium physics, but progress is limited by source intensity and brightness. In linac-based sources, mono-energetic, slow positrons are produced by moderating the broad, divergent distribution of fast positrons produced by high-energy electrons incident on a high-Z target. This process is intrinsically inefficient. Conventional linac-based designs place the moderator close to the target. Tungsten moderators become less efficient when heated by high-power, fast positrons, leading to defect-related losses. Cryogenic moderators, like solid neon, melt when exposed to high-power, fast positrons. Following the method of O'Rourke et al., we use Monte Carlo simulations combined with a diffusion model to investigate how moderator geometry, material, and incident fast positron energy affect slow positron production. We compare single tungsten foil and multi-foil configurations with solid neon moderators in reflection and transmission geometries. We find that for fast positron energies below 300 keV, solid neon offers order-of-magnitude higher efficiency than tungsten due to its larger diffusion length, whereas at MeV-scale energies multi-foil tungsten has higher efficiency due to the maximization of scattering. We also find that including a target proxy in simulation increases low-energy efficiency up to fourfold by allowing a fraction of initially reflected positrons to return to the moderator. We conclude that substantial gains in start-to-end efficiency at linac sources will likely require combining a decelerating cavity with a decoupled cryogenic moderator.",
+      "date": "2026-09-18",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Beamline Design & Simulation",
+          "score": 0.33003759384155273
+        },
+        {
+          "label": "RF Systems",
+          "score": 0.30686938762664795
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [
+        "physics.acc-ph"
+      ],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "gate",
+        "rule": "auto_accept:acc-ph",
+        "score": null,
+        "model": null,
+        "model_revision": null,
+        "timestamp": "2026-09-21T09:02:17Z"
+      },
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2609.22036v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-21T08:41:10Z"
+        }
+      ],
+      "history": [],
+      "last_updated": "2026-09-21T08:41:10Z"
     }
   }
 }
