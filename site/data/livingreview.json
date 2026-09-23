@@ -12,20 +12,20 @@
       "2018": 1,
       "2016": 4,
       "2000": 1,
-      "2026": 79
+      "2026": 80
     },
     "per_category": {
       "Tools & Libraries": 57,
       "Novel Applications": 210,
       "Statistics & Trends": 52,
       "Surrogate Models": 28,
-      "By Facility Type": 10,
+      "By Facility Type": 11,
       "RF Systems": 7,
       "Reinforcement Learning & Autonomous Systems": 30,
       "Operations & Control": 7,
       "Reviews": 3,
       "Beamline Design & Simulation": 37,
-      "Beam Diagnostics": 20,
+      "Beam Diagnostics": 21,
       "Beam Dynamics": 8,
       "Anomaly Detection & Fault Prediction": 23,
       "Data Management": 26,
@@ -33,7 +33,7 @@
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 137,
+      "arXiv": 138,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 7,
@@ -87,7 +87,7 @@
     "per_keyword": {
       "optimization": 72,
       "surrogate model": 19,
-      "beam": 155,
+      "beam": 156,
       "reinforcement learning": 32,
       "diagnostics": 39,
       "control": 72,
@@ -178,10 +178,10 @@
       "2026-06": 3,
       "2026-07": 9,
       "2026-08": 16,
-      "2026-09": 13
+      "2026-09": 14
     },
-    "last_updated": "2026-09-22T08:54:38.566462+00:00",
-    "next_update": "2026-09-23T08:54:38.566462+00:00"
+    "last_updated": "2026-09-23T08:34:51.509679+00:00",
+    "next_update": "2026-09-24T08:34:51.509679+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -10445,7 +10445,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.38585180044174194
+          "score": 0.3858518600463867
         }
       ],
       "keywords": [],
@@ -12394,7 +12394,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.5271795392036438
+          "score": 0.527179479598999
         },
         {
           "label": "Beamline Design & Simulation",
@@ -13302,7 +13302,7 @@
         },
         {
           "label": "Beamline Design & Simulation",
-          "score": 0.3604336380958557
+          "score": 0.3604336678981781
         },
         {
           "label": "Tools & Libraries",
@@ -22930,6 +22930,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-09-22T08:22:49Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-09-23T08:25:45Z"
         }
       ],
       "history": [
@@ -23036,9 +23040,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:56Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:52Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:56Z"
+      "last_updated": "2026-09-23T08:25:52Z"
     },
     "hash:f4351ee11dfe": {
       "id": "hash:f4351ee11dfe",
@@ -23184,6 +23192,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-09-22T08:22:49Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-09-23T08:25:45Z"
         }
       ],
       "history": [
@@ -23286,9 +23298,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:56Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:52Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:56Z"
+      "last_updated": "2026-09-23T08:25:52Z"
     },
     "doi:10.5445/ir/1000196455": {
       "id": "doi:10.5445/ir/1000196455",
@@ -23821,6 +23837,18 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:21:26Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-09-23T08:25:45Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-23T08:26:31Z"
         }
       ],
       "history": [
@@ -24103,9 +24131,21 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:41Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:26:31Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:58Z"
+      "last_updated": "2026-09-23T08:26:31Z"
     },
     "doi:10.21203/rs.3.rs-10486818/v1": {
       "id": "doi:10.21203/rs.3.rs-10486818/v1",
@@ -24255,6 +24295,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-23T08:26:31Z"
         }
       ],
       "history": [
@@ -24358,9 +24402,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:26:31Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:58Z"
+      "last_updated": "2026-09-23T08:26:31Z"
     },
     "doi:10.21203/rs.3.rs-10697074/v1": {
       "id": "doi:10.21203/rs.3.rs-10697074/v1",
@@ -24733,6 +24781,14 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-22T08:20:10Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:21:26Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:22:14Z"
         }
       ],
       "history": [
@@ -24843,9 +24899,17 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:46Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:41Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:41Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:46Z"
+      "last_updated": "2026-09-23T08:25:41Z"
     },
     "doi:10.1088/1361-6560/ae9e7e": {
       "id": "doi:10.1088/1361-6560/ae9e7e",
@@ -25285,6 +25349,34 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:21:26Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:22:50Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:23:36Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:23:39Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:25:41Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-09-23T08:25:45Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-23T08:26:31Z"
         }
       ],
       "history": [
@@ -25615,9 +25707,37 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:41Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:42Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:42Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:42Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:42Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:52Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:26:31Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:58Z"
+      "last_updated": "2026-09-23T08:26:31Z"
     },
     "arxiv:2609.06686": {
       "id": "arxiv:2609.06686",
@@ -25712,6 +25832,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-22T08:20:58Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:23:36Z"
         }
       ],
       "history": [
@@ -25758,9 +25882,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:46Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:42Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:46Z"
+      "last_updated": "2026-09-23T08:25:42Z"
     },
     "doi:10.1088/1748-0221/21/09/p09009": {
       "id": "doi:10.1088/1748-0221/21/09/p09009",
@@ -25860,6 +25988,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-23T08:26:31Z"
         }
       ],
       "history": [
@@ -25910,9 +26042,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:26:31Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:58Z"
+      "last_updated": "2026-09-23T08:26:31Z"
     },
     "arxiv:2609.11874": {
       "id": "arxiv:2609.11874",
@@ -26000,6 +26136,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-22T08:20:13Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:22:17Z"
         }
       ],
       "history": [
@@ -26034,9 +26174,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:46Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:41Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:46Z"
+      "last_updated": "2026-09-23T08:25:41Z"
     },
     "doi:10.2172/3674510": {
       "id": "doi:10.2172/3674510",
@@ -26114,6 +26258,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-23T08:26:31Z"
         }
       ],
       "history": [
@@ -26148,9 +26296,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:26:31Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:58Z"
+      "last_updated": "2026-09-23T08:26:31Z"
     },
     "doi:10.1007/s41781-026-00182-7": {
       "id": "doi:10.1007/s41781-026-00182-7",
@@ -26246,6 +26398,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-23T08:26:31Z"
         }
       ],
       "history": [
@@ -26280,9 +26436,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:26:31Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:58Z"
+      "last_updated": "2026-09-23T08:26:31Z"
     },
     "doi:10.2172/3674520": {
       "id": "doi:10.2172/3674520",
@@ -26363,6 +26523,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-09-23T08:26:31Z"
         }
       ],
       "history": [
@@ -26397,9 +26561,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:58Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:26:31Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:58Z"
+      "last_updated": "2026-09-23T08:26:31Z"
     },
     "arxiv:2609.17738": {
       "id": "arxiv:2609.17738",
@@ -26469,6 +26637,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-22T08:20:58Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:23:36Z"
         }
       ],
       "history": [
@@ -26491,9 +26663,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:46Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:42Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:46Z"
+      "last_updated": "2026-09-23T08:25:42Z"
     },
     "arxiv:2609.17726": {
       "id": "arxiv:2609.17726",
@@ -26566,6 +26742,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-22T08:20:58Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:23:36Z"
         }
       ],
       "history": [
@@ -26588,9 +26768,13 @@
         {
           "event": "merge",
           "at": "2026-09-22T08:22:46Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:42Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:46Z"
+      "last_updated": "2026-09-23T08:25:42Z"
     },
     "arxiv:2609.22036": {
       "id": "arxiv:2609.22036",
@@ -26644,15 +26828,23 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-22T08:20:03Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:22:07Z"
         }
       ],
       "history": [
         {
           "event": "merge",
           "at": "2026-09-22T08:22:46Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:41Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:46Z"
+      "last_updated": "2026-09-23T08:25:41Z"
     },
     "arxiv:2609.24978": {
       "id": "arxiv:2609.24978",
@@ -26709,10 +26901,19 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-22T08:19:51Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:21:54Z"
         }
       ],
-      "history": [],
-      "last_updated": "2026-09-22T08:19:51Z"
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:41Z"
+        }
+      ],
+      "last_updated": "2026-09-23T08:25:41Z"
     },
     "arxiv:2609.23823": {
       "id": "arxiv:2609.23823",
@@ -26773,15 +26974,31 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-22T08:20:10Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:21:54Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:22:14Z"
         }
       ],
       "history": [
         {
           "event": "merge",
           "at": "2026-09-22T08:22:46Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:41Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:41Z"
         }
       ],
-      "last_updated": "2026-09-22T08:22:46Z"
+      "last_updated": "2026-09-23T08:25:41Z"
     },
     "arxiv:2609.22484": {
       "id": "arxiv:2609.22484",
@@ -26832,10 +27049,107 @@
         {
           "source": "arxiv",
           "seen_at": "2026-09-22T08:20:58Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-09-23T08:23:36Z"
+        }
+      ],
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-09-23T08:25:42Z"
+        }
+      ],
+      "last_updated": "2026-09-23T08:25:42Z"
+    },
+    "arxiv:2609.25156": {
+      "id": "arxiv:2609.25156",
+      "doi": null,
+      "arxiv_id": "2609.25156",
+      "inspire_id": "3206028",
+      "title": "Pulse-shape discrimination with machine learning for CZT detectors at the DA$Φ$NE beam test facility",
+      "authors": [
+        "Manti, Simone",
+        "Artibani, Francesco",
+        "Abbene, Leonardo",
+        "Bazzi, Massimiliano",
+        "Bettelli, Manuele",
+        "Borghi, Giacomo",
+        "Bosnar, Damir",
+        "Bragadireanu, Mario",
+        "Buttacavoli, Antonino",
+        "Carminati, Mario",
+        "Clozza, Alberto",
+        "Clozza, Francesco",
+        "De Paolis, Luca",
+        "Del Grande, Raffaele",
+        "Dulski, Kamil",
+        "Fiorini, Carlo",
+        "Friščić, Ivica",
+        "Gerardi, Gaetano",
+        "Guaraldo, Carlo",
+        "Iliescu, Mihai",
+        "Iwasaki, Masa",
+        "Khreptak, Alexander",
+        "Marton, Johan",
+        "Moskal, Pawel",
+        "Ohnishi, Hiroaki",
+        "Piscicchia, Kristian",
+        "Principato, Fabio",
+        "Scordo, Alessandro",
+        "Sgaramella, Francesco",
+        "Silarski, Michał",
+        "Sirghi, Diana",
+        "Sirghi, Florin",
+        "Skurzok, Magdalena",
+        "Spallone, Antonio",
+        "Toho, Kairo",
+        "Vazquez Doce, Oton",
+        "Zappettini, Andrea",
+        "Zmeskal, Johann",
+        "Curceanu, Catalina"
+      ],
+      "abstract": "Cadmium zinc telluride (CZT) detectors offer versatility, operational simplicity, and room-temperature X- and gamma-ray spectroscopy, making them attractive for collider applications, yet their use under high-flux conditions remains limited. Here, we present a preliminary feature-based pulse-shape analysis employing machine learning, on data acquired with a quasi-hemispherical CZT detector at the DA$\\Φ$NE beam test facility of the National Laboratory of Frascati of INFN. A 300-MeV electron beam impinging on a lead target produced characteristic Pb X-rays together with a broad background extending up to the electron-positron annihilation region. Physically motivated temporal and morphological features were extracted from the recorded waveforms and used to distinguish nominal photon-like pulses from anomalous events. An XGBoost classifier trained and validated on 10,000 labeled waveforms achieved an accuracy of approximately 97%, with most of its classification performance reached using only a few hundred labeled examples. The trained model was applied to more than 700,000 events, substantially reducing the spectral continuum and coincidence peaks, while preserving the characteristic Pb X-ray lines up to the 511-keV annihilation peak. These preliminary results demonstrate the potential of machine-learning-assisted pulse-shape discrimination for improving CZT spectroscopy in collider environments.",
+      "date": "2026-09-21",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.3476596176624298
+        },
+        {
+          "label": "By Facility Type",
+          "score": 0.32049745321273804
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "nli",
+        "rule": null,
+        "score": 0.9832,
+        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "model_revision": null,
+        "timestamp": "2026-09-23T08:34:33Z"
+      },
+      "links": {
+        "inspire": "https://inspirehep.net/literature/3206028",
+        "arxiv": "https://arxiv.org/abs/2609.25156"
+      },
+      "sources": [
+        {
+          "source": "inspire",
+          "seen_at": "2026-09-23T08:25:45Z"
         }
       ],
       "history": [],
-      "last_updated": "2026-09-22T08:20:58Z"
+      "last_updated": "2026-09-23T08:25:45Z"
     }
   }
 }
