@@ -183,8 +183,8 @@
       "2026-09": 19,
       "2026-10": 6
     },
-    "last_updated": "2026-10-17T08:26:21.841406+00:00",
-    "next_update": "2026-10-18T08:26:21.841406+00:00"
+    "last_updated": "2026-10-18T08:44:50.746103+00:00",
+    "next_update": "2026-10-19T08:44:50.746103+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -9994,7 +9994,7 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.37268489599227905
+          "score": 0.3726848363876343
         },
         {
           "label": "Optimization & Control",
@@ -10660,11 +10660,11 @@
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.4271664619445801
+          "score": 0.4271663427352905
         },
         {
           "label": "Statistics & Trends",
-          "score": 0.3554154932498932
+          "score": 0.3554154634475708
         }
       ],
       "keywords": [],
@@ -28759,6 +28759,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-10-17T07:38:38Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:39Z"
         }
       ],
       "history": [
@@ -28861,9 +28865,13 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:30Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:30Z"
+      "last_updated": "2026-10-18T07:56:36Z"
     },
     "arxiv:2609.24978": {
       "id": "arxiv:2609.24978",
@@ -29016,6 +29024,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-10-17T07:38:25Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:27Z"
         }
       ],
       "history": [
@@ -29114,9 +29126,13 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:30Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:30Z"
+      "last_updated": "2026-10-18T07:56:36Z"
     },
     "arxiv:2609.23823": {
       "id": "arxiv:2609.23823",
@@ -29372,6 +29388,14 @@
         {
           "source": "arxiv",
           "seen_at": "2026-10-17T07:38:44Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:27Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:46Z"
         }
       ],
       "history": [
@@ -29570,9 +29594,17 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:30Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:30Z"
+      "last_updated": "2026-10-18T07:56:36Z"
     },
     "arxiv:2609.22484": {
       "id": "arxiv:2609.22484",
@@ -29719,6 +29751,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-10-17T07:39:41Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:54:42Z"
         }
       ],
       "history": [
@@ -29817,9 +29853,13 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:30Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:30Z"
+      "last_updated": "2026-10-18T07:56:36Z"
     },
     "arxiv:2609.25156": {
       "id": "arxiv:2609.25156",
@@ -30000,6 +30040,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-10-17T07:41:33Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-10-18T07:56:39Z"
         }
       ],
       "history": [
@@ -30098,9 +30142,13 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:40Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:48Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:40Z"
+      "last_updated": "2026-10-18T07:56:48Z"
     },
     "doi:10.1103/9kpd-tlbg": {
       "id": "doi:10.1103/9kpd-tlbg",
@@ -30332,6 +30380,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-10-17T07:39:28Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:54:29Z"
         }
       ],
       "history": [
@@ -30406,9 +30458,13 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:30Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:30Z"
+      "last_updated": "2026-10-18T07:56:36Z"
     },
     "hash:72940e9ac886": {
       "id": "hash:72940e9ac886",
@@ -30522,6 +30578,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-10-17T07:41:47Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-10-18T07:56:51Z"
         }
       ],
       "history": [
@@ -30592,9 +30652,13 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:47Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:51Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:47Z"
+      "last_updated": "2026-10-18T07:56:51Z"
     },
     "doi:10.1103/g523-xdgf": {
       "id": "doi:10.1103/g523-xdgf",
@@ -30768,6 +30832,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-10-17T07:39:24Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:54:26Z"
         }
       ],
       "history": [
@@ -30830,9 +30898,13 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:30Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:30Z"
+      "last_updated": "2026-10-18T07:56:36Z"
     },
     "arxiv:2610.05635": {
       "id": "arxiv:2610.05635",
@@ -31070,6 +31142,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-10-17T07:41:33Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:20Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:46Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:55Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-10-18T07:56:39Z"
         }
       ],
       "history": [
@@ -31260,9 +31348,25 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:40Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:48Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:40Z"
+      "last_updated": "2026-10-18T07:56:48Z"
     },
     "doi:10.21203/rs.3.rs-11054041/v1": {
       "id": "doi:10.21203/rs.3.rs-11054041/v1",
@@ -31372,6 +31476,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-10-17T07:41:47Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-10-18T07:56:51Z"
         }
       ],
       "history": [
@@ -31415,9 +31523,13 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:47Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:51Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:47Z"
+      "last_updated": "2026-10-18T07:56:51Z"
     },
     "arxiv:2610.17241": {
       "id": "arxiv:2610.17241",
@@ -31515,6 +31627,18 @@
         {
           "source": "inspire",
           "seen_at": "2026-10-17T07:41:33Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:14Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:30Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-10-18T07:56:39Z"
         }
       ],
       "history": [
@@ -31557,9 +31681,21 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:40Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:48Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:40Z"
+      "last_updated": "2026-10-18T07:56:48Z"
     },
     "arxiv:2610.14537": {
       "id": "arxiv:2610.14537",
@@ -31698,6 +31834,30 @@
         {
           "source": "arxiv",
           "seen_at": "2026-10-17T07:41:30Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:14Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:54:18Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:55:09Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:55:39Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:55:43Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:56:36Z"
         }
       ],
       "history": [
@@ -31788,9 +31948,33 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:30Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:30Z"
+      "last_updated": "2026-10-18T07:56:36Z"
     },
     "arxiv:2610.14824": {
       "id": "arxiv:2610.14824",
@@ -31849,6 +32033,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-10-17T07:38:25Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-10-18T07:53:27Z"
         }
       ],
       "history": [
@@ -31863,9 +32051,13 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:30Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:36Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:30Z"
+      "last_updated": "2026-10-18T07:56:36Z"
     },
     "doi:10.1103/dpvk-3vt5": {
       "id": "doi:10.1103/dpvk-3vt5",
@@ -31931,6 +32123,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-10-17T07:41:33Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-10-18T07:56:39Z"
         }
       ],
       "history": [
@@ -31941,9 +32137,13 @@
         {
           "event": "merge",
           "at": "2026-10-17T07:41:40Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-10-18T07:56:48Z"
         }
       ],
-      "last_updated": "2026-10-17T07:41:40Z"
+      "last_updated": "2026-10-18T07:56:48Z"
     }
   }
 }
