@@ -12,11 +12,11 @@
       "2018": 1,
       "2016": 4,
       "2000": 1,
-      "2026": 94
+      "2026": 95
     },
     "per_category": {
       "Tools & Libraries": 60,
-      "Novel Applications": 220,
+      "Novel Applications": 221,
       "Statistics & Trends": 53,
       "Surrogate Models": 29,
       "By Facility Type": 11,
@@ -28,12 +28,12 @@
       "Beam Diagnostics": 24,
       "Beam Dynamics": 8,
       "Anomaly Detection & Fault Prediction": 24,
-      "Data Management": 27,
+      "Data Management": 28,
       "Optimization & Control": 7
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 145,
+      "arXiv": 146,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 10,
@@ -91,15 +91,15 @@
       "surrogate model": 19,
       "beam": 166,
       "reinforcement learning": 33,
-      "diagnostics": 42,
-      "control": 76,
+      "diagnostics": 43,
+      "control": 77,
       "uncertainty quantification": 7,
       "deep learning": 26,
-      "anomaly detection": 25,
+      "anomaly detection": 26,
       "time series": 5,
       "GAN": 1,
       "cloud": 6,
-      "transformer": 6,
+      "transformer": 7,
       "RF cavity": 2,
       "federated learning": 1,
       "GPU": 4,
@@ -181,10 +181,11 @@
       "2026-07": 9,
       "2026-08": 16,
       "2026-09": 19,
-      "2026-10": 9
+      "2026-10": 9,
+      "2026-11": 1
     },
-    "last_updated": "2026-11-02T11:40:42.385143+00:00",
-    "next_update": "2026-11-03T11:40:42.385143+00:00"
+    "last_updated": "2026-11-03T11:35:19.835724+00:00",
+    "next_update": "2026-11-04T11:35:19.835724+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -4761,11 +4762,11 @@
       "categories": [
         {
           "label": "Reinforcement Learning & Autonomous Systems",
-          "score": 0.4461630582809448
+          "score": 0.4461631178855896
         },
         {
           "label": "Novel Applications",
-          "score": 0.41266506910324097
+          "score": 0.4126651883125305
         }
       ],
       "keywords": [],
@@ -12683,6 +12684,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-11-02T10:44:38Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-03T10:39:33Z"
         }
       ],
       "history": [
@@ -12733,9 +12738,13 @@
         {
           "event": "merge",
           "at": "2026-11-02T10:44:38Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:33Z"
         }
       ],
-      "last_updated": "2026-11-02T10:44:38Z"
+      "last_updated": "2026-11-03T10:39:33Z"
     },
     "doi:10.1088/2632-2153/ae5b20": {
       "id": "doi:10.1088/2632-2153/ae5b20",
@@ -31740,6 +31749,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-02T10:44:28Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:35:57Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:36:23Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:36:32Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-03T10:39:10Z"
         }
       ],
       "history": [
@@ -32182,9 +32207,25 @@
         {
           "event": "merge",
           "at": "2026-11-02T10:44:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:19Z"
         }
       ],
-      "last_updated": "2026-11-02T10:44:36Z"
+      "last_updated": "2026-11-03T10:39:19Z"
     },
     "doi:10.21203/rs.3.rs-11054041/v1": {
       "id": "doi:10.21203/rs.3.rs-11054041/v1",
@@ -32358,6 +32399,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-11-02T10:44:38Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-03T10:39:33Z"
         }
       ],
       "history": [
@@ -32465,9 +32510,13 @@
         {
           "event": "merge",
           "at": "2026-11-02T10:44:38Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:33Z"
         }
       ],
-      "last_updated": "2026-11-02T10:44:38Z"
+      "last_updated": "2026-11-03T10:39:33Z"
     },
     "arxiv:2610.17241": {
       "id": "arxiv:2610.17241",
@@ -32749,6 +32798,18 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-02T10:44:28Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:35:51Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:36:07Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-03T10:39:10Z"
         }
       ],
       "history": [
@@ -32975,9 +33036,21 @@
         {
           "event": "merge",
           "at": "2026-11-02T10:44:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:19Z"
         }
       ],
-      "last_updated": "2026-11-02T10:44:36Z"
+      "last_updated": "2026-11-03T10:39:19Z"
     },
     "arxiv:2610.14537": {
       "id": "arxiv:2610.14537",
@@ -33492,6 +33565,30 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-02T10:44:25Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:35:51Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:37:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:37:43Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:38:12Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:38:15Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:39:06Z"
         }
       ],
       "history": [
@@ -33958,9 +34055,33 @@
         {
           "event": "merge",
           "at": "2026-11-02T10:44:26Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:09Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:09Z"
         }
       ],
-      "last_updated": "2026-11-02T10:44:26Z"
+      "last_updated": "2026-11-03T10:39:09Z"
     },
     "arxiv:2610.14824": {
       "id": "arxiv:2610.14824",
@@ -34079,6 +34200,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-02T10:41:25Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:36:04Z"
         }
       ],
       "history": [
@@ -34153,9 +34278,13 @@
         {
           "event": "merge",
           "at": "2026-11-02T10:44:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
         }
       ],
-      "last_updated": "2026-11-02T10:44:25Z"
+      "last_updated": "2026-11-03T10:39:06Z"
     },
     "doi:10.1103/dpvk-3vt5": {
       "id": "doi:10.1103/dpvk-3vt5",
@@ -34450,6 +34579,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-02T10:44:28Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-03T10:39:10Z"
         }
       ],
       "history": [
@@ -34504,9 +34637,13 @@
         {
           "event": "merge",
           "at": "2026-11-02T10:44:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:19Z"
         }
       ],
-      "last_updated": "2026-11-02T10:44:36Z"
+      "last_updated": "2026-11-03T10:39:19Z"
     },
     "arxiv:2610.28250": {
       "id": "arxiv:2610.28250",
@@ -34764,6 +34901,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-02T10:44:28Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:35:57Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:36:20Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:36:23Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-03T10:39:10Z"
         }
       ],
       "history": [
@@ -34970,9 +35123,25 @@
         {
           "event": "merge",
           "at": "2026-11-02T10:44:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:19Z"
         }
       ],
-      "last_updated": "2026-11-02T10:44:36Z"
+      "last_updated": "2026-11-03T10:39:19Z"
     },
     "doi:10.1103/49ns-fryv": {
       "id": "doi:10.1103/49ns-fryv",
@@ -35093,6 +35262,100 @@
         }
       ],
       "last_updated": "2026-10-31T09:28:30Z"
+    },
+    "arxiv:2611.02031": {
+      "id": "arxiv:2611.02031",
+      "doi": null,
+      "arxiv_id": "2611.02031",
+      "inspire_id": null,
+      "title": "SensOFormer: Foundation Models for Particle Accelerators",
+      "authors": [
+        "Mahindra Rautela",
+        "Alexander Scheinker"
+      ],
+      "abstract": "Large-scale scientific facilities, such as particle accelerators, are complex systems composed of thousands of interacting components that must operate collectively to support diagnostics and control, and ensure safe, reliable operation. These facilities rely on extensive sensor networks that generate large volumes of heterogeneous, incomplete, and noisy telemetry, often sampled at different rates across subsystems. In this paper, we adopt the foundation-model paradigm to learn general-purpose sensor representations from historical accelerator data through self-supervised pretraining. We introduce SensOFormer, a denoising masked transformer with a Perceiver-style encoder-decoder architecture designed to handle variable sensor sets, accommodate heterogeneous sampling rates, and learn robust representations from noisy measurements. The model is pretrained on multiple particle-accelerator datasets and transferred to downstream tasks, including missing-data imputation, anomaly detection, cavity identification, and fault identification. Through extensive evaluations and comparisons, we demonstrate that a single self-supervised model can learn reusable representations for diverse operational tasks in large-scale scientific facilities. Project page: https://mahindrautela.github.io/sensoformer.",
+      "date": "2026-11-01",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Data Management",
+          "score": 0.4630114436149597
+        },
+        {
+          "label": "Novel Applications",
+          "score": 0.44377368688583374
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [
+        "cs.LG",
+        "physics.acc-ph"
+      ],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "nli",
+        "rule": null,
+        "score": 0.9511,
+        "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+        "model_revision": null,
+        "timestamp": "2026-11-03T11:34:34Z"
+      },
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2611.02031v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:35:51Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:36:07Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:36:32Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:36:35Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:36:55Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-03T10:39:06Z"
+        }
+      ],
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:07Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-03T10:39:09Z"
+        }
+      ],
+      "last_updated": "2026-11-03T10:39:09Z"
     }
   }
 }
