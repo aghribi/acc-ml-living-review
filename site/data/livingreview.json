@@ -12,7 +12,7 @@
       "2018": 1,
       "2016": 4,
       "2000": 1,
-      "2026": 95
+      "2026": 96
     },
     "per_category": {
       "Tools & Libraries": 60,
@@ -25,15 +25,15 @@
       "Operations & Control": 8,
       "Reviews": 3,
       "Beamline Design & Simulation": 39,
-      "Beam Diagnostics": 24,
-      "Beam Dynamics": 8,
+      "Beam Diagnostics": 25,
+      "Beam Dynamics": 9,
       "Anomaly Detection & Fault Prediction": 24,
       "Data Management": 28,
       "Optimization & Control": 7
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 146,
+      "arXiv": 147,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 10,
@@ -89,7 +89,7 @@
     "per_keyword": {
       "optimization": 76,
       "surrogate model": 19,
-      "beam": 166,
+      "beam": 167,
       "reinforcement learning": 33,
       "diagnostics": 43,
       "control": 77,
@@ -99,7 +99,7 @@
       "time series": 5,
       "GAN": 1,
       "cloud": 6,
-      "transformer": 7,
+      "transformer": 8,
       "RF cavity": 2,
       "federated learning": 1,
       "GPU": 4,
@@ -182,10 +182,10 @@
       "2026-08": 16,
       "2026-09": 19,
       "2026-10": 9,
-      "2026-11": 1
+      "2026-11": 2
     },
-    "last_updated": "2026-11-03T11:35:19.835724+00:00",
-    "next_update": "2026-11-04T11:35:19.835724+00:00"
+    "last_updated": "2026-11-05T11:41:39.758349+00:00",
+    "next_update": "2026-11-06T11:41:39.758349+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -3025,7 +3025,7 @@
         },
         {
           "label": "Novel Applications",
-          "score": 0.497007817029953
+          "score": 0.4970078468322754
         },
         {
           "label": "Reviews",
@@ -10836,11 +10836,11 @@
       "categories": [
         {
           "label": "Anomaly Detection & Fault Prediction",
-          "score": 0.4592660069465637
+          "score": 0.45926597714424133
         },
         {
           "label": "Novel Applications",
-          "score": 0.3697164058685303
+          "score": 0.3697162866592407
         }
       ],
       "keywords": [],
@@ -12688,6 +12688,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-11-03T10:39:33Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-05T10:35:32Z"
         }
       ],
       "history": [
@@ -12742,9 +12746,13 @@
         {
           "event": "merge",
           "at": "2026-11-03T10:39:33Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:35:32Z"
         }
       ],
-      "last_updated": "2026-11-03T10:39:33Z"
+      "last_updated": "2026-11-05T10:35:32Z"
     },
     "doi:10.1088/2632-2153/ae5b20": {
       "id": "doi:10.1088/2632-2153/ae5b20",
@@ -32403,6 +32411,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-11-03T10:39:33Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-05T10:35:32Z"
         }
       ],
       "history": [
@@ -32514,9 +32526,13 @@
         {
           "event": "merge",
           "at": "2026-11-03T10:39:33Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:35:32Z"
         }
       ],
-      "last_updated": "2026-11-03T10:39:33Z"
+      "last_updated": "2026-11-05T10:35:32Z"
     },
     "arxiv:2610.17241": {
       "id": "arxiv:2610.17241",
@@ -32810,6 +32826,18 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-03T10:39:10Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:29:55Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:30:11Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-05T10:34:06Z"
         }
       ],
       "history": [
@@ -33048,9 +33076,21 @@
         {
           "event": "merge",
           "at": "2026-11-03T10:39:19Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:16Z"
         }
       ],
-      "last_updated": "2026-11-03T10:39:19Z"
+      "last_updated": "2026-11-05T10:34:16Z"
     },
     "arxiv:2610.14537": {
       "id": "arxiv:2610.14537",
@@ -33589,6 +33629,30 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:29:55Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:31:40Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:32:23Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:33:03Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:33:07Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:34:02Z"
         }
       ],
       "history": [
@@ -34079,9 +34143,33 @@
         {
           "event": "merge",
           "at": "2026-11-03T10:39:09Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:03Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:03Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:04Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:04Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:04Z"
         }
       ],
-      "last_updated": "2026-11-03T10:39:09Z"
+      "last_updated": "2026-11-05T10:34:04Z"
     },
     "arxiv:2610.14824": {
       "id": "arxiv:2610.14824",
@@ -34204,6 +34292,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-03T10:36:04Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:30:08Z"
         }
       ],
       "history": [
@@ -34282,9 +34374,13 @@
         {
           "event": "merge",
           "at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
         }
       ],
-      "last_updated": "2026-11-03T10:39:06Z"
+      "last_updated": "2026-11-05T10:34:02Z"
     },
     "doi:10.1103/dpvk-3vt5": {
       "id": "doi:10.1103/dpvk-3vt5",
@@ -34583,6 +34679,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-03T10:39:10Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-05T10:34:06Z"
         }
       ],
       "history": [
@@ -34641,9 +34741,13 @@
         {
           "event": "merge",
           "at": "2026-11-03T10:39:19Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:16Z"
         }
       ],
-      "last_updated": "2026-11-03T10:39:19Z"
+      "last_updated": "2026-11-05T10:34:16Z"
     },
     "arxiv:2610.28250": {
       "id": "arxiv:2610.28250",
@@ -34917,6 +35021,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-03T10:39:10Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:30:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:30:40Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:30:43Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-05T10:34:06Z"
         }
       ],
       "history": [
@@ -35139,9 +35259,25 @@
         {
           "event": "merge",
           "at": "2026-11-03T10:39:19Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:16Z"
         }
       ],
-      "last_updated": "2026-11-03T10:39:19Z"
+      "last_updated": "2026-11-05T10:34:16Z"
     },
     "doi:10.1103/49ns-fryv": {
       "id": "doi:10.1103/49ns-fryv",
@@ -35331,6 +35467,30 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-03T10:39:06Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:29:55Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:30:11Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:30:59Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:31:03Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:31:26Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:34:02Z"
         }
       ],
       "history": [
@@ -35353,9 +35513,98 @@
         {
           "event": "merge",
           "at": "2026-11-03T10:39:09Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:03Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:04Z"
         }
       ],
-      "last_updated": "2026-11-03T10:39:09Z"
+      "last_updated": "2026-11-05T10:34:04Z"
+    },
+    "arxiv:2611.05957": {
+      "id": "arxiv:2611.05957",
+      "doi": null,
+      "arxiv_id": "2611.05957",
+      "inspire_id": null,
+      "title": "High-transformer-ratio plasma-based afterburner for extending X-ray free-electron laser photon energies to $\\gtrsim$50 keV",
+      "authors": [
+        "Songtang Han",
+        "Letian Liu",
+        "Zhiyan Yang",
+        "Zhuo Pan",
+        "Xueqing Yan",
+        "Xinlu Xu"
+      ],
+      "abstract": "Bright coherent X-rays in the $\\gtrsim$50 keV range are highly desirable for applications in materials science, high-energy-density physics, and nuclear physics, but are difficult to obtain from present X-ray free-electron laser (XFEL) facilities. Plasma-based afterburners offer a compact route to increasing the electron-beam energy, yet high transformer ratio (TR) operation is vulnerable to hosing instability, which can severely degrade the witness beam quality. We propose using a transversely elliptical driver beam to excite an elliptical nonlinear plasma wake with an axially varying focusing gradient, thereby suppressing the witness beam hosing through betatron decoherence. Three-dimensional particle-in-cell simulations show that, for a 3 kA driver and a 2.35 kA witness beam with an rms length of 4 $\\mathrmμ$m and a beam separation of 94 $\\mathrmμ$m (TR $\\approx 3$), this scheme can accelerate an 8 GeV witness beam to $\\sim30$ GeV while nearly half of the electrons meet the XFEL requirements. Start-to-end simulations show that the resulting beam can drive $\\gtrsim50$ keV XFEL radiation with peak powers of $\\sim10$ GW and durations of $\\sim10$ fs, even when quantum diffusion is included, offering a compact route to extend existing XFEL facilities to higher photon energies.",
+      "date": "2026-11-04",
+      "year": 2026,
+      "venue": "arXiv",
+      "status": "preprint",
+      "categories": [
+        {
+          "label": "Beam Dynamics",
+          "score": 0.4305451810359955
+        },
+        {
+          "label": "Beam Diagnostics",
+          "score": 0.3692786693572998
+        }
+      ],
+      "keywords": [],
+      "arxiv_categories": [
+        "physics.acc-ph"
+      ],
+      "curated": false,
+      "notes": null,
+      "review": {
+        "decision": "accepted",
+        "stage": "gate",
+        "rule": "auto_accept:acc-ph",
+        "score": null,
+        "model": null,
+        "model_revision": null,
+        "timestamp": "2026-11-05T10:48:28Z"
+      },
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2611.05957v1"
+      },
+      "sources": [
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:30:37Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-05T10:30:59Z"
+        }
+      ],
+      "history": [
+        {
+          "event": "merge",
+          "at": "2026-11-05T10:34:02Z"
+        }
+      ],
+      "last_updated": "2026-11-05T10:34:02Z"
     }
   }
 }
