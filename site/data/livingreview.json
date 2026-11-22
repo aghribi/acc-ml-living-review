@@ -33,7 +33,7 @@
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 153,
+      "arXiv": 152,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 10,
@@ -60,7 +60,7 @@
       "IPAC 2023 - 14th International Particle Accelerator Conference": 1,
       "MLPS 2023 - Machine Learning and the Physical Sciences Workshop 23023 - At the 37th conference on Neural Information Processing Systems (NeurIPS)": 1,
       "20th Advanced Accelerator Concepts Workshop (AAC’22)": 1,
-      "arXiv (Cornell University)": 8,
+      "arXiv (Cornell University)": 9,
       "JACOW": 10,
       "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
       "Machine Learning: Science and Technology": 1,
@@ -188,8 +188,8 @@
       "2026-10": 10,
       "2026-11": 12
     },
-    "last_updated": "2026-11-20T12:02:54.493323+00:00",
-    "next_update": "2026-11-21T12:02:54.493323+00:00"
+    "last_updated": "2026-11-22T11:30:34.680416+00:00",
+    "next_update": "2026-11-23T11:30:34.680416+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -13145,6 +13145,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-11-20T11:13:10Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-22T10:53:48Z"
         }
       ],
       "history": [
@@ -13187,9 +13191,13 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:13:10Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:48Z"
         }
       ],
-      "last_updated": "2026-11-20T11:13:10Z"
+      "last_updated": "2026-11-22T10:53:48Z"
     },
     "arxiv:2604.19146": {
       "id": "arxiv:2604.19146",
@@ -36877,6 +36885,30 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-20T11:12:55Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:20Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:36Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:51:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:51:05Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:51:34Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:53:35Z"
         }
       ],
       "history": [
@@ -37279,9 +37311,33 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:12:56Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:36Z"
         }
       ],
-      "last_updated": "2026-11-20T11:12:56Z"
+      "last_updated": "2026-11-22T10:53:36Z"
     },
     "arxiv:2611.05957": {
       "id": "arxiv:2611.05957",
@@ -37454,6 +37510,14 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-20T11:06:30Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:46Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:51:02Z"
         }
       ],
       "history": [
@@ -37576,9 +37640,17 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:12:56Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
         }
       ],
-      "last_updated": "2026-11-20T11:12:56Z"
+      "last_updated": "2026-11-22T10:53:35Z"
     },
     "arxiv:2611.08036": {
       "id": "arxiv:2611.08036",
@@ -37744,6 +37816,14 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-20T11:12:59Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:20Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-22T10:53:38Z"
         }
       ],
       "history": [
@@ -37858,9 +37938,17 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:13:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:46Z"
         }
       ],
-      "last_updated": "2026-11-20T11:13:08Z"
+      "last_updated": "2026-11-22T10:53:46Z"
     },
     "doi:10.1016/j.nima.2026.172199": {
       "id": "doi:10.1016/j.nima.2026.172199",
@@ -37967,6 +38055,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-20T11:12:59Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-22T10:53:38Z"
         }
       ],
       "history": [
@@ -38025,9 +38117,13 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:13:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:46Z"
         }
       ],
-      "last_updated": "2026-11-20T11:13:08Z"
+      "last_updated": "2026-11-22T10:53:46Z"
     },
     "arxiv:2611.11061": {
       "id": "arxiv:2611.11061",
@@ -38240,6 +38336,22 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-20T11:12:55Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:20Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:51:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:51:30Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:53:35Z"
         }
       ],
       "history": [
@@ -38410,9 +38522,25 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:12:56Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:36Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:36Z"
         }
       ],
-      "last_updated": "2026-11-20T11:12:56Z"
+      "last_updated": "2026-11-22T10:53:36Z"
     },
     "arxiv:2611.10835": {
       "id": "arxiv:2611.10835",
@@ -38561,6 +38689,14 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-20T11:12:59Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:20Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-22T10:53:38Z"
         }
       ],
       "history": [
@@ -38647,9 +38783,17 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:13:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:46Z"
         }
       ],
-      "last_updated": "2026-11-20T11:13:08Z"
+      "last_updated": "2026-11-22T10:53:46Z"
     },
     "doi:10.1007/s44205-026-00229-2": {
       "id": "doi:10.1007/s44205-026-00229-2",
@@ -38789,6 +38933,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-11-20T11:13:10Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-22T10:53:48Z"
         }
       ],
       "history": [
@@ -38823,9 +38971,13 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:13:10Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:48Z"
         }
       ],
-      "last_updated": "2026-11-20T11:13:10Z"
+      "last_updated": "2026-11-22T10:53:48Z"
     },
     "arxiv:2611.22848": {
       "id": "arxiv:2611.22848",
@@ -38904,6 +39056,18 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-20T11:12:59Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:23Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:52Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-22T10:53:38Z"
         }
       ],
       "history": [
@@ -38934,9 +39098,21 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:13:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:46Z"
         }
       ],
-      "last_updated": "2026-11-20T11:13:08Z"
+      "last_updated": "2026-11-22T10:53:46Z"
     },
     "arxiv:2611.21902": {
       "id": "arxiv:2611.21902",
@@ -38995,6 +39171,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-20T11:07:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:52Z"
         }
       ],
       "history": [
@@ -39005,9 +39185,13 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:12:56Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
         }
       ],
-      "last_updated": "2026-11-20T11:12:56Z"
+      "last_updated": "2026-11-22T10:53:35Z"
     },
     "arxiv:2611.21011": {
       "id": "arxiv:2611.21011",
@@ -39067,6 +39251,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-20T11:12:59Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-22T10:53:38Z"
         }
       ],
       "history": [
@@ -39077,13 +39265,17 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:13:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:46Z"
         }
       ],
-      "last_updated": "2026-11-20T11:13:08Z"
+      "last_updated": "2026-11-22T10:53:46Z"
     },
     "arxiv:2611.23625": {
       "id": "arxiv:2611.23625",
-      "doi": null,
+      "doi": "10.48550/arxiv.2611.23625",
       "arxiv_id": "2611.23625",
       "inspire_id": "3230825",
       "title": "Time-Varying Bayesian Optimization and Extremum Seekingfor Drift-Tube Linac Tuning at LANSCE",
@@ -39097,8 +39289,8 @@
       "abstract": "Bayesian optimization (BO) has emerged as a promising machine learning approach to accelerator tuning. It has the advantage of being able to incorporate prior information, including simulation and historical data, and explicitly model measurement noise. However, standard implementations can produce large, abrupt parameter updates that are undesirable and potentially unsafe in accelerator operation. They may also spend excessive time exploring less promising regions of the search space. We address these limitations by imposing soft and hard step size limits. We evaluate these methods by adjusting the radio frequency settings of the drift tube linac (DTL) at the Los Alamos Neutron Science Center (LANSCE) to maximize the particle count at the end of the linac. We first test the methods in simulation with constant exogenous parameters, then repeat the tests with drifting exogenous parameters. Under drifting conditions, progressively reducing the BO step size limit improved convergence. We also find that an initial BO segment followed by extremum seeking (ES), an approach we call BO-ES, combines BO's use of prior information and sample efficiency with ES's effectiveness in local optimization and drift tracking. Finally, tests on the LANSCE accelerator with BO-ES demonstrate an approximately $25\\%$ reduction in losses at the end of the linac across different configurations of historical and simulation data.",
       "date": "2026-11-17",
       "year": 2026,
-      "venue": "arXiv",
-      "status": "preprint",
+      "venue": "arXiv (Cornell University)",
+      "status": "published",
       "categories": [
         {
           "label": "Novel Applications",
@@ -39126,7 +39318,8 @@
       },
       "links": {
         "arxiv": "http://arxiv.org/abs/2611.23625v1",
-        "inspire": "https://inspirehep.net/literature/3230825"
+        "inspire": "https://inspirehep.net/literature/3230825",
+        "openalex": "https://openalex.org/W7236658005"
       },
       "sources": [
         {
@@ -39152,6 +39345,22 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-20T11:12:59Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:20Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:33Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-22T10:53:38Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-22T10:53:48Z"
         }
       ],
       "history": [
@@ -39174,9 +39383,25 @@
         {
           "event": "merge",
           "at": "2026-11-20T11:13:08Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:46Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:48Z"
         }
       ],
-      "last_updated": "2026-11-20T11:13:08Z"
+      "last_updated": "2026-11-22T10:53:48Z"
     },
     "arxiv:2611.23776": {
       "id": "arxiv:2611.23776",
@@ -39237,15 +39462,23 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-20T11:06:30Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-22T10:50:46Z"
         }
       ],
       "history": [
         {
           "event": "merge",
           "at": "2026-11-20T11:12:56Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-22T10:53:35Z"
         }
       ],
-      "last_updated": "2026-11-20T11:12:56Z"
+      "last_updated": "2026-11-22T10:53:35Z"
     }
   }
 }
