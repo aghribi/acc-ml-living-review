@@ -33,7 +33,7 @@
     },
     "per_venue/journal": {
       "Radiation Detection Technology and Methods": 1,
-      "arXiv": 153,
+      "arXiv": 152,
       "SoftwareX": 1,
       "Thesis": 4,
       "Phys.Rev.Accel.Beams": 10,
@@ -63,7 +63,7 @@
       "arXiv (Cornell University)": 9,
       "JACOW": 10,
       "Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis": 1,
-      "Machine Learning: Science and Technology": 1,
+      "Machine Learning: Science and Technology": 2,
       "Plasma Phys.Control.Fusion": 1,
       "Journal of Instrumentation": 2,
       "International Journal of Computational and Experimental Science and Engineering": 1,
@@ -188,8 +188,8 @@
       "2026-10": 10,
       "2026-11": 13
     },
-    "last_updated": "2026-11-26T12:45:14.892909+00:00",
-    "next_update": "2026-11-27T12:45:14.892909+00:00"
+    "last_updated": "2026-11-27T12:39:18.549259+00:00",
+    "next_update": "2026-11-28T12:39:18.549259+00:00"
   },
   "papers": {
     "doi:10.1007/s41605-025-00527-7": {
@@ -13165,6 +13165,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-11-26T12:06:09Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-27T11:56:44Z"
         }
       ],
       "history": [
@@ -13227,9 +13231,13 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:06:09Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:44Z"
         }
       ],
-      "last_updated": "2026-11-26T12:06:09Z"
+      "last_updated": "2026-11-27T11:56:44Z"
     },
     "arxiv:2604.19146": {
       "id": "arxiv:2604.19146",
@@ -22851,7 +22859,7 @@
     },
     "arxiv:2608.21327": {
       "id": "arxiv:2608.21327",
-      "doi": null,
+      "doi": "10.1088/2632-2153/aebcc0",
       "arxiv_id": "2608.21327",
       "inspire_id": "3194640",
       "title": "On-Detector Machine Learning for Beam-Induced Background Rejection at a 10 TeV Muon Collider",
@@ -22896,19 +22904,19 @@
         "Wadud, Mohammad Abrar",
         "Weiss, Benjamin"
       ],
-      "abstract": "A 10 TeV Muon Collider is a compelling candidate for a future energy-frontier facility, offering unprecedented opportunities to explore the fundamental laws of particle physics. Muon decays in the collider ring produce intense beam-induced background (BIB) that can overwhelm detector occupancy and exceed readout bandwidth constraints. We investigate the potential of on-detector Machine Learning for BIB rejection in the vertex detector, exploiting pixel cluster shapes to distinguish background from collision products. We study three classes of lightweight neural-network architectures, and evaluate their implementation feasibility using high-level synthesis. Selected architectures achieve 88 to 90% data reduction at 99% signal efficiency, while requiring hardware resources compatible with potential ASIC implementation. These results demonstrate the potential of performing substantial BIB rejection directly in the pixel readout, providing a strategy for meeting the tracker readout requirements at a future Muon Collider.",
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>A 10 TeV Muon Collider is a compelling candidate for a future energy-frontier facility, offering unprecedented opportunities to explore the fundamental laws of particle physics. Muon decays in the collider ring produce intense beam-induced background (BIB) that can overwhelm detector occupancy and exceed readout bandwidth constraints. We investigate the potential of on-detector Machine Learning for BIB rejection in the vertex detector, exploiting pixel cluster shapes to distinguish background from collision products. We study three classes of lightweight neural-network architectures, and evaluate the feasibility of their implementation in hardware with high-level synthesis. Selected architectures achieve 88%–90% data reduction at 99% signal efficiency while requiring hardware resources compatible with potential ASIC implementation. These results demonstrate the potential of performing substantial BIB rejection directly in the pixel readout, providing a path towards meeting the tracker readout requirements at a future Muon Collider.</jats:p>",
       "date": "2026-08-21",
       "year": 2026,
-      "venue": "arXiv",
-      "status": "preprint",
+      "venue": "Machine Learning: Science and Technology",
+      "status": "published",
       "categories": [
         {
           "label": "Novel Applications",
-          "score": 0.43687117099761963
+          "score": 0.43713831901550293
         },
         {
           "label": "Tools & Libraries",
-          "score": 0.4024089574813843
+          "score": 0.3942635655403137
         }
       ],
       "keywords": [],
@@ -22926,7 +22934,9 @@
       },
       "links": {
         "inspire": "https://inspirehep.net/literature/3194640",
-        "arxiv": "https://arxiv.org/abs/2608.21327"
+        "arxiv": "https://arxiv.org/abs/2608.21327",
+        "doi": "https://doi.org/10.1088/2632-2153/aebcc0",
+        "crossref": "https://doi.org/10.1088/2632-2153/aebcc0"
       },
       "sources": [
         {
@@ -23032,6 +23042,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-09-20T08:26:54Z"
+        },
+        {
+          "source": "crossref",
+          "seen_at": "2026-11-27T11:56:45Z"
         }
       ],
       "history": [
@@ -23134,9 +23148,13 @@
         {
           "event": "merge",
           "at": "2026-09-20T08:27:00Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:45Z"
         }
       ],
-      "last_updated": "2026-09-20T08:27:00Z"
+      "last_updated": "2026-11-27T11:56:45Z"
     },
     "hash:a800205ef13f": {
       "id": "hash:a800205ef13f",
@@ -32667,6 +32685,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-11-26T12:06:09Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-27T11:56:44Z"
         }
       ],
       "history": [
@@ -32794,9 +32816,13 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:06:09Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:44Z"
         }
       ],
-      "last_updated": "2026-11-26T12:06:09Z"
+      "last_updated": "2026-11-27T11:56:44Z"
     },
     "arxiv:2610.17241": {
       "id": "arxiv:2610.17241",
@@ -37031,6 +37057,30 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-26T12:04:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:10Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:26Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:51Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:55Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:54:21Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:56:25Z"
         }
       ],
       "history": [
@@ -37521,9 +37571,33 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:04:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:26Z"
         }
       ],
-      "last_updated": "2026-11-26T12:04:02Z"
+      "last_updated": "2026-11-27T11:56:26Z"
     },
     "arxiv:2611.05957": {
       "id": "arxiv:2611.05957",
@@ -37728,6 +37802,14 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-26T12:01:29Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:35Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:51Z"
         }
       ],
       "history": [
@@ -37882,9 +37964,17 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:04:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
         }
       ],
-      "last_updated": "2026-11-26T12:04:02Z"
+      "last_updated": "2026-11-27T11:56:25Z"
     },
     "arxiv:2611.08036": {
       "id": "arxiv:2611.08036",
@@ -38086,6 +38176,14 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-26T12:04:05Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:10Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-27T11:56:28Z"
         }
       ],
       "history": [
@@ -38236,9 +38334,17 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:04:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:42Z"
         }
       ],
-      "last_updated": "2026-11-26T12:04:14Z"
+      "last_updated": "2026-11-27T11:56:42Z"
     },
     "doi:10.1016/j.nima.2026.172199": {
       "id": "doi:10.1016/j.nima.2026.172199",
@@ -38702,6 +38808,22 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-26T12:04:02Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:10Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:51Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:54:18Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:56:25Z"
         }
       ],
       "history": [
@@ -38932,9 +39054,25 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:04:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:26Z"
         }
       ],
-      "last_updated": "2026-11-26T12:04:02Z"
+      "last_updated": "2026-11-27T11:56:26Z"
     },
     "arxiv:2611.10835": {
       "id": "arxiv:2611.10835",
@@ -39119,6 +39257,14 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-26T12:04:05Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:10Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-27T11:56:28Z"
         }
       ],
       "history": [
@@ -39241,9 +39387,17 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:04:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:42Z"
         }
       ],
-      "last_updated": "2026-11-26T12:04:14Z"
+      "last_updated": "2026-11-27T11:56:42Z"
     },
     "doi:10.1007/s44205-026-00229-2": {
       "id": "doi:10.1007/s44205-026-00229-2",
@@ -39403,6 +39557,10 @@
         {
           "source": "openalex",
           "seen_at": "2026-11-26T12:06:09Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-27T11:56:44Z"
         }
       ],
       "history": [
@@ -39457,9 +39615,13 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:06:09Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:44Z"
         }
       ],
-      "last_updated": "2026-11-26T12:06:09Z"
+      "last_updated": "2026-11-27T11:56:44Z"
     },
     "arxiv:2611.22848": {
       "id": "arxiv:2611.22848",
@@ -39590,6 +39752,18 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-26T12:04:05Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:13Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:42Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-27T11:56:28Z"
         }
       ],
       "history": [
@@ -39672,9 +39846,21 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:04:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:42Z"
         }
       ],
-      "last_updated": "2026-11-26T12:04:14Z"
+      "last_updated": "2026-11-27T11:56:42Z"
     },
     "arxiv:2611.21902": {
       "id": "arxiv:2611.21902",
@@ -39749,6 +39935,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-26T12:01:19Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:42Z"
         }
       ],
       "history": [
@@ -39775,9 +39965,13 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:04:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
         }
       ],
-      "last_updated": "2026-11-26T12:04:02Z"
+      "last_updated": "2026-11-27T11:56:25Z"
     },
     "arxiv:2611.21011": {
       "id": "arxiv:2611.21011",
@@ -39857,6 +40051,10 @@
         {
           "source": "inspire",
           "seen_at": "2026-11-26T12:04:05Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-27T11:56:28Z"
         }
       ],
       "history": [
@@ -39887,9 +40085,13 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:04:14Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:42Z"
         }
       ],
-      "last_updated": "2026-11-26T12:04:14Z"
+      "last_updated": "2026-11-27T11:56:42Z"
     },
     "arxiv:2611.23625": {
       "id": "arxiv:2611.23625",
@@ -40035,6 +40237,22 @@
         {
           "source": "openalex",
           "seen_at": "2026-11-26T12:06:09Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:10Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:22Z"
+        },
+        {
+          "source": "inspire",
+          "seen_at": "2026-11-27T11:56:28Z"
+        },
+        {
+          "source": "openalex",
+          "seen_at": "2026-11-27T11:56:44Z"
         }
       ],
       "history": [
@@ -40129,9 +40347,25 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:06:09Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:42Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:44Z"
         }
       ],
-      "last_updated": "2026-11-26T12:06:09Z"
+      "last_updated": "2026-11-27T11:56:44Z"
     },
     "arxiv:2611.23776": {
       "id": "arxiv:2611.23776",
@@ -40208,6 +40442,10 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-26T12:01:11Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:53:35Z"
         }
       ],
       "history": [
@@ -40230,9 +40468,13 @@
         {
           "event": "merge",
           "at": "2026-11-26T12:04:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
         }
       ],
-      "last_updated": "2026-11-26T12:04:02Z"
+      "last_updated": "2026-11-27T11:56:25Z"
     },
     "arxiv:2611.28355": {
       "id": "arxiv:2611.28355",
@@ -40292,15 +40534,23 @@
         {
           "source": "arxiv",
           "seen_at": "2026-11-26T12:02:13Z"
+        },
+        {
+          "source": "arxiv",
+          "seen_at": "2026-11-27T11:54:34Z"
         }
       ],
       "history": [
         {
           "event": "merge",
           "at": "2026-11-26T12:04:02Z"
+        },
+        {
+          "event": "merge",
+          "at": "2026-11-27T11:56:25Z"
         }
       ],
-      "last_updated": "2026-11-26T12:04:02Z"
+      "last_updated": "2026-11-27T11:56:25Z"
     }
   }
 }
